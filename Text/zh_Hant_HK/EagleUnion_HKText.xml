@@ -154,65 +154,160 @@
 			<Text>在友軍領土之外恢復，每回合+6影響力點數</Text>
 		</Replace>
 		<!--城市名-->
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_1" Language="zh_Hant_HK">
-			<Text>中央司令部</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_2" Language="zh_Hant_HK">
-			<Text>紐約</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_3" Language="zh_Hant_HK">
-			<Text>洛杉磯</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_4" Language="zh_Hant_HK">
-			<Text>芝加哥</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_5" Language="zh_Hant_HK">
-			<Text>休斯頓</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_6" Language="zh_Hant_HK">
-			<Text>費城</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_7" Language="zh_Hant_HK">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_WASHINGTON_DC" Language="zh_Hant_HK">
 			<Text>華盛頓特區</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_8" Language="zh_Hant_HK">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_NEW_YORK" Language="zh_Hant_HK">
+			<Text>紐約</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_LOS_ANGELES" Language="zh_Hant_HK">
+			<Text>洛杉磯</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CHICAGO" Language="zh_Hant_HK">
+			<Text>芝加哥</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_HOUSTON" Language="zh_Hant_HK">
+			<Text>休斯頓</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PHILADELPHIA" Language="zh_Hant_HK">
+			<Text>費城</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_NEWPORT_NEWS" Language="zh_Hant_HK">
+			<Text>紐波特紐斯</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_DALLAS" Language="zh_Hant_HK">
 			<Text>達拉斯</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_9" Language="zh_Hant_HK">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_FRANCISCO" Language="zh_Hant_HK">
 			<Text>三藩市</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_10" Language="zh_Hant_HK">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BOSTON" Language="zh_Hant_HK">
 			<Text>波士頓</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_11" Language="zh_Hant_HK">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_ATLANTA" Language="zh_Hant_HK">
 			<Text>亞特蘭大</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_12" Language="zh_Hant_HK">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_DETROIT" Language="zh_Hant_HK">
 			<Text>底特律</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_13" Language="zh_Hant_HK">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PITTSBURGH" Language="zh_Hant_HK">
 			<Text>匹茲堡</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_14" Language="zh_Hant_HK">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_DIEGO" Language="zh_Hant_HK">
 			<Text>聖達戈</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_15" Language="zh_Hant_HK">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_JACKSONVILLE" Language="zh_Hant_HK">
 			<Text>傑克遜維爾</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_16" Language="zh_Hant_HK">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_MIAMI" Language="zh_Hant_HK">
 			<Text>邁阿密</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_17" Language="zh_Hant_HK">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SEATTLE" Language="zh_Hant_HK">
 			<Text>西雅圖</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_18" Language="zh_Hant_HK">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PHOENIX" Language="zh_Hant_HK">
 			<Text>費尼克斯</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_19" Language="zh_Hant_HK">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_ANTONIO" Language="zh_Hant_HK">
 			<Text>聖安東尼奧</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_20" Language="zh_Hant_HK">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_LAS_VEGAS" Language="zh_Hant_HK">
 			<Text>拉斯維加斯</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CLEVELAND" Language="zh_Hant_HK">
+			<Text>克利夫蘭</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BALTIMORE" Language="zh_Hant_HK">
+			<Text>巴爾的摩</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_MINNEAPOLIS" Language="zh_Hant_HK">
+			<Text>明尼阿波利斯</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_NEW_ORLEANS" Language="zh_Hant_HK">
+			<Text>新奧爾良</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CHARLOTTE" Language="zh_Hant_HK">
+			<Text>夏洛特</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_DENVER" Language="zh_Hant_HK">
+			<Text>丹佛</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_ST_LOUIS" Language="zh_Hant_HK">
+			<Text>聖路易斯</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PORTLAND" Language="zh_Hant_HK">
+			<Text>波特蘭</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_TAMPA" Language="zh_Hant_HK">
+			<Text>坦帕</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PRINCETON" Language="zh_Hant_HK">
+			<Text>普林斯頓</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BROOKLYN" Language="zh_Hant_HK">
+			<Text>布魯克林</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_GROTON" Language="zh_Hant_HK">
+			<Text>格羅頓</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BATH" Language="zh_Hant_HK">
+			<Text>巴斯</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_QUINCY" Language="zh_Hant_HK">
+			<Text>昆西</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_PEDRO" Language="zh_Hant_HK">
+			<Text>聖佩得羅</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_NORTH_CHARLESTON" Language="zh_Hant_HK">
+			<Text>北查爾斯頓</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_VANCOUVER" Language="zh_Hant_HK">
+			<Text>溫哥華</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_VALLEJO" Language="zh_Hant_HK">
+			<Text>瓦列霍</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CAMDEN" Language="zh_Hant_HK">
+			<Text>卡姆登</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PORTSMOUTH" Language="zh_Hant_HK">
+			<Text>樸資茅斯</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BREMERTON" Language="zh_Hant_HK">
+			<Text>布萊默頓</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_TACOMA" Language="zh_Hant_HK">
+			<Text>塔科馬</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CHESTER" Language="zh_Hant_HK">
+			<Text>賈斯特</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CHARLESTON" Language="zh_Hant_HK">
+			<Text>查爾斯頓</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BUFFALO" Language="zh_Hant_HK">
+			<Text>布法羅</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CINCINNATI" Language="zh_Hant_HK">
+			<Text>辛辛那提</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_JOSE" Language="zh_Hant_HK">
+			<Text>聖約瑟</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_RICHMOND" Language="zh_Hant_HK">
+			<Text>里士滿</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_ALBUQUERQUE" Language="zh_Hant_HK">
+			<Text>阿爾伯克爾基</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_JUAN" Language="zh_Hant_HK">
+			<Text>聖胡安</Text>
+		</Replace>
+		<!--特殊城市-->
+		<!--卡尼 艾伦·萨姆纳-->
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_KEARNY" Language="zh_Hant_HK">
+			<Text>卡尼</Text>
 		</Replace>
 		<!--公民名-->
 		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_1" Language="zh_Hant_HK">

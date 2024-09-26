@@ -154,95 +154,160 @@
 			<Text>在友军领土之外恢复，每回合+6影响力点数</Text>
 		</Replace>
 		<!--城市名-->
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_1" Language="zh_Hans_CN">
-			<Text>中央司令部</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_2" Language="zh_Hans_CN">
-			<Text>纽约</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_3" Language="zh_Hans_CN">
-			<Text>洛杉矶</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_4" Language="zh_Hans_CN">
-			<Text>芝加哥</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_5" Language="zh_Hans_CN">
-			<Text>休斯顿</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_6" Language="zh_Hans_CN">
-			<Text>费城</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_7" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_WASHINGTON_DC" Language="zh_Hans_CN">
 			<Text>华盛顿特区</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_8" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_NEW_YORK" Language="zh_Hans_CN">
+			<Text>纽约</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_LOS_ANGELES" Language="zh_Hans_CN">
+			<Text>洛杉矶</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CHICAGO" Language="zh_Hans_CN">
+			<Text>芝加哥</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_HOUSTON" Language="zh_Hans_CN">
+			<Text>休斯顿</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PHILADELPHIA" Language="zh_Hans_CN">
+			<Text>费城</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_NEWPORT_NEWS" Language="zh_Hans_CN">
+			<Text>纽波特纽斯</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_DALLAS" Language="zh_Hans_CN">
 			<Text>达拉斯</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_9" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_FRANCISCO" Language="zh_Hans_CN">
 			<Text>旧金山</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_10" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BOSTON" Language="zh_Hans_CN">
 			<Text>波士顿</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_11" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_ATLANTA" Language="zh_Hans_CN">
 			<Text>亚特兰大</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_12" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_DETROIT" Language="zh_Hans_CN">
 			<Text>底特律</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_13" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PITTSBURGH" Language="zh_Hans_CN">
 			<Text>匹兹堡</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_14" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_DIEGO" Language="zh_Hans_CN">
 			<Text>圣迭戈</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_15" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_JACKSONVILLE" Language="zh_Hans_CN">
 			<Text>杰克逊维尔</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_16" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_MIAMI" Language="zh_Hans_CN">
 			<Text>迈阿密</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_17" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SEATTLE" Language="zh_Hans_CN">
 			<Text>西雅图</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_18" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PHOENIX" Language="zh_Hans_CN">
 			<Text>菲尼克斯</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_19" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_ANTONIO" Language="zh_Hans_CN">
 			<Text>圣安东尼奥</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_20" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_LAS_VEGAS" Language="zh_Hans_CN">
 			<Text>拉斯维加斯</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_21" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CLEVELAND" Language="zh_Hans_CN">
 			<Text>克利夫兰</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_22" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BALTIMORE" Language="zh_Hans_CN">
 			<Text>巴尔的摩</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_23" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_MINNEAPOLIS" Language="zh_Hans_CN">
 			<Text>明尼阿波利斯</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_24" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_NEW_ORLEANS" Language="zh_Hans_CN">
 			<Text>新奥尔良</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_25" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CHARLOTTE" Language="zh_Hans_CN">
 			<Text>夏洛特</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_26" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_DENVER" Language="zh_Hans_CN">
 			<Text>丹佛</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_27" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_ST_LOUIS" Language="zh_Hans_CN">
 			<Text>圣路易斯</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_28" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PORTLAND" Language="zh_Hans_CN">
 			<Text>波特兰</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_29" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_TAMPA" Language="zh_Hans_CN">
 			<Text>坦帕</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_30" Language="zh_Hans_CN">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PRINCETON" Language="zh_Hans_CN">
 			<Text>普林斯顿</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BROOKLYN" Language="zh_Hans_CN">
+			<Text>布鲁克林</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_GROTON" Language="zh_Hans_CN">
+			<Text>格罗顿</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BATH" Language="zh_Hans_CN">
+			<Text>巴斯</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_QUINCY" Language="zh_Hans_CN">
+			<Text>昆西</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_PEDRO" Language="zh_Hans_CN">
+			<Text>圣佩得罗</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_NORTH_CHARLESTON" Language="zh_Hans_CN">
+			<Text>北查尔斯顿</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_VANCOUVER" Language="zh_Hans_CN">
+			<Text>温哥华</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_VALLEJO" Language="zh_Hans_CN">
+			<Text>瓦列霍</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CAMDEN" Language="zh_Hans_CN">
+			<Text>卡姆登</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PORTSMOUTH" Language="zh_Hans_CN">
+			<Text>朴次茅斯</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BREMERTON" Language="zh_Hans_CN">
+			<Text>布莱默顿</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_TACOMA" Language="zh_Hans_CN">
+			<Text>塔科马</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CHESTER" Language="zh_Hans_CN">
+			<Text>切斯特</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CHARLESTON" Language="zh_Hans_CN">
+			<Text>查尔斯顿</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BUFFALO" Language="zh_Hans_CN">
+			<Text>布法罗</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CINCINNATI" Language="zh_Hans_CN">
+			<Text>辛辛那提</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_JOSE" Language="zh_Hans_CN">
+			<Text>圣何塞</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_RICHMOND" Language="zh_Hans_CN">
+			<Text>里士满</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_ALBUQUERQUE" Language="zh_Hans_CN">
+			<Text>阿尔伯克基</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_JUAN" Language="zh_Hans_CN">
+			<Text>圣胡安</Text>
+		</Replace>
+		<!--特殊城市-->
+		<!--卡尼 艾伦·萨姆纳-->
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_KEARNY" Language="zh_Hans_CN">
+			<Text>卡尼</Text>
 		</Replace>
 		<!--公民名-->
 		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_1" Language="zh_Hans_CN">

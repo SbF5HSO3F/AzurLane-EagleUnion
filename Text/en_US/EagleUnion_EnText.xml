@@ -154,95 +154,160 @@
 			<Text>Heal outside of friendly territory, and +6 Influence points per turn.</Text>
 		</Replace>
 		<!--城市名-->
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_1" Language="en_US">
-			<Text>Central Command</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_2" Language="en_US">
-			<Text>New York</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_3" Language="en_US">
-			<Text>Los Angeles</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_4" Language="en_US">
-			<Text>Chicago</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_5" Language="en_US">
-			<Text>Houston</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_6" Language="en_US">
-			<Text>Philadelphia</Text>
-		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_7" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_WASHINGTON_DC" Language="en_US">
 			<Text>Washington D.C.</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_8" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_NEW_YORK" Language="en_US">
+			<Text>New York</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_LOS_ANGELES" Language="en_US">
+			<Text>Los Angeles</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CHICAGO" Language="en_US">
+			<Text>Chicago</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_HOUSTON" Language="en_US">
+			<Text>Houston</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PHILADELPHIA" Language="en_US">
+			<Text>Philadelphia</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_NEWPORT_NEWS" Language="en_US">
+			<Text>Newport News</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_DALLAS" Language="en_US">
 			<Text>Dallas</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_9" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_FRANCISCO" Language="en_US">
 			<Text>San Francisco</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_10" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BOSTON" Language="en_US">
 			<Text>Boston</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_11" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_ATLANTA" Language="en_US">
 			<Text>Atlanta</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_12" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_DETROIT" Language="en_US">
 			<Text>Detroit</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_13" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PITTSBURGH" Language="en_US">
 			<Text>Pittsburgh</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_14" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_DIEGO" Language="en_US">
 			<Text>San diego</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_15" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_JACKSONVILLE" Language="en_US">
 			<Text>Jacksonville</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_16" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_MIAMI" Language="en_US">
 			<Text>Miami</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_17" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SEATTLE" Language="en_US">
 			<Text>Seattle</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_18" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PHOENIX" Language="en_US">
 			<Text>Phoenix</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_19" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_ANTONIO" Language="en_US">
 			<Text>San Antonio</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_20" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_LAS_VEGAS" Language="en_US">
 			<Text>Las vegas</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_21" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CLEVELAND" Language="en_US">
 			<Text>Cleveland</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_22" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BALTIMORE" Language="en_US">
 			<Text>Baltimore</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_23" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_MINNEAPOLIS" Language="en_US">
 			<Text>Minneapolis</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_24" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_NEW_ORLEANS" Language="en_US">
 			<Text>New Orleans</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_25" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CHARLOTTE" Language="en_US">
 			<Text>Charlotte</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_26" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_DENVER" Language="en_US">
 			<Text>Denver</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_27" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_ST_LOUIS" Language="en_US">
 			<Text>St. Louis</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_28" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PORTLAND" Language="en_US">
 			<Text>Portland</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_29" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_TAMPA" Language="en_US">
 			<Text>Tampa</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_30" Language="en_US">
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PRINCETON" Language="en_US">
 			<Text>Princeton</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BROOKLYN" Language="en_US">
+			<Text>Brooklyn</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_GROTON" Language="en_US">
+			<Text>Groton</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BATH" Language="en_US">
+			<Text>Bath</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_QUINCY" Language="en_US">
+			<Text>Quincy</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_PEDRO" Language="en_US">
+			<Text>San Pedro</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_NORTH_CHARLESTON" Language="en_US">
+			<Text>North Charleston</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_VANCOUVER" Language="en_US">
+			<Text>Vancouver</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_VALLEJO" Language="en_US">
+			<Text>Vallejo</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CAMDEN" Language="en_US">
+			<Text>Camden</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PORTSMOUTH" Language="en_US">
+			<Text>Portsmouth</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BREMERTON" Language="en_US">
+			<Text>Bremerton</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_TACOMA" Language="en_US">
+			<Text>Tacoma</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CHESTER" Language="en_US">
+			<Text>Chester</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CHARLESTON" Language="en_US">
+			<Text>Charleston</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BUFFALO" Language="en_US">
+			<Text>Buffalo</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_CINCINNATI" Language="en_US">
+			<Text>Cincinnati</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_JOSE" Language="en_US">
+			<Text>San Jose</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_RICHMOND" Language="en_US">
+			<Text>Richmond</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_ALBUQUERQUE" Language="en_US">
+			<Text>Albuquerque</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_SAN_JUAN" Language="en_US">
+			<Text>San Juan</Text>
+		</Replace>
+		<!--特殊城市-->
+		<!--卡尼 艾伦·萨姆纳-->
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_KEARNY" Language="en_US">
+			<Text>Kearny</Text>
 		</Replace>
 		<!--公民名-->
 		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_1" Language="en_US">
