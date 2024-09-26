@@ -20,6 +20,11 @@
 			 StartingCivilizationLevelType="CIVILIZATION_LEVEL_FULL_CIV" 
 			 Ethnicity="ETHNICITY_EURO"/>
 	</Civilizations>
+	<CivilizationInfo>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" Header="LOC_CIVINFO_CAPITAL"				Caption="LOC_CITY_NAME_EAGLE_UNION_WASHINGTON_DC"	SortIndex="10" />
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" Header="LOC_CIVINFO_AZURLANE_CORRESPOND"	Caption="LOC_CIVINFO_CORRESPOND_EAGLE_UNION"		SortIndex="20" />
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" Header="LOC_CIVINFO_AZURLANE_ROLE"			Caption="LOC_CIVINFO_ROLE_EAGLE_UNION"				SortIndex="30" />
+	</CivilizationInfo>
 	<CivilizationLeaders>
 		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" LeaderType="LEADER_ESSEX_CV9"				CapitalName="LOC_CITY_NAME_EAGLE_UNION_NEWPORT_NEWS"/>
 		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" LeaderType="LEADER_GEORGIA"				CapitalName="LOC_CITY_NAME_EAGLE_UNION_WASHINGTON_DC"/>
@@ -43,15 +48,12 @@
 		<!--改良设施-->
 		<Row>
 			<TraitType>TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY</TraitType>
-			<ModifierId>IMPROVEMENT_ADD_PRODUCTION</ModifierId>
+			<ModifierId>EAGLE_UNION_IMPROVEMENT_BUFF</ModifierId>
 		</Row>
+		<!--工业化后buff-->
 		<Row>
 			<TraitType>TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY</TraitType>
-			<ModifierId>IMPROVEMENT_ADD_PRODUCTION_INDUSTRIALIZATION</ModifierId>
-		</Row>
-		<Row>
-			<TraitType>TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY</TraitType>
-			<ModifierId>IMPROVEMENT_ADD_SCIENCE</ModifierId>
+			<ModifierId>EAGLE_UNION_IMPROVEMENT_BUFF_INDUSTRIALIZATION</ModifierId>
 		</Row>
 		<!--伟人加文化值-->
 		<Row>
@@ -83,19 +85,15 @@
 	<Modifiers>
 		<!--改良设施-->
 		<Row>
-			<ModifierId>IMPROVEMENT_ADD_PRODUCTION</ModifierId>
+			<ModifierId>EAGLE_UNION_IMPROVEMENT_BUFF</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_ADJUST_PLOT_YIELD</ModifierType>
 			<SubjectRequirementSetId>EAGLE_UNION_PLOT_HAS_IMPROVEMENT</SubjectRequirementSetId>
 		</Row>
+		<!--工业化后buff-->
 		<Row>
-			<ModifierId>IMPROVEMENT_ADD_PRODUCTION_INDUSTRIALIZATION</ModifierId>
+			<ModifierId>EAGLE_UNION_IMPROVEMENT_BUFF_INDUSTRIALIZATION</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_ADJUST_PLOT_YIELD</ModifierType>
 			<SubjectRequirementSetId>EAGLE_UNION_INDUSTRIALIZATION_BUFF</SubjectRequirementSetId>
-		</Row>
-		<Row>
-			<ModifierId>IMPROVEMENT_ADD_SCIENCE</ModifierId>
-			<ModifierType>MODIFIER_PLAYER_ADJUST_PLOT_YIELD</ModifierType>
-			<SubjectRequirementSetId>EAGLE_UNION_PLOT_HAS_IMPROVEMENT</SubjectRequirementSetId>
 		</Row>
 		<!--伟人加文化值-->
 		<Row>
@@ -128,34 +126,24 @@
 	<ModifierArguments>
 		<!--改良设施-->
 		<Row>
-			<ModifierId>IMPROVEMENT_ADD_PRODUCTION</ModifierId>
+			<ModifierId>EAGLE_UNION_IMPROVEMENT_BUFF</ModifierId>
+			<Name>Amount</Name>
+			<Value>1, 1</Value>
+		</Row>
+		<Row>
+			<ModifierId>EAGLE_UNION_IMPROVEMENT_BUFF</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION, YIELD_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>EAGLE_UNION_IMPROVEMENT_BUFF_INDUSTRIALIZATION</ModifierId>
 			<Name>Amount</Name>
 			<Value>1</Value>
 		</Row>
 		<Row>
-			<ModifierId>IMPROVEMENT_ADD_PRODUCTION</ModifierId>
+			<ModifierId>EAGLE_UNION_IMPROVEMENT_BUFF_INDUSTRIALIZATION</ModifierId>
 			<Name>YieldType</Name>
 			<Value>YIELD_PRODUCTION</Value>
-		</Row>
-		<Row>
-			<ModifierId>IMPROVEMENT_ADD_PRODUCTION_INDUSTRIALIZATION</ModifierId>
-			<Name>Amount</Name>
-			<Value>1</Value>
-		</Row>
-		<Row>
-			<ModifierId>IMPROVEMENT_ADD_PRODUCTION_INDUSTRIALIZATION</ModifierId>
-			<Name>YieldType</Name>
-			<Value>YIELD_PRODUCTION</Value>
-		</Row>
-		<Row>
-			<ModifierId>IMPROVEMENT_ADD_SCIENCE</ModifierId>
-			<Name>Amount</Name>
-			<Value>1</Value>
-		</Row>
-		<Row>
-			<ModifierId>IMPROVEMENT_ADD_SCIENCE</ModifierId>
-			<Name>YieldType</Name>
-			<Value>YIELD_SCIENCE</Value>
 		</Row>
 		<!--伟人加文化值-->
 		<Row>

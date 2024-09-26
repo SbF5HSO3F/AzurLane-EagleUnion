@@ -18,6 +18,18 @@
 		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_EAGLE_UNION_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
 			<Text>白鹰拥有强大的工业实力，先进的科学技术以及各势力中最优秀的航空兵器。武器的设计理念兼顾性能与数量。现在基于贯彻自身正义和为世界带来和平的理念留在碧蓝航线，在与赤色中轴和塞壬的战斗中有着活跃表现。</Text>
 		</Replace>
+    	<Replace Tag="LOC_CIVINFO_AZURLANE_CORRESPOND" Language="zh_Hans_CN">
+      		<Text>参考原型</Text>
+    	</Replace>
+		<Replace Tag="LOC_CIVINFO_CORRESPOND_EAGLE_UNION" Language="zh_Hans_CN">
+      		<Text>美利坚合众国</Text>
+    	</Replace>
+    	<Replace Tag="LOC_CIVINFO_AZURLANE_ROLE" Language="zh_Hans_CN">
+      		<Text>实装角色数</Text>
+    	</Replace>
+    	<Replace Tag="LOC_CIVINFO_ROLE_EAGLE_UNION" Language="zh_Hans_CN">
+      		<Text>142位</Text>
+    	</Replace>
 		<!--文明能力-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_NAME" Language="zh_Hans_CN">
 			<Text>科技与工业的璀璨</Text>

@@ -50,8 +50,8 @@
 	</District_CitizenYieldChanges>
 	<District_Adjacencies>
 		<!--获得-->
-		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Santa_Clara_Valley_CAMPUS"/>
-		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Santa_Clara_Valley_HARBOR"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Santa_Clara_Valley_Campus"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Santa_Clara_Valley_Harbor"/>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="District_Production"/>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Government_Production"/>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Santa_Clara_Valley_Districts"/>
@@ -62,8 +62,8 @@
 	</District_Adjacencies>
 	<Adjacency_YieldChanges>
 		<!--获得-->
-		<Row ID="Santa_Clara_Valley_CAMPUS"		Description="LOC_Santa_Clara_Valley_CAMPUS"		YieldType="YIELD_PRODUCTION" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_CAMPUS"/>
-		<Row ID="Santa_Clara_Valley_HARBOR"		Description="LOC_Santa_Clara_Valley_HARBOR"		YieldType="YIELD_PRODUCTION" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_HARBOR"/>
+		<Row ID="Santa_Clara_Valley_Campus"		Description="LOC_Santa_Clara_Valley_CAMPUS"		YieldType="YIELD_PRODUCTION" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_CAMPUS"/>
+		<Row ID="Santa_Clara_Valley_Harbor"		Description="LOC_Santa_Clara_Valley_HARBOR"		YieldType="YIELD_PRODUCTION" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_HARBOR"/>
 		<Row ID="Santa_Clara_Valley_Districts"	Description="LOC_Santa_Clara_Valley_Districts"	YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" OtherDistrictAdjacent="true"/>
 		<!--给予-->
 		<Row ID="CAMPUS_Santa_Clara_Valley"				Description="LOC_CAMPUS_Santa_Clara_Valley"				YieldType="YIELD_SCIENCE"		YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_SANTA_CLARA_VALLEY"/>
@@ -71,63 +71,65 @@
 		<Row ID="Santa_Clara_Valley_Santa_Clara_Valley" Description="LOC_Santa_Clara_Valley_Santa_Clara_Valley" YieldType="YIELD_PRODUCTION"	YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_SANTA_CLARA_VALLEY"/>
 	</Adjacency_YieldChanges>
 	<DistrictModifiers>
+		<!--生产力提供科技值-->
 		<Row>
 			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
 			<ModifierId>SANTA_SCIENCE_COPY</ModifierId>
 		</Row>
+		<!--生产力提供金币-->
 		<Row>
 			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
 			<ModifierId>SANTA_GOLD_COPY</ModifierId>
 		</Row>
-		<Row>
-			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
-			<ModifierId>SANTA_IMPROVEMENT_ADD_SCIENCE</ModifierId>
-		</Row>
-		<Row>
-			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
-			<ModifierId>SANTA_IMPROVEMENT_ADD_PRODUCTION</ModifierId>
-		</Row>
+		<!--随机科技-->
 		<Row>
 			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
 			<ModifierId>SANTA_GRANT_RANDOM_TECHNOLOGY</ModifierId>
 		</Row>
+		<!--改良设施buff-->
 		<Row>
 			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
-			<ModifierId>SANTA_IMPROVEMENT_ADD_PRODUCTION_APPRENTICESHIP</ModifierId>
+			<ModifierId>SANTA_CLARA_IMPROVEMENT_BUFF</ModifierId>
+		</Row>
+		<!--学徒后期buff-->
+		<Row>
+			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
+			<ModifierId>SANTA_CLARA_IMPROVEMENT_BUFF_APPRENTICESHIP</ModifierId>
 		</Row>
 	</DistrictModifiers>
 	<Modifiers>
+		<!--生产力提供科技值-->
 		<Row>
 			<ModifierId>SANTA_SCIENCE_COPY</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_DISTRICT_ADJUST_YIELD_BASED_ON_ADJACENCY_BONUS</ModifierType>
 		</Row>
+		<!--生产力提供金币-->
 		<Row>
 			<ModifierId>SANTA_GOLD_COPY</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_DISTRICT_ADJUST_YIELD_BASED_ON_ADJACENCY_BONUS</ModifierType>
 		</Row>
-		<Row>
-			<ModifierId>SANTA_IMPROVEMENT_ADD_SCIENCE</ModifierId>
-			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
-			<SubjectRequirementSetId>EAGLE_UNION_PLOT_HAS_IMPROVEMENT</SubjectRequirementSetId>
-		</Row>
-		<Row>
-			<ModifierId>SANTA_IMPROVEMENT_ADD_PRODUCTION</ModifierId>
-			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
-			<SubjectRequirementSetId>EAGLE_UNION_PLOT_HAS_IMPROVEMENT</SubjectRequirementSetId>
-		</Row>
+		<!--随机科技-->
 		<Row>
 			<ModifierId>SANTA_GRANT_RANDOM_TECHNOLOGY</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_GRANT_RANDOM_TECHNOLOGY</ModifierType>
 			<RunOnce>True</RunOnce>
 			<Permanent>True</Permanent>
 		</Row>
+		<!--改良设施buff-->
 		<Row>
-			<ModifierId>SANTA_IMPROVEMENT_ADD_PRODUCTION_APPRENTICESHIP</ModifierId>
+			<ModifierId>SANTA_CLARA_IMPROVEMENT_BUFF</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_PLOT_HAS_IMPROVEMENT</SubjectRequirementSetId>
+		</Row>
+		<!--学徒后期buff-->
+		<Row>
+			<ModifierId>SANTA_CLARA_IMPROVEMENT_BUFF_APPRENTICESHIP</ModifierId>
 			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
 			<SubjectRequirementSetId>EAGLE_UNION_APPRENTICESHIP_BUFF</SubjectRequirementSetId>
 		</Row>
 	</Modifiers>
 	<ModifierArguments>
+		<!--生产力提供科技值-->
 		<Row>
 			<ModifierId>SANTA_SCIENCE_COPY</ModifierId>
 			<Name>DistrictType</Name>
@@ -143,6 +145,7 @@
 			<Name>YieldTypeToMirror</Name>
 			<Value>YIELD_PRODUCTION</Value>
 		</Row>
+		<!--生产力提供金币-->
 		<Row>
 			<ModifierId>SANTA_GOLD_COPY</ModifierId>
 			<Name>DistrictType</Name>
@@ -158,38 +161,31 @@
 			<Name>YieldTypeToMirror</Name>
 			<Value>YIELD_PRODUCTION</Value>
 		</Row>
-		<Row>
-			<ModifierId>SANTA_IMPROVEMENT_ADD_SCIENCE</ModifierId>
-			<Name>Amount</Name>
-			<Value>1</Value>
-		</Row>
-		<Row>
-			<ModifierId>SANTA_IMPROVEMENT_ADD_SCIENCE</ModifierId>
-			<Name>YieldType</Name>
-			<Value>YIELD_SCIENCE</Value>
-		</Row>
-		<Row>
-			<ModifierId>SANTA_IMPROVEMENT_ADD_PRODUCTION</ModifierId>
-			<Name>Amount</Name>
-			<Value>1</Value>
-		</Row>
-		<Row>
-			<ModifierId>SANTA_IMPROVEMENT_ADD_PRODUCTION</ModifierId>
-			<Name>YieldType</Name>
-			<Value>YIELD_PRODUCTION</Value>
-		</Row>
+		<!--随机科技-->
 		<Row>
 			<ModifierId>SANTA_GRANT_RANDOM_TECHNOLOGY</ModifierId>
 			<Name>Amount</Name>
 			<Value>1</Value>
 		</Row>
+		<!--改良设施buff-->
 		<Row>
-			<ModifierId>SANTA_IMPROVEMENT_ADD_PRODUCTION_APPRENTICESHIP</ModifierId>
+			<ModifierId>SANTA_CLARA_IMPROVEMENT_BUFF</ModifierId>
+			<Name>Amount</Name>
+			<Value>1, 1</Value>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_CLARA_IMPROVEMENT_BUFF</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION, YIELD_SCIENCE</Value>
+		</Row>
+		<!--学徒后期buff-->
+		<Row>
+			<ModifierId>SANTA_CLARA_IMPROVEMENT_BUFF_APPRENTICESHIP</ModifierId>
 			<Name>Amount</Name>
 			<Value>1</Value>
 		</Row>
 		<Row>
-			<ModifierId>SANTA_IMPROVEMENT_ADD_PRODUCTION_APPRENTICESHIP</ModifierId>
+			<ModifierId>SANTA_CLARA_IMPROVEMENT_BUFF_APPRENTICESHIP</ModifierId>
 			<Name>YieldType</Name>
 			<Value>YIELD_PRODUCTION</Value>
 		</Row>

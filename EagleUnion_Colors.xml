@@ -4,49 +4,70 @@
 <!-- DateCreated: 2/26/2023 8:34:35 PM -->
 <GameData>
 	<Colors>
+		<!--Default Colors-->
+		<Row>
+			<Type>EAGLE_UNION_WHITE</Type>
+			<Color>249,249,249,255</Color>
+		</Row>
 		<!--埃塞克斯：浅紫色-->
 		<Row>
-			<Type>COLOR_Essex_CV9_PRIMARY_Light_purple</Type>
+			<Type>ESSEX_CV9_LIGHT_PURPLE</Type>
 			<Color>150,129,186,255</Color>
 		</Row>
 		<Row>
-			<Type>COLOR_Essex_CV9_SECONDARY_Light_purple</Type>
-			<Color>255,255,255,255</Color>
+			<Type>ESSEX_CV9_BULE</Type>
+			<Color>28,75,129,255</Color>
+		</Row>
+		<Row>
+			<Type>ESSEX_CV9_RED</Type>
+			<Color>211,5,34,255</Color>
 		</Row>
 		<!--佐治亚：深蓝色-->
 		<Row>
-			<Type>COLOR_Georgia_PRIMARY_Dark_blue</Type>
+			<Type>GEORGIA_DARK_BULE</Type>
 			<Color>97,120,190,255</Color>
 		</Row>
 		<Row>
-			<Type>COLOR_Georgia_SECONDARY_Dark_blue</Type>
-			<Color>255,255,255,255</Color>
+			<Type>GEORGIA_GARY_BULE</Type>
+			<Color>61,89,127,255</Color>
+		</Row>
+		<Row>
+			<Type>GEORGIA_GARY</Type>
+			<Color>174,187,190,255</Color>
 		</Row>
 		<!--新泽西：淡紫蓝-->
 		<Row>
-			<Type>COLOR_New_Jersey_BB62_PRIMARY_Lilac_blue</Type>
-			<Color>182,226,252,255</Color>
+			<Type>NEW_JERSEY_LILAC_BULE</Type>
+			<Color>91,99,157,255</Color>
 		</Row>
 		<Row>
-			<Type>COLOR_New_Jersey_BB62_SECONDARY_Lilac_blue</Type>
-			<Color>255,255,255,255</Color>
+			<Type>NEW_JERSEY_GARY</Type>
+			<Color>214,219,222,255</Color>
+		</Row>
+		<Row>
+			<Type>NEW_JERSEY_DARK_BULE</Type>
+			<Color>42,50,76,255</Color>
+		</Row>
+		<Row>
+			<Type>NEW_JERSEY_LIGHT_BULE</Type>
+			<Color>93,188,207,255</Color>
 		</Row>
 		<!--海伦娜：天蓝色-->
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_HELENA_CL50_PRIMARY</Type>
+			<Type>HELENA_SKY_BULE</Type>
 			<Color>105,158,245,255</Color>
 		</Row>
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_HELENA_CL50_SECONDARY</Type>
-			<Color>255,255,255,255</Color>
+			<Type>HELENA_DARK_BULE</Type>
+			<Color>35,64,107,255</Color>
 		</Row>
 		<!--艾伦·萨姆纳：宝石红-->
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_ALLEN_M_SUMNER_DD692_PRIMARY</Type>
+			<Type>ALLEN_M_SUMNER_DD692_RED</Type>
 			<Color>200,5,47,255</Color>
 		</Row>
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_ALLEN_M_SUMNER_DD692_SECONDARY</Type>
+			<Type>ALLEN_M_SUMNER_DD692_BULE</Type>
 			<Color>53,60,95,255</Color>
 		</Row>
 	</Colors>
@@ -55,36 +76,46 @@
 		<Row>
 			<Type>LEADER_ESSEX_CV9</Type>
 			<Usage>Unique</Usage>
-			<PrimaryColor>COLOR_Essex_CV9_PRIMARY_Light_purple</PrimaryColor>
-			<SecondaryColor>COLOR_Essex_CV9_SECONDARY_Light_purple</SecondaryColor>
+			<PrimaryColor>ESSEX_CV9_LIGHT_PURPLE</PrimaryColor>
+			<SecondaryColor>EAGLE_UNION_WHITE</SecondaryColor>
+			<Alt1PrimaryColor>ESSEX_CV9_BULE</Alt1PrimaryColor>
+			<Alt1SecondaryColor>ESSEX_CV9_RED</Alt1SecondaryColor>
 		</Row>
 		<!--佐治亚：深蓝色-->
 		<Row>
 			<Type>LEADER_GEORGIA</Type>
 			<Usage>Unique</Usage>
-			<PrimaryColor>COLOR_Georgia_PRIMARY_Dark_blue</PrimaryColor>
-			<SecondaryColor>COLOR_Georgia_SECONDARY_Dark_blue</SecondaryColor>
+			<PrimaryColor>GEORGIA_DARK_BULE</PrimaryColor>
+			<SecondaryColor>EAGLE_UNION_WHITE</SecondaryColor>
+			<Alt1PrimaryColor>GEORGIA_GARY_BULE</Alt1PrimaryColor>
+			<Alt1SecondaryColor>GEORGIA_GARY</Alt1SecondaryColor>
 		</Row>
 		<!--新泽西：淡紫蓝-->
 		<Row>
 			<Type>LEADER_NEW_JERSEY_BB62</Type>
 			<Usage>Unique</Usage>
-			<PrimaryColor>COLOR_New_Jersey_BB62_PRIMARY_Lilac_blue</PrimaryColor>
-			<SecondaryColor>COLOR_New_Jersey_BB62_SECONDARY_Lilac_blue</SecondaryColor>
+			<PrimaryColor>NEW_JERSEY_LILAC_BULE</PrimaryColor>
+			<SecondaryColor>NEW_JERSEY_GARY</SecondaryColor>
+			<Alt1PrimaryColor>NEW_JERSEY_DARK_BULE</Alt1PrimaryColor>
+			<Alt1SecondaryColor>NEW_JERSEY_LIGHT_BULE</Alt1SecondaryColor>
 		</Row>
 		<!--海伦娜：天蓝色-->
 		<Row>
 			<Type>LEADER_HELENA_CL50</Type>
 			<Usage>Unique</Usage>
-			<PrimaryColor>COLOR_PLAYER_LEADER_HELENA_CL50_PRIMARY</PrimaryColor>
-			<SecondaryColor>COLOR_PLAYER_LEADER_HELENA_CL50_SECONDARY</SecondaryColor>
+			<PrimaryColor>HELENA_SKY_BULE</PrimaryColor>
+			<SecondaryColor>EAGLE_UNION_WHITE</SecondaryColor>
+			<Alt1PrimaryColor>HELENA_DARK_BULE</Alt1PrimaryColor>
+			<Alt1SecondaryColor>EAGLE_UNION_WHITE</Alt1SecondaryColor>
 		</Row>
 		<!--艾伦·萨姆纳：宝石红-->
 		<Row>
 			<Type>LEADER_ALLEN_M_SUMNER_DD692</Type>
 			<Usage>Unique</Usage>
-			<PrimaryColor>COLOR_PLAYER_LEADER_ALLEN_M_SUMNER_DD692_PRIMARY</PrimaryColor>
-			<SecondaryColor>COLOR_PLAYER_LEADER_ALLEN_M_SUMNER_DD692_SECONDARY</SecondaryColor>
+			<PrimaryColor>ALLEN_M_SUMNER_DD692_BULE</PrimaryColor>
+			<SecondaryColor>ALLEN_M_SUMNER_DD692_RED</SecondaryColor>
+			<Alt1PrimaryColor>ALLEN_M_SUMNER_DD692_RED</Alt1PrimaryColor>
+			<Alt1SecondaryColor>ALLEN_M_SUMNER_DD692_BULE</Alt1SecondaryColor>
 		</Row>
 	</PlayerColors>
 </GameData>

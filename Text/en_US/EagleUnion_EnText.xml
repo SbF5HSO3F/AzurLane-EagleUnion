@@ -18,6 +18,18 @@
 		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_EAGLE_UNION_CHAPTER_HISTORY_PARA_1" Language="en_US">
 			<Text>This civilizations concentrated their strength on developing aircraft carriers and powerful heavy cruisers, which grants them upper hand when it comes to air superiority and open naval combat. Having repair ship as their auxiliary allows to regenerate health in battle. Eagle union represents the true spirit of freedom!</Text>
 		</Replace>
+		<Replace Tag="LOC_CIVINFO_AZURLANE_CORRESPOND" Language="en_US">
+      		<Text>Reference Prototype</Text>
+    	</Replace>
+		<Replace Tag="LOC_CIVINFO_CORRESPOND_EAGLE_UNION" Language="en_US">
+      		<Text>United States of America</Text>
+    	</Replace>
+    	<Replace Tag="LOC_CIVINFO_AZURLANE_ROLE" Language="en_US">
+      		<Text>Number of Characters installed</Text>
+    	</Replace>
+    	<Replace Tag="LOC_CIVINFO_ROLE_EAGLE_UNION" Language="en_US">
+      		<Text>142</Text>
+    	</Replace>
 		<!--文明能力-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_NAME" Language="en_US">
 			<Text>The Brilliance of Technology and Industry</Text>
