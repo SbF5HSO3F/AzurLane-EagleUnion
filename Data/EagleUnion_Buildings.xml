@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Buildings -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：998-->
+<!-- DateCreated: 2/21/2023 9:12:39 PM -->
+<GameData>
+	<Types>
+		<Row Type="BUILDING_NEWPORT_NEWS_SHIPBUILDING"	Kind="KIND_BUILDING"/>
+	</Types>
+	<BuildingReplaces>
+		<Row CivUniqueBuildingType="BUILDING_NEWPORT_NEWS_SHIPBUILDING" ReplacesBuildingType="BUILDING_SHIPYARD"/>
+	</BuildingReplaces>
+	<Buildings>
+		<Row BuildingType="BUILDING_NEWPORT_NEWS_SHIPBUILDING"
+			 Name="LOC_BUILDING_NEWPORT_NEWS_SHIPBUILDING_NAME"
+			 Description="LOC_BUILDING_NEWPORT_NEWS_SHIPBUILDING_DESCRIPTION" 
+			 PrereqTech="TECH_MASS_PRODUCTION"
+			 PrereqDistrict="DISTRICT_HARBOR" 
+			 PurchaseYield="YIELD_GOLD"
+			 Cost="290" 
+			 AdvisorType="ADVISOR_GENERIC"
+			 Maintenance="2"
+			 CitizenSlots="3"
+			 TraitType="TRAIT_CIVILIZATION_BUILDING_NEWPORT_NEWS_SHIPBUILDING"/>
+	</Buildings>
+	<BuildingPrereqs>
+		<Row Building="BUILDING_NEWPORT_NEWS_SHIPBUILDING"	PrereqBuilding="BUILDING_LIGHTHOUSE"/>
+		<Row Building="BUILDING_SEAPORT"					PrereqBuilding="BUILDING_NEWPORT_NEWS_SHIPBUILDING"/>
+	</BuildingPrereqs>
+	<Building_YieldChanges>
+		<Row BuildingType="BUILDING_NEWPORT_NEWS_SHIPBUILDING" YieldType="YIELD_PRODUCTION" YieldChange="3"/>
+	</Building_YieldChanges>
+	<Building_GreatPersonPoints>
+		<Row BuildingType="BUILDING_NEWPORT_NEWS_SHIPBUILDING" GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER" PointsPerTurn="1"/>
+		<Row BuildingType="BUILDING_NEWPORT_NEWS_SHIPBUILDING" GreatPersonClassType="GREAT_PERSON_CLASS_ADMIRAL" PointsPerTurn="1"/>
+	</Building_GreatPersonPoints>
+	<Building_YieldDistrictCopies>
+		<Row BuildingType="BUILDING_NEWPORT_NEWS_SHIPBUILDING" OldYieldType="YIELD_GOLD" NewYieldType="YIELD_PRODUCTION"/>
+	</Building_YieldDistrictCopies>
+	<Building_CitizenYieldChanges>
+		<Row BuildingType="BUILDING_NEWPORT_NEWS_SHIPBUILDING" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row BuildingType="BUILDING_NEWPORT_NEWS_SHIPBUILDING" YieldType="YIELD_PRODUCTION" YieldChange="3"/>
+	</Building_CitizenYieldChanges>
+	<BuildingModifiers>
+		<Row>
+			<BuildingType>BUILDING_NEWPORT_NEWS_SHIPBUILDING</BuildingType>
+			<ModifierId>ENTERPRISE_HREAT_BUFF</ModifierId>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_NEWPORT_NEWS_SHIPBUILDING</BuildingType>
+			<ModifierId>SHIPBUILDING_ADD_PRODUCTION</ModifierId>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_NEWPORT_NEWS_SHIPBUILDING</BuildingType>
+			<ModifierId>NEWPORT_NEWS_TRAINED_DISCOUNT</ModifierId>
+		</Row>
+		<!--威尼斯-->
+		<!--近战-->
+		<Row>
+			<BuildingType>BUILDING_NEWPORT_NEWS_SHIPBUILDING</BuildingType>
+			<ModifierId>NEWPORT_NEWS_EXTRA_NAVAL_MELEE</ModifierId>
+		</Row>
+		<!--原程-->
+		<Row>
+			<BuildingType>BUILDING_NEWPORT_NEWS_SHIPBUILDING</BuildingType>
+			<ModifierId>NEWPORT_NEWS_EXTRA_NAVAL_RANGED</ModifierId>
+		</Row>
+		<!--袭击-->
+
+		<!--运输-->
+		<Row>
+			<BuildingType>BUILDING_NEWPORT_NEWS_SHIPBUILDING</BuildingType>
+			<ModifierId>NEWPORT_NEWS_EXTRA_NAVAL_CARRIER</ModifierId>
+	</Row>
+	</BuildingModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>ENTERPRISE_HREAT_BUFF</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_GRANT_ABILITY_FOR_TRAINED_UNITS</ModifierType>
+			<Permanent>true</Permanent>
+		</Row>
+		<Row>
+			<ModifierId>SHIPBUILDING_ADD_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_PLOT_IS_COAST</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>NEWPORT_NEWS_TRAINED_DISCOUNT</ModifierId>
+			<ModifierType>MODIFIER_CITY_CORPS_ARMY_ADJUST_DISCOUNT</ModifierType>
+		</Row>
+		<!--威尼斯-->
+		<!--近战-->
+		<Row>
+			<ModifierId>NEWPORT_NEWS_EXTRA_NAVAL_MELEE</ModifierId>
+			<ModifierType>MODIFIER_EAGLE_UNION_SINGLE_CITY_ADJUST_EXTRA_UNIT_COPY_TAG</ModifierType>
+		</Row>
+		<!--原程-->
+		<Row>
+			<ModifierId>NEWPORT_NEWS_EXTRA_NAVAL_RANGED</ModifierId>
+			<ModifierType>MODIFIER_EAGLE_UNION_SINGLE_CITY_ADJUST_EXTRA_UNIT_COPY_TAG</ModifierType>
+		</Row>
+		<!--袭击-->
+
+		<!--运输-->
+		<Row>
+			<ModifierId>NEWPORT_NEWS_EXTRA_NAVAL_CARRIER</ModifierId>
+			<ModifierType>MODIFIER_EAGLE_UNION_SINGLE_CITY_ADJUST_EXTRA_UNIT_COPY_TAG</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>ENTERPRISE_HREAT_BUFF</ModifierId>
+			<Name>AbilityType</Name>
+			<Value>ABILITY_ENTERPRISE_HREAT</Value>
+		</Row>
+		<Row>
+			<ModifierId>SHIPBUILDING_ADD_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>SHIPBUILDING_ADD_PRODUCTION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<Row>
+			<ModifierId>NEWPORT_NEWS_TRAINED_DISCOUNT</ModifierId>
+			<Name>UnitDomain</Name>
+			<Value>DOMAIN_SEA</Value>
+		</Row>
+		<Row>
+			<ModifierId>NEWPORT_NEWS_TRAINED_DISCOUNT</ModifierId>
+			<Name>Amount</Name>
+			<Value>25</Value>
+		</Row>
+		<!--威尼斯-->
+		<!--近战-->
+		<Row>
+			<ModifierId>NEWPORT_NEWS_EXTRA_NAVAL_MELEE</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>NEWPORT_NEWS_EXTRA_NAVAL_MELEE</ModifierId>
+			<Name>Tag</Name>
+			<Value>CLASS_NAVAL_MELEE</Value>
+		</Row>
+		<!--原程-->
+		<Row>
+			<ModifierId>NEWPORT_NEWS_EXTRA_NAVAL_RANGED</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>NEWPORT_NEWS_EXTRA_NAVAL_RANGED</ModifierId>
+			<Name>Tag</Name>
+			<Value>CLASS_NAVAL_RANGED</Value>
+		</Row>
+		<!--袭击-->
+
+		<!--运输-->
+		<Row>
+			<ModifierId>NEWPORT_NEWS_EXTRA_NAVAL_CARRIER</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>NEWPORT_NEWS_EXTRA_NAVAL_CARRIER</ModifierId>
+			<Name>Tag</Name>
+			<Value>CLASS_NAVAL_CARRIER</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

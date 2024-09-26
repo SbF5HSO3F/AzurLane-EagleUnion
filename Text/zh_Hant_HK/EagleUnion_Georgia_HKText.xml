@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Georgia_Text -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 優先順序：78-->
+<!-- DateCreated: 8/19/2023 10:35:42 AM -->
+<GameData>
+	<LocalizedText>
+		<!--領袖介紹-->
+		<Replace Tag="LOC_LEADER_GEORGIA_NAME" Language="zh_Hant_HK">
+			<Text>佐治亞</Text>
+		</Replace>
+		<!--載入-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_GEORGIA" Language="zh_Hant_HK">
+			<Text>佐治亞，恭喜你，您終於進入了人們的視野。雖然人們對你瞭解頗少，但很快你就能向人們展現自己的不同之處——那巨大口徑的火炮著實威力無比。前進吧，用炮火粉碎敵人的防禦，您將讓人們再次意識到衣阿華級戰列艦的威名。</Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GEORGIA_QUOTE" Language="zh_Hant_HK">
+			<Text>再堅固的裝甲，也只有被巨炮擊碎的命運！</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GEORGIA_CHAPTER_CAPSULE_BODY" Language="zh_Hant_HK">
+			<Text>作為白鷹的領袖，強大的艦炮、國際貿易路線與享有盛名的種植園使得佐治亞所向披靡。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GEORGIA_CHAPTER_DETAILED_BODY" Language="zh_Hant_HK">
+			<Text>佐治亞身為衣阿華級戰列艦原型方案Ⅳ，擁有強悍無比的火力，這使得她進攻城市與海軍有獨特的優勢———佐治亞的所有單位攻擊區域防禦與海軍時擁有 [ICON_Strength] 戰鬥力加成，同時遠端單位與海軍還可對城市輸出全額傷害。因此佐治亞的海軍實力不俗，更何況還有強大的特色單位加持。佐治亞在遊戲前期需要儘快探索周邊，以便利用強大的國際貿易路線和種植園加速自身的發展，然後發展工業區鞏固前期累積下來的優勢。這一切使得佐治亞適合取得征服勝利與文化勝利，她在這兩個方面上的實力不容小覷。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GEORGIA_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
+			<Text>衣阿華級戰列艦原型方案Ⅳ只是1938年5月論證衣阿華級戰列艦時提出的一系列方案之一。因此，歷史上佐治亞號戰列艦只是人們腦海中的一個念想（這個念想也不一定叫作佐治亞），並沒有對應的艦船建成服役。她的唯二出現的地方只有《戰艦世界》與《碧藍航線》。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GEORGIA_CHAPTER_HISTORY_PARA_2" Language="zh_Hant_HK">
+			<Text>在《戰艦世界》中，該艦曾出現在早期遊戲宣傳繪中，但一直被雪藏。2019年2月21日，大白艦隊環球航行110周年紀念之際，該模型被重新推出。不同的是開發者為她換裝了三座雙聯裝457mmMKA炮塔。彌補了原來只有MK6的遺憾，而整體重量可以做到基本不變。不過，在設計衣阿華級的過程中，美國海軍從未考慮過雙聯裝457mm的方案，只考慮三聯裝方案，這也是導致設計超重得不到通過的一個重要原因。《戰艦世界》中佐治亞的船體狀態為1945年。而在《碧藍航線》中，佐治亞作為《碧藍航線》與《戰艦世界》舉行的二期聯動的方案艦出場。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GEORGIA_CHAPTER_HISTORY_PARA_3" Language="zh_Hant_HK">
+			<Text>佐治亞的命名來源於美國的佐治亞州，美國東南部7個州之一。在歷史上，曾有一維吉尼亞級戰列艦被命名為佐治亞，她曾是著名的大白艦隊的一員。</Text>
+		</Replace>
+		<!--領袖議程-->
+		<Replace Tag="LOC_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET_NAME" Language="zh_Hant_HK">
+			<Text>大白艦隊的遺產</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>盡可能的發展海軍以探索世界。喜歡探索世界的文明，討厭閉門不出的文明。</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_THE_HERITAGE_OF_GREAT_WHITE_FLEET_HIGH_EXPLORATION" Language="zh_Hant_HK">
+			<Text>（您積極的探索世界）</Text>
+		</Replace>
+		<Replace Tag="LOC_THE_HERITAGE_OF_GREAT_WHITE_FLEET_HIGH_EXPLORATION" Language="zh_Hant_HK">
+			<Text>佐治亞喜歡積極探索世界的文明</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_THE_HERITAGE_OF_GREAT_WHITE_FLEET_LOW_EXPLORATION" Language="zh_Hant_HK">
+			<Text>（您閉門不出）</Text>
+		</Replace>
+		<Replace Tag="LOC_THE_HERITAGE_OF_GREAT_WHITE_FLEET_LOW_EXPLORATION" Language="zh_Hant_HK">
+			<Text>佐治亞討厭忽視對世界進行探索的文明</Text>
+		</Replace>
+		<!--領袖能力-->
+		<Replace Tag="LOC_TRAIT_LEADER_HEAVY_BARREL_BLASTER_NAME" Language="zh_Hant_HK">
+			<Text>巨炮轟鳴</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_HEAVY_BARREL_BLASTER_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>種植園+3 [ICON_Culture] 文化值，+1 [ICON_TradeRoute] 貿易路線容量並對周邊單元格釋放文化炸彈。[ICON_TradeRoute] 貿易路線目的地城市中的每個專業化區域提供+2 [ICON_Culture] 文化值，若為國際 [ICON_TradeRoute] 貿易路線，則+4 [ICON_Culture] 文化值。所有單位在攻擊海軍單位和區域防禦時+7 [ICON_Strength] 戰鬥力，所有海軍單位與遠端單位可對城市輸出全額傷害。研究完“高級彈道學”後獲得特色單位“衣阿華級戰列艦原型方案Ⅳ”。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_IOWA_CLASS_PLAN_4_NAME" Language="zh_Hant_HK">
+			<Text>衣阿華級戰列艦原型方案Ⅳ</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_IOWA_CLASS_PLAN_4_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>取代導彈巡洋艦的佐治亞特色原子能海軍單位，解鎖更早。造價昂貴，但擁有強大的射程和強悍的遠程戰鬥力。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_IOWA_CLASS_PLAN_4_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
+			<Text>這是1938年5月論證衣阿華級戰列艦時提出的一系列方案之一，當時被列為方案Ⅳ。該方案以南達科他級戰列艦為基礎，拉長艦體，改用雙煙囪。同時沿用南達科他級的推進器設計，使得設計航速可達33節。計畫採用三座三聯裝406mm/45 MK6炮塔，與同期其他採用50倍徑406mm主炮的方案相比，艦體稍短，噸位較輕，但顯得火力不足。事實上，如果衣阿華級最終採用MK6炮塔的設計，那麼除了能提高6節航速外並沒有其他效應。</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY_TEXT" Language="zh_Hant_HK">
+			<Text>+{1_Amount}，攻擊區域防禦或海軍單位</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>攻擊區域防禦或海軍單位時+7 [ICON_Strength] 戰鬥力</Text>
+		</Replace>
+		<!--外交文本-->
+		<!--同意聲明友誼-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>我早有此意，很高興接受你們的友誼。</Text>
+		</Row>
+		<!--拒絕聲明友誼-->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>雖然我很想接受這份友誼，但我的人民還需考慮。</Text>
+		</Row>
+		<!--請求聲明友誼-->
+		<Row Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>我想向世界宣佈我們之間的友誼，你願意嗎？</Text>
+		</Row>
+		<!--請求聲明友誼被接受-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_GEORGIA_CV9_ANY" Language="zh_Hant_HK">
+			<Text>好，我們的友誼將會像碧海青天一樣深遠。</Text>
+		</Row>
+		<!--請求聲明友誼被拒絕-->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>看樣子你還沒準備好。沒關係，等你準備好時我還會再來的。</Text>
+		</Row>
+		<!--被宣戰-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>不錯，你勇氣可嘉。不過你的軍隊將會被炮火所粉碎，而這巨炮的轟鳴就是你們最後的回憶！</Text>
+		</Row>
+		<!--主動宣戰-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>很可惜，但我想現在維持表面的和平已經毫無意義。所以，迎接被巨炮擊碎的命運吧！</Text>
+		</Row>
+		<!--接受使節派遣-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_GEORGIA_CV9_ANY" Language="zh_Hant_HK">
+			<Text>你們的使節已經安全到訪，他們將受到我們的熱烈招待。</Text>
+		</Row>
+		<!--拒絕使節派遣-->
+		<Row Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>不行，我們之間還沒到那種地步。</Text>
+		</Row>
+		<!--請求派遣使節-->
+		<Row Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>汽水、水果……我的使節帶來的遠不止這些——他們承載我的熱情與好意，你願意接待嗎？</Text>
+		</Row>
+		<!--被譴責-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>我早知你會如此。不過，我挺欣賞你這樣做的勇氣。</Text>
+		</Row>
+		<!--譴責玩家-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>我在盡可能與你建立友好關係。很明顯，這一切都是無用功。（譴責你）</Text>
+		</Row>
+		<!--初次見面-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>我是白鷹所屬戰列艦，佐治亞。比起那幾位遠房姐妹，我的主炮口徑更大一些。而我，會用這主炮，粉碎擋在面前的所有敵人。所以，你會成為我的敵人嗎，朋友？</Text>
+		</Row>
+		<!--初次見面，提供最近城市位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>想要到我們附近的城市品嘗水果嗎？佐治亞的“桃子之州”可不是浪得虛名的。</Text>
+		</Row>
+		<!--初次見面，玩家提供最近城市位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>我很樂意拜訪你的都市。</Text>
+		</Row>
+		<!--初次見面，請求交換首都位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>讓我們相互交換關於首都的位置吧。坦誠相待，這對你我都好。</Text>
+		</Row>
+		<!--領袖對玩家有好感-->
+		<Row Tag="LOC_DIPLO_KUDO_EXIT_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>我有一個夢想，那就是有一天四海從此清平。我想有你這樣的人在，這一天也不遠了。</Text>
+		</Row>
+		<!--領袖敵視玩家-->
+		<Row Tag="LOC_DIPLO_WARNING_EXIT_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>光有雄心壯志，沒有行動，可是什麼也做不了的哦？</Text>
+		</Row>
+		<!--請求結盟-->
+		<Row Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>大海空闊富有魅力，遠洋艦隊正環球航行，尋求不可多得美景。我想我們可以結盟了。</Text>
+		</Row>
+		<!--要求移開邊境軍隊-->
+		<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>在白鷹的邊界，你的部隊正在集結，我想我們之間沒必要那麼虛偽。</Text>
+		</Row>
+		<!--經受不住時間考驗-->
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>我有個夢想，那就是有一天，大海上不再有硝煙，所有人都回到和平之中……不過現在我再也看不到那一天了……</Text>
+		</Row>
+		<!--同意交易-->
+		<Row Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>這場交易對你我都有好處。</Text>
+		</Row>
+		<!--拒絕交易-->
+		<Row Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hant_HK">
+			<Text>很明顯我不可能同意。</Text>
+		</Row>
+	</LocalizedText>
+</GameData>

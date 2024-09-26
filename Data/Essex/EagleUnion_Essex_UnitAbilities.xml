@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Essex_UnitAbilities -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：899-->
+<!-- DateCreated: 8/18/2023 7:55:45 PM -->
+<GameData>
+	<Types>
+		<Row Type="ABILITY_ESSEX_NAYY_BUFF"				Kind="KIND_ABILITY"/>
+		<Row Type="ABILITY_ESSEX_ALL_UNITS_BUFF"		Kind="KIND_ABILITY"/>
+	</Types>
+	<TypeTags>
+		<Row Type="ABILITY_ESSEX_NAYY_BUFF"				Tag="CLASS_NAVAL_MELEE"/>
+		<Row Type="ABILITY_ESSEX_NAYY_BUFF"				Tag="CLASS_NAVAL_RANGED"/>
+		<Row Type="ABILITY_ESSEX_NAYY_BUFF"				Tag="CLASS_NAVAL_RAIDER"/>
+		<Row Type="ABILITY_ESSEX_NAYY_BUFF"				Tag="CLASS_NAVAL_CARRIER"/>
+		<Row Type="ABILITY_ESSEX_ALL_UNITS_BUFF"		Tag="CLASS_ALL_UNITS"/>
+	</TypeTags>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_ESSEX_NAYY_BUFF"		Name="LOC_ABILITY_ESSEX_NAYY_BUFF_NAME"			Description="LOC_ABILITY_ESSEX_NAYY_BUFF_DESCRIPTION"		Inactive="true"/>
+		<Row UnitAbilityType="ABILITY_ESSEX_ALL_UNITS_BUFF"	Name="LOC_ABILITY_ESSEX_ALL_UNITS_BUFF_NAME"	Description="LOC_ABILITY_ESSEX_ALL_UNITS_BUFF_DESCRIPTION"	Inactive="true"/>
+	</UnitAbilities>
+	<ModifierStrings>
+		<Row ModifierId="ESSEX_NAVY_STRENGTH"		Context="Preview" Text="LOC_PREVIEW_ESSEX_NAVY_STRENGTH_DESCRIPTION"/>
+		<Row ModifierId="ESSEX_UNIT_ADD_COMBAT"		Context="Preview" Text="LOC_PREVIEW_ESSEX_UNIT_ADD_COMBAT_DESCRIPTION"/>
+	</ModifierStrings>
+	<UnitAbilityModifiers>
+		<!--善战之舰+7-->
+		<Row>
+			<UnitAbilityType>ABILITY_ESSEX_NAYY_BUFF</UnitAbilityType>
+			<ModifierId>ESSEX_NAVY_STRENGTH</ModifierId>
+		</Row>
+		<!--善战之舰+1buff-->
+		<Row>
+			<UnitAbilityType>ABILITY_ESSEX_NAYY_BUFF</UnitAbilityType>
+			<ModifierId>ESSEX_NAVY_ATTACH_MODIFIER</ModifierId>
+		</Row>
+		<Row>
+			<UnitAbilityType>ABILITY_ESSEX_NAYY_BUFF</UnitAbilityType>
+			<ModifierId>ESSEX_NAVY_ATTACH_COMBAT_MODIFIER</ModifierId>
+		</Row>
+		<!--移动力+1，视野范围+1，从海军获得加力-->
+		<Row>
+			<UnitAbilityType>ABILITY_ESSEX_ALL_UNITS_BUFF</UnitAbilityType>
+			<ModifierId>ESSEX_UNIT_ADD_MOVEMENT</ModifierId>
+		</Row>
+		<Row>
+			<UnitAbilityType>ABILITY_ESSEX_ALL_UNITS_BUFF</UnitAbilityType>
+			<ModifierId>ESSEX_UNIT_ADD_SIGHT</ModifierId>
+		</Row>
+		<!--<Row>
+			<UnitAbilityType>ABILITY_ESSEX_ALL_UNITS_BUFF</UnitAbilityType>
+			<ModifierId>ESSEX_UNIT_ADD_COMBAT</ModifierId>
+		</Row>-->
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<!--善战之舰+7-->
+		<Row>
+			<ModifierId>ESSEX_NAVY_STRENGTH</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+		</Row>
+		<!--善战之舰+1buff-->
+		<Row>
+			<ModifierId>ESSEX_NAVY_ATTACH_MODIFIER</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>ESSEX_NAVY_ATTACH_COMBAT_MODIFIER</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
+			<SubjectStackLimit>1</SubjectStackLimit>
+		</Row>
+		<Row>
+			<ModifierId>ESSEX_NAVY_ADJUST_UNITS_PROERTY</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_PROPERTY</ModifierType>
+		</Row>
+		<!--移动力+1-->
+		<Row>
+			<ModifierId>ESSEX_UNIT_ADD_MOVEMENT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT</ModifierType>
+		</Row>
+		<!--视野范围+1-->
+		<Row>
+			<ModifierId>ESSEX_UNIT_ADD_SIGHT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_SIGHT</ModifierType>
+		</Row>
+		<!--海军+1力-->
+		<Row>
+			<ModifierId>ESSEX_UNIT_ADD_COMBAT</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--善战之舰+7-->
+		<Row>
+			<ModifierId>ESSEX_NAVY_STRENGTH</ModifierId>
+			<Name>Amount</Name>
+			<Value>7</Value>
+		</Row>
+		<!--善战之舰+1buff-->
+		<Row>
+			<ModifierId>ESSEX_NAVY_ATTACH_MODIFIER</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>ESSEX_NAVY_ADJUST_UNITS_PROERTY</Value>
+		</Row>
+		<Row>
+			<ModifierId>ESSEX_NAVY_ATTACH_COMBAT_MODIFIER</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>ESSEX_UNIT_ADD_COMBAT</Value>
+		</Row>
+		<Row>
+			<ModifierId>ESSEX_NAVY_ADJUST_UNITS_PROERTY</ModifierId>
+			<Name>Key</Name>
+			<Value>ESSEX_UNITS_COMBAT_PROERTY</Value>
+		</Row>
+		<Row>
+			<ModifierId>ESSEX_NAVY_ADJUST_UNITS_PROERTY</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<!--移动力+1-->
+		<Row>
+			<ModifierId>ESSEX_UNIT_ADD_MOVEMENT</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<!--视野范围+1-->
+		<Row>
+			<ModifierId>ESSEX_UNIT_ADD_SIGHT</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<!--海军+1力-->
+		<Row>
+			<ModifierId>ESSEX_UNIT_ADD_COMBAT</ModifierId>
+			<Name>Key</Name>
+			<Value>ESSEX_UNITS_COMBAT_PROERTY</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

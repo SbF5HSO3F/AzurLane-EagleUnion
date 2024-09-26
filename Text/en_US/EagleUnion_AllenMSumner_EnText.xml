@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_AllenMSumner_Text -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：50-->
+<!-- DateCreated: 8/19/2023 5:17:30 PM -->
+<GameData>
+	<LocalizedText>
+		<!--领袖介绍-->
+		<Replace Tag="LOC_LEADER_ALLEN_M_SUMNER_DD692_NAME" Language="en_US">
+			<Text>Allen M. Sumner</Text>
+		</Replace>
+		<!--加载-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_ALLEN_M_SUMNER_DD692" Language="en_US">
+			<Text>As the most advanced destroyer of its time, Allen M. Sumner, you and your sisters had the main gun power and anti-aircraft firepower of a Fletcher-class destroyer. Served in the hellish Battle of Okinawa, faced the suicide plane attack from Sakura Empire, your experience is varied and colorful. Allen M. Sumner, Believe you can lead Eagle Union to new glory!</Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ALLEN_M_SUMNER_DD692_QUOTE" Language="en_US">
+			<Text>Whoa! Hel-looo! The couch is all yours if you want it.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ALLEN_M_SUMNER_DD692_CHAPTER_CAPSULE_BODY" Language="en_US">
+			<Text>Unlike other Eagle Union leaders, Allen M. Sumner's Eagle Union will also be a cultural powerhouse.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ALLEN_M_SUMNER_DD692_CHAPTER_DETAILED_BODY" Language="en_US">
+			<Text>Eagle Union is known for its industrial and technological prowess, and Allen M. Sumner is going to change that perception. The compact construction of the city will bring a large amount of [ICON_Culture] Culture to Allen M. Sumner, all in the service of a Cultural Victory: after researching the technology of "Flight", the [ICON_Culture] Culture output of the districts of Allen M. Sumner will provide an equal amount of [ICON_Tourism] Tourism. In modern times, cities with theater plazas will become world-famous tourist destinations. If you're looking for a Cultural Victory, Allen M. Sumner is sure to be a headache for you.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ALLEN_M_SUMNER_DD692_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>The USS Allen M. Sumner DD-692, was the first of the Allen M. Sumner class of destroyers built by the U.S. Navy during World War II -- shortened by the middle name Allen Sumner for common use. Captain Alan Melancson Sumner, Jr., who was about 26 years old when he was temporarily in command of a regiment and a wing at Verdun during World War I.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ALLEN_M_SUMNER_DD692_CHAPTER_HISTORY_PARA_2" Language="en_US">
+			<Text>As the first ship, Allen Sumner was the first to begin construction on 7 July 1943 at the Federal Shipyard in Kearney County, New Jersey.</Text>
+		</Replace>
+		<!--领袖议程-->
+		<Replace Tag="LOC_AGENDA_BANG_FOR_YOUR_BUCK_NAME" Language="en_US">
+			<Text>Bang for Your Buck</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_BANG_FOR_YOUR_BUCK_DESCRIPTION" Language="en_US">
+			<Text>Willing to open up boundaries and pursue [ICON_Tourism] tourism performance. Like civilizations with high [ICON_Culture] cultural values and dislike civilizations that launch surprise wars.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_BANG_FOR_YOUR_BUCK_HIGH_CULTURE" Language="en_US">
+			<Text>Allen M. Sumner likes civilizations with higher Culture</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_BANG_FOR_YOUR_BUCK_ANY_REASON" Language="en_US">
+			<Text>(You have a high Culture)</Text>
+		</Replace>
+		<Replace Tag="LOC_BANG_FOR_YOUR_BUCK_SURPRISE_WAR" Language="en_US">
+			<Text>Allen M. Sumner dislikes the civilization that announces surprise wars</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_BANG_FOR_YOUR_BUCK_SURPRISE_WAR_REASON_ANY" Language="en_US">
+			<Text>(You declared a surprise war)</Text>
+		</Replace>
+		<!--领袖能力-->
+		<Replace Tag="LOC_TRAIT_LEADER_SHOOTING_GUN_STAR_NAME" Language="en_US">
+			<Text>Shooting Gun-Star</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SHOOTING_GUN_STAR_DESCRIPTION" Language="en_US">
+			<Text>All Districts +2 [ICON_Culture] Culture from each adjacent Districts. After Flight is researched, all districts receive [ICON_Tourism] Tourism equal to the [ICON_Culture] Culture output. +100% [ICON_Tourism] Tourism pressure from the city with Theater Square towards other civilizations when the game enters the Modern era. Gain the Allen M. Sumner-class Destroyer unique unit when the Combined Arms technology is researched.</Text>
+		</Replace>
+		<!--特殊加成-->
+		<Replace Tag="LOC_Allen_Culture_Adjacency_From_District" Language="en_US">
+			<Text>+{1_num} [ICON_Culture] Culture from each adjacent Districts.</Text>
+		</Replace>
+		<!--能力加成-->
+
+		<!--特殊单位-->
+		<Replace Tag="LOC_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_NAME" Language="en_US">
+			<Text>Allen M. Sumner-class Destroyer</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_DESCRIPTION" Language="en_US">
+			<Text>Allen M. Sumner's unique Atomic era naval unit that replaces the Destroyer. Stronger than the Destroyer, and has strong anti-air power, can carry out a range of 1 long range attack. +7 [ICON_Strength] Combat Strength when fighting a naval Raider, shows the naval raider in sight.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_Allen_M_Sumner_DESCRIPTION" Language="en_US">
+			<Text>+7 [ICON_Strength] Combat Strength when fighting Navy Raiders</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>The Allen M. Sumner class destroyer, or simply "Sumner class", was a class of destroyers built by the United States Navy between 1943 and 1946, with 58 ships built. As a result of the defeat at the Battle of Midway in 1942, the Japanese gave up their strategic attack and lost the right to control the sea and the air at the beginning of the war, while the confrontation between the two sides at sea and in the air became more and more intense. In such a background, the U.S. Navy believes that the Fletcher-class destroyer's anti-aircraft firepower needs to be further upgraded. So on the basis of the Fletcher-class destroyer hull, modify the superstructure and weapons configuration, the U.S. Navy designed a new generation of destroyers.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_CHAPTER_HISTORY_PARA_2" Language="en_US">
+			<Text>Construction of the first ship, the destroyer Allen M. Sumner, began at Federal Shipyards on July 7, 1943, with the remaining 57 ships of the same class following in a sequence of DD-692 through DD-709, DD-722 through DD-734, DD-741 through DD-748, DD-752 through DD-762, DD-770, and DD-774 through DD-781, DD-857.The Sumner class destroyers were originally planned to be built in 70 units, but 12 were later converted to fast minelayers, the Robert H. Smith class, during construction. Most of these Sumner-class destroyers entered service between 1944-1945, with three not completed for service until the end of World War II. The Sumner class destroyers built during World War II can be divided into two types, the early type and the late type, of which there were 26 ships of the early type, mainly with open bridges, and 29 ships of the late type, mainly with closed bridges.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_CHAPTER_HISTORY_PARA_3" Language="en_US">
+			<Text>In terms of powertrain, the Sumner class destroyers were similar to the Fletcher class destroyers in that they were fitted with the same four oil-fired boilers, two steam turbines, and produced the same 60,000 hp. However, due to the increased displacement, the maximum speed was reduced to 34 knots from 37.8 knots of the Fletcher class. In terms of weaponry, the Sumner class destroyer had three twin 127mm/38 Mk38 anti-aircraft guns in a turret arrangement with two forward and one aft, guided by the Mk37 fire control system and the Mk25 fire control radar for long-range air defense. At the same time, she also has 12 40mm Bofors anti-aircraft guns and 11 20mm Erlikon anti-aircraft guns to form a powerful anti-aircraft firepower. Initial design, the Sumner class also has two five 533mm torpedo tubes located in the chimney before and after the axis, and in the transom of the ship installed two deep bomb launchers and six K-type deep bomb thrower, to enhance its anti-submarine warfare capability, but with the Japanese attack in 1945 more and more inclined to suicide air raids, they also removed the rear torpedo tubes, replaced by a quad 40mm Bofors Bofors anti-aircraft gun. Compared to the predecessor Fletcher destroyers, the Sumner class destroyers had 20% more main gun firepower and 50% more anti-aircraft firepower. Due to the significant increase in anti-aircraft firepower, the Sumner class destroyers were often used as outer fleet anti-aircraft guard ships.</Text>
+		</Replace>
+		<!--外交文本-->
+		<!--同意宣布友谊-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Haha, we'll be friends now!</Text>
+		</Replace>
+		<!--拒绝宣布友谊-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Okay, but it's not possible right now~</Text>
+		</Replace>
+		<!--请求宣布友谊-->
+		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Come on, let's declare friendship!</Text>
+		</Replace>
+		<!--宣布友谊被接受-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Hey hey~Not bad!</Text>
+		</Replace>
+		<!--宣布友谊被拒绝-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Well, that's it then.</Text>
+		</Replace>
+		<!--被宣战-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Lol lol, looks like it's necessary to clear your head! I'll post another star afterwards~</Text>
+		</Replace>
+		<!--宣战-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Allow me to write to you: Eagle Union, now officially declares war on you!</Text>
+		</Replace>
+		<!--接受代表团-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Is it a delegation? I'll give them a good reception! They will marvel at the technological advances of Eagle Union.</Text>
+		</Replace>
+		<!--拒绝代表团-->
+		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Well, here's the thing: Eagle Union is not interested in your delegation right now.</Text>
+		</Replace>
+		<!--派出代表团-->
+		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Eagle Union has sent a delegation: we hope to establish deeper communication with your civilization.</Text>
+		</Replace>
+		<!--被谴责-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Maybe it's because you're in a bad mood, or maybe you're just overwhelmed by impulse. But that's not good, is it?</Text>
+		</Replace>
+		<!--谴责-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Others in the Eagle Union have asked me to tell you: they can no longer stand what you are doing! (Condemn you)</Text>
+		</Replace>
+		<!--初次见面-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Eagle Union's new destroyer, the Allen Sumner is me oh my! The Allen Sumner class is an improved version of the Fletcher class. Although we were outnumbered by them, we had better firepower and air defense! We were the strongest destroyer of Eagle Union at that time!</Text>
+		</Replace>
+		<!--初次见面，邀请参观附近城市-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Hey, hey, wanna come visit a city near us?</Text>
+		</Replace>
+		<!--初次见面，感谢玩家提供最近城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Yikes, what a surprise. Let me enjoy your city then!</Text>
+		</Replace>
+		<!--初次见面，请求交换城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Heck, I'll introduce you to the great capital of the Eagle Union! Then it's your turn to introduce us to your capital!</Text>
+		</Replace>
+		<!--欢迎语？-->
+		<Replace Tag="LOC_DIPLO_GREETING_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Just call me Allen, please give me more guidance~</Text>
+		</Replace>
+		<!--示好-->
+		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Hey, do you mind if I stick a new sticker for you?</Text>
+		</Replace>
+		<!--敌视-->
+		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>How can we say that declaring war like this is not good?</Text>
+		</Replace>
+		<!--请求结盟-->
+		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>It's time to form an alliance! Quick Alliance~Quick Alliance~Quick Alliance~</Text>
+		</Replace>
+		<!--同意和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Eagle Union is willing to conclude peace between us.</Text>
+		</Replace>
+		<!--拒绝和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>That's not possible, our war is not over yet!</Text>
+		</Replace>
+		<!--请求和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Come on! Let's lay down our weapons and stick "peace" stickers between the two countries!</Text>
+		</Replace>
+		<!--接受开放边界请求-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Mmm, let me stick a "border access" sticker</Text>
+		</Replace>
+		<!--拒绝开放边界请求-->
+		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Hmm... I don't have any more "border access" stickers now!</Text>
+		</Replace>
+		<!--请求开放边界-->
+		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Eagle Union would like troops to pass through your borders. I hope you will grant permission.</Text>
+		</Replace>
+		<!--要求移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Wow, what a hilarious border! Sadly, this kind of hilarity is not to everyone's liking: please remove the troops from Eagle Union border!</Text>
+		</Replace>
+		<!--拒绝移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>It's hard to march here... to evacuate casually? That wouldn't do!</Text>
+		</Replace>
+		<!--同意移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Eagle Union troops will soon withdraw! No need to worry!</Text>
+		</Replace>
+		<!--经受不住时间考验-->
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Relaxed too much ah...</Text>
+		</Replace>
+		<!--拒绝交易-->
+		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Allow me to decline.</Text>
+		</Replace>
+		<!--同意交易-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="en_US">
+			<Text>Well, a great deal!</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

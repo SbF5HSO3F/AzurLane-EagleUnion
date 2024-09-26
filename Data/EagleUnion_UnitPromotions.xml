@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_UnitPromotions -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：994-->
+<!-- DateCreated: 8/21/2023 2:12:32 PM -->
+<GameData>
+	<Types>
+		<!--白鹰航母特殊晋升-->
+		<Row Type="PROMOTION_CLASS_EAGLE_CV"				Kind="KIND_PROMOTION_CLASS"/>
+		<!--甲板升级-->
+		<Row Type="PROMOTION_EAGLE_DECK_UPGRADES"			Kind="KIND_PROMOTION"/>
+		<!--船体强化-->
+		<Row Type="PROMOTION_EAGLE_HULL_STRENGTHENING"		Kind="KIND_PROMOTION"/>
+		<!--精英损管-->
+		<Row Type="PROMOTION_EAGLE_ELITE_DAMAGE_CONTROL"	Kind="KIND_PROMOTION"/>
+		<!--现代化改造-->
+		<Row Type="PROMOTION_EAGLE_MODERNIZATION"			Kind="KIND_PROMOTION"/>
+		<!--超级航空母舰-->
+		<Row Type="PROMOTION_EAGLE_SUPERCARRIER"			Kind="KIND_PROMOTION"/>
+	</Types>
+	<UnitPromotionClasses>
+		<Row PromotionClassType="PROMOTION_CLASS_EAGLE_CV" Name="LOC_PROMOTION_CLASS_EAGLE_CV_NAME"/>
+	</UnitPromotionClasses>
+	<UnitPromotions>
+		<Row UnitPromotionType="PROMOTION_EAGLE_DECK_UPGRADES"			Name="LOC_PROMOTION_EAGLE_DECK_UPGRADES_NAME"			Description="LOC_PROMOTION_EAGLE_DECK_UPGRADES_DESCRIPTION"			Level="1" Column="1" Specialization="" PromotionClass="PROMOTION_CLASS_EAGLE_CV"/>
+		<Row UnitPromotionType="PROMOTION_EAGLE_HULL_STRENGTHENING"		Name="LOC_PROMOTION_EAGLE_HULL_STRENGTHENING_NAME"		Description="LOC_PROMOTION_EAGLE_HULL_STRENGTHENING_DESCRIPTION"	Level="1" Column="3" Specialization="" PromotionClass="PROMOTION_CLASS_EAGLE_CV"/>
+		<Row UnitPromotionType="PROMOTION_EAGLE_ELITE_DAMAGE_CONTROL"	Name="LOC_PROMOTION_EAGLE_ELITE_DAMAGE_CONTROL_NAME"	Description="LOC_PROMOTION_EAGLE_ELITE_DAMAGE_CONTROL_DESCRIPTION"	Level="2" Column="1" Specialization="" PromotionClass="PROMOTION_CLASS_EAGLE_CV"/>
+		<Row UnitPromotionType="PROMOTION_EAGLE_MODERNIZATION"			Name="LOC_PROMOTION_EAGLE_MODERNIZATION_NAME"			Description="LOC_PROMOTION_EAGLE_MODERNIZATION_DESCRIPTION"			Level="2" Column="3" Specialization="" PromotionClass="PROMOTION_CLASS_EAGLE_CV"/>
+		<Row UnitPromotionType="PROMOTION_EAGLE_SUPERCARRIER"			Name="LOC_PROMOTION_EAGLE_SUPERCARRIER_NAME"			Description="LOC_PROMOTION_EAGLE_SUPERCARRIER_DESCRIPTION"			Level="3" Column="2" Specialization="" PromotionClass="PROMOTION_CLASS_EAGLE_CV"/>
+	</UnitPromotions>
+	<ModifierStrings>
+		<Row ModifierId="EAGLE_HULL_STRENGTHENING"	Context="Preview"	Text="LOC_EAGLE_HULL_STRENGTHENING_DESCRIPTION"/>
+	</ModifierStrings>
+	<UnitPromotionPrereqs>
+		<Row UnitPromotion="PROMOTION_EAGLE_ELITE_DAMAGE_CONTROL"	PrereqUnitPromotion="PROMOTION_EAGLE_DECK_UPGRADES"/>
+		<Row UnitPromotion="PROMOTION_EAGLE_ELITE_DAMAGE_CONTROL"	PrereqUnitPromotion="PROMOTION_EAGLE_HULL_STRENGTHENING"/>
+		<Row UnitPromotion="PROMOTION_EAGLE_MODERNIZATION"			PrereqUnitPromotion="PROMOTION_EAGLE_DECK_UPGRADES"/>
+		<Row UnitPromotion="PROMOTION_EAGLE_MODERNIZATION"			PrereqUnitPromotion="PROMOTION_EAGLE_HULL_STRENGTHENING"/>
+		<Row UnitPromotion="PROMOTION_EAGLE_SUPERCARRIER"			PrereqUnitPromotion="PROMOTION_EAGLE_ELITE_DAMAGE_CONTROL"/>
+		<Row UnitPromotion="PROMOTION_EAGLE_SUPERCARRIER"			PrereqUnitPromotion="PROMOTION_EAGLE_MODERNIZATION"/>
+	</UnitPromotionPrereqs>
+	<UnitPromotionModifiers>
+		<!--甲板升级-->
+		<Row>
+			<UnitPromotionType>PROMOTION_EAGLE_DECK_UPGRADES</UnitPromotionType>
+			<ModifierId>EAGLE_DECK_UPGRADES</ModifierId>
+		</Row>
+		<!--船体强化-->
+		<Row>
+			<UnitPromotionType>PROMOTION_EAGLE_HULL_STRENGTHENING</UnitPromotionType>
+			<ModifierId>EAGLE_HULL_STRENGTHENING</ModifierId>
+		</Row>
+		<!--精英损管-->
+		<Row>
+			<UnitPromotionType>PROMOTION_EAGLE_ELITE_DAMAGE_CONTROL</UnitPromotionType>
+			<ModifierId>EAGLE_ELITE_DAMAGE_CONTROL</ModifierId>
+		</Row>
+		<!--现代化改造-->
+		<Row>
+			<UnitPromotionType>PROMOTION_EAGLE_MODERNIZATION</UnitPromotionType>
+			<ModifierId>EAGLE_MODERNIZATION_SIGHT</ModifierId>
+		</Row>
+		<Row>
+			<UnitPromotionType>PROMOTION_EAGLE_MODERNIZATION</UnitPromotionType>
+			<ModifierId>EAGLE_MODERNIZATION_MOVEMENT</ModifierId>
+		</Row>
+		<Row>
+			<UnitPromotionType>PROMOTION_EAGLE_MODERNIZATION</UnitPromotionType>
+			<ModifierId>EAGLE_MODERNIZATION_SLOT</ModifierId>
+		</Row>
+		<!--超级航空母舰-->
+		<Row>
+			<UnitPromotionType>PROMOTION_EAGLE_SUPERCARRIER</UnitPromotionType>
+			<ModifierId>EAGLE_SUPERCARRIER_NEUTRAL_TERRITORY_HEAL</ModifierId>
+		</Row>
+		<Row>
+			<UnitPromotionType>PROMOTION_EAGLE_SUPERCARRIER</UnitPromotionType>
+			<ModifierId>EAGLE_SUPERCARRIER_ENEMY_TERRITORY_HEAL</ModifierId>
+		</Row>
+		<Row>
+			<UnitPromotionType>PROMOTION_EAGLE_SUPERCARRIER</UnitPromotionType>
+			<ModifierId>EAGLE_SUPERCARRIER_INFLUENCE</ModifierId>
+		</Row>
+	</UnitPromotionModifiers>
+	<Modifiers>
+		<!--甲板升级-->
+		<Row>
+			<ModifierId>EAGLE_DECK_UPGRADES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_GRANT_AIR_SLOTS</ModifierType>
+		</Row>
+		<!--船体强化-->
+		<Row>
+			<ModifierId>EAGLE_HULL_STRENGTHENING</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+		</Row>
+		<!--精英损管-->
+		<Row>
+			<ModifierId>EAGLE_ELITE_DAMAGE_CONTROL</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_GRANT_HEAL_AFTER_ACTION</ModifierType>
+		</Row>
+		<!--现代化改造-->
+		<Row>
+			<ModifierId>EAGLE_MODERNIZATION_SIGHT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_SIGHT</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>EAGLE_MODERNIZATION_MOVEMENT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>EAGLE_MODERNIZATION_SLOT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_GRANT_AIR_SLOTS</ModifierType>
+		</Row>
+		<!--超级航空母舰-->
+		<Row>
+			<ModifierId>EAGLE_SUPERCARRIER_NEUTRAL_TERRITORY_HEAL</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_HEAL_PER_TURN</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>EAGLE_SUPERCARRIER_ENEMY_TERRITORY_HEAL</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_HEAL_PER_TURN</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>EAGLE_SUPERCARRIER_INFLUENCE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_INFLUENCE_POINTS_PER_TURN</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--甲板升级-->
+		<Row>
+			<ModifierId>EAGLE_DECK_UPGRADES</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<!--船体强化-->
+		<Row>
+			<ModifierId>EAGLE_HULL_STRENGTHENING</ModifierId>
+			<Name>Amount</Name>
+			<Value>8</Value>
+		</Row>
+		<!--精英损管-->
+
+		<!--现代化改造-->
+		<Row>
+			<ModifierId>EAGLE_MODERNIZATION_SIGHT</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>EAGLE_MODERNIZATION_MOVEMENT</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>EAGLE_MODERNIZATION_SLOT</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<!--超级航空母舰-->
+		<Row>
+			<ModifierId>EAGLE_SUPERCARRIER_NEUTRAL_TERRITORY_HEAL</ModifierId>
+			<Name>Amount</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>EAGLE_SUPERCARRIER_NEUTRAL_TERRITORY_HEAL</ModifierId>
+			<Name>Type</Name>
+			<Value>NEUTRAL</Value>
+		</Row>
+		<Row>
+			<ModifierId>EAGLE_SUPERCARRIER_ENEMY_TERRITORY_HEAL</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+		<Row>
+			<ModifierId>EAGLE_SUPERCARRIER_ENEMY_TERRITORY_HEAL</ModifierId>
+			<Name>Type</Name>
+			<Value>ENEMY</Value>
+		</Row>
+		<Row>
+			<ModifierId>EAGLE_SUPERCARRIER_INFLUENCE</ModifierId>
+			<Name>Amount</Name>
+			<Value>6</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

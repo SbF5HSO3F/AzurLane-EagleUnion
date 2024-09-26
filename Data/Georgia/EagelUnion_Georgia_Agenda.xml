@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagelUnion_Georgia_Agenda -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：797-->
+<!-- DateCreated: 8/19/2023 2:03:46 PM -->
+<GameData>
+	<Types>
+		<Row Type="TRAIT_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET" Kind="KIND_TRAIT"/>
+	</Types>
+	<AiListTypes>
+		<!--通用-->
+		<Row ListType="TheHeritageofGreatWhiteFleetDistricts"/>
+		<Row ListType="TheHeritageofGreatWhiteFleetTechs"/>
+		<!--大白舰队的遗产-->
+		<Row ListType="TheHeritageofGreatWhiteFleetLoveNaval"/>
+		<Row ListType="TheHeritageofGreatWhiteFleetLoveExploration"/>
+		<Row ListType="TheHeritageofGreatWhiteFleetBuildings"/>
+	</AiListTypes>
+	<AiLists>
+		<!--通用-->
+		<Row ListType="TheHeritageofGreatWhiteFleetDistricts"		AgendaType="TRAIT_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET" System="Districts"/>
+		<Row ListType="TheHeritageofGreatWhiteFleetTechs"			LeaderType="LEADER_GEORGIA"									System="Technologies"/>
+		<!--大白舰队的遗产-->
+		<Row ListType="TheHeritageofGreatWhiteFleetLoveNaval"		AgendaType="TRAIT_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET" System="PseudoYields"/>
+		<Row ListType="TheHeritageofGreatWhiteFleetLoveExploration" AgendaType="TRAIT_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET" System="PseudoYields"/>
+		<Row ListType="TheHeritageofGreatWhiteFleetBuildings"		LeaderType="LEADER_GEORGIA"									System="Buildings"/>
+	</AiLists>
+	<AiFavoredItems>
+		<!--通用-->
+		<Row ListType="TheHeritageofGreatWhiteFleetDistricts"	Item="DISTRICT_SANTA_CLARA_VALLEY"			Favored="true"/>
+		<Row ListType="TheHeritageofGreatWhiteFleetDistricts"	Item="DISTRICT_HARBOR"						Favored="true"/>
+		<Row ListType="TheHeritageofGreatWhiteFleetTechs"		Item="TECH_WRITING"							Favored="true"/>
+		<Row ListType="TheHeritageofGreatWhiteFleetTechs"		Item="TECH_MASS_PRODUCTION"					Favored="true"/>
+		<Row ListType="TheHeritageofGreatWhiteFleetTechs"		Item="TECH_CELESTIAL_NAVIGATION"			Favored="true"/>
+		<!--大白舰队的遗产-->
+		<Row ListType="TheHeritageofGreatWhiteFleetLoveNaval"	Item="PSEUDOYIELD_UNIT_NAVAL_COMBAT"						Value="100"/>
+		<Row ListType="TheHeritageofGreatWhiteFleetLoveNaval"	Item="PSEUDOYIELD_UNIT_EXPLORER"							Value="50"/>
+		<Row ListType="TheHeritageofGreatWhiteFleetBuildings"	Item="BUILDING_NEWPORT_NEWS_SHIPBUILDING"	Favored="true"/>
+	</AiFavoredItems>
+	<Traits>
+		<!--大白舰队的遗产-->
+		<Row TraitType="TRAIT_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET"/>
+	</Traits>
+	<AgendaTraits>
+		<!--大白舰队的遗产-->
+		<Row AgendaType="AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET" TraitType="TRAIT_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET"/>
+	</AgendaTraits>
+	<TraitModifiers>
+		<!--大白舰队的遗产-->
+		<Row>
+			<TraitType>TRAIT_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET</TraitType>
+			<ModifierId>THE_HERITAGE_OF_GREAT_WHITE_FLEET_HIGH_EXPLORATION</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET</TraitType>
+			<ModifierId>THE_HERITAGE_OF_GREAT_WHITE_FLEET_LOW_EXPLORATION</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<!--大白舰队的遗产-->
+		<Row>
+			<ModifierId>THE_HERITAGE_OF_GREAT_WHITE_FLEET_HIGH_EXPLORATION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_HIGH_EXPLORATION</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>THE_HERITAGE_OF_GREAT_WHITE_FLEET_LOW_EXPLORATION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_LOW_EXPLORATION</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--大白舰队的遗产-->
+		<Row>
+			<ModifierId>THE_HERITAGE_OF_GREAT_WHITE_FLEET_HIGH_EXPLORATION</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>6</Value>
+		</Row>
+		<Row>
+			<ModifierId>THE_HERITAGE_OF_GREAT_WHITE_FLEET_HIGH_EXPLORATION</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_THE_HERITAGE_OF_GREAT_WHITE_FLEET_HIGH_EXPLORATION</Value>
+		</Row>
+		<Row>
+			<ModifierId>THE_HERITAGE_OF_GREAT_WHITE_FLEET_HIGH_EXPLORATION</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_THE_HERITAGE_OF_GREAT_WHITE_FLEET_HIGH_EXPLORATION</Value>
+		</Row>
+		<Row>
+			<ModifierId>THE_HERITAGE_OF_GREAT_WHITE_FLEET_LOW_EXPLORATION</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-6</Value>
+		</Row>
+		<Row>
+			<ModifierId>THE_HERITAGE_OF_GREAT_WHITE_FLEET_LOW_EXPLORATION</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_THE_HERITAGE_OF_GREAT_WHITE_FLEET_LOW_EXPLORATION</Value>
+		</Row>
+		<Row>
+			<ModifierId>THE_HERITAGE_OF_GREAT_WHITE_FLEET_LOW_EXPLORATION</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_THE_HERITAGE_OF_GREAT_WHITE_FLEET_LOW_EXPLORATION</Value>
+		</Row>
+	</ModifierArguments>
+	<ModifierStrings>
+		<Row ModifierId="THE_HERITAGE_OF_GREAT_WHITE_FLEET_HIGH_EXPLORATION"	Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="THE_HERITAGE_OF_GREAT_WHITE_FLEET_LOW_EXPLORATION"		Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+	</ModifierStrings>
+</GameData>

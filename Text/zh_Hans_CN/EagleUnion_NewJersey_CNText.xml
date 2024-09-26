@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_NewJersey_Text -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：69-->
+<!-- DateCreated: 8/19/2023 3:51:42 PM -->
+<GameData>
+	<LocalizedText>
+		<!--领袖介绍-->
+		<Replace Tag="LOC_LEADER_NEW_JERSEY_BB62_NAME" Language="zh_Hans_CN">
+			<Text>新泽西</Text>
+		</Replace>
+		<!--加载-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_NEW_JERSEY_BB62" Language="zh_Hans_CN">
+			<Text>衣阿华级战列舰、第三舰队与第五舰队的旗舰、花园之州。新泽西，您是历史上最富荣誉的战列舰，拥有享誉内外的美名。身为旗舰，您在战场中所表现出来的勇敢着实让人赞叹。现在，为自由与正义而战吧，不要辜负您所拥有的荣誉。</Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_NEW_JERSEY_BB62_QUOTE" Language="zh_Hans_CN">
+			<Text>她是美国海军历史上最富荣誉的战列舰</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_NEW_JERSEY_BB62_CHAPTER_CAPSULE_BODY" Language="zh_Hans_CN">
+			<Text>作为最富荣誉的战列舰，新泽西拥有富饶的土地与一支强大的正义之师</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_NEW_JERSEY_BB62_CHAPTER_DETAILED_BODY" Language="zh_Hans_CN">
+			<Text>白鹰拥有强大的工业与科技力量，而新泽西将这些力量运用在了对抗不义之人上：白鹰很容易就能构筑一支强大领先的军队，而在新泽西宣布解放、收复和保卫城邦战争后所带来的 [ICON_Strength] 战斗力与 [ICON_Movement] 移动力加成以及特色单位“衣阿华级战列舰”更让其势不可挡。利用与城邦的贸易路线团结城邦，配合白鹰的强大实力，新泽西可以粉碎一切邪恶力量。新泽西将有效地保障白鹰不受侵犯，从而最大化的发挥出白鹰文明在科技胜利上的优势。当然，有着那么多城邦的支持，新泽西在外交胜利上表现同样不俗。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_NEW_JERSEY_BB62_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>新泽西号战列舰是美国海军二战初期建造的衣阿华级战列舰2号舰，也是美国海军第二艘以新泽西命名的舰艇。新泽西州有一个人所共知的别称，“花园州”——新泽西确实没那么多花园，但曾以大面积的农场自傲。这个别称赞美了新泽西富饶的农业产出，但最终目的在1876年是为了抗议北边的纽约人与西边的宾州人攫取州内农场资源，要州民站出来“保卫自己的花园州”而提出的，曾任州检察长的亚伯拉罕·布朗宁在演讲时就把新泽西称之为花园之州，说新泽西就像一个装满美食的大桶，两头都敞着口，宾夕法尼亚人从一头捞好吃的，另一头则留给了纽约人。现在这个别称已没有了当年的政治内涵，而作为横贯连接纽约与费城两大城市群的州，新泽西的地理位置确实可谓优越。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_NEW_JERSEY_BB62_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>对于衣阿华级战列舰，大家可能更熟悉的是首舰衣阿华与3号舰密苏里，但别称“Big J”与“Black Dragon”的2号舰新泽西在美国海军历史上的地位也异常特殊：</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_NEW_JERSEY_BB62_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+			<Text>这里需要说明一下二战期间美国太平洋舰队的构成：一提起美国太平洋舰队，大家的第一印象或许就是“实力雄厚”与“功勋卓著”。二战期间，美国海军的太平洋舰队在总司令尼米兹海军上将的指挥下，自美国西海岸线，到夏威夷珍珠港，再到中太平洋诸岛、南太平洋与澳大利亚，最后到东南亚与日本本土，一直与旧日本帝国一整个国家的海军主力作战。而这支在二战中正面对抗联合舰队的舰队，其核心序列正是第三舰队/第五舰队——被大家戏称为“灭国舰队”的第38/58特遣舰队正式该舰队最精锐的主力。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_NEW_JERSEY_BB62_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN">
+			<Text>——没错，自新泽西1944年初出现在太平洋战场最前线之时，她便同时被小威廉·哈尔西与斯普鲁恩斯，这两位太平洋舰队的股肱栋梁看中，几乎一直担任着第三舰队/第五舰队的旗舰，作为两位传奇舰队司令的座舰。虽然那时美国海军在太平洋上最艰难的时刻已经过去，但战争的胜利依旧需要正义之师给予最后一击，新泽西以舰队旗舰的身份见证了这一切，直至东京湾内，直至送在外的美军回家……</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_NEW_JERSEY_BB62_CHAPTER_HISTORY_PARA_5" Language="zh_Hans_CN">
+			<Text>新泽西在二战期间的旗舰生涯总体有个特点——虽然是舰队旗舰，但新泽西从不避战。若是需要战列舰提供支援，新泽西一定不会关照舰上的舰队司令，准确出现在战斗阵位，甚至是战场的最前沿。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_NEW_JERSEY_BB62_CHAPTER_HISTORY_PARA_6" Language="zh_Hans_CN">
+			<Text>二战期间，新泽西连续参与马绍尔群岛、夸贾林方面的战斗，任第五舰队旗舰后进攻特鲁克泊地、帕劳与沃莱艾环礁，短暂卸任舰队旗舰后支援登陆新几内亚，最后参与菲律宾海海战。舰队司令轮换后任第三舰队旗舰，参与了莱特湾海战，并支援美军重夺菲律宾。卸任第三舰队旗舰后，支援进攻硫磺岛，前进至冲绳，最终重新以第五舰队旗舰身份进驻东京湾。二战后，太平洋舰队主力更换为第七舰队，新泽西毫不意外地出任了第七舰队的旗舰，先后参与朝鲜战争、越南战争、黎巴嫩内战，不过并未参加海湾战争参战的是密苏里和威斯康星，在海湾战争之前最终退役。现在，新泽西正作为博物馆舰停泊于原纽约造船厂所在地，新泽西州的卡姆登港区——回归新泽西州如此有海军传统的原造船工业重镇，她也算是叶落归根了。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_NEW_JERSEY_BB62_CHAPTER_HISTORY_PARA_7" Language="zh_Hans_CN">
+			<Text>二战期间，新泽西共获得9枚战斗之星。但如果包含她战后的连年征战，新泽西全部服役生涯共获得16枚战斗之星。越南战争期间，新泽西受海军集体表彰；同时还拥有菲律宾与韩国的总统集体嘉奖。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_NEW_JERSEY_BB62_CHAPTER_HISTORY_PARA_8" Language="zh_Hans_CN">
+			<Text>——也因此，美国战史研究者对她的历史地位有一个定位，她是“美国海军历史上最富荣誉的战列舰”。</Text>
+		</Replace>
+		<!--领袖议程-->
+		<Replace Tag="LOC_AGENDA_BLACK_DRAGON_NAME" Language="zh_Hans_CN">
+			<Text>黑龙之炎</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_BLACK_DRAGON_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>乐于发动解放战争、收复战争和保卫城邦战争，钦佩解放城市的领袖。厌恶发动突袭战争，攻击城邦的领袖。</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_Black_Dragon_SURPRISE_WAR_REASON_ANY" Language="zh_Hans_CN">
+			<Text>（您宣布了突袭战争）</Text>
+		</Replace>
+		<Replace Tag="LOC_Black_Dragon_SURPRISE_WAR" Language="zh_Hans_CN">
+			<Text>新泽西厌恶宣布突袭战争的人</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_Black_Dragon_On_Guard_Liberation_REASON_ANY" Language="zh_Hans_CN">
+			<Text>（您解放了一座城市）</Text>
+		</Replace>
+		<Replace Tag="LOC_Black_Dragon_On_Guard_Liberation" Language="zh_Hans_CN">
+			<Text>新泽西很高兴看到您解放城市为正义而战</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_Black_Dragon_HIGH_PROTECT_CITY_STATES_REASON_ANY" Language="zh_Hans_CN">
+			<Text>（您为城邦而战）</Text>
+		</Replace>
+		<Replace Tag="LOC_Black_Dragon_HIGH_PROTECT_CITY_STATES" Language="zh_Hans_CN">
+			<Text>新泽西很高兴看到您保护城邦</Text>
+		</Replace>
+		<Replace Tag="LOC_Black_Dragon_MED_ATTACK_CITY_STATES" Language="zh_Hans_CN">
+			<Text>新泽西厌恶那些威胁城邦的人</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_Black_Dragon_HIGH_ATTACK_CITY_STATES_REASON_ANY" Language="zh_Hans_CN">
+			<Text>（您攻击城邦）</Text>
+		</Replace>
+		<Replace Tag="LOC_Black_Dragon_HIGH_ATTACK_CITY_STATES" Language="zh_Hans_CN">
+			<Text>新泽西十分厌恶那些攻击城邦的人</Text>
+		</Replace>
+		<!--领袖能力-->
+		<Replace Tag="LOC_TRAIT_LEADER_FIREPOWER_FOR_FREEDOM_NAME" Language="zh_Hans_CN">
+			<Text>领向自由的炮火</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_TRAIT_LEADER_FIREPOWER_FOR_FREEDOM_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>解锁防御战术市政后即可宣布解放战争。宣布解放战争、收复战争和保卫城邦战争后的10回合内+5 [ICON_Strength] 战斗力，+2 [ICON_Movement] 移动力，+100% [icon_PRODUCTION] 生产力。处于战争状态时所有单位+5 [ICON_Strength] 战斗力。通往城邦的每条 [ICON_TradeRoute] 贸易路线将为此处提供2名 [ICON_ENVOY] 使者。所有农场、牧场、营地与种植园改良设施+1 [ICON_Food] 食物、+1 [ICON_Culture] 文化值、+3 [ICON_Gold] 金币。研究完“高级弹道学”后获得特色单位“衣阿华级战列舰”。</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_NEWJERSEY_AT_WAR_STRENGTH_BUFF_TEXT" Language="zh_Hans_CN">
+			<Text>+5，处于战争状态</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_NEWJERSEY_AT_WAR_STRENGTH_BUFF_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>处于战争状态时+5 [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<!--领袖单位-->
+		<Replace Tag="LOC_UNIT_IOWA_CLASS_NAME" Language="zh_Hans_CN">
+			<Text>衣阿华级战列舰</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_IOWA_CLASS_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>取代导弹巡洋舰的新泽西特色原子能海军单位，解锁更早。强于导弹巡洋舰。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_IOWA_CLASS_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>衣阿华级战列舰是美国海军于1938年开始设计，1940年陆续开工建造的一型快速战列舰，是美国海军最后一型战列舰与最大的战列舰。她们是二战时期最为人熟知的战列舰，兼顾了火力、防护的同时，以高航速性能著称——在建成服役的所有战列舰中，衣阿华级长度最长、轮机功率最高、航速自然也是最快。同时她们也是世界上最晚退役的战列舰，直到1990年代，4艘衣阿华级才陆续退役。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_IOWA_CLASS_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>“海军假日”时期，在海军条约的约束下，美国陆续建造了6艘新锐条约型战列舰，即2艘北卡罗来纳级和4艘南达科他级。她们的航速在27-28节左右。基于美军自己设想的“橙色计划”，为了对抗太平洋彼岸日本海军的重型巡洋舰、战列巡洋舰以及所有潜在高速作战舰艇，并为快速航母特遣舰队提供护航与支援，美国海军需要部署一种更高航速的战列舰。随着1936年日本宣布退出条约，1938年条约的“升级条款”签署，新战列舰的标准排水量限制被放宽到45000吨，美国海军设想中的高航速新型战列舰的设计建造工作逐渐步入正轨。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_IOWA_CLASS_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+			<Text>衣阿华级的建造工作非常迅速，首批2舰在43年时投入服役。首舰衣阿华被作为旗舰设计，拥有一个更大的指挥塔，为了更好的视野也没有在2号炮塔上安装博福斯机炮，这是其区别于其他3艘姊妹舰的重要标志之一。另外，在建造过程中，各舰在舰桥结构都不太相同。按照最初设计，采用的是类似南达科他级的露天舰桥，新泽西完工后不久将其改为曲线式的封闭舰桥，密苏里和威斯康星则将其改为空间更大的方头舰桥，衣阿华和新泽西在1945年也修改为此样式。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_IOWA_CLASS_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN">
+			<Text>二战结束后，衣阿华级作为一种有效且相对低廉的对地火力支援平台，多次重新服役。在1980年代还进行了大规模的现代化改装，拥有了发射导弹的能力。1990年代后陆续退役，作为博物馆发挥余热。</Text>
+		</Replace>
+		<!--特殊改良-->
+		<Replace Tag="LOC_IMPROVEMENT_FLOUTISH_GARDEN_NAME" Language="zh_Hans_CN">
+			<Text>繁荣花园</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_FLOUTISH_GARDEN_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>解锁建造者建造新泽西特色改良设施繁荣花园的能力。[NEWLINE][NEWLINE]+2 [icon_PRODUCTION] 生产力，+2 [ICON_Culture] 文化值，+1 [ICON_Housing] 住房。每与一座农场、牧场、营地或种植园相邻则+1 [ICON_Food] 食物和 [ICON_Culture] 文化值。每与一座繁荣花园相邻时则+3 [ICON_Gold] 金币。研究完“工业化”后，每与一个区域相邻则+1 [icon_PRODUCTION] 生产力和 [ICON_Gold] 金币。仅可建造在草原、草原丘陵、平原和平原丘陵上。</Text>
+		</Replace>
+		<!--外交文本-->
+		<!--同意声明友谊-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>你的想法，已经全部传达给我了——我欣然接受你们的友谊。</Text>
+		</Row>
+		<!--拒绝声明友谊-->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>想成为我的朋友可没那么容易哦。</Text>
+		</Row>
+		<!--请求声明友谊-->
+		<Row Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>我想你能成为我的朋友呢，你愿意接受我的友谊吗？</Text>
+		</Row>
+		<!--请求声明友谊被接受-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>接下来我们就是朋友了哦。</Text>
+		</Row>
+		<!--请求声明友谊被拒绝-->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>啊，这样啊，那么我还是再等等吧。</Text>
+		</Row>
+		<!--被宣战-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>哦？是意料之外的对手呢。有趣~全员，一级战备！战斗开始！你的部队将会溃不成军。</Text>
+		</Row>
+		<!--主动宣战-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>挡在白鹰前进的道路上在任何时候都是个错误。没有人能够阻挡我们的意志，开战吧！</Text>
+		</Row>
+		<!--接受使节派遣-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>你的代表团已到达富饶的花园之州，丰富的资源一定会让他们大开眼界。</Text>
+		</Row>
+		<!--拒绝使节派遣-->
+		<Row Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>我们还没做好接待的准备。</Text>
+		</Row>
+		<!--请求派遣使节-->
+		<Row Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>请接受我的代表团吧！他们带着属于花园之州的富饶，会向你们展现我们人民的勇气。</Text>
+		</Row>
+		<!--被谴责-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>哈哈哈！说实话，我面对过比你更大的困难，我可没那么容易退缩。</Text>
+		</Row>
+		<!--谴责玩家-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>我曾横跨太平洋为正义而战。但，你比我所见过的敌人还要邪恶的多。（谴责你）</Text>
+		</Row>
+		<!--初次见面-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>我是白鹰战列舰，最大最强的Black Dragon——新泽西号。这可不是什么自夸哦，或者说，“世界最强”也不为过呢~只要充分认识我了，关于这个话题的疑惑你很快就会打消的~</Text>
+		</Row>
+		<!--初次见面，提供最近城市位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>愿意前往我们附近的城市欣赏属于“花园之州”的富饶吗？</Text>
+		</Row>
+		<!--初次见面，玩家提供最近城市位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>谢谢。</Text>
+		</Row>
+		<!--初次见面，请求交换首都位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>相互交换我们关于首都的信息，我想这能促进我们之间的关系。</Text>
+		</Row>
+		<!--领袖对玩家有好感-->
+		<Row Tag="LOC_DIPLO_KUDO_EXIT_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>我驰骋太平洋为正义而战，很高兴你能和我一样捍卫正义。</Text>
+		</Row>
+		<!--领袖敌视玩家-->
+		<Row Tag="LOC_DIPLO_WARNING_EXIT_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>即使你不想为正义而战，你至少不要站到它的对立面。</Text>
+		</Row>
+		<!--请求结盟-->
+		<Row Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>我想现在时机已经成熟，我认可你作为我们的盟友。让我们结盟吧。</Text>
+		</Row>
+		<!--要求移开边境军队-->
+		<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>庞大的军队？我想我已经见的多了。</Text>
+		</Row>
+		<!--经受不住时间考验-->
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>“也许战列舰会过时，但衣阿华级可不会哦。”……战列舰的时代终究还是结束了。</Text>
+		</Row>
+		<!--同意交易-->
+		<Row Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>很好，这是场让双方满意的交易。</Text>
+		</Row>
+		<!--拒绝交易-->
+		<Row Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_NEW_JERSEY_BB62_ANY" Language="zh_Hans_CN">
+			<Text>不行，这个交易不公平。</Text>
+		</Row>
+	</LocalizedText>
+</GameData>

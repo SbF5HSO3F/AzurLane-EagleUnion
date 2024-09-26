@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Leader_AllenMSumner -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：500-->
+<!-- DateCreated: 8/19/2023 5:02:09 PM -->
+<GameData>
+	<Types>
+		<!--艾伦·萨姆纳-->
+		<Row Type="LEADER_ALLEN_M_SUMNER_DD692"														Kind="KIND_LEADER"/>
+		<Row Type="TRAIT_LEADER_SHOOTING_GUN_STAR"													Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER"								Kind="KIND_TRAIT"/>
+	</Types>
+	<Leaders>
+		<!--艾伦·萨姆纳-->
+		<Row LeaderType="LEADER_ALLEN_M_SUMNER_DD692"	Name="LOC_LEADER_ALLEN_M_SUMNER_DD692_NAME"	Sex="Female"	InheritFrom="LEADER_DEFAULT"	SceneLayers="4"/>
+	</Leaders>
+	<HistoricalAgendas>
+		<Row LeaderType="LEADER_ALLEN_M_SUMNER_DD692" AgendaType="AGENDA_BANG_FOR_YOUR_BUCK"/>
+	</HistoricalAgendas>
+	<Agendas>
+		<Row AgendaType="AGENDA_BANG_FOR_YOUR_BUCK" Name="LOC_AGENDA_BANG_FOR_YOUR_BUCK_NAME" Description="LOC_AGENDA_BANG_FOR_YOUR_BUCK_DESCRIPTION"/>
+	</Agendas>
+	<Traits>
+		<!--艾伦·萨姆纳-->
+		<Row TraitType="TRAIT_LEADER_SHOOTING_GUN_STAR"							Name="LOC_TRAIT_LEADER_SHOOTING_GUN_STAR_NAME"		Description="LOC_TRAIT_LEADER_SHOOTING_GUN_STAR_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER"		Name="LOC_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_NAME"	Description="LOC_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_DESCRIPTION"/>
+	</Traits>
+	<LeaderTraits>
+		<!--艾伦·萨姆纳-->
+		<Row LeaderType="LEADER_ALLEN_M_SUMNER_DD692" TraitType="TRAIT_LEADER_SHOOTING_GUN_STAR"/>
+		<Row LeaderType="LEADER_ALLEN_M_SUMNER_DD692" TraitType="TRAIT_LEADER_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER"/>
+	</LeaderTraits>
+	<LeaderQuotes>
+		<Row LeaderType="LEADER_ALLEN_M_SUMNER_DD692" Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_ALLEN_M_SUMNER_DD692_QUOTE" />
+	</LeaderQuotes>
+	<LoadingInfo>
+		<Row LeaderType="LEADER_ALLEN_M_SUMNER_DD692" ForegroundImage="IMG_LEADER_ALLEN_M_SUMNER_DD692_Loading_FOREGROUND" BackgroundImage="IMG_EAGLE_UNION_LOADING_BACKGROUND"/>
+	</LoadingInfo>
+	<DiplomacyInfo>
+		<Row Type="LEADER_ALLEN_M_SUMNER_DD692" BackgroundImage="IMG_EAGLE_UNION_DIPLOMACY_BACKGROUND"/>
+	</DiplomacyInfo>
+	<TraitModifiers>
+		<!--KANSEN-->
+		<Row>
+			<TraitType>TRAIT_LEADER_SHOOTING_GUN_STAR</TraitType>
+			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SAILING</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LEADER_SHOOTING_GUN_STAR</TraitType>
+			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
+		</Row>
+		<!--剧院广场翻倍旅游业绩和标准加成-->
+		<!--<Row>
+			<TraitType>TRAIT_LEADER_SHOOTING_GUN_STAR</TraitType>
+			<ModifierId>ALLEN_CULTURE_BONUS</ModifierId>
+		</Row>-->
+		<Row>
+			<TraitType>TRAIT_LEADER_SHOOTING_GUN_STAR</TraitType>
+			<ModifierId>ALLEN_FLIGHT_TOURISM_BUFF</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LEADER_SHOOTING_GUN_STAR</TraitType>
+			<ModifierId>ALLEN_MODERN_TOURISM_BUFF</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<!--KANSEN-->
+		<Row>
+			<ModifierId>KANSEN_Unlocked_TECH_SAILING</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_GRANT_SPECIFIC_TECHNOLOGY</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>KANSEN_Unlocked_TECH_SHIPBUILDING</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_GRANT_SPECIFIC_TECHNOLOGY</ModifierType>
+		</Row>
+		<!--剧院广场翻倍旅游业绩-->
+		<Row>
+			<ModifierId>ALLEN_THEATER_ADD_CULTURE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_DISTRICT_ADJACENCY</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>ALLEN_CULTURE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_PLAYER_HAS_MEDIEVAL_FAIRES</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>ALLEN_FLIGHT_TOURISM_BUFF</ModifierId>
+			<ModifierType>MODIFIER_EAGLE_UNION_PLAYER_DISTRICTS_ADJUST_TOURISM_ADJACENCY_YIELD_MOFIFIER</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_PLAYER_HAS_FLIGHT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>ALLEN_MODERN_TOURISM_BUFF</ModifierId>
+			<ModifierType>MODIFIER_EAGLE_UNION_CITIES_ADJUST_TOURISM_LATE_ERAS</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_CITY_HAS_THEATER</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--剧院广场翻倍旅游业绩-->
+		<Row>
+			<ModifierId>ALLEN_CULTURE_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+		<Row>
+			<ModifierId>ALLEN_CULTURE_BONUS</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>ALLEN_FLIGHT_TOURISM_BUFF</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>ALLEN_FLIGHT_TOURISM_BUFF</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+		<Row>
+			<ModifierId>ALLEN_MODERN_TOURISM_BUFF</ModifierId>
+			<Name>MinimumEra</Name>
+			<Value>ERA_MODERN</Value>
+		</Row>
+		<Row>
+			<ModifierId>ALLEN_MODERN_TOURISM_BUFF</ModifierId>
+			<Name>Modifier</Name>
+			<Value>100</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

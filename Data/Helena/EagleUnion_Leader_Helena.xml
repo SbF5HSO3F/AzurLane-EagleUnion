@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Leader_Helena -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：600-->
+<!-- DateCreated: 8/19/2023 4:15:42 PM -->
+<GameData>
+	<Types>
+		<!--海伦娜-->
+		<Row Type="LEADER_HELENA_CL50"								Kind="KIND_LEADER"/>
+		<Row Type="TRAIT_LEADER_THE_WONDER_OF_KULA_GULF"			Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER"	Kind="KIND_TRAIT"/>
+	</Types>
+	<Leaders>
+		<!--海伦娜-->
+		<Row LeaderType="LEADER_HELENA_CL50"	Name="LOC_LEADER_HELENA_CL50_NAME"	InheritFrom="LEADER_DEFAULT"	Sex="Female"	SceneLayers="4"/>
+	</Leaders>
+	<Traits>
+		<!--海伦娜-->
+		<Row TraitType="TRAIT_LEADER_THE_WONDER_OF_KULA_GULF"			Name="LOC_TRAIT_LEADER_THE_WONDER_OF_KULA_GULF_NAME"	Description="LOC_TRAIT_LEADER_THE_WONDER_OF_KULA_GULF_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER"	Name="LOC_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_NAME"		Description="LOC_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_DESCRIPTION"/>
+	</Traits>
+	<LeaderTraits>
+		<!--海伦娜-->
+		<Row LeaderType="LEADER_HELENA_CL50" TraitType="TRAIT_LEADER_THE_WONDER_OF_KULA_GULF"/>
+		<Row LeaderType="LEADER_HELENA_CL50" TraitType="TRAIT_LEADER_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER"/>
+	</LeaderTraits>
+	<HistoricalAgendas>
+		<Row LeaderType="LEADER_HELENA_CL50" AgendaType="AGENDA_MEMORIES_OF_PEARL_HARBOR"/>
+	</HistoricalAgendas>
+	<Agendas>
+		<Row AgendaType="AGENDA_MEMORIES_OF_PEARL_HARBOR" Name="LOC_AGENDA_MEMORIES_OF_PEARL_HARBOR_NAME" Description="LOC_AGENDA_MEMORIES_OF_PEARL_HARBOR_DESCRIPTION"/>
+	</Agendas>
+	<LeaderQuotes>
+		<Row LeaderType="LEADER_HELENA_CL50" Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_HELENA_CL50_QUOTE" />
+	</LeaderQuotes>
+	<LoadingInfo>
+		<Row LeaderType="LEADER_HELENA_CL50" ForegroundImage="IMG_LEADER_HELENA_CL50_LOADING_FOREGROUND" BackgroundImage="IMG_EAGLE_UNION_LOADING_BACKGROUND"/>
+	</LoadingInfo>
+	<DiplomacyInfo>
+		<Row Type="LEADER_HELENA_CL50" BackgroundImage="IMG_EAGLE_UNION_DIPLOMACY_BACKGROUND"/>
+	</DiplomacyInfo>
+	<DiplomaticVisibilitySources>
+		<Row VisibilitySourceType="SOURCE_HELENA_CL50" Description="LOC_SOURCE_HELENA_CL50_DESCRIPTION" ActionDescription="LOC_VIZSOURCE_ACTION_USE_HELENA_CL50" GossipString="LOC_GOSSIP_HELENA_CL50" FromCitizen="true" TraitType="TRAIT_LEADER_THE_WONDER_OF_KULA_GULF"/>
+	</DiplomaticVisibilitySources>
+	<TraitModifiers>
+		<!--KANSEN-->
+		<Row>
+			<TraitType>TRAIT_LEADER_THE_WONDER_OF_KULA_GULF</TraitType>
+			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SAILING</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LEADER_THE_WONDER_OF_KULA_GULF</TraitType>
+			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
+		</Row>
+		<!--海岸单元格+2信仰-->
+		<Row>
+			<TraitType>TRAIT_LEADER_THE_WONDER_OF_KULA_GULF</TraitType>
+			<ModifierId>HELENA_COAST_FAITH</ModifierId>
+		</Row>
+		<!--与海岸相邻单元格+1文化-->
+		<Row>
+			<TraitType>TRAIT_LEADER_THE_WONDER_OF_KULA_GULF</TraitType>
+			<ModifierId>HELENA_NEXT_COAST_FAITH</ModifierId>
+		</Row>
+		<!--与海岸相邻单元格+1生产力-->
+		<Row>
+			<TraitType>TRAIT_LEADER_THE_WONDER_OF_KULA_GULF</TraitType>
+			<ModifierId>HELENA_NEXT_COAST_PRODUCTION</ModifierId>
+		</Row>
+		<!--初始外交等级+2-->
+		<Row>
+			<TraitType>TRAIT_LEADER_THE_WONDER_OF_KULA_GULF</TraitType>
+			<ModifierId>HELENA_ADD_VISIBIITY</ModifierId>
+		</Row>
+		<!--所有单位buff-->
+		<Row>
+			<TraitType>TRAIT_LEADER_THE_WONDER_OF_KULA_GULF</TraitType>
+			<ModifierId>HELENA_GRANT_UNITS_BUFF</ModifierId>
+		</Row>
+		<!--间谍防御buff-->
+		<Row>
+			<TraitType>TRAIT_LEADER_THE_WONDER_OF_KULA_GULF</TraitType>
+			<ModifierId>HELENA_SPY_DEFENSE_BUFF</ModifierId>
+		</Row>
+		<!--间谍进攻buff-->
+		<Row>
+			<TraitType>TRAIT_LEADER_THE_WONDER_OF_KULA_GULF</TraitType>
+			<ModifierId>HELENA_SPY_OFFENSE_BUFF</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<!--海岸单元格+2信仰-->
+		<Row>
+			<ModifierId>HELENA_COAST_FAITH</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_PLOT_IS_COAST</SubjectRequirementSetId>
+		</Row>
+		<!--与海岸相邻单元格+1文化-->
+		<Row>
+			<ModifierId>HELENA_NEXT_COAST_FAITH</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_PLOT_NEXT_COAST</SubjectRequirementSetId>
+		</Row>
+		<!--与海岸相邻的单元格+1生产力-->
+		<Row>
+			<ModifierId>HELENA_NEXT_COAST_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_PLOT_NEXT_COAST</SubjectRequirementSetId>
+		</Row>
+		<!--初始外交等级+3-->
+		<Row>
+			<ModifierId>HELENA_ADD_VISIBIITY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADD_DIPLO_VISIBILITY</ModifierType>
+		</Row>
+		<!--所有单位buff-->
+		<Row>
+			<ModifierId>HELENA_GRANT_UNITS_BUFF</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_GRANT_ABILITY</ModifierType>
+		</Row>
+		<!--间谍防御buff-->
+		<Row>
+			<ModifierId>HELENA_SPY_DEFENSE_BUFF</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_SPY_BONUS</ModifierType>
+		</Row>
+		<!--间谍进攻buff-->
+		<Row>
+			<ModifierId>HELENA_SPY_OFFENSE_BUFF</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_SPY_BONUS</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--海岸单元格+2信仰-->
+		<Row>
+			<ModifierId>HELENA_COAST_FAITH</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>HELENA_COAST_FAITH</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+		<!--与海岸相邻单元格+1文化-->
+		<Row>
+			<ModifierId>HELENA_NEXT_COAST_FAITH</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>HELENA_NEXT_COAST_FAITH</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<!--与海岸相邻的单元格+1生产力-->
+		<Row>
+			<ModifierId>HELENA_NEXT_COAST_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>HELENA_NEXT_COAST_PRODUCTION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<!--初始外交等级+3-->
+		<Row>
+			<ModifierId>HELENA_ADD_VISIBIITY</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<Row>
+			<ModifierId>HELENA_ADD_VISIBIITY</ModifierId>
+			<Name>Source</Name>
+			<Value>SOURCE_HELENA_CL50</Value>
+		</Row>
+		<Row>
+			<ModifierId>HELENA_ADD_VISIBIITY</ModifierId>
+			<Name>SourceType</Name>
+			<Value>DIPLO_SOURCE_ALL_NAMES</Value>
+		</Row>
+		<!--所有单位buff-->
+		<Row>
+			<ModifierId>HELENA_GRANT_UNITS_BUFF</ModifierId>
+			<Name>AbilityType</Name>
+			<Value>ABILITY_HELENA_UNIT_BUFF</Value>
+		</Row>
+		<!--间谍防御buff-->
+		<Row>
+			<ModifierId>HELENA_SPY_DEFENSE_BUFF</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<Row>
+			<ModifierId>HELENA_SPY_DEFENSE_BUFF</ModifierId>
+			<Name>Offense</Name>
+			<Value>false</Value>
+		</Row>
+		<!--间谍进攻buff-->
+		<Row>
+			<ModifierId>HELENA_SPY_OFFENSE_BUFF</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<Row>
+			<ModifierId>HELENA_SPY_OFFENSE_BUFF</ModifierId>
+			<Name>Offense</Name>
+			<Value>true</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Georgia_UnitAbilities -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：799-->
+<!-- DateCreated: 8/19/2023 12:35:55 PM -->
+<GameData>
+	<Types>
+		<Row Type="ABILITY_HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY"	Kind="KIND_ABILITY"/>
+	</Types>
+	<TypeTags>
+		<Row Type="ABILITY_HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY"	Tag="CLASS_ALL_UNITS"/>
+	</TypeTags>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY" Name="LOC_ABILITY_HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY_NAME" Description="LOC_ABILITY_HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY_DESCRIPTION" Inactive="true"/>
+	</UnitAbilities>
+	<ModifierStrings>
+		<Row ModifierId="HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY" Context="Preview" Text="LOC_PREVIEW_HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY_TEXT"/>
+	</ModifierStrings>
+	<UnitAbilityModifiers>
+		<!--进攻海军或区域+7战斗力-->
+		<Row>
+			<UnitAbilityType>ABILITY_HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY</UnitAbilityType>
+			<ModifierId>HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<!--进攻海军或区域+7战斗力-->
+		<Row>
+			<ModifierId>HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_TARGET_IS_DISTRICT_DEFENSES_OR_NAVY</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--进攻海军或区域+7战斗力-->
+		<Row>
+			<ModifierId>HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY</ModifierId>
+			<Name>Amount</Name>
+			<Value>7</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Districts -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：997-->
+<!-- DateCreated: 2/22/2023 1:38:22 PM -->
+<GameData>
+	<Types>
+		<Row Type="DISTRICT_SANTA_CLARA_VALLEY" Kind="KIND_DISTRICT"/>
+	</Types>
+	<DistrictReplaces>
+		<Row CivUniqueDistrictType="DISTRICT_SANTA_CLARA_VALLEY" ReplacesDistrictType="DISTRICT_INDUSTRIAL_ZONE"/>
+	</DistrictReplaces>
+	<Districts>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY"
+			 Name="LOC_DISTRICT_SANTA_CLARA_VALLEY_NAME" 
+			 Description="LOC_DISTRICT_SANTA_CLARA_VALLEY_DESCRIPTION"
+			 PrereqTech="TECH_WRITING" 
+			 PlunderType="PLUNDER_SCIENCE" 
+			 PlunderAmount="25"
+			 AdvisorType="ADVISOR_GENERIC"
+			 Cost="27"
+			 CostProgressionModel="COST_PROGRESSION_NUM_UNDER_AVG_PLUS_TECH"
+			 CostProgressionParam1="40"
+			 Maintenance="1"
+			 RequiresPlacement="true"
+			 RequiresPopulation="false"
+			 Aqueduct="false"
+			 NoAdjacentCity="false"
+			 InternalOnly="false"
+			 ZOC="false"
+			 CaptureRemovesBuildings="false"
+			 CaptureRemovesCityDefenses="false"
+			 MilitaryDomain="NO_DOMAIN"
+			 CityStrengthModifier="2"
+			 TraitType="TRAIT_CIVILIZATION_DISTRICT_SANTA_CLARA_VALLEY"/>
+	</Districts>
+	<District_GreatPersonPoints>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER" PointsPerTurn="1"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" GreatPersonClassType="GREAT_PERSON_CLASS_SCIENTIST" PointsPerTurn="1"/>
+	</District_GreatPersonPoints>
+	<District_TradeRouteYields>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldType="YIELD_SCIENCE"		YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="2" YieldChangeAsInternationalDestination="0"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldType="YIELD_PRODUCTION"	YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="1" YieldChangeAsInternationalDestination="0"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldType="YIELD_GOLD"			YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="0" YieldChangeAsInternationalDestination="4"/>
+	</District_TradeRouteYields>
+	<District_CitizenYieldChanges>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldType="YIELD_SCIENCE"		YieldChange="2"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldType="YIELD_PRODUCTION"	YieldChange="3"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldType="YIELD_GOLD"			YieldChange="4"/>
+	</District_CitizenYieldChanges>
+	<District_Adjacencies>
+		<!--获得-->
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Santa_Clara_Valley_CAMPUS"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Santa_Clara_Valley_HARBOR"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="District_Production"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Government_Production"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Santa_Clara_Valley_Districts"/>
+		<!--给予-->
+		<Row DistrictType="DISTRICT_CAMPUS"				YieldChangeId="CAMPUS_Santa_Clara_Valley"/>
+		<Row DistrictType="DISTRICT_HARBOR"				YieldChangeId="HARBOR_Santa_Clara_Valley"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Santa_Clara_Valley_Santa_Clara_Valley"/>
+	</District_Adjacencies>
+	<Adjacency_YieldChanges>
+		<!--获得-->
+		<Row ID="Santa_Clara_Valley_CAMPUS"		Description="LOC_Santa_Clara_Valley_CAMPUS"		YieldType="YIELD_PRODUCTION" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_CAMPUS"/>
+		<Row ID="Santa_Clara_Valley_HARBOR"		Description="LOC_Santa_Clara_Valley_HARBOR"		YieldType="YIELD_PRODUCTION" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_HARBOR"/>
+		<Row ID="Santa_Clara_Valley_Districts"	Description="LOC_Santa_Clara_Valley_Districts"	YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" OtherDistrictAdjacent="true"/>
+		<!--给予-->
+		<Row ID="CAMPUS_Santa_Clara_Valley"				Description="LOC_CAMPUS_Santa_Clara_Valley"				YieldType="YIELD_SCIENCE"		YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_SANTA_CLARA_VALLEY"/>
+		<Row ID="HARBOR_Santa_Clara_Valley"				Description="LOC_HARBOR_Santa_Clara_Valley"				YieldType="YIELD_GOLD"			YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_SANTA_CLARA_VALLEY"/>
+		<Row ID="Santa_Clara_Valley_Santa_Clara_Valley" Description="LOC_Santa_Clara_Valley_Santa_Clara_Valley" YieldType="YIELD_PRODUCTION"	YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_SANTA_CLARA_VALLEY"/>
+	</Adjacency_YieldChanges>
+	<DistrictModifiers>
+		<Row>
+			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
+			<ModifierId>SANTA_SCIENCE_COPY</ModifierId>
+		</Row>
+		<Row>
+			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
+			<ModifierId>SANTA_GOLD_COPY</ModifierId>
+		</Row>
+		<Row>
+			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
+			<ModifierId>SANTA_IMPROVEMENT_ADD_SCIENCE</ModifierId>
+		</Row>
+		<Row>
+			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
+			<ModifierId>SANTA_IMPROVEMENT_ADD_PRODUCTION</ModifierId>
+		</Row>
+		<Row>
+			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
+			<ModifierId>SANTA_GRANT_RANDOM_TECHNOLOGY</ModifierId>
+		</Row>
+		<Row>
+			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
+			<ModifierId>SANTA_IMPROVEMENT_ADD_PRODUCTION_APPRENTICESHIP</ModifierId>
+		</Row>
+	</DistrictModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>SANTA_SCIENCE_COPY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICT_ADJUST_YIELD_BASED_ON_ADJACENCY_BONUS</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_GOLD_COPY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICT_ADJUST_YIELD_BASED_ON_ADJACENCY_BONUS</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_IMPROVEMENT_ADD_SCIENCE</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_PLOT_HAS_IMPROVEMENT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_IMPROVEMENT_ADD_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_PLOT_HAS_IMPROVEMENT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_GRANT_RANDOM_TECHNOLOGY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_GRANT_RANDOM_TECHNOLOGY</ModifierType>
+			<RunOnce>True</RunOnce>
+			<Permanent>True</Permanent>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_IMPROVEMENT_ADD_PRODUCTION_APPRENTICESHIP</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_APPRENTICESHIP_BUFF</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>SANTA_SCIENCE_COPY</ModifierId>
+			<Name>DistrictType</Name>
+			<Value>DISTRICT_SANTA_CLARA_VALLEY</Value>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_SCIENCE_COPY</ModifierId>
+			<Name>YieldTypeToGrant</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_SCIENCE_COPY</ModifierId>
+			<Name>YieldTypeToMirror</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_GOLD_COPY</ModifierId>
+			<Name>DistrictType</Name>
+			<Value>DISTRICT_SANTA_CLARA_VALLEY</Value>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_GOLD_COPY</ModifierId>
+			<Name>YieldTypeToGrant</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_GOLD_COPY</ModifierId>
+			<Name>YieldTypeToMirror</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_IMPROVEMENT_ADD_SCIENCE</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_IMPROVEMENT_ADD_SCIENCE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_IMPROVEMENT_ADD_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_IMPROVEMENT_ADD_PRODUCTION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_GRANT_RANDOM_TECHNOLOGY</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_IMPROVEMENT_ADD_PRODUCTION_APPRENTICESHIP</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>SANTA_IMPROVEMENT_ADD_PRODUCTION_APPRENTICESHIP</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

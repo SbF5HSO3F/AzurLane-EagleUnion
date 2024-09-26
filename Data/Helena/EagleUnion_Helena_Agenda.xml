@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Helena_Agenda -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：597-->
+<!-- DateCreated: 8/19/2023 4:51:08 PM -->
+<GameData>
+	<Types>
+		<Row Type="TRAIT_AGENDA_MEMORIES_OF_PEARL_HARBOR" Kind="KIND_TRAIT"/>
+	</Types>
+	<AiListTypes>
+		<!--通用-->
+		<Row ListType="MemoriesofPearlHarborDistricts"/>
+		<Row ListType="MemoriesofPearlHarborTechs"/>
+		<!--珍珠港的回忆-->
+		<Row ListType="MemoriesofPearlHarborHateSurpriseWar"/>
+		<Row ListType="MemoriesofPearlHarborHateDeclareWarMinorCiv"/>
+		<Row ListType="MemoriesofPearlHarborHateSettleCoast"/>
+		<Row ListType="MemoriesofPearlHarborLoveFriend"/>
+		<Row ListType="MemoriesofPearlHarborCoastSettlement"/>
+	</AiListTypes>
+	<AiLists>
+		<!--通用-->
+		<Row ListType="MemoriesofPearlHarborDistricts"				AgendaType="TRAIT_AGENDA_MEMORIES_OF_PEARL_HARBOR"  System="Districts"/>
+		<Row ListType="MemoriesofPearlHarborTechs"					LeaderType="LEADER_HELENA_CL50"						System="Technologies"/>
+		<!--珍珠港的回忆-->
+		<Row ListType="MemoriesofPearlHarborHateSurpriseWar"		AgendaType="TRAIT_AGENDA_MEMORIES_OF_PEARL_HARBOR"  System="DiplomaticActions"/>
+		<Row ListType="MemoriesofPearlHarborHateDeclareWarMinorCiv" AgendaType="TRAIT_AGENDA_MEMORIES_OF_PEARL_HARBOR"	System="DiplomaticActions"/>
+		<Row ListType="MemoriesofPearlHarborLoveFriend"				AgendaType="TRAIT_AGENDA_MEMORIES_OF_PEARL_HARBOR"	System="DiplomaticActions"/>
+		<Row ListType="MemoriesofPearlHarborCoastSettlement"		AgendaType="TRAIT_AGENDA_MEMORIES_OF_PEARL_HARBOR"  System="PlotEvaluations"/>
+	</AiLists>
+	<AiFavoredItems>
+		<!--通用-->
+		<Row ListType="MemoriesofPearlHarborDistricts"				Item="DISTRICT_SANTA_CLARA_VALLEY"			Favored="true"/>
+		<Row ListType="MemoriesofPearlHarborTechs"					Item="TECH_WRITING"							Favored="true"/>
+		<!--珍珠港的回忆-->
+		<Row ListType="MemoriesofPearlHarborHateSurpriseWar"		Item="DIPLOACTION_DECLARE_SURPRISE_WAR"		Favored="false"/>
+		<Row ListType="MemoriesofPearlHarborHateDeclareWarMinorCiv" Item="DIPLOACTION_DECLARE_WAR_MINOR_CIV"	Favored="false"/>
+		<Row ListType="MemoriesofPearlHarborLoveFriend"				Item="DIPLOACTION_DECLARE_FRIENDSHIP"		Favored="true"/>
+		<Row ListType="MemoriesofPearlHarborCoastSettlement"		Item="Coastal"								Favored="false"		Value="20"/>
+	</AiFavoredItems>
+	<Traits>
+		<!--珍珠港的回忆-->
+		<Row TraitType="TRAIT_AGENDA_MEMORIES_OF_PEARL_HARBOR"/>
+	</Traits>
+	<AgendaTraits>
+		<!--珍珠港的回忆-->
+		<Row AgendaType="AGENDA_MEMORIES_OF_PEARL_HARBOR" TraitType="TRAIT_AGENDA_MEMORIES_OF_PEARL_HARBOR"/>
+	</AgendaTraits>
+	<TraitModifiers>
+		<!--珍珠港的回忆-->
+		<Row>
+			<TraitType>TRAIT_AGENDA_MEMORIES_OF_PEARL_HARBOR</TraitType>
+			<ModifierId>MEMORIES_OF_PEARL_HARBOR_FRIEND</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_AGENDA_MEMORIES_OF_PEARL_HARBOR</TraitType>
+			<ModifierId>MEMORIES_OF_PEARL_HARBOR_SURPRISE_WAR</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<!--珍珠港的回忆-->
+		<Row>
+			<ModifierId>MEMORIES_OF_PEARL_HARBOR_FRIEND</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_DECLARED_FRIEND</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MEMORIES_OF_PEARL_HARBOR_SURPRISE_WAR</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_DECLARES_SURPRISE_WAR</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--珍珠港的回忆-->
+		<Row>
+			<ModifierId>MEMORIES_OF_PEARL_HARBOR_FRIEND</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>12</Value>
+		</Row>
+		<Row>
+			<ModifierId>MEMORIES_OF_PEARL_HARBOR_FRIEND</ModifierId>
+			<Name>ReductionTurns</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>MEMORIES_OF_PEARL_HARBOR_FRIEND</ModifierId>
+			<Name>ReductionValue</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>MEMORIES_OF_PEARL_HARBOR_FRIEND</ModifierId>
+			<Name>MessageThrottle</Name>
+			<Value>20</Value>
+		</Row>
+		<Row>
+			<ModifierId>MEMORIES_OF_PEARL_HARBOR_FRIEND</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_MEMORIES_OF_PEARL_HARBOR_FRIEND_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>MEMORIES_OF_PEARL_HARBOR_FRIEND</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_MEMORIES_OF_PEARL_HARBOR_FRIEND_FRIEND</Value>
+		</Row>
+		<Row>
+			<ModifierId>MEMORIES_OF_PEARL_HARBOR_SURPRISE_WAR</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-12</Value>
+		</Row>
+		<Row>
+			<ModifierId>MEMORIES_OF_PEARL_HARBOR_SURPRISE_WAR</ModifierId>
+			<Name>ReductionTurns</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>MEMORIES_OF_PEARL_HARBOR_SURPRISE_WAR</ModifierId>
+			<Name>ReductionValue</Name>
+			<Value>-1</Value>
+		</Row>
+		<Row>
+			<ModifierId>MEMORIES_OF_PEARL_HARBOR_SURPRISE_WAR</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_MEMORIES_OF_PEARL_HARBOR_SURPRISE_WAR_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>MEMORIES_OF_PEARL_HARBOR_SURPRISE_WAR</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_MEMORIES_OF_PEARL_HARBOR_SURPRISE_WAR</Value>
+		</Row>
+	</ModifierArguments>
+	<ModifierStrings>
+		<Row ModifierId="MEMORIES_OF_PEARL_HARBOR_FRIEND"			Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="MEMORIES_OF_PEARL_HARBOR_SURPRISE_WAR"		Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+	</ModifierStrings>
+</GameData>

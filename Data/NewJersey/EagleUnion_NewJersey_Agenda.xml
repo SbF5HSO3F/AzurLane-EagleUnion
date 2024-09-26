@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_NewJersey_Agenda -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：697-->
+<!-- DateCreated: 8/19/2023 3:43:44 PM -->
+<GameData>
+	<Types>
+		<Row Type="TRAIT_AGENDA_BLACK_DRAGON" Kind="KIND_TRAIT"/>
+	</Types>
+	<AiListTypes>
+		<!--通用-->
+		<Row ListType="BlackDragonDistricts"/>
+		<Row ListType="BlackDragonTechs"/>
+		<!--黑龙之炎-->
+		<Row ListType="BlackDragonHateSurpriseWar"/>
+		<Row ListType="BlackDragonLoveLiberationWar"/>
+		<Row ListType="BlackDragonLoveProtectorateWar"/>
+		<Row ListType="BlackDragonLoveReconquestWar"/>
+		<Row ListType="BlackDragonHateDeclareWarMinorCiv"/>
+	</AiListTypes>
+	<AiLists>
+		<!--通用-->
+		<Row ListType="BlackDragonDistricts"				AgendaType="TRAIT_AGENDA_BLACK_DRAGON" System="Districts"/>
+		<Row ListType="BlackDragonTechs"					LeaderType="LEADER_NEW_JERSEY_BB62"	   System="Technologies"/>
+		<!--黑龙之炎-->
+		<Row ListType="BlackDragonHateSurpriseWar"			AgendaType="TRAIT_AGENDA_BLACK_DRAGON" System="DiplomaticActions"/>
+		<Row ListType="BlackDragonHateSurpriseWar"			AgendaType="TRAIT_AGENDA_BLACK_DRAGON" System="DiplomaticActions"/>
+		<Row ListType="BlackDragonLoveLiberationWar"		AgendaType="TRAIT_AGENDA_BLACK_DRAGON" System="DiplomaticActions"/>
+		<Row ListType="BlackDragonLoveProtectorateWar"		AgendaType="TRAIT_AGENDA_BLACK_DRAGON" System="DiplomaticActions"/>
+		<Row ListType="BlackDragonHateDeclareWarMinorCiv"	AgendaType="TRAIT_AGENDA_BLACK_DRAGON" System="DiplomaticActions"/>
+	</AiLists>
+	<AiFavoredItems>
+		<!--通用-->
+		<Row ListType="BlackDragonDistricts"				Item="DISTRICT_SANTA_CLARA_VALLEY"			Favored="true"/>
+		<Row ListType="BlackDragonTechs"					Item="TECH_WRITING"							Favored="true"/>
+		<Row ListType="BlackDragonTechs"					Item="TECH_CONSTRUCTION"					Favored="true"/>
+		<!--黑龙之炎-->
+		<Row ListType="BlackDragonHateSurpriseWar"			Item="DIPLOACTION_DECLARE_SURPRISE_WAR"		Favored="false"/>
+		<Row ListType="BlackDragonLoveLiberationWar"		Item="DIPLOACTION_DECLARE_LIBERATION_WAR"	Favored="true"/>
+		<Row ListType="BlackDragonLoveProtectorateWar"		Item="DIPLOACTION_DECLARE_PROTECTORATE_WAR" Favored="true"/>
+		<Row ListType="BlackDragonLoveReconquestWar"		Item="DIPLOACTION_DECLARE_RECONQUEST_WAR"	Favored="true"/>
+		<Row ListType="BlackDragonHateDeclareWarMinorCiv"	Item="DIPLOACTION_DECLARE_WAR_MINOR_CIV"	Favored="false"/>
+	</AiFavoredItems>
+	<Traits>
+		<!--黑龙之炎-->
+		<Row TraitType="TRAIT_AGENDA_BLACK_DRAGON"/>
+	</Traits>
+	<AgendaTraits>
+		<!--黑龙之炎-->
+		<Row AgendaType="AGENDA_BLACK_DRAGON" TraitType="TRAIT_AGENDA_BLACK_DRAGON"/>
+	</AgendaTraits>
+	<TraitModifiers>
+		<!--黑龙之炎-->
+		<Row>
+			<TraitType>TRAIT_AGENDA_BLACK_DRAGON</TraitType>
+			<ModifierId>BLACK_DRAGON_SURPRISE_WAR</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_AGENDA_BLACK_DRAGON</TraitType>
+			<ModifierId>BLACK_DRAGON_HIGH_PROTECT_CITY_STATES</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_AGENDA_BLACK_DRAGON</TraitType>
+			<ModifierId>BLACK_DRAGON_MED_PROTECT_CITY_STATES</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_AGENDA_BLACK_DRAGON</TraitType>
+			<ModifierId>BLACK_DRAGON_MED_ATTACK_CITY_STATES</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_AGENDA_BLACK_DRAGON</TraitType>
+			<ModifierId>BLACK_DRAGON_HIGH_ATTACK_CITY_STATES</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_AGENDA_BLACK_DRAGON</TraitType>
+			<ModifierId>BLACK_DRAGON_ON_GUARD_LIBERATION</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<!--黑龙之炎-->
+		<Row>
+			<ModifierId>BLACK_DRAGON_SURPRISE_WAR</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_DECLARES_SURPRISE_WAR</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_HIGH_PROTECT_CITY_STATES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_HIGH_CITY_STATE_PROTECTION</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_MED_PROTECT_CITY_STATES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_MED_CITY_STATE_PROTECTION</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_MED_ATTACK_CITY_STATES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_MED_CITY_STATE_AGGRESSION</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_HIGH_ATTACK_CITY_STATES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_HIGH_CITY_STATE_AGGRESSION</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_ON_GUARD_LIBERATION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_CITY_LIBERATED</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--黑龙之炎-->
+		<Row>
+			<ModifierId>BLACK_DRAGON_SURPRISE_WAR</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-10</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_SURPRISE_WAR</ModifierId>
+			<Name>ReductionTurns</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_SURPRISE_WAR</ModifierId>
+			<Name>ReductionValue</Name>
+			<Value>-1</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_SURPRISE_WAR</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_BLACK_DRAGON_SURPRISE_WAR_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_SURPRISE_WAR</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_BLACK_DRAGON_SURPRISE_WAR</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_HIGH_PROTECT_CITY_STATES</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>6</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_HIGH_PROTECT_CITY_STATES</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_BLACK_DRAGON_HIGH_PROTECT_CITY_STATES</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_HIGH_PROTECT_CITY_STATES</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_BLACK_DRAGON_HIGH_PROTECT_CITY_STATES_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_MED_PROTECT_CITY_STATES</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>3</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_MED_PROTECT_CITY_STATES</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_BLACK_DRAGON_HIGH_PROTECT_CITY_STATES</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_MED_ATTACK_CITY_STATES</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-3</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_MED_ATTACK_CITY_STATES</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_BLACK_DRAGON_MED_ATTACK_CITY_STATES</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_HIGH_ATTACK_CITY_STATES</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-6</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_HIGH_ATTACK_CITY_STATES</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_BLACK_DRAGON_HIGH_ATTACK_CITY_STATES</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_HIGH_ATTACK_CITY_STATES</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_BLACK_DRAGON_HIGH_ATTACK_CITY_STATES_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_ON_GUARD_LIBERATION</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>15</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_ON_GUARD_LIBERATION</ModifierId>
+			<Name>ReductionTurns</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_ON_GUARD_LIBERATION</ModifierId>
+			<Name>ReductionValue</Name>
+			<Value>-1</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_ON_GUARD_LIBERATION</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_BLACK_DRAGON_ON_GUARD_LIBERATION</Value>
+		</Row>
+		<Row>
+			<ModifierId>BLACK_DRAGON_ON_GUARD_LIBERATION</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_BLACK_DRAGON_ON_GUARD_LIBERATION_REASON_ANY</Value>
+		</Row>
+	</ModifierArguments>
+	<ModifierStrings>
+		<Row ModifierId="BLACK_DRAGON_SURPRISE_WAR"		 		Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="BLACK_DRAGON_HIGH_PROTECT_CITY_STATES" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="BLACK_DRAGON_HIGH_ATTACK_CITY_STATES" 	Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="BLACK_DRAGON_ON_GUARD_LIBERATION" 		Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+	</ModifierStrings>
+</GameData>

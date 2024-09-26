@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Essex_Text -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：90-->
+<!-- DateCreated: 8/18/2023 8:03:49 PM -->
+<GameData>
+	<LocalizedText>
+		<!--领袖介绍-->
+		<Replace Tag="LOC_LEADER_ESSEX_CV9_NAME" Language="en_US">
+			<Text>Essex</Text>
+		</Replace>
+		<!--加载-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_ESSEX_CV9" Language="en_US">
+			<Text>Essex, an aircraft carrier worthy of history! You were born in an era that belongs to you, an era of aircraft carriers. The birth of you and your sisters is one of the world's most industrial feats. Behold, that neat fleet sails across the sea, stretching to the sky. You will make legendary feats and you will get all the victories.</Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_QUOTE" Language="en_US">
+			<Text>Everyone knows that the Essex class is very strong, but everyone has Enterprise predecessors on their lips... Hahh...</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_CAPSULE_BODY" Language="en_US">
+			<Text>Essex has a strong navy, and vigorously developing the navy will bring unparalleled power to the army of Essex</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_DETAILED_BODY" Language="en_US">
+			<Text>There is no doubt that as the best warfighting ship in the fleet, Essex will have the most powerful sea power. By building a city on the shore and using the Santa Clara Valley and the Harbor to facilitate rapid urban development, the city would soon have the ability to assemble a powerful fleet. Combining Essex's abilities with unique units, Essex can recreate the glory of the "Destroying Armada". However, just because Essex's navy is extremely strong doesn't mean her army will be weak – Essex's army gets a lot of [ICON_Strength] Combat Strength bonuses from her fleet. It all suited Essex to the Domination Victory. As a leader of the Eagle Union Civilization, Essex is also a strong competitor for the Science Victory.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>USS Essex CV-9 is the lead ship of the Essex-class aircraft carriers of the United States Navy. It is the fourth U.S. military ship to bear the name Essex, commemorating the donation of the first Essex ship to the U.S. government by residents of Essex County, Massachusetts, in 1799. Because of its outstanding performance in World War II, the ship's sailors called it "The Fightin'est Ship in the Fleet".</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_HISTORY_PARA_2" Language="en_US">
+			<Text>Construction of the USS Essex CV-9 began on 28 April 1941 at the Newport News Shipbuilding and Dry Dock Company. A few months after the attack on Pearl Harbor, the United States officially entered World War II and accelerated the construction of several aircraft carriers, including the USS Essex CV-9.USS Essex CV-9 was launched on 31 July 1942 and began participating in the Pacific War in 1943. After the war, USS Essex CV-9 was mothballed and modernized. In 1951 , USS Essex CV-9 was recommissioned after a refit and participated in two Korean War cruises, during which the USS Essex was redesignated as an attack carrier and the hull number was changed to CVA-9. After the Korean War, USS Essex CVA-9 was again refitted with an angled deck and transferred to the Atlantic Fleet. In 1960, USS Essex CV-9 was redesignated as an anti-submarine aircraft carrier and changed its hull designation to CVS-9. In addition to major wars, USS Essex CVS-9 was involved in several Cold War crises, including the Bay of Pigs incident and the Cuban Missile Crisis. Interestingly,USS Essex CVS-9 also participated in the U.S. space program, recovering the command module of Apollo 7.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_HISTORY_PARA_3" Language="en_US">
+			<Text>USS Essex CVS-9 was decommissioned on 30 June 1969 and joined the reserve fleet. On June 1, 1973, USS Essex CVS-9 was decommissioned and sold for dismantling for $1,660,000. On June 1, 1975, USS Essex CVS-9 was dismantled in the town of Carney, New Jersey.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_HISTORY_PARA_4" Language="en_US">
+			<Text>USS Essex CV-9 received a Presidential Commendation and 13 Battle Stars in World War II.</Text>
+		</Replace>
+		<!--领袖议程-->
+		<Replace Tag="LOC_AGENDA_TF58_NAME" Language="en_US">
+			<Text>The brilliance of TF 38/58</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_TF58_DESCRIPTION" Language="en_US">
+			<Text>A strong navy will be built and a civilization with great naval power will be respected. Hate civilizations with weak naval forces.</Text>
+		</Replace>
+		<!--领袖能力-->
+		<Replace Tag="LOC_TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET_NAME" Language="en_US">
+			<Text>The Fightin'est Ship in the Fleet</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET_DESCRIPTION" Language="en_US">
+			<Text>+7 [ICON_Strength] Combat Strength for all naval units, all naval units +1 [ICON_Strength] Combat Strength for all units. +1 [ICON_Movement] Movement for all units, +1 Sight. Reduce the time required to produce military units by 50%. When producing a Naval Combat unit, obtain [ICON_Culture] Culture equivalent to 40% of the unit's cost. Gain the Essex-class aircraft carrier and F2H Banshee unique unit respectively when the Combustion technology and the Laser technology are researched.</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_ESSEX_NAVY_STRENGTH_DESCRIPTION" Language="en_US">
+			<Text>+{1_Amount}, The Fightin'est Ship in the Fleet</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ESSEX_NAYY_BUFF_DESCRIPTION" Language="en_US">
+			<Text>+7 [ICON_Strength] Combat Strength from The Fightin'est Ship in the Fleet, and +1 [ICON_Strength] Combat Strength for all units</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_ESSEX_UNIT_ADD_COMBAT_DESCRIPTION" Language="en_US">
+			<Text>+{Property} [ICON_Strength] Combat Strength from naval units</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ESSEX_ALL_UNITS_BUFF_DESCRIPTION" Language="en_US">
+			<Text>The Fightin'est Ship in the Fleet provides +1 [ICON_Movement] Movement and +1 Sight</Text>
+		</Replace>
+		<!--领袖单位-->
+		<Replace Tag="LOC_UNIT_ESSEX_CLASS_NAME" Language="en_US">
+			<Text>Essex-class aircraft carrier</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ESSEX_CLASS_DESCRIPTION" Language="en_US">
+			<Text>Essex's unique Modern era naval unit that replaces the Aircraft Carrier, unlocked earlier. Movement is higher than aircraft carriers, melee attack power is higher, air defense and more initial aircraft capacity are possessed. Have a unique promotion tree, and can be upgraded to the Enterprise-class aircraft carriers.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ESSEX_CLASS_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>The Essex-class aircraft carrier is a type of fleet aircraft carrier built by the United States Navy during World War II, with 24 ships of the same type, divided into "short hull type" and "long hull type", the difference is in the bow. Of these, 17 were built during World War II and 7 after the war. It was originally planned to build 32 ships, of which 6 were cancelled and 2 were not built. It is the largest number of first-class aircraft carriers ever built by the United States, and became the mainstay of the US Navy in the Pacific War, telling the world the importance of the struggle for air supremacy in modern warfare.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ESSEX_CLASS_CHAPTER_HISTORY_PARA_2" Language="en_US">
+			<Text>Prior to the Essex class, the U.S. Navy had built two Yorktown-class aircraft carriers and USS Wasp CV-7 within the framework of the 1922 Washington Naval Treaty. With Japan's withdrawal from the Second London Naval Conference in January 1936, the new treaty came to naught. President Roosevelt was determined to double down on naval expansion to balance Japan. Promoted by Chairman of the Navy Council Carl Vinson, Congress passed the Second Vinson Act on May 17, 1938, expanding the size of the Navy by two percent while increasing the tonnage of aircraft carriers by 40,000 tons. Although the Yorktown class had problems such as insufficient aircraft capacity, the U.S. military used 20,000 tons to build the Hornet to solve the urgent problem, while the other 20,000 tons were used to build the improved Yorktown-class aircraft carrier, designated CV-9, or Essex class.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ESSEX_CLASS_CHAPTER_HISTORY_PARA_3" Language="en_US">
+			<Text>The Essex-class aircraft carrier, as the successor to the Yorktown-class aircraft carrier, its improvements are mainly aimed at the shortcomings of the Yorktown-class. Especially in the face of the problem that the hangar and deck of the new carrier-based aircraft are stretched, in addition, it is necessary to strengthen the catapult, interceptor cable, interception net, lifting platform, etc. At the same time, the Navy also requires that the new aircraft carrier must strengthen anti-aircraft fire and defense, while maintaining high speed. Neither the 20,000 tonnes authorized by the Vincennes Act nor the 23,000 tonnes limited by the treaty are sufficient for application. After the outbreak of World War II , the naval treaty was immediately invalid, and the Essex class design was no longer limited in tonnage, and the United States accelerated the design process. In 1940, the standard displacement of the finalized Essex class reached 27,500 tons.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ESSEX_CLASS_CHAPTER_HISTORY_PARA_4" Language="en_US">
+			<Text>In June 1940, with the strong support of President Roosevelt, the U.S. Congress passed the Fleet Expansion Act and the Two Oceans Navy Act, which planned to build 11 aircraft carriers in fiscal 1940 and 2 Essex-class aircraft carriers in fiscal 1941. On April 28, 1941, the construction of the lead ship of the Essex-class aircraft carrier, the USS Essex CV-9, began.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_F2H_NAME" Language="en_US">
+			<Text>F2H Banshee</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_F2H_DESCRIPTION" Language="en_US">
+			<Text>Essex's unique Information era air units that replaced the Jet Fighters. Stronger than the Jet Fighters, with longer range and movemet.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_F2H_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>The F2H Banshee is a single-seat carrier-based fighter/reconnaissance aircraft developed by MacDonald and modified from the FH-1 Phantom. On August 25, 1951, USS Essex CV-9 became the first aircraft carrier in the U.S. Navy to carry the jet F2H Banshee on combat duty, successfully completing the first takeoff and landing of a jet aircraft on an aircraft carrier in actual combat.</Text>
+		</Replace>
+		<!--外交对话-->
+		<!--同意声明友谊-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>I am pleased to announce that you are an ally of the Eagle Union and we accept this friendship.</Text>
+		</Row>
+		<!--拒绝声明友谊-->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>Sorry, but for the sake of Eagle Union's interests, we cannot accept this friendship now.</Text>
+		</Row>
+		<!--请求声明友谊-->
+		<Row Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>Accept our friendship! Together, we can build a navy, enforce our own justice, and maintain peace in the seas.</Text>
+		</Row>
+		<!--请求声明友谊被接受-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>It's good that our Navy will reproduce the glory of Task Force 58/38.</Text>
+		</Row>
+		<!--请求声明友谊被拒绝-->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>Oh, yes? It seems that I am still not as good as the Enterprise, haha...</Text>
+		</Row>
+		<!--被宣战-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>Essex doesn't lose to anyone, and neither does business. I will lead my fleet to defeat your attack. And you, will only repeat the fate of the Sakura Empire Navy.</Text>
+		</Row>
+		<!--主动宣战-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>Your existence undermines the peace of the world, and the Enterprise will certainly not let you do nothing. It is time for peace in the world to be restored.</Text>
+		</Row>
+		<!--接受使节派遣-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>I will lead your mission to see our navy, and they will come back determined to work hard.</Text>
+		</Row>
+		<!--拒绝使节派遣-->
+		<Row Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>Sorry, now is not the time.</Text>
+		</Row>
+		<!--请求派遣使节-->
+		<Row Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>I will send a mission to visit your country. They will share with you their experience in training and maintaining a strong navy, as well as the venerable legacy of Enterprise.</Text>
+		</Row>
+		<!--被谴责-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>Ha ha! Do you have a plan in mind? Hopefully, it's not some nine-dan tapering invitation plan.</Text>
+		</Row>
+		<!--谴责玩家-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>Working with someone like you can't even be tolerated by Enterprise. (Condemn you)</Text>
+		</Row>
+		<!--初次见面-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>I am the Essex-class lead ship Essex, and I have been highly anticipated since its birth. He has participated in 68 battles large and small, and won the title of "The Fightin'est Ship in the Fleet", which can be regarded as fulfilling everyone's expectations. However, in contrast, it is Enterprise that is more active... If only I had joined the battle sooner.</Text>
+		</Row>
+		<!--初次见面，提供最近城市位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>Our fleet is conducting exercises in the near seas, do you want to come and watch?</Text>
+		</Row>
+		<!--初次见面，玩家提供最近城市位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>Thanks!</Text>
+		</Row>
+		<!--初次见面，请求交换首都位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>I will invite your people to our capital and feel what it is like to belong to a country with a powerful navy. But, in the same way, your capital welcomes the visit of our people.</Text>
+		</Row>
+		<!--领袖对玩家有好感-->
+		<Row Tag="LOC_DIPLO_KUDO_EXIT_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>With a strong fleet and a motivated heart, you will surely be admired for future generations like Enterprise.</Text>
+		</Row>
+		<!--领袖敌视玩家-->
+		<Row Tag="LOC_DIPLO_WARNING_EXIT_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>Forge ahead...... It is clear that you do not match the word. Why not learn from Enterprise?</Text>
+		</Row>
+		<!--请求结盟-->
+		<Row Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>Willing to ally with the Eagle Union? Our navy will be stronger, and you will not have to worry about your territorial waters being threatened by anyone.</Text>
+		</Row>
+		<!--要求移开边境军队-->
+		<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>Your army is crawling on the borders of the Eagle Union, and I know that you have some plans against the Eagle Union.</Text>
+		</Row>
+		<!--经受不住时间考验-->
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>I have witnessed the end of the era of large ships and cannons. Right now...... Is the era of aircraft carriers also coming to an end? No, what if it were Enterprise...</Text>
+		</Row>
+		<!--同意交易-->
+		<Row Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>Thank you, this deal is good for you and me.</Text>
+		</Row>
+		<!--拒绝交易-->
+		<Row Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="en_US">
+			<Text>Sorry, no.</Text>
+		</Row>
+	</LocalizedText>
+</GameData>

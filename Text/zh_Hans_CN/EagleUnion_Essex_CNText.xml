@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Essex_Text -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：89-->
+<!-- DateCreated: 8/18/2023 8:03:49 PM -->
+<GameData>
+	<LocalizedText>
+		<!--领袖介绍-->
+		<Replace Tag="LOC_LEADER_ESSEX_CV9_NAME" Language="zh_Hans_CN">
+			<Text>埃塞克斯</Text>
+		</Replace>
+		<!--加载-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_ESSEX_CV9" Language="zh_Hans_CN">
+			<Text>埃塞克斯，值得历史留名的航母！您出生于一个属于你的时代，一个航母的时代。您与您的姐妹们的诞生，堪称是世界上的工业壮举。看啊，那整齐的舰队在海面上航行，延绵至天际。您将立下传奇的功勋，您将获得所有的胜利。</Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_QUOTE" Language="zh_Hans_CN">
+			<Text>大家都知道埃塞克斯级很强，但是每个人的嘴上却又都挂着企业前辈…哈啊…</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_CAPSULE_BODY" Language="zh_Hans_CN">
+			<Text>埃塞克斯拥有强大的海军，大力发展海军将会为埃塞克斯的军队带来无与伦比的力量</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_DETAILED_BODY" Language="zh_Hans_CN">
+			<Text>毫无疑问，作为舰队最善战之舰，埃塞克斯会拥有最为强大的海上力量。在岸边建立城市，利用圣塔克拉拉谷和港口促进城市快速发展，该城市很快就能有组建一支强大舰队的能力。结合埃塞克斯的能力与特色单位，埃塞克斯可以再现“灭国舰队”的辉煌。不过，虽然埃塞克斯的海军极其强大，并不代表她的陆军力量就会薄弱——埃塞克斯的军队能从她的舰队中获得大量 [ICON_Strength] 战斗力加成。这一切都适合埃塞克斯取得征服胜利。同时身为一名白鹰文明的领导者，埃塞克斯也是科技胜利的强力竞争者。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>埃塞克斯号航空母舰是美国海军埃塞克斯级航空母舰的首舰。它是美军第四艘以埃塞克斯为名的军舰，纪念1799年马萨诸塞州的埃塞克斯县居民捐赠第一艘埃塞克斯舰给美国政府。由于在二战中表现出色，舰上水兵称之为“舰队最善战之舰”。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>埃塞克斯号于1941年4月28日在纽波特纽斯造船及干船坞公司开工建设。数月后珍珠港事件爆发，美国便正式参与第二次世界大战，并加速建造埃塞克斯号在内的数艘航母。埃塞克斯号1942年7月31日下水，1943年开始参与太平洋战争。战后埃塞克斯号被封存停放，并进行现代化改装。1951年埃塞克斯号完成改装后再次服役，并参与两次朝鲜战争巡航，期间埃塞克斯号重编为攻击航母，舷号改为CVA-9。朝鲜战争后，埃塞克斯号再次进行改装，增设斜角甲板，并调往大西洋舰队。1960年埃塞克斯号重编为反潜航母，舷号改为CVS-9。除大型战争外，埃塞克斯号也介入了多场冷战危机，包括猪湾事件与古巴导弹危机。有趣的是，埃塞克斯号还参与了美国的太空计划，回收了阿波罗7号的指挥舱。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+			<Text>埃塞克斯号于1969年6月30日退役，并加入后备舰队。1973年6月1日，埃塞克斯号除籍，并以1,660,000美金出售拆解。1975年6月1日，埃塞克斯号于新泽西州卡尼镇拆解。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN">
+			<Text>埃塞克斯号在二战中获得总统集体嘉奖及13颗战斗之星。</Text>
+		</Replace>
+		<!--领袖议程-->
+		<Replace Tag="LOC_AGENDA_TF58_NAME" Language="zh_Hans_CN">
+			<Text>TF 38/58的辉煌</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_TF58_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>将构建强大海军，尊重拥有强大海军力量的文明。讨厌海军力量弱小的文明。</Text>
+		</Replace>
+		<!--领袖能力-->
+		<Replace Tag="LOC_TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET_NAME" Language="zh_Hans_CN">
+			<Text>舰队最善战之舰</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>所有海军单位+7 [ICON_Strength] 战斗力，每个海军单位为所有单位+1 [ICON_Strength] 战斗力。所有单位+1 [ICON_Movement] 移动力、+1视野范围。生产军事单位所需时间减少50%，生产出一个海上战争单位时，将会获得等同于该单位造价40%的 [ICON_Culture] 文化值。研究完“内燃机”与“激光”科技后分别获得特色单位“埃塞克斯级航空母舰”与“F2H 报丧女妖”。</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_ESSEX_NAVY_STRENGTH_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>+{1_Amount}，善战之舰</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ESSEX_NAYY_BUFF_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>善战之舰提供+7 [ICON_Strength] 战斗力，为所有单位提供+1 [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_ESSEX_UNIT_ADD_COMBAT_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>海军单位提供+{Property} [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ESSEX_ALL_UNITS_BUFF_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>善战之舰提供+1 [ICON_Movement] 移动力、+1视野范围</Text>
+		</Replace>
+		<!--领袖单位-->
+		<Replace Tag="LOC_UNIT_ESSEX_CLASS_NAME" Language="zh_Hans_CN">
+			<Text>埃塞克斯级航空母舰</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ESSEX_CLASS_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>取代航空母舰的埃塞克斯特色现代海军单位，解锁更早。移动力高于航空母舰，近战攻击力更高，拥有防空力量和更多的初始飞机容量。拥有特殊的晋升路线，并可升级至企业级航空母舰。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ESSEX_CLASS_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>埃塞克斯级航空母舰是美国海军二战期间建造的一型舰队航空母舰，同型舰24艘，有“短船体型”和“长船体型”之分，区别在于舰艏。其中在二战期间建造了17艘，战后建造了7艘。原计划建造32艘，其中6艘取消，2艘开工未建成。是美国历来所建数量最多的一级航空母舰，在太平洋战争中成为美国海军中流砥柱，向世人诉说了现代战争中制空权争夺的重要性。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ESSEX_CLASS_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>在埃塞克斯级之前，美国海军已在1922年《华盛顿海军条约》框架下建造了两艘约克城级航空母舰和一艘胡蜂号。随着日本在1936年1月退出第二次伦敦海军会议，新条约无疾而终。时任总统罗斯福决心加倍扩充海军，以制衡日本。在海军委员会主席卡尔·文森推动下，美国国会于1938年5月17日通过第二次文森法案，扩大海军规模两成，同时增加40,000吨航空母舰吨位。虽然约克城级有载机量不足等问题，美军仍先用20,000吨用作建造大黄蜂号，以解燃眉之急，而另外20,000吨则用作建造改良的约克城级航空母舰，编号CV-9，即埃塞克斯级。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ESSEX_CLASS_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+			<Text>埃塞克斯级航空母舰作为约克城级航空母舰的后续舰，其改进主要针对约克城级的不足。尤其是面对新式舰载机时机库和甲板都捉襟见肘的问题，此外还需要强化弹射器、拦截索、拦截网、升降台等。同时，海军更要求新式航空母舰必须强化防空火力及防御，同时保持高速。不论是文森法案授权的20,000吨位，还是条约限制的23,000吨，均不足应用。第二次世界大战爆发后，海军条约即时失效，埃塞克斯级的设计再无吨位限制，而美国亦随即加速设计进程。1940年，最终定型埃塞克斯级的标准排水量达到了27500吨。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ESSEX_CLASS_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN">
+			<Text>1940年6月，在罗斯福总统的大力支持下，美国国会通过“舰队扩大法案”和“两洋海军法案”，计划于1940财年建造11艘、1941财年建造2艘埃塞克斯级航空母舰。1941年4月28日，埃塞克斯级航母首舰“埃塞克斯”号开始建造。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_F2H_NAME" Language="zh_Hans_CN">
+			<Text>F2H 报丧女妖</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_F2H_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>取代喷气式战斗机的埃塞克斯特色信息空中单位。强于喷气式战斗机，拥有更远的射程和移动力。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_F2H_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>F2H 报丧女妖是麦克唐纳公司研制的单座舰载战斗/侦察机，由FH-1 鬼怪改进而成。1951年8月25日，埃塞克斯成为了美国海军在战斗任务中第一艘搭载喷气式飞机F2H 报丧女妖的航母，成功在实战中完成了喷气式飞机首次在航母上的起降。</Text>
+		</Replace>
+		<!--外交对话-->
+		<!--同意声明友谊-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>我很高兴宣布你是白鹰的盟友，我们接受这份友谊。</Text>
+		</Row>
+		<!--拒绝声明友谊-->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>对不起，出于白鹰利益的考虑，我们现在无法接受这份友谊。</Text>
+		</Row>
+		<!--请求声明友谊-->
+		<Row Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>接受我们的友谊吧！我们可以共同缔造海军，贯彻自身的正义，维护海洋的和平。</Text>
+		</Row>
+		<!--请求声明友谊被接受-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>很好，我们的海军将会重现第58/38特遣舰队的辉煌。</Text>
+		</Row>
+		<!--请求声明友谊被拒绝-->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>哦，是吗？看样子，我还是不如企业前辈，哈啊……</Text>
+		</Row>
+		<!--被宣战-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>埃塞克斯不会输给任何人，企业前辈也一样。我将带领我的舰队击溃你的进攻。而你，只会重蹈重樱海军的命运。</Text>
+		</Row>
+		<!--主动宣战-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>你的存在破坏了世界的和平，企业前辈肯定不会放任你的胡作非为。是时候让世界的和平恢复了。</Text>
+		</Row>
+		<!--接受使节派遣-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>我将会带领你们的使团去观摩我们的海军，他们回来一定会下定决心奋发图强。</Text>
+		</Row>
+		<!--拒绝使节派遣-->
+		<Row Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>对不起，现在还不是时候。</Text>
+		</Row>
+		<!--请求派遣使节-->
+		<Row Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>我将派出使团前去你的国家拜访。他们将会带着训练和维持一支强大海军的经验与你分享，还有令人尊敬的企业前辈的事迹。</Text>
+		</Row>
+		<!--被谴责-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>哈哈！你这是心中有计划了吗？希望不是什么九段渐减邀击计划。</Text>
+		</Row>
+		<!--谴责玩家-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>与你这样的人共事，即使是企业前辈也无法忍受。（谴责你）</Text>
+		</Row>
+		<!--初次见面-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>我是埃塞克斯级首舰埃塞克斯号，从诞生起就备受大家的期待。参加了大大小小的战斗共68次，获得了“舰队最善战之舰”的称号，也算是完成了大家的期许。不过，相比之下，还是企业前辈的活跃更加受到关注呢……如果我能够早点加入战局的话就好了。</Text>
+		</Row>
+		<!--初次见面，提供最近城市位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>我们的舰队正在附近的近海演习，要过来观看吗？</Text>
+		</Row>
+		<!--初次见面，玩家提供最近城市位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>谢谢！</Text>
+		</Row>
+		<!--初次见面，请求交换首都位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>我将邀请你们的人民来到我们的首都，感受属于拥有强大海军的国家的风采。不过，同样的，您的首都也要迎接我们人民的拜访。</Text>
+		</Row>
+		<!--领袖对玩家有好感-->
+		<Row Tag="LOC_DIPLO_KUDO_EXIT_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>一支强大的舰队与一颗上进的心，你一定会像企业前辈那样为后世敬仰。</Text>
+		</Row>
+		<!--领袖敌视玩家-->
+		<Row Tag="LOC_DIPLO_WARNING_EXIT_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>锐意进取……很明显，你与这个词不搭边。为什么不向企业前辈学习呢？</Text>
+		</Row>
+		<!--请求结盟-->
+		<Row Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>愿意与白鹰结盟吗？我们的海军将更加强大，你将不必担心你的领海受到任何人的威胁。</Text>
+		</Row>
+		<!--要求移开边境军队-->
+		<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>你的军队在白鹰的边界匍匐，我知道你对白鹰有所图谋。</Text>
+		</Row>
+		<!--经受不住时间考验-->
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>我曾见证过大舰巨炮时代的终结。现在……航空母舰的时代也要终结了吗？不，如果是企业前辈的话，又会怎么样呢……</Text>
+		</Row>
+		<!--同意交易-->
+		<Row Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>谢谢，这场交易对你我都有益。</Text>
+		</Row>
+		<!--拒绝交易-->
+		<Row Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="zh_Hans_CN">
+			<Text>对不起，不行。</Text>
+		</Row>
+	</LocalizedText>
+</GameData>

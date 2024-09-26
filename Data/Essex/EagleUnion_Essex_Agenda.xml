@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Essex_Agenda -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：887-->
+<!-- DateCreated: 8/19/2023 10:23:36 AM -->
+<GameData>
+	<Types>
+		<Row Type="TRAIT_AGENDA_TF58"	Kind="KIND_TRAIT"/>
+	</Types>
+	<AiListTypes>
+		<!--通用-->
+		<Row ListType="TF58Districts"/>
+		<Row ListType="TF58Techs"/>
+		<!--TF 38/58的辉煌-->
+		<Row ListType="TF58Buildings"/>
+	</AiListTypes>
+	<AiLists>
+		<!--通用-->
+		<Row ListType="TF58Districts"					AgendaType="TRAIT_AGENDA_TF58"	System="Districts"/>
+		<Row ListType="TF58Techs"						LeaderType="LEADER_ESSEX_CV9"	System="Technologies"/>
+		<!--TF 38/58的辉煌-->
+		<Row ListType="LastVikingKingCoastSettlement"	AgendaType="TRAIT_AGENDA_TF58"	System="PlotEvaluations"/>
+		<Row ListType="LastVikingKingHarborPreference"	AgendaType="TRAIT_AGENDA_TF58"	System="Districts"/>
+		<Row ListType="LastVikingKingNavalPreference"	AgendaType="TRAIT_AGENDA_TF58"	System="PseudoYields"/>
+		<Row ListType="TF58Buildings"					LeaderType="LEADER_ESSEX_CV9"	System="Buildings"/>
+	</AiLists>
+	<AiFavoredItems>
+		<!--通用-->
+		<Row ListType="TF58Districts"	Item="DISTRICT_SANTA_CLARA_VALLEY"			Favored="true"/>
+		<Row ListType="TF58Techs"		Item="TECH_WRITING"							Favored="true"/>
+		<Row ListType="TF58Techs"		Item="TECH_MASS_PRODUCTION"					Favored="true"/>
+		<Row ListType="TF58Techs"		Item="TECH_CELESTIAL_NAVIGATION"			Favored="true"/>
+		<!--TF 38/58的辉煌-->
+		<Row ListType="TF58Buildings"	Item="BUILDING_NEWPORT_NEWS_SHIPBUILDING"	Favored="true"/>
+	</AiFavoredItems>
+	<Traits>
+		<!--TF 38/58的辉煌-->
+		<Row TraitType="TRAIT_AGENDA_TF58"/>
+	</Traits>
+	<AgendaTraits>
+		<!--TF 38/58的辉煌-->
+		<Row AgendaType="AGENDA_TF58"	TraitType="TRAIT_AGENDA_TF58"/>
+	</AgendaTraits>
+	<TraitModifiers>
+		<Row>
+			<TraitType>TRAIT_AGENDA_TF58</TraitType>
+			<ModifierId>AGENDA_ESSEX_TF58</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>AGENDA_ESSEX_TF58</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_AGENDA_LAST_VIKING_KING</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_MAJOR_CIV_KNOWN_10_TURNS</SubjectRequirementSetId>
+			<OwnerRequirementSetId>ON_TURN_STARTED</OwnerRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>AGENDA_ESSEX_TF58</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>AGENDA_ESSEX_TF58_WARNING</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_AllenMSumner_Text -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：49-->
+<!-- DateCreated: 8/19/2023 5:17:30 PM -->
+<GameData>
+	<LocalizedText>
+		<!--领袖介绍-->
+		<Replace Tag="LOC_LEADER_ALLEN_M_SUMNER_DD692_NAME" Language="zh_Hans_CN">
+			<Text>艾伦·萨姆纳</Text>
+		</Replace>
+		<!--加载-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_ALLEN_M_SUMNER_DD692" Language="zh_Hans_CN">
+			<Text>作为当时最先进的驱逐舰，艾伦·萨姆纳，您和您的姐妹们拥有超越弗莱彻级驱逐舰的主炮火力与防空火力。参与了炼狱般的冲绳之战，面对过来自重樱的自杀式飞机袭击，您的经历丰富且多彩。艾伦·萨姆纳，相信您一定可以带领白鹰走向新的辉煌！</Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ALLEN_M_SUMNER_DD692_QUOTE" Language="zh_Hans_CN">
+			<Text>噢！欢迎回来呀！沙发没人坐哦。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ALLEN_M_SUMNER_DD692_CHAPTER_CAPSULE_BODY" Language="zh_Hans_CN">
+			<Text>与其他白鹰领袖不同，艾伦·萨姆纳领导的白鹰还会是文化强国。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ALLEN_M_SUMNER_DD692_CHAPTER_DETAILED_BODY" Language="zh_Hans_CN">
+			<Text>白鹰素以强大的工业与科技实力闻名，而艾伦·萨姆纳则会刷新人们对白鹰的认识。紧凑的建设城市将会为艾伦·萨姆纳带来大量的 [ICON_Culture] 文化值，这一切都是为了文化胜利而服务：研究“飞行”科技后，艾伦·萨姆纳区域的 [ICON_Culture] 文化值产出将提供等量的 [ICON_Tourism] 旅游业绩。进入现代，拥有剧院广场的城市将会成为世界闻名的旅游圣地。如果您想追求文化胜利，艾伦·萨姆纳一定是您最为头痛的对手。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ALLEN_M_SUMNER_DD692_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>艾伦·M·萨姆纳号驱逐舰是美国海军二战期间建造的艾伦·M·萨姆纳级驱逐舰的首舰——为方便大众称谓，该舰可缩略中间名为艾伦·萨姆纳。该舰舰名一战时期在凡尔登前线牺牲的美国海军陆战队上尉，小艾伦·梅兰克森·萨姆纳：他当时临时肩负一个团及阵地一翼的指挥任务，牺牲时年仅约26岁。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ALLEN_M_SUMNER_DD692_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>作为首舰，艾伦·萨姆纳率先在1943年7月7日于新泽西州卡尼县的联邦造船厂开工建设。</Text>
+		</Replace>
+		<!--领袖议程-->
+		<Replace Tag="LOC_AGENDA_BANG_FOR_YOUR_BUCK_NAME" Language="zh_Hans_CN">
+			<Text>喧闹之焰</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_BANG_FOR_YOUR_BUCK_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>乐于开放边界，并追求 [ICON_Tourism] 旅游业绩。喜欢拥有较高 [ICON_Culture] 文化值的文明，讨厌发动突袭战争的文明。</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_BANG_FOR_YOUR_BUCK_HIGH_CULTURE" Language="zh_Hans_CN">
+			<Text>艾伦·萨姆纳喜欢拥有较高文化值的文明</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_BANG_FOR_YOUR_BUCK_ANY_REASON" Language="zh_Hans_CN">
+			<Text>（您拥有较高文化值）</Text>
+		</Replace>
+		<Replace Tag="LOC_BANG_FOR_YOUR_BUCK_SURPRISE_WAR" Language="zh_Hans_CN">
+			<Text>艾伦·萨姆纳讨厌宣布突袭战争的文明</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_BANG_FOR_YOUR_BUCK_SURPRISE_WAR_REASON_ANY" Language="zh_Hans_CN">
+			<Text>（您宣布了突袭战争）</Text>
+		</Replace>
+		<!--领袖能力-->
+		<Replace Tag="LOC_TRAIT_LEADER_SHOOTING_GUN_STAR_NAME" Language="zh_Hans_CN">
+			<Text>星火之光</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_SHOOTING_GUN_STAR_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>所有区域从每个相邻的区域获得+2 [ICON_Culture] 文化值。研究完“飞行”科技后，所有区域将获得与 [ICON_Culture] 文化值产量相等的 [ICON_Tourism] 旅游业绩。游戏进入现代后，拥有剧院广场的城市+100% [ICON_Tourism] 旅游业绩。研究完“联合作战”后获得特色单位“艾伦·M·萨姆纳级驱逐舰”。</Text>
+		</Replace>
+		<!--特殊加成-->
+		<Replace Tag="LOC_Allen_Culture_Adjacency_From_District" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_Culture] 文化值来自相邻的每个区域</Text>
+		</Replace>
+		<!--能力加成-->
+
+		<!--特殊单位-->
+		<Replace Tag="LOC_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_NAME" Language="zh_Hans_CN">
+			<Text>艾伦·M·萨姆纳级驱逐舰</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>取代驱逐舰的艾伦·萨姆纳特色原子能海军单位，强于驱逐舰，并拥有强大的防空能力，可进行射程为1的远程攻击。与海军袭击者作战时+7 [ICON_Strength] 战斗力，显示视线范围内的海军袭击者。</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ALLEN_M_SUMNER_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>与海军袭击者作战时+7 [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>艾伦·M·萨姆纳级驱逐舰，简称“萨姆纳级”，是美国海军在1943年至1946年间建造的一级驱逐舰，建成58艘。日本海军由于1942年中途岛海战的失败，日本人放弃了战略进攻，同时也失去了战争初期的制海权与制空权，与此同时，双方的海空对抗愈发激烈。在如此的大背景下，美国海军认为弗莱彻级驱逐舰的防空火力还有必要进一步提升。于是在弗莱彻级驱逐舰舰体的基础上，修改上层建筑与武器配置，美国海军设计了新一代驱逐舰。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>1943年7月7日，首舰艾伦·M·萨姆纳号驱逐舰于联邦造船厂开工建造，其余57艘同级舰陆续开工，建造序列为DD-692至DD-709、DD-722至DD-734、DD-741至DD-748、DD-752至DD-762、DD-770、DD-774至DD-781、DD-857。萨姆纳级驱逐舰原计划建造70艘，后来有12艘在建造过程中被改建为快速布雷舰，即罗伯特·H·史密斯级。其中大部分萨姆纳级驱逐舰在1944年-1945年间服役，有三艘直到二战结束才建成服役。二战期间建造完成的萨姆纳级驱逐舰又可以分成前期型与后期型，其中前期型26艘，主要采用敞开式舰桥；后期型29艘，主要采用封闭式舰桥。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+			<Text>在动力系统方面，萨姆纳级驱逐舰与弗莱彻级驱逐舰相似，同样安装了四台燃油锅炉、两座蒸汽轮机，且功率达到了相同的60,000马力。但由于排水量的提高，最大航速从弗莱彻级的37.8节降至34节。在武器系统方面，萨姆纳级驱逐舰拥有3门双联装127mm/38 Mk38高平两用炮，炮塔布置前二后一，受Mk37型火控系统以及Mk25型火控雷达制导远程防空。同时，近程她也拥有12门40mm博福斯防空炮以及11门20mm厄利孔防空机炮配合，构成强大的防空火力。初始设计中，萨姆纳级还拥有2座五联装533mm鱼雷发射管位于烟囱前后中轴线上，并在舰艉安装了两座深弹发射架以及六个K型深弹投掷器，用以提升其反潜作战能力，但随着1945年日军攻击方式越发倾向于自杀式空袭，她们也随之拆除后鱼雷发射管，改为1门四联装40mm博福斯防空炮。与前级弗莱彻驱逐舰相比，萨姆纳级驱逐舰主炮火力增强20%，防空火力增强50%。由于对空火力的显著增强，萨姆纳级驱逐舰常作为舰队外围防空警戒舰来使用。</Text>
+		</Replace>
+		<!--外交文本-->
+		<!--同意宣布友谊-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>哈哈，接下来我们就是朋友了哦！</Text>
+		</Replace>
+		<!--拒绝宣布友谊-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>好啦，但是现在是不行的~</Text>
+		</Replace>
+		<!--请求宣布友谊-->
+		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>来吧，让我们宣布友谊吧！</Text>
+		</Replace>
+		<!--宣布友谊被接受-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>欸嘿~还不错嘛！</Text>
+		</Replace>
+		<!--宣布友谊被拒绝-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>唔，那就这样吧。</Text>
+		</Replace>
+		<!--被宣战-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>唉唉，看样子有必要让你清醒清醒了！之后我会再贴上一颗星星~</Text>
+		</Replace>
+		<!--宣战-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>请允许我向你致函：白鹰联邦，现在正式向你宣战！</Text>
+		</Replace>
+		<!--接受代表团-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>是代表团吗？我会好好接待他们的！他们将惊叹白鹰联邦科技的先进。</Text>
+		</Replace>
+		<!--拒绝代表团-->
+		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>嗯，是这样的：白鹰联邦现在对你们的代表团不感兴趣。</Text>
+		</Replace>
+		<!--派出代表团-->
+		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>白鹰联邦已经派出代表团：我们希望能与您的文明建立更加深刻的交流。</Text>
+		</Replace>
+		<!--被谴责-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>也许这可能是你心情不好，也可能是你一时被冲动冲昏了头脑。但这样是不好的喔？</Text>
+		</Replace>
+		<!--谴责-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>白鹰联邦里的其他人托我向你转告：他们已经看不下去你的所作所为了！（谴责你）</Text>
+		</Replace>
+		<!--初次见面-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>白鹰新型驱逐舰，艾伦·萨姆纳就是我哦！艾伦·萨姆纳级是弗莱彻级的改进型。虽然数量上比不过它们，不过无论是火力还是防空都更胜一筹！说我们是活跃在那时的白鹰最强驱逐舰也不为过呢~</Text>
+		</Replace>
+		<!--初次见面，邀请参观附近城市-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>嘿嘿，要来我们附近的城市参观么？</Text>
+		</Replace>
+		<!--初次见面，感谢玩家提供最近城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>呀，真是没想到呢。那就让我好好欣赏你们的城市吧！</Text>
+		</Replace>
+		<!--初次见面，请求交换城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>哼哼，我会为你介绍白鹰联邦那伟大的首都的！然后呢，就轮到你来为我们介绍你们的首都啦！</Text>
+		</Replace>
+		<!--欢迎语？-->
+		<Replace Tag="LOC_DIPLO_GREETING_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>叫我艾伦就好，请多指教啦~</Text>
+		</Replace>
+		<!--示好-->
+		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>欸嘿，介意我为你贴上一枚新的贴纸嘛？</Text>
+		</Replace>
+		<!--敌视-->
+		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>怎么说呢，像这样宣布战争可是不好的哦？</Text>
+		</Replace>
+		<!--请求结盟-->
+		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>是时候结盟了！快结盟~快结盟~快结盟~</Text>
+		</Replace>
+		<!--同意和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>白鹰联邦愿意缔结我们之间的和平。</Text>
+		</Replace>
+		<!--拒绝和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>那可不行，我们之间的战争还没有结束！</Text>
+		</Replace>
+		<!--请求和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>来吧！让我们放下武器，为两国之间贴上“和平”的贴纸吧！</Text>
+		</Replace>
+		<!--接受开放边界请求-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>嗯嗯，让我贴上一枚“边境准入”贴纸……</Text>
+		</Replace>
+		<!--拒绝开放边界请求-->
+		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>唔……我现在没有更多的“边境准入”贴纸了！</Text>
+		</Replace>
+		<!--请求开放边界-->
+		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>白鹰联邦希望军队能通过你们的边境。希望您能准许。</Text>
+		</Replace>
+		<!--要求移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>哇哦，边境好热闹呀！很可惜，这种热闹大家都不喜欢：请撤走白鹰联邦边境的军队！</Text>
+		</Replace>
+		<!--拒绝移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>好不容易行军到这里的……随随便便撤离？那可不行！</Text>
+		</Replace>
+		<!--同意移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>白鹰联邦的军队很快就会撤离！不用担心！</Text>
+		</Replace>
+		<!--经受不住时间考验-->
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>放松过头了啊……</Text>
+		</Replace>
+		<!--拒绝交易-->
+		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>请允许我拒绝。</Text>
+		</Replace>
+		<!--同意交易-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hans_CN">
+			<Text>嗯，一场很棒的交易！</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_UnitAbilities -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：996-->
+<!-- DateCreated: 2/26/2023 8:46:17 AM -->
+<GameData>
+	<Types>
+		<Row Type="ABILITY_ENTERPRISE_HREAT" Kind="KIND_ABILITY"/>
+	</Types>
+	<TypeTags>
+		<Row Type="ABILITY_ENTERPRISE_HREAT" Tag="CLASS_NAVAL_MELEE"/>
+		<Row Type="ABILITY_ENTERPRISE_HREAT" Tag="CLASS_NAVAL_RANGED"/>
+		<Row Type="ABILITY_ENTERPRISE_HREAT" Tag="CLASS_NAVAL_RAIDER"/>
+		<Row Type="ABILITY_ENTERPRISE_HREAT" Tag="CLASS_NAVAL_CARRIER"/>
+	</TypeTags>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_ENTERPRISE_HREAT"	Name="LOC_ABILITY_ENTERPRISE_HREAT_NAME" Description="LOC_ABILITY_ENTERPRISE_HREAT_DESCRIPTION"	Inactive="true"/>
+	</UnitAbilities>
+	<ModifierStrings>
+		<Row ModifierId="ENTERPRISE_HREAT_STRENGTH" Context="Preview" Text="LOC_PREVIEW_ENTERPRISE_HREAT_STRENGTH_DESCRIPTION"/>
+	</ModifierStrings>
+	<UnitAbilityModifiers>
+		<Row>
+			<UnitAbilityType>ABILITY_ENTERPRISE_HREAT</UnitAbilityType>
+			<ModifierId>ENTERPRISE_HREAT_STRENGTH</ModifierId>
+		</Row>
+		<Row>
+			<UnitAbilityType>ABILITY_ENTERPRISE_HREAT</UnitAbilityType>
+			<ModifierId>ENTERPRISE_HEART_EXP</ModifierId>
+		</Row>
+		<Row>
+			<UnitAbilityType>ABILITY_ENTERPRISE_HREAT</UnitAbilityType>
+			<ModifierId>NEWPORT_NEWS_TRAINED_UNIT_XP</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>ENTERPRISE_HREAT_STRENGTH</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+			<Permanent>true</Permanent>
+		</Row>
+		<Row>
+			<ModifierId>ENTERPRISE_HEART_EXP</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_GRANT_EXPERIENCE</ModifierType>
+			<Permanent>true</Permanent>
+		</Row>
+		<Row>
+			<ModifierId>NEWPORT_NEWS_TRAINED_UNIT_XP</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_UNIT_EXPERIENCE_MODIFIER</ModifierType>
+			<Permanent>true</Permanent>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>ENTERPRISE_HREAT_STRENGTH</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+		<Row>
+			<ModifierId>ENTERPRISE_HEART_EXP</ModifierId>
+			<Name>Amount</Name>
+			<Value>-1</Value>
+		</Row>
+		<Row>
+			<ModifierId>NEWPORT_NEWS_TRAINED_UNIT_XP</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

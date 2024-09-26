@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Georgia_Text -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：79-->
+<!-- DateCreated: 8/19/2023 10:35:42 AM -->
+<GameData>
+	<LocalizedText>
+		<!--领袖介绍-->
+		<Replace Tag="LOC_LEADER_GEORGIA_NAME" Language="zh_Hans_CN">
+			<Text>佐治亚</Text>
+		</Replace>
+		<!--加载-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_GEORGIA" Language="zh_Hans_CN">
+			<Text>佐治亚，恭喜你，您终于进入了人们的视野。虽然人们对你了解颇少，但很快你就能向人们展现自己的不同之处——那巨大口径的火炮着实威力无比。前进吧，用炮火粉碎敌人的防御，您将让人们再次意识到衣阿华级战列舰的威名。</Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GEORGIA_QUOTE" Language="zh_Hans_CN">
+			<Text>再坚固的装甲，也只有被巨炮击碎的命运！</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GEORGIA_CHAPTER_CAPSULE_BODY" Language="zh_Hans_CN">
+			<Text>作为白鹰的领袖，强大的舰炮、国际贸易路线与享有盛名的种植园使得佐治亚所向披靡。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GEORGIA_CHAPTER_DETAILED_BODY" Language="zh_Hans_CN">
+			<Text>佐治亚身为衣阿华级战列舰原型方案Ⅳ，拥有强悍无比的火力，这使得她进攻城市与海军有独特的优势———佐治亚的所有单位攻击区域防御与海军时拥有 [ICON_Strength] 战斗力加成，同时远程单位与海军还可对城市输出全额伤害。因此佐治亚的海军实力不俗，更何况还有强大的特色单位加持。佐治亚在游戏前期需要尽快探索周边，以便利用强大的国际贸易路线和种植园加速自身的发展，然后发展工业区巩固前期累积下来的优势。这一切使得佐治亚适合取得征服胜利与文化胜利，她在这两个方面上的实力不容小觑。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GEORGIA_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>衣阿华级战列舰原型方案Ⅳ只是1938年5月论证衣阿华级战列舰时提出的一系列方案之一。因此，历史上佐治亚号战列舰只是人们脑海中的一个念想（这个念想也不一定叫作佐治亚），并没有对应的舰船建成服役。她的唯二出现的地方只有《战舰世界》与《碧蓝航线》。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GEORGIA_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>在《战舰世界》中，该舰曾出现在早期游戏宣传绘中，但一直被雪藏。2019年2月21日，大白舰队环球航行110周年纪念之际，该模型被重新推出。不同的是开发者为她换装了三座双联装457mmMKA炮塔。弥补了原来只有MK6的遗憾，而整体重量可以做到基本不变。不过，在设计衣阿华级的过程中，美国海军从未考虑过双联装457mm的方案，只考虑三联装方案，这也是导致设计超重得不到通过的一个重要原因。《战舰世界》中佐治亚的船体状态为1945年。而在《碧蓝航线》中，佐治亚作为《碧蓝航线》与《战舰世界》举行的二期联动的方案舰出场。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_GEORGIA_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+			<Text>佐治亚的命名来源于美国的佐治亚州，美国东南部7个州之一。在历史上，曾有一弗吉尼亚级战列舰被命名为佐治亚，她曾是著名的大白舰队的一员。</Text>
+		</Replace>
+		<!--领袖议程-->
+		<Replace Tag="LOC_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET_NAME" Language="zh_Hans_CN">
+			<Text>大白舰队的遗产</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>尽可能的发展海军以探索世界。喜欢探索世界的文明，讨厌闭门不出的文明。</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_THE_HERITAGE_OF_GREAT_WHITE_FLEET_HIGH_EXPLORATION" Language="zh_Hans_CN">
+			<Text>（您积极的探索世界）</Text>
+		</Replace>
+		<Replace Tag="LOC_THE_HERITAGE_OF_GREAT_WHITE_FLEET_HIGH_EXPLORATION" Language="zh_Hans_CN">
+			<Text>佐治亚喜欢积极探索世界的文明</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_THE_HERITAGE_OF_GREAT_WHITE_FLEET_LOW_EXPLORATION" Language="zh_Hans_CN">
+			<Text>（您闭门不出）</Text>
+		</Replace>
+		<Replace Tag="LOC_THE_HERITAGE_OF_GREAT_WHITE_FLEET_LOW_EXPLORATION" Language="zh_Hans_CN">
+			<Text>佐治亚讨厌忽视对世界进行探索的文明</Text>
+		</Replace>
+		<!--领袖能力-->
+		<Replace Tag="LOC_TRAIT_LEADER_HEAVY_BARREL_BLASTER_NAME" Language="zh_Hans_CN">
+			<Text>巨炮轰鸣</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_HEAVY_BARREL_BLASTER_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>种植园+3 [ICON_Culture] 文化值，+1 [ICON_TradeRoute] 贸易路线容量并对周边单元格释放文化炸弹。[ICON_TradeRoute] 贸易路线目的地城市中的每个专业化区域提供+2 [ICON_Culture] 文化值，若为国际 [ICON_TradeRoute] 贸易路线，则+4 [ICON_Culture] 文化值。所有单位在攻击海军单位和区域防御时+7 [ICON_Strength] 战斗力。研究完“高级弹道学”后获得特色单位“衣阿华级战列舰原型方案Ⅳ”。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_HEAVY_BARREL_BLASTER_DESCRIPTION_XP2" Language="zh_Hans_CN">
+			<Text>种植园+3 [ICON_Culture] 文化值，+1 [ICON_TradeRoute] 贸易路线容量并对周边单元格释放文化炸弹。[ICON_TradeRoute] 贸易路线目的地城市中的每个专业化区域提供+2 [ICON_Culture] 文化值，若为国际 [ICON_TradeRoute] 贸易路线，则+4 [ICON_Culture] 文化值。所有单位在攻击海军单位和区域防御时+7 [ICON_Strength] 战斗力，所有海军单位与远程单位可对城市输出全额伤害。研究完“高级弹道学”后获得特色单位“衣阿华级战列舰原型方案Ⅳ”。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_IOWA_CLASS_PLAN_4_NAME" Language="zh_Hans_CN">
+			<Text>衣阿华级战列舰原型方案Ⅳ</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_IOWA_CLASS_PLAN_4_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>取代导弹巡洋舰的佐治亚特色原子能海军单位，解锁更早。造价昂贵，但拥有强大的射程和强悍的远程战斗力。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_IOWA_CLASS_PLAN_4_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>这是1938年5月论证衣阿华级战列舰时提出的一系列方案之一，当时被列为方案Ⅳ。该方案以南达科他级战列舰为基础，拉长舰体，改用双烟囱。同时沿用南达科他级的推进器设计，使得设计航速可达33节。计划采用三座三联装406mm/45 MK6炮塔，与同期其他采用50倍径406mm主炮的方案相比，舰体稍短，吨位较轻，但显得火力不足。事实上，如果衣阿华级最终采用MK6炮塔的设计，那么除了能提高6节航速外并没有其他效应。</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY_TEXT" Language="zh_Hans_CN">
+			<Text>+{1_Amount}，攻击区域防御或海军单位</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>攻击区域防御或海军单位时+7 [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<!--外交文本-->
+		<!--同意声明友谊-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>我早有此意，很高兴接受你们的友谊。</Text>
+		</Row>
+		<!--拒绝声明友谊-->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>虽然我很想接受这份友谊，但我的人民还需考虑。</Text>
+		</Row>
+		<!--请求声明友谊-->
+		<Row Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>我想向世界宣布我们之间的友谊，你愿意吗？</Text>
+		</Row>
+		<!--请求声明友谊被接受-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_GEORGIA_CV9_ANY" Language="zh_Hans_CN">
+			<Text>好，我们的友谊将会像碧海青天一样深远。</Text>
+		</Row>
+		<!--请求声明友谊被拒绝-->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>看样子你还没准备好。没关系，等你准备好时我还会再来的。</Text>
+		</Row>
+		<!--被宣战-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>不错，你勇气可嘉。不过你的军队将会被炮火所粉碎，而这巨炮的轰鸣就是你们最后的回忆！</Text>
+		</Row>
+		<!--主动宣战-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>很可惜，但我想现在维持表面的和平已经毫无意义。所以，迎接被巨炮击碎的命运吧！</Text>
+		</Row>
+		<!--接受使节派遣-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_GEORGIA_CV9_ANY" Language="zh_Hans_CN">
+			<Text>你们的使节已经安全到访，他们将受到我们的热烈招待。</Text>
+		</Row>
+		<!--拒绝使节派遣-->
+		<Row Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>不行，我们之间还没到那种地步。</Text>
+		</Row>
+		<!--请求派遣使节-->
+		<Row Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>汽水、水果……我的使节带来的远不止这些——他们承载我的热情与好意，你愿意接待吗？</Text>
+		</Row>
+		<!--被谴责-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>我早知你会如此。不过，我挺欣赏你这样做的勇气。</Text>
+		</Row>
+		<!--谴责玩家-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>我在尽可能与你建立友好关系。很明显，这一切都是无用功。（谴责你）</Text>
+		</Row>
+		<!--初次见面-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>我是白鹰所属战列舰，佐治亚。比起那几位远房姐妹，我的主炮口径更大一些。而我，会用这主炮，粉碎挡在面前的所有敌人。所以，你会成为我的敌人吗，朋友？</Text>
+		</Row>
+		<!--初次见面，提供最近城市位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>想要到我们附近的城市品尝水果吗？佐治亚的“桃子之州”可不是浪得虚名的。</Text>
+		</Row>
+		<!--初次见面，玩家提供最近城市位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>我很乐意拜访你的城市。</Text>
+		</Row>
+		<!--初次见面，请求交换首都位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>让我们相互交换关于首都的位置吧。坦诚相待，这对你我都好。</Text>
+		</Row>
+		<!--领袖对玩家有好感-->
+		<Row Tag="LOC_DIPLO_KUDO_EXIT_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>我有一个梦想，那就是有一天四海从此清平。我想有你这样的人在，这一天也不远了。</Text>
+		</Row>
+		<!--领袖敌视玩家-->
+		<Row Tag="LOC_DIPLO_WARNING_EXIT_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>光有雄心壮志，没有行动，可是什么也做不了的哦？</Text>
+		</Row>
+		<!--请求结盟-->
+		<Row Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>大海空阔富有魅力，远洋舰队正环球航行，寻求不可多得美景。我想我们可以结盟了。</Text>
+		</Row>
+		<!--要求移开边境军队-->
+		<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>在白鹰的边界，你的部队正在集结，我想我们之间没必要那么虚伪。</Text>
+		</Row>
+		<!--经受不住时间考验-->
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>我有个梦想，那就是有一天，大海上不再有硝烟，所有人都回到和平之中……不过现在我再也看不到那一天了……</Text>
+		</Row>
+		<!--同意交易-->
+		<Row Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>这场交易对你我都有好处。</Text>
+		</Row>
+		<!--拒绝交易-->
+		<Row Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_GEORGIA_ANY" Language="zh_Hans_CN">
+			<Text>很明显我不可能同意。</Text>
+		</Row>
+	</LocalizedText>
+</GameData>

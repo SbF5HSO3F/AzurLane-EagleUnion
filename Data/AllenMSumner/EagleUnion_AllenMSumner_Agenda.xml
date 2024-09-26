@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_AllenMSumner_Agenda -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2023/10/11 20:32:53 -->
+<GameData>
+	<Types>
+		<Row Type="TRAIT_AGENDA_BANG_FOR_YOUR_BUCK" Kind="KIND_TRAIT"/>
+	</Types>
+	<AiListTypes>
+		<!--通用-->
+		<Row ListType="BangForYourBuckDistricts"/>
+		<Row ListType="BangForYourBuckTechs"/>
+		<!--喧闹之焰-->
+		<Row ListType="BangForYourBuckHateSurpriseWar"/>
+		<Row ListType="BangForYourBuckHateDeclareWarMinorCiv"/>
+		<Row ListType="BangForYourBuckLoveOpenBorders"/>
+		<Row ListType="BangForYourBuckLoveTourism"/>
+		<Row ListType="BangForYourBuckCivics"/>
+	</AiListTypes>
+	<AiLists>
+		<!--通用-->
+		<Row ListType="BangForYourBuckDistricts"				AgendaType="TRAIT_AGENDA_BANG_FOR_YOUR_BUCK"	System="Districts"/>
+		<Row ListType="BangForYourBuckTechs"					LeaderType="LEADER_ALLEN_M_SUMNER_DD692"		System="Technologies"/>
+		<!--喧闹之焰-->
+		<Row ListType="BangForYourBuckHateSurpriseWar"			AgendaType="TRAIT_AGENDA_BANG_FOR_YOUR_BUCK"	System="DiplomaticActions"/>
+		<Row ListType="BangForYourBuckHateDeclareWarMinorCiv"	AgendaType="TRAIT_AGENDA_BANG_FOR_YOUR_BUCK"	System="DiplomaticActions"/>
+		<Row ListType="BangForYourBuckLoveOpenBorders"			AgendaType="TRAIT_AGENDA_BANG_FOR_YOUR_BUCK"	System="DiplomaticActions"/>
+		<Row ListType="BangForYourBuckLoveTourism"				AgendaType="TRAIT_AGENDA_BANG_FOR_YOUR_BUCK"	System="PseudoYields"/>
+		<Row ListType="BangForYourBuckCivics"					LeaderType="LEADER_ALLEN_M_SUMNER_DD692"		System="Civics"/>
+	</AiLists>
+	<AiFavoredItems>
+		<!--通用-->
+		<Row ListType="BangForYourBuckDistricts"				Item="DISTRICT_SANTA_CLARA_VALLEY"			Favored="true"/>
+		<Row ListType="BangForYourBuckDistricts"				Item="DISTRICT_THEATER"						Favored="true"/>
+		<Row ListType="BangForYourBuckTechs"					Item="TECH_WRITING"							Favored="true"/>
+		<Row ListType="BangForYourBuckTechs"					Item="TECH_FLIGHT"							Favored="true"/>
+		<!--喧闹之焰-->
+		<Row ListType="BangForYourBuckHateSurpriseWar"			Item="DIPLOACTION_DECLARE_SURPRISE_WAR"		Favored="false"/>
+		<Row ListType="BangForYourBuckHateDeclareWarMinorCiv"	Item="DIPLOACTION_DECLARE_WAR_MINOR_CIV"	Favored="false"/>
+		<Row ListType="BangForYourBuckLoveOpenBorders"			Item="DIPLOACTION_OPEN_BORDERS"				Favored="true"/>
+		<Row ListType="BangForYourBuckLoveTourism"				Item="PSEUDOYIELD_TOURISM"									Value="20"/>
+		<!--<Row ListType="BangForYourBuckCivics"					Item="CIVIC_MEDIEVAL_FAIRES"				Favored="true"/>-->
+	</AiFavoredItems>
+	<Traits>
+		<!--喧闹之焰-->
+		<Row TraitType="TRAIT_AGENDA_BANG_FOR_YOUR_BUCK"/>
+	</Traits>
+	<AgendaTraits>
+		<!--喧闹之焰-->
+		<Row AgendaType="AGENDA_BANG_FOR_YOUR_BUCK" TraitType="TRAIT_AGENDA_BANG_FOR_YOUR_BUCK"/>
+	</AgendaTraits>
+	<TraitModifiers>
+		<!--喜欢高文化值-->
+		<Row>
+			<TraitType>TRAIT_AGENDA_BANG_FOR_YOUR_BUCK</TraitType>
+			<ModifierId>BANG_FOR_YOUR_BUCK_HIGH_CULTURE</ModifierId>
+		</Row>
+		<!--讨厌突袭战争-->
+		<Row>
+			<TraitType>TRAIT_AGENDA_BANG_FOR_YOUR_BUCK</TraitType>
+			<ModifierId>BANG_FOR_YOUR_BUCK_SURPRISE_WAR</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<!--喜欢高文化值-->
+		<Row>
+			<ModifierId>BANG_FOR_YOUR_BUCK_HIGH_CULTURE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_HIGH_CULTURE</SubjectRequirementSetId>
+		</Row>
+		<!--讨厌突袭战争-->
+		<Row>
+			<ModifierId>BANG_FOR_YOUR_BUCK_SURPRISE_WAR</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_DECLARES_SURPRISE_WAR</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--喜欢高文化值-->
+		<Row>
+			<ModifierId>BANG_FOR_YOUR_BUCK_HIGH_CULTURE</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>6</Value>
+		</Row>
+		<Row>
+			<ModifierId>BANG_FOR_YOUR_BUCK_HIGH_CULTURE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_BANG_FOR_YOUR_BUCK_HIGH_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>BANG_FOR_YOUR_BUCK_HIGH_CULTURE</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_KUDO_BANG_FOR_YOUR_BUCK_ANY_REASON</Value>
+		</Row>
+		<!--讨厌突袭战争-->
+		<Row>
+			<ModifierId>BANG_FOR_YOUR_BUCK_SURPRISE_WAR</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-12</Value>
+		</Row>
+		<Row>
+			<ModifierId>BANG_FOR_YOUR_BUCK_SURPRISE_WAR</ModifierId>
+			<Name>ReductionTurns</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>BANG_FOR_YOUR_BUCK_SURPRISE_WAR</ModifierId>
+			<Name>ReductionValue</Name>
+			<Value>-1</Value>
+		</Row>
+		<Row>
+			<ModifierId>BANG_FOR_YOUR_BUCK_SURPRISE_WAR</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_BANG_FOR_YOUR_BUCK_SURPRISE_WAR_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>BANG_FOR_YOUR_BUCK_SURPRISE_WAR</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_BANG_FOR_YOUR_BUCK_SURPRISE_WAR</Value>
+		</Row>
+	</ModifierArguments>
+	<ModifierStrings>
+		<Row ModifierId="BANG_FOR_YOUR_BUCK_HIGH_CULTURE"			Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="BANG_FOR_YOUR_BUCK_SURPRISE_WAR"			Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+	</ModifierStrings>
+</GameData>

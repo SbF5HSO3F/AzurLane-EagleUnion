@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_NamedPlaces -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2023/10/18 18:42:05 -->
+<GameData>
+	<NamedRiverCivilizations>
+		<Row NamedRiverType="NAMED_RIVER_ARKANSAS"		 CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedRiverType="NAMED_RIVER_COLORADO"		 CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedRiverType="NAMED_RIVER_COLUMBIA"		 CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedRiverType="NAMED_RIVER_DELAWARE"		 CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedRiverType="NAMED_RIVER_MISSISSIPPI"	 CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedRiverType="NAMED_RIVER_MISSOURI"		 CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedRiverType="NAMED_RIVER_OHIO"			 CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedRiverType="NAMED_RIVER_POTOMAC"		 CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedRiverType="NAMED_RIVER_RIO_GRANDE"	 CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedRiverType="NAMED_RIVER_SAINT_LAWRENCE" CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedRiverType="NAMED_RIVER_SUSQUEHANNA"	 CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedRiverType="NAMED_RIVER_YUKON"			 CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+	</NamedRiverCivilizations>
+	<NamedVolcanoCivilizations>
+		<Row NamedVolcanoType="NAMED_VOLCANO_HALEAKALA"		CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedVolcanoType="NAMED_VOLCANO_KILAUEA"		CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedVolcanoType="NAMED_VOLCANO_MAUNA_LOA"		CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedVolcanoType="NAMED_VOLCANO_NOVARUPTA"		CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedVolcanoType="NAMED_VOLCANO_RAINIER"		CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedVolcanoType="NAMED_VOLCANO_SAINT_HELENS"	CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedVolcanoType="NAMED_VOLCANO_YELLOWSTONE"	CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+	</NamedVolcanoCivilizations>
+	<NamedMountainCivilizations>
+		<Row NamedMountainType="NAMED_MOUNTAIN_ALASKAN"			CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_ALEUTIANS"		CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_APPALACHIANS"	CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_CASCADES"		CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_COAST"			CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_GWAZHAL"			CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_ROCKIES"			CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_SIERRA_MADRES"	CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_SIERRA_NEVADAS"	CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+	</NamedMountainCivilizations>
+	<NamedDesertCivilizations>
+		<Row NamedDesertType="NAMED_DESERT_CHIHUAHUAN"			CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedDesertType="NAMED_DESERT_COLORADO_PLATEAU"	CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedDesertType="NAMED_DESERT_GREAT_BASIN"			CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedDesertType="NAMED_DESERT_MOJAVE"				CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedDesertType="NAMED_DESERT_SONORAN"				CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+	</NamedDesertCivilizations>
+	<NamedLakeCivilizations>
+		<Row NamedLakeType="NAMED_LAKE_FELDGES_LAKE"		CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedLakeType="NAMED_LAKE_GREAT_SALT_LAKE"		CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedLakeType="NAMED_LAKE_ILIAMNA_LAKE"		CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedLakeType="NAMED_LAKE_LAKE_CHAMPLAIN"		CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedLakeType="NAMED_LAKE_LAKE_ERIE"			CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedLakeType="NAMED_LAKE_LAKE_HURON"			CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedLakeType="NAMED_LAKE_LAKE_MICHIGAN"		CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedLakeType="NAMED_LAKE_LAKE_OF_THE_WOODS"	CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedLakeType="NAMED_LAKE_LAKE_OKEECHOBEE"		CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedLakeType="NAMED_LAKE_LAKE_ONTARIO"		CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedLakeType="NAMED_LAKE_LAKE_SUPERIOR"		CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedLakeType="NAMED_LAKE_LAKE_TAHOE"			CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedLakeType="NAMED_LAKE_LAKE_WINNEBAGO"		CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+	</NamedLakeCivilizations>
+	<NamedSeaCivilizations>
+		<Row NamedSeaType="NAMED_SEA_BAY_OF_FUNDY"				CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedSeaType="NAMED_SEA_BEAUFORT_SEA"				CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedSeaType="NAMED_SEA_BERING_SEA"				CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedSeaType="NAMED_SEA_CHESAPEAKE_BAY"			CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedSeaType="NAMED_SEA_CHUKCHI_SEA"				CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedSeaType="NAMED_SEA_GULF_OF_ALASKA"			CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedSeaType="NAMED_SEA_GULF_OF_MEXICO"			CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedSeaType="NAMED_SEA_GULF_OF_SAINT_LAWRENCE"	CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedSeaType="NAMED_SEA_MASSACHUSETTS_BAY"			CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+		<Row NamedSeaType="NAMED_SEA_SAN_FRANCISCO_BAY"			CivilizationType="CIVILIZATION_EAGLE_UNION"/>
+	</NamedSeaCivilizations>
+</GameData>

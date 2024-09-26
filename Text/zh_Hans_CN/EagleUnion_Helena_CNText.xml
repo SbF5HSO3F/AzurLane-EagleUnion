@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Helena_Text -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：59-->
+<!-- DateCreated: 8/19/2023 4:19:28 PM -->
+<GameData>
+	<LocalizedText>
+		<!--领袖介绍-->
+		<Replace Tag="LOC_LEADER_HELENA_CL50_NAME" Language="zh_Hans_CN">
+			<Text>海伦娜</Text>
+		</Replace>
+		<!--加载-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_HELENA_CL50" Language="zh_Hans_CN">
+			<Text>经历了珍珠港袭击，参与了瓜达尔卡纳尔岛海战，最后英勇战沉于库拉湾。海伦娜，您忧郁而成熟，柔弱的外表下有着一颗勇敢的心，SG雷达是你最有力的工具。面对危险，利用好你手中的力量吧，不要让您所经历过的悲剧再度上演。</Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HELENA_CL50_CHAPTER_CAPSULE_BODY" Language="zh_Hans_CN">
+			<Text>拥有SG新型雷达的海伦娜洞悉她所遇见的一切，她是情报方面的主宰</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HELENA_CL50_CHAPTER_DETAILED_BODY" Language="zh_Hans_CN">
+			<Text>SG新型雷达可谓是神兵利器。在它的加持下，海伦娜拥有极高的外交能见度，间谍拥有很高的行动成功率，国境内敌方间谍活动被极力压制。她的单位也因此拥有了广阔的视野，并可令相邻的敌方减少大量 [ICON_Strength] 战斗力。在岸边建立城市，“库拉湾之梦”将为其带来相当可观的产出，使其成为一座文化之城。利用情报优势与广阔的视野时刻监视敌人的行动，海伦娜的国土将无人敢染指，所带来的和平将会成为海伦娜达成文化胜利与科技胜利的强力保障。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HELENA_CL50_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>海伦娜号是美国海军的布鲁克林级轻巡洋舰9号舰（圣路易斯级2号舰）。该级两艘舰船原为布鲁克林级八号舰和九号舰，由于单独装配了改进的高压锅炉与更高的火力，因此单独分作一级。1936年12月9日动工，1938年8月27日在纽约海军造船厂下水，为其主持下水仪式的是蒙大拿州参议员托马斯·J·韦尔奇的孙女埃莉诺·卡莱尔·戈杰。1939年9月18日正式服役，首任舰长为海军上校马克斯·B·德莫特。 服役后，海伦娜被分配到太平洋舰队，隶属于海军少将H·费尔拉克斯·利里指挥的第9巡洋舰分队。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HELENA_CL50_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>由于在珍珠港袭击中遭受严重损伤进行了维修，并在维修时加装了最新型的SG雷达，这也成为该舰的依仗。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HELENA_CL50_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+			<Text>在埃斯佩兰斯海角海战、瓜达尔卡纳尔岛海战中，该舰都发挥了关键的作用。而在1943年7月6日的库拉湾海战中，海伦娜的的雷达发现了日军编队，令舰队占得先机。海伦娜和火奴鲁鲁、圣路易斯的炮弹十分准确的命中了日军掩护队所属的新月、凉风、谷风3艘驱逐舰，新月丧失战斗力，凉风前主炮中弹，机关炮的弹药箱起火，舰体多处被击穿；谷风锚链舱中了1弹，幸未爆炸，粮食舱进水。但由于海伦娜没有使用无焰火药，耀眼的炮口火光暴露了自己。夜色中，尚能战斗的凉风和谷风两舰以她开火的闪光为瞄准点，齐射16条鱼雷。7分钟后，她被日军发射的3条鱼雷击中，先是被一枚鱼雷击中舰艏折断，后又被两枚鱼雷击中中部造成舰体撕裂，在极短的时间里折断成两截沉没。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HELENA_CL50_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN">
+			<Text>由于海伦娜号的出色表现，该舰成为第一艘获得海军部集体嘉奖的舰船，并在短暂的生涯中获得了亚太地区战功奖章和7枚战争之星。</Text>
+		</Replace>
+		<!--领袖议程-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HELENA_CL50_QUOTE" Language="zh_Hans_CN">
+			<Text>我的索敌能力要是能帮到姐妹们就好了……</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_MEMORIES_OF_PEARL_HARBOR_NAME" Language="zh_Hans_CN">
+			<Text>珍珠港的回忆</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_MEMORIES_OF_PEARL_HARBOR_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>尽可能与遇到的文明和睦相处。喜欢与其友好相处的文明，讨厌背后攻击或宣布突袭战争的文明。</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MEMORIES_OF_PEARL_HARBOR_FRIEND_REASON_ANY" Language="zh_Hans_CN">
+			<Text>（您是她的朋友）</Text>
+		</Replace>
+		<Replace Tag="LOC_MEMORIES_OF_PEARL_HARBOR_FRIEND_FRIEND" Language="zh_Hans_CN">
+			<Text>海伦娜喜欢与其友好相处的人</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MEMORIES_OF_PEARL_HARBOR_SURPRISE_WAR_REASON_ANY" Language="zh_Hans_CN">
+			<Text>（您宣布了突袭战争）</Text>
+		</Replace>
+		<Replace Tag="LOC_MEMORIES_OF_PEARL_HARBOR_SURPRISE_WAR" Language="zh_Hans_CN">
+			<Text>海伦娜讨厌宣布突袭战争的人</Text>
+		</Replace>
+		<!--领袖能力-->
+		<Replace Tag="LOC_TRAIT_LEADER_THE_WONDER_OF_KULA_GULF_NAME" Language="zh_Hans_CN">
+			<Text>库拉湾之梦</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THE_WONDER_OF_KULA_GULF_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>初始 [ICON_VisLimited] 外交能见度比所遇见的其他文明高4级。领土内敌方间谍等级降低4级，间谍在出击行动时等级增加4级。与海岸与湖泊相邻的单元格提供+1 [ICON_Culture] 文化值，+1 [ICON_Production] 生产力。海岸与湖泊单元格+2 [ICON_Faith] 信仰并为相邻的区域提供标准相邻加成与+1 [ICON_Culture] 文化值。所有单位+2视野范围，且视野不受地形与地貌阻碍，并可令自身相邻的敌方单位-4 [ICON_Strength] 战斗力。研究完“内燃机”后获得特色单位“圣路易斯级轻巡洋舰”。</Text>
+		</Replace>
+		<Replace Tag="LOC_SOURCE_HELENA_CL50_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>雷达扫描</Text>
+		</Replace>
+		<Replace Tag="LOC_VIZSOURCE_ACTION_USE_HELENA_CL50" Language="zh_Hans_CN">
+			<Text>使用领袖海伦娜</Text>
+		</Replace>
+		<Replace Tag="LOC_GOSSIP_HELENA_CL50" Language="zh_Hans_CN">
+			<Text>通过SG雷达，您得知</Text>
+		</Replace>
+		<!--特殊加成-->
+		<Replace Tag="LOC_Kula_Science" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_Science] 科技值来自相邻的海岸与湖泊单元格</Text>
+		</Replace>
+		<Replace Tag="LOC_Kula_Culture" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_Culture] 文化值来自相邻的海岸与湖泊单元格</Text>
+		</Replace>
+		<Replace Tag="LOC_Kula_Production" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_Production] 生产力来自相邻的海岸与湖泊单元格</Text>
+		</Replace>
+		<Replace Tag="LOC_Kula_Food" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_Food] 食物来自相邻的海岸与湖泊单元格</Text>
+		</Replace>
+		<Replace Tag="LOC_Kula_Faith" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_Faith] 信仰值来自相邻的海岸与湖泊单元格</Text>
+		</Replace>
+		<Replace Tag="LOC_Kula_Gold" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_Gold] 金币来自相邻的海岸与湖泊单元格</Text>
+		</Replace>
+		<!--能力加成-->
+		<Replace Tag="LOC_ABILITY_HELENA_UNIT_BUFF_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>库拉湾之梦提供+2视野范围，且视野不受地形与地貌阻碍。可令相邻的敌方单位-4 [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_HELENA_UNIT_ATTACH_DEBUFF_MODIFIER_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>与敌方单位相邻时{Property} [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<!--特殊单位-->
+		<Replace Tag="LOC_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_NAME" Language="zh_Hans_CN">
+			<Text>圣路易斯级轻巡洋舰</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>海伦娜特色现代海军近战单位，拥有较高的视野和强大的防空能力，能执行射程为2的远程攻击并可使视线范围中的海军袭击者暴露位置。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>圣路易斯级轻巡洋舰实际应该属于布鲁克林级轻巡洋舰——其最后两艘建造名义为替换第一批奥马哈级轻巡洋舰，并使用了改进的设计，可被称为圣路易斯级，包括换用新型更紧凑的锅炉实现了交错式动力布局，提高了生存性；副炮更换为4座双联装127mm/38 Mk12型高平两用炮，安装在Mk29 mod.0型炮座中；后部上层建筑和桅杆直接设置于2号烟囱正后方。3号舰萨凡纳在大修时按类似圣路易斯级的布置改装了4座双联装127mm/38 Mk12型高平两用炮，安装在Mk32型炮座。但后部上层建筑仍然保留了前7艘布鲁克林级的特征。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>布鲁克林级轻巡洋舰是美国海军在二战前建造的轻型巡洋舰。它装备5座三联装152mm主炮塔，是美国海军中火力最为强大的轻巡洋舰。同级舰共有9艘。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+			<Text>本级舰是1930年的《伦敦海军条约》的产物， 根据这个补充条约，美国还有共计30000吨共计3艘的重巡洋舰建造份额，并对这3艘舰的建造、完工时间做了严格限制，因此实际上不能立即形成战斗力。为了对付日益扩张的他国海军力量，美国不得不转向建造装备152mm，即6英寸主炮的轻型巡洋舰，刚好此时日本海军的最上级巡洋舰出现，其远超过旧有的轻巡洋舰的性能立刻就成了英美海军的标竿，本级和英国的城级巡洋舰同样是对最上级的回应。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN">
+			<Text>布鲁克林级的主炮是5座三联装 Mk.16 152mm/47舰炮，在47.5度仰角时射程可达23,881m，每分钟可发射8-10发，合计每分钟可发射120-150发炮弹，火力甚至超越前级重巡洋舰多炮塔神教精神永存，副炮则为8门单装127mm/25高炮。此外，该级舰开创性的使用了平甲板船型，并一改先前重巡洋舰将航空设施置于船中央的设计，将它们移动到船尾：这样可以减少航空燃油起火导致严重损坏的机会，但同时也增加了航空设施被海浪损坏的概率。这样的舰型设计在后续的克利夫兰级、巴尔的摩级等巡洋舰中被一直沿用。因此，布鲁克林级在美国巡洋舰建造史上具有里程碑意义。</Text>
+		</Replace>
+		<!--外交文本-->
+		<!--同意声明友谊-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>我很乐意拥有一名真正的朋友。</Text>
+		</Row>
+		<!--拒绝声明友谊-->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>请求友谊固然是好事，但您的诚意还需考量。</Text>
+		</Row>
+		<!--请求声明友谊-->
+		<Row Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>事实证明，您是一名可靠的人，愿意接受我的友谊吗？</Text>
+		</Row>
+		<!--请求声明友谊被接受-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>谢谢，我会好好珍惜我们之间的关系的。</Text>
+		</Row>
+		<!--请求声明友谊被拒绝-->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>您拒绝了我的好意，没关系，我不会放弃。</Text>
+		</Row>
+		<!--被宣战-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>又是战争呢，不过我是不会让悲剧再次上演了。</Text>
+		</Row>
+		<!--主动宣战-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>我渴望和平，但和平不是我为一切让步的理由。</Text>
+		</Row>
+		<!--接受使节派遣-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>您的代表团已经安全到达，他们向我传达了您的好意。</Text>
+		</Row>
+		<!--拒绝使节派遣-->
+		<Row Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>现在还不是时候，过一段时间吧。</Text>
+		</Row>
+		<!--请求派遣使节-->
+		<Row Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>我将向您的国家派出代表团，希望您能接受。</Text>
+		</Row>
+		<!--被谴责-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>您是个有礼貌的人，我很清楚这次的谴责不过是您接下来战争的铺垫。</Text>
+		</Row>
+		<!--谴责玩家-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>别人可能不知道您犯下的恶行，但我知道。（谴责你）</Text>
+		</Row>
+		<!--初次见面-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>您好，我是白鹰轻巡洋舰，海伦娜。相对于其他姐妹，我拥有更强的索敌能力。但是，很多时候，仅靠一个人是救不了大家的……啊，没什么，我刚刚只是在自言自语罢了……</Text>
+		</Row>
+		<!--初次见面，提供最近城市位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>愿意参观我们附近的城市吗？</Text>
+		</Row>
+		<!--初次见面，玩家提供最近城市位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>感谢您的慷慨。</Text>
+		</Row>
+		<!--初次见面，请求交换首都位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>您我对双方的了解还不够多，愿意交换关于首都的信息吗？</Text>
+		</Row>
+		<!--领袖对玩家有好感-->
+		<Row Tag="LOC_DIPLO_KUDO_EXIT_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>您是一位相当可靠的朋友，愿我们之间没有冲突。</Text>
+		</Row>
+		<!--领袖敌视玩家-->
+		<Row Tag="LOC_DIPLO_WARNING_EXIT_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>您是个值得让人注意的领袖，尤其是在军队动向方面。</Text>
+		</Row>
+		<!--请求结盟-->
+		<Row Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>根据我的观察，您一定会成为白鹰的出色盟友。我特此请求与您结盟。</Text>
+		</Row>
+		<!--要求移开边境军队-->
+		<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>您别忘了，我很清楚周边的一切，何况是那么庞大的军队呢？</Text>
+		</Row>
+		<!--经受不住时间考验-->
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>即使我现在拥有这样的力量，悲剧还是再次上演了吗？我输了，也没有下一次了。</Text>
+		</Row>
+		<!--同意交易-->
+		<Row Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>谢谢。</Text>
+		</Row>
+		<!--拒绝交易-->
+		<Row Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hans_CN">
+			<Text>这样的交易对你我都没好处。</Text>
+		</Row>
+	</LocalizedText>
+</GameData>

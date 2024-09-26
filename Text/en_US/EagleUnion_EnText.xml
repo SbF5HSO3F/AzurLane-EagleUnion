@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_TextCN -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：100-->
+<!-- DateCreated: 2/21/2023 9:27:28 PM -->
+<GameData>
+	<LocalizedText>
+		<!--文明相关-->
+		<Replace Tag="LOC_CIVILIZATION_EAGLE_UNION_NAME" Language="en_US">
+			<Text>Eagle Union</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_EAGLE_UNION_DESCRIPTION" Language="en_US">
+			<Text>Eagle Union</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_EAGLE_UNION_ADJECTIVE" Language="en_US">
+			<Text>Eagle Union's</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_EAGLE_UNION_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>This civilizations concentrated their strength on developing aircraft carriers and powerful heavy cruisers, which grants them upper hand when it comes to air superiority and open naval combat. Having repair ship as their auxiliary allows to regenerate health in battle. Eagle union represents the true spirit of freedom!</Text>
+		</Replace>
+		<!--文明能力-->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_NAME" Language="en_US">
+			<Text>The Brilliance of Technology and Industry</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_DESCRIPTION" Language="en_US">
+			<Text>All Improvements +1 [icon_PRODUCTION] Production and +1 [ICON_Science] Science, and then +1 [icon_PRODUCTION] Production after researching the Industrialization technology. The number of [ICON_GreatScientist] Great Scientist and [ICON_GreatEngineer] Great Engineer points earned per turn is increased by 100%, and the [ICON_GreatScientist] Great Scientist and [ICON_GreatEngineer] Great Engineer have an additional charge. For every great person earned, +2% of [ICON_Science] Science and [ICON_Culture] Culture (capped at 30%).</Text>
+		</Replace>
+		<!--特殊区域-->
+		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_NAME" Language="en_US">
+			<Text>Santa Clara Valley</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_DESCRIPTION" Language="en_US">
+			<Text>Eagle Union unique district, replacing Industrial Zone district, unlock earlier, cost less, and have no population demand (Therefore, it is not a specialty district). Gain an additional standard Production adjacency bonus from adjacent districts. [icon_PRODUCTION] Production Adjacent Bonus also provides [ICON_Science] Science and [icon_GOLD] Gold.[NEWLINE][NEWLINE]Awards 1 randomly-chosen free technologies when completed. All Improvements in this city +1 [ICON_Science] Science and +1 [icon_PRODUCTION] Production, and then +1 [icon_PRODUCTION] Production after researching the Apprenticeship technology.[NEWLINE]Get a +2 [icon_PRODUCTION] Production bonus from each adjacent Harbor, Campus, and Santa Clara Valley. Each adjacent Harbor provides a +2 [icon_GOLD] Gold bonus and each Campus gives a +2 [ICON_Science] Science bonus.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_1" Language="en_US" >
+			<Text>The Santa Clara Valley, also known as Silicon Valley, is located in the southern part of the San Francisco Bay Area, a metropolitan area in Northern California, United States. Since the Santa Clara Valley was originally a place where silicon-based semiconductor chips were researched and produced, it got its name Silicon Valley.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_2" Language="en_US" >
+			<Text>The Santa Clara Valley is the kingdom of the electronics industry and the computer industry, and although the United States and other high-tech zones around the world are growing, the Santa Clara Valley remains the world's pioneer and center of high-tech innovation and development, with venture capital in the region accounting for one-third of the total venture capital in the United States, and the number of computer companies in the Santa Clara Valley has grown to about 1,500. A century ago it was an orchard, but since the headquarters of high-tech companies such as Intel, Apple, Google, Facebook, and Yahoo settled here, many bustling towns have sprung up. In just a few decades, Silicon Valley has emerged from a large number of tech billionaires.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_3" Language="en_US" >
+			<Text>The majority of the Santa Clara Valley is located in Santa Clara County at the southern tip of the San Francisco Peninsula and consists primarily of a 25-mile stretch of valley from Palo Alto to San Jose, the county's capital. The total extent of the Santa Clara Valley generally includes parts of San Mateo County in the southwestern San Francisco Bay Area, and parts of Alameda County in the eastern San Francisco Bay Area. The Santa Clara Valley is characterized by some of the top U.S. universities with strong scientific research nearby, including Stanford University and the University of California, Berkeley, as well as several other universities in the University of California system and Santa Clara University. Structurally, Santa Clara Valley is based on a group of high-tech small and medium-sized companies, and has large companies such as Google, Facebook, HP, Intel, Apple, Cisco, NVIDIA, Oracle, Tesla, Yahoo, etc., integrating science, technology and production.</Text>
+		</Replace>
+		<!--特殊加成-->
+		<Replace Tag="LOC_Santa_Clara_Valley_CAMPUS" Language="en_US">
+			<Text>+{1_num} [icon_PRODUCTION] Production from each adjacent Campus tile.</Text>
+		</Replace>
+		<Replace Tag="LOC_Santa_Clara_Valley_HARBOR" Language="en_US">
+			<Text>+{1_num} [icon_PRODUCTION] Production from each adjacent Harbor tile.</Text>
+		</Replace>
+		<Replace Tag="LOC_CAMPUS_Santa_Clara_Valley" Language="en_US">
+			<Text>+{1_num} [ICON_Science] Science from each adjacent Santa Clara Valley tile.</Text>
+		</Replace>
+		<Replace Tag="LOC_HARBOR_Santa_Clara_Valley" Language="en_US">
+			<Text>+{1_num} [icon_GOLD] Gold from each adjacent Santa Clara Valley tile.</Text>
+		</Replace>
+		<Replace Tag="LOC_Santa_Clara_Valley_Santa_Clara_Valley" Language="en_US">
+			<Text>+{1_num} [icon_PRODUCTION] Production from each adjacent Santa Clara Valley tile.</Text>
+		</Replace>
+		<!--特殊建筑-->
+		<Replace Tag="LOC_BUILDING_NEWPORT_NEWS_SHIPBUILDING_NAME" Language="en_US">
+			<Text>Newport News Shipbuilding</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_NEWPORT_NEWS_SHIPBUILDING_DESCRIPTION" Language="en_US">
+			<Text>A building unique to Eagle Union. All naval units trained in this city +50% combat experience, starting with a free promotion and +5 [ICON_Strength] Combat Strength. Bonus [icon_PRODUCTION] Production equal to the adjacency bonus of the Harbor district. +2 [icon_PRODUCTION] Production on all Coast and Lake tiles for this city. In this city, Fleet and Armada training costs reduced 25%, and receive a second naval unit each time you train a naval unit.</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_ENTERPRISE_HREAT_STRENGTH_DESCRIPTION" Language="en_US">
+			<Text>+5, Enterprising Heart</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ENTERPRISE_Strength_DESCRIPTION" Language="en_US">
+			<Text>+5 [ICON_Strength] Combat Strength comes from Newport News Shipbuilding</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_Newport_News_XP_DESCRIPTION" Language="en_US">
+			<Text>+50% XP gained from Newport News Shipbuilding</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_1" Language="en_US" >
+			<Text>Founded in 1886 by entrepreneur Collins Huntington, the Newport News Shipyard Company, or Newport News Shipbuilding for short, is the largest privately owned shipyard in the United States right next to Newport News. In November 2001, NS was acquired by Northrop Grumman's maritime division. In March 2011, Northell Gill spun off it from Ingalls Shipyard to form the independent Huntington Ingle Industries.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_2" Language="en_US" >
+			<Text>Newport News Shipbuilding is not only the largest shipyard in the United States, but also the only shipyard capable of designing, building, replacing and overhauling nuclear-powered aircraft carriers. Newport News Shipyard is responsible for 100 percent of the U.S. Navy's nuclear-powered aircraft carrier construction, one of the two largest U.S. nuclear submarine manufacturing plants, and 50 percent of destroyers. According to the products produced by Newport News Shipbuilding, it is no exaggeration to call it a national treasure of the United States.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_3" Language="en_US" >
+			<Text>Newport News Shipbuilding originated as a coal terminal.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_4" Language="en_US" >
+			<Text>In the 1870s, Curlis, chairman of the Chesapeake and Ohio Railroad Company, invested heavily in laying the railroad connecting Richmond to the Ohio River. In 1881, the company extended the railroad to the Virginia Peninsula and connected it to Hampton Anchorage to build a coal terminal in Newport News. In 1886, Huntington built a dock next to the dock for the repair of coal ships and provided shipbuilding services; The shipbuilding company was founded as Chesapeake Dry Dockyard and Shipbuilding Company. In 1891, the first ship built by the shipyard was launched as a tugboat. Later the U.S. Navy began contracting shipbuilding companies to build warships.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_5" Language="en_US" >
+			<Text>By 1897, the company had built three frigates for the U.S. Navy. Due to the high demand for labor in the dockyard, the population of Newport News gradually increased, and in 1896 it officially became an independent city; The first mayor was company dignitary Walter Post. When Huntington died in 1900, his nephew Henry Huntington took over the shipbuilding company and continued to expand the shipyard. Later the dreadnoughts era came, and naval competition was fierce; The company built six dreadnoughts for the U.S. Navy, including USS Delaware, USS Texas, USS Pennsylvania, USS Mississippi, USS Maryland and USS West Virginia. In 1914, the company also built the Loyal Servant. On May 7, 1915, the Lusitania was sunk by a German submarine, including Albert Hawkins, then chairman of the company. Later, the company built several destroyers and other ships for the U.S. military.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_6" Language="en_US" >
+			<Text>After World War I, shipbuilding companies built several aircraft carriers for the Navy, including USS Ranger CV-4, USS Yorktown CV-5, USS Enterprise CV-6 and USS Hornet CV-8. Around World War II, the company built nine Essex-class aircraft carriers, including USS Essex CV-9, USS Yorktown CV-10, USS Intrepid CV-11, USS Hornet CV-12, USS Franklin CV-13, USS Ticonderoga CV-14, USS Randolph CV-15, USS Boxer CV-21 and USS Leyte CV-32. As the U.S. military desperately needed more warships, the company opened a branch in Wilmington, North Carolina, and built a temporary shipyard to ship ships. On the eve of the end of the war, the company also built Midway-class aircraft carriers in Newport News, including USS Midway CVB-41 and USS Coral Sea CVB-43; Later, the cruise ship USS America was built.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_7" Language="en_US" >
+			<Text>After the war, shipbuilding companies remained very close to the Navy; USS Forrestal CVA-59 and USS Ranger CVA-61 were both built in Newport News.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_8" Language="en_US" >
+			<Text>In 1954, the shipbuilding company cooperated with Westinghouse Electronics and the U.S. Navy to develop shipborne nuclear reactors that would allow warships to operate on nuclear power. In 1958, the world's first nuclear-powered aircraft carrier, USS Enterprise CVN-65, was built in Newport News and launched in 1960. Later, the company also built the USS America CV-66 and USS Kennedy CV-67. In 1968, the shipbuilding company merged with Tenico. Beginning in the 1970s , shipbuilding companies built all Nimitz-class aircraft carriers and some Los Angeles-class nuclear submarines. In 1996, the shipbuilding company spun off Tenico and went public in New York under the name Newport News Shipbuilding Company. On November 7, 2001, the shipyard was acquired by Northrop Grumman and the shipyard was renamed Northrop Grumman Shipyard. In 2009, the company began construction of its first Ford-class nuclear-powered aircraft carrier.</Text>
+		</Replace>
+		<!--特殊单位-->
+		<Replace Tag="LOC_UNIT_ENTERPRISE_CLASS_NAME" Language="en_US">
+			<Text>Enterprise-class aircraft carriers</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ENTERPRISE_CLASS_DESCRIPTION" Language="en_US">
+			<Text>Eagle Union unique Atomic era naval unit with powerful melee attack power and air unit transport capabilities and have a unique promotion tree. +4 Influence points per turn.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENTERPRISE_CLASS_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>In 1945, after the end of World War II, in order to continue to maintain its naval superiority to achieve its global strategic goals, the United States took two measures: one was to eliminate a number of aircraft carriers with long age, small tonnage and poor performance, and mothball or scrap most of the battleships; The second is to start designing and building a number of super-large aircraft carriers with many aircraft, good performance and suitable for the needs of modern naval warfare, and in the 50s of the 20th century, large aircraft carriers such as Forrestal, Saratoga, Raider and Independence were built successively. However, due to the increase in the size, weight and speed of aircraft, as well as the introduction of extremely fuel-intensive jet propulsion, higher requirements are placed on aircraft carriers. Although the Forrestal-class aircraft carriers and Kitty Hawk-class aircraft carriers are much more advanced in ship type, equipment and displacement than aircraft carriers during World War II, they are still far from meeting the needs of carrier-based aircraft.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENTERPRISE_CLASS_CHAPTER_HISTORY_PARA_2" Language="en_US">
+			<Text>In 1950, after much lobbying by the US "father of nuclear submarines" Ricoff, US Chief of Naval Operations Forrest Sherman believed that the United States not only needed nuclear submarines, but also needed to "explore" the possibility of building a large aircraft carrier with a nuclear power plant. In January 1952, the United States completed the selection study of the nuclear reactor of the aircraft carrier. But at this time, Sherman died, the construction of the nuclear-powered aircraft carrier lost strong support, and the opposition became increasingly vocal, and the development work was temporarily stranded. On September 30, 1954, the news of the official commissioning of the first US nuclear submarine "Nautilus" caused a sensation around the world, once again attracting people's attention to the construction of nuclear-powered surface ships. In January 1956, the U.S. Navy officially issued a document to begin the preliminary design of a nuclear-powered aircraft carrier. In December 1957, the construction of the world's first nuclear-powered surface ship, the cruiser Nagatan, officially began, and in August 1957, the Soviet Union announced the successful launch of an intercontinental missile. To demonstrate its military superiority over the Soviet Union, the U.S. Navy decided to include nuclear-powered aircraft carriers in its 1958 shipbuilding program. At the time, Rickover assured that the nuclear-powered aircraft carrier he designed would only need to install two reactors, which would be relatively cheap.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENTERPRISE_CLASS_CHAPTER_HISTORY_PARA_3" Language="en_US">
+			<Text>The only enterprise aircraft carrier built in the world is USS Enterprise, which is also the United States Navy and the world's first nuclear-powered aircraft carrier. The main dimensions of the USS Enterprise are 342.3 meters× 40.8 meters× 11.9 meters, the crew is 3215 people, the power is 8 A2W pressurized water reactors, turbine electric propulsion, four-shaft and four oars, the maximum speed is 35 knots, the cruising range is 400,000 nautical miles/20 knots, the flight deck is 331.6 meters× 76.8 meters, and the maximum aircraft capacity is 84 aircraft. USS Enterprise began design in 1950, construction began on 4 February 1958 at Newport News Shipbuilding and Dockyard Company, launched on 24 September 1960, commissioned on 25 November 1961, and decommissioned on 1 December 2012, making it the longest aircraft carrier in service with the U.S. Navy for 51 years.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ENTERPRISE_DESCRIPTION" Language="en_US">
+			<Text>+4 Influence points per turn</Text>
+		</Replace>
+		<!--特殊晋升路线-->
+		<Replace Tag="LOC_PROMOTION_CLASS_EAGLE_CV_NAME" Language="en_US">
+			<Text>Eagle Union aircraft carrier</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_DECK_UPGRADES_NAME" Language="en_US">
+			<Text>Deck Upgrade</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_DECK_UPGRADES_DESCRIPTION" Language="en_US">
+			<Text>+2 additional aircraft slot</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_HULL_STRENGTHENING_NAME" Language="en_US">
+			<Text>Hull Srengthening</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_HULL_STRENGTHENING_DESCRIPTION" Language="en_US">
+			<Text>+8 [ICON_Strength] Combat Strength in any case</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_HULL_STRENGTHENING_DESCRIPTION" Language="en_US">
+			<Text>+8 [ICON_Strength] Combat Strength in any case (Hull Srengthening upgrades)</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_ELITE_DAMAGE_CONTROL_NAME" Language="en_US">
+			<Text>Elite Damage Control</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_ELITE_DAMAGE_CONTROL_DESCRIPTION" Language="en_US">
+			<Text>Can heal after attacking</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_MODERNIZATION_NAME" Language="en_US">
+			<Text>Modernization</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_MODERNIZATION_DESCRIPTION" Language="en_US">
+			<Text>+1 sight range, +1 [ICON_Movement] Movement and +1 additional aircraft slot</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_SUPERCARRIER_NAME" Language="en_US">
+			<Text>Supercarrier</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_SUPERCARRIER_DESCRIPTION" Language="en_US">
+			<Text>Heal outside of friendly territory, and +6 Influence points per turn.</Text>
+		</Replace>
+		<!--城市名-->
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_1" Language="en_US">
+			<Text>Central Command</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_2" Language="en_US">
+			<Text>New York</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_3" Language="en_US">
+			<Text>Los Angeles</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_4" Language="en_US">
+			<Text>Chicago</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_5" Language="en_US">
+			<Text>Houston</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_6" Language="en_US">
+			<Text>Philadelphia</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_7" Language="en_US">
+			<Text>Washington D.C.</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_8" Language="en_US">
+			<Text>Dallas</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_9" Language="en_US">
+			<Text>San Francisco</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_10" Language="en_US">
+			<Text>Boston</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_11" Language="en_US">
+			<Text>Atlanta</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_12" Language="en_US">
+			<Text>Detroit</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_13" Language="en_US">
+			<Text>Pittsburgh</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_14" Language="en_US">
+			<Text>San diego</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_15" Language="en_US">
+			<Text>Jacksonville</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_16" Language="en_US">
+			<Text>Miami</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_17" Language="en_US">
+			<Text>Seattle</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_18" Language="en_US">
+			<Text>Phoenix</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_19" Language="en_US">
+			<Text>San Antonio</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_20" Language="en_US">
+			<Text>Las vegas</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_21" Language="en_US">
+			<Text>Cleveland</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_22" Language="en_US">
+			<Text>Baltimore</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_23" Language="en_US">
+			<Text>Minneapolis</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_24" Language="en_US">
+			<Text>New Orleans</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_25" Language="en_US">
+			<Text>Charlotte</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_26" Language="en_US">
+			<Text>Denver</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_27" Language="en_US">
+			<Text>St. Louis</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_28" Language="en_US">
+			<Text>Portland</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_29" Language="en_US">
+			<Text>Tampa</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_30" Language="en_US">
+			<Text>Princeton</Text>
+		</Replace>
+		<!--公民名-->
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_1" Language="en_US">
+			<Text>Yorktown</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_2" Language="en_US">
+			<Text>Hornet</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_3" Language="en_US">
+			<Text>Bunker Hill</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_4" Language="en_US">
+			<Text>Shangri-La</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_5" Language="en_US">
+			<Text>Intrepid</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_6" Language="en_US">
+			<Text>Ticonderoga</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_7" Language="en_US">
+			<Text>Franklin</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_8" Language="en_US">
+			<Text>Lexington</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_9" Language="en_US">
+			<Text>Randolph</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_10" Language="en_US">
+			<Text>Princeton</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_11" Language="en_US">
+			<Text>Philippine Sea</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_12" Language="en_US">
+			<Text>Tarawa</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_13" Language="en_US">
+			<Text>Hancock</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_14" Language="en_US">
+			<Text>Bennington</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_15" Language="en_US">
+			<Text>Kearsarge</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_16" Language="en_US">
+			<Text>Leyte</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_17" Language="en_US">
+			<Text>Lake Champlain</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_18" Language="en_US">
+			<Text>Oriskany</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_19" Language="en_US">
+			<Text>Wasp</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_20" Language="en_US">
+			<Text>Missouri</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_21" Language="en_US">
+			<Text>Benson</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_22" Language="en_US">
+			<Text>Baltimore</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_23" Language="en_US">
+			<Text>Cleveland</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_24" Language="en_US">
+			<Text>Biloxi</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_25" Language="en_US">
+			<Text>Casablanca</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_26" Language="en_US">
+			<Text>Aylwin</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_27" Language="en_US">
+			<Text>Hammann</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_28" Language="en_US">
+			<Text>Charles Ausburne</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_29" Language="en_US">
+			<Text>West Virginia</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_30" Language="en_US">
+			<Text>Independence</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

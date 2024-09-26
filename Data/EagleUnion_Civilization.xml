@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Civilization -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：999-->
+<!-- DateCreated: 2/21/2023 9:11:33 PM -->
+<GameData>
+	<Types>
+		<Row Type="CIVILIZATION_EAGLE_UNION"										Kind="KIND_CIVILIZATION"/>
+		<Row Type="TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY"	Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_CIVILIZATION_DISTRICT_SANTA_CLARA_VALLEY"					Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_CIVILIZATION_BUILDING_NEWPORT_NEWS_SHIPBUILDING"			Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_CIVILIZATION_UNIT_ENTERPRISE_CLASS"						Kind="KIND_TRAIT"/>
+	</Types>
+	<Civilizations>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION"
+			 Name="LOC_CIVILIZATION_EAGLE_UNION_NAME" 
+			 Description="LOC_CIVILIZATION_EAGLE_UNION_DESCRIPTION" 
+			 Adjective="LOC_CIVILIZATION_EAGLE_UNION_ADJECTIVE" 
+			 RandomCityNameDepth="5" 
+			 StartingCivilizationLevelType="CIVILIZATION_LEVEL_FULL_CIV" 
+			 Ethnicity="ETHNICITY_EURO"/>
+	</Civilizations>
+	<CivilizationLeaders>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" LeaderType="LEADER_ESSEX_CV9"				CapitalName="LOC_CITY_NAME_EAGLE_UNION_1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" LeaderType="LEADER_GEORGIA"				CapitalName="LOC_CITY_NAME_EAGLE_UNION_1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" LeaderType="LEADER_NEW_JERSEY_BB62"		CapitalName="LOC_CITY_NAME_EAGLE_UNION_1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" LeaderType="LEADER_HELENA_CL50"			CapitalName="LOC_CITY_NAME_EAGLE_UNION_1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" LeaderType="LEADER_ALLEN_M_SUMNER_DD692"	CapitalName="LOC_CITY_NAME_EAGLE_UNION_1"/>
+	</CivilizationLeaders>
+	<Traits>
+		<Row TraitType="TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY"	Name="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_NAME"	Description="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_DESCRIPTION"/>
+		<Row TraitType="TRAIT_CIVILIZATION_DISTRICT_SANTA_CLARA_VALLEY"					Name="LOC_DISTRICT_SANTA_CLARA_VALLEY_NAME"										Description="LOC_DISTRICT_SANTA_CLARA_VALLEY_DESCRIPTION"/>
+		<Row TraitType="TRAIT_CIVILIZATION_BUILDING_NEWPORT_NEWS_SHIPBUILDING"			Name="LOC_BUILDING_NEWPORT_NEWS_SHIPBUILDING_NAME"								Description="LOC_BUILDING_NEWPORT_NEWS_SHIPBUILDING_DESCRIPTION"/>
+		<Row TraitType="TRAIT_CIVILIZATION_UNIT_ENTERPRISE_CLASS"						Name="LOC_UNIT_ENTERPRISE_CLASS_NAME"											Description="LOC_UNIT_ENTERPRISE_CLASS_DESCRIPTION"/>
+	</Traits>
+	<CivilizationTraits>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" TraitType="TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" TraitType="TRAIT_CIVILIZATION_DISTRICT_SANTA_CLARA_VALLEY"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" TraitType="TRAIT_CIVILIZATION_BUILDING_NEWPORT_NEWS_SHIPBUILDING"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" TraitType="TRAIT_CIVILIZATION_UNIT_ENTERPRISE_CLASS"/>
+	</CivilizationTraits>
+	<TraitModifiers>
+		<!--改良设施-->
+		<Row>
+			<TraitType>TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY</TraitType>
+			<ModifierId>IMPROVEMENT_ADD_PRODUCTION</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY</TraitType>
+			<ModifierId>IMPROVEMENT_ADD_PRODUCTION_INDUSTRIALIZATION</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY</TraitType>
+			<ModifierId>IMPROVEMENT_ADD_SCIENCE</ModifierId>
+		</Row>
+		<!--伟人加文化值-->
+		<Row>
+			<TraitType>TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY</TraitType>
+			<ModifierId>EAGLE_UNION_PER_GREATPERSON_ADD_CULTURE</ModifierId>
+		</Row>
+		<!--伟人加科技值-->
+		<Row>
+			<TraitType>TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY</TraitType>
+			<ModifierId>EAGLE_UNION_PER_GREATPERSON_ADD_SCIENCE</ModifierId>
+		</Row>
+		<!--大科学家加使用次数-->
+		<!--大工程师加使用次数-->
+		<Row>
+			<TraitType>TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY</TraitType>
+			<ModifierId>EAGLE_UNION_ADD_GREATPERSON_CHARGE</ModifierId>
+		</Row>
+		<!--加大科学家点数-->
+		<Row>
+			<TraitType>TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY</TraitType>
+			<ModifierId>EAGLE_UNION_ADD_GREAT_SCIENTIST_PIONTS</ModifierId>
+		</Row>
+		<!--加大工程师点数-->
+		<Row>
+			<TraitType>TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY</TraitType>
+			<ModifierId>EAGLE_UNION_ADD_GREAT_ENGINEER_PIONTS</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<!--改良设施-->
+		<Row>
+			<ModifierId>IMPROVEMENT_ADD_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_PLOT_HAS_IMPROVEMENT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>IMPROVEMENT_ADD_PRODUCTION_INDUSTRIALIZATION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_INDUSTRIALIZATION_BUFF</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>IMPROVEMENT_ADD_SCIENCE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_PLOT_HAS_IMPROVEMENT</SubjectRequirementSetId>
+		</Row>
+		<!--伟人加文化值-->
+		<Row>
+			<ModifierId>EAGLE_UNION_PER_GREATPERSON_ADD_CULTURE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_YIELD_MODIFIER_PER_EARNED_GREAT_PERSON</ModifierType>
+		</Row>
+		<!--伟人加科技值-->
+		<Row>
+			<ModifierId>EAGLE_UNION_PER_GREATPERSON_ADD_SCIENCE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_YIELD_MODIFIER_PER_EARNED_GREAT_PERSON</ModifierType>
+		</Row>
+		<!--大科学家加使用次数-->
+		<!--大工程师加使用次数-->
+		<Row>
+			<ModifierId>EAGLE_UNION_ADD_GREATPERSON_CHARGE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_GREAT_PERSON_CHARGES</ModifierType>
+			<SubjectRequirementSetId>EAGLE_GREAT_PERSON_IS_SCIENTIST_OR_ENGINEER</SubjectRequirementSetId>
+		</Row>
+		<!--加大科学家点数-->
+		<Row>
+			<ModifierId>EAGLE_UNION_ADD_GREAT_SCIENTIST_PIONTS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_GREAT_PERSON_POINTS_PERCENT</ModifierType>
+		</Row>
+		<!--加大工程师点数-->
+		<Row>
+			<ModifierId>EAGLE_UNION_ADD_GREAT_ENGINEER_PIONTS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_GREAT_PERSON_POINTS_PERCENT</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--改良设施-->
+		<Row>
+			<ModifierId>IMPROVEMENT_ADD_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>IMPROVEMENT_ADD_PRODUCTION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<Row>
+			<ModifierId>IMPROVEMENT_ADD_PRODUCTION_INDUSTRIALIZATION</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>IMPROVEMENT_ADD_PRODUCTION_INDUSTRIALIZATION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<Row>
+			<ModifierId>IMPROVEMENT_ADD_SCIENCE</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>IMPROVEMENT_ADD_SCIENCE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<!--伟人加文化值-->
+		<Row>
+			<ModifierId>EAGLE_UNION_PER_GREATPERSON_ADD_CULTURE</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>EAGLE_UNION_PER_GREATPERSON_ADD_CULTURE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<!--伟人加科技值-->
+		<Row>
+			<ModifierId>EAGLE_UNION_PER_GREATPERSON_ADD_SCIENCE</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>EAGLE_UNION_PER_GREATPERSON_ADD_SCIENCE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<!--大科学家加使用次数-->
+		<!--大工程师加使用次数-->
+		<Row>
+			<ModifierId>EAGLE_UNION_ADD_GREATPERSON_CHARGE</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<!--加大科学家点数-->
+		<Row>
+			<ModifierId>EAGLE_UNION_ADD_GREAT_SCIENTIST_PIONTS</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+		<Row>
+			<ModifierId>EAGLE_UNION_ADD_GREAT_SCIENTIST_PIONTS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_SCIENTIST</Value>
+		</Row>
+		<!--加大工程师点数-->
+		<Row>
+			<ModifierId>EAGLE_UNION_ADD_GREAT_ENGINEER_PIONTS</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+		<Row>
+			<ModifierId>EAGLE_UNION_ADD_GREAT_ENGINEER_PIONTS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_ENGINEER</Value>
+		</Row>
+	</ModifierArguments>
+	<CityNames>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_2"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_3"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_4"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_5"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_6"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_7"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_8"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_9"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_10"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_11"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_12"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_13"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_14"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_15"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_16"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_17"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_18"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_19"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_20"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_21"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_22"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_23"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_24"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_25"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_26"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_27"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_28"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_29"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CityName="LOC_CITY_NAME_EAGLE_UNION_30"/>
+	</CityNames>
+	<CivilizationCitizenNames>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_1" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_2" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_3" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_4" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_5" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_6" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_7" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_8" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_9" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_10" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_11" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_12" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_13" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_14" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_15" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_16" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_17" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_18" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_19" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_20" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_21" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_22" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_23" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_24" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_25" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_26" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_27" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_28" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_29" Female="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" CitizenName="LOC_CITIZEN_NAME_EAGLE_UNION_30" Female="1"/>
+	</CivilizationCitizenNames>
+	<StartBiasTerrains>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" TerrainType="TERRAIN_COAST" Tier="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" TerrainType="TERRAIN_PLAINS" Tier="2"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" TerrainType="TERRAIN_PLAINS_HILLS" Tier="2"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" TerrainType="TERRAIN_OCEAN" Tier="1"/>
+	</StartBiasTerrains>
+	<StartBiasFeatures>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" FeatureType="FEATURE_FOREST" Tier="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" FeatureType="FEATURE_YOSEMITE" Tier="3"/>
+	</StartBiasFeatures>
+	<StartBiasResources>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" ResourceType="RESOURCE_OIL" Tier="1"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" ResourceType="RESOURCE_COAL" Tier="3"/>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" ResourceType="RESOURCE_IRON" Tier="3"/>
+	</StartBiasResources>
+</GameData>

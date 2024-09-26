@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Georgia_Units -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：798-->
+<!-- DateCreated: 8/19/2023 12:47:23 PM -->
+<GameData>
+	<Types>
+		<Row Type="UNIT_IOWA_CLASS_PLAN_4" Kind="KIND_UNIT"/>
+	</Types>
+	<UnitAiInfos>
+		<Row UnitType="UNIT_IOWA_CLASS_PLAN_4" AiType="UNITAI_COMBAT"/>
+		<Row UnitType="UNIT_IOWA_CLASS_PLAN_4" AiType="UNITTYPE_RANGED"/>
+		<Row UnitType="UNIT_IOWA_CLASS_PLAN_4" AiType="UNITTYPE_NAVAL"/>
+	</UnitAiInfos>
+	<UnitReplaces>
+		<Row CivUniqueUnitType="UNIT_IOWA_CLASS_PLAN_4" ReplacesUnitType="UNIT_MISSILE_CRUISER"/>
+	</UnitReplaces>
+	<TypeTags>
+		<Row Type="UNIT_IOWA_CLASS_PLAN_4" Tag="CLASS_NAVAL_RANGED"/>
+		<Row Type="UNIT_IOWA_CLASS_PLAN_4" Tag="CLASS_ANTI_AIR"/>
+	</TypeTags>
+	<Units>
+		<!--衣阿华级战列舰原型方案Ⅳ-->
+		<Row UnitType="UNIT_IOWA_CLASS_PLAN_4" Cost="760" Maintenance="8" BaseMoves="5" BaseSightRange="4" ZoneOfControl="true" Domain="DOMAIN_SEA" Combat="93" RangedCombat="110" Range="4" AntiAirCombat="113" FormationClass="FORMATION_CLASS_NAVAL" PromotionClass="PROMOTION_CLASS_NAVAL_RANGED" AdvisorType="ADVISOR_CONQUEST" Name="LOC_UNIT_IOWA_CLASS_PLAN_4_NAME" Description="LOC_UNIT_IOWA_CLASS_PLAN_4_DESCRIPTION" PurchaseYield="YIELD_GOLD" PseudoYieldType="PSEUDOYIELD_UNIT_NAVAL_COMBAT" PrereqTech="TECH_ADVANCED_BALLISTICS" TraitType="TRAIT_LEADER_UNIT_IOWA_CLASS_PLAN_4"/>
+	</Units>
+	<MomentIllustrations>
+		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_IOWA_CLASS_PLAN_4" Texture="Moment_FirstFleet.dds"/>
+	</MomentIllustrations>
+</GameData>

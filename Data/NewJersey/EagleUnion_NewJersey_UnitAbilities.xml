@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_NewJersey_UnitAbilities -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：699-->
+<!-- DateCreated: 8/19/2023 3:33:53 PM -->
+<GameData>
+	<Types>
+		<Row Type="ABILITY_NEWJERSEY_AT_WAR_STRENGTH_BUFF" Kind="KIND_ABILITY"/>
+	</Types>
+	<TypeTags>
+		<Row Type="ABILITY_NEWJERSEY_AT_WAR_STRENGTH_BUFF" Tag="CLASS_ALL_UNITS"/>
+	</TypeTags>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_NEWJERSEY_AT_WAR_STRENGTH_BUFF" Name="LOC_ABILITY_NEWJERSEY_AT_WAR_STRENGTH_BUFF_NAME" Description="LOC_ABILITY_NEWJERSEY_AT_WAR_STRENGTH_BUFF_DESCRIPTION" Inactive="true"/>
+	</UnitAbilities>
+	<ModifierStrings>
+		<Row ModifierId="NEWJERSEY_AT_WAR_STRENGTH_BUFF" Context="Preview" Text="LOC_PREVIEW_NEWJERSEY_AT_WAR_STRENGTH_BUFF_TEXT"/>
+	</ModifierStrings>
+	<UnitAbilityModifiers>
+		<Row>
+			<UnitAbilityType>ABILITY_NEWJERSEY_AT_WAR_STRENGTH_BUFF</UnitAbilityType>
+			<ModifierId>NEWJERSEY_AT_WAR_STRENGTH_BUFF</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>NEWJERSEY_AT_WAR_STRENGTH_BUFF</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>NEWJERSEY_AT_WAR_STRENGTH_BUFF</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

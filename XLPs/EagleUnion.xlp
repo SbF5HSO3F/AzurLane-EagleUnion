@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>1</major>
+		<minor>0</minor>
+		<build>0</build>
+		<revision>0</revision>
+	</m_Version>
+	<m_ClassName text="UITexture"/>
+	<m_PackageName text="EagleUnion"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="IMG_EAGLE_UNION_LEADER_ESSEX_CV9_LOADING_FOREGROUND"/>
+			<m_ObjectName text="IMG_EAGLE_UNION_LEADER_ESSEX_CV9_LOADING_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_EAGLE_UNION_LOADING_BACKGROUND"/>
+			<m_ObjectName text="IMG_EAGLE_UNION_LOADING_BACKGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_EAGLE_UNION_DIPLOMACY_BACKGROUND"/>
+			<m_ObjectName text="IMG_EAGLE_UNION_DIPLOMACY_BACKGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_EAGLE_UNION_LEADER_GEORGIA_LOADING_FOREGROUND"/>
+			<m_ObjectName text="IMG_EAGLE_UNION_LEADER_GEORGIA_LOADING_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_EAGLE_UNION_LEADER_NEW_JERSEY_BB62_LOADING_FOREGROUND"/>
+			<m_ObjectName text="IMG_EAGLE_UNION_LEADER_NEW_JERSEY_BB62_LOADING_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_HELENA_CL50_LOADING_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_HELENA_CL50_LOADING_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_ALLEN_M_SUMNER_DD692_Loading_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_Allen_M_Sumner_DD692_Loading_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_F2H_22"/>
+			<m_ObjectName text="ICON_UNIT_F2H_22"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_F2H_256"/>
+			<m_ObjectName text="ICON_UNIT_F2H_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_F2H_32"/>
+			<m_ObjectName text="ICON_UNIT_F2H_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_F2H_38"/>
+			<m_ObjectName text="ICON_UNIT_F2H_38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_F2H_50"/>
+			<m_ObjectName text="ICON_UNIT_F2H_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_F2H_80"/>
+			<m_ObjectName text="ICON_UNIT_F2H_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_HELENA_CL50_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_HELENA_CL50_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_IMPROVEMENT_FLOUTISH_GARDEN_256"/>
+			<m_ObjectName text="ICON_IMPROVEMENT_FLOUTISH_GARDEN_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_IMPROVEMENT_FLOUTISH_GARDEN_38"/>
+			<m_ObjectName text="ICON_IMPROVEMENT_FLOUTISH_GARDEN_38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_IMPROVEMENT_FLOUTISH_GARDEN_50"/>
+			<m_ObjectName text="ICON_IMPROVEMENT_FLOUTISH_GARDEN_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_IMPROVEMENT_FLOUTISH_GARDEN_80"/>
+			<m_ObjectName text="ICON_IMPROVEMENT_FLOUTISH_GARDEN_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_Enterprise"/>
+			<m_ObjectName text="Moment_Enterprise"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_EAGLE_UNION_BACKGROUND"/>
+			<m_ObjectName text="IMG_EAGLE_UNION_BACKGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_Allen_M_Sumner_class"/>
+			<m_ObjectName text="Moment_Allen_M_Sumner_class"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_Iowa_Class"/>
+			<m_ObjectName text="Moment_Iowa_Class"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_ESSEX_CV9_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_ESSEX_CV9_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_GEORGIA_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_GEORGIA_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_ALLEN_M_SUMNER_DD692_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_Allen_M_Sumner_DD692_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_Essex_class"/>
+			<m_ObjectName text="Moment_Essex_class"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_F2H"/>
+			<m_ObjectName text="Moment_F2H"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_NEW_JERSEY_BB62_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_NEW_JERSEY_BB62_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_UNION_LEADERS_256"/>
+			<m_ObjectName text="EAGLE_UNION_LEADERS_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_UNION_LEADERS_32"/>
+			<m_ObjectName text="EAGLE_UNION_LEADERS_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_UNION_LEADERS_45"/>
+			<m_ObjectName text="EAGLE_UNION_LEADERS_45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_UNION_LEADERS_48"/>
+			<m_ObjectName text="EAGLE_UNION_LEADERS_48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_UNION_LEADERS_50"/>
+			<m_ObjectName text="EAGLE_UNION_LEADERS_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_UNION_LEADERS_55"/>
+			<m_ObjectName text="EAGLE_UNION_LEADERS_55"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_UNION_LEADERS_64"/>
+			<m_ObjectName text="EAGLE_UNION_LEADERS_64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_UNION_LEADERS_80"/>
+			<m_ObjectName text="EAGLE_UNION_LEADERS_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_EAGLE_UNION_128"/>
+			<m_ObjectName text="ICON_CIVILIZATION_EAGLE_UNION_128"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_EAGLE_UNION_200"/>
+			<m_ObjectName text="ICON_CIVILIZATION_EAGLE_UNION_200"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_EAGLE_UNION_22"/>
+			<m_ObjectName text="ICON_CIVILIZATION_EAGLE_UNION_22"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_EAGLE_UNION_256"/>
+			<m_ObjectName text="ICON_CIVILIZATION_EAGLE_UNION_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_EAGLE_UNION_30"/>
+			<m_ObjectName text="ICON_CIVILIZATION_EAGLE_UNION_30"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_EAGLE_UNION_32"/>
+			<m_ObjectName text="ICON_CIVILIZATION_EAGLE_UNION_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_EAGLE_UNION_36"/>
+			<m_ObjectName text="ICON_CIVILIZATION_EAGLE_UNION_36"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_EAGLE_UNION_44"/>
+			<m_ObjectName text="ICON_CIVILIZATION_EAGLE_UNION_44"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_EAGLE_UNION_45"/>
+			<m_ObjectName text="ICON_CIVILIZATION_EAGLE_UNION_45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_EAGLE_UNION_48"/>
+			<m_ObjectName text="ICON_CIVILIZATION_EAGLE_UNION_48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_EAGLE_UNION_50"/>
+			<m_ObjectName text="ICON_CIVILIZATION_EAGLE_UNION_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_EAGLE_UNION_64"/>
+			<m_ObjectName text="ICON_CIVILIZATION_EAGLE_UNION_64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_EAGLE_UNION_80"/>
+			<m_ObjectName text="ICON_CIVILIZATION_EAGLE_UNION_80"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+		<Element>LINUX</Element>
+		<Element>XBONE</Element>
+		<Element>PS4</Element>
+		<Element>SWITCH</Element>
+		<Element>STADIA</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

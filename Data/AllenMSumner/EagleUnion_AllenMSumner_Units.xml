@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_AllenMSumner_Units -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：498-->
+<!-- DateCreated: 8/19/2023 5:13:35 PM -->
+<GameData>
+	<Types>
+		<Row Type="UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER" Kind="KIND_UNIT"/>
+		<Row Type="ABILITY_ALLEN_M_SUMNER"				Kind="KIND_ABILITY"/>
+	</Types>
+	<UnitAiInfos>
+		<Row UnitType="UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER" AiType="UNITAI_COMBAT"/>
+		<Row UnitType="UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER" AiType="UNITAI_EXPLORE"/>
+		<Row UnitType="UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER" AiType="UNITTYPE_MELEE"/>
+		<Row UnitType="UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER" AiType="UNITTYPE_NAVAL"/>
+		<Row UnitType="UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER" AiType="UNITTYPE_RANGED"/>
+	</UnitAiInfos>
+	<UnitReplaces>
+		<Row CivUniqueUnitType="UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER" ReplacesUnitType="UNIT_DESTROYER"/>
+	</UnitReplaces>
+	<Tags>
+		<Row Tag="CLASS_ALLEN_M_SUMNER_CLASS_DESTROYER" Vocabulary="ABILITY_CLASS"/>
+	</Tags>
+	<TypeTags>
+		<Row Type="UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER" Tag="CLASS_NAVAL_MELEE"/>
+		<Row Type="UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER" Tag="CLASS_REVEAL_STEALTH"/>
+		<Row Type="UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER" Tag="CLASS_ANTI_AIR"/>
+		<Row Type="UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER" Tag="CLASS_ALLEN_M_SUMNER_CLASS_DESTROYER"/>
+		<Row Type="ABILITY_ALLEN_M_SUMNER"				Tag="CLASS_ALLEN_M_SUMNER_CLASS_DESTROYER"/>
+	</TypeTags>
+	<Units>
+		<!--艾伦·M·萨姆纳级驱逐舰-->
+		<Row UnitType="UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER" Cost="540" Maintenance="7" BaseMoves="5" BaseSightRange="3" ZoneOfControl="true" Domain="DOMAIN_SEA" Combat="95" RangedCombat="90" Range="1" AntiAirCombat="105" FormationClass="FORMATION_CLASS_NAVAL" PrereqTech="TECH_COMBINED_ARMS" PromotionClass="PROMOTION_CLASS_NAVAL_MELEE" Name="LOC_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_NAME" Description="LOC_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_DESCRIPTION" PurchaseYield="YIELD_GOLD" PseudoYieldType="PSEUDOYIELD_UNIT_NAVAL_COMBAT" TraitType="TRAIT_LEADER_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER"/>
+	</Units>
+	<MomentIllustrations>
+		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER" Texture="Moment_Allen_M_Sumner_class.dds"/>
+	</MomentIllustrations>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_ALLEN_M_SUMNER" Name="LOC_ABILITY_ALLEN_M_SUMNER_NAME" Description="LOC_ABILITY_ALLEN_M_SUMNER_DESCRIPTION"/>
+	</UnitAbilities>
+	<ModifierStrings>
+		<Row ModifierId="ALLEN_M_SUMNER_ATTACK_RAIDERS" Context="Preview" Text="LOC_ABILITY_ALLEN_M_SUMNER_DESCRIPTION"/>
+	</ModifierStrings>
+	<UnitAbilityModifiers>
+		<Row>
+			<UnitAbilityType>ABILITY_ALLEN_M_SUMNER</UnitAbilityType>
+			<ModifierId>ALLEN_M_SUMNER_ATTACK_RAIDERS</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>ALLEN_M_SUMNER_ATTACK_RAIDERS</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+			<SubjectRequirementSetId>CREEPING_ATTACK_REQUIREMENTS</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>ALLEN_M_SUMNER_ATTACK_RAIDERS</ModifierId>
+			<Name>Amount</Name>
+			<Value>7</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

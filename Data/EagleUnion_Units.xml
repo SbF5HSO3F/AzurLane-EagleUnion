@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Units -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：995-->
+<!-- DateCreated: 2/21/2023 9:12:17 PM -->
+<GameData>
+	<Types>
+		<Row Type="UNIT_ENTERPRISE_CLASS"	Kind="KIND_UNIT"/>
+		<Row Type="ABILITY_ENTERPRISE"		Kind="KIND_ABILITY"/>
+	</Types>
+	<UnitAiInfos>
+		<Row UnitType="UNIT_ENTERPRISE_CLASS" AiType="UNITAI_COMBAT"/>
+		<Row UnitType="UNIT_ENTERPRISE_CLASS" AiType="UNITTYPE_NAVAL"/>
+	</UnitAiInfos>
+	<Tags>
+		<Row Tag="CLASS_ENTERPRISE" Vocabulary="ABILITY_CLASS"/>
+	</Tags>
+	<TypeTags>
+		<Row Type="ABILITY_ENTERPRISE"		Tag="CLASS_ENTERPRISE"/>
+		<Row Type="UNIT_ENTERPRISE_CLASS"	Tag="CLASS_ENTERPRISE"/>
+		<Row Type="UNIT_ENTERPRISE_CLASS"	Tag="CLASS_NAVAL_CARRIER"/>
+	</TypeTags>
+	<Units>
+		<!--企业级航空母舰-->
+		<Row UnitType="UNIT_ENTERPRISE_CLASS"	Cost="680"	Maintenance="8"	BaseMoves="6"	BaseSightRange="4"	ZoneOfControl="true"	Domain="DOMAIN_SEA"	Combat="90"	AntiAirCombat="120"	StrategicResource="RESOURCE_URANIUM"	FormationClass="FORMATION_CLASS_NAVAL"	PromotionClass="PROMOTION_CLASS_EAGLE_CV"	AdvisorType="ADVISOR_CONQUEST"	Name="LOC_UNIT_ENTERPRISE_CLASS_NAME"	Description="LOC_UNIT_ENTERPRISE_CLASS_DESCRIPTION"	PurchaseYield="YIELD_GOLD"	PseudoYieldType="PSEUDOYIELD_UNIT_NAVAL_COMBAT"	PrereqTech="TECH_NUCLEAR_FISSION"	AirSlots="6"	TraitType="TRAIT_CIVILIZATION_UNIT_ENTERPRISE_CLASS"/>
+	</Units>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_ENTERPRISE" Name="LOC_ABILITY_ENTERPRISE_NAME" Description="LOC_ABILITY_ENTERPRISE_DESCRIPTION"/>
+	</UnitAbilities>
+	<UnitAbilityModifiers>
+		<Row>
+			<UnitAbilityType>ABILITY_ENTERPRISE</UnitAbilityType>
+			<ModifierId>ENTERPRISE_CV_INFLUENCE_ADJUST</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>ENTERPRISE_CV_INFLUENCE_ADJUST</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_INFLUENCE_POINTS_PER_TURN</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>ENTERPRISE_CV_INFLUENCE_ADJUST</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+	</ModifierArguments>
+	<MomentIllustrations>
+		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_ENTERPRISE_CLASS" Texture="Moment_Enterprise.dds"/>
+	</MomentIllustrations>
+</GameData>

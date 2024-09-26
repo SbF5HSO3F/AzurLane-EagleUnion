@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_TextCN -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：99-->
+<!-- DateCreated: 2/21/2023 9:27:28 PM -->
+<GameData>
+	<LocalizedText>
+		<!--文明相关-->
+		<Replace Tag="LOC_CIVILIZATION_EAGLE_UNION_NAME" Language="zh_Hans_CN">
+			<Text>白鹰联邦</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_EAGLE_UNION_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>白鹰联邦</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_EAGLE_UNION_ADJECTIVE" Language="zh_Hans_CN">
+			<Text>白鹰联邦的</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_EAGLE_UNION_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>白鹰拥有强大的工业实力，先进的科学技术以及各势力中最优秀的航空兵器。武器的设计理念兼顾性能与数量。现在基于贯彻自身正义和为世界带来和平的理念留在碧蓝航线，在与赤色中轴和塞壬的战斗中有着活跃表现。</Text>
+		</Replace>
+		<!--文明能力-->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_NAME" Language="zh_Hans_CN">
+			<Text>科技与工业的璀璨</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>城市所有改良设施+1 [icon_PRODUCTION] 生产力，+1 [ICON_Science] 科技值，研究完“工业化”科技后再+1 [icon_PRODUCTION] 生产力。每回合获得的 [ICON_GreatScientist] 大科学家与 [ICON_GreatEngineer] 大工程师点数提升100%，且 [ICON_GreatScientist] 大科学家与 [ICON_GreatEngineer] 大工程师拥有额外1点使用次数。每获得1位伟人，[ICON_Science] 科技值与 [ICON_Culture] 文化值便+2%（上限为30%）。</Text>
+		</Replace>
+		<!--特殊区域-->
+		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_NAME" Language="zh_Hans_CN">
+			<Text>圣塔克拉拉谷</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>白鹰联邦特色区域，取代工业区，解锁更早，造价更低，且无人口需求（因此并非专业化区域）。从相邻区域额外获得标准相邻加成，[icon_PRODUCTION] 生产力相邻加成也提供 [ICON_Science] 科技值和 [icon_GOLD] 金币。[NEWLINE][NEWLINE]建成后随机奖励一项科技。此城所有改良设施+1 [ICON_Science] 科技值，+1 [icon_PRODUCTION] 生产力，研究完“学徒”科技后再+1 [icon_PRODUCTION] 生产力。[NEWLINE]从每个相邻的港口、学院和圣塔克拉拉谷获得+2 [icon_PRODUCTION] 生产力加成。为每个相邻的港口提供+2 [icon_GOLD] 金币加成，为每个相邻的学院提供+2 [ICON_Science] 科技值加成。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN" >
+			<Text>圣塔克拉拉谷，又称硅谷，位于美国加利福尼亚北部的大都会区旧金山湾区南面，是高科技事业云集的地区。由于圣塔克拉拉谷最早是研究和生产以硅为基础的半导体芯片的地方，因此得名硅谷。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN" >
+			<Text>圣塔克拉拉谷是电子工业和计算机业的王国，尽管美国和世界其它高新技术区都在不断发展壮大，但圣塔克拉拉谷仍然是世界高新技术创新和发展的开创者和中心，该地区的风险投资占全美风险投资总额的三分之一，圣塔克拉拉谷的计算机公司已经发展到大约1500家。 一个世纪前这里还是一片果园，但自从英特尔 、苹果公司、谷歌、脸书、雅虎等高科技公司的总部在此落户之后，出现了众多繁华的市镇。在短短的几十年之内，硅谷走出了大批科技富翁。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN" >
+			<Text>圣塔克拉拉谷的主要部分位于旧金山半岛南端的圣塔克拉拉县，主要包括该县下属的从帕罗奥多市到县府圣何塞市一段长约25英里的谷地。而圣塔克拉拉谷的总范围一般还包含旧金山湾区西南部圣马特奥县的部分城市，以及旧金山湾区东部阿拉米达县的部分城市。 圣塔克拉拉谷的主要区位特点是拥有附近一些具有雄厚科研力量的美国顶尖大学作为依托，主要包括斯坦福大学和加州大学伯克利分校，还包括加州大学系统的其它几所大学和圣塔克拉拉大学。结构上，圣塔克拉拉谷以高新技术中小公司群为基础，同时拥有谷歌、Facebook、惠普、英特尔、苹果公司、思科、英伟达、甲骨文、特斯拉、雅虎等大公司，融科学、技术、生产为一体。</Text>
+		</Replace>
+		<!--特殊加成-->
+		<Replace Tag="LOC_Santa_Clara_Valley_Districts" Language="zh_Hans_CN">
+			<Text>+{1_num} [icon_PRODUCTION] 生产力来自相邻的每个区域</Text>
+		</Replace>
+		<Replace Tag="LOC_Santa_Clara_Valley_CAMPUS" Language="zh_Hans_CN">
+			<Text>+{1_num} [icon_PRODUCTION] 生产力来自相邻的学院</Text>
+		</Replace>
+		<Replace Tag="LOC_Santa_Clara_Valley_HARBOR" Language="zh_Hans_CN">
+			<Text>+{1_num} [icon_PRODUCTION] 生产力来自相邻的港口</Text>
+		</Replace>
+		<Replace Tag="LOC_CAMPUS_Santa_Clara_Valley" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_Science] 科技值来自相邻的圣塔克拉拉谷</Text>
+		</Replace>
+		<Replace Tag="LOC_HARBOR_Santa_Clara_Valley" Language="zh_Hans_CN">
+			<Text>+{1_num} [icon_GOLD] 金币来自相邻的圣塔克拉拉谷</Text>
+		</Replace>
+		<Replace Tag="LOC_Santa_Clara_Valley_Santa_Clara_Valley" Language="zh_Hans_CN">
+			<Text>+{1_num} [icon_PRODUCTION] 生产力来自相邻的圣塔克拉拉谷</Text>
+		</Replace>
+		<!--特殊建筑-->
+		<Replace Tag="LOC_BUILDING_NEWPORT_NEWS_SHIPBUILDING_NAME" Language="zh_Hans_CN">
+			<Text>纽波特纽斯造船厂</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_NEWPORT_NEWS_SHIPBUILDING_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>白鹰联邦特色建筑，此城中生产的所有海军单位+50%战斗经验值，初始便获得一次强化升级并+5 [ICON_Strength] 战斗力。[icon_PRODUCTION] 生产力加成等于港口区域的相邻加成。此城所有海岸和湖泊单元格提供的 [icon_PRODUCTION] 生产力+2并可直接生产舰队与无敌舰队，生产舰队与无敌舰队所需 [icon_PRODUCTION] 生产力减少25%，且每生产一个海军单位便可额外获得一个相同单位。</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_ENTERPRISE_HREAT_STRENGTH_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>+5，进取之心</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ENTERPRISE_HREAT_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>初始便获得一次强化升级并+5 [ICON_Strength] 战斗力，+50%战斗经验值</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN" >
+			<Text>纽波特纽斯造船及船坞公司，或简称为纽波特纽斯造船厂，由企业家柯林斯·亨廷顿出资，创立于1886年，其紧挨纽波特纽斯市，是美国最大的私营造船厂。2001年11月，NS被诺斯罗普·格鲁门公司的海事部门收购。2011年3月，诺·格公司又将其与英格尔斯造船厂剥离，成立了独立的亨廷顿英格尔工业公司。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN" >
+			<Text>纽波特纽斯造船厂不但是美国最大的造船厂，也是唯一能够设计、建造核动力航母以及对核动力航母进行核燃料更换和大修的造船厂。纽波特纽斯船厂负责美国海军100%的核动力航母建造，也是美国两大核潜艇制造厂之一以及50%的驱逐舰的建造。按照纽波特纽斯造船公司生产的产品来看，它被称为美国的国宝也丝毫不为过。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN" >
+			<Text>纽波特纽斯造船厂起源自一个运煤码头。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN" >
+			<Text>1870年代，切萨皮克及俄亥俄铁路公司主席 柯利斯·亨廷顿大举注资，铺设连接里士满及俄亥俄河的铁路。1881年，公司将铁路延伸至弗吉尼亚半岛，并接驳到汉普顿锚地，于纽波特纽斯建设一个运煤码头。1886年，亨廷顿在码头旁兴建船坞，供运煤船舰维修，并同时提供造船服务；造船公司自此成立，其时名为切萨皮克干船坞及造船公司。1891年，造船厂建造的首架船只下水，为一艘拖船。稍后美国海军开始与造船公司签约，建造军舰。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_5" Language="zh_Hans_CN" >
+			<Text>到1897年，公司已为美国海军建造了三艘护卫艇。由于船坞的劳工需求甚大，纽波特纽斯人口逐渐增多，并在1896年正式成为独立市；第一任市长为公司要员沃尔特·波斯特。1900年，亨廷顿去世，其外甥亨利·亨廷顿接管造船公司，并继续扩建船厂。稍后无畏舰时代来临，海军竞赛激烈；公司共为美国海军建造了六艘无畏舰，包括特拉华号、得克萨斯号、宾夕法尼亚号、密西西比号、马里兰号战列舰及西弗吉尼亚号。1914年，公司亦建造了忠仆号。1915年5月7日，卢西塔尼亚号被德国潜艇击沉，当时的公司主席亚伯特·霍金斯亦在死者之列。稍后公司为美军建造多艘驱逐舰及其他舰只。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_6" Language="zh_Hans_CN" >
+			<Text>第一次世界大战结束后，造船公司为海军建造了多艘航空母舰，包括突击者号、约克城号、企业号及大黄蜂号。第二次世界大战前后，公司建造了九艘埃塞克斯级航空母舰，包括埃塞克斯号、约克城号、无畏号、大黄蜂号、富兰克林号、提康德罗加号、伦道夫号、拳师号及莱特号。由于美军亟需更多军舰，公司在北卡罗来纳州威尔明顿开设分公司，并建设临时船厂造船。战争结束前夕，公司亦在纽波特纽斯建造中途岛级航空母舰，包括中途岛号及珊瑚海号；稍后又建造了美国号邮轮。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_7" Language="zh_Hans_CN" >
+			<Text>战后造船公司与海军的关系仍非常紧密；福莱斯特号、突击者号均在纽波特纽斯建造。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_8" Language="zh_Hans_CN" >
+			<Text>1954年，造船公司与西屋电子公司及美国海军合作，研发舰载核反应炉，使军舰可以核动力行驶。1958年，全球第一艘核动力航空母舰——企业号航空母舰在纽波特纽斯建造，并在1960年下水。稍后公司亦建造了美利坚号及肯尼迪号。1968年，造船公司与坦尼可公司合并。1970年代开始，造船公司建造了所有的尼米兹级航空母舰，亦建造了部分洛杉矶级核潜艇。1996年，造船公司脱离坦尼可公司，并以纽波特纽斯造船公司之名在纽约上市。2001年11月7日，造船公司被诺斯洛普·格鲁门收购，船厂亦更名为诺斯洛普·格鲁门造船厂。2009年，公司开始建造第一艘福特级核动力航空母舰。</Text>
+		</Replace>
+		<!--特殊单位-->
+		<Replace Tag="LOC_UNIT_ENTERPRISE_CLASS_NAME" Language="zh_Hans_CN">
+			<Text>企业级航空母舰</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ENTERPRISE_CLASS_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>白鹰联邦特色原子能海军单位，拥有强大的近战攻击力与空中单位运输能力和特殊的晋升路线。每回合+4影响力点数。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENTERPRISE_CLASS_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>1945年，二战结束后，美国为了继续保持海军优势以实现其全球战略目标，采取了两项措施，一是淘汰一批舰龄长、吨位小、性能差的航母，封存或报废大部分战列舰；二是着手设计和建造一批载机多、性能好、适应现代海战需要的超大型航母，并于20世纪50年代相继建成了“福莱斯特”号、“萨拉托加”号、“突击者”号和“独立”号等大型航母。但由于飞机尺寸、重量和速度的增加以及引进燃料耗量极大的喷气推进，对航空母舰提出了更高的要求。尽管福莱斯特级航空母舰和小鹰级航空母舰在舰型、装备布置和排水量上比二战期间的航母要先进得多，但是仍远不能适应舰载机的需要。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENTERPRISE_CLASS_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>1950年，经美国“核潜艇之父”里科弗多方游说，美海军作战部长福雷斯特·谢尔曼认为美国不仅需要核潜艇，还需要“探讨“建造一艘具有核动力装置的大型航空母舰的可能性。1952年1月，美国完成了航空母舰核反应堆的选型研究。但此时谢尔曼去世，核动力航母的建造失去了有力的支持，加之反对派呼声日盛，研制工作暂时搁浅。1954年9月30日，美国第一艘核潜艇“鹦鹉螺”号正式服役的消息轰动全球，再度引起人们对建造核动力水面舰艇的注目。1956年1月，美国海军正式发文，开始核动力航母的初步设计。1957年12月，世界上第一艘核动力水面舰艇长滩号巡洋舰正式开工建造，1957年8月，苏联宣布发射成功了一枚洲际导弹。为了表明对苏联的军事优势，美国海军决定将核动力航空母舰列入1958年造舰计划。当时，里科弗保证，其所设计的核动力航母只需安装2个反应堆，造价可相对减少。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENTERPRISE_CLASS_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+			<Text>世界上仅有的一艘建成的企业级航空母舰是企业号航空母舰，同时也是美国海军及世界第一艘核动力航空母舰。企业号航空母舰主尺度为342.3米×40.8米×11.9米，舰员编制3215人，动力为8座A2W压水反应堆，涡轮电力推进，四轴四桨，最大航速35节，续航力400000海里/20节，飞行甲板331.6米×76.8米，最大载机量84架 。企业号航空母舰于1950年开始设计，1958年2月4日在纽波特纽斯造船及船坞公司开工建造，1960年9月24日下水，1961年11月25日服役，2012年12月1日举行退役典礼，在美国海军服役51年，是在役最长的航空母舰。</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ENTERPRISE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>每回合+4影响力点数</Text>
+		</Replace>
+		<!--特殊晋升路线-->
+		<Replace Tag="LOC_PROMOTION_CLASS_EAGLE_CV_NAME" Language="zh_Hans_CN">
+			<Text>白鹰航母</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_DECK_UPGRADES_NAME" Language="zh_Hans_CN">
+			<Text>甲板升级</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_DECK_UPGRADES_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>+2额外飞机槽位</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_HULL_STRENGTHENING_NAME" Language="zh_Hans_CN">
+			<Text>船体强化</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_HULL_STRENGTHENING_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>任何情况下+8 [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_HULL_STRENGTHENING_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>任何情况下+8 [ICON_Strength] 战斗力（船体强化升级）</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_ELITE_DAMAGE_CONTROL_NAME" Language="zh_Hans_CN">
+			<Text>精英损管</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_ELITE_DAMAGE_CONTROL_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>在攻击后可恢复</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_MODERNIZATION_NAME" Language="zh_Hans_CN">
+			<Text>现代化改造</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_MODERNIZATION_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>+1视野范围，+1 [ICON_Movement] 移动力，+1额外飞机容量</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_SUPERCARRIER_NAME" Language="zh_Hans_CN">
+			<Text>超级航空母舰</Text>
+		</Replace>
+		<Replace Tag="LOC_PROMOTION_EAGLE_SUPERCARRIER_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>在友军领土之外恢复，每回合+6影响力点数</Text>
+		</Replace>
+		<!--城市名-->
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_1" Language="zh_Hans_CN">
+			<Text>中央司令部</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_2" Language="zh_Hans_CN">
+			<Text>纽约</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_3" Language="zh_Hans_CN">
+			<Text>洛杉矶</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_4" Language="zh_Hans_CN">
+			<Text>芝加哥</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_5" Language="zh_Hans_CN">
+			<Text>休斯顿</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_6" Language="zh_Hans_CN">
+			<Text>费城</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_7" Language="zh_Hans_CN">
+			<Text>华盛顿特区</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_8" Language="zh_Hans_CN">
+			<Text>达拉斯</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_9" Language="zh_Hans_CN">
+			<Text>旧金山</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_10" Language="zh_Hans_CN">
+			<Text>波士顿</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_11" Language="zh_Hans_CN">
+			<Text>亚特兰大</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_12" Language="zh_Hans_CN">
+			<Text>底特律</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_13" Language="zh_Hans_CN">
+			<Text>匹兹堡</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_14" Language="zh_Hans_CN">
+			<Text>圣迭戈</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_15" Language="zh_Hans_CN">
+			<Text>杰克逊维尔</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_16" Language="zh_Hans_CN">
+			<Text>迈阿密</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_17" Language="zh_Hans_CN">
+			<Text>西雅图</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_18" Language="zh_Hans_CN">
+			<Text>菲尼克斯</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_19" Language="zh_Hans_CN">
+			<Text>圣安东尼奥</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_20" Language="zh_Hans_CN">
+			<Text>拉斯维加斯</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_21" Language="zh_Hans_CN">
+			<Text>克利夫兰</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_22" Language="zh_Hans_CN">
+			<Text>巴尔的摩</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_23" Language="zh_Hans_CN">
+			<Text>明尼阿波利斯</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_24" Language="zh_Hans_CN">
+			<Text>新奥尔良</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_25" Language="zh_Hans_CN">
+			<Text>夏洛特</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_26" Language="zh_Hans_CN">
+			<Text>丹佛</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_27" Language="zh_Hans_CN">
+			<Text>圣路易斯</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_28" Language="zh_Hans_CN">
+			<Text>波特兰</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_29" Language="zh_Hans_CN">
+			<Text>坦帕</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_30" Language="zh_Hans_CN">
+			<Text>普林斯顿</Text>
+		</Replace>
+		<!--公民名-->
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_1" Language="zh_Hans_CN">
+			<Text>约克城</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_2" Language="zh_Hans_CN">
+			<Text>大黄蜂</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_3" Language="zh_Hans_CN">
+			<Text>邦克山</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_4" Language="zh_Hans_CN">
+			<Text>香格里拉</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_5" Language="zh_Hans_CN">
+			<Text>无畏</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_6" Language="zh_Hans_CN">
+			<Text>提康德罗加</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_7" Language="zh_Hans_CN">
+			<Text>富兰克林</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_8" Language="zh_Hans_CN">
+			<Text>列克星敦</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_9" Language="zh_Hans_CN">
+			<Text>伦道夫</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_10" Language="zh_Hans_CN">
+			<Text>普林斯顿</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_11" Language="zh_Hans_CN">
+			<Text>菲律宾海</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_12" Language="zh_Hans_CN">
+			<Text>塔拉瓦</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_13" Language="zh_Hans_CN">
+			<Text>汉考克</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_14" Language="zh_Hans_CN">
+			<Text>本宁顿</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_15" Language="zh_Hans_CN">
+			<Text>奇尔沙治</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_16" Language="zh_Hans_CN">
+			<Text>莱特</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_17" Language="zh_Hans_CN">
+			<Text>尚普兰湖</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_18" Language="zh_Hans_CN">
+			<Text>奥里斯坎尼</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_19" Language="zh_Hans_CN">
+			<Text>胡蜂</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_20" Language="zh_Hans_CN">
+			<Text>密苏里</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_21" Language="zh_Hans_CN">
+			<Text>本森</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_22" Language="zh_Hans_CN">
+			<Text>巴尔的摩</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_23" Language="zh_Hans_CN">
+			<Text>克利夫兰</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_24" Language="zh_Hans_CN">
+			<Text>比洛克西</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_25" Language="zh_Hans_CN">
+			<Text>卡萨布兰卡</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_26" Language="zh_Hans_CN">
+			<Text>艾尔温</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_27" Language="zh_Hans_CN">
+			<Text>哈曼</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_28" Language="zh_Hans_CN">
+			<Text>查尔斯·奥斯本</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_29" Language="zh_Hans_CN">
+			<Text>西弗吉尼亚</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_30" Language="zh_Hans_CN">
+			<Text>独立</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

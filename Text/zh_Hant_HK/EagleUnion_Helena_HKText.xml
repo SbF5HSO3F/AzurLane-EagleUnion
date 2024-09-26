@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Helena_Text -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 優先順序：58-->
+<!-- DateCreated: 8/19/2023 4:19:28 PM -->
+<GameData>
+	<LocalizedText>
+		<!--領袖介紹-->
+		<Replace Tag="LOC_LEADER_HELENA_CL50_NAME" Language="zh_Hant_HK">
+			<Text>海倫娜</Text>
+		</Replace>
+		<!--載入-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_HELENA_CL50" Language="zh_Hant_HK">
+			<Text>經歷了珍珠港襲擊，參與了瓜達爾卡納爾島海戰，最後英勇戰沉於庫拉灣。海倫娜，您憂鬱而成熟，柔弱的外表下有著一顆勇敢的心，SG雷達是你最有力的工具。面對危險，利用好你手中的力量吧，不要讓您所經歷過的悲劇再度上演。</Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HELENA_CL50_CHAPTER_CAPSULE_BODY" Language="zh_Hant_HK">
+			<Text>擁有SG新型雷達的海倫娜洞悉她所遇見的一切，她是情報方面的主宰</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HELENA_CL50_CHAPTER_DETAILED_BODY" Language="zh_Hant_HK">
+			<Text>SG新型雷達可謂是神兵利器。在它的加持下，海倫娜擁有極高的外交能見度，間諜擁有很高的行動成功率，國境內敵方間諜活動被極力壓制。她的單位也因此擁有了廣闊的視野，並可令相鄰的敵方減少大量 [ICON_Strength] 戰鬥力。在岸邊建立城市，“庫拉灣之夢”將為其帶來相當可觀的產出，使其成為一座文化之城。利用情報優勢與廣闊的視野時刻監視敵人的行動，海倫娜的國土將無人敢染指，所帶來的和平將會成為海倫娜達成文化勝利與科技勝利的強力保障。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HELENA_CL50_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
+			<Text>海倫娜號是美國海軍的布魯克林級輕巡洋艦9號艦（聖路易斯級2號艦）。該級兩艘艦船原為布魯克林級八號艦和九號艦，由於單獨裝配了改進的高壓鍋爐與更高的火力，因此單獨分作一級。1936年12月9日動工，1938年8月27日在紐約海軍造船廠下水，為其主持下水儀式的是蒙大拿州參議員湯瑪斯·J·韋爾奇的孫女埃莉諾·卡萊爾·戈傑。1939年9月18日正式服役，首任艦長為海軍上校馬克斯·B·德莫特。 服役後，海倫娜被分配到太平洋艦隊，隸屬于海軍少將H·費爾拉克斯·利裡指揮的第9巡洋艦分隊。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HELENA_CL50_CHAPTER_HISTORY_PARA_2" Language="zh_Hant_HK">
+			<Text>由於在珍珠港襲擊中遭受嚴重損傷進行了維修，並在維修時加裝了最新型的SG雷達，這也成為該艦的依仗。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HELENA_CL50_CHAPTER_HISTORY_PARA_3" Language="zh_Hant_HK">
+			<Text>在埃斯佩蘭斯海角海戰、瓜達爾卡納爾島海戰中，該艦都發揮了關鍵的作用。而在1943年7月6日的庫拉灣海戰中，海倫娜的的雷達發現了日軍編隊，令艦隊占得先機。海倫娜和火奴魯魯、聖路易斯的炮彈十分準確的命中了日軍掩護隊所屬的 新月、涼風、穀風3艘驅逐艦，新月喪失戰鬥力，涼風前主炮中彈，機關炮的彈藥箱起火，艦體多處被擊穿；穀風錨鏈艙中了1彈，幸未爆炸，糧食艙進水。但由於海倫娜沒有使用無焰火藥，耀眼的炮口火光暴露了自己。夜色中，尚能戰鬥的涼風和穀風兩艦以她開火的閃光為瞄準點，齊射16條魚雷。7分鐘後，她被日軍發射的3條魚雷擊中，先是被一枚魚雷擊中艦艏折斷，後又被兩枚魚雷擊中中部造成艦體撕裂，在極短的時間裡折斷成兩截沉沒。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HELENA_CL50_CHAPTER_HISTORY_PARA_4" Language="zh_Hant_HK">
+			<Text>由於海倫娜號的出色表現，該艦成為第一艘獲得海軍部集體嘉獎的艦船，並在短暫的生涯中獲得了亞太地區戰功獎章和7枚戰爭之星。</Text>
+		</Replace>
+		<!--領袖議程-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_HELENA_CL50_QUOTE" Language="zh_Hant_HK">
+			<Text>我的索敵能力要是能幫到姐妹們就好了……</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_MEMORIES_OF_PEARL_HARBOR_NAME" Language="zh_Hant_HK">
+			<Text>珍珠港的回憶</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_MEMORIES_OF_PEARL_HARBOR_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>盡可能與遇到的文明和睦相處。喜歡與其友好相處的文明，討厭背後攻擊或宣佈突襲戰爭的文明。</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MEMORIES_OF_PEARL_HARBOR_FRIEND_REASON_ANY" Language="zh_Hant_HK">
+			<Text>（您是她的朋友）</Text>
+		</Replace>
+		<Replace Tag="LOC_MEMORIES_OF_PEARL_HARBOR_FRIEND_FRIEND" Language="zh_Hant_HK">
+			<Text>海倫娜喜歡與其友好相處的人</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MEMORIES_OF_PEARL_HARBOR_SURPRISE_WAR_REASON_ANY" Language="zh_Hant_HK">
+			<Text>（您宣佈了突襲戰爭）</Text>
+		</Replace>
+		<Replace Tag="LOC_MEMORIES_OF_PEARL_HARBOR_SURPRISE_WAR" Language="zh_Hant_HK">
+			<Text>海倫娜討厭宣佈突襲戰爭的人</Text>
+		</Replace>
+		<!--領袖能力-->
+		<Replace Tag="LOC_TRAIT_LEADER_THE_WONDER_OF_KULA_GULF_NAME" Language="zh_Hant_HK">
+			<Text>庫拉灣之夢</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_THE_WONDER_OF_KULA_GULF_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>初始 [ICON_VisLimited] 外交能見度比所遇見的其他文明高4級。領土內敵方間諜等級降低4級，間諜在出擊行動時等級增加4級。與海岸與湖泊相鄰的單元格提供+1 [ICON_Culture] 文化值，+1 [ICON_Production] 生產力。海岸與湖泊單元格+2 [ICON_Faith] 信仰，為相鄰的區域提供標準相鄰加成與+1 [ICON_Culture] 文化值。所有單位+2視野範圍，且視野不受地形與地貌阻礙，並可令自身相鄰的敵方單位-4 [ICON_Strength] 戰鬥力。研究完“內燃機”後獲得特色單位“聖路易斯級輕巡洋艦”。</Text>
+		</Replace>
+		<Replace Tag="LOC_SOURCE_HELENA_CL50_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>雷達掃描</Text>
+		</Replace>
+		<Replace Tag="LOC_VIZSOURCE_ACTION_USE_HELENA_CL50" Language="zh_Hant_HK">
+			<Text>使用領袖海倫娜</Text>
+		</Replace>
+		<Replace Tag="LOC_GOSSIP_HELENA_CL50" Language="zh_Hant_HK">
+			<Text>通過SG雷達，您得知</Text>
+		</Replace>
+		<!--特殊加成-->
+		<Replace Tag="LOC_Kula_Theater" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_Culture] 文化值來自相鄰的海岸與湖泊單元格</Text>
+		</Replace>
+		<Replace Tag="LOC_Kula_Industrial_Zone_Culture" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_Culture] 文化值來自相鄰的海岸與湖泊單元格</Text>
+		</Replace>
+		<Replace Tag="LOC_Kula_Industrial_Zone" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_Production] 生產力來自相鄰的海岸與湖泊單元格</Text>
+		</Replace>
+		<Replace Tag="LOC_Kula_Harbor_Culture" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_Culture] 文化值來自相鄰的海岸與湖泊單元格</Text>
+		</Replace>
+		<Replace Tag="LOC_Kula_Harbor" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_Gold] 金幣來自相鄰的海岸與湖泊單元格</Text>
+		</Replace>
+		<Replace Tag="LOC_Kula_Campus_Culture" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_Science] 科技值來自相鄰的海岸與湖泊單元格</Text>
+		</Replace>
+		<Replace Tag="LOC_Kula_Campus" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_Culture] 文化值來自相鄰的海岸與湖泊單元格</Text>
+		</Replace>
+		<!--能力加成-->
+		<Replace Tag="LOC_ABILITY_HELENA_UNIT_BUFF_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>庫拉灣之夢提供+2視野範圍，且視野不受地形與地貌阻礙。可令相鄰的敵方單位-4 [ICON_Strength] 戰鬥力</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_HELENA_UNIT_ATTACH_DEBUFF_MODIFIER_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>與敵方單位相鄰時{Property} [ICON_Strength] 戰鬥力</Text>
+		</Replace>
+		<!--特殊單位-->
+		<Replace Tag="LOC_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_NAME" Language="zh_Hant_HK">
+			<Text>聖路易斯級輕巡洋艦</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>海倫娜特色現代海軍近戰單位，擁有較高的視野和強大的防空能力，能執行射程為2的遠端攻擊並可使視線範圍中的海軍襲擊者暴露位置。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
+			<Text>聖路易斯級輕巡洋艦實際應該屬於布魯克林級輕巡洋艦——其最後兩艘建造名義為替換第一批奧馬哈級輕巡洋艦，並使用了改進的設計，可被稱為聖路易斯級，包括換用新型更緊湊的鍋爐實現了交錯式動力佈局，提高了生存性；副炮更換為4座雙聯裝127mm/38 Mk12型高平兩用炮，安裝在Mk29 mod.0型炮座中；後部上層建築和桅杆直接設置於2號煙囪正後方。3號艦薩凡納在大修時按類似聖路易斯級的佈置改裝了4座雙聯裝127mm/38 Mk12型高平兩用炮，安裝在Mk32型炮座。但後部上層建築仍然保留了前7艘布魯克林級的特徵。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_CHAPTER_HISTORY_PARA_2" Language="zh_Hant_HK">
+			<Text>布魯克林級輕巡洋艦是美國海軍在二戰前建造的輕型巡洋艦。它裝備5座三聯裝152mm主炮塔，是美國海軍中火力最為強大的輕巡洋艦。同級艦共有9艘。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_CHAPTER_HISTORY_PARA_3" Language="zh_Hant_HK">
+			<Text>本級艦是1930年的《倫敦海軍條約》的產物， 根據這個補充條約，美國還有共計30000噸共計3艘的重巡洋艦建造份額，並對這3艘艦的建造、完工時間做了嚴格限制，因此實際上不能立即形成戰鬥力。為了對付日益擴張的他國海軍力量，美國不得不轉向建造裝備152mm，即6英寸主炮的輕型巡洋艦，剛好此時日本海軍的最上級巡洋艦出現，其遠超過舊有的輕巡洋艦的性能立刻就成了英美海軍的標竿，本級和英國的城級巡洋艦同樣是對最上級的回應。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_CHAPTER_HISTORY_PARA_4" Language="zh_Hant_HK">
+			<Text>布魯克林級的主炮是5座三聯裝 Mk.16 152mm/47艦炮，在47.5度仰角時射程可達23,881m，每分鐘可發射8-10發，合計每分鐘可發射120-150發炮彈，火力甚至超越前級重巡洋艦多炮塔神教精神永存，副炮則為8門單裝127mm/25高炮。此外，該級艦開創性的使用了平甲板船型，並一改先前重巡洋艦將航空設施置於船中央的設計，將它們移動到船尾：這樣可以減少航空燃油起火導致嚴重損壞的機會，但同時也增加了航空設施被海浪損壞的概率。這樣的艦型設計在後續的克利夫蘭級、巴爾的摩級等巡洋艦中被一直沿用。因此，布魯克林級在美國巡洋艦建造史上具有里程碑意義。</Text>
+		</Replace>
+		<!--外交文本-->
+		<!--同意聲明友誼-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>我很樂意擁有一名真正的朋友。</Text>
+		</Row>
+		<!--拒絕聲明友誼-->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>請求友誼固然是好事，但您的誠意還需考量。</Text>
+		</Row>
+		<!--請求聲明友誼-->
+		<Row Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>事實證明，您是一名可靠的人，願意接受我的友誼嗎？</Text>
+		</Row>
+		<!--請求聲明友誼被接受-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>謝謝，我會好好珍惜我們之間的關係的。</Text>
+		</Row>
+		<!--請求聲明友誼被拒絕-->
+		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>您拒絕了我的好意，沒關係，我不會放棄。</Text>
+		</Row>
+		<!--被宣戰-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>又是戰爭呢，不過我是不會讓悲劇再次上演了。</Text>
+		</Row>
+		<!--主動宣戰-->
+		<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>我渴望和平，但和平不是我為一切讓步的理由。</Text>
+		</Row>
+		<!--接受使節派遣-->
+		<Row Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>您的代表團已經安全到達，他們向我傳達了您的好意。</Text>
+		</Row>
+		<!--拒絕使節派遣-->
+		<Row Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>現在還不是時候，過一段時間吧。</Text>
+		</Row>
+		<!--請求派遣使節-->
+		<Row Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>我將向您的國家派出代表團，希望您能接受。</Text>
+		</Row>
+		<!--被譴責-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>您是個有禮貌的人，我很清楚這次的譴責不過是您接下來戰爭的鋪墊。</Text>
+		</Row>
+		<!--譴責玩家-->
+		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>別人可能不知道您犯下的惡行，但我知道。（譴責你）</Text>
+		</Row>
+		<!--初次見面-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>您好，我是白鷹輕巡洋艦，海倫娜。相對于其他姐妹，我擁有更強的索敵能力。但是，很多時候，僅靠一個人是救不了大家的……啊，沒什麼，我剛剛只是在自言自語罷了……</Text>
+		</Row>
+		<!--初次見面，提供最近城市位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>願意參觀我們附近的城市嗎？</Text>
+		</Row>
+		<!--初次見面，玩家提供最近城市位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>感謝您的慷慨。</Text>
+		</Row>
+		<!--初次見面，請求交換首都位置-->
+		<Row Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>您我對雙方的瞭解還不夠多，願意交換關於首都的資訊嗎？</Text>
+		</Row>
+		<!--領袖對玩家有好感-->
+		<Row Tag="LOC_DIPLO_KUDO_EXIT_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>您是一位相當可靠的朋友，願我們之間沒有衝突。</Text>
+		</Row>
+		<!--領袖敵視玩家-->
+		<Row Tag="LOC_DIPLO_WARNING_EXIT_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>您是個值得讓人注意的領袖，尤其是在軍隊動向方面。</Text>
+		</Row>
+		<!--請求結盟-->
+		<Row Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>根據我的觀察，您一定會成為白鷹的出色盟友。我特此請求與您結盟。</Text>
+		</Row>
+		<!--要求移開邊境軍隊-->
+		<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>您別忘了，我很清楚周邊的一切，何況是那麼龐大的軍隊呢？</Text>
+		</Row>
+		<!--經受不住時間考驗-->
+		<Row Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>即使我現在擁有這樣的力量，悲劇還是再次上演了嗎？我輸了，也沒有下一次了。</Text>
+		</Row>
+		<!--同意交易-->
+		<Row Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>謝謝。</Text>
+		</Row>
+		<!--拒絕交易-->
+		<Row Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_HELENA_CL50_ANY" Language="zh_Hant_HK">
+			<Text>這樣的交易對你我都沒好處。</Text>
+		</Row>
+	</LocalizedText>
+</GameData>

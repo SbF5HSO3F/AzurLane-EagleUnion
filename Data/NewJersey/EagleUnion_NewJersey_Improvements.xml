@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_NewJersey_Improvements -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：60-->
+<!-- DateCreated: 9/21/2023 1:49:33 PM -->
+<GameData>
+	<Types>
+		<Row Type="IMPROVEMENT_FLOUTISH_GARDEN" Kind="KIND_IMPROVEMENT"/>
+	</Types>
+	<Improvements>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN" PrereqTech="TECH_CONSTRUCTION" Description="LOC_IMPROVEMENT_FLOUTISH_GARDEN_DESCRIPTION" PlunderType="PLUNDER_GOLD" Housing="1" Name="LOC_IMPROVEMENT_FLOUTISH_GARDEN_NAME" PlunderAmount="50" TraitType="TRAIT_LEADER_IMPROVEMENT_FLOUTISH_GARDEN" Icon="ICON_IMPROVEMENT_FLOUTISH_GARDEN"/>
+	</Improvements>
+	<Improvement_ValidTerrains>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN" TerrainType="TERRAIN_GRASS"/>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN" TerrainType="TERRAIN_GRASS_HILLS"/>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN" TerrainType="TERRAIN_PLAINS"/>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN" TerrainType="TERRAIN_PLAINS_HILLS"/>
+	</Improvement_ValidTerrains>
+	<Improvement_ValidBuildUnits>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN" UnitType="UNIT_BUILDER"/>
+	</Improvement_ValidBuildUnits>
+	<Improvement_YieldChanges>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN"	YieldType="YIELD_FOOD"			YieldChange="0"/>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN"	YieldType="YIELD_PRODUCTION"	YieldChange="2"/>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN"	YieldType="YIELD_CULTURE"		YieldChange="2"/>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN"	YieldType="YIELD_GOLD"			YieldChange="0"/>
+	</Improvement_YieldChanges>
+	<Improvement_Adjacencies>
+		<!--相邻改良设施加成-->
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN"	YieldChangeId="FlourishGarden_FarmsFoodAdjacency"/>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN"	YieldChangeId="FlourishGarden_FarmCultureAdjacency"/>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN"	YieldChangeId="FlourishGarden_PasturesFoodAdjacency"/>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN"	YieldChangeId="FlourishGarden_PasturesCultureAdjacency"/>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN"	YieldChangeId="FlourishGarden_CampsFoodAdjacency"/>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN"	YieldChangeId="FlourishGarden_CampsCultureAdjacency"/>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN"	YieldChangeId="FlourishGarden_PlantationsFoodAdjacency"/>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN"	YieldChangeId="FlourishGarden_PlantationsCultureAdjacency"/>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN"	YieldChangeId="FlourishGarden_FlourishGardensAdjacency"/>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN"	YieldChangeId="FlourishGarden_DistrictsAdjacency"/>
+		<Row ImprovementType="IMPROVEMENT_FLOUTISH_GARDEN"	YieldChangeId="FlourishGarden_DistrictsGoldAdjacency"/>
+	</Improvement_Adjacencies>
+	<Adjacency_YieldChanges>
+		<!--相邻改良设施加成-->
+		<Row ID="FlourishGarden_FarmsFoodAdjacency"				YieldType="YIELD_FOOD"		AdjacentImprovement="IMPROVEMENT_FARM"				Description="Placeholder" TilesRequired="1" YieldChange="1"/>
+		<Row ID="FlourishGarden_FarmCultureAdjacency"			YieldType="YIELD_CULTURE"	AdjacentImprovement="IMPROVEMENT_FARM"				Description="Placeholder" TilesRequired="1" YieldChange="1"/>
+		<Row ID="FlourishGarden_PasturesFoodAdjacency"			YieldType="YIELD_FOOD"		AdjacentImprovement="IMPROVEMENT_PASTURE"			Description="Placeholder" TilesRequired="1" YieldChange="1"/>
+		<Row ID="FlourishGarden_PasturesCultureAdjacency"		YieldType="YIELD_CULTURE"	AdjacentImprovement="IMPROVEMENT_PASTURE"			Description="Placeholder" TilesRequired="1" YieldChange="1"/>
+		<Row ID="FlourishGarden_CampsFoodAdjacency"				YieldType="YIELD_FOOD"		AdjacentImprovement="IMPROVEMENT_CAMP"				Description="Placeholder" TilesRequired="1" YieldChange="1"/>
+		<Row ID="FlourishGarden_CampsCultureAdjacency"			YieldType="YIELD_CULTURE"	AdjacentImprovement="IMPROVEMENT_CAMP"				Description="Placeholder" TilesRequired="1" YieldChange="1"/>
+		<Row ID="FlourishGarden_PlantationsFoodAdjacency"		YieldType="YIELD_FOOD"		AdjacentImprovement="IMPROVEMENT_PLANTATION"		Description="Placeholder" TilesRequired="1" YieldChange="1"/>
+		<Row ID="FlourishGarden_PlantationsCultureAdjacency"	YieldType="YIELD_CULTURE"	AdjacentImprovement="IMPROVEMENT_PLANTATION"		Description="Placeholder" TilesRequired="1" YieldChange="1"/>
+		<Row ID="FlourishGarden_FlourishGardensAdjacency"		YieldType="YIELD_GOLD"		AdjacentImprovement="IMPROVEMENT_FLOUTISH_GARDEN"	Description="Placeholder" TilesRequired="1" YieldChange="3"/>
+		<Row ID="FlourishGarden_DistrictsAdjacency"		Description="Placeholder" YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" OtherDistrictAdjacent="true" PrereqTech="TECH_INDUSTRIALIZATION"/>
+		<Row ID="FlourishGarden_DistrictsGoldAdjacency"	Description="Placeholder" YieldType="YIELD_GOLD"	   YieldChange="1" TilesRequired="1" OtherDistrictAdjacent="true" PrereqTech="TECH_INDUSTRIALIZATION"/>
+	</Adjacency_YieldChanges>
+	<MomentIllustrations>
+    	<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_IMPROVEMENT" MomentDataType="MOMENT_DATA_IMPROVEMENT" GameDataType="IMPROVEMENT_FLOUTISH_GARDEN" Texture="MomentSTK_Hacienda.dds"/>
+  	</MomentIllustrations>
+</GameData>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_NewJersey_Units -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：698-->
+<!-- DateCreated: 8/19/2023 3:40:13 PM -->
+<GameData>
+	<Types>
+		<Row Type="UNIT_IOWA_CLASS" Kind="KIND_UNIT"/>
+	</Types>
+	<UnitAiInfos>
+		<Row UnitType="UNIT_IOWA_CLASS" AiType="UNITAI_COMBAT"/>
+		<Row UnitType="UNIT_IOWA_CLASS" AiType="UNITTYPE_RANGED"/>
+		<Row UnitType="UNIT_IOWA_CLASS" AiType="UNITTYPE_NAVAL"/>
+	</UnitAiInfos>
+	<UnitReplaces>
+		<Row CivUniqueUnitType="UNIT_IOWA_CLASS" ReplacesUnitType="UNIT_MISSILE_CRUISER"/>
+	</UnitReplaces>
+	<TypeTags>
+		<Row Type="UNIT_IOWA_CLASS" Tag="CLASS_NAVAL_RANGED"/>
+		<Row Type="UNIT_IOWA_CLASS" Tag="CLASS_ANTI_AIR"/>
+	</TypeTags>
+	<Units>
+		<!--衣阿华级战列舰-->
+		<Row UnitType="UNIT_IOWA_CLASS" Cost="680" Maintenance="8" BaseMoves="6" BaseSightRange="4" ZoneOfControl="true" Domain="DOMAIN_SEA" Combat="90" RangedCombat="105" Range="3" AntiAirCombat="120" FormationClass="FORMATION_CLASS_NAVAL" PromotionClass="PROMOTION_CLASS_NAVAL_RANGED" AdvisorType="ADVISOR_CONQUEST" Name="LOC_UNIT_IOWA_CLASS_NAME" Description="LOC_UNIT_IOWA_CLASS_DESCRIPTION" PurchaseYield="YIELD_GOLD" PseudoYieldType="PSEUDOYIELD_UNIT_NAVAL_COMBAT" PrereqTech="TECH_ADVANCED_BALLISTICS" TraitType="TRAIT_LEADER_UNIT_IOWA_CLASS"/>
+	</Units>
+	<MomentIllustrations>
+		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_IOWA_CLASS" Texture="Moment_Iowa_Class.dds"/>
+	</MomentIllustrations>
+</GameData>

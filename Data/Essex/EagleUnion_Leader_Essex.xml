@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Leader_Essex -->
+<!-- Author: HSbF6HSO3F -->
+<!-- 优先级：900-->
+<!-- DateCreated: 8/18/2023 3:57:35 PM -->
+<GameData>
+	<Types>
+		<!--埃塞克斯-->
+		<Row Type="LEADER_ESSEX_CV9"								Kind="KIND_LEADER"/>
+		<Row Type="TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET"	Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_UNIT_F2H"							Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_UNIT_ESSEX_CLASS"					Kind="KIND_TRAIT"/>
+	</Types>
+	<Leaders>
+		<!--埃塞克斯-->
+		<Row LeaderType="LEADER_ESSEX_CV9"	Name="LOC_LEADER_ESSEX_CV9_NAME"	Sex="Female"	InheritFrom="LEADER_DEFAULT"	SceneLayers="4"/>
+	</Leaders>
+	<Traits>
+		<!--埃塞克斯-->
+		<Row TraitType="TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET"	Name="LOC_TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET_NAME"	Description="LOC_TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_UNIT_F2H"							Name="LOC_UNIT_F2H_NAME"										Description="LOC_UNIT_F2H_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_UNIT_ESSEX_CLASS"					Name="LOC_UNIT_ESSEX_CLASS_NAME"								Description="LOC_UNIT_ESSEX_CLASS_DESCRIPTION"/>
+	</Traits>
+	<LeaderTraits>
+		<!--埃塞克斯-->
+		<Row LeaderType="LEADER_ESSEX_CV9"	TraitType="TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET"/>
+		<Row LeaderType="LEADER_ESSEX_CV9"	TraitType="TRAIT_LEADER_UNIT_F2H"/>
+		<Row LeaderType="LEADER_ESSEX_CV9"	TraitType="TRAIT_LEADER_UNIT_ESSEX_CLASS"/>
+	</LeaderTraits>
+	<HistoricalAgendas>
+		<Row LeaderType="LEADER_ESSEX_CV9" AgendaType="AGENDA_TF58"/>
+	</HistoricalAgendas>
+	<Agendas>
+		<Row AgendaType="AGENDA_TF58" Name="LOC_AGENDA_TF58_NAME" Description="LOC_AGENDA_TF58_DESCRIPTION"/>
+	</Agendas>
+	<LeaderQuotes>
+		<Row LeaderType="LEADER_ESSEX_CV9"	Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_QUOTE" />
+	</LeaderQuotes>
+	<LoadingInfo>
+		<Row LeaderType="LEADER_ESSEX_CV9"	ForegroundImage="IMG_EAGLE_UNION_LEADER_ESSEX_CV9_LOADING_FOREGROUND"	BackgroundImage="IMG_EAGLE_UNION_LOADING_BACKGROUND"/>
+	</LoadingInfo>
+	<DiplomacyInfo>
+		<Row Type="LEADER_ESSEX_CV9"	BackgroundImage="IMG_EAGLE_UNION_DIPLOMACY_BACKGROUND.dds"/>
+	</DiplomacyInfo>
+	<TraitModifiers>
+		<!--KANSEN-->
+		<Row>
+			<TraitType>TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
+			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SAILING</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
+			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
+		</Row>
+		<!--善战之舰海军buff-->
+		<Row>
+			<TraitType>TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
+			<ModifierId>ESSEX_NAVY_UNITS_BUFF</ModifierId>
+		</Row>
+		<![CDATA[<!--港口加生产力-->
+		<Row>
+			<TraitType>TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
+			<ModifierId>ESSEX_HAS_HARBOR_CTIY_BUFF</ModifierId>
+		</Row>]]>
+		<!--生产军事单位减少时间-->
+		<Row>
+			<TraitType>TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
+			<ModifierId>ESSEX_MILITARY_UNIT_REDUCE_TIME</ModifierId>
+		</Row>
+		<!--所有单位+1移动力-->
+		<Row>
+			<TraitType>TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
+			<ModifierId>ESSEX_ALL_UNITS_BUFF</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<!--善战之舰海军buff-->
+		<Row>
+			<ModifierId>ESSEX_NAVY_UNITS_BUFF</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_GRANT_ABILITY</ModifierType>
+		</Row>
+		<!--港口加生产力-->
+		<Row>
+			<ModifierId>ESSEX_HAS_HARBOR_CTIY_BUFF</ModifierId>
+			<ModifierType>MODIFIER_EAGLE_UNION_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_CITY_HAS_HARBOR</SubjectRequirementSetId>
+		</Row>
+		<!--生产军事单位减少时间-->
+		<Row>
+			<ModifierId>ESSEX_MILITARY_UNIT_REDUCE_TIME</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_MILITARY_UNITS_PRODUCTION</ModifierType>
+		</Row>
+		<!--所有单位+1移动力-->
+		<Row>
+			<ModifierId>ESSEX_ALL_UNITS_BUFF</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_GRANT_ABILITY</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--善战之舰海军buff-->
+		<Row>
+			<ModifierId>ESSEX_NAVY_UNITS_BUFF</ModifierId>
+			<Name>AbilityType</Name>
+			<Value>ABILITY_ESSEX_NAYY_BUFF</Value>
+		</Row>
+		<!--港口加生产力-->
+		<Row>
+			<ModifierId>ESSEX_HAS_HARBOR_CTIY_BUFF</ModifierId>
+			<Name>Amount</Name>
+			<Value>25</Value>
+		</Row>
+		<Row>
+			<ModifierId>ESSEX_HAS_HARBOR_CTIY_BUFF</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<!--生产军事单位减少时间-->
+		<Row>
+			<ModifierId>ESSEX_MILITARY_UNIT_REDUCE_TIME</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+		<!--所有单位+1移动力-->
+		<Row>
+			<ModifierId>ESSEX_ALL_UNITS_BUFF</ModifierId>
+			<Name>AbilityType</Name>
+			<Value>ABILITY_ESSEX_ALL_UNITS_BUFF</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>
