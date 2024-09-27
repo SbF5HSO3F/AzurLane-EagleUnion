@@ -16,8 +16,8 @@
 			<CivilizationAbilityName>LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_NAME</CivilizationAbilityName>
 			<CivilizationAbilityDescription>LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_DESCRIPTION</CivilizationAbilityDescription>
 			<CivilizationAbilityIcon>ICON_CIVILIZATION_EAGLE_UNION</CivilizationAbilityIcon>
-			<LeaderAbilityName>LOC_TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET_NAME</LeaderAbilityName>
-			<LeaderAbilityDescription>LOC_TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET_DESCRIPTION</LeaderAbilityDescription>
+			<LeaderAbilityName>LOC_TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET_NAME</LeaderAbilityName>
+			<LeaderAbilityDescription>LOC_TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET_DESCRIPTION</LeaderAbilityDescription>
 			<LeaderAbilityIcon>ICON_LEADER_ESSEX_CV9</LeaderAbilityIcon>
 			<Portrait>IMG_LEADER_ESSEX_CV9_FOREGROUND</Portrait>
 			<PortraitBackground>IMG_EAGLE_UNION_BACKGROUND</PortraitBackground>
@@ -33,8 +33,8 @@
 			<CivilizationAbilityName>LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_NAME</CivilizationAbilityName>
 			<CivilizationAbilityDescription>LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_DESCRIPTION</CivilizationAbilityDescription>
 			<CivilizationAbilityIcon>ICON_CIVILIZATION_EAGLE_UNION</CivilizationAbilityIcon>
-			<LeaderAbilityName>LOC_TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET_NAME</LeaderAbilityName>
-			<LeaderAbilityDescription>LOC_TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET_DESCRIPTION</LeaderAbilityDescription>
+			<LeaderAbilityName>LOC_TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET_NAME</LeaderAbilityName>
+			<LeaderAbilityDescription>LOC_TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET_DESCRIPTION</LeaderAbilityDescription>
 			<LeaderAbilityIcon>ICON_LEADER_ESSEX_CV9</LeaderAbilityIcon>
 			<Portrait>IMG_LEADER_ESSEX_CV9_FOREGROUND</Portrait>
 			<PortraitBackground>IMG_EAGLE_UNION_BACKGROUND</PortraitBackground>

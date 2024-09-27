@@ -5,7 +5,7 @@
 <!-- DateCreated: 8/19/2023 2:03:46 PM -->
 <GameData>
 	<Types>
-		<Row Type="TRAIT_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_AGENDA_HERITAGE_OF_GREAT_WHITE_FLEET" Kind="KIND_TRAIT"/>
 	</Types>
 	<AiListTypes>
 		<!--通用-->
@@ -18,11 +18,11 @@
 	</AiListTypes>
 	<AiLists>
 		<!--通用-->
-		<Row ListType="TheHeritageofGreatWhiteFleetDistricts"		AgendaType="TRAIT_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET" System="Districts"/>
+		<Row ListType="TheHeritageofGreatWhiteFleetDistricts"		AgendaType="TRAIT_AGENDA_HERITAGE_OF_GREAT_WHITE_FLEET" System="Districts"/>
 		<Row ListType="TheHeritageofGreatWhiteFleetTechs"			LeaderType="LEADER_GEORGIA"									System="Technologies"/>
 		<!--大白舰队的遗产-->
-		<Row ListType="TheHeritageofGreatWhiteFleetLoveNaval"		AgendaType="TRAIT_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET" System="PseudoYields"/>
-		<Row ListType="TheHeritageofGreatWhiteFleetLoveExploration" AgendaType="TRAIT_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET" System="PseudoYields"/>
+		<Row ListType="TheHeritageofGreatWhiteFleetLoveNaval"		AgendaType="TRAIT_AGENDA_HERITAGE_OF_GREAT_WHITE_FLEET" System="PseudoYields"/>
+		<Row ListType="TheHeritageofGreatWhiteFleetLoveExploration" AgendaType="TRAIT_AGENDA_HERITAGE_OF_GREAT_WHITE_FLEET" System="PseudoYields"/>
 		<Row ListType="TheHeritageofGreatWhiteFleetBuildings"		LeaderType="LEADER_GEORGIA"									System="Buildings"/>
 	</AiLists>
 	<AiFavoredItems>
@@ -39,20 +39,20 @@
 	</AiFavoredItems>
 	<Traits>
 		<!--大白舰队的遗产-->
-		<Row TraitType="TRAIT_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET"/>
+		<Row TraitType="TRAIT_AGENDA_HERITAGE_OF_GREAT_WHITE_FLEET"/>
 	</Traits>
 	<AgendaTraits>
 		<!--大白舰队的遗产-->
-		<Row AgendaType="AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET" TraitType="TRAIT_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET"/>
+		<Row AgendaType="AGENDA_HERITAGE_OF_GREAT_WHITE_FLEET" TraitType="TRAIT_AGENDA_HERITAGE_OF_GREAT_WHITE_FLEET"/>
 	</AgendaTraits>
 	<TraitModifiers>
 		<!--大白舰队的遗产-->
 		<Row>
-			<TraitType>TRAIT_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET</TraitType>
+			<TraitType>TRAIT_AGENDA_HERITAGE_OF_GREAT_WHITE_FLEET</TraitType>
 			<ModifierId>THE_HERITAGE_OF_GREAT_WHITE_FLEET_HIGH_EXPLORATION</ModifierId>
 		</Row>
 		<Row>
-			<TraitType>TRAIT_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET</TraitType>
+			<TraitType>TRAIT_AGENDA_HERITAGE_OF_GREAT_WHITE_FLEET</TraitType>
 			<ModifierId>THE_HERITAGE_OF_GREAT_WHITE_FLEET_LOW_EXPLORATION</ModifierId>
 		</Row>
 	</TraitModifiers>

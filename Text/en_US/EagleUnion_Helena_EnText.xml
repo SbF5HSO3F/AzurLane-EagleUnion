@@ -72,29 +72,32 @@
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_Kula_Theater" Language="en_US">
-			<Text>+{1_num} [ICON_Culture] Science from each adjacent Coast or Lake tile.</Text>
+			<Text>+{1_num} [ICON_Culture] Science from each adjacent Coast or Lake {1_num : plural 1?tile; other?tiles;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_Kula_Industrial_Zone_Culture" Language="en_US">
-			<Text>+{1_num} [ICON_Culture] Culture from each adjacent Coast or Lake tile.</Text>
+			<Text>+{1_num} [ICON_Culture] Culture from each adjacent Coast or Lake {1_num : plural 1?tile; other?tiles;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_Kula_Industrial_Zone" Language="en_US">
-			<Text>+{1_num} [ICON_Production] Production from each adjacent Coast or Lake tile.</Text>
+			<Text>+{1_num} [ICON_Production] Production from each adjacent Coast or Lake {1_num : plural 1?tile; other?tiles;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_Kula_Harbor_Culture" Language="en_US">
-			<Text>+{1_num} [ICON_Culture] Culture from each adjacent Coast or Lake tile.</Text>
+			<Text>+{1_num} [ICON_Culture] Culture from each adjacent Coast or Lake {1_num : plural 1?tile; other?tiles;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_Kula_Harbor" Language="en_US">
-			<Text>+{1_num} [ICON_Gold] Gold from each adjacent Coast or Lake tile.</Text>
+			<Text>+{1_num} [ICON_Gold] Gold from each adjacent Coast or Lake {1_num : plural 1?tile; other?tiles;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_Kula_Campus_Culture" Language="en_US">
-			<Text>+{1_num} [ICON_SCIENCE] Sciencefrom each adjacent Coast or Lake tile.</Text>
+			<Text>+{1_num} [ICON_SCIENCE] Sciencefrom each adjacent Coast or Lake {1_num : plural 1?tile; other?tiles;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_Kula_Campus" Language="en_US">
-			<Text>+{1_num} [ICON_Culture] Culture from each adjacent Coast or Lake tile.</Text>
+			<Text>+{1_num} [ICON_Culture] Culture from each adjacent Coast or Lake {1_num : plural 1?tile; other?tiles;}.</Text>
 		</Replace>
 		<!--能力加成-->
 		<Replace Tag="LOC_ABILITY_HELENA_UNIT_BUFF_DESCRIPTION" Language="en_US">
 			<Text>The Wonder of Kula Gulf provides +2 Sight, The sight is not obstructed by Terrains and Features. Makes adjacent enemy units -4 [ICON_Strength] Combat Strength</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_HELENA_UNIT_BUFF_NAME" Language="en_US">
+			<Text>SG Radar</Text>
 		</Replace>
 		<Replace Tag="LOC_PREVIEW_HELENA_UNIT_ATTACH_DEBUFF_MODIFIER_DESCRIPTION" Language="en_US">
 			<Text>{Property} [ICON_Strength] Combat Strength when adjacent to enemy units</Text>

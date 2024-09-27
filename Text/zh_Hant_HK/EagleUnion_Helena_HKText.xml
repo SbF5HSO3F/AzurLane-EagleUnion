@@ -96,6 +96,9 @@
 		<Replace Tag="LOC_ABILITY_HELENA_UNIT_BUFF_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>庫拉灣之夢提供+2視野範圍，且視野不受地形與地貌阻礙。可令相鄰的敵方單位-4 [ICON_Strength] 戰鬥力</Text>
 		</Replace>
+		<Replace Tag="LOC_ABILITY_HELENA_UNIT_BUFF_NAME" Language="zh_Hant_HK">
+			<Text>SG雷達</Text>
+		</Replace>
 		<Replace Tag="LOC_PREVIEW_HELENA_UNIT_ATTACH_DEBUFF_MODIFIER_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>與敵方單位相鄰時{Property} [ICON_Strength] 戰鬥力</Text>
 		</Replace>

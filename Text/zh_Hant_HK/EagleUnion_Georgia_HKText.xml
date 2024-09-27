@@ -33,10 +33,10 @@
 			<Text>佐治亞的命名來源於美國的佐治亞州，美國東南部7個州之一。在歷史上，曾有一維吉尼亞級戰列艦被命名為佐治亞，她曾是著名的大白艦隊的一員。</Text>
 		</Replace>
 		<!--領袖議程-->
-		<Replace Tag="LOC_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET_NAME" Language="zh_Hant_HK">
+		<Replace Tag="LOC_AGENDA_HERITAGE_OF_GREAT_WHITE_FLEET_NAME" Language="zh_Hant_HK">
 			<Text>大白艦隊的遺產</Text>
 		</Replace>
-		<Replace Tag="LOC_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET_DESCRIPTION" Language="zh_Hant_HK">
+		<Replace Tag="LOC_AGENDA_HERITAGE_OF_GREAT_WHITE_FLEET_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>盡可能的發展海軍以探索世界。喜歡探索世界的文明，討厭閉門不出的文明。</Text>
 		</Replace>
 		<Replace Tag="LOC_DIPLO_THE_HERITAGE_OF_GREAT_WHITE_FLEET_HIGH_EXPLORATION" Language="zh_Hant_HK">
@@ -66,6 +66,9 @@
 		</Replace>
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_IOWA_CLASS_PLAN_4_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
 			<Text>這是1938年5月論證衣阿華級戰列艦時提出的一系列方案之一，當時被列為方案Ⅳ。該方案以南達科他級戰列艦為基礎，拉長艦體，改用雙煙囪。同時沿用南達科他級的推進器設計，使得設計航速可達33節。計畫採用三座三聯裝406mm/45 MK6炮塔，與同期其他採用50倍徑406mm主炮的方案相比，艦體稍短，噸位較輕，但顯得火力不足。事實上，如果衣阿華級最終採用MK6炮塔的設計，那麼除了能提高6節航速外並沒有其他效應。</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY_NAME" Language="zh_Hant_HK">
+			<Text>巨炮轟鳴</Text>
 		</Replace>
 		<Replace Tag="LOC_PREVIEW_HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY_TEXT" Language="zh_Hant_HK">
 			<Text>+{1_Amount}，攻擊區域防禦或海軍單位</Text>

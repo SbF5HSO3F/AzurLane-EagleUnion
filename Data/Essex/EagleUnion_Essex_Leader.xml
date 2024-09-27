@@ -7,7 +7,7 @@
 	<Types>
 		<!--埃塞克斯-->
 		<Row Type="LEADER_ESSEX_CV9"								Kind="KIND_LEADER"/>
-		<Row Type="TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET"	Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET"	Kind="KIND_TRAIT"/>
 		<Row Type="TRAIT_LEADER_UNIT_F2H"							Kind="KIND_TRAIT"/>
 		<Row Type="TRAIT_LEADER_UNIT_ESSEX_CLASS"					Kind="KIND_TRAIT"/>
 	</Types>
@@ -17,13 +17,13 @@
 	</Leaders>
 	<Traits>
 		<!--埃塞克斯-->
-		<Row TraitType="TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET"	Name="LOC_TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET_NAME"	Description="LOC_TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET"	Name="LOC_TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET_NAME"	Description="LOC_TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET_DESCRIPTION"/>
 		<Row TraitType="TRAIT_LEADER_UNIT_F2H"							Name="LOC_UNIT_F2H_NAME"										Description="LOC_UNIT_F2H_DESCRIPTION"/>
 		<Row TraitType="TRAIT_LEADER_UNIT_ESSEX_CLASS"					Name="LOC_UNIT_ESSEX_CLASS_NAME"								Description="LOC_UNIT_ESSEX_CLASS_DESCRIPTION"/>
 	</Traits>
 	<LeaderTraits>
 		<!--埃塞克斯-->
-		<Row LeaderType="LEADER_ESSEX_CV9"	TraitType="TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET"/>
+		<Row LeaderType="LEADER_ESSEX_CV9"	TraitType="TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET"/>
 		<Row LeaderType="LEADER_ESSEX_CV9"	TraitType="TRAIT_LEADER_UNIT_F2H"/>
 		<Row LeaderType="LEADER_ESSEX_CV9"	TraitType="TRAIT_LEADER_UNIT_ESSEX_CLASS"/>
 	</LeaderTraits>
@@ -45,31 +45,31 @@
 	<TraitModifiers>
 		<!--KANSEN-->
 		<Row>
-			<TraitType>TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
+			<TraitType>TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
 			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SAILING</ModifierId>
 		</Row>
 		<Row>
-			<TraitType>TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
+			<TraitType>TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
 			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
 		</Row>
 		<!--善战之舰海军buff-->
 		<Row>
-			<TraitType>TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
+			<TraitType>TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
 			<ModifierId>ESSEX_NAVY_UNITS_BUFF</ModifierId>
 		</Row>
 		<![CDATA[<!--港口加生产力-->
 		<Row>
-			<TraitType>TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
+			<TraitType>TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
 			<ModifierId>ESSEX_HAS_HARBOR_CTIY_BUFF</ModifierId>
 		</Row>]]>
 		<!--生产军事单位减少时间-->
 		<Row>
-			<TraitType>TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
+			<TraitType>TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
 			<ModifierId>ESSEX_MILITARY_UNIT_REDUCE_TIME</ModifierId>
 		</Row>
 		<!--所有单位+1移动力-->
 		<Row>
-			<TraitType>TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
+			<TraitType>TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
 			<ModifierId>ESSEX_ALL_UNITS_BUFF</ModifierId>
 		</Row>
 	</TraitModifiers>

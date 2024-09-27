@@ -33,10 +33,10 @@
 			<Text>Georgia is named after Georgia states, one of the 7 southeastern states of the United States. Historically, a Virginia-class battleship was named Georgia, and she was a member of the famous Great White Fleet.</Text>
 		</Replace>
 		<!--领袖议程-->
-		<Replace Tag="LOC_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET_NAME" Language="en_US">
-			<Text>The Heritage of Great White Fleet</Text>
+		<Replace Tag="LOC_AGENDA_HERITAGE_OF_GREAT_WHITE_FLEET_NAME" Language="en_US">
+			<Text>Heritage of Great White Fleet</Text>
 		</Replace>
-		<Replace Tag="LOC_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_AGENDA_HERITAGE_OF_GREAT_WHITE_FLEET_DESCRIPTION" Language="en_US">
 			<Text>Develop the navy as much as possible to explore the world. Love the civilizations that love to explore the world, and hate the civilizations that ignore exploring the world.</Text>
 		</Replace>
 		<Replace Tag="LOC_DIPLO_THE_HERITAGE_OF_GREAT_WHITE_FLEET_HIGH_EXPLORATION" Language="en_US">
@@ -69,6 +69,9 @@
 		</Replace>
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_IOWA_CLASS_PLAN_4_CHAPTER_HISTORY_PARA_1" Language="en_US">
 			<Text>This was one of a series of proposals proposed during the demonstration of the Iowa class battleships in May 1938, and was then listed as Option IV. The scheme was based on the South Dakota-class battleships, elongated the hull, switched to double chimneys. At the same time, the South Dakota-class thruster design was followed, so that the design speed could reach 33 knots. Three triple 406mm/45 MK6 turrets were planned, which were slightly shorter and lighter in tonnage than other 50-caliber 406mm guns of the same period, but lacked firepower. In fact, if the Iowa class ends up with the MK6 turret design, it will have no effect other than increasing the speed by 6 knots.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY_NAME" Language="en_US">
+			<Text>Heavy Barrel Blaster</Text>
 		</Replace>
 		<Replace Tag="LOC_PREVIEW_HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY_TEXT" Language="en_US">
 			<Text>+{1_Amount}, attack district defenses or naval units</Text>

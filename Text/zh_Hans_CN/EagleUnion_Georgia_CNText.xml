@@ -33,10 +33,10 @@
 			<Text>佐治亚的命名来源于美国的佐治亚州，美国东南部7个州之一。在历史上，曾有一弗吉尼亚级战列舰被命名为佐治亚，她曾是著名的大白舰队的一员。</Text>
 		</Replace>
 		<!--领袖议程-->
-		<Replace Tag="LOC_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET_NAME" Language="zh_Hans_CN">
+		<Replace Tag="LOC_AGENDA_HERITAGE_OF_GREAT_WHITE_FLEET_NAME" Language="zh_Hans_CN">
 			<Text>大白舰队的遗产</Text>
 		</Replace>
-		<Replace Tag="LOC_AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET_DESCRIPTION" Language="zh_Hans_CN">
+		<Replace Tag="LOC_AGENDA_HERITAGE_OF_GREAT_WHITE_FLEET_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>尽可能的发展海军以探索世界。喜欢探索世界的文明，讨厌闭门不出的文明。</Text>
 		</Replace>
 		<Replace Tag="LOC_DIPLO_THE_HERITAGE_OF_GREAT_WHITE_FLEET_HIGH_EXPLORATION" Language="zh_Hans_CN">
@@ -69,6 +69,9 @@
 		</Replace>
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_IOWA_CLASS_PLAN_4_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
 			<Text>这是1938年5月论证衣阿华级战列舰时提出的一系列方案之一，当时被列为方案Ⅳ。该方案以南达科他级战列舰为基础，拉长舰体，改用双烟囱。同时沿用南达科他级的推进器设计，使得设计航速可达33节。计划采用三座三联装406mm/45 MK6炮塔，与同期其他采用50倍径406mm主炮的方案相比，舰体稍短，吨位较轻，但显得火力不足。事实上，如果衣阿华级最终采用MK6炮塔的设计，那么除了能提高6节航速外并没有其他效应。</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY_NAME" Language="zh_Hans_CN">
+			<Text>巨炮轰鸣</Text>
 		</Replace>
 		<Replace Tag="LOC_PREVIEW_HEAVY_VS_DISTRICT_DEFENSES_OR_NAVY_TEXT" Language="zh_Hans_CN">
 			<Text>+{1_Amount}，攻击区域防御或海军单位</Text>

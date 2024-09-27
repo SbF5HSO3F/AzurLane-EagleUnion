@@ -4,8 +4,8 @@
 --------------------------------------------------------------
 --Extra Agenda
 INSERT INTO ExclusiveAgendas
-		(AgendaOne,									AgendaTwo)
-VALUES	('AGENDA_THE_HERITAGE_OF_GREAT_WHITE_FLEET','AGENDA_GREAT_WHITE_FLEET');
+		(AgendaOne,								AgendaTwo)
+VALUES	('AGENDA_HERITAGE_OF_GREAT_WHITE_FLEET','AGENDA_GREAT_WHITE_FLEET');
 
 --Update Units
 UPDATE Units

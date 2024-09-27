@@ -106,20 +106,10 @@
 			<TraitType>TRAIT_LEADER_FIREPOWER_FOR_FREEDOM</TraitType>
 			<ModifierId>FREE_ENVOY_FROM_TRADE_ROUTE</ModifierId>
 		</Row>
-		<!--农牧种营加文化-->
+		<!--农牧种营加文化加食物加金币-->
 		<Row>
 			<TraitType>TRAIT_LEADER_FIREPOWER_FOR_FREEDOM</TraitType>
-			<ModifierId>NEWJERSEY_IMPROVEMNT_ADD_CULTUTE</ModifierId>
-		</Row>
-		<!--农牧种营加金币-->
-		<Row>
-			<TraitType>TRAIT_LEADER_FIREPOWER_FOR_FREEDOM</TraitType>
-			<ModifierId>NEWJERSEY_IMPROVEMNT_ADD_GOLD</ModifierId>
-		</Row>
-		<!--农牧种营加食物-->
-		<Row>
-			<TraitType>TRAIT_LEADER_FIREPOWER_FOR_FREEDOM</TraitType>
-			<ModifierId>NEWJERSEY_IMPROVEMNT_ADD_FOOD</ModifierId>
+			<ModifierId>NEWJERSEY_IMPROVEMNT_BUFF</ModifierId>
 		</Row>
 		<!--处于战争状态加战斗力-->
 		<Row>
@@ -177,21 +167,9 @@
 			<ModifierId>FREE_ENVOY_FROM_TRADE_ROUTE</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_ADJUST_TOKEN_ON_TRADE_ROUTE_STARTED</ModifierType>
 		</Row>
-		<!--农牧种营加文化-->
+		<!--农牧种营加文化加食物加金币-->
 		<Row>
-			<ModifierId>NEWJERSEY_IMPROVEMNT_ADD_CULTUTE</ModifierId>
-			<ModifierType>MODIFIER_PLAYER_ADJUST_PLOT_YIELD</ModifierType>
-			<SubjectRequirementSetId>NEWJERSEY_MACTH_IMPROVEMENT</SubjectRequirementSetId>
-		</Row>
-		<!--农牧种营加金币-->
-		<Row>
-			<ModifierId>NEWJERSEY_IMPROVEMNT_ADD_GOLD</ModifierId>
-			<ModifierType>MODIFIER_PLAYER_ADJUST_PLOT_YIELD</ModifierType>
-			<SubjectRequirementSetId>NEWJERSEY_MACTH_IMPROVEMENT</SubjectRequirementSetId>
-		</Row>
-		<!--农牧种营加食物-->
-		<Row>
-			<ModifierId>NEWJERSEY_IMPROVEMNT_ADD_FOOD</ModifierId>
+			<ModifierId>NEWJERSEY_IMPROVEMNT_BUFF</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_ADJUST_PLOT_YIELD</ModifierType>
 			<SubjectRequirementSetId>NEWJERSEY_MACTH_IMPROVEMENT</SubjectRequirementSetId>
 		</Row>
@@ -388,38 +366,16 @@
 			<Name>Amount</Name>
 			<Value>2</Value>
 		</Row>
-		<!--农牧种营加文化-->
+		<!--农牧种营加文化加食物加金币-->
 		<Row>
-			<ModifierId>NEWJERSEY_IMPROVEMNT_ADD_CULTUTE</ModifierId>
+			<ModifierId>NEWJERSEY_IMPROVEMNT_BUFF</ModifierId>
 			<Name>Amount</Name>
-			<Value>1</Value>
+			<Value>1, 1, 3</Value>
 		</Row>
 		<Row>
-			<ModifierId>NEWJERSEY_IMPROVEMNT_ADD_CULTUTE</ModifierId>
+			<ModifierId>NEWJERSEY_IMPROVEMNT_BUFF</ModifierId>
 			<Name>YieldType</Name>
-			<Value>YIELD_CULTURE</Value>
-		</Row>
-		<!--农牧种营加金币-->
-		<Row>
-			<ModifierId>NEWJERSEY_IMPROVEMNT_ADD_GOLD</ModifierId>
-			<Name>Amount</Name>
-			<Value>3</Value>
-		</Row>
-		<Row>
-			<ModifierId>NEWJERSEY_IMPROVEMNT_ADD_GOLD</ModifierId>
-			<Name>YieldType</Name>
-			<Value>YIELD_GOLD</Value>
-		</Row>
-		<!--农牧种营加食物-->
-		<Row>
-			<ModifierId>NEWJERSEY_IMPROVEMNT_ADD_FOOD</ModifierId>
-			<Name>Amount</Name>
-			<Value>1</Value>
-		</Row>
-		<Row>
-			<ModifierId>NEWJERSEY_IMPROVEMNT_ADD_FOOD</ModifierId>
-			<Name>YieldType</Name>
-			<Value>YIELD_FOOD</Value>
+			<Value>YIELD_CULTURE, YIELD_FOOD, YIELD_GOLD</Value>
 		</Row>
 		<!--处于战争状态加战斗力-->
 		<Row>

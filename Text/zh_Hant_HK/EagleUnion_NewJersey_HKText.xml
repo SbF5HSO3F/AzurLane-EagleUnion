@@ -88,6 +88,9 @@
 		<Replace Tag="LOC_TRAIT_TRAIT_LEADER_FIREPOWER_FOR_FREEDOM_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>解鎖防禦戰術市政後即可宣佈解放戰爭。宣佈解放戰爭、收復戰爭和保衛城邦戰爭後的10回合內+5 [ICON_Strength] 戰鬥力，+2 [ICON_Movement] 移動力，+100% [ICON_PRODUCTION] 生產力。處於戰爭狀態時所有單位+5 [ICON_Strength] 戰鬥力。通往城邦的每條 [ICON_TradeRoute] 貿易路線將為此處提供2名 [ICON_ENVOY] 使者。所有農場、牧場、營地與種植園改良設施+1 [ICON_Food] 食物、+1 [ICON_Culture] 文化值、+3 [ICON_Gold] 金幣。研究完“高級彈道學”後獲得特色單位“衣阿華級戰列艦”。</Text>
 		</Replace>
+		<Replace Tag="LOC_ABILITY_NEWJERSEY_AT_WAR_STRENGTH_BUFF_NAME" Language="zh_Hant_HK">
+			<Text>自由的炮火</Text>
+		</Replace>
 		<Replace Tag="LOC_PREVIEW_NEWJERSEY_AT_WAR_STRENGTH_BUFF_TEXT" Language="zh_Hant_HK">
 			<Text>+5，處於戰爭狀態</Text>
 		</Replace>

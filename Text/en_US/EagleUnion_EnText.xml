@@ -55,19 +55,19 @@
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_Santa_Clara_Valley_CAMPUS" Language="en_US">
-			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent Campus tile.</Text>
+			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent Campus {1_num : plural 2?tile; other?tiles;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_Santa_Clara_Valley_HARBOR" Language="en_US">
-			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent Harbor tile.</Text>
+			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent Harbor {1_num : plural 2?tile; other?tiles;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_CAMPUS_Santa_Clara_Valley" Language="en_US">
-			<Text>+{1_num} [ICON_SCIENCE] Science from each adjacent Santa Clara Valley tile.</Text>
+			<Text>+{1_num} [ICON_SCIENCE] Science from each adjacent Santa Clara Valley {1_num : plural 2?tile; other?tiles;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_HARBOR_Santa_Clara_Valley" Language="en_US">
-			<Text>+{1_num} [ICON_GOLD] Gold from each adjacent Santa Clara Valley tile.</Text>
+			<Text>+{1_num} [ICON_GOLD] Gold from each adjacent Santa Clara Valley {1_num : plural 2?tile; other?tiles;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_Santa_Clara_Valley_Santa_Clara_Valley" Language="en_US">
-			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent Santa Clara Valley tile.</Text>
+			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent Santa Clara Valley {1_num : plural 2?tile; other?tiles;}.</Text>
 		</Replace>
 		<!--特殊建筑-->
 		<Replace Tag="LOC_BUILDING_NEWPORT_NEWS_SHIPBUILDING_NAME" Language="en_US">

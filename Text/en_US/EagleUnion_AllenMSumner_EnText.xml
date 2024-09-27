@@ -57,7 +57,7 @@
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_Allen_Culture_Adjacency_From_District" Language="en_US">
-			<Text>+{1_num} [ICON_Culture] Culture from each adjacent Districts.</Text>
+			<Text>+{1_num} [ICON_Culture] Culture from each adjacent district {1_num : plural 2?tile; other?tiles;}.</Text>
 		</Replace>
 		<!--能力加成-->
 

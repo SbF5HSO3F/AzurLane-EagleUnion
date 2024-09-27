@@ -24,7 +24,7 @@
 			<Text>There is no doubt that as the best warfighting ship in the fleet, Essex will have the most powerful sea power. By building a city on the shore and using the Santa Clara Valley and the Harbor to facilitate rapid urban development, the city would soon have the ability to assemble a powerful fleet. Combining Essex's abilities with unique units, Essex can recreate the glory of the "Destroying Armada". However, just because Essex's navy is extremely strong doesn't mean her army will be weak – Essex's army gets a lot of [ICON_Strength] Combat Strength bonuses from her fleet. It all suited Essex to the Domination Victory. As a leader of the Eagle Union Civilization, Essex is also a strong competitor for the Science Victory.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_HISTORY_PARA_1" Language="en_US">
-			<Text>USS Essex CV-9 is the lead ship of the Essex-class aircraft carriers of the United States Navy. It is the fourth U.S. military ship to bear the name Essex, commemorating the donation of the first Essex ship to the U.S. government by residents of Essex County, Massachusetts, in 1799. Because of its outstanding performance in World War II, the ship's sailors called it "The Fightin'est Ship in the Fleet".</Text>
+			<Text>USS Essex CV-9 is the lead ship of the Essex-class aircraft carriers of the United States Navy. It is the fourth U.S. military ship to bear the name Essex, commemorating the donation of the first Essex ship to the U.S. government by residents of Essex County, Massachusetts, in 1799. Because of its outstanding performance in World War II, the ship's sailors called it "Fightin'est Ship in the Fleet".</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_HISTORY_PARA_2" Language="en_US">
 			<Text>Construction of the USS Essex CV-9 began on 28 April 1941 at the Newport News Shipbuilding and Dry Dock Company. A few months after the attack on Pearl Harbor, the United States officially entered World War II and accelerated the construction of several aircraft carriers, including the USS Essex CV-9.USS Essex CV-9 was launched on 31 July 1942 and began participating in the Pacific War in 1943. After the war, USS Essex CV-9 was mothballed and modernized. In 1951 , USS Essex CV-9 was recommissioned after a refit and participated in two Korean War cruises, during which the USS Essex was redesignated as an attack carrier and the hull number was changed to CVA-9. After the Korean War, USS Essex CVA-9 was again refitted with an angled deck and transferred to the Atlantic Fleet. In 1960, USS Essex CV-9 was redesignated as an anti-submarine aircraft carrier and changed its hull designation to CVS-9. In addition to major wars, USS Essex CVS-9 was involved in several Cold War crises, including the Bay of Pigs incident and the Cuban Missile Crisis. Interestingly,USS Essex CVS-9 also participated in the U.S. space program, recovering the command module of Apollo 7.</Text>
@@ -43,23 +43,26 @@
 			<Text>A strong navy will be built and a civilization with great naval power will be respected. Hate civilizations with weak naval forces.</Text>
 		</Replace>
 		<!--领袖能力-->
-		<Replace Tag="LOC_TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET_NAME" Language="en_US">
-			<Text>The Fightin'est Ship in the Fleet</Text>
+		<Replace Tag="LOC_TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET_NAME" Language="en_US">
+			<Text>Fightin'est Ship in the Fleet</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_ABILITY_ESSEX_NAME" Language="en_US">
+			<Text>Fightin'est Ship in the Fleet</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET_DESCRIPTION" Language="en_US">
 			<Text>+7 [ICON_Strength] Combat Strength for all naval units, all naval units +1 [ICON_Strength] Combat Strength for all units. +1 [ICON_Movement] Movement for all units, +1 Sight. Reduce the time required to produce military units by 50%. When producing a Naval Combat unit, obtain [ICON_Culture] Culture equivalent to 40% of the unit's cost. Gain the Essex-class aircraft carrier and F2H Banshee unique unit respectively when the Combustion technology and the Laser technology are researched.</Text>
 		</Replace>
 		<Replace Tag="LOC_PREVIEW_ESSEX_NAVY_STRENGTH_DESCRIPTION" Language="en_US">
-			<Text>+{1_Amount}, The Fightin'est Ship in the Fleet</Text>
+			<Text>+{1_Amount}, Fightin'est Ship in the Fleet</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_ESSEX_NAYY_BUFF_DESCRIPTION" Language="en_US">
-			<Text>+7 [ICON_Strength] Combat Strength from The Fightin'est Ship in the Fleet, and +1 [ICON_Strength] Combat Strength for all units</Text>
+			<Text>+7 [ICON_Strength] Combat Strength from Fightin'est Ship in the Fleet, and +1 [ICON_Strength] Combat Strength for all units</Text>
 		</Replace>
 		<Replace Tag="LOC_PREVIEW_ESSEX_UNIT_ADD_COMBAT_DESCRIPTION" Language="en_US">
 			<Text>+{Property} [ICON_Strength] Combat Strength from naval units</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_ESSEX_ALL_UNITS_BUFF_DESCRIPTION" Language="en_US">
-			<Text>The Fightin'est Ship in the Fleet provides +1 [ICON_Movement] Movement and +1 Sight</Text>
+			<Text>Fightin'est Ship in the Fleet provides +1 [ICON_Movement] Movement and +1 Sight</Text>
 		</Replace>
 		<!--领袖单位-->
 		<Replace Tag="LOC_UNIT_ESSEX_CLASS_NAME" Language="en_US">
@@ -140,7 +143,7 @@
 		</Row>
 		<!--初次见面-->
 		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_ESSEX_CV9_ANY" Language="en_US">
-			<Text>I am the Essex-class lead ship Essex, and I have been highly anticipated since its birth. He has participated in 68 battles large and small, and won the title of "The Fightin'est Ship in the Fleet", which can be regarded as fulfilling everyone's expectations. However, in contrast, it is Enterprise that is more active... If only I had joined the battle sooner.</Text>
+			<Text>I am the Essex-class lead ship Essex, and I have been highly anticipated since its birth. He has participated in 68 battles large and small, and won the title of "Fightin'est Ship in the Fleet", which can be regarded as fulfilling everyone's expectations. However, in contrast, it is Enterprise that is more active... If only I had joined the battle sooner.</Text>
 		</Row>
 		<!--初次见面，提供最近城市位置-->
 		<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_ESSEX_CV9_ANY" Language="en_US">

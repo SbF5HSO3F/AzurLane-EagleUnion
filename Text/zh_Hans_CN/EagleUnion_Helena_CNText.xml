@@ -93,6 +93,9 @@
 		<Replace Tag="LOC_ABILITY_HELENA_UNIT_BUFF_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>库拉湾之梦提供+2视野范围，且视野不受地形与地貌阻碍。可令相邻的敌方单位-4 [ICON_Strength] 战斗力</Text>
 		</Replace>
+		<Replace Tag="LOC_ABILITY_HELENA_UNIT_BUFF_NAME" Language="zh_Hans_CN">
+			<Text>SG雷达</Text>
+		</Replace>
 		<Replace Tag="LOC_PREVIEW_HELENA_UNIT_ATTACH_DEBUFF_MODIFIER_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>与敌方单位相邻时{Property} [ICON_Strength] 战斗力</Text>
 		</Replace>

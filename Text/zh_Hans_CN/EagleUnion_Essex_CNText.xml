@@ -43,11 +43,14 @@
 			<Text>将构建强大海军，尊重拥有强大海军力量的文明。讨厌海军力量弱小的文明。</Text>
 		</Replace>
 		<!--领袖能力-->
-		<Replace Tag="LOC_TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET_NAME" Language="zh_Hans_CN">
+		<Replace Tag="LOC_TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET_NAME" Language="zh_Hans_CN">
 			<Text>舰队最善战之舰</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_THE_FIGHTIN_EST_SHIP_IN_THE_FLEET_DESCRIPTION" Language="zh_Hans_CN">
+		<Replace Tag="LOC_TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>所有海军单位+7 [ICON_Strength] 战斗力，每个海军单位为所有单位+1 [ICON_Strength] 战斗力。所有单位+1 [ICON_Movement] 移动力、+1视野范围。生产军事单位所需时间减少50%，生产出一个海上战争单位时，将会获得等同于该单位造价40%的 [ICON_Culture] 文化值。研究完“内燃机”与“激光”科技后分别获得特色单位“埃塞克斯级航空母舰”与“F2H 报丧女妖”。</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_ESSEX_NAME" Language="zh_Hans_CN">
+			<Text>善战之舰</Text>
 		</Replace>
 		<Replace Tag="LOC_PREVIEW_ESSEX_NAVY_STRENGTH_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>+{1_Amount}，善战之舰</Text>

@@ -343,9 +343,6 @@
     <Content Include="Data\NewJersey\EagleUnion_NewJersey_Agenda.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\NewJersey\EagleUnion_NewJersey_Improvements.sql">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Data\NewJersey\EagleUnion_NewJersey_Improvements.xml">
       <SubType>Content</SubType>
     </Content>
