@@ -18,20 +18,24 @@
 			<m_ObjectName text="IMG_Eagle_Union_LEADER_GEORGIA_Diplomacy_FOREGROUND"/>
 		</Element>
 		<Element>
-			<m_EntryID text="IMG_Eagle_Union_LEADER_NEW_JERSEY_BB62_Diplomacy_FOREGROUND"/>
-			<m_ObjectName text="IMG_Eagle_Union_LEADER_NEW_JERSEY_BB62_Diplomacy_FOREGROUND"/>
-		</Element>
-		<Element>
-			<m_EntryID text="IMG_Eagle_Union_LEADER_HELENA_CL50_Diplomacy_FOREGROUND"/>
-			<m_ObjectName text="IMG_Eagle_Union_LEADER_HELENA_CL50_Diplomacy_FOREGROUND"/>
+			<m_EntryID text="NEW_JERSEY_BB62_DEFAULT"/>
+			<m_ObjectName text="NEW_JERSEY_BB62_DEFAULT"/>
 		</Element>
 		<Element>
 			<m_EntryID text="ALLEN_M_SUMNER_DD692_DEFAULT"/>
-			<m_ObjectName text="IMG_Eagle_Union_LEADER_Allen_M_Sumner_DD692_Diplomacy_FOREGROUND"/>
+			<m_ObjectName text="ALLEN_M_SUMNER_DD692_DEFAULT"/>
 		</Element>
 		<Element>
-			<m_EntryID text="NEW_JERSEY_BB62_DEFAULT"/>
-			<m_ObjectName text="NEW_JERSEY_BB62_DEFAULT"/>
+			<m_EntryID text="HELENA_CL50_DEFAULT"/>
+			<m_ObjectName text="HELENA_CL50_DEFAULT"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ESSEX_CV9_DEFAULT"/>
+			<m_ObjectName text="ESSEX_CV9_DEFAULT"/>
+		</Element>
+		<Element>
+			<m_EntryID text="GEORGIA_DEFAULT"/>
+			<m_ObjectName text="GEORGIA_DEFAULT"/>
 		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>
@@ -45,3 +49,4 @@
 		<Element>STADIA</Element>
 	</m_AllowedPlatforms>
 </AssetObjects..XLP>
+

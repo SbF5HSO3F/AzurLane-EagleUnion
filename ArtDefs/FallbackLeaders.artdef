@@ -23,7 +23,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="IMG_Eagle_Union_LEADER_ESSEX_CV9_Diplomacy_FOREGROUND"/>
+										<m_EntryName text="ESSEX_CV9_DEFAULT"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="LeaderFallback"/>
@@ -53,7 +53,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="IMG_Eagle_Union_LEADER_GEORGIA_Diplomacy_FOREGROUND"/>
+										<m_EntryName text="GEORGIA_DEFAULT"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="LeaderFallback"/>
@@ -113,7 +113,7 @@
 							<m_Fields>
 								<m_Values>
 									<Element class="AssetObjects..BLPEntryValue">
-										<m_EntryName text="IMG_Eagle_Union_LEADER_HELENA_CL50_Diplomacy_FOREGROUND"/>
+										<m_EntryName text="HELENA_CL50_DEFAULT"/>
 										<m_XLPClass text="LeaderFallback"/>
 										<m_XLPPath text="leaderfallbacks.xlp"/>
 										<m_BLPPackage text="LeaderFallback"/>
@@ -164,3 +164,4 @@
 		</Element>
 	</m_RootCollections>
 </AssetObjects..ArtDefSet>
+

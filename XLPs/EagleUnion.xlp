@@ -14,14 +14,6 @@
 			<m_ObjectName text="IMG_EAGLE_UNION_LEADER_ESSEX_CV9_LOADING_FOREGROUND"/>
 		</Element>
 		<Element>
-			<m_EntryID text="IMG_EAGLE_UNION_LOADING_BACKGROUND"/>
-			<m_ObjectName text="IMG_EAGLE_UNION_LOADING_BACKGROUND"/>
-		</Element>
-		<Element>
-			<m_EntryID text="IMG_EAGLE_UNION_DIPLOMACY_BACKGROUND"/>
-			<m_ObjectName text="IMG_EAGLE_UNION_DIPLOMACY_BACKGROUND"/>
-		</Element>
-		<Element>
 			<m_EntryID text="IMG_EAGLE_UNION_LEADER_GEORGIA_LOADING_FOREGROUND"/>
 			<m_ObjectName text="IMG_EAGLE_UNION_LEADER_GEORGIA_LOADING_FOREGROUND"/>
 		</Element>
@@ -30,12 +22,8 @@
 			<m_ObjectName text="IMG_EAGLE_UNION_LEADER_NEW_JERSEY_BB62_LOADING_FOREGROUND"/>
 		</Element>
 		<Element>
-			<m_EntryID text="IMG_LEADER_HELENA_CL50_LOADING_FOREGROUND"/>
-			<m_ObjectName text="IMG_LEADER_HELENA_CL50_LOADING_FOREGROUND"/>
-		</Element>
-		<Element>
-			<m_EntryID text="IMG_LEADER_ALLEN_M_SUMNER_DD692_Loading_FOREGROUND"/>
-			<m_ObjectName text="IMG_LEADER_Allen_M_Sumner_DD692_Loading_FOREGROUND"/>
+			<m_EntryID text="IMG_LEADER_ALLEN_M_SUMNER_DD692_LOADING_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_ALLEN_M_SUMNER_DD692_LOADING_FOREGROUND"/>
 		</Element>
 		<Element>
 			<m_EntryID text="ICON_UNIT_F2H_22"/>
@@ -62,10 +50,6 @@
 			<m_ObjectName text="ICON_UNIT_F2H_80"/>
 		</Element>
 		<Element>
-			<m_EntryID text="IMG_LEADER_HELENA_CL50_FOREGROUND"/>
-			<m_ObjectName text="IMG_LEADER_HELENA_CL50_FOREGROUND"/>
-		</Element>
-		<Element>
 			<m_EntryID text="ICON_IMPROVEMENT_FLOUTISH_GARDEN_256"/>
 			<m_ObjectName text="ICON_IMPROVEMENT_FLOUTISH_GARDEN_256"/>
 		</Element>
@@ -84,10 +68,6 @@
 		<Element>
 			<m_EntryID text="Moment_Enterprise"/>
 			<m_ObjectName text="Moment_Enterprise"/>
-		</Element>
-		<Element>
-			<m_EntryID text="IMG_EAGLE_UNION_BACKGROUND"/>
-			<m_ObjectName text="IMG_EAGLE_UNION_BACKGROUND"/>
 		</Element>
 		<Element>
 			<m_EntryID text="Moment_Allen_M_Sumner_class"/>
@@ -204,6 +184,26 @@
 		<Element>
 			<m_EntryID text="ICON_CIVILIZATION_EAGLE_UNION_80"/>
 			<m_ObjectName text="ICON_CIVILIZATION_EAGLE_UNION_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_HELENA_CL50_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_HELENA_CL50_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_HELENA_CL50_LOADING_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_HELENA_CL50_LOADING_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_EAGLE_UNION_BACKGROUND"/>
+			<m_ObjectName text="IMG_EAGLE_UNION_BACKGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_EAGLE_UNION_DIPLOMACY_BACKGROUND"/>
+			<m_ObjectName text="IMG_EAGLE_UNION_DIPLOMACY_BACKGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_EAGLE_UNION_LOADING_BACKGROUND"/>
+			<m_ObjectName text="IMG_EAGLE_UNION_LOADING_BACKGROUND"/>
 		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>
