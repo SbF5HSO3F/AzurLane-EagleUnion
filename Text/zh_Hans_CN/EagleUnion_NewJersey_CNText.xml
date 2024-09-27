@@ -86,7 +86,7 @@
 			<Text>领向自由的炮火</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_TRAIT_LEADER_FIREPOWER_FOR_FREEDOM_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>解锁防御战术市政后即可宣布解放战争。宣布解放战争、收复战争和保卫城邦战争后的10回合内+5 [ICON_Strength] 战斗力，+2 [ICON_Movement] 移动力，+100% [icon_PRODUCTION] 生产力。处于战争状态时所有单位+5 [ICON_Strength] 战斗力。通往城邦的每条 [ICON_TradeRoute] 贸易路线将为此处提供2名 [ICON_ENVOY] 使者。所有农场、牧场、营地与种植园改良设施+1 [ICON_Food] 食物、+1 [ICON_Culture] 文化值、+3 [ICON_Gold] 金币。研究完“高级弹道学”后获得特色单位“衣阿华级战列舰”。</Text>
+			<Text>解锁防御战术市政后即可宣布解放战争。宣布解放战争、收复战争和保卫城邦战争后的10回合内+5 [ICON_Strength] 战斗力，+2 [ICON_Movement] 移动力，+100% [ICON_PRODUCTION] 生产力。处于战争状态时所有单位+5 [ICON_Strength] 战斗力。通往城邦的每条 [ICON_TradeRoute] 贸易路线将为此处提供2名 [ICON_ENVOY] 使者。所有农场、牧场、营地与种植园改良设施+1 [ICON_Food] 食物、+1 [ICON_Culture] 文化值、+3 [ICON_Gold] 金币。研究完“高级弹道学”后获得特色单位“衣阿华级战列舰”。</Text>
 		</Replace>
 		<Replace Tag="LOC_PREVIEW_NEWJERSEY_AT_WAR_STRENGTH_BUFF_TEXT" Language="zh_Hans_CN">
 			<Text>+5，处于战争状态</Text>
@@ -118,7 +118,7 @@
 			<Text>繁荣花园</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FLOUTISH_GARDEN_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>解锁建造者建造新泽西特色改良设施繁荣花园的能力。[NEWLINE][NEWLINE]+2 [icon_PRODUCTION] 生产力，+2 [ICON_Culture] 文化值，+1 [ICON_Housing] 住房。每与一座农场、牧场、营地或种植园相邻则+1 [ICON_Food] 食物和 [ICON_Culture] 文化值。每与一座繁荣花园相邻时则+3 [ICON_Gold] 金币。研究完“工业化”后，每与一个区域相邻则+1 [icon_PRODUCTION] 生产力和 [ICON_Gold] 金币。仅可建造在草原、草原丘陵、平原和平原丘陵上。</Text>
+			<Text>解锁建造者建造新泽西特色改良设施繁荣花园的能力。[NEWLINE][NEWLINE]+2 [ICON_PRODUCTION] 生产力，+2 [ICON_Culture] 文化值，+1 [ICON_Housing] 住房。每与一座农场、牧场、营地或种植园相邻则+1 [ICON_Food] 食物和 [ICON_Culture] 文化值。每与一座繁荣花园相邻时则+3 [ICON_Gold] 金币。研究完“工业化”后，每与一个区域相邻则+1 [ICON_PRODUCTION] 生产力和 [ICON_Gold] 金币。仅可建造在草原、草原丘陵、平原和平原丘陵上。</Text>
 		</Replace>
 		<!--外交文本-->
 		<!--同意声明友谊-->

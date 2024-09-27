@@ -86,7 +86,7 @@
 			<Text>Firepower for Freedom</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_TRAIT_LEADER_FIREPOWER_FOR_FREEDOM_DESCRIPTION" Language="en_US">
-			<Text>Can declare a War of Liberation after gaining the Defensive Tactics Civic. +5 [ICON_Strength] Combat Strength, +2 [ICON_Movement] Movement, +100% [icon_PRODUCTION] Production within 10 turns after the War of Liberation, Reconquest and Defense of the City-State. +5 [ICON_Strength] Combat Strength for all units when at war. Each [ICON_TradeRoute] Trade Route sent to a City-State awards 2 [ICON_ENVOY] Envoy there. +1 [ICON_Food] Food, +1 [ICON_Culture] Culture, +3 [ICON_Gold] Gold for all Farms, Pastures, Camps and Plantation improvements. Gain the Iowa-class battleship unique unit when the Advanced Ballistics technology is researched.</Text>
+			<Text>Can declare a War of Liberation after gaining the Defensive Tactics Civic. +5 [ICON_Strength] Combat Strength, +2 [ICON_Movement] Movement, +100% [ICON_PRODUCTION] Production within 10 turns after the War of Liberation, Reconquest and Defense of the City-State. +5 [ICON_Strength] Combat Strength for all units when at war. Each [ICON_TradeRoute] Trade Route sent to a City-State awards 2 [ICON_ENVOY] Envoy there. +1 [ICON_Food] Food, +1 [ICON_Culture] Culture, +3 [ICON_Gold] Gold for all Farms, Pastures, Camps and Plantation improvements. Gain the Iowa-class battleship unique unit when the Advanced Ballistics technology is researched.</Text>
 		</Replace>
 		<Replace Tag="LOC_PREVIEW_NEWJERSEY_AT_WAR_STRENGTH_BUFF_TEXT" Language="en_US">
 			<Text>+5, In a state of war</Text>
@@ -118,7 +118,7 @@
 			<Text>Floutish Garden</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FLOUTISH_GARDEN_DESCRIPTION" Language="en_US">
-			<Text>Unlocks the Builder ability to construct a Floutish Garden, unique to New Jersey.[NEWLINE][NEWLINE]+2 [icon_PRODUCTION] Production, +2 [ICON_Culture] Culture, +1 [ICON_Housing] Housing. +1 [ICON_Food] Food and [ICON_Culture] Culture for each adjacent Farms, Pastures, Camps or Plantations. +3 [ICON_Gold] Gold for each adjacent to Floutish Gardens. +1 [icon_PRODUCTION] Production and [ICON_Gold] Gold for each adjacent Districts after studying Industrialization. It can only be built on Grassland, Grassland Hills, Plains and Plains Hills.</Text>
+			<Text>Unlocks the Builder ability to construct a Floutish Garden, unique to New Jersey.[NEWLINE][NEWLINE]+2 [ICON_PRODUCTION] Production, +2 [ICON_Culture] Culture, +1 [ICON_Housing] Housing. +1 [ICON_Food] Food and [ICON_Culture] Culture for each adjacent Farms, Pastures, Camps or Plantations. +3 [ICON_Gold] Gold for each adjacent to Floutish Gardens. +1 [ICON_PRODUCTION] Production and [ICON_Gold] Gold for each adjacent Districts after studying Industrialization. It can only be built on Grassland, Grassland Hills, Plains and Plains Hills.</Text>
 		</Replace>
 		<!--外交文本-->
 		<!--同意声明友谊-->

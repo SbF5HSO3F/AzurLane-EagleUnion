@@ -35,14 +35,14 @@
 			<Text>The Brilliance of Technology and Industry</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_DESCRIPTION" Language="en_US">
-			<Text>All Improvements +1 [icon_PRODUCTION] Production and +1 [ICON_Science] Science, and then +1 [icon_PRODUCTION] Production after researching the Industrialization technology. The number of [ICON_GreatScientist] Great Scientist and [ICON_GreatEngineer] Great Engineer points earned per turn is increased by 100%, and the [ICON_GreatScientist] Great Scientist and [ICON_GreatEngineer] Great Engineer have an additional charge. For every great person earned, +2% of [ICON_Science] Science and [ICON_Culture] Culture (capped at 30%).</Text>
+			<Text>All Improvements +1 [ICON_PRODUCTION] Production and +1 [ICON_SCIENCE] Science, and then +1 [ICON_PRODUCTION] Production after researching the Industrialization technology. The number of [ICON_GreatScientist] Great Scientist and [ICON_GreatEngineer] Great Engineer points earned per turn is increased by 100%, and the [ICON_GreatScientist] Great Scientist and [ICON_GreatEngineer] Great Engineer have an additional charge. For every great person earned, +2% of [ICON_SCIENCE] Science and [ICON_Culture] Culture (capped at 30%).</Text>
 		</Replace>
 		<!--特殊区域-->
 		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_NAME" Language="en_US">
 			<Text>Santa Clara Valley</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_DESCRIPTION" Language="en_US">
-			<Text>Eagle Union unique district, replacing Industrial Zone district, unlock earlier, cost less, and have no population demand (Therefore, it is not a specialty district). Gain an additional standard Production adjacency bonus from adjacent districts. [icon_PRODUCTION] Production Adjacent Bonus also provides [ICON_Science] Science and [icon_GOLD] Gold.[NEWLINE][NEWLINE]Awards 1 randomly-chosen free technologies when completed. All Improvements in this city +1 [ICON_Science] Science and +1 [icon_PRODUCTION] Production, and then +1 [icon_PRODUCTION] Production after researching the Apprenticeship technology.[NEWLINE]Get a +2 [icon_PRODUCTION] Production bonus from each adjacent Harbor, Campus, and Santa Clara Valley. Each adjacent Harbor provides a +2 [icon_GOLD] Gold bonus and each Campus gives a +2 [ICON_Science] Science bonus.</Text>
+			<Text>Eagle Union unique district, replacing Industrial Zone district, unlock earlier, cost less, and have no population demand (Therefore, it is not a specialty district). Gain an additional standard Production adjacency bonus from adjacent districts. [ICON_PRODUCTION] Production Adjacent Bonus also provides [ICON_SCIENCE] Science and [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Awards 1 randomly-chosen free technologies when completed. All Improvements in this city +1 [ICON_SCIENCE] Science and +1 [ICON_PRODUCTION] Production, and then +1 [ICON_PRODUCTION] Production after researching the Apprenticeship technology.[NEWLINE]Get a +2 [ICON_PRODUCTION] Production bonus from each adjacent Harbor, Campus, and Santa Clara Valley. Each adjacent Harbor provides a +2 [ICON_GOLD] Gold bonus and each Campus gives a +2 [ICON_SCIENCE] Science bonus.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_1" Language="en_US" >
 			<Text>The Santa Clara Valley, also known as Silicon Valley, is located in the southern part of the San Francisco Bay Area, a metropolitan area in Northern California, United States. Since the Santa Clara Valley was originally a place where silicon-based semiconductor chips were researched and produced, it got its name Silicon Valley.</Text>
@@ -55,26 +55,26 @@
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_Santa_Clara_Valley_CAMPUS" Language="en_US">
-			<Text>+{1_num} [icon_PRODUCTION] Production from each adjacent Campus tile.</Text>
+			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent Campus tile.</Text>
 		</Replace>
 		<Replace Tag="LOC_Santa_Clara_Valley_HARBOR" Language="en_US">
-			<Text>+{1_num} [icon_PRODUCTION] Production from each adjacent Harbor tile.</Text>
+			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent Harbor tile.</Text>
 		</Replace>
 		<Replace Tag="LOC_CAMPUS_Santa_Clara_Valley" Language="en_US">
-			<Text>+{1_num} [ICON_Science] Science from each adjacent Santa Clara Valley tile.</Text>
+			<Text>+{1_num} [ICON_SCIENCE] Science from each adjacent Santa Clara Valley tile.</Text>
 		</Replace>
 		<Replace Tag="LOC_HARBOR_Santa_Clara_Valley" Language="en_US">
-			<Text>+{1_num} [icon_GOLD] Gold from each adjacent Santa Clara Valley tile.</Text>
+			<Text>+{1_num} [ICON_GOLD] Gold from each adjacent Santa Clara Valley tile.</Text>
 		</Replace>
 		<Replace Tag="LOC_Santa_Clara_Valley_Santa_Clara_Valley" Language="en_US">
-			<Text>+{1_num} [icon_PRODUCTION] Production from each adjacent Santa Clara Valley tile.</Text>
+			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent Santa Clara Valley tile.</Text>
 		</Replace>
 		<!--特殊建筑-->
 		<Replace Tag="LOC_BUILDING_NEWPORT_NEWS_SHIPBUILDING_NAME" Language="en_US">
 			<Text>Newport News Shipbuilding</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_NEWPORT_NEWS_SHIPBUILDING_DESCRIPTION" Language="en_US">
-			<Text>A building unique to Eagle Union. All naval units trained in this city +50% combat experience, starting with a free promotion and +5 [ICON_Strength] Combat Strength. Bonus [icon_PRODUCTION] Production equal to the adjacency bonus of the Harbor district. +2 [icon_PRODUCTION] Production on all Coast and Lake tiles for this city. In this city, Fleet and Armada training costs reduced 25%, and receive a second naval unit each time you train a naval unit.</Text>
+			<Text>A building unique to Eagle Union. All naval units trained in this city +50% combat experience, starting with a free promotion and +5 [ICON_Strength] Combat Strength. Bonus [ICON_PRODUCTION] Production equal to the adjacency bonus of the Harbor district. +2 [ICON_PRODUCTION] Production on all Coast and Lake tiles for this city. In this city, Fleet and Armada training costs reduced 25%, and receive a second naval unit each time you train a naval unit.</Text>
 		</Replace>
 		<Replace Tag="LOC_PREVIEW_ENTERPRISE_HREAT_STRENGTH_DESCRIPTION" Language="en_US">
 			<Text>+5, Enterprising Heart</Text>

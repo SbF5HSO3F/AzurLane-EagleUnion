@@ -21,19 +21,19 @@
     <LocalizedTextData><![CDATA[
       <LocalizedText>
         <Text id="LOC_EAGLE_UNION_NAME">
-          <en_US>Azur Lane-Eagle Union Civilization</en_US>
+          <en_US>Azur Lane-Eagle Union</en_US>
           <zh_Hans_CN>碧蓝航线·白鹰联邦</zh_Hans_CN>
           <zh_Hant_HK>碧藍航線·白鷹聯邦</zh_Hant_HK>
         </Text>
         <Text id="LOC_EAGLE_UNION_TEASER">
-          <en_US>Added a powerful civilization from the game "Azur Lane" - the Eagle Union Civilization, with a total of 5 leaders.</en_US>
-          <zh_Hans_CN>为游戏添加了一个来自游戏作品《碧蓝航线》的强大文明——白鹰联邦，共有5名所属领袖。</zh_Hans_CN>
-          <zh_Hant_HK>為遊戲添加了一個來自遊戲作品《碧藍航線》的強大文明——白鷹聯邦，共有5名所屬領袖。</zh_Hant_HK>
+          <en_US>Added a powerful civilization from the game "Azur Lane" - the Eagle Union.</en_US>
+          <zh_Hans_CN>为游戏添加了一个来自游戏作品《碧蓝航线》的强大文明——白鹰联邦。</zh_Hans_CN>
+          <zh_Hant_HK>為遊戲添加了一個來自遊戲作品《碧藍航線》的強大文明——白鷹聯邦。</zh_Hant_HK>
         </Text>
         <Text id="LOC_EAGLE_UNION_DEACRIPTION">
-          <en_US>Added a civilization based on the white eagle in the game work "Azur Lane" - the Eagle Union civilization, which has strong industrial and technological strength. There are currently five leaders of the civilization: Essex, New Jersey, Georgia, Helena and Allen M. Sumner.</en_US>
-          <zh_Hans_CN>为游戏添加了一个以游戏作品《碧蓝航线》中的白鹰联邦为原型的文明——白鹰联邦，拥有强大的工业与科技实力。当前该文明共有5名领袖，分别是埃塞克斯、新泽西、佐治亚、海伦娜以及艾伦·萨姆纳。</zh_Hans_CN>
-          <zh_Hant_HK>為遊戲添加了一個以遊戲作品《碧藍航線》中的白鷹聯邦為原型的文明——白鷹聯邦，擁有強大的工業與科技實力。當前該文明共有5名領袖，分別是埃塞克斯、新澤西、佐治亞、海倫娜以及艾倫·薩姆納。</zh_Hant_HK>
+          <en_US>Added a civilization based on the white eagle in the game work "Azur Lane" - the Eagle Union, which has strong industrial and technological strength. This mod has added 5 leaders: Essex, New Jersey, Georgia, Helena and Allen M. Sumner.</en_US>
+          <zh_Hans_CN>为游戏添加了一个以游戏作品《碧蓝航线》中的白鹰联邦为原型的文明——白鹰联邦，拥有强大的工业与科技实力。本模组为其添加了5名领袖：埃塞克斯、新泽西、佐治亚、海伦娜以及艾伦·萨姆纳。</zh_Hans_CN>
+          <zh_Hant_HK>為遊戲添加了一個以遊戲作品《碧藍航線》中的白鷹聯邦為原型的文明——白鷹聯邦，擁有強大的工業與科技實力。本模組為其添加了5名領袖：埃塞克斯、新澤西、佐治亞、海倫娜以及艾倫·薩姆納。</zh_Hant_HK>
         </Text>
       </LocalizedText>
     ]]></LocalizedTextData>
@@ -127,7 +127,7 @@
           <File priority="80">Text/zh_Hant_HK/EagleUnion_HKText.xml</File>
         </UpdateText>
         <UpdateDatabase id="Essex">
-          <File priority="100">Data/Essex/EagleUnion_Leader_Essex.xml</File>
+          <File priority="100">Data/Essex/EagleUnion_Essex_Leader.xml</File>
           <File priority="90">Data/Essex/EagleUnion_Essex_UnitAbilities.xml</File>
           <File priority="80">Data/Essex/EagleUnion_Essex_Units.xml</File>
           <File priority="70">Data/Essex/EagleUnion_Essex_Agenda.xml</File>
@@ -144,7 +144,7 @@
           <File priority="80">Text/zh_Hant_HK/EagleUnion_Essex_HKText.xml</File>
         </UpdateText>
         <UpdateDatabase id="Georgia">
-          <File priority="100">Data/Georgia/EagleUnion_Leader_Georgia.xml</File>
+          <File priority="100">Data/Georgia/EagleUnion_Georgia_Leader.xml</File>
           <File priority="90">Data/Georgia/EagleUnion_Georgia_UnitAbilities.xml</File>
           <File priority="80">Data/Georgia/EagleUnion_Georgia_Units.xml</File>
           <File priority="70">Data/Georgia/EagelUnion_Georgia_Agenda.xml</File>
@@ -161,7 +161,7 @@
           <File priority="80">Text/zh_Hant_HK/EagleUnion_Georgia_HKText.xml</File>
         </UpdateText>
         <UpdateDatabase id="NewJersey">
-          <File priority="100">Data/NewJersey/EagleUnion_Leader_NewJersey.xml</File>
+          <File priority="100">Data/NewJersey/EagleUnion_NewJersey_Leader.xml</File>
           <File priority="90">Data/NewJersey/EagleUnion_NewJersey_UnitAbilities.xml</File>
           <File priority="80">Data/NewJersey/EagleUnion_NewJersey_Units.xml</File>
           <File priority="70">Data/NewJersey/EagleUnion_NewJersey_Improvements.xml</File>
@@ -179,7 +179,7 @@
           <File priority="80">Text/zh_Hant_HK/EagleUnion_NewJersey_HKText.xml</File>
         </UpdateText>
         <UpdateDatabase id="Helena">
-          <File priority="100">Data/Helena/EagleUnion_Leader_Helena.xml</File>
+          <File priority="100">Data/Helena/EagleUnion_Helena_Leader.xml</File>
           <File priority="90">Data/Helena/EagleUnion_Helena_UnitAbilities.xml</File>
           <File priority="80">Data/Helena/EagleUnion_Helena_Units.xml</File>
           <File priority="70">Data/Helena/EagleUnion_Helena_Agenda.xml</File>
@@ -188,7 +188,7 @@
           <Properties>
             <LoadOrder>99992</LoadOrder>
           </Properties>
-          <File>Data/Helena/EagleUnion_Leader_Helena.sql</File>
+          <File>Data/Helena/EagleUnion_Helena_Leader.sql</File>
         </UpdateDatabase>
         <UpdateDatabase id="Helena_XP2">
           <Properties>
@@ -202,7 +202,7 @@
           <File priority="80">Text/zh_Hant_HK/EagleUnion_Helena_HKText.xml</File>
         </UpdateText>
         <UpdateDatabase id="AllenMSumner">
-          <File priority="100">Data/AllenMSumner/EagleUnion_Leader_AllenMSumner.xml</File>
+          <File priority="100">Data/AllenMSumner/EagleUnion_AllenMSumner_Leader.xml</File>
           <File priority="90">Data/AllenMSumner/EagleUnion_AllenMSumner_Units.xml</File>
           <File priority="80">Data/AllenMSumner/EagleUnion_AllenMSumner_Agenda.xml</File>
         </UpdateDatabase>
@@ -210,7 +210,7 @@
           <Properties>
             <LoadOrder>99997</LoadOrder>
           </Properties>
-          <File>Data/AllenMSumner/EagleUnion_Leader_AllenMSumner.sql</File>
+          <File>Data/AllenMSumner/EagleUnion_AllenMSumner_Leader.sql</File>
         </UpdateDatabase>
         <UpdateDatabase id="AllenMSumner_XP2">
           <Properties>
@@ -253,10 +253,10 @@
     <Content Include="Data\AllenMSumner\EagleUnion_AllenMSumner_XP2.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\AllenMSumner\EagleUnion_Leader_AllenMSumner.sql">
+    <Content Include="Data\AllenMSumner\EagleUnion_AllenMSumner_Leader.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\AllenMSumner\EagleUnion_Leader_AllenMSumner.xml">
+    <Content Include="Data\AllenMSumner\EagleUnion_AllenMSumner_Leader.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\EagleUnion_NamedPlaces.xml">
@@ -295,7 +295,7 @@
     <Content Include="Data\Essex\EagleUnion_Essex_XP2.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\Essex\EagleUnion_Leader_Essex.xml">
+    <Content Include="Data\Essex\EagleUnion_Essex_Leader.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\EagleUnion_Core.sql">
@@ -316,7 +316,7 @@
     <Content Include="Data\Georgia\EagleUnion_Georgia_XP2.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\Georgia\EagleUnion_Leader_Georgia.xml">
+    <Content Include="Data\Georgia\EagleUnion_Georgia_Leader.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\Helena\EagleUnion_Helena_Agenda.xml">
@@ -331,13 +331,13 @@
     <Content Include="Data\Helena\EagleUnion_Helena_XP2.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\Helena\EagleUnion_Leader_Helena.sql">
+    <Content Include="Data\Helena\EagleUnion_Helena_Leader.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\Helena\EagleUnion_Leader_Helena.xml">
+    <Content Include="Data\Helena\EagleUnion_Helena_Leader.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\NewJersey\EagleUnion_Leader_NewJersey.xml">
+    <Content Include="Data\NewJersey\EagleUnion_NewJersey_Leader.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\NewJersey\EagleUnion_NewJersey_Agenda.xml">

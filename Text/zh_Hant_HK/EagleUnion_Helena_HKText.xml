@@ -87,7 +87,7 @@
 			<Text>+{1_num} [ICON_Gold] 金幣來自相鄰的海岸與湖泊單元格</Text>
 		</Replace>
 		<Replace Tag="LOC_Kula_Campus_Culture" Language="zh_Hant_HK">
-			<Text>+{1_num} [ICON_Science] 科技值來自相鄰的海岸與湖泊單元格</Text>
+			<Text>+{1_num} [ICON_SCIENCE] 科技值來自相鄰的海岸與湖泊單元格</Text>
 		</Replace>
 		<Replace Tag="LOC_Kula_Campus" Language="zh_Hant_HK">
 			<Text>+{1_num} [ICON_Culture] 文化值來自相鄰的海岸與湖泊單元格</Text>

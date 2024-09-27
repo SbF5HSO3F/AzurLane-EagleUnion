@@ -433,15 +433,15 @@
 												<m_ArtDefPath text="Buildings.artdef"/>
 												<m_CollectionIsLocked>true</m_CollectionIsLocked>
 												<m_TemplateName text="Buildings"/>
-												<m_ParamName text="Set"/>
+												<m_ParamName text="Set001"/>
 											</Element>
 											<Element class="AssetObjects..ArtDefReferenceValue">
 												<m_ElementName text="BUILDING_NEWPORT_NEWS_SHIPBUILDING"/>
 												<m_RootCollectionName text="Building"/>
-												<m_ArtDefPath text="Building.artdef"/>
+												<m_ArtDefPath text="Buildings.artdef"/>
 												<m_CollectionIsLocked>true</m_CollectionIsLocked>
 												<m_TemplateName text="Buildings"/>
-												<m_ParamName text="Set_1"/>
+												<m_ParamName text="Set002"/>
 											</Element>
 										</m_Values>
 										<m_ParamName text="Set"/>
@@ -465,15 +465,15 @@
 												<m_ArtDefPath text="Buildings.artdef"/>
 												<m_CollectionIsLocked>true</m_CollectionIsLocked>
 												<m_TemplateName text="Buildings"/>
-												<m_ParamName text="Set"/>
+												<m_ParamName text="Set001"/>
 											</Element>
 											<Element class="AssetObjects..ArtDefReferenceValue">
 												<m_ElementName text="BUILDING_NEWPORT_NEWS_SHIPBUILDING"/>
 												<m_RootCollectionName text="Building"/>
-												<m_ArtDefPath text="Building.artdef"/>
+												<m_ArtDefPath text="Buildings.artdef"/>
 												<m_CollectionIsLocked>true</m_CollectionIsLocked>
 												<m_TemplateName text="Buildings"/>
-												<m_ParamName text="Set_1"/>
+												<m_ParamName text="Set002"/>
 											</Element>
 											<Element class="AssetObjects..ArtDefReferenceValue">
 												<m_ElementName text="BUILDING_SEAPORT"/>
@@ -481,7 +481,7 @@
 												<m_ArtDefPath text="Buildings.artdef"/>
 												<m_CollectionIsLocked>true</m_CollectionIsLocked>
 												<m_TemplateName text="Buildings"/>
-												<m_ParamName text="Set_2"/>
+												<m_ParamName text="Set003"/>
 											</Element>
 										</m_Values>
 										<m_ParamName text="Set"/>

@@ -35,14 +35,14 @@
 			<Text>科技與工業的璀璨</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>城市所有改良設施+1 [icon_PRODUCTION] 生產力，+1 [ICON_Science] 科技值，研究完“工業化”科技後再+1 [icon_PRODUCTION] 生產力。每回合獲得的 [ICON_GreatScientist] 大科學家與 [ICON_GreatEngineer] 大工程師點數提升100%，且 [ICON_GreatScientist] 大科學家與 [ICON_GreatEngineer] 大工程師擁有額外1點使用次數。每獲得1位偉人，[ICON_Science] 科技值與 [ICON_Culture] 文化值便+2%（上限為30%）</Text>
+			<Text>城市所有改良設施+1 [ICON_PRODUCTION] 生產力，+1 [ICON_SCIENCE] 科技值，研究完“工業化”科技後再+1 [ICON_PRODUCTION] 生產力。每回合獲得的 [ICON_GreatScientist] 大科學家與 [ICON_GreatEngineer] 大工程師點數提升100%，且 [ICON_GreatScientist] 大科學家與 [ICON_GreatEngineer] 大工程師擁有額外1點使用次數。每獲得1位偉人，[ICON_SCIENCE] 科技值與 [ICON_Culture] 文化值便+2%（上限為30%）</Text>
 		</Replace>
 		<!--特殊區域-->
 		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_NAME" Language="zh_Hant_HK">
 			<Text>聖塔克拉拉穀</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>白鷹聯邦特色區域，取代工業區，解鎖更早，造價更低，且無人口需求（囙此並非專業化區域）。從相鄰區域額外獲得標準相鄰加成，[icon_PRODUCTION] 生產力相鄰加成也提供 [ICON_Science] 科技值和 [icon_GOLD] 金幣。[NEWLINE][NEWLINE]建成後隨機獎勵一項科技。此城所有改良設施+1 [ICON_Science] 科技值，+1 [icon_PRODUCTION] 生產力，研究完“學徒”科技後再+1 [icon_PRODUCTION] 生產力。[NEWLINE]從每個相鄰的港口、學院和聖塔克拉拉穀獲得+2 [icon_PRODUCTION] 生產力加成。為每個相鄰的港口提供+2 [icon_GOLD] 金幣加成，為每個相鄰的學院提供+2 [ICON_Science] 科技值加成。</Text>
+			<Text>白鷹聯邦特色區域，取代工業區，解鎖更早，造價更低，且無人口需求（囙此並非專業化區域）。從相鄰區域額外獲得標準相鄰加成，[ICON_PRODUCTION] 生產力相鄰加成也提供 [ICON_SCIENCE] 科技值和 [ICON_GOLD] 金幣。[NEWLINE][NEWLINE]建成後隨機獎勵一項科技。此城所有改良設施+1 [ICON_SCIENCE] 科技值，+1 [ICON_PRODUCTION] 生產力，研究完“學徒”科技後再+1 [ICON_PRODUCTION] 生產力。[NEWLINE]從每個相鄰的港口、學院和聖塔克拉拉穀獲得+2 [ICON_PRODUCTION] 生產力加成。為每個相鄰的港口提供+2 [ICON_GOLD] 金幣加成，為每個相鄰的學院提供+2 [ICON_SCIENCE] 科技值加成。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK" >
 			<Text>聖塔克拉拉穀，又稱矽谷，位於美國加利福尼亞北部的大都會區三藩市灣區南面，是高科技事業雲集的地區。由於聖塔克拉拉穀最早是研究和生產以矽為基礎的半導體晶片的地方，因此得名矽谷。</Text>
@@ -55,26 +55,26 @@
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_Santa_Clara_Valley_CAMPUS" Language="zh_Hant_HK">
-			<Text>+{1_num} [icon_PRODUCTION] 生產力來自相鄰的學院</Text>
+			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自相鄰的學院</Text>
 		</Replace>
 		<Replace Tag="LOC_Santa_Clara_Valley_HARBOR" Language="zh_Hant_HK">
-			<Text>+{1_num} [icon_PRODUCTION] 生產力來自相鄰的港口</Text>
+			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自相鄰的港口</Text>
 		</Replace>
 		<Replace Tag="LOC_CAMPUS_Santa_Clara_Valley" Language="zh_Hant_HK">
-			<Text>+{1_num} [ICON_Science] 科技值來自相鄰的聖塔克拉拉穀</Text>
+			<Text>+{1_num} [ICON_SCIENCE] 科技值來自相鄰的聖塔克拉拉穀</Text>
 		</Replace>
 		<Replace Tag="LOC_HARBOR_Santa_Clara_Valley" Language="zh_Hant_HK">
-			<Text>+{1_num} [icon_GOLD] 金幣來自相鄰的聖塔克拉拉穀</Text>
+			<Text>+{1_num} [ICON_GOLD] 金幣來自相鄰的聖塔克拉拉穀</Text>
 		</Replace>
 		<Replace Tag="LOC_Santa_Clara_Valley_Santa_Clara_Valley" Language="zh_Hant_HK">
-			<Text>+{1_num} [icon_PRODUCTION] 生產力來自相鄰的聖塔克拉拉穀</Text>
+			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自相鄰的聖塔克拉拉穀</Text>
 		</Replace>
 		<!--特殊建築-->
 		<Replace Tag="LOC_BUILDING_NEWPORT_NEWS_SHIPBUILDING_NAME" Language="zh_Hant_HK">
 			<Text>紐波特紐斯造船廠</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_NEWPORT_NEWS_SHIPBUILDING_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>白鷹聯邦特色建築，此城中生產的所有海軍單位+50%戰鬥經驗值，初始便獲得一次強化升級並+5 [ICON_Strength] 戰鬥力。[icon_PRODUCTION] 生產力加成等於港口區域的相鄰加成。 此城所有海岸和湖泊單元格提供的 [icon_PRODUCTION] 生產力+2，生產艦隊與無敵艦隊所需 [icon_PRODUCTION] 生產力減少25%，且每生產一個海軍單位便可額外獲得一個相同單位。</Text>
+			<Text>白鷹聯邦特色建築，此城中生產的所有海軍單位+50%戰鬥經驗值，初始便獲得一次強化升級並+5 [ICON_Strength] 戰鬥力。[ICON_PRODUCTION] 生產力加成等於港口區域的相鄰加成。 此城所有海岸和湖泊單元格提供的 [ICON_PRODUCTION] 生產力+2，生產艦隊與無敵艦隊所需 [ICON_PRODUCTION] 生產力減少25%，且每生產一個海軍單位便可額外獲得一個相同單位。</Text>
 		</Replace>
 		<Replace Tag="LOC_PREVIEW_ENTERPRISE_HREAT_STRENGTH_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>+5，進取之心</Text>

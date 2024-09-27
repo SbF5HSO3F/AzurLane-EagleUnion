@@ -10,14 +10,6 @@
 	<m_PackageName text="LeaderFallback"/>
 	<m_Entries>
 		<Element>
-			<m_EntryID text="IMG_Eagle_Union_LEADER_ESSEX_CV9_Diplomacy_FOREGROUND"/>
-			<m_ObjectName text="IMG_Eagle_Union_LEADER_ESSEX_CV9_Diplomacy_FOREGROUND"/>
-		</Element>
-		<Element>
-			<m_EntryID text="IMG_Eagle_Union_LEADER_GEORGIA_Diplomacy_FOREGROUND"/>
-			<m_ObjectName text="IMG_Eagle_Union_LEADER_GEORGIA_Diplomacy_FOREGROUND"/>
-		</Element>
-		<Element>
 			<m_EntryID text="NEW_JERSEY_BB62_DEFAULT"/>
 			<m_ObjectName text="NEW_JERSEY_BB62_DEFAULT"/>
 		</Element>

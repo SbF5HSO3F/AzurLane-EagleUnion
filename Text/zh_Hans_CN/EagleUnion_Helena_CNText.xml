@@ -72,7 +72,7 @@
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_Kula_Science" Language="zh_Hans_CN">
-			<Text>+{1_num} [ICON_Science] 科技值来自相邻的海岸与湖泊单元格</Text>
+			<Text>+{1_num} [ICON_SCIENCE] 科技值来自相邻的海岸与湖泊单元格</Text>
 		</Replace>
 		<Replace Tag="LOC_Kula_Culture" Language="zh_Hans_CN">
 			<Text>+{1_num} [ICON_Culture] 文化值来自相邻的海岸与湖泊单元格</Text>

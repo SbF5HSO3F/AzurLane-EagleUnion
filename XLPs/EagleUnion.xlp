@@ -18,14 +18,6 @@
 			<m_ObjectName text="IMG_EAGLE_UNION_LEADER_GEORGIA_LOADING_FOREGROUND"/>
 		</Element>
 		<Element>
-			<m_EntryID text="IMG_EAGLE_UNION_LEADER_NEW_JERSEY_BB62_LOADING_FOREGROUND"/>
-			<m_ObjectName text="IMG_EAGLE_UNION_LEADER_NEW_JERSEY_BB62_LOADING_FOREGROUND"/>
-		</Element>
-		<Element>
-			<m_EntryID text="IMG_LEADER_ALLEN_M_SUMNER_DD692_LOADING_FOREGROUND"/>
-			<m_ObjectName text="IMG_LEADER_ALLEN_M_SUMNER_DD692_LOADING_FOREGROUND"/>
-		</Element>
-		<Element>
 			<m_EntryID text="ICON_UNIT_F2H_22"/>
 			<m_ObjectName text="ICON_UNIT_F2H_22"/>
 		</Element>
@@ -87,7 +79,7 @@
 		</Element>
 		<Element>
 			<m_EntryID text="IMG_LEADER_ALLEN_M_SUMNER_DD692_FOREGROUND"/>
-			<m_ObjectName text="IMG_LEADER_Allen_M_Sumner_DD692_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_ALLEN_M_SUMNER_DD692_FOREGROUND"/>
 		</Element>
 		<Element>
 			<m_EntryID text="Moment_Essex_class"/>
@@ -204,6 +196,14 @@
 		<Element>
 			<m_EntryID text="IMG_EAGLE_UNION_LOADING_BACKGROUND"/>
 			<m_ObjectName text="IMG_EAGLE_UNION_LOADING_BACKGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_EAGLE_UNION_LEADER_NEW_JERSEY_BB62_LOADING_FOREGROUND"/>
+			<m_ObjectName text="IMG_EAGLE_UNION_LEADER_NEW_JERSEY_BB62_LOADING_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_ALLEN_M_SUMNER_DD692_LOADING_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_ALLEN_M_SUMNER_DD692_LOADING_FOREGROUND"/>
 		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>

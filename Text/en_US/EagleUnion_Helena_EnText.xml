@@ -87,7 +87,7 @@
 			<Text>+{1_num} [ICON_Gold] Gold from each adjacent Coast or Lake tile.</Text>
 		</Replace>
 		<Replace Tag="LOC_Kula_Campus_Culture" Language="en_US">
-			<Text>+{1_num} [ICON_Science] Sciencefrom each adjacent Coast or Lake tile.</Text>
+			<Text>+{1_num} [ICON_SCIENCE] Sciencefrom each adjacent Coast or Lake tile.</Text>
 		</Replace>
 		<Replace Tag="LOC_Kula_Campus" Language="en_US">
 			<Text>+{1_num} [ICON_Culture] Culture from each adjacent Coast or Lake tile.</Text>
