@@ -28,3 +28,25 @@ end
 function EagleUnionGetRandNum(num)
     return Game.GetRandNum and (Game.GetRandNum(num) + 1) or 1
 end
+
+--get the tech or civic has Boost (GamePlay, UI)
+function EagleUnionHasBoost(techOrCivic)
+    local result = false
+    if techOrCivic then
+        for boost in GameInfo.Boosts() do
+            if techOrCivic == boost.TechnologyType or
+                techOrCivic == boost.CivicType then
+                result = true
+                break
+            end
+        end
+    end
+    return result
+end
+
+--||=========================UI=========================||--
+
+--mouse enter the button (UI)
+function EagleUnionEnter()
+    UI.PlaySound("Main_Menu_Mouse_Over")
+end

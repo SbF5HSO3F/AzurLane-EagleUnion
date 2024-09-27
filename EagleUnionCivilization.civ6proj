@@ -110,7 +110,7 @@
           <File priority="50">Data/EagleUnion_UnitPromotions.xml</File>
           <File priority="40">Data/EagleUnion_Units.xml</File>
         </UpdateDatabase>
-        <UpdateDatabase id="EagleUnion_MODE">
+        <UpdateDatabase id="EagleUnion_Mode">
           <Criteria>EAGLEUNION_MODE</Criteria>
           <File>Data/EagleUnion_SecretSocieties.sql</File>
         </UpdateDatabase>

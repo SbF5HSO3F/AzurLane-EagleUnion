@@ -284,7 +284,7 @@
 			<Text>卡姆登</Text>
 		</Replace>
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_PORTSMOUTH" Language="zh_Hans_CN">
-			<Text>朴次茅斯</Text>
+			<Text>朴茨茅斯</Text>
 		</Replace>
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_BREMERTON" Language="zh_Hans_CN">
 			<Text>布莱默顿</Text>
