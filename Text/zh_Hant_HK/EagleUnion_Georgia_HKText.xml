@@ -56,7 +56,10 @@
 			<Text>巨炮轟鳴</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_HEAVY_BARREL_BLASTER_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>種植園+3 [ICON_Culture] 文化值，+1 [ICON_TradeRoute] 貿易路線容量並對周邊單元格釋放文化炸彈。[ICON_TradeRoute] 貿易路線目的地城市中的每個專業化區域提供+2 [ICON_Culture] 文化值，若為國際 [ICON_TradeRoute] 貿易路線，則+4 [ICON_Culture] 文化值。所有單位在攻擊海軍單位和區域防禦時+7 [ICON_Strength] 戰鬥力，所有海軍單位與遠端單位可對城市輸出全額傷害。研究完“高級彈道學”後獲得特色單位“衣阿華級戰列艦原型方案Ⅳ”。</Text>
+			<Text>遊戲初始便解鎖「灌溉」科技，種植園+3 [ICON_Culture] 文化值，+1 [ICON_TradeRoute] 貿易路線容量並對周邊單元格釋放文化炸彈。[ICON_TradeRoute] 貿易路線目的地城市中的每個專業化區域提供+2 [ICON_Culture] 文化值、+4 [ICON_GOLD] 金幣。所有單位在攻擊海軍單位和區域防禦時+7 [ICON_Strength] 戰鬥力。研究完「高級彈道學」後獲得特色單位「衣阿華級戰列艦原型方案Ⅳ」。</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_HEAVY_BARREL_BLASTER_DESCRIPTION_XP2" Language="zh_Hant_HK">
+			<Text>遊戲初始便解鎖「灌溉」科技，種植園+3 [ICON_Culture] 文化值，+1 [ICON_TradeRoute] 貿易路線容量並對周邊單元格釋放文化炸彈。[ICON_TradeRoute] 貿易路線目的地城市中的每個專業化區域提供+2 [ICON_Culture] 文化值、+4 [ICON_GOLD] 金幣。所有單位在攻擊海軍單位和區域防禦時+7 [ICON_Strength] 戰鬥力，所有海軍單位與遠程單位可對城市輸出全額傷害。研究完「高級彈道學」後獲得特色單位「衣阿華級戰列艦原型方案Ⅳ」。</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_IOWA_CLASS_PLAN_4_NAME" Language="zh_Hant_HK">
 			<Text>衣阿華級戰列艦原型方案Ⅳ</Text>

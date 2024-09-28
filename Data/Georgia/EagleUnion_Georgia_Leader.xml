@@ -52,6 +52,11 @@
 			<TraitType>TRAIT_LEADER_HEAVY_BARREL_BLASTER</TraitType>
 			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
 		</Row>
+		<!--初始解锁灌溉-->
+		<Row>
+			<TraitType>TRAIT_LEADER_HEAVY_BARREL_BLASTER</TraitType>
+			<ModifierId>HEAVY_BARREL_BLASTER_UNLOCKED_TECH_IRRIGATION</ModifierId>
+		</Row>
 		<!--种植园加文化-->
 		<Row>
 			<TraitType>TRAIT_LEADER_HEAVY_BARREL_BLASTER</TraitType>
@@ -77,10 +82,20 @@
 			<TraitType>TRAIT_LEADER_HEAVY_BARREL_BLASTER</TraitType>
 			<ModifierId>HEAVY_DOMESTIC_ROUTE_ADD_CULTURE</ModifierId>
 		</Row>
-		<!--国内贸易路线加文化-->
+		<!--国内贸易路线加金币-->
+		<Row>
+			<TraitType>TRAIT_LEADER_HEAVY_BARREL_BLASTER</TraitType>
+			<ModifierId>HEAVY_DOMESTIC_ROUTE_ADD_GOLD</ModifierId>
+		</Row>
+		<!--国外贸易路线加文化-->
 		<Row>
 			<TraitType>TRAIT_LEADER_HEAVY_BARREL_BLASTER</TraitType>
 			<ModifierId>HEAVY_INTERNATIONAL_ROUTE_ADD_CULTURE</ModifierId>
+		</Row>
+		<!--国外贸易路线加金币-->
+		<Row>
+			<TraitType>TRAIT_LEADER_HEAVY_BARREL_BLASTER</TraitType>
+			<ModifierId>HEAVY_INTERNATIONAL_ROUTE_ADD_GOLD</ModifierId>
 		</Row>
 		<!--攻击区域或海军+7战斗力-->
 		<Row>
@@ -94,6 +109,11 @@
 		</Row>
 	</TraitModifiers>
 	<Modifiers>
+		<!--初始解锁灌溉-->
+		<Row>
+			<ModifierId>HEAVY_BARREL_BLASTER_UNLOCKED_TECH_IRRIGATION</ModifierId>
+			<ModifierType>MODIFIER_EAGLE_UNION_PLAYER_GRANT_SPECIFIC_TECHNOLOGY</ModifierType>
+		</Row>
 		<!--种植园加文化-->
 		<Row>
 			<ModifierId>HEARY_IMPROVEMENT_PLANTATION_ADD_CULTURE</ModifierId>
@@ -121,9 +141,19 @@
 			<ModifierId>HEAVY_DOMESTIC_ROUTE_ADD_CULTURE</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD_PER_SPECIALTY_DISTRICT_FOR_DOMESTIC</ModifierType>
 		</Row>
-		<!--国内贸易路线加文化-->
+		<!--国内贸易路线加金币-->
+		<Row>
+			<ModifierId>HEAVY_DOMESTIC_ROUTE_ADD_GOLD</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD_PER_SPECIALTY_DISTRICT_FOR_DOMESTIC</ModifierType>
+		</Row>
+		<!--国外贸易路线加文化-->
 		<Row>
 			<ModifierId>HEAVY_INTERNATIONAL_ROUTE_ADD_CULTURE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD_PER_SPECIALTY_DISTRICT_FOR_INTERNATIONAL</ModifierType>
+		</Row>
+		<!--国外贸易路线加金币-->
+		<Row>
+			<ModifierId>HEAVY_INTERNATIONAL_ROUTE_ADD_GOLD</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD_PER_SPECIALTY_DISTRICT_FOR_INTERNATIONAL</ModifierType>
 		</Row>
 		<!--攻击区域或海军+7战斗力-->
@@ -143,6 +173,12 @@
 		</Row>
 	</Modifiers>
 	<ModifierArguments>
+		<!--初始解锁灌溉-->
+		<Row>
+			<ModifierId>HEAVY_BARREL_BLASTER_UNLOCKED_TECH_IRRIGATION</ModifierId>
+			<Name>TechType</Name>
+			<Value>TECH_IRRIGATION</Value>
+		</Row>
 		<!--种植园加文化-->
 		<Row>
 			<ModifierId>HEARY_IMPROVEMENT_PLANTATION_ADD_CULTURE</ModifierId>
@@ -193,16 +229,38 @@
 			<Name>YieldType</Name>
 			<Value>YIELD_CULTURE</Value>
 		</Row>
-		<!--国内贸易路线加文化-->
+		<!--国内贸易路线加金币-->
+		<Row>
+			<ModifierId>HEAVY_DOMESTIC_ROUTE_ADD_GOLD</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<Row>
+			<ModifierId>HEAVY_DOMESTIC_ROUTE_ADD_GOLD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>	
+		<!--国外贸易路线加文化-->
 		<Row>
 			<ModifierId>HEAVY_INTERNATIONAL_ROUTE_ADD_CULTURE</ModifierId>
 			<Name>Amount</Name>
-			<Value>4</Value>
+			<Value>2</Value>
 		</Row>
 		<Row>
 			<ModifierId>HEAVY_INTERNATIONAL_ROUTE_ADD_CULTURE</ModifierId>
 			<Name>YieldType</Name>
 			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<!--国外贸易路线加金币-->
+		<Row>
+			<ModifierId>HEAVY_INTERNATIONAL_ROUTE_ADD_GOLD</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<Row>
+			<ModifierId>HEAVY_INTERNATIONAL_ROUTE_ADD_GOLD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
 		</Row>
 		<!--攻击区域或海军+7战斗力-->
 		<Row>

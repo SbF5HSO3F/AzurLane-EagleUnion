@@ -99,6 +99,7 @@
         </ImportFiles>
         <DoNothing id="UI" />
         <AddGameplayScripts id="Script">
+          <File>Scripts/EagleUnion_Scirpt.lua</File>
           <File>Scripts/EagleUnion_Essex.lua</File>
         </AddGameplayScripts>
         <UpdateDatabase id="EagleUnion">
@@ -368,6 +369,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts\EagleUnion_Essex.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\EagleUnion_Scirpt.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Text\en_US\EagleUnion_AllenMSumner_EnText.xml">

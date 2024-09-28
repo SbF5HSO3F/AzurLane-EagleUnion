@@ -32,6 +32,7 @@
 			 CaptureRemovesCityDefenses="false"
 			 MilitaryDomain="NO_DOMAIN"
 			 CityStrengthModifier="2"
+			 CitizenSlots="2"
 			 TraitType="TRAIT_CIVILIZATION_DISTRICT_SANTA_CLARA_VALLEY"/>
 	</Districts>
 	<District_GreatPersonPoints>
@@ -50,25 +51,30 @@
 	</District_CitizenYieldChanges>
 	<District_Adjacencies>
 		<!--获得-->
-		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Santa_Clara_Valley_Campus"/>
-		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Santa_Clara_Valley_Harbor"/>
-		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="District_Production"/>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Government_Production"/>
-		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Santa_Clara_Valley_Districts"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="SantaClara_Campus"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="SantaClara_Harbor"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="SantaClara_Districts"/>
 		<!--给予-->
-		<Row DistrictType="DISTRICT_CAMPUS"				YieldChangeId="CAMPUS_Santa_Clara_Valley"/>
-		<Row DistrictType="DISTRICT_HARBOR"				YieldChangeId="HARBOR_Santa_Clara_Valley"/>
-		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Santa_Clara_Valley_Santa_Clara_Valley"/>
+		<Row DistrictType="DISTRICT_HOLY_SITE"			YieldChangeId="SantaClara_Faith"/>
+		<Row DistrictType="DISTRICT_CAMPUS"				YieldChangeId="SantaClara_Science"/>
+		<Row DistrictType="DISTRICT_HARBOR"				YieldChangeId="SantaClara_Gold"/>
+		<Row DistrictType="DISTRICT_COMMERCIAL_HUB"		YieldChangeId="SantaClara_Gold"/>
+		<Row DistrictType="DISTRICT_THEATER"			YieldChangeId="SantaClara_Culture"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="SantaClara_Production"/>
 	</District_Adjacencies>
 	<Adjacency_YieldChanges>
 		<!--获得-->
-		<Row ID="Santa_Clara_Valley_Campus"		Description="LOC_Santa_Clara_Valley_CAMPUS"		YieldType="YIELD_PRODUCTION" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_CAMPUS"/>
-		<Row ID="Santa_Clara_Valley_Harbor"		Description="LOC_Santa_Clara_Valley_HARBOR"		YieldType="YIELD_PRODUCTION" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_HARBOR"/>
-		<Row ID="Santa_Clara_Valley_Districts"	Description="LOC_Santa_Clara_Valley_Districts"	YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" OtherDistrictAdjacent="true"/>
-		<!--给予-->
-		<Row ID="CAMPUS_Santa_Clara_Valley"				Description="LOC_CAMPUS_Santa_Clara_Valley"				YieldType="YIELD_SCIENCE"		YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_SANTA_CLARA_VALLEY"/>
-		<Row ID="HARBOR_Santa_Clara_Valley"				Description="LOC_HARBOR_Santa_Clara_Valley"				YieldType="YIELD_GOLD"			YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_SANTA_CLARA_VALLEY"/>
-		<Row ID="Santa_Clara_Valley_Santa_Clara_Valley" Description="LOC_Santa_Clara_Valley_Santa_Clara_Valley" YieldType="YIELD_PRODUCTION"	YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_SANTA_CLARA_VALLEY"/>
+		<Row ID="SantaClara_Campus"		Description="LOC_SANTA_CLARA_CAMPUS"		YieldType="YIELD_PRODUCTION" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_CAMPUS"/>
+		<Row ID="SantaClara_Harbor"		Description="LOC_SANTA_CLARA_HARBOR"		YieldType="YIELD_PRODUCTION" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_HARBOR"/>
+		<Row ID="SantaClara_Districts"	Description="LOC_SANTA_CLARA_DISTRICTS"		YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" OtherDistrictAdjacent="true"/>
+		<!--大量相邻加成-->
+		<Row ID="SantaClara_Food"		Description="LOC_SANTA_CLARA_FOOD"			YieldType="YIELD_FOOD"			YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_SANTA_CLARA_VALLEY"/>
+		<Row ID="SantaClara_Production"	Description="LOC_SANTA_CLARA_PRODUCTION"	YieldType="YIELD_PRODUCTION"	YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_SANTA_CLARA_VALLEY"/>
+		<Row ID="SantaClara_Gold"		Description="LOC_SANTA_CLARA_GOLD"			YieldType="YIELD_GOLD"			YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_SANTA_CLARA_VALLEY"/>
+		<Row ID="SantaClara_Science"	Description="LOC_SANTA_CLARA_SCIENCE"		YieldType="YIELD_SCIENCE"		YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_SANTA_CLARA_VALLEY"/>
+		<Row ID="SantaClara_Culture"	Description="LOC_SANTA_CLARA_CULTURE"		YieldType="YIELD_CULTURE"		YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_SANTA_CLARA_VALLEY"/>
+		<Row ID="SantaClara_Faith"		Description="LOC_SANTA_CLARA_FAITH"			YieldType="YIELD_FAITH"			YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_SANTA_CLARA_VALLEY"/>
 	</Adjacency_YieldChanges>
 	<DistrictModifiers>
 		<!--生产力提供科技值-->
@@ -91,7 +97,7 @@
 			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
 			<ModifierId>SANTA_CLARA_IMPROVEMENT_BUFF</ModifierId>
 		</Row>
-		<!--学徒后期buff-->
+		<!--学徒后buff-->
 		<Row>
 			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
 			<ModifierId>SANTA_CLARA_IMPROVEMENT_BUFF_APPRENTICESHIP</ModifierId>

@@ -35,14 +35,14 @@
 			<Text>科技与工业的璀璨</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>城市所有改良设施+1 [ICON_PRODUCTION] 生产力，+1 [ICON_SCIENCE] 科技值，研究完“工业化”科技后再+1 [ICON_PRODUCTION] 生产力。每回合获得的 [ICON_GreatScientist] 大科学家与 [ICON_GreatEngineer] 大工程师点数提升100%，且 [ICON_GreatScientist] 大科学家与 [ICON_GreatEngineer] 大工程师拥有额外1点使用次数。每获得1位伟人，[ICON_SCIENCE] 科技值与 [ICON_Culture] 文化值便+2%（上限为30%）。</Text>
+			<Text>城市所有改良设施+1 [ICON_PRODUCTION] 生产力、+1 [ICON_SCIENCE] 科技值，研究完“工业化”科技后再+1 [ICON_PRODUCTION] 生产力。每回合获得的 [ICON_GreatScientist] 大科学家与 [ICON_GreatEngineer] 大工程师点数提升100%，且 [ICON_GreatScientist] 大科学家与 [ICON_GreatEngineer] 大工程师拥有额外1点使用次数。每激活1次伟人，所有城市+5% [ICON_Production] 生产力。</Text>
 		</Replace>
 		<!--特殊区域-->
 		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_NAME" Language="zh_Hans_CN">
 			<Text>圣塔克拉拉谷</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>白鹰联邦特色区域，取代工业区，解锁更早，造价更低，且无人口需求（因此并非专业化区域）。从相邻区域额外获得标准相邻加成，[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_SCIENCE] 科技值和 [ICON_GOLD] 金币。[NEWLINE][NEWLINE]建成后随机奖励一项科技。此城所有改良设施+1 [ICON_SCIENCE] 科技值，+1 [ICON_PRODUCTION] 生产力，研究完“学徒”科技后再+1 [ICON_PRODUCTION] 生产力。[NEWLINE]从每个相邻的港口、学院和圣塔克拉拉谷获得+2 [ICON_PRODUCTION] 生产力加成。为每个相邻的港口提供+2 [ICON_GOLD] 金币加成，为每个相邻的学院提供+2 [ICON_SCIENCE] 科技值加成。</Text>
+			<Text>白鹰联邦特色区域，取代工业区，解锁更早，造价更低，且无人口需求（因此并非专业化区域）。从相邻区域获得标准相邻加成，[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_SCIENCE] 科技值和 [ICON_GOLD] 金币。[NEWLINE][NEWLINE]建成后随机奖励一项科技。此城所有改良设施+1 [ICON_SCIENCE] 科技值、+1 [ICON_PRODUCTION] 生产力，研究完“学徒”科技后再+1 [ICON_PRODUCTION] 生产力。[NEWLINE]为相邻区域提供大量相邻加成。从每个相邻的港口和学院获得+2 [ICON_PRODUCTION] 生产力。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN" >
 			<Text>圣塔克拉拉谷，又称硅谷，位于美国加利福尼亚北部的大都会区旧金山湾区南面，是高科技事业云集的地区。由于圣塔克拉拉谷最早是研究和生产以硅为基础的半导体芯片的地方，因此得名硅谷。</Text>
@@ -54,23 +54,32 @@
 			<Text>圣塔克拉拉谷的主要部分位于旧金山半岛南端的圣塔克拉拉县，主要包括该县下属的从帕罗奥多市到县府圣何塞市一段长约25英里的谷地。而圣塔克拉拉谷的总范围一般还包含旧金山湾区西南部圣马特奥县的部分城市，以及旧金山湾区东部阿拉米达县的部分城市。 圣塔克拉拉谷的主要区位特点是拥有附近一些具有雄厚科研力量的美国顶尖大学作为依托，主要包括斯坦福大学和加州大学伯克利分校，还包括加州大学系统的其它几所大学和圣塔克拉拉大学。结构上，圣塔克拉拉谷以高新技术中小公司群为基础，同时拥有谷歌、Facebook、惠普、英特尔、苹果公司、思科、英伟达、甲骨文、特斯拉、雅虎等大公司，融科学、技术、生产为一体。</Text>
 		</Replace>
 		<!--特殊加成-->
-		<Replace Tag="LOC_Santa_Clara_Valley_Districts" Language="zh_Hans_CN">
+		<Replace Tag="LOC_SANTA_CLARA_DISTRICTS" Language="zh_Hans_CN">
 			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自相邻的每个区域</Text>
 		</Replace>
-		<Replace Tag="LOC_Santa_Clara_Valley_CAMPUS" Language="zh_Hans_CN">
+		<Replace Tag="LOC_SANTA_CLARA_CAMPUS" Language="zh_Hans_CN">
 			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自相邻的学院</Text>
 		</Replace>
-		<Replace Tag="LOC_Santa_Clara_Valley_HARBOR" Language="zh_Hans_CN">
+		<Replace Tag="LOC_SANTA_CLARA_HARBOR" Language="zh_Hans_CN">
 			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自相邻的港口</Text>
 		</Replace>
-		<Replace Tag="LOC_CAMPUS_Santa_Clara_Valley" Language="zh_Hans_CN">
-			<Text>+{1_num} [ICON_SCIENCE] 科技值来自相邻的圣塔克拉拉谷</Text>
+		<Replace Tag="LOC_SANTA_CLARA_FOOD" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_FOOD] 食物来自相邻的圣塔克拉拉谷</Text>
 		</Replace>
-		<Replace Tag="LOC_HARBOR_Santa_Clara_Valley" Language="zh_Hans_CN">
+		<Replace Tag="LOC_SANTA_CLARA_PRODUCTION" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自相邻的圣塔克拉拉谷</Text>
+		</Replace>
+		<Replace Tag="LOC_SANTA_CLARA_GOLD" Language="zh_Hans_CN">
 			<Text>+{1_num} [ICON_GOLD] 金币来自相邻的圣塔克拉拉谷</Text>
 		</Replace>
-		<Replace Tag="LOC_Santa_Clara_Valley_Santa_Clara_Valley" Language="zh_Hans_CN">
-			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自相邻的圣塔克拉拉谷</Text>
+		<Replace Tag="LOC_SANTA_CLARA_SCIENCE" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_SCIENCE] 科技值来自相邻的圣塔克拉拉谷</Text>
+		</Replace>
+		<Replace Tag="LOC_SANTA_CLARA_CULTURE" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_CULTURE] 文化值来自相邻的圣塔克拉拉谷</Text>
+		</Replace>
+		<Replace Tag="LOC_SANTA_CLARA_FAITH" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_FAITH] 信仰值来自相邻的圣塔克拉拉谷</Text>
 		</Replace>
 		<!--特殊建筑-->
 		<Replace Tag="LOC_BUILDING_NEWPORT_NEWS_SHIPBUILDING_NAME" Language="zh_Hans_CN">

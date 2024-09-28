@@ -18,7 +18,7 @@
 		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_EAGLE_UNION_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
 			<Text>白鷹擁有強大的工業實力，先進的科學技術以及各勢力中最優秀的航空兵器。武器的設計理念兼顧性能與數量。現在基於貫徹自身正義和為世界帶來和平的理念留在碧藍航線，在與赤色中軸和塞壬的戰鬥中有著活躍表現。</Text>
 		</Replace>
-		<Replace Tag="LOC_CIVINFO_AZURLANE_CORRESPOND" Language="zh_Hant_HK">
+    	<Replace Tag="LOC_CIVINFO_AZURLANE_CORRESPOND" Language="zh_Hant_HK">
       		<Text>參考原型</Text>
     	</Replace>
 		<Replace Tag="LOC_CIVINFO_CORRESPOND_EAGLE_UNION" Language="zh_Hant_HK">
@@ -35,55 +35,64 @@
 			<Text>科技與工業的璀璨</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>城市所有改良設施+1 [ICON_PRODUCTION] 生產力，+1 [ICON_SCIENCE] 科技值，研究完“工業化”科技後再+1 [ICON_PRODUCTION] 生產力。每回合獲得的 [ICON_GreatScientist] 大科學家與 [ICON_GreatEngineer] 大工程師點數提升100%，且 [ICON_GreatScientist] 大科學家與 [ICON_GreatEngineer] 大工程師擁有額外1點使用次數。每獲得1位偉人，[ICON_SCIENCE] 科技值與 [ICON_Culture] 文化值便+2%（上限為30%）</Text>
+			<Text>城市所有改良設施+1 [ICON_PRODUCTION] 生產力、+1 [ICON_SCIENCE] 科技值，研究完「工業化」科技後再+1 [ICON_PRODUCTION] 生產力。每回合獲得的 [ICON_GreatScientist] 大科學家與 [ICON_GreatEngineer] 大工程師點數提升100%，且 [ICON_GreatScientist] 大科學家與 [ICON_GreatEngineer] 大工程師擁有額外1點使用次數。每激活1次偉人，所有城市+5% [ICON_Production] 生產力。</Text>
 		</Replace>
 		<!--特殊區域-->
 		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_NAME" Language="zh_Hant_HK">
-			<Text>聖塔克拉拉穀</Text>
+			<Text>聖塔克拉拉谷</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>白鷹聯邦特色區域，取代工業區，解鎖更早，造價更低，且無人口需求（囙此並非專業化區域）。從相鄰區域額外獲得標準相鄰加成，[ICON_PRODUCTION] 生產力相鄰加成也提供 [ICON_SCIENCE] 科技值和 [ICON_GOLD] 金幣。[NEWLINE][NEWLINE]建成後隨機獎勵一項科技。此城所有改良設施+1 [ICON_SCIENCE] 科技值，+1 [ICON_PRODUCTION] 生產力，研究完“學徒”科技後再+1 [ICON_PRODUCTION] 生產力。[NEWLINE]從每個相鄰的港口、學院和聖塔克拉拉穀獲得+2 [ICON_PRODUCTION] 生產力加成。為每個相鄰的港口提供+2 [ICON_GOLD] 金幣加成，為每個相鄰的學院提供+2 [ICON_SCIENCE] 科技值加成。</Text>
+			<Text>白鷹聯邦特色區域，取代工業區，解鎖更早，造價更低，且無人口需求（因此並非專業化區域）。從相鄰區域獲得標準相鄰加成，[ICON_PRODUCTION] 生產力相鄰加成也提供 [ICON_SCIENCE] 科技值和 [ICON_GOLD] 金幣。[NEWLINE][NEWLINE]建成後隨機獎勵一項科技。此城所有改良設施+1 [ICON_SCIENCE] 科技值、+1 [ICON_PRODUCTION] 生產力，研究完「學徒」科技後再+1 [ICON_PRODUCTION] 生產力。[NEWLINE]為相鄰區域提供大量相鄰加成。從每個相鄰的港口和學院獲得+2 [ICON_PRODUCTION] 生產力。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK" >
-			<Text>聖塔克拉拉穀，又稱矽谷，位於美國加利福尼亞北部的大都會區三藩市灣區南面，是高科技事業雲集的地區。由於聖塔克拉拉穀最早是研究和生產以矽為基礎的半導體晶片的地方，因此得名矽谷。</Text>
+			<Text>聖塔克拉拉谷，又稱矽谷，位於美國加利福尼亞北部的大都會區舊金山灣區南面，是高科技事業雲集的地區。由於聖塔克拉拉谷最早是研究和生產以矽為基礎的半導體芯片的地方，因此得名矽谷。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_2" Language="zh_Hant_HK" >
-			<Text>聖塔克拉拉穀是電子工業和電腦業的王國，儘管美國和世界其它高新技術區都在不斷發展壯大，但聖塔克拉拉穀仍然是世界高新技術創新和發展的開創者和中心，該地區的風險投資占全美風險投資總額的三分之一，聖塔克拉拉穀的電腦公司已經發展到大約1500家。 一個世紀前這裡還是一片果園，但自從英特爾 、蘋果公司、穀歌、臉書、雅虎等高科技公司的總部在此落戶之後，出現了眾多繁華的市鎮。在短短的幾十年之內，矽谷走出了大批科技富翁。</Text>
+			<Text>聖塔克拉拉谷是電子工業和計算機業的王國，盡管美國和世界其它高新技術區都在不斷發展壯大，但聖塔克拉拉谷仍然是世界高新技術創新和發展的開創者和中心，該地區的風險投資占全美風險投資總額的三分之一，聖塔克拉拉谷的計算機公司已經發展到大約1500家。 一個世紀前這裏還是一片果園，但自從英特爾 、蘋果公司、谷歌、臉書、雅虎等高科技公司的總部在此落戶之後，出現了眾多繁華的市鎮。在短短的幾十年之內，矽谷走出了大批科技富翁。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_3" Language="zh_Hant_HK" >
-			<Text>聖塔克拉拉穀的主要部分位於三藩市半島南端的聖塔克拉拉縣，主要包括該縣下屬的從帕羅奧多市到縣府聖約瑟市一段長約25英里的谷地。而聖塔克拉拉穀的總範圍一般還包含三藩市灣區西南部聖馬特奧縣的部分城市，以及三藩市灣區東部阿拉米達縣的部分城市。 聖塔克拉拉穀的主要區位特點是擁有附近一些具有雄厚科研力量的美國頂尖大學作為依託，主要包括斯坦福大學和加州大學伯克利分校，還包括加州大學系統的其它幾所大學和聖塔克拉拉大學。結構上，聖塔克拉拉穀以高新技術中小公司群為基礎，同時擁有穀歌、Facebook、惠普、英特爾、蘋果公司、思科、英偉達、甲骨文、特斯拉、雅虎等大公司，融科學、技術、生產為一體。</Text>
+			<Text>聖塔克拉拉谷的主要部分位於舊金山半島南端的聖塔克拉拉縣，主要包括該縣下屬的從帕羅奧多市到縣府聖何塞市一段長約25英裏的谷地。而聖塔克拉拉谷的總範圍一般還包含舊金山灣區西南部聖馬特奧縣的部分城市，以及舊金山灣區東部阿拉米達縣的部分城市。 聖塔克拉拉谷的主要區位特點是擁有附近一些具有雄厚科研力量的美國頂尖大學作為依托，主要包括斯坦福大學和加州大學伯克利分校，還包括加州大學系統的其它幾所大學和聖塔克拉拉大學。結構上，聖塔克拉拉谷以高新技術中小公司群為基礎，同時擁有谷歌、Facebook、惠普、英特爾、蘋果公司、思科、英偉達、甲骨文、特斯拉、雅虎等大公司，融科學、技術、生產為一體。</Text>
 		</Replace>
 		<!--特殊加成-->
-		<Replace Tag="LOC_Santa_Clara_Valley_CAMPUS" Language="zh_Hant_HK">
+		<Replace Tag="LOC_SANTA_CLARA_DISTRICTS" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自相鄰的每個區域</Text>
+		</Replace>
+		<Replace Tag="LOC_SANTA_CLARA_CAMPUS" Language="zh_Hant_HK">
 			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自相鄰的學院</Text>
 		</Replace>
-		<Replace Tag="LOC_Santa_Clara_Valley_HARBOR" Language="zh_Hant_HK">
+		<Replace Tag="LOC_SANTA_CLARA_HARBOR" Language="zh_Hant_HK">
 			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自相鄰的港口</Text>
 		</Replace>
-		<Replace Tag="LOC_CAMPUS_Santa_Clara_Valley" Language="zh_Hant_HK">
-			<Text>+{1_num} [ICON_SCIENCE] 科技值來自相鄰的聖塔克拉拉穀</Text>
+		<Replace Tag="LOC_SANTA_CLARA_FOOD" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_FOOD] 食物來自相鄰的聖塔克拉拉谷</Text>
 		</Replace>
-		<Replace Tag="LOC_HARBOR_Santa_Clara_Valley" Language="zh_Hant_HK">
-			<Text>+{1_num} [ICON_GOLD] 金幣來自相鄰的聖塔克拉拉穀</Text>
+		<Replace Tag="LOC_SANTA_CLARA_PRODUCTION" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自相鄰的聖塔克拉拉谷</Text>
 		</Replace>
-		<Replace Tag="LOC_Santa_Clara_Valley_Santa_Clara_Valley" Language="zh_Hant_HK">
-			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自相鄰的聖塔克拉拉穀</Text>
+		<Replace Tag="LOC_SANTA_CLARA_GOLD" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_GOLD] 金幣來自相鄰的聖塔克拉拉谷</Text>
+		</Replace>
+		<Replace Tag="LOC_SANTA_CLARA_SCIENCE" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_SCIENCE] 科技值來自相鄰的聖塔克拉拉谷</Text>
+		</Replace>
+		<Replace Tag="LOC_SANTA_CLARA_CULTURE" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_CULTURE] 文化值來自相鄰的聖塔克拉拉谷</Text>
+		</Replace>
+		<Replace Tag="LOC_SANTA_CLARA_FAITH" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_FAITH] 信仰值來自相鄰的聖塔克拉拉谷</Text>
 		</Replace>
 		<!--特殊建築-->
 		<Replace Tag="LOC_BUILDING_NEWPORT_NEWS_SHIPBUILDING_NAME" Language="zh_Hant_HK">
 			<Text>紐波特紐斯造船廠</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_NEWPORT_NEWS_SHIPBUILDING_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>白鷹聯邦特色建築，此城中生產的所有海軍單位+50%戰鬥經驗值，初始便獲得一次強化升級並+5 [ICON_Strength] 戰鬥力。[ICON_PRODUCTION] 生產力加成等於港口區域的相鄰加成。 此城所有海岸和湖泊單元格提供的 [ICON_PRODUCTION] 生產力+2，生產艦隊與無敵艦隊所需 [ICON_PRODUCTION] 生產力減少25%，且每生產一個海軍單位便可額外獲得一個相同單位。</Text>
+			<Text>白鷹聯邦特色建築，此城中生產的所有海軍單位+50%戰鬥經驗值，初始便獲得一次強化升級並+5 [ICON_Strength] 戰鬥力。[ICON_PRODUCTION] 生產力加成等於港口區域的相鄰加成。此城所有海岸和湖泊單元格提供的 [ICON_PRODUCTION] 生產力+2並可直接生產艦隊與無敵艦隊，生產艦隊與無敵艦隊所需 [ICON_PRODUCTION] 生產力減少25%，且每生產一個海軍單位便可額外獲得一個相同單位。</Text>
 		</Replace>
 		<Replace Tag="LOC_PREVIEW_ENTERPRISE_HREAT_STRENGTH_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>+5，進取之心</Text>
 		</Replace>
-		<Replace Tag="LOC_ABILITY_ENTERPRISE_Strength_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>+5 [ICON_Strength] 戰鬥力來自紐波特紐斯造船廠</Text>
-		</Replace>
-		<Replace Tag="LOC_ABILITY_Newport_News_XP_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>從紐波特紐斯造船廠獲得的經驗值+50%</Text>
+		<Replace Tag="LOC_ABILITY_ENTERPRISE_HREAT_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>初始便獲得一次強化升級並+5 [ICON_Strength] 戰鬥力，+50%戰鬥經驗值</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK" >
 			<Text>紐波特紐斯造船及船塢公司，或簡稱為紐波特紐斯造船廠，由企業家柯林斯·亨廷頓出資，創立於1886年，其緊挨紐波特紐斯市，是美國最大的私營造船廠。2001年11月，NS被諾斯羅普·格魯門公司的海事部門收購。2011年3月，諾·格公司又將其與英格爾斯造船廠剝離，成立了獨立的亨廷頓英格爾工業公司。</Text>
@@ -95,19 +104,19 @@
 			<Text>紐波特紐斯造船廠起源自一個運煤碼頭。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_4" Language="zh_Hant_HK" >
-			<Text>1870年代，切薩皮克及俄亥俄鐵路公司主席 柯利斯·亨廷頓大舉注資，鋪設連接里士滿及俄亥俄河的鐵路。1881年，公司將鐵路延伸至維吉尼亞半島，並接駁到漢普頓錨地，于紐波特紐斯建設一個運煤碼頭。1886年，亨廷頓在碼頭旁興建船塢，供運煤船艦維修，並同時提供造船服務；造船公司自此成立，其時名為切薩皮克幹船塢及造船公司。1891年，造船廠建造的首架船隻下水，為一艘拖船。稍後美國海軍開始與造船公司簽約，建造軍艦。</Text>
+			<Text>1870年代，切薩皮克及俄亥俄鐵路公司主席 柯利斯·亨廷頓大舉註資，鋪設連接裏士滿及俄亥俄河的鐵路。1881年，公司將鐵路延伸至弗吉尼亞半島，並接駁到漢普頓錨地，於紐波特紐斯建設一個運煤碼頭。1886年，亨廷頓在碼頭旁興建船塢，供運煤船艦維修，並同時提供造船服務；造船公司自此成立，其時名為切薩皮克幹船塢及造船公司。1891年，造船廠建造的首架船只下水，為一艘拖船。稍後美國海軍開始與造船公司簽約，建造軍艦。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_5" Language="zh_Hant_HK" >
-			<Text>到1897年，公司已為美國海軍建造了三艘護衛艇。由於船塢的勞工需求甚大，紐波特紐斯人口逐漸增多，並在1896年正式成為獨立市；第一任市長為公司要員沃爾特·波斯特。1900年，亨廷頓去世，其外甥亨利·亨廷頓接管造船公司，並繼續擴建船廠。稍後無畏艦時代來臨，海軍競賽激烈；公司共為美國海軍建造了六艘無畏艦，包括德拉瓦號、德克薩斯號、賓夕法尼亞號、密西西比號、馬里蘭號戰列艦及西維吉尼亞號。1914年，公司亦建造了忠僕號。1915年5月7日，盧西塔尼亞號被德國潛艇擊沉，當時的公司主席亞伯特·霍金斯亦在死者之列。稍後公司為美軍建造多艘驅逐艦及其他艦隻。</Text>
+			<Text>到1897年，公司已為美國海軍建造了三艘護衛艇。由於船塢的勞工需求甚大，紐波特紐斯人口逐漸增多，並在1896年正式成為獨立市；第一任市長為公司要員沃爾特·波斯特。1900年，亨廷頓去世，其外甥亨利·亨廷頓接管造船公司，並繼續擴建船廠。稍後無畏艦時代來臨，海軍競賽激烈；公司共為美國海軍建造了六艘無畏艦，包括特拉華號、得克薩斯號、賓夕法尼亞號、密西西比號、馬裏蘭號戰列艦及西弗吉尼亞號。1914年，公司亦建造了忠仆號。1915年5月7日，盧西塔尼亞號被德國潛艇擊沈，當時的公司主席亞伯特·霍金斯亦在死者之列。稍後公司為美軍建造多艘驅逐艦及其他艦只。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_6" Language="zh_Hant_HK" >
-			<Text>第一次世界大戰結束後，造船公司為海軍建造了多艘航空母艦，包括突擊者號、約克城號、企業號及大黃蜂號。第二次世界大戰前後，公司建造了九艘埃塞克斯級航空母艦，包括埃塞克斯號、約克城號、無畏號、大黃蜂號、佛蘭克林號、提康得羅加號、藍道夫號、拳師號及萊特號。由於美軍亟需更多軍艦，公司在北卡羅來納州威爾明頓開設分公司，並建設臨時船廠造船。戰爭結束前夕，公司亦在紐波特紐斯建造中途島級航空母艦，包括中途島號及珊瑚海號；稍後又建造了美國號郵輪。</Text>
+			<Text>第一次世界大戰結束後，造船公司為海軍建造了多艘航空母艦，包括突擊者號、約克城號、企業號及大黃蜂號。第二次世界大戰前後，公司建造了九艘埃塞克斯級航空母艦，包括埃塞克斯號、約克城號、無畏號、大黃蜂號、富蘭克林號、提康德羅加號、倫道夫號、拳師號及萊特號。由於美軍亟需更多軍艦，公司在北卡羅來納州威爾明頓開設分公司，並建設臨時船廠造船。戰爭結束前夕，公司亦在紐波特紐斯建造中途島級航空母艦，包括中途島號及珊瑚海號；稍後又建造了美國號郵輪。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_7" Language="zh_Hant_HK" >
-			<Text>戰後造船公司與海軍的關係仍非常緊密；福萊斯特號、突擊者號均在紐波特紐斯建造。</Text>
+			<Text>戰後造船公司與海軍的關系仍非常緊密；福萊斯特號、突擊者號均在紐波特紐斯建造。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_8" Language="zh_Hant_HK" >
-			<Text>1954年，造船公司與西屋電子公司及美國海軍合作，研發艦載核反應爐，使軍艦可以核動力行駛。1958年，全球第一艘核動力航空母艦——企業號航空母艦在紐波特紐斯建造，並在1960年下水。稍後公司亦建造了美利堅號及甘迺迪號。1968年，造船公司與坦尼可公司合併。1970年代開始，造船公司建造了所有的尼米茲級航空母艦，亦建造了部分洛杉磯級核潛艇。1996年，造船公司脫離坦尼可公司，並以紐波特紐斯造船公司之名在紐約上市。2001年11月7日，造船公司被諾斯洛普·格魯門收購，船廠亦更名為諾斯洛普·格魯門造船廠。2009年，公司開始建造第一艘福特級核動力航空母艦。</Text>
+			<Text>1954年，造船公司與西屋電子公司及美國海軍合作，研發艦載核反應爐，使軍艦可以核動力行駛。1958年，全球第一艘核動力航空母艦——企業號航空母艦在紐波特紐斯建造，並在1960年下水。稍後公司亦建造了美利堅號及肯尼迪號。1968年，造船公司與坦尼可公司合並。1970年代開始，造船公司建造了所有的尼米茲級航空母艦，亦建造了部分洛杉磯級核潛艇。1996年，造船公司脫離坦尼可公司，並以紐波特紐斯造船公司之名在紐約上市。2001年11月7日，造船公司被諾斯洛普·格魯門收購，船廠亦更名為諾斯洛普·格魯門造船廠。2009年，公司開始建造第一艘福特級核動力航空母艦。</Text>
 		</Replace>
 		<!--特殊單位-->
 		<Replace Tag="LOC_UNIT_ENTERPRISE_CLASS_NAME" Language="zh_Hant_HK">
@@ -117,13 +126,13 @@
 			<Text>白鷹聯邦特色原子能海軍單位，擁有強大的近戰攻擊力與空中單位運輸能力和特殊的晉升路線。每回合+4影響力點數。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENTERPRISE_CLASS_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
-			<Text>1945年，二戰結束後，美國為了繼續保持海軍優勢以實現其全球戰略目標，採取了兩項措施，一是淘汰一批艦齡長、噸位小、性能差的航母，封存或報廢大部分戰列艦；二是著手設計和建造一批載機多、性能好、適應現代海戰需要的超大型航母，並於20世紀50年代相繼建成了“福萊斯特”號、“薩拉托加”號、“突擊者”號和“獨立”號等大型航母。但由於飛機尺寸、重量和速度的增加以及引進燃料耗量極大的噴氣推進，對航空母艦提出了更高的要求。儘管福萊斯特級航空母艦和小鷹級航空母艦在艦型、裝備佈置和排水量上比二戰期間的航母要先進得多，但是仍遠不能適應艦載機的需要。</Text>
+			<Text>1945年，二戰結束後，美國為了繼續保持海軍優勢以實現其全球戰略目標，采取了兩項措施，一是淘汰一批艦齡長、噸位小、性能差的航母，封存或報廢大部分戰列艦；二是著手設計和建造一批載機多、性能好、適應現代海戰需要的超大型航母，並於20世紀50年代相繼建成了「福萊斯特」號、「薩拉托加」號、「突擊者」號和「獨立」號等大型航母。但由於飛機尺寸、重量和速度的增加以及引進燃料耗量極大的噴氣推進，對航空母艦提出了更高的要求。盡管福萊斯特級航空母艦和小鷹級航空母艦在艦型、裝備布置和排水量上比二戰期間的航母要先進得多，但是仍遠不能適應艦載機的需要。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENTERPRISE_CLASS_CHAPTER_HISTORY_PARA_2" Language="zh_Hant_HK">
-			<Text>1950年，經美國“核潛艇之父”裡科弗多方遊說，美海軍作戰部長福里斯特·謝爾曼認為美國不僅需要核潛艇，還需要“探討“建造一艘具有核動力裝置的大型航空母艦的可能性。1952年1月，美國完成了航空母艦核反應爐的選型研究。但此時謝爾曼去世，核動力航母的建造失去了有力的支援，加之反對派呼聲日盛，研製工作暫時擱淺。1954年9月30日，美國第一艘核潛艇“鸚鵡螺”號正式服役的消息轟動全球，再度引起人們對建造核動力水面艦艇的注目。1956年1月，美國海軍正式發文，開始核動力航母的初步設計。1957年12月，世界上第一艘核動力水面艦艇長灘號巡洋艦正式開工建造，1957年8月，蘇聯宣佈發射成功了一枚洲際導彈。為了表明對蘇聯的軍事優勢，美國海軍決定將核動力航空母艦列入1958年造艦計畫。當時，裡科弗保證，其所設計的核動力航母只需安裝2個反應堆，造價可相對減少。</Text>
+			<Text>1950年，經美國「核潛艇之父」裏科弗多方遊說，美海軍作戰部長福雷斯特·謝爾曼認為美國不僅需要核潛艇，還需要「探討「建造一艘具有核動力裝置的大型航空母艦的可能性。1952年1月，美國完成了航空母艦核反應堆的選型研究。但此時謝爾曼去世，核動力航母的建造失去了有力的支持，加之反對派呼聲日盛，研製工作暫時擱淺。1954年9月30日，美國第一艘核潛艇「鸚鵡螺」號正式服役的消息轟動全球，再度引起人們對建造核動力水面艦艇的註目。1956年1月，美國海軍正式發文，開始核動力航母的初步設計。1957年12月，世界上第一艘核動力水面艦艇長灘號巡洋艦正式開工建造，1957年8月，蘇聯宣布發射成功了一枚洲際導彈。為了表明對蘇聯的軍事優勢，美國海軍決定將核動力航空母艦列入1958年造艦計劃。當時，裏科弗保證，其所設計的核動力航母只需安裝2個反應堆，造價可相對減少。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENTERPRISE_CLASS_CHAPTER_HISTORY_PARA_3" Language="zh_Hant_HK">
-			<Text>世界上僅有的一艘建成的企業級航空母艦是企業號航空母艦，同時也是美國海軍及世界第一艘核動力航空母艦。企業號航空母艦主尺度為342.3米×40.8米×11.9米，艦員編制3215人，動力為8座A2W壓水反應堆，渦輪電力推進，四軸四槳，最大航速35節，續航力400000海裡/20節，飛行甲板331.6米×76.8米，最大載機量84架 。企業號航空母艦於1950年開始設計，1958年2月4日在紐波特紐斯造船及船塢公司開工建造，1960年9月24日下水，1961年11月25日服役，2012年12月1日舉行退役典禮，在美國海軍服役51年，是在役最長的航空母艦。</Text>
+			<Text>世界上僅有的一艘建成的企業級航空母艦是企業號航空母艦，同時也是美國海軍及世界第一艘核動力航空母艦。企業號航空母艦主尺度為342.3米×40.8米×11.9米，艦員編製3215人，動力為8座A2W壓水反應堆，渦輪電力推進，四軸四槳，最大航速35節，續航力400000海裏/20節，飛行甲板331.6米×76.8米，最大載機量84架 。企業號航空母艦於1950年開始設計，1958年2月4日在紐波特紐斯造船及船塢公司開工建造，1960年9月24日下水，1961年11月25日服役，2012年12月1日舉行退役典禮，在美國海軍服役51年，是在役最長的航空母艦。</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_ENTERPRISE_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>每回合+4影響力點數</Text>

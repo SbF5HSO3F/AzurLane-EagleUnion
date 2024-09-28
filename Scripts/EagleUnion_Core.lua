@@ -10,6 +10,12 @@ function EagleUnionLeaderTypeMatched(playerID, LeaderTpye)
     return pPlayerConfig and pPlayerConfig:GetLeaderTypeName() == LeaderTpye
 end
 
+--Civilization type judgment. if macth, return true (GamePlay, UI)
+function EagleUnionCivTypeMatched(playerID, CivTpye)
+    local pPlayerConfig = playerID and PlayerConfigurations[playerID]
+    return pPlayerConfig and pPlayerConfig:GetCivilizationTypeName() == CivTpye
+end
+
 --process rounding (GamePlay, UI)
 function EagleUnionNumRound(num)
     return math.floor((num + 0.05) * 10) / 10
