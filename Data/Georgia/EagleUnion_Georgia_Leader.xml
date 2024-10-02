@@ -60,7 +60,7 @@
 		<!--种植园加文化-->
 		<Row>
 			<TraitType>TRAIT_LEADER_HEAVY_BARREL_BLASTER</TraitType>
-			<ModifierId>HEARY_IMPROVEMENT_PLANTATION_ADD_CULTURE</ModifierId>
+			<ModifierId>HEARY_IMPROVEMENT_PLANTATION_BUFF</ModifierId>
 		</Row>
 		<!--种植园对单元格释放文化炸弹-->
 		<Row>
@@ -116,7 +116,7 @@
 		</Row>
 		<!--种植园加文化-->
 		<Row>
-			<ModifierId>HEARY_IMPROVEMENT_PLANTATION_ADD_CULTURE</ModifierId>
+			<ModifierId>HEARY_IMPROVEMENT_PLANTATION_BUFF</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_ADJUST_PLOT_YIELD</ModifierType>
 			<SubjectRequirementSetId>EAGLE_UNION_PLOT_HAS_PLANTATION</SubjectRequirementSetId>
 		</Row>
@@ -181,14 +181,14 @@
 		</Row>
 		<!--种植园加文化-->
 		<Row>
-			<ModifierId>HEARY_IMPROVEMENT_PLANTATION_ADD_CULTURE</ModifierId>
+			<ModifierId>HEARY_IMPROVEMENT_PLANTATION_BUFF</ModifierId>
 			<Name>Amount</Name>
-			<Value>3</Value>
+			<Value>2, 4</Value>
 		</Row>
 		<Row>
-			<ModifierId>HEARY_IMPROVEMENT_PLANTATION_ADD_CULTURE</ModifierId>
+			<ModifierId>HEARY_IMPROVEMENT_PLANTATION_BUFF</ModifierId>
 			<Name>YieldType</Name>
-			<Value>YIELD_CULTURE</Value>
+			<Value>YIELD_CULTURE, YIELD_GOLD</Value>
 		</Row>
 		<!--种植园对无主单元格释放文化炸弹-->
 		<Row>
@@ -238,7 +238,7 @@
 		<Row>
 			<ModifierId>HEAVY_DOMESTIC_ROUTE_ADD_GOLD</ModifierId>
 			<Name>YieldType</Name>
-			<Value>YIELD_CULTURE</Value>
+			<Value>YIELD_GOLD</Value>
 		</Row>	
 		<!--国外贸易路线加文化-->
 		<Row>

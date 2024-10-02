@@ -35,8 +35,11 @@
 			 CitizenSlots="2"
 			 TraitType="TRAIT_CIVILIZATION_DISTRICT_SANTA_CLARA_VALLEY"/>
 	</Districts>
+	<MomentIllustrations>
+		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_DISTRICT" MomentDataType="MOMENT_DATA_DISTRICT" GameDataType="DISTRICT_SANTA_CLARA_VALLEY" Texture="Moment_SantaClaraValley.dds"/>
+	</MomentIllustrations>
 	<District_GreatPersonPoints>
-		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER" PointsPerTurn="1"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER"  PointsPerTurn="1"/>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" GreatPersonClassType="GREAT_PERSON_CLASS_SCIENTIST" PointsPerTurn="1"/>
 	</District_GreatPersonPoints>
 	<District_TradeRouteYields>

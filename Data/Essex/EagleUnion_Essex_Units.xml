@@ -16,7 +16,7 @@
 	</UnitAiInfos>
 	<UnitReplaces>
 		<Row CivUniqueUnitType="UNIT_ESSEX_CLASS"	ReplacesUnitType="UNIT_AIRCRAFT_CARRIER"/>
-		<Row CivUniqueUnitType="UNIT_F2H"				ReplacesUnitType="UNIT_JET_FIGHTER"/>
+		<Row CivUniqueUnitType="UNIT_F2H"			ReplacesUnitType="UNIT_JET_FIGHTER"/>
 	</UnitReplaces>
 	<UnitUpgrades>
 		<Row Unit="UNIT_ESSEX_CLASS"	UpgradeUnit="UNIT_ENTERPRISE_CLASS"/>
@@ -24,8 +24,8 @@
 	<TypeTags>
 		<Row Type="UNIT_ESSEX_CLASS" Tag="CLASS_NAVAL_CARRIER"/>
 		<Row Type="UNIT_ESSEX_CLASS" Tag="CLASS_ANTI_AIR"/>
-		<Row Type="UNIT_F2H"			Tag="CLASS_AIRCRAFT"/>
-		<Row Type="UNIT_F2H"			Tag="CLASS_AIR_FIGHTER"/>
+		<Row Type="UNIT_F2H"		 Tag="CLASS_AIRCRAFT"/>
+		<Row Type="UNIT_F2H"		 Tag="CLASS_AIR_FIGHTER"/>
 	</TypeTags>
 	<Units>
 		<!--埃塞克斯级航空母舰-->
@@ -35,6 +35,6 @@
 	</Units>
 	<MomentIllustrations>
 		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_ESSEX_CLASS"	Texture="Moment_Essex_class.dds"/>
-		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_F2H"				Texture="Moment_F2H.dds"/>
+		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_F2H"			Texture="Moment_F2H.dds"/>
 	</MomentIllustrations>
 </GameData>

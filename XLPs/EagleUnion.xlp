@@ -205,6 +205,22 @@
 			<m_EntryID text="IMG_LEADER_ALLEN_M_SUMNER_DD692_LOADING_FOREGROUND"/>
 			<m_ObjectName text="IMG_LEADER_ALLEN_M_SUMNER_DD692_LOADING_FOREGROUND"/>
 		</Element>
+		<Element>
+			<m_EntryID text="Moment_IowaClass_PlanIV"/>
+			<m_ObjectName text="Moment_IowaClass_PlanIV"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_NewportNews_Shipbuilding"/>
+			<m_ObjectName text="Moment_NewportNews_Shipbuilding"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_SantaClaraValley"/>
+			<m_ObjectName text="Moment_SantaClaraValley"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_St_Louis_class"/>
+			<m_ObjectName text="Moment_St_Louis_class"/>
+		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>
 		<Element>WINDOWS</Element>
