@@ -86,7 +86,7 @@
 			<Text>Newport News Shipbuilding</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_NEWPORT_NEWS_SHIPBUILDING_DESCRIPTION" Language="en_US">
-			<Text>A building unique to Eagle Union. All naval units trained in this city +50% combat experience, starting with a free promotion and +5 [ICON_Strength] Combat Strength. Bonus [ICON_PRODUCTION] Production equal to the adjacency bonus of the Harbor district. +2 [ICON_PRODUCTION] Production on all Coast and Lake tiles for this city. In this city, Fleet and Armada training costs reduced 25%, and receive a second naval unit each time you train a naval unit.</Text>
+			<Text>A building unique to Eagle Union. All naval units trained in this city +50% combat experience, starting with a free promotion and +5 [ICON_Strength] Combat Strength. Bonus [ICON_PRODUCTION] Production equal to the adjacency bonus of the Harbor district. +2 [ICON_PRODUCTION] Production on all Coast and Lake tiles for this city. Allows Fleets and Armadas to be trained directly. In this city, Fleet and Armada training costs reduced 25%, and receive a second naval unit each time you train a naval unit.</Text>
 		</Replace>
 		<Replace Tag="LOC_PREVIEW_ENTERPRISE_HREAT_STRENGTH_DESCRIPTION" Language="en_US">
 			<Text>+5, Enterprising Heart</Text>
