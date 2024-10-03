@@ -46,17 +46,17 @@
 		<Replace Tag="LOC_TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET_NAME" Language="en_US">
 			<Text>Fightin'est Ship in the Fleet</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET_DESCRIPTION" Language="en_US">
+			<Text>+7 [ICON_Strength] Combat Strength for all naval units, all naval units +1 [ICON_Strength] Combat Strength for all military units. +1 [ICON_Movement] Movement for all units, +1 Sight. Reduce the time required to produce military units by 50%. When producing a Naval Combat unit, obtain [ICON_Culture] Culture equivalent to 40% of the unit's cost. Gain the Essex-class aircraft carrier and F2H Banshee unique unit respectively when the Combustion technology and the Laser technology are researched.</Text>
+		</Replace>
 		<Replace Tag="LOC_ABILITY_ESSEX_NAME" Language="en_US">
 			<Text>Fightin'est Ship in the Fleet</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET_DESCRIPTION" Language="en_US">
-			<Text>+7 [ICON_Strength] Combat Strength for all naval units, all naval units +1 [ICON_Strength] Combat Strength for all units. +1 [ICON_Movement] Movement for all units, +1 Sight. Reduce the time required to produce military units by 50%. When producing a Naval Combat unit, obtain [ICON_Culture] Culture equivalent to 40% of the unit's cost. Gain the Essex-class aircraft carrier and F2H Banshee unique unit respectively when the Combustion technology and the Laser technology are researched.</Text>
 		</Replace>
 		<Replace Tag="LOC_PREVIEW_ESSEX_NAVY_STRENGTH_DESCRIPTION" Language="en_US">
 			<Text>+{1_Amount}, Fightin'est Ship in the Fleet</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_ESSEX_NAYY_BUFF_DESCRIPTION" Language="en_US">
-			<Text>+7 [ICON_Strength] Combat Strength from Fightin'est Ship in the Fleet, and +1 [ICON_Strength] Combat Strength for all units</Text>
+			<Text>+7 [ICON_Strength] Combat Strength from Fightin'est Ship in the Fleet, and +1 [ICON_Strength] Combat Strength for all military units</Text>
 		</Replace>
 		<Replace Tag="LOC_PREVIEW_ESSEX_UNIT_ADD_COMBAT_DESCRIPTION" Language="en_US">
 			<Text>+{Property} [ICON_Strength] Combat Strength from naval units</Text>
