@@ -9,9 +9,9 @@
 		<Replace Tag="LOC_LEADER_ESSEX_CV9_NAME" Language="zh_Hant_HK">
 			<Text>埃塞克斯</Text>
 		</Replace>
-		<!--載入-->
+		<!--加載-->
 		<Replace Tag="LOC_LOADING_INFO_LEADER_ESSEX_CV9" Language="zh_Hant_HK">
-			<Text>埃塞克斯，值得歷史留名的航母！您出生於一個屬於你的時代，一個航母的時代。您與您的姐妹們的誕生，堪稱是世界上的工業壯舉。看啊，那整齊的艦隊在海面上航行，延綿至天際。您將立下傳奇的功勳，您將獲得所有的勝利。</Text>
+			<Text>埃塞克斯，值得歷史留名的航母！您出生於一個屬於你的時代，一個航母的時代。您與您的姐妹們的誕生，堪稱是世界上的工業壯舉。看啊，那整齊的艦隊在海面上航行，延綿至天際。您將立下傳奇的功勛，您將獲得所有的勝利。</Text>
 		</Replace>
 		<!--百科-->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_QUOTE" Language="zh_Hant_HK">
@@ -21,13 +21,13 @@
 			<Text>埃塞克斯擁有強大的海軍，大力發展海軍將會為埃塞克斯的軍隊帶來無與倫比的力量</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_DETAILED_BODY" Language="zh_Hant_HK">
-			<Text>毫無疑問，作為艦隊最善戰之艦，埃塞克斯會擁有最為強大的海上力量。在岸邊建立城市，利用聖塔克拉拉穀和港口促進城市快速發展，該城市很快就能有組建一支強大艦隊的能力。結合埃塞克斯的能力與特色單位，埃塞克斯可以再現“滅國艦隊”的輝煌。不過，雖然埃塞克斯的海軍極其強大，並不代表她的陸軍力量就會薄弱——埃塞克斯的軍隊能從她的艦隊中獲得大量 [ICON_Strength] 戰鬥力加成。這一切都適合埃塞克斯取得征服勝利。同時身為一名白鷹文明的領導者，埃塞克斯也是科技勝利的強力競爭者。</Text>
+			<Text>毫無疑問，作為艦隊最善戰之艦，埃塞克斯會擁有最為強大的海上力量。在岸邊建立城市，利用聖塔克拉拉谷和港口促進城市快速發展，該城市很快就能有組建一支強大艦隊的能力。結合埃塞克斯的能力與特色單位，埃塞克斯可以再現「滅國艦隊」的輝煌。不過，雖然埃塞克斯的海軍極其強大，並不代表她的陸軍力量就會薄弱——埃塞克斯的軍隊能從她的艦隊中獲得大量 [ICON_Strength] 戰鬥力加成。這一切都適合埃塞克斯取得征服勝利。同時身為一名白鷹文明的領導者，埃塞克斯也是科技勝利的強力競爭者。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
-			<Text>埃塞克斯號航空母艦是美國海軍埃塞克斯級航空母艦的首艦。它是美軍第四艘以埃塞克斯為名的軍艦，紀念1799年麻塞諸塞州的埃塞克斯縣居民捐贈第一艘埃塞克斯艦給美國政府。由於在二戰中表現出色，艦上水兵稱之為“艦隊最善戰之艦”。</Text>
+			<Text>埃塞克斯號航空母艦是美國海軍埃塞克斯級航空母艦的首艦。它是美軍第四艘以埃塞克斯為名的軍艦，紀念1799年馬薩諸塞州的埃塞克斯縣居民捐贈第一艘埃塞克斯艦給美國政府。由於在二戰中表現出色，艦上水兵稱之為「艦隊最善戰之艦」。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_HISTORY_PARA_2" Language="zh_Hant_HK">
-			<Text>埃塞克斯號於1941年4月28日在紐波特紐斯造船及幹船塢公司開工建設。數月後珍珠港事件爆發，美國便正式參與第二次世界大戰，並加速建造埃塞克斯號在內的數艘航母。埃塞克斯號1942年7月31日下水，1943年開始參與太平洋戰爭。戰後埃塞克斯號被封存停放，並進行現代化改裝。1951年埃塞克斯號完成改裝後再次服役，並參與兩次朝鮮戰爭巡航，期間埃塞克斯號重編為攻擊航母，舷號改為CVA-9。朝鮮戰爭後，埃塞克斯號再次進行改裝，增設斜角甲板，並調往大西洋艦隊。1960年埃塞克斯號重編為反潛航母，舷號改為CVS-9。除大型戰爭外，埃塞克斯號也介入了多場冷戰危機，包括豬灣事件與古巴導彈危機。有趣的是，埃塞克斯號還參與了美國的太空計畫，回收了阿波羅7號的指揮艙。</Text>
+			<Text>埃塞克斯號於1941年4月28日在紐波特紐斯造船及幹船塢公司開工建設。數月後珍珠港事件爆發，美國便正式參與第二次世界大戰，並加速建造埃塞克斯號在內的數艘航母。埃塞克斯號1942年7月31日下水，1943年開始參與太平洋戰爭。戰後埃塞克斯號被封存停放，並進行現代化改裝。1951年埃塞克斯號完成改裝後再次服役，並參與兩次朝鮮戰爭巡航，期間埃塞克斯號重編為攻擊航母，舷號改為CVA-9。朝鮮戰爭後，埃塞克斯號再次進行改裝，增設斜角甲板，並調往大西洋艦隊。1960年埃塞克斯號重編為反潛航母，舷號改為CVS-9。除大型戰爭外，埃塞克斯號也介入了多場冷戰危機，包括豬灣事件與古巴導彈危機。有趣的是，埃塞克斯號還參與了美國的太空計劃，回收了阿波羅7號的指揮艙。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ESSEX_CV9_CHAPTER_HISTORY_PARA_3" Language="zh_Hant_HK">
 			<Text>埃塞克斯號於1969年6月30日退役，並加入後備艦隊。1973年6月1日，埃塞克斯號除籍，並以1,660,000美金出售拆解。1975年6月1日，埃塞克斯號於新澤西州卡尼鎮拆解。</Text>
@@ -46,17 +46,17 @@
 		<Replace Tag="LOC_TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET_NAME" Language="zh_Hant_HK">
 			<Text>艦隊最善戰之艦</Text>
 		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>所有海軍單位+7 [ICON_Strength] 戰鬥力，每個海軍單位為所有軍事單位+1 [ICON_Strength] 戰鬥力。所有單位+1 [ICON_Movement] 移動力、+1視野範圍。生產軍事單位所需時間減少50%，生產出一個海上戰爭單位時，將會獲得等同於該單位造價40%的 [ICON_Culture] 文化值。研究完「內燃機」與「激光」科技後分別獲得特色單位「埃塞克斯級航空母艦」與「F2H 報喪女妖」。</Text>
+		</Replace>
 		<Replace Tag="LOC_ABILITY_ESSEX_NAME" Language="zh_Hant_HK">
 			<Text>善戰之艦</Text>
-		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>所有海軍單位+7 [ICON_Strength] 戰鬥力，每個海軍單位為所有單位+1 [ICON_Strength] 戰鬥力。所有單位+1 [ICON_Movement] 移動力、+1視野範圍。生產軍事單位所需時間減少50%，生產出一個海上戰爭單位時，將會獲得等同於該單位造價40%的 [ICON_Culture] 文化值。研究完“內燃機”與“鐳射”科技後分別獲得特色單位“埃塞克斯級航空母艦”與“F2H 報喪女妖”。</Text>
 		</Replace>
 		<Replace Tag="LOC_PREVIEW_ESSEX_NAVY_STRENGTH_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>+{1_Amount}，善戰之艦</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_ESSEX_NAYY_BUFF_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>善戰之艦提供+7 [ICON_Strength] 战斗力，為所有單位提供+1 [ICON_Strength] 戰鬥力</Text>
+			<Text>善戰之艦提供+7 [ICON_Strength] 戰鬥力，為所有軍事單位提供+1 [ICON_Strength] 戰鬥力</Text>
 		</Replace>
 		<Replace Tag="LOC_PREVIEW_ESSEX_UNIT_ADD_COMBAT_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>海軍單位提供+{Property} [ICON_Strength] 戰鬥力</Text>
@@ -72,22 +72,22 @@
 			<Text>取代航空母艦的埃塞克斯特色現代海軍單位，解鎖更早。移動力高於航空母艦，近戰攻擊力更高，擁有防空力量和更多的初始飛機容量。擁有特殊的晉升路線，並可升級至企業級航空母艦。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ESSEX_CLASS_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
-			<Text>埃塞克斯級航空母艦是美國海軍二戰期間建造的一型艦隊航空母艦，同型艦24艘，有“短船體型”和“長船體型”之分，區別在於艦艏。其中在二戰期間建造了17艘，戰後建造了7艘。原計劃建造32艘，其中6艘取消，2艘開工未建成。是美國歷來所建數量最多的一級航空母艦，在太平洋戰爭中成為美國海軍中流砥柱，向世人訴說了現代戰爭中制空權爭奪的重要性。</Text>
+			<Text>埃塞克斯級航空母艦是美國海軍二戰期間建造的一型艦隊航空母艦，同型艦24艘，有「短船體型」和「長船體型」之分，區別在於艦艏。其中在二戰期間建造了17艘，戰後建造了7艘。原計劃建造32艘，其中6艘取消，2艘開工未建成。是美國歷來所建數量最多的一級航空母艦，在太平洋戰爭中成為美國海軍中流砥柱，向世人訴說了現代戰爭中製空權爭奪的重要性。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ESSEX_CLASS_CHAPTER_HISTORY_PARA_2" Language="zh_Hant_HK">
-			<Text>在埃塞克斯級之前，美國海軍已在1922年《華盛頓海軍條約》框架下建造了兩艘約克城級航空母艦和一艘胡蜂號。隨著日本在1936年1月退出第二次倫敦海軍會議，新條約無疾而終。時任總統羅斯福決心加倍擴充海軍，以制衡日本。在海軍委員會主席卡爾·文森推動下，美國國會於1938年5月17日通過第二次文森法案，擴大海軍規模兩成，同時增加40,000噸航空母艦噸位。雖然約克城級有載機量不足等問題，美軍仍先用20,000噸用作建造大黃蜂號，以解燃眉之急，而另外20,000噸則用作建造改良的約克城級航空母艦，編號CV-9，即埃塞克斯級。</Text>
+			<Text>在埃塞克斯級之前，美國海軍已在1922年《華盛頓海軍條約》框架下建造了兩艘約克城級航空母艦和一艘胡蜂號。隨著日本在1936年1月退出第二次倫敦海軍會議，新條約無疾而終。時任總統羅斯福決心加倍擴充海軍，以製衡日本。在海軍委員會主席卡爾·文森推動下，美國國會於1938年5月17日通過第二次文森法案，擴大海軍規模兩成，同時增加40,000噸航空母艦噸位。雖然約克城級有載機量不足等問題，美軍仍先用20,000噸用作建造大黃蜂號，以解燃眉之急，而另外20,000噸則用作建造改良的約克城級航空母艦，編號CV-9，即埃塞克斯級。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ESSEX_CLASS_CHAPTER_HISTORY_PARA_3" Language="zh_Hant_HK">
-			<Text>埃塞克斯級航空母艦作為約克城級航空母艦的後續艦，其改進主要針對約克城級的不足。尤其是面對新式艦載機時機庫和甲板都捉襟見肘的問題，此外還需要強化彈射器、攔截索、攔截網、升降臺等。同時，海軍更要求新式航空母艦必須強化防空火力及防禦，同時保持高速。不論是文森法案授權的20,000噸位，還是條約限制的23,000噸，均不足應用。第二次世界大戰爆發後，海軍條約即時失效，埃塞克斯級的設計再無噸位限制，而美國亦隨即加速設計進程。1940年，最終定型埃塞克斯級的標準排水量達到了27500噸。</Text>
+			<Text>埃塞克斯級航空母艦作為約克城級航空母艦的後續艦，其改進主要針對約克城級的不足。尤其是面對新式艦載機時機庫和甲板都捉襟見肘的問題，此外還需要強化彈射器、攔截索、攔截網、升降臺等。同時，海軍更要求新式航空母艦必須強化防空火力及防禦，同時保持高速。不論是文森法案授權的20,000噸位，還是條約限製的23,000噸，均不足應用。第二次世界大戰爆發後，海軍條約即時失效，埃塞克斯級的設計再無噸位限製，而美國亦隨即加速設計進程。1940年，最終定型埃塞克斯級的標準排水量達到了27500噸。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ESSEX_CLASS_CHAPTER_HISTORY_PARA_4" Language="zh_Hant_HK">
-			<Text>1940年6月，在羅斯福總統的大力支持下，美國國會通過“艦隊擴大法案”和“兩洋海軍法案”，計畫於1940財年建造11艘、1941財年建造2艘埃塞克斯級航空母艦。1941年4月28日，埃塞克斯級航母首艦“埃塞克斯”號開始建造。</Text>
+			<Text>1940年6月，在羅斯福總統的大力支持下，美國國會通過「艦隊擴大法案」和「兩洋海軍法案」，計劃於1940財年建造11艘、1941財年建造2艘埃塞克斯級航空母艦。1941年4月28日，埃塞克斯級航母首艦「埃塞克斯」號開始建造。</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_F2H_NAME" Language="zh_Hant_HK">
 			<Text>F2H 報喪女妖</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_F2H_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>取代噴氣式戰鬥機的埃塞克斯特色資訊空中單位。強於噴氣式戰鬥機，擁有更遠的射程和移動力。</Text>
+			<Text>取代噴氣式戰鬥機的埃塞克斯特色信息空中單位。強於噴氣式戰鬥機，擁有更遠的射程和移動力。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_F2H_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
 			<Text>F2H 報喪女妖是麥克唐納公司研製的單座艦載戰鬥/偵察機，由FH-1 鬼怪改進而成。1951年8月25日，埃塞克斯成為了美國海軍在戰鬥任務中第一艘搭載噴氣式飛機F2H 報喪女妖的航母，成功在實戰中完成了噴氣式飛機首次在航母上的起降。</Text>
@@ -95,7 +95,7 @@
 		<!--外交對話-->
 		<!--同意聲明友誼-->
 		<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ESSEX_CV9_ANY" Language="zh_Hant_HK">
-			<Text>我很高興宣佈你是白鷹的盟友，我們接受這份友誼。</Text>
+			<Text>我很高興宣布你是白鷹的盟友，我們接受這份友誼。</Text>
 		</Row>
 		<!--拒絕聲明友誼-->
 		<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ESSEX_CV9_ANY" Language="zh_Hant_HK">
@@ -131,11 +131,11 @@
 		</Row>
 		<!--請求派遣使節-->
 		<Row Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="zh_Hant_HK">
-			<Text>我將派出使團前去你的國家拜訪。他們將會帶著訓練和維持一支強大海軍的經驗與你分享，還有令人尊敬的企業前輩的事蹟。</Text>
+			<Text>我將派出使團前去你的國家拜訪。他們將會帶著訓練和維持一支強大海軍的經驗與你分享，還有令人尊敬的企業前輩的事跡。</Text>
 		</Row>
 		<!--被譴責-->
 		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_ESSEX_CV9_ANY" Language="zh_Hant_HK">
-			<Text>哈哈！你這是心中有計劃了嗎？希望不是什麼九段漸減邀擊計畫。</Text>
+			<Text>哈哈！你這是心中有計劃了嗎？希望不是什麽九段漸減邀擊計劃。</Text>
 		</Row>
 		<!--譴責玩家-->
 		<Row Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="zh_Hant_HK">
@@ -143,7 +143,7 @@
 		</Row>
 		<!--初次見面-->
 		<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_ESSEX_CV9_ANY" Language="zh_Hant_HK">
-			<Text>我是埃塞克斯級首艦埃塞克斯號，從誕生起就備受大家的期待。參加了大大小小的戰鬥共68次，獲得了“艦隊最善戰之艦”的稱號，也算是完成了大家的期許。不過，相比之下，還是企業前輩的活躍更加受到關注呢……如果我能夠早點加入戰局的話就好了。</Text>
+			<Text>我是埃塞克斯級首艦埃塞克斯號，從誕生起就備受大家的期待。參加了大大小小的戰鬥共68次，獲得了「艦隊最善戰之艦」的稱號，也算是完成了大家的期許。不過，相比之下，還是企業前輩的活躍更加受到關註呢……如果我能夠早點加入戰局的話就好了。</Text>
 		</Row>
 		<!--初次見面，提供最近城市位置-->
 		<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_ESSEX_CV9_ANY" Language="zh_Hant_HK">
@@ -151,7 +151,7 @@
 		</Row>
 		<!--初次見面，玩家提供最近城市位置-->
 		<Row Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_ESSEX_CV9_ANY" Language="zh_Hant_HK">
-			<Text>多谢！</Text>
+			<Text>謝謝！</Text>
 		</Row>
 		<!--初次見面，請求交換首都位置-->
 		<Row Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_ESSEX_CV9_ANY" Language="zh_Hant_HK">
@@ -163,7 +163,7 @@
 		</Row>
 		<!--領袖敵視玩家-->
 		<Row Tag="LOC_DIPLO_WARNING_EXIT_LEADER_ESSEX_CV9_ANY" Language="zh_Hant_HK">
-			<Text>銳意進取……很明顯，你與這個詞不搭邊。為什麼不向企業前輩學習呢？</Text>
+			<Text>銳意進取……很明顯，你與這個詞不搭邊。為什麽不向企業前輩學習呢？</Text>
 		</Row>
 		<!--請求結盟-->
 		<Row Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="zh_Hant_HK">
@@ -175,7 +175,7 @@
 		</Row>
 		<!--經受不住時間考驗-->
 		<Row Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="zh_Hant_HK">
-			<Text>我曾見證過大艦巨炮時代的終結。現在……航空母艦的時代也要終結了嗎？不，如果是企業前輩的話，又會怎麼樣呢……</Text>
+			<Text>我曾見證過大艦巨炮時代的終結。現在……航空母艦的時代也要終結了嗎？不，如果是企業前輩的話，又會怎麽樣呢……</Text>
 		</Row>
 		<!--同意交易-->
 		<Row Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_ESSEX_CV9_ANY" Language="zh_Hant_HK">

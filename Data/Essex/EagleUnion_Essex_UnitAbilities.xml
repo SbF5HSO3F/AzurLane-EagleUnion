@@ -13,7 +13,7 @@
 		<Row Type="ABILITY_ESSEX_NAYY_BUFF"				Tag="CLASS_NAVAL_RANGED"/>
 		<Row Type="ABILITY_ESSEX_NAYY_BUFF"				Tag="CLASS_NAVAL_RAIDER"/>
 		<Row Type="ABILITY_ESSEX_NAYY_BUFF"				Tag="CLASS_NAVAL_CARRIER"/>
-		<Row Type="ABILITY_ESSEX_ALL_UNITS_BUFF"		Tag="CLASS_ALL_UNITS"/>
+		<Row Type="ABILITY_ESSEX_ALL_UNITS_BUFF"		Tag="CLASS_ALL_COMBAT_UNITS"/>
 	</TypeTags>
 	<UnitAbilities>
 		<Row UnitAbilityType="ABILITY_ESSEX_NAYY_BUFF"		Name="LOC_ABILITY_ESSEX_NAME"	Description="LOC_ABILITY_ESSEX_NAYY_BUFF_DESCRIPTION"		Inactive="true"/>
@@ -47,10 +47,6 @@
 			<UnitAbilityType>ABILITY_ESSEX_ALL_UNITS_BUFF</UnitAbilityType>
 			<ModifierId>ESSEX_UNIT_ADD_SIGHT</ModifierId>
 		</Row>
-		<!--<Row>
-			<UnitAbilityType>ABILITY_ESSEX_ALL_UNITS_BUFF</UnitAbilityType>
-			<ModifierId>ESSEX_UNIT_ADD_COMBAT</ModifierId>
-		</Row>-->
 	</UnitAbilityModifiers>
 	<Modifiers>
 		<!--善战之舰+7-->

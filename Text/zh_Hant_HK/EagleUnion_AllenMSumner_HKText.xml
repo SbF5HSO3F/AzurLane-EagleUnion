@@ -9,7 +9,7 @@
 		<Replace Tag="LOC_LEADER_ALLEN_M_SUMNER_DD692_NAME" Language="zh_Hant_HK">
 			<Text>艾倫·薩姆納</Text>
 		</Replace>
-		<!--載入-->
+		<!--加載-->
 		<Replace Tag="LOC_LOADING_INFO_LEADER_ALLEN_M_SUMNER_DD692" Language="zh_Hant_HK">
 			<Text>作為當時最先進的驅逐艦，艾倫·薩姆納，您和您的姐妹們擁有超越弗萊徹級驅逐艦的主炮火力與防空火力。參與了煉獄般的沖繩之戰，面對過來自重櫻的自殺式飛機襲擊，您的經歷豐富且多彩。艾倫·薩姆納，相信您一定可以帶領白鷹走向新的輝煌！</Text>
 		</Replace>
@@ -21,7 +21,7 @@
 			<Text>與其他白鷹領袖不同，艾倫·薩姆納領導的白鷹還會是文化強國。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ALLEN_M_SUMNER_DD692_CHAPTER_DETAILED_BODY" Language="zh_Hant_HK">
-			<Text>白鷹素以強大的工業與科技實力聞名，而艾倫·薩姆納則會刷新人們對白鷹的認識。緊湊的建設城市將會為艾倫·薩姆納帶來大量的 [ICON_Culture] 文化值，這一切都是為了文化勝利而服務：研究“飛行”科技後，艾倫·薩姆納區域的 [ICON_Culture] 文化值產出將提供等量的 [ICON_Tourism] 旅遊業績。進入現代，擁有劇院廣場的城市將會成為世界聞名的旅遊聖地。如果您想追求文化勝利，艾倫·薩姆納一定是您最為頭痛的對手。</Text>
+			<Text>白鷹素以強大的工業與科技實力聞名，而艾倫·薩姆納則會刷新人們對白鷹的認識。緊湊的建設城市將會為艾倫·薩姆納帶來大量的 [ICON_Culture] 文化值，這一切都是為了文化勝利而服務：研究「飛行」科技後，艾倫·薩姆納區域的 [ICON_Culture] 文化值產出將提供等量的 [ICON_Tourism] 旅遊業績。進入現代，擁有劇院廣場的城市將會成為世界聞名的旅遊聖地。如果您想追求文化勝利，艾倫·薩姆納一定是您最為頭痛的對手。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ALLEN_M_SUMNER_DD692_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
 			<Text>艾倫·M·薩姆納號驅逐艦是美國海軍二戰期間建造的艾倫·M·薩姆納級驅逐艦的首艦——為方便大眾稱謂，該艦可縮略中間名為艾倫·薩姆納。該艦艦名一戰時期在凡爾登前線犧牲的美國海軍陸戰隊上尉，小艾倫·梅蘭克森·薩姆納：他當時臨時肩負一個團及陣地一翼的指揮任務，犧牲時年僅約26歲。</Text>
@@ -34,7 +34,7 @@
 			<Text>喧鬧之焰</Text>
 		</Replace>
 		<Replace Tag="LOC_AGENDA_BANG_FOR_YOUR_BUCK_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>樂於開放邊界，並追求 [ICON_Tourism] 旅遊業績。 喜歡擁有較高 [ICON_Culture] 文化值的文明，討厭發動突襲戰爭的文明。</Text>
+			<Text>樂於開放邊界，並追求 [ICON_Tourism] 旅遊業績。喜歡擁有較高 [ICON_Culture] 文化值的文明，討厭發動突襲戰爭的文明。</Text>
 		</Replace>
 		<Replace Tag="LOC_DIPLO_BANG_FOR_YOUR_BUCK_HIGH_CULTURE" Language="zh_Hant_HK">
 			<Text>艾倫·薩姆納喜歡擁有較高文化值的文明</Text>
@@ -43,17 +43,17 @@
 			<Text>（您擁有較高文化值）</Text>
 		</Replace>
 		<Replace Tag="LOC_BANG_FOR_YOUR_BUCK_SURPRISE_WAR" Language="zh_Hant_HK">
-			<Text>艾倫·薩姆納討厭宣佈突襲戰爭的文明</Text>
+			<Text>艾倫·薩姆納討厭宣布突襲戰爭的文明</Text>
 		</Replace>
 		<Replace Tag="LOC_DIPLO_BANG_FOR_YOUR_BUCK_SURPRISE_WAR_REASON_ANY" Language="zh_Hant_HK">
-			<Text>（您宣佈了突襲戰爭）</Text>
+			<Text>（您宣布了突襲戰爭）</Text>
 		</Replace>
 		<!--領袖能力-->
 		<Replace Tag="LOC_TRAIT_LEADER_SHOOTING_GUN_STAR_NAME" Language="zh_Hant_HK">
 			<Text>星火之光</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SHOOTING_GUN_STAR_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>所有區域從每個相鄰的區域獲得+2 [ICON_Culture] 文化值。研究完“飛行”科技後，所有區域將獲得與 [ICON_Culture] 文化值產量相等的 [ICON_Tourism] 旅遊業績。遊戲進入現代後，擁有劇院廣場的城市+100% [ICON_Tourism] 旅遊業績。研究完“聯合作戰”後獲得特色單位“艾倫·M·薩姆納級驅逐艦”。</Text>
+			<Text>所有區域從每個相鄰的區域獲得+2 [ICON_Culture] 文化值。研究完「飛行」科技後，所有區域將獲得與 [ICON_Culture] 文化值產量相等的 [ICON_Tourism] 旅遊業績。遊戲進入現代後，擁有劇院廣場的城市+100% [ICON_Tourism] 旅遊業績。研究完「聯合作戰」後獲得特色單位「艾倫·M·薩姆納級驅逐艦」。</Text>
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_Allen_Culture_Adjacency_From_District" Language="zh_Hant_HK">
@@ -66,38 +66,38 @@
 			<Text>艾倫·M·薩姆納級驅逐艦</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>取代驅逐艦的艾倫·薩姆納特色原子能海軍單位，強於驅逐艦，並擁有強大的防空能力，可進行射程為1的遠端攻擊。與海軍襲擊者作戰時+7 [ICON_Strength] 戰鬥力，顯示視線範圍內的海軍襲擊者。</Text>
+			<Text>取代驅逐艦的艾倫·薩姆納特色原子能海軍單位，強於驅逐艦，並擁有強大的防空能力，可進行射程為1的遠程攻擊。與海軍襲擊者作戰時+7 [ICON_Strength] 戰鬥力，顯示視線範圍內的海軍襲擊者。</Text>
 		</Replace>
-		<Replace Tag="LOC_ABILITY_Allen_M_Sumner_DESCRIPTION" Language="zh_Hant_HK">
+		<Replace Tag="LOC_ABILITY_ALLEN_M_SUMNER_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>與海軍襲擊者作戰時+7 [ICON_Strength] 戰鬥力</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
-			<Text>艾倫·M·薩姆納級驅逐艦，簡稱“薩姆納級”，是美國海軍在1943年至1946年間建造的一級驅逐艦，建成58艘。日本海軍由於1942年中途島海戰的失敗，日本人放棄了戰略進攻，同時也失去了戰爭初期的制海權與制空權，與此同時，雙方的海空對抗愈發激烈。在如此的大背景下，美國海軍認為弗萊徹級驅逐艦的防空火力還有必要進一步提升。於是在弗萊徹級驅逐艦艦體的基礎上，修改上層建築與武器配置，美國海軍設計了新一代驅逐艦。</Text>
+			<Text>艾倫·M·薩姆納級驅逐艦，簡稱「薩姆納級」，是美國海軍在1943年至1946年間建造的一級驅逐艦，建成58艘。日本海軍由於1942年中途島海戰的失敗，日本人放棄了戰略進攻，同時也失去了戰爭初期的製海權與製空權，與此同時，雙方的海空對抗愈發激烈。在如此的大背景下，美國海軍認為弗萊徹級驅逐艦的防空火力還有必要進一步提升。於是在弗萊徹級驅逐艦艦體的基礎上，修改上層建築與武器配置，美國海軍設計了新一代驅逐艦。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_CHAPTER_HISTORY_PARA_2" Language="zh_Hant_HK">
-			<Text>1943年7月7日，首艦艾倫·M·薩姆納號驅逐艦於聯邦造船廠開工建造，其餘57艘同級艦陸續開工，建造序列為DD-692至DD-709、DD-722至DD-734、DD-741至DD-748、DD-752至DD-762、DD-770、DD-774至DD-781、DD-857。薩姆納級驅逐艦原計劃建造70艘，後來有12艘在建造過程中被改建為快速佈雷艦，即羅伯特·H·史密斯級。其中大部分薩姆納級驅逐艦在1944年-1945年間服役，有三艘直到二戰結束才建成服役。二戰期間建造完成的薩姆納級驅逐艦又可以分成前期型與後期型，其中前期型26艘，主要採用敞開式艦橋；後期型29艘，主要採用封閉式艦橋。</Text>
+			<Text>1943年7月7日，首艦艾倫·M·薩姆納號驅逐艦於聯邦造船廠開工建造，其余57艘同級艦陸續開工，建造序列為DD-692至DD-709、DD-722至DD-734、DD-741至DD-748、DD-752至DD-762、DD-770、DD-774至DD-781、DD-857。薩姆納級驅逐艦原計劃建造70艘，後來有12艘在建造過程中被改建為快速布雷艦，即羅伯特·H·史密斯級。其中大部分薩姆納級驅逐艦在1944年-1945年間服役，有三艘直到二戰結束才建成服役。二戰期間建造完成的薩姆納級驅逐艦又可以分成前期型與後期型，其中前期型26艘，主要采用敞開式艦橋；後期型29艘，主要采用封閉式艦橋。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_CHAPTER_HISTORY_PARA_3" Language="zh_Hant_HK">
-			<Text>在動力系統方面，薩姆納級驅逐艦與弗萊徹級驅逐艦相似，同樣安裝了四台燃油鍋爐、兩座蒸汽輪機，且功率達到了相同的60,000馬力。但由於排水量的提高，最大航速從弗萊徹級的37.8節降至34節。在武器系統方面，薩姆納級驅逐艦擁有3門雙聯裝127mm/38 Mk38高平兩用炮，炮塔佈置前二後一，受Mk37型火控系統以及Mk25型火控雷達制導遠端防空。同時，近程她也擁有12門40mm博福斯防空炮以及11門20mm厄利孔防空機炮配合，構成強大的防空火力。初始設計中，薩姆納級還擁有2座五聯裝533mm魚雷發射管位於煙囪前後中軸線上，並在艦艉安裝了兩座深彈發射架以及六個K型深彈投擲器，用以提升其反潛作戰能力，但隨著1945年日軍攻擊方式越發傾向於自殺式空襲，她們也隨之拆除後魚雷發射管，改為1門四聯裝40mm博福斯防空炮。與前級弗萊徹驅逐艦相比，薩姆納級驅逐艦主炮火力增強20%，防空火力增強50%。由於對空火力的顯著增強，薩姆納級驅逐艦常作為艦隊週邊防空警戒艦來使用。</Text>
+			<Text>在動力系統方面，薩姆納級驅逐艦與弗萊徹級驅逐艦相似，同樣安裝了四臺燃油鍋爐、兩座蒸汽輪機，且功率達到了相同的60,000馬力。但由於排水量的提高，最大航速從弗萊徹級的37.8節降至34節。在武器系統方面，薩姆納級驅逐艦擁有3門雙聯裝127mm/38 Mk38高平兩用炮，炮塔布置前二後一，受Mk37型火控系統以及Mk25型火控雷達製導遠程防空。同時，近程她也擁有12門40mm博福斯防空炮以及11門20mm厄利孔防空機炮配合，構成強大的防空火力。初始設計中，薩姆納級還擁有2座五聯裝533mm魚雷發射管位於煙囪前後中軸線上，並在艦艉安裝了兩座深彈發射架以及六個K型深彈投擲器，用以提升其反潛作戰能力，但隨著1945年日軍攻擊方式越發傾向於自殺式空襲，她們也隨之拆除後魚雷發射管，改為1門四聯裝40mm博福斯防空炮。與前級弗萊徹驅逐艦相比，薩姆納級驅逐艦主炮火力增強20%，防空火力增強50%。由於對空火力的顯著增強，薩姆納級驅逐艦常作為艦隊外圍防空警戒艦來使用。</Text>
 		</Replace>
 		<!--外交文本-->
-		<!--同意宣佈友誼-->
+		<!--同意宣布友誼-->
 		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
 			<Text>哈哈，接下來我們就是朋友了哦！</Text>
 		</Replace>
-		<!--拒絕宣佈友誼-->
+		<!--拒絕宣布友誼-->
 		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
 			<Text>好啦，但是現在是不行的~</Text>
 		</Replace>
-		<!--請求宣佈友誼-->
+		<!--請求宣布友誼-->
 		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
-			<Text>來吧，讓我們宣佈友誼吧！</Text>
+			<Text>來吧，讓我們宣布友誼吧！</Text>
 		</Replace>
-		<!--宣佈友誼被接受-->
+		<!--宣布友誼被接受-->
 		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
 			<Text>欸嘿~還不錯嘛！</Text>
 		</Replace>
-		<!--宣佈友誼被拒絕-->
+		<!--宣布友誼被拒絕-->
 		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
 			<Text>唔，那就這樣吧。</Text>
 		</Replace>
@@ -111,7 +111,7 @@
 		</Replace>
 		<!--接受代表團-->
 		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
-			<Text>是代表團嗎？我會好好接待他們的！他們將驚歎白鷹聯邦科技的先進。</Text>
+			<Text>是代表團嗎？我會好好接待他們的！他們將驚嘆白鷹聯邦科技的先進。</Text>
 		</Replace>
 		<!--拒絕代表團-->
 		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
@@ -123,11 +123,11 @@
 		</Replace>
 		<!--被譴責-->
 		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
-			<Text>也許這可能是你心情不好，也可能是你一時被衝動沖昏了頭腦。但這樣是不好的喔？</Text>
+			<Text>也許這可能是你心情不好，也可能是你一時被沖動沖昏了頭腦。但這樣是不好的喔？</Text>
 		</Replace>
 		<!--譴責-->
 		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
-			<Text>白鷹聯邦裡的其他人托我向你轉告：他們已經看不下去你的所作所為了！（譴責你）</Text>
+			<Text>白鷹聯邦裏的其他人托我向你轉告：他們已經看不下去你的所作所為了！（譴責你）</Text>
 		</Replace>
 		<!--初次見面-->
 		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
@@ -135,7 +135,7 @@
 		</Replace>
 		<!--初次見面，邀請參觀附近城市-->
 		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
-			<Text>嘿嘿，要來我們附近的城市參觀麼？</Text>
+			<Text>嘿嘿，要來我們附近的城市參觀麽？</Text>
 		</Replace>
 		<!--初次見面，感謝玩家提供最近城市位置-->
 		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
@@ -155,7 +155,7 @@
 		</Replace>
 		<!--敵視-->
 		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
-			<Text>怎麼說呢，像這樣宣佈戰爭可是不好的哦？</Text>
+			<Text>怎麽說呢，像這樣宣布戰爭可是不好的哦？</Text>
 		</Replace>
 		<!--請求結盟-->
 		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
@@ -171,19 +171,19 @@
 		</Replace>
 		<!--請求和平-->
 		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
-			<Text>來吧！讓我們放下武器，為兩國之間貼上“和平”的貼紙吧！</Text>
+			<Text>來吧！讓我們放下武器，為兩國之間貼上「和平」的貼紙吧！</Text>
 		</Replace>
 		<!--接受開放邊界請求-->
 		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
-			<Text>嗯嗯，讓我貼上一枚“邊境准入”貼紙……</Text>
+			<Text>嗯嗯，讓我貼上一枚「邊境準入」貼紙……</Text>
 		</Replace>
 		<!--拒絕開放邊界請求-->
 		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
-			<Text>唔……我現在沒有更多的“邊境准入”貼紙了！</Text>
+			<Text>唔……我現在沒有更多的「邊境準入」貼紙了！</Text>
 		</Replace>
 		<!--請求開放邊界-->
 		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
-			<Text>白鷹聯邦希望軍隊能通過你們的邊境。希望您能准許。</Text>
+			<Text>白鷹聯邦希望軍隊能通過你們的邊境。希望您能準許。</Text>
 		</Replace>
 		<!--要求移開邊境部隊-->
 		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
@@ -191,7 +191,7 @@
 		</Replace>
 		<!--拒絕移開邊境部隊-->
 		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
-			<Text>好不容易行軍到這裡的……隨隨便便撤離？那可不行！</Text>
+			<Text>好不容易行軍到這裏的……隨隨便便撤離？那可不行！</Text>
 		</Replace>
 		<!--同意移開邊境部隊-->
 		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
@@ -199,7 +199,7 @@
 		</Replace>
 		<!--經受不住時間考驗-->
 		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">
-			<Text>放鬆過頭了啊……</Text>
+			<Text>放松過頭了啊……</Text>
 		</Replace>
 		<!--拒絕交易-->
 		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_ALLEN_M_SUMNER_DD692_ANY" Language="zh_Hant_HK">

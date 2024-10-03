@@ -35,24 +35,27 @@
 	</Building_YieldChanges>
 	<Building_GreatPersonPoints>
 		<Row BuildingType="BUILDING_NEWPORT_NEWS_SHIPBUILDING" GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER" PointsPerTurn="1"/>
-		<Row BuildingType="BUILDING_NEWPORT_NEWS_SHIPBUILDING" GreatPersonClassType="GREAT_PERSON_CLASS_ADMIRAL" PointsPerTurn="1"/>
+		<Row BuildingType="BUILDING_NEWPORT_NEWS_SHIPBUILDING" GreatPersonClassType="GREAT_PERSON_CLASS_ADMIRAL"  PointsPerTurn="1"/>
 	</Building_GreatPersonPoints>
 	<Building_YieldDistrictCopies>
 		<Row BuildingType="BUILDING_NEWPORT_NEWS_SHIPBUILDING" OldYieldType="YIELD_GOLD" NewYieldType="YIELD_PRODUCTION"/>
 	</Building_YieldDistrictCopies>
 	<Building_CitizenYieldChanges>
-		<Row BuildingType="BUILDING_NEWPORT_NEWS_SHIPBUILDING" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row BuildingType="BUILDING_NEWPORT_NEWS_SHIPBUILDING" YieldType="YIELD_FOOD" 		YieldChange="1"/>
 		<Row BuildingType="BUILDING_NEWPORT_NEWS_SHIPBUILDING" YieldType="YIELD_PRODUCTION" YieldChange="3"/>
 	</Building_CitizenYieldChanges>
 	<BuildingModifiers>
+		<!--海军单位+5战斗力-->
 		<Row>
 			<BuildingType>BUILDING_NEWPORT_NEWS_SHIPBUILDING</BuildingType>
 			<ModifierId>ENTERPRISE_HREAT_BUFF</ModifierId>
 		</Row>
+		<!--海岸单元格+2生产力-->
 		<Row>
 			<BuildingType>BUILDING_NEWPORT_NEWS_SHIPBUILDING</BuildingType>
 			<ModifierId>SHIPBUILDING_ADD_PRODUCTION</ModifierId>
 		</Row>
+		<!--训练舰队无敌舰队减价-->
 		<Row>
 			<BuildingType>BUILDING_NEWPORT_NEWS_SHIPBUILDING</BuildingType>
 			<ModifierId>NEWPORT_NEWS_TRAINED_DISCOUNT</ModifierId>
@@ -77,16 +80,19 @@
 	</Row>
 	</BuildingModifiers>
 	<Modifiers>
+		<!--海军单位+5战斗力-->
 		<Row>
 			<ModifierId>ENTERPRISE_HREAT_BUFF</ModifierId>
 			<ModifierType>MODIFIER_SINGLE_CITY_GRANT_ABILITY_FOR_TRAINED_UNITS</ModifierType>
 			<Permanent>true</Permanent>
 		</Row>
+		<!--海岸单元格+2生产力-->
 		<Row>
 			<ModifierId>SHIPBUILDING_ADD_PRODUCTION</ModifierId>
 			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
 			<SubjectRequirementSetId>EAGLE_UNION_PLOT_IS_COAST</SubjectRequirementSetId>
 		</Row>
+		<!--训练舰队无敌舰队减价-->
 		<Row>
 			<ModifierId>NEWPORT_NEWS_TRAINED_DISCOUNT</ModifierId>
 			<ModifierType>MODIFIER_CITY_CORPS_ARMY_ADJUST_DISCOUNT</ModifierType>
@@ -111,11 +117,13 @@
 		</Row>
 	</Modifiers>
 	<ModifierArguments>
+		<!--海军单位+5战斗力-->
 		<Row>
 			<ModifierId>ENTERPRISE_HREAT_BUFF</ModifierId>
 			<Name>AbilityType</Name>
 			<Value>ABILITY_ENTERPRISE_HREAT</Value>
 		</Row>
+		<!--海岸单元格+2生产力-->
 		<Row>
 			<ModifierId>SHIPBUILDING_ADD_PRODUCTION</ModifierId>
 			<Name>Amount</Name>
@@ -126,6 +134,7 @@
 			<Name>YieldType</Name>
 			<Value>YIELD_PRODUCTION</Value>
 		</Row>
+		<!--训练舰队无敌舰队减价-->
 		<Row>
 			<ModifierId>NEWPORT_NEWS_TRAINED_DISCOUNT</ModifierId>
 			<Name>UnitDomain</Name>

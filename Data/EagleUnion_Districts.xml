@@ -121,8 +121,8 @@
 		<Row>
 			<ModifierId>SANTA_GRANT_RANDOM_TECHNOLOGY</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_GRANT_RANDOM_TECHNOLOGY</ModifierType>
-			<RunOnce>True</RunOnce>
-			<Permanent>True</Permanent>
+			<RunOnce>true</RunOnce>
+			<Permanent>true</Permanent>
 		</Row>
 		<!--改良设施buff-->
 		<Row>

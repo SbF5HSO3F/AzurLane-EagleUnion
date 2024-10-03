@@ -56,10 +56,10 @@
 			<Text>巨炮轰鸣</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_HEAVY_BARREL_BLASTER_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>游戏初始便解锁“灌溉”科技，种植园+2 [ICON_Culture] 文化值、+4 [ICON_GOLD] 金币，+1 [ICON_TradeRoute] 贸易路线容量并对周边单元格释放文化炸弹。[ICON_TradeRoute] 贸易路线目的地城市中的每个专业化区域提供+2 [ICON_Culture] 文化值、+4 [ICON_GOLD] 金币。所有单位在攻击海军单位和区域防御时+7 [ICON_Strength] 战斗力。研究完“高级弹道学”后获得特色单位“衣阿华级战列舰原型方案Ⅳ”。</Text>
+			<Text>游戏初始便解锁“灌溉”科技，种植园+2 [ICON_Culture] 文化值、+4 [ICON_GOLD] 金币，+1 [ICON_TradeRoute] 贸易路线容量并对周边单元格释放文化炸弹。[ICON_TradeRoute] 贸易路线目的地城市中的每个专业化区域提供+2 [ICON_Culture] 文化值、+4 [ICON_GOLD] 金币。所有军事单位在攻击海军单位和区域防御时+7 [ICON_Strength] 战斗力。研究完“高级弹道学”后获得特色单位“衣阿华级战列舰原型方案Ⅳ”。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_HEAVY_BARREL_BLASTER_DESCRIPTION_XP2" Language="zh_Hans_CN">
-			<Text>游戏初始便解锁“灌溉”科技，种植园+2 [ICON_Culture] 文化值、+4 [ICON_GOLD] 金币，+1 [ICON_TradeRoute] 贸易路线容量并对周边单元格释放文化炸弹。[ICON_TradeRoute] 贸易路线目的地城市中的每个专业化区域提供+2 [ICON_Culture] 文化值、+4 [ICON_GOLD] 金币。所有单位在攻击海军单位和区域防御时+7 [ICON_Strength] 战斗力，所有海军单位与远程单位可对城市输出全额伤害。研究完“高级弹道学”后获得特色单位“衣阿华级战列舰原型方案Ⅳ”。</Text>
+			<Text>游戏初始便解锁“灌溉”科技，种植园+2 [ICON_Culture] 文化值、+4 [ICON_GOLD] 金币，+1 [ICON_TradeRoute] 贸易路线容量并对周边单元格释放文化炸弹。[ICON_TradeRoute] 贸易路线目的地城市中的每个专业化区域提供+2 [ICON_Culture] 文化值、+4 [ICON_GOLD] 金币。所有军事单位在攻击海军单位和区域防御时+7 [ICON_Strength] 战斗力，所有海军单位与远程单位可对城市输出全额伤害。研究完“高级弹道学”后获得特色单位“衣阿华级战列舰原型方案Ⅳ”。</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_IOWA_CLASS_PLAN_4_NAME" Language="zh_Hans_CN">
 			<Text>衣阿华级战列舰原型方案Ⅳ</Text>
