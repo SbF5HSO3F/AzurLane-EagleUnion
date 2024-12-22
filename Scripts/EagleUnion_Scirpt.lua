@@ -14,7 +14,7 @@ local modifier = 'EAGLE_UNION_PER_ACTIVE_GREATPERSON_BUFF'
 --when a great person is activated
 function EagleUnionActiveGreatPerson(playerID)
     --check the player civilization
-    if EagleUnionCivTypeMatched(playerID, 'CIVILIZATION_EAGLE_UNION') then
+    if EagleCore.CheckCivMatched(playerID, 'CIVILIZATION_EAGLE_UNION') then
         --attach the modifier to the player
         Players[playerID]:AttachModifierByID(modifier)
     end

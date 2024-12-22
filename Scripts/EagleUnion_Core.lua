@@ -2,52 +2,50 @@
 -- Author: jjj
 -- DateCreated: 2024/1/2 19:17:02
 --------------------------------------------------------------
+
+EagleCore = {}
+
 --||====================GamePlay, UI======================||--
 
---Leader type judgment. if macth, return true (GamePlay, UI)
-function EagleUnionLeaderTypeMatched(playerID, LeaderTpye)
+--判断领袖，玩家不为指定领袖类型则返回false (GamePlay, UI)
+function EagleCore.CheckLeaderMatched(playerID, leaderType)
     local pPlayerConfig = playerID and PlayerConfigurations[playerID]
-    return pPlayerConfig and pPlayerConfig:GetLeaderTypeName() == LeaderTpye
+    return pPlayerConfig and pPlayerConfig:GetLeaderTypeName() == leaderType
 end
 
---Civilization type judgment. if macth, return true (GamePlay, UI)
-function EagleUnionCivTypeMatched(playerID, CivTpye)
+--判断文明，玩家文明不为指定文明类型则返回false (GamePlay, UI)
+function EagleCore.CheckCivMatched(playerID, civilizationType)
     local pPlayerConfig = playerID and PlayerConfigurations[playerID]
-    return pPlayerConfig and pPlayerConfig:GetCivilizationTypeName() == CivTpye
+    return pPlayerConfig and pPlayerConfig:GetCivilizationTypeName() == civilizationType
 end
 
---process rounding (GamePlay, UI)
-function EagleUnionNumRound(num)
+--数字四舍五入处理 (GamePlay, UI)
+function EagleCore.Round(num)
     return math.floor((num + 0.05) * 10) / 10
 end
 
---Game Speed Modifier (GamePlay, UI)
-function EagleUnionSpeedModifier(num)
+--将输入的数字按照当前游戏速度进行修正 (GamePlay, UI)
+function EagleCore:ModifyBySpeed(num)
     local gameSpeed = GameInfo.GameSpeeds[GameConfiguration.GetGameSpeedType()]
-    if gameSpeed then
-        num = EagleUnionNumRound(num * gameSpeed.CostMultiplier / 100)
-    end
+    if gameSpeed then num = self.Round(num * gameSpeed.CostMultiplier / 100) end
     return num
 end
 
---Random number generator [1,num+1] (GamePlay, UI)
-function EagleUnionGetRandNum(num)
-    return Game.GetRandNum and (Game.GetRandNum(num) + 1) or 1
-end
-
---get the tech or civic has Boost (GamePlay, UI)
-function EagleUnionHasBoost(techOrCivic)
-    local result = false
-    if techOrCivic then
-        for boost in GameInfo.Boosts() do
-            if techOrCivic == boost.TechnologyType or
-                techOrCivic == boost.CivicType then
-                result = true
-                break
-            end
+--检查科技或者市政是否拥有提升 (GamePlay, UI)
+function EagleCore.HasBoost(techOrCivic)
+    for boost in GameInfo.Boosts() do
+        if techOrCivic == boost.TechnologyType or techOrCivic == boost.CivicType then
+            return true
         end
     end
-    return result
+    return false
+end
+
+--||=====================GamePlay=======================||--
+
+--随机数生成器，范围为[1,num+1] (GamePlay)
+function EagleCore.tableRandom(num)
+    return Game.GetRandNum and (Game.GetRandNum(num) + 1) or 1
 end
 
 --||=========================UI=========================||--

@@ -17,7 +17,7 @@ local armyType  = MilitaryFormationTypes.ARMY_FORMATION
 --when city production a unit
 function EssexUnitAddedToMap(playerID, unitID)
     --is Essex?
-    if not EagleUnionLeaderTypeMatched(playerID, 'LEADER_ESSEX_CV9') then
+    if not EagleCore.CheckLeaderMatched(playerID, 'LEADER_ESSEX_CV9') then
         return
     end
     --get the unit
@@ -34,7 +34,7 @@ function EssexUnitAddedToMap(playerID, unitID)
             multiplier = 3
         end
         --get the culture which gained
-        local reward = EagleUnionSpeedModifier(unitInfo.Cost * multiplier * percent)
+        local reward = EagleCore:ModifyBySpeed(unitInfo.Cost * multiplier * percent)
         --get the player
         local pPlayer = Players[playerID]
         --set the property
@@ -45,7 +45,7 @@ end
 --Production Navy Get Culture
 function EssexCityProductionNavyComplete(playerID, cityID, iConstructionType, itemID)
     --is Essex?
-    if not EagleUnionLeaderTypeMatched(playerID, 'LEADER_ESSEX_CV9') then
+    if not EagleCore.CheckLeaderMatched(playerID, 'LEADER_ESSEX_CV9') then
         return
     end
 
