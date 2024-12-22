@@ -1,5 +1,5 @@
 -- EagleUnion_SecretSocieties
--- Author: jjj
+-- Author: HSbF6HSO3F
 -- DateCreated: 2023/10/18 18:41:37
 --------------------------------------------------------------
 INSERT INTO District_Adjacencies

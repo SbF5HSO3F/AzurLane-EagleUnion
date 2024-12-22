@@ -1,5 +1,5 @@
 -- EagleUnion_Essex
--- Author: jjj
+-- Author: HSbF6HSO3F
 -- DateCreated: 2023/10/31 21:28:55
 --------------------------------------------------------------
 --||=======================include========================||--
@@ -72,5 +72,7 @@ function Initialize()
     ----------------------------------------
     print('Initial success!')
 end
+
+include('EagleUnion_Essex_', true)
 
 Initialize()

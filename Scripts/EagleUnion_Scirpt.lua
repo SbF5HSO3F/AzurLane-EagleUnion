@@ -1,5 +1,5 @@
 -- EagleUnion_Scirpt
--- Author: jjj
+-- Author: HSbF6HSO3F
 -- DateCreated: 2024/9/28 15:21:49
 --------------------------------------------------------------
 --||=======================include========================||--
@@ -29,5 +29,7 @@ function Initialize()
     --------------------------------------------
     print('Initial success!')
 end
+
+include('EagleUnion_Scirpt_', true)
 
 Initialize()
