@@ -368,6 +368,9 @@
     <Content Include="Import\EagleUnionCore.lua">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Import\EagleUnionPoint.lua">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Scripts\EagleUnionEssex.lua">
       <SubType>Content</SubType>
     </Content>

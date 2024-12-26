@@ -67,14 +67,16 @@ function EagleCore.tableRandom(num)
     return Game.GetRandNum and (Game.GetRandNum(num) + 1) or 1
 end
 
---对单位造成伤害，超出生命值则死亡 (GamePlay)
+--对单位造成伤害，超出生命值则死亡并返回true。 (GamePlay)
 function EagleCore.DamageUnit(unit, damage)
     local maxDamage = unit:GetMaxDamage()
     if (unit:GetDamage() + damage) >= maxDamage then
         unit:SetDamage(maxDamage)
         UnitManager.Kill(unit, false)
+        return true
     else
         unit:ChangeDamage(damage)
+        return false
     end
 end
 
