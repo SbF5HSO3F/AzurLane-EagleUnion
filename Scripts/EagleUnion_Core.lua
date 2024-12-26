@@ -80,6 +80,129 @@ end
 
 --||=========================UI=========================||--
 
+--获取城市生产详细信息 (UI)
+function EagleCore.GetProductionDetail(city)
+    local details = { --城市生产详细信息
+        --城市是否进行生产
+        Producting = false,
+        --是否是建筑
+        IsBuilding = false,
+        --是否是奇观
+        IsWonder   = false,
+        --是否是区域
+        IsDistrict = false,
+        --是否是单位
+        IsUnit     = false,
+        --是否是项目
+        IsProject  = false,
+        --生产项目类型
+        ItemType   = 'NONE',
+        --生产项目名字
+        ItemName   = 'NONE',
+        --生产项目索引
+        ItemIndex  = -1,
+        --生产进度
+        Progress   = 0,
+        --生产成本
+        TotalCost  = 0,
+    }; if not city then return details end
+    --获取城市生产队列，判断是否在生产
+    local cityBuildQueue = city:GetBuildQueue()
+    local productionHash = cityBuildQueue:GetCurrentProductionTypeHash()
+    if productionHash ~= 0 then
+        details.Producting = true
+        --建筑、区域、单位、项目
+        local pBuildingDef = GameInfo.Buildings[productionHash]
+        local pDistrictDef = GameInfo.Districts[productionHash]
+        local pUnitDef     = GameInfo.Units[productionHash]
+        local pProjectDef  = GameInfo.Projects[productionHash]
+        --判断城市当前进行的生产
+        if pBuildingDef ~= nil then
+            --获取索引，方便后续获取进度和总成本
+            local index = pBuildingDef.Index
+            --城市正在生产建筑
+            details.IsBuilding = true
+            --城市生产的建筑是奇观还是普通建筑
+            details.IsWonder = pBuildingDef.IsWonder
+            --城市生产的建筑类型
+            details.ItemType = pBuildingDef.BuildingType
+            --城市生产的建筑名称
+            details.ItemName = Locale.Lookup(pBuildingDef.Name)
+            --城市生产的建筑索引
+            details.ItemIndex = index
+            --生产进度和总成本
+            details.Progress = cityBuildQueue:GetBuildingProgress(index)
+            details.TotalCost = cityBuildQueue:GetBuildingCost(index)
+        elseif pDistrictDef ~= nil then
+            --获取索引，方便后续获取进度和总成本
+            local index = pDistrictDef.Index
+            --城市正在生产区域
+            details.IsDistrict = true
+            --城市生产的区域类型
+            details.ItemType = pDistrictDef.DistrictType
+            --城市生产的区域名称
+            details.ItemName = Locale.Lookup(pDistrictDef.Name)
+            --城市生产的区域索引
+            details.ItemIndex = index
+            --生产进度和总成本
+            details.Progress = cityBuildQueue:GetDistrictProgress(index)
+            details.TotalCost = cityBuildQueue:GetDistrictCost(index)
+        elseif pUnitDef ~= nil then
+            --获取索引，方便后续获取进度和总成本
+            local index = pUnitDef.Index
+            --城市正在生产单位
+            details.IsUnit = true
+            --城市生产的单位类型
+            details.ItemType = pUnitDef.UnitType
+            --城市生产的单位名称
+            details.ItemName = Locale.Lookup(pUnitDef.Name)
+            --城市生产的单位索引
+            details.ItemIndex = index
+            --生产进度
+            details.Progress = cityBuildQueue:GetUnitProgress(index)
+            --获取当前单位的军事形式，计算总成本
+            local formation = cityBuildQueue:GetCurrentProductionTypeModifier()
+            --是标准
+            if formation == MilitaryFormationTypes.STANDARD_FORMATION then
+                details.TotalCost = cityBuildQueue:GetUnitCost(index)
+                --是军团
+            elseif formation == MilitaryFormationTypes.CORPS_FORMATION then
+                details.TotalCost = cityBuildQueue:GetUnitCorpsCost(index)
+                --更新单位名称
+                if pUnitDef.Domain == 'DOMAIN_SEA' then
+                    details.ItemName = details.ItemName .. " " .. Locale.Lookup("LOC_UNITFLAG_FLEET_SUFFIX")
+                else
+                    details.ItemName = details.ItemName .. " " .. Locale.Lookup("LOC_UNITFLAG_CORPS_SUFFIX")
+                end
+                --是军队
+            elseif formation == MilitaryFormationTypes.ARMY_FORMATION then
+                details.TotalCost = cityBuildQueue:GetUnitArmyCost(index)
+                --更新单位名称
+                if pUnitDef.Domain == 'DOMAIN_SEA' then
+                    details.ItemName = details.ItemName .. " " .. Locale.Lookup("LOC_UNITFLAG_ARMADA_SUFFIX")
+                else
+                    details.ItemName = details.ItemName .. " " .. Locale.Lookup("LOC_UNITFLAG_ARMY_SUFFIX")
+                end
+            end
+        elseif pProjectDef ~= nil then
+            --获取索引，方便后续获取进度和总成本
+            local index = pProjectDef.Index
+            --城市正在生产项目
+            details.IsProject = true
+            --城市生产的项目类型
+            details.ItemType = pProjectDef.ProjectType
+            --城市生产的项目名称
+            details.ItemName = Locale.Lookup(pProjectDef.Name)
+            --城市生产的项目索引
+            details.ItemIndex = index
+            --生产进度和总成本
+            details.Progress = cityBuildQueue:GetProjectProgress(index)
+            details.TotalCost = cityBuildQueue:GetProjectCost(index)
+        end
+    end
+    return details
+end
+
 --mouse enter the button (UI)
 function EagleUnionEnter()
     UI.PlaySound("Main_Menu_Mouse_Over")
