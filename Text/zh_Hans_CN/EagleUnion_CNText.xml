@@ -417,6 +417,10 @@
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_KEARNY" Language="zh_Hans_CN">
 			<Text>卡尼</Text>
 		</Replace>
+		<!--奥兰治 埃尔德里奇-->
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_ORANGE" Language="zh_Hans_CN">
+			<Text>奥兰治</Text>
+		</Replace>
 		<!--公民名-->
 		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_YORKTOWN" Language="zh_Hans_CN">
 			<Text>约克城</Text>

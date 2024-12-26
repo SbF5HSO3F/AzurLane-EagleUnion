@@ -428,6 +428,18 @@
     <Content Include="Text\zh_Hant_HK\EagleUnion_NewJersey_HKText.xml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UI\Additions\EagleUnion_ExtraPanel.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\Additions\EagleUnion_ExtraPanel.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\Additions\EagleUnion_TopPanel.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\Additions\EagleUnion_TopPanel.xml">
+      <SubType>Content</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data" />
@@ -436,11 +448,13 @@
     <Folder Include="Data\Helena" />
     <Folder Include="Data\AllenMSumner" />
     <Folder Include="Data\NewJersey" />
+    <Folder Include="UI" />
     <Folder Include="Scripts" />
     <Folder Include="Text" />
     <Folder Include="Text\en_US" />
     <Folder Include="Text\zh_Hant_HK" />
     <Folder Include="Text\zh_Hans_CN" />
+    <Folder Include="UI\Additions" />
   </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
 </Project>
