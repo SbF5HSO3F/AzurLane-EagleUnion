@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_TopButton -->
+<!-- Author: HSbF6HSO3F -->
+<!-- DateCreated: 2024/12/26 8:28:16 -->
+<Context FontStyle="Stroke">
+
+	<Instance Name="EagleUnionItem">
+		<Button ID="EagleUnionButton" Anchor="L,C" Size="49,49" Texture="LaunchBar_Hook_GreatPeopleButton" Style="ButtonNormalText" StateOffsetIncrement="0,49" ToolTip="LOC_NORTHERN_PARLIAMENT_FAITH_UNLOCK">
+			<Image ID="EagleUnionIcon" Size="35,35" Anchor="C,C" Offset="0,0" Texture="ICON_CIVILIZATION_EAGLE_UNION_32"/>
+			<!-- <Label ID="EagleUnionAlertIndicator" String="[ICON_New]" Anchor="R,T" AnchorSide="O,O" Offset="-18,-18" Hidden="1"/> -->
+		</Button>
+	</Instance>
+
+	<Instance Name="EagleUnionPinInstance">
+		<Image ID="EagleUnionPin" Anchor="L,C" Offset="0,-2" Size="7,7" Texture="LaunchBar_TrackPip" Color="255,255,255,200"/>
+	</Instance>
+
+</Context>

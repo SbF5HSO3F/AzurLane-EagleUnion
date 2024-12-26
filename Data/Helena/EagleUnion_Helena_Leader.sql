@@ -31,19 +31,19 @@ INSERT INTO ModifierArguments
 		(ModifierId,										        Name,			Value)
 SELECT	'HELENA_COAST_' || DistrictType || '_STANDARD_ADJACENCY',   'Amount',		1
 FROM temp_Helena_Table
-UNION
+UNION ALL
 SELECT  'HELENA_COAST_' || DistrictType || '_STANDARD_ADJACENCY',   'Description',	Description
 FROM temp_Helena_Table
-UNION
+UNION ALL
 SELECT  'HELENA_COAST_' || DistrictType || '_STANDARD_ADJACENCY',   'DistrictType',	DistrictType
 FROM temp_Helena_Table
-UNION
+UNION ALL
 SELECT  'HELENA_COAST_' || DistrictType || '_STANDARD_ADJACENCY',   'TerrainType',	'TERRAIN_COAST'
 FROM temp_Helena_Table
-UNION
+UNION ALL
 SELECT  'HELENA_COAST_' || DistrictType || '_STANDARD_ADJACENCY',   'TilesRequired',1
 FROM temp_Helena_Table
-UNION
+UNION ALL
 SELECT  'HELENA_COAST_' || DistrictType || '_STANDARD_ADJACENCY',   'YieldType',	YieldType
 FROM temp_Helena_Table;
 
@@ -71,18 +71,18 @@ INSERT INTO ModifierArguments
 		(ModifierId,Name,			Value)
 SELECT	ModifierId, 'Amount',		1
 FROM temp_Helena_District_Table
-UNION
+UNION ALL
 SELECT  ModifierId,'Description',	'LOC_Kula_Culture'
 FROM temp_Helena_District_Table
-UNION
+UNION ALL
 SELECT  ModifierId,'DistrictType',	DistrictType
 FROM temp_Helena_District_Table
-UNION
+UNION ALL
 SELECT  ModifierId,'TerrainType',	'TERRAIN_COAST'
 FROM temp_Helena_District_Table
-UNION
+UNION ALL
 SELECT  ModifierId,'TilesRequired', 1
 FROM temp_Helena_District_Table
-UNION
+UNION ALL
 SELECT  ModifierId,'YieldType',	    'YIELD_CULTURE'
 FROM temp_Helena_District_Table;

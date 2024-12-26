@@ -95,12 +95,12 @@
           <File>EagleUnion_Colors.xml</File>
         </UpdateColors>
         <ImportFiles id="Import">
-          <File>Scripts/EagleUnion_Core.lua</File>
+          <File>Import/EagleUnionCore.lua</File>
         </ImportFiles>
         <DoNothing id="UI" />
         <AddGameplayScripts id="Script">
-          <File>Scripts/EagleUnion_Scirpt.lua</File>
-          <File>Scripts/EagleUnion_Essex.lua</File>
+          <File>Scripts/EagleUnionScirpt.lua</File>
+          <File>Scripts/EagleUnionEssex.lua</File>
         </AddGameplayScripts>
         <UpdateDatabase id="EagleUnion">
           <File priority="100">Data/EagleUnion_Core.sql</File>
@@ -365,13 +365,13 @@
     <Content Include="EagleUnion_Icons.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Scripts\EagleUnion_Core.lua">
+    <Content Include="Import\EagleUnionCore.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Scripts\EagleUnion_Essex.lua">
+    <Content Include="Scripts\EagleUnionEssex.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Scripts\EagleUnion_Scirpt.lua">
+    <Content Include="Scripts\EagleUnionScirpt.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Text\en_US\EagleUnion_AllenMSumner_EnText.xml">
@@ -428,16 +428,16 @@
     <Content Include="Text\zh_Hant_HK\EagleUnion_NewJersey_HKText.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\EagleUnion_ExtraPanel.lua">
+    <Content Include="UI\Additions\EagleUnionExtraPanel.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\EagleUnion_ExtraPanel.xml">
+    <Content Include="UI\Additions\EagleUnionExtraPanel.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\EagleUnion_TopPanel.lua">
+    <Content Include="UI\Additions\EagleUnionTopButton.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\EagleUnion_TopPanel.xml">
+    <Content Include="UI\Additions\EagleUnionTopButton.xml">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
@@ -448,6 +448,7 @@
     <Folder Include="Data\Helena" />
     <Folder Include="Data\AllenMSumner" />
     <Folder Include="Data\NewJersey" />
+    <Folder Include="Import" />
     <Folder Include="UI" />
     <Folder Include="Scripts" />
     <Folder Include="Text" />

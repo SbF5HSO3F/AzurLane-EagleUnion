@@ -3,7 +3,7 @@
 -- DateCreated: 2023/10/31 21:28:55
 --------------------------------------------------------------
 --||=======================include========================||--
-include('EagleUnion_Core.lua')
+include('EagleUnionCore')
 
 --||===================local variables====================||--
 
@@ -73,6 +73,6 @@ function Initialize()
     print('Initial success!')
 end
 
-include('EagleUnion_Essex_', true)
+include('EagleUnionEssex_', true)
 
 Initialize()

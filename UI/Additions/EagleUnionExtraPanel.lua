@@ -7,7 +7,7 @@ include('InstanceManager')
 include('TechAndCivicSupport')
 include('AnimSidePanelSupport')
 include('ToolTipHelper')
-include('EagleUnion_Core')
+include('EagleUnionCore')
 
 --||=======================Constants======================||--
 
@@ -138,4 +138,4 @@ function GetData()
     return data
 end
 
-include('EagleUnion_ExtraPanel_', true)
+include('EagleUnionExtraPanel_', true)

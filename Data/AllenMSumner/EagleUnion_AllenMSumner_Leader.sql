@@ -25,24 +25,16 @@ FROM temp_Allen_Table;
 INSERT INTO ModifierArguments
 		(ModifierId,	Name,			Value)
 SELECT	ModifierId,		'Amount',		2
-FROM temp_Allen_Table;
-
-INSERT INTO ModifierArguments
-		(ModifierId,	Name,			Value)
+FROM temp_Allen_Table
+UNION ALL
 SELECT	ModifierId,		'Description',	'LOC_Allen_Culture_Adjacency_From_District'
-FROM temp_Allen_Table;
-
-INSERT INTO ModifierArguments
-		(ModifierId,	Name,			Value)
+FROM temp_Allen_Table
+UNION ALL
 SELECT	ModifierId,		'DistrictType',	DistrictType
-FROM temp_Allen_Table;
-
-INSERT INTO ModifierArguments
-		(ModifierId,	Name,			Value)
+FROM temp_Allen_Table
+UNION ALL
 SELECT	ModifierId,		'TilesRequired',1
-FROM temp_Allen_Table;
-
-INSERT INTO ModifierArguments
-		(ModifierId,	Name,			Value)
+FROM temp_Allen_Table
+UNION ALL
 SELECT	ModifierId,		'YieldType',	'YIELD_CULTURE'
 FROM temp_Allen_Table;
