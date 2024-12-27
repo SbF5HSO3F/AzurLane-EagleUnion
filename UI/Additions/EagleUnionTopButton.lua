@@ -12,7 +12,7 @@ local m_EagleLaunchButtonInstance = {}
 --||====================base functions====================||--
 
 function EagleUnionTogglePopup()
-
+    LuaEvents.EagleUnionTopButton_TogglePopup()
 end
 
 --刷新

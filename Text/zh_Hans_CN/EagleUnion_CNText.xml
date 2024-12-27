@@ -175,11 +175,33 @@
 			<Text>在友军领土之外恢复，每回合+6影响力点数</Text>
 		</Replace>
 		<!--Lua文本-->
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK" Language="zh_Hans_CN">
+			<Text>使用研究点数解锁科技、市政和完成城市生产</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_HEADER" Language="zh_Hans_CN">
+			<Text>圣塔克拉拉谷</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_TECH" Language="zh_Hans_CN">
+			<Text>科技</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_CIVIC" Language="zh_Hans_CN">
+			<Text>市政</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_FINISH_CITY" Language="zh_Hans_CN">
+			<Text>城市</Text>
+		</Replace>
+
+		<Replace Tag="LOC_EAGLE_POINT_PER_TURN" Language="zh_Hans_CN">
+			<Text>每回合 [ICON_Turn] 科研点数:</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_FROM_CITIES" Language="zh_Hans_CN">
+			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 来自城市</Text>
+		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_FROM_CITY" Language="zh_Hans_CN">
 			<Text>[NEWLINE][ICON_Bullet]{1_point : number +#.#;-#.#} 来自{2_city}</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_FROM_SANTA_CLARA" Language="zh_Hans_CN">
-			<Text>[NEWLINE][ICON_Bullet]{1_point : number +#.#;-#.#} 来自圣塔克拉拉谷</Text>
+			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 来自圣塔克拉拉谷</Text>
 		</Replace>
 		<!--城市名-->
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_WASHINGTON_DC" Language="zh_Hans_CN">

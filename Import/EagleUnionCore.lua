@@ -24,6 +24,16 @@ function EagleCore.Round(num)
     return math.floor((num + 0.05) * 10) / 10
 end
 
+--数字不小于其1位小数处理 (GamePlay, UI)
+function EagleCore.Ceil(num)
+    return math.ceil(num * 10) / 10
+end
+
+--数字不大于其1位小数处理 (GamePlay, UI)
+function EagleCore.Floor(num)
+    return math.floor(num * 10) / 10
+end
+
 --将输入的数字按照当前游戏速度进行修正 (GamePlay, UI)
 function EagleCore:ModifyBySpeed(num)
     local gameSpeed = GameInfo.GameSpeeds[GameConfiguration.GetGameSpeedType()]

@@ -8,14 +8,22 @@ include('TechAndCivicSupport')
 include('AnimSidePanelSupport')
 include('ToolTipHelper')
 include('EagleUnionCore')
+include('EagleUnionPoint')
 
 --||=======================Constants======================||--
 
-local SIZE_ICON_SMALL = 38
+local SIZE_ICON_SMALL  = 38
 
 --||====================loacl variables===================||--
 
-local Utils = ExposedMembers.EagleUnion
+local Utils            = ExposedMembers.EagleUnion
+
+local m_kSlideAnimator = {}
+local m_TechsListIM    = InstanceManager:new("TechSlot", "ButtonContainer", Controls.TechsStack)
+local m_CivicsListIM   = InstanceManager:new("CivicSlot", "ButtonContainer", Controls.CivicsStack)
+local m_chooseTechs    = true
+local m_chooseCivics   = false
+local m_chooseCities   = false
 
 --||====================base functions====================||--
 
@@ -138,4 +146,143 @@ function GetData()
     return data
 end
 
+--打开面板
+function Open()
+    TopRefresh()
+    if m_chooseTechs then
+        ChooseTechsTab()
+    elseif m_chooseCivics then
+        ChooseCivicsTab()
+    elseif m_chooseCities then
+        ChooseCitiesTab()
+    end
+    UI.PlaySound("Tech_Tray_Slide_Open")
+    m_kSlideAnimator.Show()
+end
+
+--关闭面板
+function Close()
+    UI.PlaySound("Tech_Tray_Slide_Close")
+    m_kSlideAnimator.Hide()
+end
+
+--面板切换
+function Toggle()
+    if ContextPtr:IsHidden() then
+        Open()
+    else
+        Close()
+    end
+end
+
+--顶部刷新
+function TopRefresh()
+    --获取本地玩家
+    local playerID = Game.GetLocalPlayer()
+    --获取每回合获得的研究点数
+    local perTurnPoint = EaglePointManager:GetPerTurnPoint(playerID, true)
+    Controls.FaithLabel:SetText(perTurnPoint)
+    --获取每回合获得的研究点数tooltip
+    local tooltip = Locale.Lookup('LOC_EAGLE_POINT_PER_TURN', perTurnPoint)
+    tooltip = tooltip .. '[NEWLINE]' .. EaglePointManager:GetPerTurnPointTooltip(playerID)
+    Controls.FaithLabel:SetToolTipString(tooltip)
+end
+
+--设置Tab选中状态
+function SetTechsTabState(IsSelected)
+    Controls.TechButton:SetSelected(IsSelected)
+    Controls.TechSelectButton:SetHide(not IsSelected)
+    m_chooseTechs = IsSelected
+end
+
+function SetCivicsTabState(IsSelected)
+    Controls.CivicButton:SetSelected(IsSelected)
+    Controls.CivicSelectButton:SetHide(not IsSelected)
+    m_chooseCivics = IsSelected
+end
+
+function SetCitiesTabState(IsSelected)
+    Controls.CityButton:SetSelected(IsSelected)
+    Controls.CitySelectButton:SetHide(not IsSelected)
+    m_chooseCities = IsSelected
+end
+
+--交换科技、市政、城市生产数据
+function ChooseTechsTab()
+    --是否选中其他Tab
+    if not Controls.TechButton:IsSelected() then
+        --取消选中市政
+        SetCivicsTabState(false)
+        --取消选中城市
+        SetCitiesTabState(false)
+    end
+    --选中科技
+    SetTechsTabState(true)
+end
+
+function ChooseCivicsTab()
+    --是否选中其他Tab
+    if not Controls.CivicButton:IsSelected() then
+        --取消选中科技
+        SetTechsTabState(false)
+        --取消选中城市
+        SetCitiesTabState(false)
+    end
+    --选中市政
+    SetCivicsTabState(true)
+end
+
+function ChooseCitiesTab()
+    --是否选中其他Tab
+    if not Controls.CityButton:IsSelected() then
+        --取消选中科技
+        SetTechsTabState(false)
+        --取消选中市政
+        SetCivicsTabState(false)
+    end
+    --选中城市
+    SetCitiesTabState(true)
+end
+
+--||======================ContextPtr======================||--
+
+--On input handler
+function OnInputHandler(pInputStruct)
+    if pInputStruct:GetMessageType() == KeyEvents.KeyUp and pInputStruct:GetKey() == Keys.VK_ESCAPE then
+        Close()
+        return true
+    end
+    return false
+end
+
+--||======================initialize======================||--
+
+function Initialize()
+    --设置滑动动画
+    m_kSlideAnimator = CreateScreenAnimation(Controls.EagleChooserSlideAnim)
+    -------------------Closed-------------------
+
+    ------------------UI Event------------------
+    ContextPtr:SetInputHandler(OnInputHandler, true)
+    ------------------Register------------------
+    --顶部关闭按钮
+    Controls.CloseButton:RegisterCallback(Mouse.eLClick, Close)
+    Controls.CloseButton:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter)
+    --科技按钮
+    Controls.TechButton:RegisterCallback(Mouse.eLClick, ChooseTechsTab)
+    Controls.TechButton:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter)
+    --市政按钮
+    Controls.CivicButton:RegisterCallback(Mouse.eLClick, ChooseCivicsTab)
+    Controls.CivicButton:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter)
+    --城市按钮
+    Controls.CityButton:RegisterCallback(Mouse.eLClick, ChooseCitiesTab)
+    Controls.CityButton:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter)
+    ------------------LuaEvents-----------------
+    LuaEvents.EagleUnionTopButton_TogglePopup.Add(Toggle)
+    --------------------------------------------
+    print("Initialize success!")
+end
+
 include('EagleUnionExtraPanel_', true)
+
+Initialize()

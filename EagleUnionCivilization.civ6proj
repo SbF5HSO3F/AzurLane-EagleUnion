@@ -98,7 +98,13 @@
           <File>Import/EagleUnionCore.lua</File>
           <File>Import/EagleUnionPoint.lua</File>
         </ImportFiles>
-        <DoNothing id="UI" />
+        <AddUserInterfaces id="UI">
+          <Properties>
+            <Context>InGame</Context>
+          </Properties>
+          <File>UI/Additions/EagleUnionExtraPanel.xml</File>
+          <File>UI/Additions/EagleUnionTopButton.xml</File>
+        </AddUserInterfaces>
         <AddGameplayScripts id="Script">
           <File>Scripts/EagleUnionScirpt.lua</File>
           <File>Scripts/EagleUnionEssex.lua</File>

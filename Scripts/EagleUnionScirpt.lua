@@ -58,14 +58,14 @@ end
 
 function EagleUnionTurnStart(playerID, isFirst)
     if isFirst and EagleCore.CheckCivMatched(playerID, 'CIVILIZATION_EAGLE_UNION') then
-        print('Old Point: ' .. EaglePointManager.GetEaglePoint(playerID))
+        print('Old Point: ' .. EaglePointManager.GetEaglePoint(playerID, true))
         --get the per turn point
         local perpoint = EaglePointManager:GetPerTurnPoint(playerID)
         print('EagleUnion PerPoint:', perpoint)
         EaglePointManager:GetPerTurnPointTooltip(playerID)
         --add the per turn point to the player
         EaglePointManager:ChangeEaglePoint(playerID, perpoint)
-        print('New Point: ' .. EaglePointManager.GetEaglePoint(playerID))
+        print('New Point: ' .. EaglePointManager.GetEaglePoint(playerID, true))
     end
 end
 

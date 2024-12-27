@@ -2,6 +2,164 @@
 <!-- EagleUnion_ExtraPanel -->
 <!-- Author: HSbF6HSO3F -->
 <!-- DateCreated: 2024/12/26 8:27:50 -->
-<GameData>
+<Context ID="EagleChooserContext">
+    <!-- Left Panel -->
+    <SlideAnim ID="EagleChooserSlideAnim" Size="auto,parent" Anchor="L,T" Begin="-350,0" End="0,0" Cycle="Once" Speed="5">
+        <Container ID="EagleChooser" Size="auto,parent-54" Offset="-3,54">
+            <!-- Body container-->
+            <Container ID="MainContainer" Size="350,parent" ConsumeAllMouse="1">
+                <Stack ID="EagleChooserStack" StackGrowth="Down">
+                    <!-- Top Panel -->
+                    <Grid ID="TopPanel" Size="parent,auto" Anchor="C,T" Texture="Wood_Pattern">
+                        <Container ID="TopContainer" Size="parent-20,auto" Anchor="C,T" Offset="0,14">
+                            <!-- Civilization Icon -->
+                            <Image ID="TopImage" Anchor="L,T" Offset="0,-2" Texture="CityPanel_ProductionSlot">
+                                <Image Anchor="C,C" Offset="0,-2" Size="55,55" Texture="Controls_SlotCircle" />
+                                <Image ID="CivilizationIcon" Offset="0,-4" Texture="ICON_CIVILIZATION_EAGLE_UNION_80" Anchor="C,C"/>
+                            </Image>
+                            <!-- About the Academy -->
+                            <Grid ID="AcademyGrid" Anchor="C,T" Offset="46,2" Size="204,24" Style="CityPanelSlotGrid">
+                                <Label ID="AcademyLabel" Anchor="C,C" Offset="4,1" Style="CityPanelHeader" String="{LOC_SOVIET_FAITH_UNLOCK_NO_ACADEMY:upper}" />
+                            </Grid>
+                            <Button ID="AcademyButton" Anchor="L,T" Offset="81,-2" Texture="SelectionPanel_StatLarge" Size="41,42" Disabled="1">
+                                <Image ID="AcademyIcon" Icon="ICON_BUILDING_SOVIET_ACADEMY_OF_SCIENCES" Size="32,32" Anchor="C,C" Offset="0,-2"/>
+                            </Button>
+                            <!-- About the Choose Tech -->
+                            <Grid ID="TechGrid" Anchor="C,C" Offset="0,-5" Size="80,24" Style="CityPanelSlotGrid">
+                                <Label ID="TechLabel" Anchor="C,C" Offset="4,1" Style="CityPanelHeader" String="{LOC_SOVIET_FAITH_UNLOCK_NO_CHOOSER:upper}" />
+                            </Grid>
+                            <Button ID="TechButton" Anchor="L,C" Offset="97,-3" Texture="SelectionPanel_StatLarge" Size="41,42" Disabled="1">
+                                <Image Texture="LaunchBar_Hook_TechTree" Size="32,32" Anchor="C,C" Offset="-3,-3"/>
+                            </Button>
+                            <!-- About the Choose Civic -->
+                            <Grid ID="CivicGrid" Anchor="C,C" Offset="108,-5" Size="80,24" Style="CityPanelSlotGrid">
+                                <Label ID="CivicLabel" Anchor="C,C" Offset="5,1" Style="CityPanelHeader" String="{LOC_SOVIET_FAITH_UNLOCK_NO_CHOOSER:upper}" />
+                            </Grid>
+                            <Button ID="CivicButton" Anchor="L,C" Offset="204,-3" Texture="SelectionPanel_StatLarge" Size="41,42" Disabled="1">
+                                <Image Texture="LaunchBar_Hook_CivicsTree" Size="32,32" Anchor="C,C" Offset="-3,-4"/>
+                            </Button>
+                            <!-- About the Cost Faith -->
+                            <Grid ID="FaithGrid" Anchor="C,B" Offset="46,13" Size="204,24" Style="CityPanelSlotGrid">
+                                <Label ID="FaithLabel" Anchor="C,C" Offset="4,1" Style="CityPanelHeader" String="{LOC_SOVIET_FAITH_UNLOCK_NO_COST:upper}" />
+                            </Grid>
+                            <Button ID="FaithButton" Anchor="L,B" Offset="81,2" Texture="SelectionPanel_StatLarge" Size="41,42" Disabled="1">
+                                <Image Texture="LaunchBar_Hook_Religion" Size="32,32" Anchor="C,C" Offset="-2,-2"/>
+                            </Button>
 
-</GameData>
+                            <Box ID="TopBottomColumn" Color="143,122,82,200" Anchor="C,B" Size="350,2" Offset="0,0" Hidden="0">
+                                <Box Color="0,0,0,200" Anchor="L,T" Size="parent,1" AnchorSide="I,O"/>
+                                <Box Color="0,0,0,200" Anchor="L,B" Size="parent,1" AnchorSide="I,O"/>
+                            </Box>
+                        </Container>
+                    </Grid>
+                    <!-- Bottom Panel -->
+                    <Grid ID="BottomGrid" Size="parent,parent-183" Offset="0,0" Texture="Controls_ContainerBlue" SliceStart="0,0" SliceCorner="3,3" SliceSize="9,9" SliceTextureSize="16,16">
+                        <!-- Choose the Tech or Civic -->
+                        <Grid ID="ChooseGrid" Anchor="C,T" Offset="0,42" Size="parent-6,parent-42" Texture="Religion_OverviewFrame" SliceCorner="15,15" SliceTextureSize="34,33">
+                            <ScrollPanel Anchor="C,T" Offset="-5,10" Size="auto,parent-20" AutoSizePadding="2,0" Style="ScrollPanelWithRightBar">
+                                <Stack ID="TechsStack" Anchor="C,T" StackGrowth="Down"/>
+                                <Stack ID="CivicsStack" Anchor="C,T" StackGrowth="Down"/>
+                            </ScrollPanel>
+                        </Grid>
+                        <!-- Tab Container -->
+                        <Image ID="TabBarImage" Anchor="C,T" Size="parent-80,27" Offset="0,8" Texture="Controls_TabLedge2_Fill" StretchMode="Tile" />
+                        <Grid ID="TabBarGrid" Anchor="C,T" Size="parent,61" Offset="0,-8" Texture="Controls_TabLedge2" SliceCorner="194,18" SliceSize="108,26" SliceTextureSize="438,61">
+                            <Container ID="TabContainer" Size="Parent-80,34" Offset="40,13">
+                                <Stack ID="TabStack" Anchor="C,T" StackGrowth="Right" StackPadding="4">
+                                    <GridButton ID="TechButton" Anchor="L,T" Size="80,34" Style="TabButton" FontSize="14" TextOffset="0,2">
+                                        <GridButton ID="TechSelectButton" Size="parent,parent" Style="TabButtonSelected" ConsumeMouseButton="0" ConsumeMouseOver="1" Hidden="1"/>
+                                        <Label Style="FontFlair14" Offset="0,3" String="LOC_EAGLE_POINT_UNLOCK_TECH" Anchor="C,C" FontStyle="stroke" ColorSet="TopBarValueCS"/>
+                                    </GridButton>
+                                    <GridButton ID="CivicButton" Anchor="L,T" Size="80,34" Style="TabButton" FontSize="14" TextOffset="0,2">
+                                        <GridButton ID="CivicSelectButton" Size="parent,parent" Style="TabButtonSelected" ConsumeMouseButton="0" ConsumeMouseOver="1" Hidden="1"/>
+                                        <Label Style="FontFlair14" Offset="0,3" String="LOC_EAGLE_POINT_UNLOCK_CIVIC" Anchor="C,C" FontStyle="stroke" ColorSet="TopBarValueCS"/>
+                                    </GridButton>
+                                    <GridButton ID="CityButton" Anchor="L,T" Size="80,34" Style="TabButton" FontSize="14" TextOffset="0,2">
+                                        <GridButton ID="CitySelectButton" Size="parent,parent" Style="TabButtonSelected" ConsumeMouseButton="0" ConsumeMouseOver="1" Hidden="1"/>
+                                        <Label Style="FontFlair14" Offset="0,3" String="LOC_EAGLE_POINT_FINISH_CITY" Anchor="C,C" FontStyle="stroke" ColorSet="TopBarValueCS"/>
+                                    </GridButton>
+                                </Stack>
+                            </Container>
+                        </Grid>
+                    </Grid>
+                    <!-- Confirm Button -->
+                    <Grid ID="ConfirmGrid" Size="parent+2,90" Anchor="C,B" Texture="Controls_DrawerUp" SliceCorner="5,4" SliceSize="3,2" SliceTextureSize="14,8">
+                        <Stack Anchor="C,C">
+                            <!-- Confirm Button -->
+                            <GridButton ID="ConfirmButton" Size="parent-50,41" Offset="0,4" Anchor="C,B">
+                                <GridData Texture="Controls_Confirm" StateOffsetIncrement="0,41" SliceCorner="40,21" SliceSize="1,1" SliceTextureSize="80,41"/>
+                                <Label Anchor="C,C" Offset="0,0" String="{LOC_SOVIET_FAITH_UNLOCK_CONFIRM:upper}" Style="FontFlair14" FontStyle="Shadows" TextOffset="0,2" SmallCaps="18" SmallCapsType="EveryWord"/>
+                            </GridButton>
+                            <!-- Cancel Button -->
+                            <GridButton ID="CancelButton" Style="ButtonLightWeightGrid" Size="parent-50,24" Offset="0,4" Anchor="C,B" String="{LOC_SOVIET_FAITH_UNLOCK_CANCEL:upper}" Style="FontFlair14" FontStyle="Shadows" EffectColor="0,0,0,255" TextOffset="0,2" EffectColor="0,0,0,255" SmallCaps="20" SmallCapsType="EveryWord"/>
+                        </Stack>
+                    </Grid>
+                </Stack>
+            </Container>
+
+            <!-- Header container-->
+            <Grid ID="HeaderContainer" Size="363,60" Offset="2,-25" Style="HeaderBannerLeft" ConsumeAllMouse="1">
+                <Label ID="HeaderText" Size="200,50" Offset="0,7" Anchor="C,T" Style="FontFlair16" Color0="0,59,77,255" SmallCaps="20" SmallCapsType="FirstOnly" String="{LOC_EAGLE_POINT_UNLOCK_HEADER:upper}" TruncateWidth="380" TruncatedTooltip="1"/>
+                <Button ID="CloseButton" Anchor="R,T" Style="CloseButtonSmall" Offset="14,2"/>
+            </Grid>
+
+        </Container>
+    </SlideAnim>
+
+    <!-- Instances -->
+    <Instance Name="TechSlot">
+        <Container ID="ButtonContainer" Size="310,88">
+            <GridButton ID="Button" Offset="0,4" Size="310,80" Texture="ResearchPanel_ChooserButton" StateOffsetIncrement="0,80" SliceCorner="73,62" SliceTextureSize="102,80">
+                <Meter ID="ProgressMeter" Offset="2,2" Size="44,44" Texture="ResearchPanel_ChooserMeter" Follow="1"/>
+                <Image ID="Icon" Offset="5,5" Size="38,38" Texture="Tech30" />
+                <Stack ID="CostStack" Anchor="R,T" Offset="3,3" StackGrowth="Left" StackPadding="4">
+                    <Label ID="IconString" Anchor="L,C" Offset="0,1" String="[ICON_FaithLarge]"/>
+                    <Label ID="Cost" Anchor="L,C" Offset="0,0" Style="FontNormal18" FontStyle="Stroke" ColorSet= "ResFaithLabelCS" String="0"/>
+                </Stack>
+                <Stack ID="ProgressStack" Anchor="R,B" Offset="3,3" StackGrowth="Left" StackPadding="4">
+                    <Label ID="IconString" Anchor="L,C" Offset="0,1" String="[ICON_SCIENCE]"/>
+                    <Label ID="Progress" Anchor="L,C" Offset="0,0" Style="FontNormal14" FontStyle="Stroke" ColorSet= "ResScienceLabelCS" String="0"/>
+                </Stack>
+                <Label ID="Name" Anchor="L,T" Offset="48,5" Style="FontNormal14" FontStyle="Stroke" ColorSet="BodyTextCool" Color1="0,0,0,100"/>
+                <Image ID="IconCanBeBoosted" Anchor="L,B" Offset="-4,-8" Texture="ResearchPanel_BoostIconAvailable" Hidden="1"/>
+                <Label ID="BoostLabel" Anchor="L,B" Offset="22,4" Style="FontNormal12" Color0="150,150,150,255" />
+                <Image ID="IconHasBeenBoosted" Anchor="L,B" Offset="-4,-8" Texture="ResearchPanel_BoostIconBoosted" Hidden="1"/>
+                <Stack ID="UnlockStack" Offset="46,22" StackGrowth="Right" StackPadding="-1" />
+                <Button ID="UnlockPageTurner" Anchor="R,B" Offset="18,28"  Size ="19,23" Hidden="1">
+                    <Image ID="PageTurnerImage" Anchor="C,C" Offset="0,0" Size="parent,parent" Texture="Controls_ArrowButtonRight" FlipX="false"/>
+                </Button>
+                <Image ID="Select" Anchor="R,T" Offset="-4,-4" Size="35,35" Texture="TechOrCivic_NP_Selected" Hidden="1"/>
+            </GridButton>
+        </Container>
+    </Instance>
+    <Instance Name="CivicSlot">
+        <Container ID="ButtonContainer" Size="310,88">
+            <GridButton ID="Button" Offset="0,4" Size="310,80" Texture="CivicPanel_ChooserButton" StateOffsetIncrement="0,80" SliceCorner="73,62" SliceTextureSize="102,80">
+                <Meter ID="ProgressMeter" Offset="2,2" Size="44,44" Texture="CivicPanel_ChooserMeter" Follow="1"/>
+                <Image ID="Icon" Offset="5,5" Size="38,38" Texture="Tech30" />
+                <Stack ID="CostStack" Anchor="R,T" Offset="3,3" StackGrowth="Left" StackPadding="4">
+                    <Label ID="IconString" Anchor="L,C" Offset="0,1" String="[ICON_FaithLarge]"/>
+                    <Label ID="Cost" Anchor="L,C" Offset="0,0" Style="FontNormal18" FontStyle="Stroke" ColorSet= "ResFaithLabelCS" String="0"/>
+                </Stack>
+                <Stack ID="ProgressStack" Anchor="R,B" Offset="3,3" StackGrowth="Left" StackPadding="4">
+                    <Label ID="IconString" Anchor="L,C" Offset="0,1" String="[ICON_Culture]"/>
+                    <Label ID="Progress" Anchor="L,C" Offset="0,0" Style="FontNormal14" FontStyle="Stroke" ColorSet= "ResCultureLabelCS" String="0"/>
+                </Stack>
+                <Label ID="Name" Anchor="L,T" Offset="48,5" Style="FontNormal14" FontStyle="Stroke" ColorSet="BodyTextCool" Color1="0,0,0,100"/>
+                <Image ID="IconCanBeBoosted" Anchor="L,B" Offset="-4,-8" Texture="CivicPanel_BoostIconAvailable" Hidden="1"/>
+                <Label ID="BoostLabel" Anchor="L,B" Offset="22,4" Style="FontNormal12" Color0="150,150,150,255" />
+                <Image ID="IconHasBeenBoosted" Anchor="L,B" Offset="-4,-8" Texture="CivicPanel_BoostIconBoosted" Hidden="1"/>
+                <Stack ID="UnlockStack" Offset="46,22" StackGrowth="Right" StackPadding="-1"/>
+                <Button ID="UnlockPageTurner" Anchor="R,B" Offset="18,28"  Size ="19,23" Hidden="1">
+                    <Image ID="PageTurnerImage" Anchor="C,C" Offset="0,0" Size="parent,parent" Texture="Controls_ArrowButtonRight" FlipX="false"/>
+                </Button>
+                <Image ID="Select" Anchor="R,T" Offset="-4,-4" Size="35,35" Texture="TechOrCivic_NP_Selected" Hidden="1"/>
+            </GridButton>
+        </Container>
+    </Instance>
+    <Instance Name="UnlockIconInstance">
+        <Button ID="UnlockIcon" Style="UnlockFrames" NoStateChange="1">
+            <Image ID="Icon" Size="38,38" Texture="Controls_Blank" Anchor="C,C"/>
+        </Button>
+    </Instance>
+</Context>
