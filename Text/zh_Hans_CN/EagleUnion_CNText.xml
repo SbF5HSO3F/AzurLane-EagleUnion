@@ -178,6 +178,9 @@
 		<Replace Tag="LOC_EAGLE_POINT_FROM_CITY" Language="zh_Hans_CN">
 			<Text>[NEWLINE][ICON_Bullet]{1_point : number +#.#;-#.#} 来自{2_city}</Text>
 		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_FROM_SANTA_CLARA" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]{1_point : number +#.#;-#.#} 来自圣塔克拉拉谷</Text>
+		</Replace>
 		<!--城市名-->
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_WASHINGTON_DC" Language="zh_Hans_CN">
 			<Text>华盛顿特区</Text>

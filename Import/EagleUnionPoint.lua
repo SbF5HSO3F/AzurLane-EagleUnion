@@ -45,7 +45,29 @@ EaglePointManager.Points = {
     --来自其他
     Extra = {
         SantaClara = {
-
+            Tooltip = 'LOC_EAGLE_POINT_FROM_SANTA_CLARA',
+            GetPointYield = function(playerID)
+                --获取玩家
+                local pPlayer = Players[playerID]
+                if not pPlayer then return 0 end
+                --获取区域
+                local districts = pPlayer:GetDistricts()
+                --获取圣塔克拉拉谷的数量
+                local count = 0
+                for _, district in districts:Members() do
+                    if district:GetType() == SantaClaraValley
+                        and district:IsComplete() and (not district:IsPillaged())
+                    then
+                        count = count + 1
+                    end
+                end
+                --返回最终的点数
+                return EagleCore.Round(count * 10)
+            end,
+            GetTooltip = function(self, playerID)
+                local yield = self.GetPointYield(playerID)
+                return yield ~= 0 and Locale.Lookup(self.Tooltip, yield) or ''
+            end
         }
     }
 }
@@ -84,6 +106,34 @@ function EaglePointManager:GetPerTurnPoint(playerID)
     return perTurnPoint
 end
 
+--获取每回合获得的研究点数的tooltip (GamePlay, UI)
+function EaglePointManager:GetPerTurnPointTooltip(playerID)
+    local perTurnPointTooltip = ''
+    --获取玩家
+    local pPlayer = Players[playerID]
+    if not pPlayer then return '' end
+    --来自城市
+    local cities = pPlayer:GetCities()
+    for _, city in cities:Members() do
+        local cityID = city:GetID()
+        local cityPoint = self:GetCityYieldPoint(playerID, cityID)
+        if cityPoint ~= 0 then
+            local cityName = city:GetName()
+            perTurnPointTooltip = perTurnPointTooltip ..
+                Locale.Lookup('LOC_EAGLE_POINT_FROM_CITY', cityPoint, cityName)
+            print(Locale.Lookup('LOC_EAGLE_POINT_FROM_CITY', cityPoint, cityName))
+        end
+    end
+    --来自其他
+    local extra = self.Points.Extra
+    for _, source in pairs(extra) do
+        perTurnPointTooltip = perTurnPointTooltip .. source:GetTooltip(playerID)
+        print(source:GetTooltip(playerID))
+    end
+    --返回tooltip
+    return perTurnPointTooltip
+end
+
 --||======================GamePlay========================||--
 
 --设置研究点数，返回新的研究点数 (GamePlay)
@@ -104,28 +154,6 @@ end
 --||==========================UI==========================||--
 
 
---获取每回合获得的研究点数的tooltip (UI)
-function EaglePointManager:GetPerTurnPointTooltip(playerID)
-    local perTurnPointTooltip = ''
-    --获取玩家
-    local pPlayer = Players[playerID]
-    if not pPlayer then return '' end
-    --来自城市
-    local cities = pPlayer:GetCities()
-    for _, city in cities:Members() do
-        local cityID = city:GetID()
-        local cityPoint = self:GetCityYieldPoint(playerID, cityID)
-        if cityPoint ~= 0 then
-            local cityName = city:GetName()
-            perTurnPointTooltip = perTurnPointTooltip ..
-                Locale.Lookup('LOC_EAGLE_POINT_FROM_CITY', cityPoint, cityName)
-        end
-    end
-    --来自其他
-
-    --返回tooltip
-    return perTurnPointTooltip
-end
 
 --||=======================include========================||--
 include('EagleUnionPoint_', true)

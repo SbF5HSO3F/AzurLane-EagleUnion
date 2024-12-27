@@ -4,6 +4,7 @@
 --------------------------------------------------------------
 --||=======================include========================||--
 include('EagleUnionCore')
+include('EagleUnionPoint')
 
 --||===================local variables====================||--
 
@@ -55,10 +56,24 @@ function EagleUnionActiveGreatPerson(playerID)
     end
 end
 
+function EagleUnionTurnStart(playerID, isFirst)
+    if isFirst and EagleCore.CheckCivMatched(playerID, 'CIVILIZATION_EAGLE_UNION') then
+        print('Old Point: ' .. EaglePointManager.GetEaglePoint(playerID))
+        --get the per turn point
+        local perpoint = EaglePointManager:GetPerTurnPoint(playerID)
+        print('EagleUnion PerPoint:', perpoint)
+        EaglePointManager:GetPerTurnPointTooltip(playerID)
+        --add the per turn point to the player
+        EaglePointManager:ChangeEaglePoint(playerID, perpoint)
+        print('New Point: ' .. EaglePointManager.GetEaglePoint(playerID))
+    end
+end
+
 --||======================initialize======================||--
 
 --Initialize
 function Initialize()
+    Events.PlayerTurnActivated.Add(EagleUnionTurnStart)
     -------------------Events-------------------
     Events.UnitGreatPersonActivated.Add(EagleUnionActiveGreatPerson)
     --------------------------------------------
