@@ -42,7 +42,7 @@
 			<Text>圣塔克拉拉谷</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>白鹰联邦特色区域，取代工业区，解锁更早，造价更低，且无人口需求（因此并非专业化区域）。从相邻区域获得标准相邻加成，[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_SCIENCE] 科技值和 [ICON_GOLD] 金币。[NEWLINE][NEWLINE]建成后随机奖励一项科技。此城所有改良设施+1 [ICON_SCIENCE] 科技值、+1 [ICON_PRODUCTION] 生产力，研究完“学徒”科技后再+1 [ICON_PRODUCTION] 生产力。[NEWLINE]为相邻区域提供大量相邻加成。从每个相邻的港口和学院获得+2 [ICON_PRODUCTION] 生产力。</Text>
+			<Text>白鹰联邦特色区域，取代工业区，解锁更早，造价更低，且无人口需求（因此并非专业化区域）。从相邻区域获得标准相邻加成，[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_SCIENCE] 科技值和 [ICON_GOLD] 金币。[NEWLINE][NEWLINE]城市每回合获得等同于其每回合所获 [ICON_SCIENCE] 科技值、[ICON_CULTURE] 文化值和 [ICON_PRODUCTION] 生产力20%的研究点数。此城所有改良设施+1 [ICON_SCIENCE] 科技值、+1 [ICON_PRODUCTION] 生产力，研究完“学徒”科技后再+1 [ICON_PRODUCTION] 生产力。[NEWLINE]为相邻区域提供大量相邻加成。从每个相邻的港口和学院获得+2 [ICON_PRODUCTION] 生产力。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN" >
 			<Text>圣塔克拉拉谷，又称硅谷，位于美国加利福尼亚北部的大都会区旧金山湾区南面，是高科技事业云集的地区。由于圣塔克拉拉谷最早是研究和生产以硅为基础的半导体芯片的地方，因此得名硅谷。</Text>
@@ -176,7 +176,7 @@
 		</Replace>
 		<!--Lua文本-->
 		<Replace Tag="LOC_EAGLE_POINT_UNLOCK" Language="zh_Hans_CN">
-			<Text>使用研究点数解锁科技、市政和完成城市生产</Text>
+			<Text>白鹰联邦[NEWLINE][NEWLINE]使用研究点数解锁科技、市政和完成城市生产</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_HEADER" Language="zh_Hans_CN">
 			<Text>圣塔克拉拉谷</Text>

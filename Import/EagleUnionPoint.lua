@@ -33,15 +33,19 @@ EaglePointManager.Points = {
     City = {
         Yield = {
             GetPointYield = function(playerID, cityID)
+                local yieldPoint = 0
                 --获取城市
                 local pCity = CityManager.GetCity(playerID, cityID)
                 if not pCity then return 0 end
-                --获取各项产出
-                local yield = pCity:GetYield(YieldTypes.SCIENCE)
-                yield = yield + pCity:GetYield(YieldTypes.CULTURE)
-                yield = yield + pCity:GetYield(YieldTypes.PRODUCTION)
+                local cityDistricts = pCity:GetDistricts()
+                if cityDistricts:HasDistrict(SantaClaraValley, true) then
+                    --获取各项产出
+                    yieldPoint = yieldPoint + pCity:GetYield(YieldTypes.SCIENCE)
+                    yieldPoint = yieldPoint + pCity:GetYield(YieldTypes.CULTURE)
+                    yieldPoint = yieldPoint + pCity:GetYield(YieldTypes.PRODUCTION)
+                end
                 --百分比处理
-                return EagleCore.Floor(yield * perYieldPercent)
+                return EagleCore.Floor(yieldPoint * perYieldPercent)
             end
         }
     },

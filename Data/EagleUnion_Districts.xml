@@ -91,10 +91,10 @@
 			<ModifierId>SANTA_GOLD_COPY</ModifierId>
 		</Row>
 		<!--随机科技-->
-		<Row>
+		<!-- <Row>
 			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
 			<ModifierId>SANTA_GRANT_RANDOM_TECHNOLOGY</ModifierId>
-		</Row>
+		</Row> -->
 		<!--改良设施buff-->
 		<Row>
 			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
