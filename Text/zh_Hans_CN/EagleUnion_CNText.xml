@@ -190,7 +190,12 @@
 		<Replace Tag="LOC_EAGLE_POINT_FINISH_CITY" Language="zh_Hans_CN">
 			<Text>城市</Text>
 		</Replace>
-
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_HAS_BOOST" Language="zh_Hans_CN">
+			<Text>可获得提升</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_CAN_BOOST" Language="zh_Hans_CN">
+			<Text>已获得提升</Text>
+		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_PER_TURN" Language="zh_Hans_CN">
 			<Text>每回合 [ICON_Turn] 科研点数:</Text>
 		</Replace>

@@ -7,6 +7,8 @@ include('InstanceManager')
 include('TechAndCivicSupport')
 include('AnimSidePanelSupport')
 include('ToolTipHelper')
+
+
 include('EagleUnionCore')
 include('EagleUnionPoint')
 
@@ -19,8 +21,10 @@ local SIZE_ICON_SMALL  = 38
 local Utils            = ExposedMembers.EagleUnion
 
 local m_kSlideAnimator = {}
+local m_PanelIsOpen    = false
 local m_TechsListIM    = InstanceManager:new("TechSlot", "ButtonContainer", Controls.TechsStack)
 local m_CivicsListIM   = InstanceManager:new("CivicSlot", "ButtonContainer", Controls.CivicsStack)
+local m_CitiesListIM   = InstanceManager:new("CitySlot", "ButtonContainer", Controls.CitiesStack)
 local m_chooseTechs    = true
 local m_chooseCivics   = false
 local m_chooseCities   = false
@@ -42,7 +46,7 @@ function GetData()
     --获取科技数据
     local techs = player:GetTechs()
     for row in GameInfo.Technologies() do
-        if (not techs:HasCivic(row.Index)) or row.Repeatable == true then
+        if (not techs:HasTech(row.Index)) or row.Repeatable == true then
             local index = row.Index
             --设置科技表
             local techDetail = {
@@ -73,7 +77,7 @@ function GetData()
     --获取市政数据
     local civics = player:GetCulture()
     for row in GameInfo.Civics() do
-        if (not civics:HasTech(row.Index)) or row.Repeatable == true then
+        if (not civics:HasCivic(row.Index)) or row.Repeatable == true then
             local index = row.Index
             --设置市政表
             local civicDetail = {
@@ -113,6 +117,12 @@ function GetData()
             local cityDetail = {}
             --添加城市生产数据
             cityDetail.ID = cityID
+            --城市生产名称
+            cityDetail.Name = cityData.ItemName
+            cityDetail.Type = cityData.ItemType
+            --城市生产图标
+
+            --城市生产进度
             cityDetail.Cost = cityData.TotalCost
             cityDetail.Progress = cityData.Progress
             cityDetail.Need = GetNeed(cityDetail)
@@ -156,13 +166,16 @@ function Open()
     elseif m_chooseCities then
         ChooseCitiesTab()
     end
+    Realize()
     UI.PlaySound("Tech_Tray_Slide_Open")
+    m_PanelIsOpen = true
     m_kSlideAnimator.Show()
 end
 
 --关闭面板
 function Close()
     UI.PlaySound("Tech_Tray_Slide_Close")
+    m_PanelIsOpen = false
     m_kSlideAnimator.Hide()
 end
 
@@ -191,19 +204,25 @@ end
 --设置Tab选中状态
 function SetTechsTabState(IsSelected)
     Controls.TechButton:SetSelected(IsSelected)
-    Controls.TechSelectButton:SetHide(not IsSelected)
+    local hiden = not IsSelected
+    Controls.TechSelectButton:SetHide(hiden)
+    Controls.TechsStack:SetHide(hiden)
     m_chooseTechs = IsSelected
 end
 
 function SetCivicsTabState(IsSelected)
     Controls.CivicButton:SetSelected(IsSelected)
-    Controls.CivicSelectButton:SetHide(not IsSelected)
+    local hiden = not IsSelected
+    Controls.CivicSelectButton:SetHide(hiden)
+    Controls.CivicsStack:SetHide(hiden)
     m_chooseCivics = IsSelected
 end
 
 function SetCitiesTabState(IsSelected)
     Controls.CityButton:SetSelected(IsSelected)
-    Controls.CitySelectButton:SetHide(not IsSelected)
+    local hiden = not IsSelected
+    Controls.CitySelectButton:SetHide(hiden)
+    Controls.CitiesStack:SetHide(hiden)
     m_chooseCities = IsSelected
 end
 
@@ -242,6 +261,119 @@ function ChooseCitiesTab()
     end
     --选中城市
     SetCitiesTabState(true)
+end
+
+--选中项实现
+function Realize()
+    --获取玩家
+    local playerID = Game.GetLocalPlayer()
+    --重设置科技、市政、城市生产数据列表
+    m_TechsListIM:ResetInstances()
+    m_CivicsListIM:ResetInstances()
+    m_CitiesListIM:ResetInstances()
+    --获取数据
+    local data = GetData()
+    --科技数据
+    for _, tech in ipairs(data.Techs) do
+        local instance = m_TechsListIM:GetInstance()
+        --获取科技是否选中
+
+        --获取科技定义
+        local techDef = GameInfo.Technologies[tech.Index]
+        --设置科技名称
+        instance.Name:SetText(Locale.Lookup(techDef.Name))
+        --设置回调函数
+        --设置tooltip
+        local tooltip = ToolTipHelper.GetToolTip(techDef.TechnologyType, playerID)
+        instance.Button:LocalizeAndSetToolTip(tooltip)
+        --设置科技图标
+        RealizeIcon(instance.Icon, techDef.TechnologyType, SIZE_ICON_SMALL)
+        --设置科技进度
+        local progress = math.clamp(tech.Progress / tech.Cost, 0, 1.0)
+        instance.ProgressMeter:SetPercent(progress)
+        --设置科技花费
+        --关于科技进度
+        local progressStr = Locale.ToNumber(tech.Progress, "#,###.#") .. '/' .. Locale.ToNumber(tech.Cost, "#,###.#")
+        instance.Progress:SetText(progressStr)
+        --关于科技提升
+        if tech.CanTrigger then
+            instance.IconCanBeBoosted:SetHide(tech.HasTrigger)
+            instance.IconHasBeenBoosted:SetHide(not tech.HasTrigger)
+            instance.BoostLabel:SetText(Locale.Lookup(
+                tech.HasTrigger and "LOC_EAGLE_POINT_UNLOCK_CAN_BOOST" or "LOC_EAGLE_POINT_UNLOCK_HAS_BOOST")
+            )
+        else
+            instance.IconCanBeBoosted:SetHide(true)
+            instance.IconHasBeenBoosted:SetHide(true)
+            instance.BoostLabel:SetText("")
+        end
+        --设置解锁项目
+        local unlockIM = GetUnlockIM(instance)
+        --获取科技解锁的项目
+        local unlockNum = PopulateUnlockablesForTech(playerID, tech.Index, unlockIM)
+        --如果有太多项目，处理溢出
+        if unlockNum ~= nil then
+            HandleOverflow(unlockNum, instance, 6, 6)
+        end
+    end
+    --市政数据
+    for _, civic in ipairs(data.Civics) do
+        local instance = m_CivicsListIM:GetInstance()
+        --获取市政是否选中
+
+        --获取市政定义
+        local civicDef = GameInfo.Civics[civic.Index]
+        --设置市政名称
+        instance.Name:SetText(Locale.Lookup(civicDef.Name))
+        --设置回调函数
+        --设置tooltip
+        local tooltip = ToolTipHelper.GetToolTip(civicDef.CivicType, playerID)
+        instance.Button:LocalizeAndSetToolTip(tooltip)
+        --设置市政图标
+        RealizeIcon(instance.Icon, civicDef.CivicType, SIZE_ICON_SMALL)
+        --设置市政进度
+        local progress = math.clamp(civic.Progress / civic.Cost, 0, 1.0)
+        instance.ProgressMeter:SetPercent(progress)
+        --设置市政花费
+        --关于市政进度
+        local progressStr = Locale.ToNumber(civic.Progress, "#,###.#") .. '/' .. Locale.ToNumber(civic.Cost, "#,###.#")
+        instance.Progress:SetText(progressStr)
+        --关于市政提升
+        if civic.CanTrigger then
+            instance.IconCanBeBoosted:SetHide(civic.HasTrigger)
+            instance.IconHasBeenBoosted:SetHide(not civic.HasTrigger)
+            instance.BoostLabel:SetText(Locale.Lookup(
+                civic.HasTrigger and "LOC_EAGLE_POINT_UNLOCK_CAN_BOOST" or "LOC_EAGLE_POINT_UNLOCK_HAS_BOOST")
+            )
+        else
+            instance.IconCanBeBoosted:SetHide(true)
+            instance.IconHasBeenBoosted:SetHide(true)
+            instance.BoostLabel:SetText("")
+        end
+        --设置解锁项目
+        local unlockIM = GetUnlockIM(instance)
+        --获取市政解锁的项目
+        local unlockNum = PopulateUnlockablesForCivic(playerID, civic.Index, unlockIM)
+        --如果有太多项目，处理溢出
+        if unlockNum ~= nil then
+            HandleOverflow(unlockNum, instance, 6, 6)
+        end
+    end
+    --城市数据
+    for _, v_city in ipairs(data.Cities) do
+        local instance = m_CitiesListIM:GetInstance()
+        --获取城市
+        local city = CityManager.GetCity(playerID, v_city.ID)
+        --设置首都
+        instance.CapitalIcon:SetHide(not city:IsCapital())
+        --设置城市名称
+        instance.CityName:SetText(Locale.Lookup(city:GetName()))
+        --设置生产名称
+        instance.CurrentProductionName:SetText(v_city.Name)
+        --设置生产图标
+        local iconName = 'ICON_' .. v_city.Type
+        instance.ProductionIcon:TrySetIcon(iconName)
+    end
 end
 
 --||======================ContextPtr======================||--

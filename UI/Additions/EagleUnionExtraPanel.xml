@@ -59,6 +59,7 @@
                             <ScrollPanel Anchor="C,T" Offset="-5,10" Size="auto,parent-20" AutoSizePadding="2,0" Style="ScrollPanelWithRightBar">
                                 <Stack ID="TechsStack" Anchor="C,T" StackGrowth="Down"/>
                                 <Stack ID="CivicsStack" Anchor="C,T" StackGrowth="Down"/>
+                                <Stack ID="CitiesStack" Anchor="C,T" StackGrowth="Down"/>
                             </ScrollPanel>
                         </Grid>
                         <!-- Tab Container -->
@@ -154,6 +155,38 @@
                     <Image ID="PageTurnerImage" Anchor="C,C" Offset="0,0" Size="parent,parent" Texture="Controls_ArrowButtonRight" FlipX="false"/>
                 </Button>
                 <Image ID="Select" Anchor="R,T" Offset="-4,-4" Size="35,35" Texture="TechOrCivic_NP_Selected" Hidden="1"/>
+            </GridButton>
+        </Container>
+    </Instance>
+    <Instance Name="CitySlot">
+        <Container ID="ButtonContainer" Size="310,98">
+            <GridButton ID="CityButton" Size="310,90" Style="ButtonControl">
+                <!-- City Name and Capital Indicator -->
+                <Label ID="CapitalIcon" Anchor="L,T" Offset="10,6" Style="FontNormal16" String="[ICON_Capital]"/>
+                <Label ID="CityName" Offset="36,6" Style="FontNormal16"/>
+                <!-- Current Production -->
+                <GridButton ID="CurrentProductionGrid" Size="300,48" Anchor="L,B" Offset="5,10" Texture="QueueSlot_Button" SliceCorner="20,23" SliceSize="2,2" SliceTextureSize="42,48" StateOffsetIncrement="0,48">
+                    <!-- Progress-->
+                    <Image Texture="CityPanel_MeterSmallBacking" Size="71,21" Anchor="R,T" Offset="5,5">
+                        <TextureBar ID="CurrentProductionProgress" Texture="CityPanel_ProductionMeterSmall" Size="67,17" Anchor="C,C" Speed="1" Direction="Right" ShadowColor="255,255,255,200"/>
+                        <Label ID="CurrentProductionCost" String="XX [ICON_Turn]" Style="WhiteSemiBold14" Anchor="C,C"/>
+                    </Image>
+
+                    <Stack Anchor="L,C" Offset="70,0" StackPadding="">
+                        <Label ID="CurrentProductionStatus" Style="HeaderSmallCaps" WrapWidth="160"/>
+                        <Label ID="CurrentProductionName" Style="WhiteSemiBold14" WrapWidth="160"/>
+                    </Stack>
+
+                    <Label ID="CurrentProductionProgressString" Style="WhiteSemiBold14" Color0="172,173,168" Anchor="R,B" Offset="6,6"/>
+
+                    <!--Icon and Gear-->
+                    <Container Size="72,72" Anchor="L,C" Offset="0,0">
+                        <FlipAnim ID="GearAnim" Texture="CivicPanel_MeterFrameAnim" FrameCount="3" Columns="3" Anchor="L,T" Speed="10" Size="40,40" Stopped="1"/>
+                        <Image Texture="ProductionPanel_MeterFrame" Size="72,72">
+                            <Image ID="ProductionIcon" Size="50,50" Texture="Buildings50" Anchor="C,C"/>
+                        </Image>
+                    </Container>
+                </GridButton>
             </GridButton>
         </Container>
     </Instance>
