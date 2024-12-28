@@ -58,15 +58,42 @@ end
 
 function EagleUnionTurnStart(playerID, isFirst)
     if isFirst and EagleCore.CheckCivMatched(playerID, 'CIVILIZATION_EAGLE_UNION') then
-        print('Old Point: ' .. EaglePointManager.GetEaglePoint(playerID, true))
         --get the per turn point
         local perpoint = EaglePointManager:GetPerTurnPoint(playerID)
-        print('EagleUnion PerPoint:', perpoint)
         EaglePointManager:GetPerTurnPointTooltip(playerID)
         --add the per turn point to the player
         EaglePointManager:ChangeEaglePoint(playerID, perpoint)
-        print('New Point: ' .. EaglePointManager.GetEaglePoint(playerID, true))
     end
+end
+
+--||=================GameEvents functions=================||--
+
+function EagleUnionPointUnlockAll(playerID, param)
+    --get the player
+    local player = Players[playerID]
+    if not player then return end
+    --the tech
+    local playerTechs = player:GetTechs()
+    for index, _ in pairs(param.Techs) do
+        playerTechs:SetResearchProgress(index, playerTechs:GetResearchCost(index))
+    end
+    --the civic
+    local playerCulture = player:GetCulture()
+    for index, _ in pairs(param.Civics) do
+        playerCulture:SetCulturalProgress(index, playerCulture:GetCultureCost(index))
+    end
+    --the cites
+    for index, value in pairs(param.Cities) do
+        --get the city
+        local city = CityManager.GetCity(playerID, index)
+        if city then
+            city:GetBuildQueue():AddProgress(value)
+        end
+    end
+    print(param.Cost)
+    --cost the point
+    EaglePointManager:ChangeEaglePoint(playerID, -param.Cost)
+    print(EaglePointManager.GetEaglePoint(playerID))
 end
 
 --||======================initialize======================||--
@@ -76,6 +103,8 @@ function Initialize()
     Events.PlayerTurnActivated.Add(EagleUnionTurnStart)
     -------------------Events-------------------
     Events.UnitGreatPersonActivated.Add(EagleUnionActiveGreatPerson)
+    -----------------GameEvents-----------------
+    GameEvents.EagleUnionPointUnlock.Add(EagleUnionPointUnlockAll)
     --------------------------------------------
     print('Initial success!')
 end

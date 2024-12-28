@@ -7,14 +7,15 @@ include('InstanceManager')
 include('TechAndCivicSupport')
 include('AnimSidePanelSupport')
 include('ToolTipHelper')
-
+include("PortraitSupport")
 
 include('EagleUnionCore')
 include('EagleUnionPoint')
 
 --||=======================Constants======================||--
 
-local SIZE_ICON_SMALL  = 38
+SIZE_ICON_SMALL        = 30
+SIZE_ICON_MEDIUM       = 38
 
 --||====================loacl variables===================||--
 
@@ -23,22 +24,57 @@ local Utils            = ExposedMembers.EagleUnion
 local m_kSlideAnimator = {}
 local m_PanelIsOpen    = false
 local m_TechsListIM    = InstanceManager:new("TechSlot", "ButtonContainer", Controls.TechsStack)
+local m_SelectedTechs  = {}
 local m_CivicsListIM   = InstanceManager:new("CivicSlot", "ButtonContainer", Controls.CivicsStack)
+local m_SelectedCivics = {}
 local m_CitiesListIM   = InstanceManager:new("CitySlot", "ButtonContainer", Controls.CitiesStack)
+local m_SelectedCities = {}
 local m_chooseTechs    = true
 local m_chooseCivics   = false
 local m_chooseCities   = false
 
 --||====================base functions====================||--
 
+--获取单位的头像
+function GetUnitIcons(playerID, unitDef)
+    local prefix             = GetUnitPortraitPrefix(playerID) .. unitDef.UnitType;
+    local suffix             = GetUnitPortraitEraSuffix(playerID)
+    --定义图标
+    local iconName           = prefix .. suffix;
+    local prefixOnlyIconName = prefix .. "_PORTRAIT";
+    local eraOnlyIconName    = "ICON_" .. unitDef.UnitType .. suffix;
+    local fallbackIconName   = "ICON_" .. unitDef.UnitType .. "_PORTRAIT";
+
+    return { iconName, prefixOnlyIconName, eraOnlyIconName, fallbackIconName }
+end
+
+--计算点数花费
+function CalculateSelectedCost()
+    local cost = 0
+    for _, tech in pairs(m_SelectedTechs) do
+        cost = cost + tech
+    end
+    for _, civic in pairs(m_SelectedCivics) do
+        cost = cost + civic
+    end
+    for _, city in pairs(m_SelectedCities) do
+        cost = cost + city
+    end
+    return cost
+end
+
 --获取科技、市政和城市生产的数据
 function GetData()
     --设置Data表
-    local data = { Techs = {}, Civics = {}, Cities = {} }
+    local data = { Techs = {}, Civics = {}, Cities = {}, Point = 0 }
     --获取玩家
     local loaclId = Game.GetLocalPlayer()
     local player = Players[loaclId]
     if not player then return data end
+    --获取玩家拥有的点数
+    local eaglePoint = EaglePointManager.GetEaglePoint(loaclId)
+    local cost = CalculateSelectedCost()
+    data.Point = eaglePoint - cost
     --简单的自定义函数，获取成本与进度之差
     local function GetNeed(table)
         return table.Cost - table.Progress
@@ -121,10 +157,37 @@ function GetData()
             cityDetail.Name = cityData.ItemName
             cityDetail.Type = cityData.ItemType
             --城市生产图标
-
+            cityDetail.Icons = {}
+            local iconName = 'ICON_' .. cityData.ItemType
+            if cityData.IsUnit then
+                --获取单位定义
+                local unitDef = GameInfo.Units[cityData.ItemIndex]
+                --获取单位图标
+                cityDetail.Icons = GetUnitIcons(loaclId, unitDef)
+                table.insert(cityDetail.Icons, iconName .. '_PORTRAIT')
+            else
+                table.insert(cityDetail.Icons, iconName)
+            end
+            --功能性提示
+            if cityData.IsBuilding then
+                tooltip = ToolTipHelper.GetBuildingToolTip(cityData.Hash, loaclId, city)
+            elseif cityData.IsDistrict then
+                tooltip = ToolTipHelper.GetDistrictToolTip(cityData.Hash)
+            elseif cityData.IsUnit then
+                --获取城市生产队列
+                local cityBuildQueue = city:GetBuildQueue()
+                local militaryFormationType = cityBuildQueue:GetCurrentProductionTypeModifier()
+                tooltip = ToolTipHelper.GetUnitToolTip(cityData.Hash, militaryFormationType, cityBuildQueue)
+            elseif cityData.IsProject then
+                tooltip = ToolTipHelper.GetProjectToolTip(cityData.Hash)
+            end
+            --设置tooltip
+            cityDetail.Tooltip = tooltip
             --城市生产进度
             cityDetail.Cost = cityData.TotalCost
             cityDetail.Progress = cityData.Progress
+            cityDetail.TurnsLeft = cityData.TurnsLeft
+            --城市生产所需
             cityDetail.Need = GetNeed(cityDetail)
             --获取城市溢出生产力可用
             if Utils:GetMultiplierUsable(loaclId, cityID) then
@@ -151,14 +214,17 @@ function GetData()
     --排序科技、市政、城市生产数据
     table.sort(data.Techs, function(a, b) return a.Need < b.Need end)
     table.sort(data.Civics, function(a, b) return a.Need < b.Need end)
-    table.sort(data.Cities, function(a, b) return a.Need < b.Need end)
+    --table.sort(data.Cities, function(a, b) return a.Need < b.Need end)
     --返回数据
     return data
 end
 
 --打开面板
 function Open()
-    TopRefresh()
+    --设置面版状态
+    m_PanelIsOpen = true
+    Refresh(Game.GetLocalPlayer())
+    --选中科技、市政、城市
     if m_chooseTechs then
         ChooseTechsTab()
     elseif m_chooseCivics then
@@ -166,16 +232,19 @@ function Open()
     elseif m_chooseCities then
         ChooseCitiesTab()
     end
-    Realize()
     UI.PlaySound("Tech_Tray_Slide_Open")
-    m_PanelIsOpen = true
     m_kSlideAnimator.Show()
 end
 
 --关闭面板
 function Close()
+    --设置面版状态
+    m_PanelIsOpen    = false
+    --取消选中科技、市政、城市
+    m_SelectedTechs  = {}
+    m_SelectedCivics = {}
+    m_SelectedCities = {}
     UI.PlaySound("Tech_Tray_Slide_Close")
-    m_PanelIsOpen = false
     m_kSlideAnimator.Hide()
 end
 
@@ -188,17 +257,29 @@ function Toggle()
     end
 end
 
+--规范每回合价值显示
+function FormatValuePerTurn(value)
+    if value == 0 then
+        return Locale.ToNumber(value);
+    else
+        return Locale.Lookup("{1: number +#,###.#;-#,###.#}", value);
+    end
+end
+
 --顶部刷新
 function TopRefresh()
     --获取本地玩家
     local playerID = Game.GetLocalPlayer()
+    --获得玩家拥有的研究点数
+    local researchPoints = EaglePointManager.GetEaglePoint(playerID, true)
+    Controls.PointBalance:SetText(Locale.ToNumber(researchPoints, "#,###.#"))
     --获取每回合获得的研究点数
     local perTurnPoint = EaglePointManager:GetPerTurnPoint(playerID, true)
-    Controls.FaithLabel:SetText(perTurnPoint)
+    Controls.PointPerTurn:SetText(FormatValuePerTurn(perTurnPoint))
     --获取每回合获得的研究点数tooltip
     local tooltip = Locale.Lookup('LOC_EAGLE_POINT_PER_TURN', perTurnPoint)
     tooltip = tooltip .. '[NEWLINE]' .. EaglePointManager:GetPerTurnPointTooltip(playerID)
-    Controls.FaithLabel:SetToolTipString(tooltip)
+    Controls.PointBacking:SetToolTipString(tooltip)
 end
 
 --设置Tab选中状态
@@ -237,6 +318,7 @@ function ChooseTechsTab()
     end
     --选中科技
     SetTechsTabState(true)
+    ConfirmRefresh()
 end
 
 function ChooseCivicsTab()
@@ -249,6 +331,7 @@ function ChooseCivicsTab()
     end
     --选中市政
     SetCivicsTabState(true)
+    ConfirmRefresh()
 end
 
 function ChooseCitiesTab()
@@ -261,6 +344,35 @@ function ChooseCitiesTab()
     end
     --选中城市
     SetCitiesTabState(true)
+    ConfirmRefresh()
+end
+
+--设置选中回调函数
+function SelectTech(techIndex, Need, playerID)
+    if m_SelectedTechs[techIndex] ~= nil then
+        m_SelectedTechs[techIndex] = nil
+    else
+        m_SelectedTechs[techIndex] = Need
+    end
+    Refresh(playerID)
+end
+
+function SelectCivic(civicIndex, Need, playerID)
+    if m_SelectedCivics[civicIndex] ~= nil then
+        m_SelectedCivics[civicIndex] = nil
+    else
+        m_SelectedCivics[civicIndex] = Need
+    end
+    Refresh(playerID)
+end
+
+function SelectCity(cityID, Need, playerID)
+    if m_SelectedCities[cityID] ~= nil then
+        m_SelectedCities[cityID] = nil
+    else
+        m_SelectedCities[cityID] = Need
+    end
+    Refresh(playerID)
 end
 
 --选中项实现
@@ -276,13 +388,25 @@ function Realize()
     --科技数据
     for _, tech in ipairs(data.Techs) do
         local instance = m_TechsListIM:GetInstance()
+        local techIndex = tech.Index
         --获取科技是否选中
-
+        local isSelected = m_SelectedTechs[techIndex] ~= nil
+        if data.Point < tech.Need and not isSelected then
+            instance.Button:SetDisabled(true)
+            instance.Button:SetAlpha(0.6)
+        else
+            instance.Button:SetDisabled(false)
+            instance.Button:SetAlpha(1)
+        end
         --获取科技定义
-        local techDef = GameInfo.Technologies[tech.Index]
+        local techDef = GameInfo.Technologies[techIndex]
         --设置科技名称
         instance.Name:SetText(Locale.Lookup(techDef.Name))
         --设置回调函数
+        instance.Button:RegisterCallback(Mouse.eLClick,
+            function()
+                SelectTech(techIndex, tech.Need, playerID)
+            end)
         --设置tooltip
         local tooltip = ToolTipHelper.GetToolTip(techDef.TechnologyType, playerID)
         instance.Button:LocalizeAndSetToolTip(tooltip)
@@ -292,6 +416,9 @@ function Realize()
         local progress = math.clamp(tech.Progress / tech.Cost, 0, 1.0)
         instance.ProgressMeter:SetPercent(progress)
         --设置科技花费
+        instance.Cost:SetText(Locale.ToNumber(tech.Need, "#,###.#"))
+        instance.CostStack:SetHide(isSelected)
+        instance.Select:SetHide(not isSelected)
         --关于科技进度
         local progressStr = Locale.ToNumber(tech.Progress, "#,###.#") .. '/' .. Locale.ToNumber(tech.Cost, "#,###.#")
         instance.Progress:SetText(progressStr)
@@ -319,22 +446,37 @@ function Realize()
     --市政数据
     for _, civic in ipairs(data.Civics) do
         local instance = m_CivicsListIM:GetInstance()
+        local civicIndex = civic.Index
         --获取市政是否选中
-
+        local isSelected = m_SelectedCivics[civicIndex] ~= nil
+        if data.Point < civic.Need and not isSelected then
+            instance.Button:SetDisabled(true)
+            instance.Button:SetAlpha(0.6)
+        else
+            instance.Button:SetDisabled(false)
+            instance.Button:SetAlpha(1)
+        end
         --获取市政定义
-        local civicDef = GameInfo.Civics[civic.Index]
+        local civicDef = GameInfo.Civics[civicIndex]
         --设置市政名称
         instance.Name:SetText(Locale.Lookup(civicDef.Name))
         --设置回调函数
+        instance.Button:RegisterCallback(Mouse.eLClick,
+            function()
+                SelectCivic(civicIndex, civic.Need, playerID)
+            end)
         --设置tooltip
         local tooltip = ToolTipHelper.GetToolTip(civicDef.CivicType, playerID)
         instance.Button:LocalizeAndSetToolTip(tooltip)
-        --设置市政图标
-        RealizeIcon(instance.Icon, civicDef.CivicType, SIZE_ICON_SMALL)
+        --设置市政图标（fuck you, Firaxis Games. 怎么没给市政图标也做一套30的）
+        RealizeIcon(instance.Icon, civicDef.CivicType, SIZE_ICON_MEDIUM)
         --设置市政进度
         local progress = math.clamp(civic.Progress / civic.Cost, 0, 1.0)
         instance.ProgressMeter:SetPercent(progress)
         --设置市政花费
+        instance.Cost:SetText(Locale.ToNumber(civic.Need, "#,###.#"))
+        instance.CostStack:SetHide(isSelected)
+        instance.Select:SetHide(not isSelected)
         --关于市政进度
         local progressStr = Locale.ToNumber(civic.Progress, "#,###.#") .. '/' .. Locale.ToNumber(civic.Cost, "#,###.#")
         instance.Progress:SetText(progressStr)
@@ -362,17 +504,110 @@ function Realize()
     --城市数据
     for _, v_city in ipairs(data.Cities) do
         local instance = m_CitiesListIM:GetInstance()
+        local cityID = v_city.ID
+        --获取城市是否选中
+        local isSelected = m_SelectedCities[cityID] ~= nil
+        if data.Point < v_city.Need and not isSelected then
+            instance.Button:SetDisabled(true)
+            instance.Button:SetAlpha(0.6)
+        else
+            instance.Button:SetDisabled(false)
+            instance.Button:SetAlpha(1)
+        end
         --获取城市
-        local city = CityManager.GetCity(playerID, v_city.ID)
-        --设置首都
-        instance.CapitalIcon:SetHide(not city:IsCapital())
+        local city = CityManager.GetCity(playerID, cityID)
         --设置城市名称
         instance.CityName:SetText(Locale.Lookup(city:GetName()))
+        --设置回调函数
+        instance.Button:RegisterCallback(Mouse.eLClick,
+            function()
+                SelectCity(cityID, v_city.Need, playerID)
+            end)
         --设置生产名称
-        instance.CurrentProductionName:SetText(v_city.Name)
+        instance.ProductionName:SetText(v_city.Name)
         --设置生产图标
-        local iconName = 'ICON_' .. v_city.Type
-        instance.ProductionIcon:TrySetIcon(iconName)
+        for _, icon in ipairs(v_city.Icons) do
+            if icon ~= nil and instance.ProductionIcon:TrySetIcon(icon) then
+                break
+            end
+        end
+        --设置tooltip
+        instance.ProductionIcon:SetToolTipString(Locale.Lookup(v_city.Tooltip))
+        --设置城市生产进度
+        local prodTurnsLeft = v_city.TurnsLeft
+        if prodTurnsLeft == -1 then prodTurnsLeft = "∞" end
+        instance.ProductionCost:SetText("[ICON_Turn]" .. prodTurnsLeft)
+        instance.ProductionProgressString:SetText("[ICON_Production]" .. v_city.Progress .. " / " .. v_city.Cost)
+        --计算百分比
+        local percentComplete = math.clamp(v_city.Progress / v_city.Cost, 0, 1.0)
+        local percentCompleteNextTurn = (1 - percentComplete) / prodTurnsLeft
+        percentCompleteNextTurn = percentComplete + percentCompleteNextTurn
+        --设置城市生产进度条
+        instance.ProductionProgress:SetPercent(math.max(percentComplete, 0));
+        instance.ProductionProgress:SetShadowPercent(math.max(percentCompleteNextTurn, 0));
+        --设置城市花费
+        instance.Cost:SetText(Locale.ToNumber(v_city.Need, "#,###.#"))
+        instance.CostStack:SetHide(isSelected)
+        instance.Select:SetHide(not isSelected)
+    end
+end
+
+--确认按钮刷新
+function ConfirmRefresh()
+    --确定按钮
+    local hasSelection = next(m_SelectedTechs)
+        or next(m_SelectedCivics)
+        or next(m_SelectedCities)
+    Controls.ConfirmButton:SetDisabled(not hasSelection)
+    Controls.ConfirmButton:SetAlpha(hasSelection and 1 or 0.7)
+    --重新选择按钮
+    local isTech = Controls.TechButton:IsSelected() and next(m_SelectedTechs)
+    local isCivic = Controls.CivicButton:IsSelected() and next(m_SelectedCivics)
+    local isCity = Controls.CityButton:IsSelected() and next(m_SelectedCities)
+    --是否可以取消
+    local canCancel = isTech or isCivic or isCity
+    Controls.CancelButton:SetDisabled(not canCancel)
+    Controls.CancelButton:SetAlpha(canCancel and 1 or 0.7)
+end
+
+--点击确认按钮后
+function OnConfirmClicked()
+    local pointCost = CalculateSelectedCost()
+    UI.RequestPlayerOperation(Game.GetLocalPlayer(),
+        PlayerOperations.EXECUTE_SCRIPT, {
+            Techs   = m_SelectedTechs,
+            Civics  = m_SelectedCivics,
+            Cities  = m_SelectedCities,
+            Cost    = pointCost,
+            OnStart = 'EagleUnionPointUnlock'
+        }
+    ); UI.PlaySound("Purchase_With_Gold"); Close()
+end
+
+--点击重新选择按钮后
+function OnCancelClicked()
+    if Controls.TechButton:IsSelected() then
+        m_SelectedTechs = {}
+    elseif Controls.CivicButton:IsSelected() then
+        m_SelectedCivics = {}
+    elseif Controls.CityButton:IsSelected() then
+        m_SelectedCities = {}
+    end
+    Refresh(Game.GetLocalPlayer())
+    UI.PlaySound("Confirm_Production")
+end
+
+--总刷新
+function Refresh(playerID)
+    if m_PanelIsOpen and EagleCore.CheckCivMatched(
+            playerID, 'CIVILIZATION_EAGLE_UNION'
+        ) and Game.GetLocalPlayer() == playerID then
+        --顶部刷新
+        TopRefresh()
+        --选项刷新
+        Realize()
+        --确认按钮刷新
+        ConfirmRefresh()
     end
 end
 
@@ -393,7 +628,25 @@ function Initialize()
     --设置滑动动画
     m_kSlideAnimator = CreateScreenAnimation(Controls.EagleChooserSlideAnim)
     -------------------Closed-------------------
-
+    LuaEvents.DiplomacyActionView_HideIngameUI.Add(Close)
+    LuaEvents.EndGameMenu_Shown.Add(Close)
+    LuaEvents.FullscreenMap_Shown.Add(Close)
+    LuaEvents.NaturalWonderPopup_Shown.Add(Close)
+    LuaEvents.ProjectBuiltPopup_Shown.Add(Close)
+    LuaEvents.Tutorial_ToggleInGameOptionsMenu.Add(Close)
+    LuaEvents.WonderBuiltPopup_Shown.Add(Close)
+    LuaEvents.NaturalDisasterPopup_Shown.Add(Close)
+    LuaEvents.RockBandMoviePopup_Shown.Add(Close)
+    LuaEvents.CivicsTree_OpenCivicsTree.Add(Close)
+    LuaEvents.Government_OpenGovernment.Add(Close)
+    LuaEvents.GovernorPanel_Opened.Add(Close)
+    LuaEvents.GreatPeople_OpenGreatPeople.Add(Close)
+    LuaEvents.GreatWorks_OpenGreatWorks.Add(Close)
+    LuaEvents.HistoricMoments_Opened.Add(Close)
+    LuaEvents.Religion_OpenReligion.Add(Close)
+    LuaEvents.PantheonChooser_OpenReligion.Add(Close)
+    LuaEvents.TechTree_OpenTechTree.Add(Close)
+    LuaEvents.ClimateScreen_Opened.Add(Close)
     ------------------UI Event------------------
     ContextPtr:SetInputHandler(OnInputHandler, true)
     ------------------Register------------------
@@ -409,6 +662,34 @@ function Initialize()
     --城市按钮
     Controls.CityButton:RegisterCallback(Mouse.eLClick, ChooseCitiesTab)
     Controls.CityButton:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter)
+    --确认按钮
+    Controls.ConfirmButton:RegisterCallback(Mouse.eLClick, OnConfirmClicked)
+    Controls.ConfirmButton:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter)
+    --重新选择按钮
+    Controls.CancelButton:RegisterCallback(Mouse.eLClick, OnCancelClicked)
+    Controls.CancelButton:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter)
+    -------------------Resets-------------------
+    --城市和城市生产
+    Events.CityAddedToMap.Add(Refresh)
+    Events.CityProductionQueueChanged.Add(Refresh)
+    Events.CityProductionUpdated.Add(Refresh)
+    Events.CityProductionChanged.Add(Refresh)
+    Events.CityProductionCompleted.Add(Refresh)
+    Events.CityRemovedFromMap.Add(Refresh)
+    --科技
+    Events.ResearchChanged.Add(Refresh)
+    Events.ResearchCompleted.Add(Refresh)
+    Events.ResearchYieldChanged.Add(Refresh)
+    Events.TechBoostTriggered.Add(Refresh)
+    --市政
+    Events.CivicChanged.Add(Refresh)
+    Events.CivicCompleted.Add(Refresh)
+    Events.CultureYieldChanged.Add(Refresh)
+    Events.CivicBoostTriggered.Add(Refresh)
+    --本地玩家变化
+    Events.LocalPlayerChanged.Add(Refresh)
+    --每回合开始
+    Events.PlayerTurnActivated.Add(Refresh)
     ------------------LuaEvents-----------------
     LuaEvents.EagleUnionTopButton_TogglePopup.Add(Toggle)
     --------------------------------------------

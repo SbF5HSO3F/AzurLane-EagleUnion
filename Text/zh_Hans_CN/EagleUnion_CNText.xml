@@ -196,6 +196,12 @@
 		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_CAN_BOOST" Language="zh_Hans_CN">
 			<Text>已获得提升</Text>
 		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_CONFIRM" Language="zh_Hans_CN">
+			<Text>确认</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_CANCEL" Language="zh_Hans_CN">
+			<Text>重新选择</Text>
+		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_PER_TURN" Language="zh_Hans_CN">
 			<Text>每回合 [ICON_Turn] 科研点数:</Text>
 		</Replace>

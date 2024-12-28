@@ -95,6 +95,8 @@ end
 --获取城市生产详细信息 (UI)
 function EagleCore.GetProductionDetail(city)
     local details = { --城市生产详细信息
+        --项目哈希值
+        Hash = 0,
         --城市是否进行生产
         Producting = false,
         --是否是建筑
@@ -117,11 +119,14 @@ function EagleCore.GetProductionDetail(city)
         Progress   = 0,
         --生产成本
         TotalCost  = 0,
+        --生产所需回合
+        TurnsLeft  = 0
     }; if not city then return details end
     --获取城市生产队列，判断是否在生产
     local cityBuildQueue = city:GetBuildQueue()
     local productionHash = cityBuildQueue:GetCurrentProductionTypeHash()
     if productionHash ~= 0 then
+        details.Hash = productionHash
         details.Producting = true
         --建筑、区域、单位、项目
         local pBuildingDef = GameInfo.Buildings[productionHash]
@@ -211,6 +216,8 @@ function EagleCore.GetProductionDetail(city)
             details.Progress = cityBuildQueue:GetProjectProgress(index)
             details.TotalCost = cityBuildQueue:GetProjectCost(index)
         end
+        --生产所需回合
+        details.TurnsLeft = cityBuildQueue:GetTurnsLeft()
     end
     return details
 end

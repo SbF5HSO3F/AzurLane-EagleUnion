@@ -47,31 +47,31 @@ EaglePointManager.Points = {
     },
     --来自其他
     Extra = {
-        SantaClara = {
-            Tooltip = 'LOC_EAGLE_POINT_FROM_SANTA_CLARA',
-            GetPointYield = function(playerID)
-                --获取玩家
-                local pPlayer = Players[playerID]
-                if not pPlayer then return 0 end
-                --获取区域
-                local districts = pPlayer:GetDistricts()
-                --获取圣塔克拉拉谷的数量
-                local count = 0
-                for _, district in districts:Members() do
-                    if district:GetType() == SantaClaraValley
-                        and district:IsComplete() and (not district:IsPillaged())
-                    then
-                        count = count + 1
-                    end
-                end
-                --返回最终的点数
-                return EagleCore.Floor(count * 10)
-            end,
-            GetTooltip = function(self, playerID)
-                local yield = self.GetPointYield(playerID)
-                return yield ~= 0 and Locale.Lookup(self.Tooltip, yield) or ''
-            end
-        }
+        -- SantaClara = {
+        --     Tooltip = 'LOC_EAGLE_POINT_FROM_SANTA_CLARA',
+        --     GetPointYield = function(playerID)
+        --         --获取玩家
+        --         local pPlayer = Players[playerID]
+        --         if not pPlayer then return 0 end
+        --         --获取区域
+        --         local districts = pPlayer:GetDistricts()
+        --         --获取圣塔克拉拉谷的数量
+        --         local count = 0
+        --         for _, district in districts:Members() do
+        --             if district:GetType() == SantaClaraValley
+        --                 and district:IsComplete() and (not district:IsPillaged())
+        --             then
+        --                 count = count + 1
+        --             end
+        --         end
+        --         --返回最终的点数
+        --         return EagleCore.Floor(count * 10)
+        --     end,
+        --     GetTooltip = function(self, playerID)
+        --         local yield = self.GetPointYield(playerID)
+        --         return yield ~= 0 and Locale.Lookup(self.Tooltip, yield) or ''
+        --     end
+        -- }
     }
 }
 
