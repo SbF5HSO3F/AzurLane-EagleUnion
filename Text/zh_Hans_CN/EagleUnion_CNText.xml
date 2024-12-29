@@ -176,10 +176,22 @@
 		</Replace>
 		<!--Lua文本-->
 		<Replace Tag="LOC_EAGLE_POINT_UNLOCK" Language="zh_Hans_CN">
-			<Text>白鹰联邦[NEWLINE][NEWLINE]使用研究点数解锁科技、市政和完成城市生产</Text>
+			<Text>白鹰联邦[NEWLINE][NEWLINE]使用研究点数解锁科技、市政和完成城市生产。</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_HEADER" Language="zh_Hans_CN">
 			<Text>圣塔克拉拉谷</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_NO_SELECTED" Language="zh_Hans_CN">
+			<Text>未选择</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_SELECT" Language="zh_Hans_CN">
+			<Text>已选择{1_num}项</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_NO_COST" Language="zh_Hans_CN">
+			<Text>无消耗</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_COST" Language="zh_Hans_CN">
+			<Text>消耗{1_num : number #,###.#}点科研点数</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_TECH" Language="zh_Hans_CN">
 			<Text>科技</Text>
@@ -203,7 +215,7 @@
 			<Text>重新选择</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_PER_TURN" Language="zh_Hans_CN">
-			<Text>每回合 [ICON_Turn] 科研点数:</Text>
+			<Text>每回合 [ICON_Turn] 科研点数</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_FROM_CITIES" Language="zh_Hans_CN">
 			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 来自城市</Text>

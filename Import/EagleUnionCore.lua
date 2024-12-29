@@ -70,6 +70,15 @@ function EagleCore.CanHaveUnit(plot, unitdef)
     return canHave
 end
 
+--规范每回合价值显示 (GamePlay, UI)
+function EagleCore.FormatValue(value)
+    if value == 0 then
+        return Locale.ToNumber(value)
+    else
+        return Locale.Lookup("{1: number +#,###.#;-#,###.#}", value)
+    end
+end
+
 --||=====================GamePlay=======================||--
 
 --随机数生成器，范围为[1,num+1] (GamePlay)
@@ -96,7 +105,7 @@ end
 function EagleCore.GetProductionDetail(city)
     local details = { --城市生产详细信息
         --项目哈希值
-        Hash = 0,
+        Hash       = 0,
         --城市是否进行生产
         Producting = false,
         --是否是建筑
@@ -126,7 +135,7 @@ function EagleCore.GetProductionDetail(city)
     local cityBuildQueue = city:GetBuildQueue()
     local productionHash = cityBuildQueue:GetCurrentProductionTypeHash()
     if productionHash ~= 0 then
-        details.Hash = productionHash
+        details.Hash       = productionHash
         details.Producting = true
         --建筑、区域、单位、项目
         local pBuildingDef = GameInfo.Buildings[productionHash]

@@ -104,6 +104,7 @@
           </Properties>
           <File>UI/Additions/EagleUnionExtraPanel.xml</File>
           <File>UI/Additions/EagleUnionTopButton.xml</File>
+          <File>UI/Additions/EagleUnionTracker.xml</File>
         </AddUserInterfaces>
         <AddGameplayScripts id="Script">
           <File>Scripts/EagleUnionScirpt.lua</File>
@@ -448,6 +449,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="UI\Additions\EagleUnionTopButton.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\Additions\EagleUnionTracker.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\Additions\EagleUnionTracker.xml">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

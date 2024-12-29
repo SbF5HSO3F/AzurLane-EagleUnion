@@ -4,81 +4,113 @@
 <!-- DateCreated: 2024/12/26 8:27:50 -->
 <Context ID="EagleChooserContext">
     <!-- Left Panel -->
-    <SlideAnim ID="EagleChooserSlideAnim" Size="auto,parent" Anchor="L,T" Begin="-350,0" End="0,0" Cycle="Once" Speed="5">
-        <Container ID="EagleChooser" Size="auto,parent-54" Offset="-3,54">
-            <!-- Body container-->
-            <Container ID="MainContainer" Size="350,parent" ConsumeAllMouse="1">
-                <Stack ID="EagleChooserStack" StackGrowth="Down">
-                    <!-- Top Panel -->
-                    <Grid ID="TopPanel" Size="parent,auto" Anchor="C,T" Texture="Wood_Pattern">
-                        <Container ID="TopContainer" Size="parent-20,auto" Anchor="C,T" Offset="0,14">
+    <SlideAnim ID="EagleChooserSlideAnim" Size="auto,parent" Anchor="L,B" Begin="-350,0" End="0,0" Cycle="Once" Speed="5">
+        <!-- Body container-->
+        <Container ID="EagleChooser" Size="350,parent" Offset="-3,0" ConsumeAllMouse="1">
+            <Stack ID="EagleChooserStack" StackGrowth="Down">
+                <!-- Top Panel -->
+                <Grid ID="TopPanel" Size="parent,140" Anchor="L,T" Texture="Wood_Pattern">
+                    <!-- Header container-->
+                    <Grid ID="HeaderContainer" Size="parent+15,60" Offset="2,-3" Style="HeaderBannerLeft" ConsumeAllMouse="1">
+                        <Label ID="HeaderText" Size="200,50" Offset="0,7" Anchor="C,T" Style="FontFlair16" Color0="0,59,77,255" SmallCaps="20" SmallCapsType="FirstOnly" String="{LOC_EAGLE_POINT_UNLOCK_HEADER:upper}" TruncateWidth="380" TruncatedTooltip="1"/>
+                        <Button ID="CloseButton" Anchor="R,T" Style="CloseButtonSmall" Offset="14,2"/>
+                    </Grid>
+                    <Grid ID="TopGrid" Size="parent-20,101" Anchor="C,C" Offset="0,12" Style="YieldBacking" Color="24,156,216,255">
+                        <Stack ID="TopStack" Anchor="C,C" AutoSizePadding="4,0" StackGrowth="Down">
                             <!--Eagle Point-->
-                            <GridButton ID="PointBacking" Size="parent,24" AutoSizePadding="1,0" Style="YieldBacking" Color="24,156,216,255">
+                            <GridButton ID="PointBacking" Anchor="C,T" Size="parent-2,24" AutoSizePadding="1,0" Style="YieldBacking" Color="24,156,216,255">
                                 <Stack ID="PointButtonStack" Anchor="C,C" Offset="0,2" StackGrowth="Right">
                                     <!-- <Label ID="YieldIconString" Anchor="L,B" Offset="0,3"/> -->
-                                    <Label ID="PointBalance" Anchor="C,T" Offset="0,-1" Style="FontNormal18" ColorSet="ResFaithLabelCS" String="?"/>
+                                    <Label ID="PointBalance" Anchor="C,T" Offset="0,-1" Style="FontNormal18" ColorSet="ResFaithLabelCS" FontStyle="Stroke" String="?"/>
                                     <Label ID="PointPerTurn" Offset="2,-2" Style="FontNormal14" ColorSet="ResFaithLabelCS" FontStyle="Stroke" String="0"/>
                                 </Stack>
                             </GridButton>
-
-                            <Box ID="TopBottomColumn" Color="143,122,82,200" Anchor="C,B" Size="350,2" Offset="0,0" Hidden="0">
-                                <Box Color="0,0,0,200" Anchor="L,T" Size="parent,1" AnchorSide="I,O"/>
-                                <Box Color="0,0,0,200" Anchor="L,B" Size="parent,1" AnchorSide="I,O"/>
-                            </Box>
-                        </Container>
-                    </Grid>
-                    <!-- Bottom Panel -->
-                    <Grid ID="BottomGrid" Size="parent,parent-98" Offset="0,0" Texture="Controls_ContainerBlue" SliceStart="0,0" SliceCorner="3,3" SliceSize="9,9" SliceTextureSize="16,16">
-                        <!-- Choose the Tech or Civic -->
-                        <Grid ID="ChooseGrid" Anchor="C,T" Offset="0,42" Size="parent-6,parent-42" Texture="Religion_OverviewFrame" SliceCorner="15,15" SliceTextureSize="34,33">
-                            <ScrollPanel Anchor="C,T" Offset="-5,10" Size="auto,parent-20" AutoSizePadding="2,0" Style="ScrollPanelWithRightBar">
-                                <Stack ID="TechsStack" Anchor="C,T" StackGrowth="Down"/>
-                                <Stack ID="CivicsStack" Anchor="C,T" StackGrowth="Down"/>
-                                <Stack ID="CitiesStack" Anchor="C,T" StackGrowth="Down"/>
-                            </ScrollPanel>
-                        </Grid>
-                        <!-- Tab Container -->
-                        <Image ID="TabBarImage" Anchor="C,T" Size="parent-80,27" Offset="0,8" Texture="Controls_TabLedge2_Fill" StretchMode="Tile" />
-                        <Grid ID="TabBarGrid" Anchor="C,T" Size="parent,61" Offset="0,-8" Texture="Controls_TabLedge2" SliceCorner="194,18" SliceSize="108,26" SliceTextureSize="438,61">
-                            <Container ID="TabContainer" Size="Parent-80,34" Offset="40,13">
-                                <Stack ID="TabStack" Anchor="C,T" StackGrowth="Right" StackPadding="4">
-                                    <GridButton ID="TechButton" Anchor="L,T" Size="80,34" Style="TabButton" FontSize="14" TextOffset="0,2">
-                                        <GridButton ID="TechSelectButton" Size="parent,parent" Style="TabButtonSelected" ConsumeMouseButton="0" ConsumeMouseOver="1" Hidden="1"/>
-                                        <Label Style="FontFlair14" Offset="0,3" String="LOC_EAGLE_POINT_UNLOCK_TECH" Anchor="C,C" FontStyle="stroke" ColorSet="TopBarValueCS"/>
+                            <Stack ID="ChooseStack" StackGrowth="Right">
+                                <!--Choose Techs-->
+                                <Container ID="ChooseTechsContainer" Anchor="L,C" Size="106,auto" ConsumeAllMouse="1">
+                                    <GridButton ID="ChooseTechsButton" Anchor="R,C" Offset="0,0" Size="81,24" Style="CityPanelSlotGrid">
+                                        <Label ID="TechsLabel" Anchor="C,C" Offset="4,1" Style="CityPanelHeader" String="LOC_EAGLE_POINT_NO_SELECTED"/>
                                     </GridButton>
-                                    <GridButton ID="CivicButton" Anchor="L,T" Size="80,34" Style="TabButton" FontSize="14" TextOffset="0,2">
-                                        <GridButton ID="CivicSelectButton" Size="parent,parent" Style="TabButtonSelected" ConsumeMouseButton="0" ConsumeMouseOver="1" Hidden="1"/>
-                                        <Label Style="FontFlair14" Offset="0,3" String="LOC_EAGLE_POINT_UNLOCK_CIVIC" Anchor="C,C" FontStyle="stroke" ColorSet="TopBarValueCS"/>
+                                    <Button ID="SelectionTechs" Anchor="L,C" Offset="0,1" Texture="SelectionPanel_StatLarge" Size="41,42" Disabled="1">
+                                        <Image ID="SelectionTechsIcon" Icon="ICON_NOTIFICATION_CHOOSE_TECH" Size="32,32" Anchor="C,C" Offset="0,-2"/>
+                                    </Button>
+                                </Container>
+                                <!--Choose Civics-->
+                                <Container ID="ChooseCivicsContainer" Anchor="L,C" Size="106,auto" ConsumeAllMouse="1">
+                                    <GridButton ID="ChooseCivicsButton" Anchor="R,C" Offset="0,0" Size="81,24" Style="CityPanelSlotGrid">
+                                        <Label ID="CivicsLabel" Anchor="C,C" Offset="4,1" Style="CityPanelHeader" String="LOC_EAGLE_POINT_NO_SELECTED"/>
                                     </GridButton>
-                                    <GridButton ID="CityButton" Anchor="L,T" Size="80,34" Style="TabButton" FontSize="14" TextOffset="0,2">
-                                        <GridButton ID="CitySelectButton" Size="parent,parent" Style="TabButtonSelected" ConsumeMouseButton="0" ConsumeMouseOver="1" Hidden="1"/>
-                                        <Label Style="FontFlair14" Offset="0,3" String="LOC_EAGLE_POINT_FINISH_CITY" Anchor="C,C" FontStyle="stroke" ColorSet="TopBarValueCS"/>
+                                    <Button ID="SelectionCivics" Anchor="L,C" Offset="0,1" Texture="SelectionPanel_StatLarge" Size="41,42" Disabled="1">
+                                        <Image ID="SelectionCivicsIcon" Icon="ICON_NOTIFICATION_CHOOSE_CIVIC" Size="32,32" Anchor="C,C" Offset="0,-2"/>
+                                    </Button>
+                                </Container>
+                                <!--Choose Cities-->
+                                <Container ID="ChooseCitiesContainer" Anchor="L,C" Size="106,auto" ConsumeAllMouse="1">
+                                    <GridButton ID="ChooseCitiesButton" Anchor="R,C" Offset="0,0" Size="81,24" Style="CityPanelSlotGrid">
+                                        <Label ID="CitiesLabel" Anchor="C,C" Offset="4,1" Style="CityPanelHeader" String="LOC_EAGLE_POINT_NO_SELECTED"/>
                                     </GridButton>
+                                    <Button ID="SelectionCities" Anchor="L,C" Offset="0,1" Texture="SelectionPanel_StatLarge" Size="41,42" Disabled="1">
+                                        <Image ID="SelectionCitiesIcon" Icon="ICON_NOTIFICATION_CHOOSE_CITY_PRODUCTION" Size="32,32" Anchor="C,C" Offset="0,-2"/>
+                                    </Button>
+                                </Container>
+                            </Stack>
+                            <!--Eagle Point Cost-->
+                            <GridButton ID="PointCostBacking" Anchor="C,T" Size="parent-2,24" AutoSizePadding="1,0" Style="YieldBacking" Color="24,156,216,255">
+                                <Stack ID="PointCostStack" Anchor="C,C" Offset="0,2" StackGrowth="Right">
+                                    <Label ID="PointCostBalance" Anchor="C,T" Offset="0,-1" Style="FontNormal16" ColorSet="ResFaithLabelCS" FontStyle="Stroke" String="LOC_EAGLE_POINT_NO_COST"/>
                                 </Stack>
-                            </Container>
-                        </Grid>
-                    </Grid>
-                    <!-- Confirm Button -->
-                    <Grid ID="ConfirmGrid" Size="parent+2,90" Anchor="C,B" Texture="Controls_DrawerUp" SliceCorner="5,4" SliceSize="3,2" SliceTextureSize="14,8">
-                        <Stack Anchor="C,C">
-                            <!-- Confirm Button -->
-                            <GridButton ID="ConfirmButton" Size="parent-50,41" Offset="0,4" Anchor="C,B">
-                                <GridData Texture="Controls_Confirm" StateOffsetIncrement="0,41" SliceCorner="40,21" SliceSize="1,1" SliceTextureSize="80,41"/>
-                                <Label Anchor="C,C" Offset="0,0" String="{LOC_EAGLE_POINT_CONFIRM:upper}" Style="FontFlair14" FontStyle="Shadows" TextOffset="0,2" SmallCaps="18" SmallCapsType="EveryWord"/>
                             </GridButton>
-                            <!-- Cancel Button -->
-                            <GridButton ID="CancelButton" Style="ButtonLightWeightGrid" Size="parent-50,24" Offset="0,4" Anchor="C,B" String="{LOC_EAGLE_POINT_CANCEL:upper}" Style="FontFlair14" FontStyle="Shadows" EffectColor="0,0,0,255" TextOffset="0,2" EffectColor="0,0,0,255" SmallCaps="20" SmallCapsType="EveryWord"/>
                         </Stack>
                     </Grid>
-                </Stack>
-            </Container>
-
-            <!-- Header container-->
-            <Grid ID="HeaderContainer" Size="363,60" Offset="2,-25" Style="HeaderBannerLeft" ConsumeAllMouse="1">
-                <Label ID="HeaderText" Size="200,50" Offset="0,7" Anchor="C,T" Style="FontFlair16" Color0="0,59,77,255" SmallCaps="20" SmallCapsType="FirstOnly" String="{LOC_EAGLE_POINT_UNLOCK_HEADER:upper}" TruncateWidth="380" TruncatedTooltip="1"/>
-                <Button ID="CloseButton" Anchor="R,T" Style="CloseButtonSmall" Offset="14,2"/>
-            </Grid>
-
+                    <Box ID="TopBottomColumn" Color="143,122,82,200" Anchor="C,B" Size="350,2" Offset="0,0" Hidden="0">
+                        <Box Color="0,0,0,200" Anchor="L,T" Size="parent,1" AnchorSide="I,O"/>
+                        <Box Color="0,0,0,200" Anchor="L,B" Size="parent,1" AnchorSide="I,O"/>
+                    </Box>
+                </Grid>
+                <!-- Bottom Panel -->
+                <Grid ID="BottomGrid" Size="parent,parent-230" Offset="0,0" Texture="Controls_ContainerBlue" SliceStart="0,0" SliceCorner="3,3" SliceSize="9,9" SliceTextureSize="16,16">
+                    <!-- Choose the Tech or Civic -->
+                    <Grid ID="ChooseGrid" Anchor="C,T" Offset="0,42" Size="parent-6,parent-42" Texture="Religion_OverviewFrame" SliceCorner="15,15" SliceTextureSize="34,33">
+                        <ScrollPanel Anchor="C,T" Offset="-5,10" Size="auto,parent-20" AutoSizePadding="2,0" Style="ScrollPanelWithRightBar">
+                            <Stack ID="TechsStack" Anchor="C,T" StackGrowth="Down"/>
+                            <Stack ID="CivicsStack" Anchor="C,T" StackGrowth="Down"/>
+                            <Stack ID="CitiesStack" Anchor="C,T" StackGrowth="Down"/>
+                        </ScrollPanel>
+                    </Grid>
+                    <!-- Tab Container -->
+                    <Image ID="TabBarImage" Anchor="C,T" Size="parent-80,27" Offset="0,8" Texture="Controls_TabLedge2_Fill" StretchMode="Tile" />
+                    <Grid ID="TabBarGrid" Anchor="C,T" Size="parent,61" Offset="0,-8" Texture="Controls_TabLedge2" SliceCorner="194,18" SliceSize="108,26" SliceTextureSize="438,61">
+                        <Container ID="TabContainer" Size="Parent-80,34" Offset="40,13">
+                            <Stack ID="TabStack" Anchor="C,T" StackGrowth="Right" StackPadding="4">
+                                <GridButton ID="TechButton" Anchor="L,T" Size="80,34" Style="TabButton" FontSize="14" TextOffset="0,2">
+                                    <GridButton ID="TechSelectButton" Size="parent,parent" Style="TabButtonSelected" ConsumeMouseButton="0" ConsumeMouseOver="1" Hidden="1"/>
+                                    <Label Style="FontFlair14" Offset="0,3" String="LOC_EAGLE_POINT_UNLOCK_TECH" Anchor="C,C" FontStyle="stroke" ColorSet="TopBarValueCS"/>
+                                </GridButton>
+                                <GridButton ID="CivicButton" Anchor="L,T" Size="80,34" Style="TabButton" FontSize="14" TextOffset="0,2">
+                                    <GridButton ID="CivicSelectButton" Size="parent,parent" Style="TabButtonSelected" ConsumeMouseButton="0" ConsumeMouseOver="1" Hidden="1"/>
+                                    <Label Style="FontFlair14" Offset="0,3" String="LOC_EAGLE_POINT_UNLOCK_CIVIC" Anchor="C,C" FontStyle="stroke" ColorSet="TopBarValueCS"/>
+                                </GridButton>
+                                <GridButton ID="CityButton" Anchor="L,T" Size="80,34" Style="TabButton" FontSize="14" TextOffset="0,2">
+                                    <GridButton ID="CitySelectButton" Size="parent,parent" Style="TabButtonSelected" ConsumeMouseButton="0" ConsumeMouseOver="1" Hidden="1"/>
+                                    <Label Style="FontFlair14" Offset="0,3" String="LOC_EAGLE_POINT_FINISH_CITY" Anchor="C,C" FontStyle="stroke" ColorSet="TopBarValueCS"/>
+                                </GridButton>
+                            </Stack>
+                        </Container>
+                    </Grid>
+                </Grid>
+                <!-- Confirm Button -->
+                <Grid ID="ConfirmGrid" Size="parent+1,90" Anchor="C,B" Texture="Controls_DrawerUp" SliceCorner="5,4" SliceSize="3,2" SliceTextureSize="14,8">
+                    <Stack Anchor="C,C">
+                        <!-- Confirm Button -->
+                        <GridButton ID="ConfirmButton" Size="parent-50,41" Offset="0,4" Anchor="C,B">
+                            <GridData Texture="Controls_Confirm" StateOffsetIncrement="0,41" SliceCorner="40,21" SliceSize="1,1" SliceTextureSize="80,41"/>
+                            <Label Anchor="C,C" Offset="0,0" String="{LOC_EAGLE_POINT_CONFIRM:upper}" Style="FontFlair14" FontStyle="Shadows" TextOffset="0,2" SmallCaps="18" SmallCapsType="EveryWord"/>
+                        </GridButton>
+                        <!-- Cancel Button -->
+                        <GridButton ID="CancelButton" Style="ButtonLightWeightGrid" Size="parent-50,24" Offset="0,4" Anchor="C,B" String="{LOC_EAGLE_POINT_CANCEL:upper}" Style="FontFlair14" FontStyle="Shadows" EffectColor="0,0,0,255" TextOffset="0,2" EffectColor="0,0,0,255" SmallCaps="20" SmallCapsType="EveryWord"/>
+                    </Stack>
+                </Grid>
+            </Stack>
         </Container>
     </SlideAnim>
 

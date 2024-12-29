@@ -50,17 +50,20 @@ end
 
 --计算点数花费
 function CalculateSelectedCost()
-    local cost = 0
+    local cost, s_techs, s_civics, s_cities = 0, 0, 0, 0
     for _, tech in pairs(m_SelectedTechs) do
         cost = cost + tech
+        s_techs = s_techs + 1
     end
     for _, civic in pairs(m_SelectedCivics) do
         cost = cost + civic
+        s_civics = s_civics + 1
     end
     for _, city in pairs(m_SelectedCities) do
         cost = cost + city
+        s_cities = s_cities + 1
     end
-    return cost
+    return cost, s_techs, s_civics, s_cities
 end
 
 --获取科技、市政和城市生产的数据
@@ -205,7 +208,7 @@ function GetData()
                 --获取城市溢出生产力
                 local salvage = Utils:GetSalvageProgress(loaclId, cityID)
                 --重新计算所需生产力
-                cityDetail.Need = math.ceil((cityDetail.Need / multiplier) - salvage)
+                cityDetail.Need = math.max(0, math.ceil((cityDetail.Need / multiplier) - salvage))
             end
             --添加城市生产细节
             table.insert(data.Cities, cityDetail)
@@ -257,15 +260,6 @@ function Toggle()
     end
 end
 
---规范每回合价值显示
-function FormatValuePerTurn(value)
-    if value == 0 then
-        return Locale.ToNumber(value);
-    else
-        return Locale.Lookup("{1: number +#,###.#;-#,###.#}", value);
-    end
-end
-
 --顶部刷新
 function TopRefresh()
     --获取本地玩家
@@ -275,35 +269,59 @@ function TopRefresh()
     Controls.PointBalance:SetText(Locale.ToNumber(researchPoints, "#,###.#"))
     --获取每回合获得的研究点数
     local perTurnPoint = EaglePointManager:GetPerTurnPoint(playerID, true)
-    Controls.PointPerTurn:SetText(FormatValuePerTurn(perTurnPoint))
+    Controls.PointPerTurn:SetText(EagleCore.FormatValue(perTurnPoint))
     --获取每回合获得的研究点数tooltip
     local tooltip = Locale.Lookup('LOC_EAGLE_POINT_PER_TURN', perTurnPoint)
     tooltip = tooltip .. '[NEWLINE]' .. EaglePointManager:GetPerTurnPointTooltip(playerID)
     Controls.PointBacking:SetToolTipString(tooltip)
+    --获取消耗和选择项数量
+    local cost, s_techs, s_civics, s_cities = CalculateSelectedCost()
+    --设置消耗
+    if cost > 0 then
+        Controls.PointCostBalance:SetText(Locale.Lookup('LOC_EAGLE_POINT_COST', cost))
+    else
+        Controls.PointCostBalance:SetText(Locale.Lookup('LOC_EAGLE_POINT_NO_COST'))
+    end
+    --设置选择项数量
+    if s_techs > 0 then
+        Controls.TechsLabel:SetText(Locale.Lookup('LOC_EAGLE_POINT_SELECT', s_techs))
+    else
+        Controls.TechsLabel:SetText(Locale.Lookup('LOC_EAGLE_POINT_NO_SELECTED'))
+    end
+    if s_civics > 0 then
+        Controls.CivicsLabel:SetText(Locale.Lookup('LOC_EAGLE_POINT_SELECT', s_civics))
+    else
+        Controls.CivicsLabel:SetText(Locale.Lookup('LOC_EAGLE_POINT_NO_SELECTED'))
+    end
+    if s_cities > 0 then
+        Controls.CitiesLabel:SetText(Locale.Lookup('LOC_EAGLE_POINT_SELECT', s_cities))
+    else
+        Controls.CitiesLabel:SetText(Locale.Lookup('LOC_EAGLE_POINT_NO_SELECTED'))
+    end
 end
 
 --设置Tab选中状态
 function SetTechsTabState(IsSelected)
     Controls.TechButton:SetSelected(IsSelected)
-    local hiden = not IsSelected
-    Controls.TechSelectButton:SetHide(hiden)
-    Controls.TechsStack:SetHide(hiden)
+    local hidden = not IsSelected
+    Controls.TechSelectButton:SetHide(hidden)
+    Controls.TechsStack:SetHide(hidden)
     m_chooseTechs = IsSelected
 end
 
 function SetCivicsTabState(IsSelected)
     Controls.CivicButton:SetSelected(IsSelected)
-    local hiden = not IsSelected
-    Controls.CivicSelectButton:SetHide(hiden)
-    Controls.CivicsStack:SetHide(hiden)
+    local hidden = not IsSelected
+    Controls.CivicSelectButton:SetHide(hidden)
+    Controls.CivicsStack:SetHide(hidden)
     m_chooseCivics = IsSelected
 end
 
 function SetCitiesTabState(IsSelected)
     Controls.CityButton:SetSelected(IsSelected)
-    local hiden = not IsSelected
-    Controls.CitySelectButton:SetHide(hiden)
-    Controls.CitiesStack:SetHide(hiden)
+    local hidden = not IsSelected
+    Controls.CitySelectButton:SetHide(hidden)
+    Controls.CitiesStack:SetHide(hidden)
     m_chooseCities = IsSelected
 end
 
@@ -671,6 +689,7 @@ function Initialize()
     -------------------Resets-------------------
     --城市和城市生产
     Events.CityAddedToMap.Add(Refresh)
+    Events.CityPopulationChanged.Add(Refresh)
     Events.CityProductionQueueChanged.Add(Refresh)
     Events.CityProductionUpdated.Add(Refresh)
     Events.CityProductionChanged.Add(Refresh)

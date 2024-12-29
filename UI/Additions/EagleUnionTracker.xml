@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnionTracker -->
+<!-- Author: HSbF6HSO3F -->
+<!-- DateCreated: 2024/12/28 21:35:24 -->
+<Context Name="EagleTracker">
+    <Grid ID="EagleTrackerGrid" Offset="0,0" Size="296,Auto" AutoSizePadding="0,2" Texture="Controls_DropdownPanel" Color="143,122,82,200" Anchor="L,T" ConsumeMouseOver="1" Hidden="0">
+
+        <Stack ID="EagleTrackerStack" Anchor="C,T" Offset="0,4" StackGrowth="Bottom" StackPadding="2">
+            <Stack ID="EagleTrackerSecondStack" Anchor="C,C" Offset="0,0" StackGrowth="Right" StackPadding="2">
+                <GridButton ID="EagleTrackerPoint" Anchor="L,C" Offset="0,0" Size="parent-30,30" Style="YieldBacking" Color="24,156,216,255">
+                    <Stack ID="PointButtonStack" Anchor="C,C" Offset="0,2" StackGrowth="Right">
+                        <!-- <Label ID="YieldIconString" Anchor="L,B" Offset="0,3"/> -->
+                        <Label ID="PointBalance" Anchor="C,T" Offset="0,-1" Style="FontNormal18" ColorSet="ResFaithLabelCS" String="?"/>
+                        <Label ID="PointPerTurn" Offset="2,-2" Style="FontNormal14" ColorSet="ResFaithLabelCS" FontStyle="Stroke" String="0"/>
+                    </Stack>
+                </GridButton>
+            </Stack>
+        </Stack>
+
+        <Box ID="EagleTrackeTopColumn" Color="143,122,82,200" Anchor="C,T" Size="parent,2" Offset="0,0" Hidden="0">
+            <Box Color="0,0,0,200" Anchor="L,T" Size="parent,1" AnchorSide="I,O"/>
+            <Box Color="0,0,0,200" Anchor="L,B" Size="parent,1" AnchorSide="I,O"/>
+        </Box>
+        <Box ID="EagleTrackeBottomColumn" Color="143,122,82,200" Anchor="C,B" Size="parent,2" Offset="0,0" Hidden="0">
+            <Box Color="0,0,0,200" Anchor="L,T" Size="parent,1" AnchorSide="I,O"/>
+            <Box Color="0,0,0,200" Anchor="L,B" Size="parent,1" AnchorSide="I,O"/>
+        </Box>
+    </Grid>
+</Context>
