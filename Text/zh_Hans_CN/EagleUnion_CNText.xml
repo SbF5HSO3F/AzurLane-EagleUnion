@@ -181,6 +181,7 @@
 		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_HEADER" Language="zh_Hans_CN">
 			<Text>圣塔克拉拉谷</Text>
 		</Replace>
+
 		<Replace Tag="LOC_EAGLE_POINT_NO_SELECTED" Language="zh_Hans_CN">
 			<Text>未选择</Text>
 		</Replace>
@@ -188,11 +189,31 @@
 			<Text>已选择{1_num}项</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_NO_COST" Language="zh_Hans_CN">
-			<Text>无消耗</Text>
+			<Text>无花费</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_COST" Language="zh_Hans_CN">
-			<Text>消耗{1_num : number #,###.#}点科研点数</Text>
+			<Text>花费{1_num : number #,###.#}点研究点数</Text>
 		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_TOTAL_COST" Language="zh_Hans_CN">
+			<Text>总计花费{1_num : number #,###.#}点研究点数</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_TECHS_COST" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet]{1_num : number #,###.#}点研究点数来自选择{2_num}项科技</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_CIVICS_COST" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet]{1_num : number #,###.#}点研究点数来自选择{2_num}项市政</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_CITIES_COST" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet]{1_num : number #,###.#}点研究点数来自选择{2_num}项城市生产</Text>
+		</Replace>
+
+		<Replace Tag="LOC_EAGLE_POINT_TOTAL_REDUCTION" Language="zh_Hans_CN">
+			<Text>研究点数花费{1_point : number +#.#;-#.#}%（上限{2_limit : number +#.#;-#.#}%）</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_REDUCTION_CAMPUS" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]{1_reducion : number +#.#;-#.#}% 来自学院</Text>
+		</Replace>
+
 		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_TECH" Language="zh_Hans_CN">
 			<Text>科技</Text>
 		</Replace>
@@ -214,8 +235,9 @@
 		<Replace Tag="LOC_EAGLE_POINT_CANCEL" Language="zh_Hans_CN">
 			<Text>重新选择</Text>
 		</Replace>
+
 		<Replace Tag="LOC_EAGLE_POINT_PER_TURN" Language="zh_Hans_CN">
-			<Text>每回合 [ICON_Turn] 科研点数</Text>
+			<Text>每回合 [ICON_Turn] 研究点数</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_FROM_CITIES" Language="zh_Hans_CN">
 			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 来自城市</Text>

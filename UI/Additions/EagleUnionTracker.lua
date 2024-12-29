@@ -97,6 +97,7 @@ function Initialize()
     Events.PlayerTurnActivated.Add(EagleTrackerReset)
     ---------------------GameEvents---------------------
     --ExposedMembers.Flasher.Reset = FlasherResetPanel
+    ----------------------LuaEvents---------------------
     ----------------------------------------------------
     print('Initial success!')
 end

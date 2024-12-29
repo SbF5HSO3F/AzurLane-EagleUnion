@@ -72,6 +72,8 @@ function EagleUnionPointUnlockAll(playerID, param)
     --get the player
     local player = Players[playerID]
     if not player then return end
+    --cost the point
+    EaglePointManager:ChangeEaglePoint(playerID, -param.Cost)
     --the tech
     local playerTechs = player:GetTechs()
     for index, _ in pairs(param.Techs) do
@@ -90,10 +92,6 @@ function EagleUnionPointUnlockAll(playerID, param)
             city:GetBuildQueue():AddProgress(value)
         end
     end
-    print(param.Cost)
-    --cost the point
-    EaglePointManager:ChangeEaglePoint(playerID, -param.Cost)
-    print(EaglePointManager.GetEaglePoint(playerID))
 end
 
 --||======================initialize======================||--

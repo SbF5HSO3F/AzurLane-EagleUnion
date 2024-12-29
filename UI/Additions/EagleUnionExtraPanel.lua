@@ -49,21 +49,44 @@ function GetUnitIcons(playerID, unitDef)
 end
 
 --计算点数花费
-function CalculateSelectedCost()
-    local cost, s_techs, s_civics, s_cities = 0, 0, 0, 0
+function CalculateSelectedCost(playerID)
+    --总花费，总科技、市政和城市花费
+    local cost, c_techs, c_civics, c_cities = 0, 0, 0, 0
+    --总科技、市政和城市数量
+    local s_techs, s_civics, s_cities = 0, 0, 0
+    --获取玩家的点数减免
+    local reduction = -EaglePointManager:GetReduction(playerID)
     for _, tech in pairs(m_SelectedTechs) do
-        cost = cost + tech
+        local techCost = EagleCore:ModifyNum(tech, reduction)
+        --总花费
+        cost = cost + techCost
+        --总科技花费
+        c_techs = c_techs + techCost
+        --总科技数量
         s_techs = s_techs + 1
     end
     for _, civic in pairs(m_SelectedCivics) do
-        cost = cost + civic
+        local civicCost = EagleCore:ModifyNum(civic, reduction)
+        --总花费
+        cost = cost + civicCost
+        --总科技花费
+        c_civics = c_civics + civicCost
+        --总科技数量
         s_civics = s_civics + 1
     end
     for _, city in pairs(m_SelectedCities) do
-        cost = cost + city
+        local cityCost = EagleCore:ModifyNum(city, reduction)
+        --总花费
+        cost = cost + cityCost
+        --总城市花费
+        c_cities = c_cities + cityCost
+        --总城市数量
         s_cities = s_cities + 1
     end
-    return cost, s_techs, s_civics, s_cities
+    local techs = { Num = s_techs, Cost = c_techs }
+    local civics = { Num = s_civics, Cost = c_civics }
+    local cities = { Num = s_cities, Cost = c_cities }
+    return cost, techs, civics, cities
 end
 
 --获取科技、市政和城市生产的数据
@@ -76,7 +99,7 @@ function GetData()
     if not player then return data end
     --获取玩家拥有的点数
     local eaglePoint = EaglePointManager.GetEaglePoint(loaclId)
-    local cost = CalculateSelectedCost()
+    local cost = CalculateSelectedCost(loaclId)
     data.Point = eaglePoint - cost
     --简单的自定义函数，获取成本与进度之差
     local function GetNeed(table)
@@ -275,7 +298,13 @@ function TopRefresh()
     tooltip = tooltip .. '[NEWLINE]' .. EaglePointManager:GetPerTurnPointTooltip(playerID)
     Controls.PointBacking:SetToolTipString(tooltip)
     --获取消耗和选择项数量
-    local cost, s_techs, s_civics, s_cities = CalculateSelectedCost()
+    local cost, techs, civics, cities = CalculateSelectedCost(playerID)
+    --选择项目数量
+    local s_techs, s_civics, s_cities = techs.Num, civics.Num, cities.Num
+    --项目花费
+    local techCost, civicCost, cityCost = techs.Cost, civics.Cost, cities.Cost
+    --设置按钮tooltip
+    local costTooltip = Locale.Lookup('LOC_EAGLE_POINT_TOTAL_COST', cost)
     --设置消耗
     if cost > 0 then
         Controls.PointCostBalance:SetText(Locale.Lookup('LOC_EAGLE_POINT_COST', cost))
@@ -285,19 +314,35 @@ function TopRefresh()
     --设置选择项数量
     if s_techs > 0 then
         Controls.TechsLabel:SetText(Locale.Lookup('LOC_EAGLE_POINT_SELECT', s_techs))
+        costTooltip = costTooltip .. '[NEWLINE]' .. Locale.Lookup('LOC_EAGLE_POINT_TECHS_COST', techCost, s_techs)
     else
         Controls.TechsLabel:SetText(Locale.Lookup('LOC_EAGLE_POINT_NO_SELECTED'))
     end
     if s_civics > 0 then
         Controls.CivicsLabel:SetText(Locale.Lookup('LOC_EAGLE_POINT_SELECT', s_civics))
+        costTooltip = costTooltip .. '[NEWLINE]' .. Locale.Lookup('LOC_EAGLE_POINT_CIVICS_COST', civicCost, s_civics)
     else
         Controls.CivicsLabel:SetText(Locale.Lookup('LOC_EAGLE_POINT_NO_SELECTED'))
     end
     if s_cities > 0 then
         Controls.CitiesLabel:SetText(Locale.Lookup('LOC_EAGLE_POINT_SELECT', s_cities))
+        costTooltip = costTooltip .. '[NEWLINE]' .. Locale.Lookup('LOC_EAGLE_POINT_CITIES_COST', cityCost, s_cities)
     else
         Controls.CitiesLabel:SetText(Locale.Lookup('LOC_EAGLE_POINT_NO_SELECTED'))
     end
+    --设置减免tooltip
+    local reductionTooltip = EaglePointManager:GetReductionTooltip(playerID)
+    if reductionTooltip ~= '' then
+        --获取消耗减免和上限
+        local reduction = -EaglePointManager:GetReduction(playerID)
+        local limit = -EaglePointManager:GetReductionLimit()
+        --设置减免tooltip
+        costTooltip = costTooltip .. '[NEWLINE][NEWLINE]' ..
+            Locale.Lookup('LOC_EAGLE_POINT_TOTAL_REDUCTION', reduction, limit)
+            .. reductionTooltip
+    end
+    --设置消耗tooltip
+    Controls.PointCostBacking:SetToolTipString(costTooltip)
 end
 
 --设置Tab选中状态
@@ -403,13 +448,17 @@ function Realize()
     m_CitiesListIM:ResetInstances()
     --获取数据
     local data = GetData()
+    --获取花费减免
+    local reduction = -EaglePointManager:GetReduction(playerID)
     --科技数据
     for _, tech in ipairs(data.Techs) do
         local instance = m_TechsListIM:GetInstance()
         local techIndex = tech.Index
         --获取科技是否选中
         local isSelected = m_SelectedTechs[techIndex] ~= nil
-        if data.Point < tech.Need and not isSelected then
+        --科技花费
+        local cost = EagleCore:ModifyNum(tech.Need, reduction)
+        if data.Point < cost and not isSelected then
             instance.Button:SetDisabled(true)
             instance.Button:SetAlpha(0.6)
         else
@@ -434,7 +483,7 @@ function Realize()
         local progress = math.clamp(tech.Progress / tech.Cost, 0, 1.0)
         instance.ProgressMeter:SetPercent(progress)
         --设置科技花费
-        instance.Cost:SetText(Locale.ToNumber(tech.Need, "#,###.#"))
+        instance.Cost:SetText(Locale.ToNumber(cost, "#,###.#"))
         instance.CostStack:SetHide(isSelected)
         instance.Select:SetHide(not isSelected)
         --关于科技进度
@@ -465,9 +514,11 @@ function Realize()
     for _, civic in ipairs(data.Civics) do
         local instance = m_CivicsListIM:GetInstance()
         local civicIndex = civic.Index
+        --市政花费
+        local cost = EagleCore:ModifyNum(civic.Need, reduction)
         --获取市政是否选中
         local isSelected = m_SelectedCivics[civicIndex] ~= nil
-        if data.Point < civic.Need and not isSelected then
+        if data.Point < cost and not isSelected then
             instance.Button:SetDisabled(true)
             instance.Button:SetAlpha(0.6)
         else
@@ -492,7 +543,7 @@ function Realize()
         local progress = math.clamp(civic.Progress / civic.Cost, 0, 1.0)
         instance.ProgressMeter:SetPercent(progress)
         --设置市政花费
-        instance.Cost:SetText(Locale.ToNumber(civic.Need, "#,###.#"))
+        instance.Cost:SetText(Locale.ToNumber(cost, "#,###.#"))
         instance.CostStack:SetHide(isSelected)
         instance.Select:SetHide(not isSelected)
         --关于市政进度
@@ -523,9 +574,11 @@ function Realize()
     for _, v_city in ipairs(data.Cities) do
         local instance = m_CitiesListIM:GetInstance()
         local cityID = v_city.ID
+        --城市花费
+        local cost = EagleCore:ModifyNum(v_city.Need, reduction)
         --获取城市是否选中
         local isSelected = m_SelectedCities[cityID] ~= nil
-        if data.Point < v_city.Need and not isSelected then
+        if data.Point < cost and not isSelected then
             instance.Button:SetDisabled(true)
             instance.Button:SetAlpha(0.6)
         else
@@ -564,7 +617,7 @@ function Realize()
         instance.ProductionProgress:SetPercent(math.max(percentComplete, 0));
         instance.ProductionProgress:SetShadowPercent(math.max(percentCompleteNextTurn, 0));
         --设置城市花费
-        instance.Cost:SetText(Locale.ToNumber(v_city.Need, "#,###.#"))
+        instance.Cost:SetText(Locale.ToNumber(cost, "#,###.#"))
         instance.CostStack:SetHide(isSelected)
         instance.Select:SetHide(not isSelected)
     end
@@ -590,8 +643,9 @@ end
 
 --点击确认按钮后
 function OnConfirmClicked()
-    local pointCost = CalculateSelectedCost()
-    UI.RequestPlayerOperation(Game.GetLocalPlayer(),
+    local playerID = Game.GetLocalPlayer()
+    local pointCost = CalculateSelectedCost(playerID)
+    UI.RequestPlayerOperation(playerID,
         PlayerOperations.EXECUTE_SCRIPT, {
             Techs   = m_SelectedTechs,
             Civics  = m_SelectedCivics,

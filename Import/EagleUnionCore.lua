@@ -79,6 +79,11 @@ function EagleCore.FormatValue(value)
     end
 end
 
+--数字百分比修正 (GamePlay, UI)
+function EagleCore:ModifyNum(num, percent)
+    return self.Round(num * (1 + percent / 100))
+end
+
 --||=====================GamePlay=======================||--
 
 --随机数生成器，范围为[1,num+1] (GamePlay)
