@@ -237,7 +237,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_EAGLE_POINT_PER_TURN" Language="zh_Hans_CN">
-			<Text>每回合 [ICON_Turn] 研究点数[NEWLINE]</Text>
+			<Text>每回合 [ICON_Turn] 研究点数</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_FROM_CITIES" Language="zh_Hans_CN">
 			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 来自城市</Text>
@@ -250,7 +250,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_EAGLE_POINT_FROM_MODIFIER" Language="zh_Hans_CN">
-			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 来自{2_percent : number +#.#;-#.#}%的修正值</Text>
+			<Text>[NEWLINE]{1_percent : number +#.#;-#.#}%（{2_point : number +#.#;-#.#}）来自修正值</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_MODIFIER_EXAMPLE" Language="zh_Hans_CN">
 			<Text>[NEWLINE][ICON_Bullet]{1_percent : number +#.#;-#.#}% 来自范例</Text>

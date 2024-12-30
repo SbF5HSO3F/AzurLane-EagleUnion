@@ -84,6 +84,19 @@ function EagleCore:ModifyByPercent(num, percent)
     return self.Round(num * (1 + percent / 100))
 end
 
+--获取玩家的区域数量 (GamePlay, UI)
+function EagleCore.GetPlayerDistrictCount(playerID, index)
+    local pPlayer, count = Players[playerID], 0
+    if not pPlayer then return count end
+    local districts = pPlayer:GetDistricts()
+    for _, district in districts:Members() do
+        if district:GetType() == index and district:IsComplete() and (not district:IsPillaged()) then
+            count = count + 1
+        end
+    end
+    return count
+end
+
 --||=====================GamePlay=======================||--
 
 --随机数生成器，范围为[1,num+1] (GamePlay)
