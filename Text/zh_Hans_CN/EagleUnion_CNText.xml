@@ -18,18 +18,18 @@
 		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_EAGLE_UNION_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
 			<Text>白鹰拥有强大的工业实力，先进的科学技术以及各势力中最优秀的航空兵器。武器的设计理念兼顾性能与数量。现在基于贯彻自身正义和为世界带来和平的理念留在碧蓝航线，在与赤色中轴和塞壬的战斗中有着活跃表现。</Text>
 		</Replace>
-    	<Replace Tag="LOC_CIVINFO_AZURLANE_CORRESPOND" Language="zh_Hans_CN">
-      		<Text>参考原型</Text>
-    	</Replace>
+		<Replace Tag="LOC_CIVINFO_AZURLANE_CORRESPOND" Language="zh_Hans_CN">
+			<Text>参考原型</Text>
+		</Replace>
 		<Replace Tag="LOC_CIVINFO_CORRESPOND_EAGLE_UNION" Language="zh_Hans_CN">
-      		<Text>美利坚合众国</Text>
-    	</Replace>
-    	<Replace Tag="LOC_CIVINFO_AZURLANE_ROLE" Language="zh_Hans_CN">
-      		<Text>实装角色数</Text>
-    	</Replace>
-    	<Replace Tag="LOC_CIVINFO_ROLE_EAGLE_UNION" Language="zh_Hans_CN">
-      		<Text>142位</Text>
-    	</Replace>
+			<Text>美利坚合众国</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVINFO_AZURLANE_ROLE" Language="zh_Hans_CN">
+			<Text>实装角色数</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVINFO_ROLE_EAGLE_UNION" Language="zh_Hans_CN">
+			<Text>142位</Text>
+		</Replace>
 		<!--文明能力-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_NAME" Language="zh_Hans_CN">
 			<Text>科技与工业的璀璨</Text>
@@ -44,13 +44,13 @@
 		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>白鹰联邦特色区域，取代工业区，解锁更早，造价更低，且无人口需求（因此并非专业化区域）。从相邻区域获得标准相邻加成，[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_SCIENCE] 科技值和 [ICON_GOLD] 金币。[NEWLINE][NEWLINE]城市每回合获得等同于其每回合所获 [ICON_SCIENCE] 科技值、[ICON_CULTURE] 文化值和 [ICON_PRODUCTION] 生产力20%的研究点数。此城所有改良设施+1 [ICON_SCIENCE] 科技值、+1 [ICON_PRODUCTION] 生产力，研究完“学徒”科技后再+1 [ICON_PRODUCTION] 生产力。[NEWLINE]为相邻区域提供大量相邻加成。从每个相邻的港口和学院获得+2 [ICON_PRODUCTION] 生产力。</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN" >
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
 			<Text>圣塔克拉拉谷，又称硅谷，位于美国加利福尼亚北部的大都会区旧金山湾区南面，是高科技事业云集的地区。由于圣塔克拉拉谷最早是研究和生产以硅为基础的半导体芯片的地方，因此得名硅谷。</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN" >
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
 			<Text>圣塔克拉拉谷是电子工业和计算机业的王国，尽管美国和世界其它高新技术区都在不断发展壮大，但圣塔克拉拉谷仍然是世界高新技术创新和发展的开创者和中心，该地区的风险投资占全美风险投资总额的三分之一，圣塔克拉拉谷的计算机公司已经发展到大约1500家。 一个世纪前这里还是一片果园，但自从英特尔 、苹果公司、谷歌、脸书、雅虎等高科技公司的总部在此落户之后，出现了众多繁华的市镇。在短短的几十年之内，硅谷走出了大批科技富翁。</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN" >
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
 			<Text>圣塔克拉拉谷的主要部分位于旧金山半岛南端的圣塔克拉拉县，主要包括该县下属的从帕罗奥多市到县府圣何塞市一段长约25英里的谷地。而圣塔克拉拉谷的总范围一般还包含旧金山湾区西南部圣马特奥县的部分城市，以及旧金山湾区东部阿拉米达县的部分城市。 圣塔克拉拉谷的主要区位特点是拥有附近一些具有雄厚科研力量的美国顶尖大学作为依托，主要包括斯坦福大学和加州大学伯克利分校，还包括加州大学系统的其它几所大学和圣塔克拉拉大学。结构上，圣塔克拉拉谷以高新技术中小公司群为基础，同时拥有谷歌、Facebook、惠普、英特尔、苹果公司、思科、英伟达、甲骨文、特斯拉、雅虎等大公司，融科学、技术、生产为一体。</Text>
 		</Replace>
 		<!--特殊加成-->
@@ -94,28 +94,28 @@
 		<Replace Tag="LOC_ABILITY_ENTERPRISE_HREAT_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>初始便获得一次强化升级并+5 [ICON_Strength] 战斗力，+50%战斗经验值</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN" >
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
 			<Text>纽波特纽斯造船及船坞公司，或简称为纽波特纽斯造船厂，由企业家柯林斯·亨廷顿出资，创立于1886年，其紧挨纽波特纽斯市，是美国最大的私营造船厂。2001年11月，NS被诺斯罗普·格鲁门公司的海事部门收购。2011年3月，诺·格公司又将其与英格尔斯造船厂剥离，成立了独立的亨廷顿英格尔工业公司。</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN" >
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
 			<Text>纽波特纽斯造船厂不但是美国最大的造船厂，也是唯一能够设计、建造核动力航母以及对核动力航母进行核燃料更换和大修的造船厂。纽波特纽斯船厂负责美国海军100%的核动力航母建造，也是美国两大核潜艇制造厂之一以及50%的驱逐舰的建造。按照纽波特纽斯造船公司生产的产品来看，它被称为美国的国宝也丝毫不为过。</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN" >
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
 			<Text>纽波特纽斯造船厂起源自一个运煤码头。</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN" >
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN">
 			<Text>1870年代，切萨皮克及俄亥俄铁路公司主席 柯利斯·亨廷顿大举注资，铺设连接里士满及俄亥俄河的铁路。1881年，公司将铁路延伸至弗吉尼亚半岛，并接驳到汉普顿锚地，于纽波特纽斯建设一个运煤码头。1886年，亨廷顿在码头旁兴建船坞，供运煤船舰维修，并同时提供造船服务；造船公司自此成立，其时名为切萨皮克干船坞及造船公司。1891年，造船厂建造的首架船只下水，为一艘拖船。稍后美国海军开始与造船公司签约，建造军舰。</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_5" Language="zh_Hans_CN" >
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_5" Language="zh_Hans_CN">
 			<Text>到1897年，公司已为美国海军建造了三艘护卫艇。由于船坞的劳工需求甚大，纽波特纽斯人口逐渐增多，并在1896年正式成为独立市；第一任市长为公司要员沃尔特·波斯特。1900年，亨廷顿去世，其外甥亨利·亨廷顿接管造船公司，并继续扩建船厂。稍后无畏舰时代来临，海军竞赛激烈；公司共为美国海军建造了六艘无畏舰，包括特拉华号、得克萨斯号、宾夕法尼亚号、密西西比号、马里兰号战列舰及西弗吉尼亚号。1914年，公司亦建造了忠仆号。1915年5月7日，卢西塔尼亚号被德国潜艇击沉，当时的公司主席亚伯特·霍金斯亦在死者之列。稍后公司为美军建造多艘驱逐舰及其他舰只。</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_6" Language="zh_Hans_CN" >
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_6" Language="zh_Hans_CN">
 			<Text>第一次世界大战结束后，造船公司为海军建造了多艘航空母舰，包括突击者号、约克城号、企业号及大黄蜂号。第二次世界大战前后，公司建造了九艘埃塞克斯级航空母舰，包括埃塞克斯号、约克城号、无畏号、大黄蜂号、富兰克林号、提康德罗加号、伦道夫号、拳师号及莱特号。由于美军亟需更多军舰，公司在北卡罗来纳州威尔明顿开设分公司，并建设临时船厂造船。战争结束前夕，公司亦在纽波特纽斯建造中途岛级航空母舰，包括中途岛号及珊瑚海号；稍后又建造了美国号邮轮。</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_7" Language="zh_Hans_CN" >
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_7" Language="zh_Hans_CN">
 			<Text>战后造船公司与海军的关系仍非常紧密；福莱斯特号、突击者号均在纽波特纽斯建造。</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_8" Language="zh_Hans_CN" >
+		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NEWPORT_NEWS_SHIPBUILDING_CHAPTER_HISTORY_PARA_8" Language="zh_Hans_CN">
 			<Text>1954年，造船公司与西屋电子公司及美国海军合作，研发舰载核反应炉，使军舰可以核动力行驶。1958年，全球第一艘核动力航空母舰——企业号航空母舰在纽波特纽斯建造，并在1960年下水。稍后公司亦建造了美利坚号及肯尼迪号。1968年，造船公司与坦尼可公司合并。1970年代开始，造船公司建造了所有的尼米兹级航空母舰，亦建造了部分洛杉矶级核潜艇。1996年，造船公司脱离坦尼可公司，并以纽波特纽斯造船公司之名在纽约上市。2001年11月7日，造船公司被诺斯洛普·格鲁门收购，船厂亦更名为诺斯洛普·格鲁门造船厂。2009年，公司开始建造第一艘福特级核动力航空母舰。</Text>
 		</Replace>
 		<!--特殊单位-->
@@ -237,7 +237,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_EAGLE_POINT_PER_TURN" Language="zh_Hans_CN">
-			<Text>每回合 [ICON_Turn] 研究点数</Text>
+			<Text>每回合 [ICON_Turn] 研究点数[NEWLINE]</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_FROM_CITIES" Language="zh_Hans_CN">
 			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 来自城市</Text>
@@ -247,6 +247,13 @@
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_FROM_SANTA_CLARA" Language="zh_Hans_CN">
 			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 来自圣塔克拉拉谷</Text>
+		</Replace>
+
+		<Replace Tag="LOC_EAGLE_POINT_FROM_MODIFIER" Language="zh_Hans_CN">
+			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 来自{2_percent : number +#.#;-#.#}%的修正值</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_MODIFIER_EXAMPLE" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]{1_percent : number +#.#;-#.#}% 来自范例</Text>
 		</Replace>
 		<!--城市名-->
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_WASHINGTON_DC" Language="zh_Hans_CN">

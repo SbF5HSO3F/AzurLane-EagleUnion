@@ -80,7 +80,7 @@ function EagleCore.FormatValue(value)
 end
 
 --数字百分比修正 (GamePlay, UI)
-function EagleCore:ModifyNum(num, percent)
+function EagleCore:ModifyByPercent(num, percent)
     return self.Round(num * (1 + percent / 100))
 end
 

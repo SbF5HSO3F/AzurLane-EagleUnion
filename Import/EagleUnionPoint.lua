@@ -96,6 +96,19 @@ EaglePointManager.Points = {
         --         return yield ~= 0 and Locale.Lookup(self.Tooltip, yield) or ''
         --     end
         -- }
+    },
+    --百分比增益
+    Moddifier = {
+        Example = {
+            Tooltip = 'LOC_EAGLE_POINT_MODIFIER_EXAMPLE',
+            GetModifier = function(playerID)
+                return 10
+            end,
+            GetTooltip = function(self, playerID)
+                local modifier = self.GetModifier(playerID)
+                return modifier ~= 0 and Locale.Lookup(self.Tooltip, modifier) or ''
+            end
+        }
     }
 }
 
@@ -111,8 +124,31 @@ function EaglePointManager:GetCityYieldPoint(playerID, cityID)
     return yield
 end
 
---获取每回合获得的研究点数 (GamePlay, UI)
-function EaglePointManager:GetPerTurnPoint(playerID, floor)
+--获取获得的研究点数增益 (GamePlay, UI)
+function EaglePointManager:GetPointModifier(playerID)
+    local modifier = 0
+    --遍历来源
+    local moddifier = self.Points.Moddifier
+    for _, source in pairs(moddifier) do
+        modifier = modifier + source.GetModifier(playerID)
+    end
+    return modifier
+end
+
+--获取获得的研究点数增益的tooltip (GamePlay, UI)
+function EaglePointManager:GetPointModifierTooltip(playerID)
+    local modifierTooltip = ''
+    --遍历来源
+    local moddifier = self.Points.Moddifier
+    for _, source in pairs(moddifier) do
+        modifierTooltip = modifierTooltip .. source:GetTooltip(playerID)
+    end
+    --返回tooltip
+    return modifierTooltip
+end
+
+--获取每回合获得的研究点数，无增益 (GamePlay, UI)
+function EaglePointManager:GetPerTurnPointWithoutModifier(playerID, floor)
     --获取玩家
     local pPlayer = Players[playerID]
     if not pPlayer then return 0 end
@@ -129,6 +165,26 @@ function EaglePointManager:GetPerTurnPoint(playerID, floor)
     for _, source in pairs(extra) do
         perTurnPoint = perTurnPoint + source.GetPointYield(playerID)
     end
+    return floor and EagleCore.Floor(perTurnPoint) or perTurnPoint
+end
+
+--获取每回合获得的额外增益研究点数 (GamePlay, UI)
+function EaglePointManager:GetPerTurnPointWithModifier(playerID, floor)
+    local perTurnPoint = self:GetPerTurnPointWithoutModifier(playerID, true)
+    --获取点数增益
+    local modifier = self:GetPointModifier(playerID)
+    --点数增益处理
+    local percentPoint = perTurnPoint * modifier / 100
+    return floor and EagleCore.Floor(percentPoint) or percentPoint
+end
+
+--获取每回合获得的研究点数 (GamePlay, UI)
+function EaglePointManager:GetPerTurnPoint(playerID, floor)
+    --无增益
+    local perTurnPoint = self:GetPerTurnPointWithModifier(playerID, true)
+    --有增益
+    local percentPoint = self:GetPerTurnPointWithoutModifier(playerID, true)
+    perTurnPoint = perTurnPoint + percentPoint
     --返回最终的点数
     return floor and EagleCore.Floor(perTurnPoint) or perTurnPoint
 end
@@ -139,6 +195,9 @@ function EaglePointManager:GetPerTurnPointTooltip(playerID)
     --获取玩家
     local pPlayer = Players[playerID]
     if not pPlayer then return '' end
+    --获取每回合获得的研究点数
+    local perTurnPoint = self:GetPerTurnPoint(playerID)
+    perTurnPointTooltip = Locale.Lookup('LOC_EAGLE_POINT_PER_TURN', perTurnPoint)
     --来自城市
     local cities = pPlayer:GetCities()
     local citiesPoint = 0
@@ -159,7 +218,7 @@ function EaglePointManager:GetPerTurnPointTooltip(playerID)
         end
     end
     --来自城市的tooltip
-    if citiesPoint ~= 0 then
+    if citiesTooltip ~= '' then
         perTurnPointTooltip = perTurnPointTooltip ..
             Locale.Lookup('LOC_EAGLE_POINT_FROM_CITIES', citiesPoint) .. citiesTooltip
     end
@@ -168,19 +227,49 @@ function EaglePointManager:GetPerTurnPointTooltip(playerID)
     for _, source in pairs(extra) do
         perTurnPointTooltip = perTurnPointTooltip .. source:GetTooltip(playerID)
     end
+    --获取点数增益
+    local modifier = self:GetPointModifier(playerID)
+    local modifierTooltip = self:GetPointModifierTooltip(playerID)
+    if modifierTooltip ~= '' then
+        local modifierPoint = self:GetPerTurnPointWithModifier(playerID, true)
+        perTurnPointTooltip = perTurnPointTooltip ..
+            Locale.Lookup('LOC_EAGLE_POINT_FROM_MODIFIER', modifierPoint, modifier) .. modifierTooltip
+    end
     --返回tooltip
     return perTurnPointTooltip
 end
 
 --研究点数花费减免
 EaglePointManager.Reduction = {
-    --上限
-    Limit = 50,
+    --总上限相关
+    Limit = {
+        --基础
+        Base = 50,
+        --上限改变因素
+        Factor = {
+            -- Example = {
+            --     GetLimitChange = function(playerID)
+            --         return 10
+            --     end
+            -- }
+        },
+        --获取总上限
+        GetTotalLimit = function(self, playerID)
+            local limit = self.Base
+            for _, factor in pairs(self.Factor) do
+                limit = limit + factor.GetLimitChange(playerID)
+            end
+            return limit
+        end
+    },
     --减免来源
     Sources = {
         Campus = {
+            --该来源的上限
+            Limit = 50,
+            --功能性文本提示
             Tooltip = 'LOC_EAGLE_POINT_REDUCTION_CAMPUS',
-            GetModifier = function(playerID)
+            GetModifier = function(self, playerID)
                 --获取玩家
                 local pPlayer = Players[playerID]
                 if not pPlayer then return 0 end
@@ -195,11 +284,16 @@ EaglePointManager.Reduction = {
                         count = count + 1
                     end
                 end
+                --获取点数减免
+                local modifier = count * perCampus
+                --获取点数减免上限
+                local limit = self.Limit
+                if limit ~= nil then modifier = math.min(modifier, limit) end
                 --返回最终的减免
-                return EagleCore.Floor(count * perCampus)
+                return EagleCore.Round(modifier)
             end,
             GetTooltip = function(self, playerID)
-                local modifier = -self.GetModifier(playerID)
+                local modifier = -self:GetModifier(playerID)
                 return modifier ~= 0 and Locale.Lookup(self.Tooltip, modifier) or ''
             end
         }
@@ -207,8 +301,10 @@ EaglePointManager.Reduction = {
 }
 
 --获取研究点数花费减免上限 (GamePlay, UI)
-function EaglePointManager:GetReductionLimit()
-    return self.Reduction.Limit
+--这个函数是为了便于调用，实际上这个函数其实没必要
+function EaglePointManager:GetReductionLimit(playerID)
+    local limitManager = self.Reduction.Limit
+    return limitManager:GetTotalLimit(playerID)
 end
 
 --获取研究点数减免 (GamePlay, UI)
@@ -217,11 +313,11 @@ function EaglePointManager:GetReduction(playerID)
     local pPlayer = Players[playerID]
     if not pPlayer then return 0 end
     --花费减免与上限
-    local reduction, limit = 0, self.Reduction.Limit
+    local reduction, limit = 0, self:GetReductionLimit(playerID)
     --遍历来源
     local reductionSources = self.Reduction.Sources
     for _, source in pairs(reductionSources) do
-        reduction = reduction + source.GetModifier(playerID)
+        reduction = reduction + source:GetModifier(playerID)
     end
     --返回最终的减免
     return EagleCore.Round(math.min(reduction, limit))

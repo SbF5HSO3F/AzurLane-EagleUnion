@@ -26,9 +26,9 @@ EagleUnionTracker = {
                 Controls.PointPerTurn:SetText(EagleCore.FormatValue(perTurnPoint))
                 --获取每回合获得的研究点数tooltip
                 local perTurnPointTooltip = EaglePointManager:GetPerTurnPointTooltip(loaclPlayerID)
-                local tooltip = Locale.Lookup('LOC_EAGLE_POINT_PER_TURN', perTurnPoint)
-                tooltip = tooltip .. '[NEWLINE]' .. perTurnPointTooltip
-                Controls.EagleTrackerPoint:SetToolTipString(tooltip)
+                -- local tooltip = Locale.Lookup('LOC_EAGLE_POINT_PER_TURN', perTurnPoint)
+                -- tooltip = tooltip .. '[NEWLINE]' .. perTurnPointTooltip
+                Controls.EagleTrackerPoint:SetToolTipString(perTurnPointTooltip)
             else
                 Controls.EagleTrackerGrid:SetHide(true)
             end
