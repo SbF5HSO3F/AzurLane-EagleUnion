@@ -57,7 +57,7 @@
 		<Replace Tag="LOC_SANTA_CLARA_DISTRICTS" Language="zh_Hant_HK">
 			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自相鄰的每個區域</Text>
 		</Replace>
-		<Replace Tag="LOC_SANTA_CLARA_CAMPUS" Language="zh_Hant_HK">
+		<Replace Tag="LOC_SANTA_CLARA_IVY_LEAGUE" Language="zh_Hant_HK">
 			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自相鄰的學院</Text>
 		</Replace>
 		<Replace Tag="LOC_SANTA_CLARA_HARBOR" Language="zh_Hant_HK">

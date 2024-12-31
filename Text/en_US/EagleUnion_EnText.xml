@@ -57,7 +57,7 @@
 		<Replace Tag="LOC_SANTA_CLARA_DISTRICTS" Language="en_US">
 			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent district {1_num : plural 1?tile; other?tiles;}.</Text>
 		</Replace>
-		<Replace Tag="LOC_SANTA_CLARA_CAMPUS" Language="en_US">
+		<Replace Tag="LOC_SANTA_CLARA_IVY_LEAGUE" Language="en_US">
 			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent Campus {1_num : plural 2?tile; other?tiles;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_SANTA_CLARA_HARBOR" Language="en_US">

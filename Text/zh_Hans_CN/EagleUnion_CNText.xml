@@ -42,7 +42,7 @@
 			<Text>圣塔克拉拉谷</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>白鹰联邦特色区域，取代工业区，解锁更早，造价更低，且无人口需求（因此并非专业化区域）。从相邻区域获得标准相邻加成，[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_GOLD] 金币。[NEWLINE][NEWLINE]城市每回合获得等同于其每回合所获 [ICON_SCIENCE] 科技值、[ICON_CULTURE] 文化值和 [ICON_PRODUCTION] 生产力20%的研究点数。此城所有改良设施+1 [ICON_SCIENCE] 科技值、+1 [ICON_PRODUCTION] 生产力，研究完“学徒”科技后再+1 [ICON_PRODUCTION] 生产力。[NEWLINE]为相邻区域提供大量相邻加成。从每个相邻的港口和学院获得+2 [ICON_PRODUCTION] 生产力。</Text>
+			<Text>白鹰联邦特色区域，取代工业区，解锁更早，造价更低，且无人口需求（因此并非专业化区域）。从相邻区域获得标准相邻加成，[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_GOLD] 金币。[NEWLINE][NEWLINE]城市每回合获得等同于其每回合所获 [ICON_SCIENCE] 科技值、[ICON_CULTURE] 文化值和 [ICON_PRODUCTION] 生产力20%的研究点数。此城所有改良设施+1 [ICON_SCIENCE] 科技值、+1 [ICON_PRODUCTION] 生产力，研究完“学徒”科技后再+1 [ICON_PRODUCTION] 生产力。[NEWLINE]为相邻区域提供大量相邻加成。从每个相邻的港口和常春藤联盟获得+2 [ICON_PRODUCTION] 生产力。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
 			<Text>圣塔克拉拉谷，又称硅谷，位于美国加利福尼亚北部的大都会区旧金山湾区南面，是高科技事业云集的地区。由于圣塔克拉拉谷最早是研究和生产以硅为基础的半导体芯片的地方，因此得名硅谷。</Text>
@@ -57,14 +57,14 @@
 			<Text>常春藤联盟</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_IVY_LEAGUE_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>白鹰联邦特色区域，取代学院，造价更低。[ICON_SCIENCE] 科技值相邻加成也提供 [ICON_CULTURE] 文化值。与常春藤联盟相邻的区域的相邻加成也提供 [ICON_SCIENCE] 科技值。[NEWLINE][NEWLINE]每回合获得研究点数+10%，研究点数花费-5%。</Text>
+			<Text>白鹰联邦特色区域，取代学院，造价更低。[ICON_SCIENCE] 科技值相邻加成也提供 [ICON_CULTURE] 文化值。每回合获得研究点数+10%，研究点数花费-5%。与常春藤联盟相邻的区域的相邻加成也提供 [ICON_SCIENCE] 科技值。[NEWLINE][NEWLINE]城市进行项目时+30%  [ICON_PRODUCTION] 生产力。</Text>
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_SANTA_CLARA_DISTRICTS" Language="zh_Hans_CN">
 			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自相邻的每个区域</Text>
 		</Replace>
-		<Replace Tag="LOC_SANTA_CLARA_CAMPUS" Language="zh_Hans_CN">
-			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自相邻的学院</Text>
+		<Replace Tag="LOC_SANTA_CLARA_IVY_LEAGUE" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自相邻的常春藤联盟</Text>
 		</Replace>
 		<Replace Tag="LOC_SANTA_CLARA_HARBOR" Language="zh_Hans_CN">
 			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自相邻的港口</Text>

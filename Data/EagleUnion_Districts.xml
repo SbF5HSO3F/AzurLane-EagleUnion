@@ -89,7 +89,7 @@
 		<!--圣塔克拉拉谷-->
 		<!--获得-->
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Government_Production"/>
-		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="SantaClara_Campus"/>
+		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="SantaClara_IvyLeague"/>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="SantaClara_Harbor"/>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="SantaClara_Districts"/>
 		<!--给予-->
@@ -113,7 +113,7 @@
 	</District_Adjacencies>
 	<Adjacency_YieldChanges>
 		<!--获得-->
-		<Row ID="SantaClara_Campus"		Description="LOC_SANTA_CLARA_CAMPUS"		YieldType="YIELD_PRODUCTION" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_CAMPUS"/>
+		<Row ID="SantaClara_IvyLeague"	Description="LOC_SANTA_CLARA_IVY_LEAGUE"	YieldType="YIELD_PRODUCTION" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_IVY_LEAGUE"/>
 		<Row ID="SantaClara_Harbor"		Description="LOC_SANTA_CLARA_HARBOR"		YieldType="YIELD_PRODUCTION" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_HARBOR"/>
 		<Row ID="SantaClara_Districts"	Description="LOC_SANTA_CLARA_DISTRICTS"		YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" OtherDistrictAdjacent="true"/>
 		<!--大量相邻加成-->
@@ -157,6 +157,11 @@
 			<DistrictType>DISTRICT_IVY_LEAGUE</DistrictType>
 			<ModifierId>IVY_CULTURE_COPY</ModifierId>
 		</Row>
+		<!--项目生产力-->
+		<Row>
+			<DistrictType>DISTRICT_IVY_LEAGUE</DistrictType>
+			<ModifierId>IVY_ADJUST_PROJECTS_PRODUCTION</ModifierId>
+		</Row>
 	</DistrictModifiers>
 	<Modifiers>
 		<!--圣塔克拉拉谷-->
@@ -194,6 +199,11 @@
 		<Row>
 			<ModifierId>IVY_CULTURE_COPY</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_DISTRICT_ADJUST_YIELD_BASED_ON_ADJACENCY_BONUS</ModifierType>
+		</Row>
+		<!--项目生产力-->
+		<Row>
+			<ModifierId>IVY_ADJUST_PROJECTS_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_EAGLE_UNION_SINGLE_CITY_ADJUST_ALL_PROJECTS_PRODUCTION</ModifierType>
 		</Row>
 	</Modifiers>
 	<ModifierArguments>
@@ -273,6 +283,12 @@
 			<ModifierId>IVY_CULTURE_COPY</ModifierId>
 			<Name>YieldTypeToMirror</Name>
 			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<!--项目生产力-->
+		<Row>
+			<ModifierId>IVY_ADJUST_PROJECTS_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>30</Value>
 		</Row>
 	</ModifierArguments>
 	<MomentIllustrations>

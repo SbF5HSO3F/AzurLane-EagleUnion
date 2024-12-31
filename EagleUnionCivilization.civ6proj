@@ -113,9 +113,9 @@
         <UpdateDatabase id="EagleUnion">
           <File priority="100">Data/EagleUnion_Core.sql</File>
           <File priority="90">Data/EagleUnion_Civilization.xml</File>
-          <File priority="85">Data/EagleUnion_Civilization.sql</File>
           <File priority="80">Data/EagleUnion_Buildings.xml</File>
           <File priority="70">Data/EagleUnion_Districts.xml</File>
+          <File priority="65">Data/EagleUnion_Districts.sql</File>
           <File priority="60">Data/EagleUnion_UnitAbilities.xml</File>
           <File priority="50">Data/EagleUnion_UnitPromotions.xml</File>
           <File priority="40">Data/EagleUnion_Units.xml</File>
@@ -269,7 +269,7 @@
     <Content Include="Data\AllenMSumner\EagleUnion_AllenMSumner_Leader.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\EagleUnion_Civilization.sql">
+    <Content Include="Data\EagleUnion_Districts.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\EagleUnion_NamedPlaces.xml">

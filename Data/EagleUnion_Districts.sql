@@ -1,5 +1,5 @@
--- EagleUnion_Civilization
--- Author: jjj
+-- EagleUnion_Districts
+-- Author: HSbF6HSO3F
 -- DateCreated: 2024/12/31 9:30:32
 --------------------------------------------------------------
 --Create Table
@@ -13,9 +13,9 @@ INSERT INTO temp_EagleUnion_Modifier_Table
 SELECT	'MODIFIER_IVY_' || REPLACE(YieldType,'YIELD_','') || '_GRANT_SCIENCE',	YieldType
 FROM Yields;
 --Trait
-INSERT INTO TraitModifiers
-		(TraitType,						            ModifierId)
-SELECT	'TRAIT_CIVILIZATION_DISTRICT_IVY_LEAGUE',	ModifierId
+INSERT INTO DistrictModifiers
+		(DistrictType,			ModifierId)
+SELECT	'DISTRICT_IVY_LEAGUE',	ModifierId
 FROM temp_EagleUnion_Modifier_Table;
 
 --Modifier
