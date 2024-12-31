@@ -17,10 +17,9 @@ local EaglePointKey = 'EaglePoint'
 
 local perYieldPercent = 0.2
 local SantaClaraValley = GameInfo.Districts['DISTRICT_SANTA_CLARA_VALLEY'].Index
-
-local campusIndex = GameInfo.Districts['DISTRICT_CAMPUS'].Index
-local perCampus = 5
-
+local IvyLeagueIndex = GameInfo.Districts['DISTRICT_IVY_LEAGUE'].Index
+local perIvyLeagueReduction = 5
+local perIvyLeagueModifier = 10
 --||====================GamePlay, UI======================||--
 
 --获取研究点数 (GamePlay, UI)
@@ -99,10 +98,14 @@ EaglePointManager.Points = {
     },
     --百分比增益
     Modifier = {
-        Example = {
-            Tooltip = 'LOC_EAGLE_POINT_MODIFIER_EXAMPLE',
+        IvyLeague = {
+            Tooltip = 'LOC_EAGLE_POINT_MODIFIER_IVY_LEAGUE',
             GetModifier = function(playerID)
-                return 10
+                --获取数量
+                local count = EagleCore.GetPlayerDistrictCount(playerID, IvyLeagueIndex)
+                --获取点数减免
+                local modifier = count * perIvyLeagueModifier
+                return EagleCore.Round(modifier)
             end,
             GetTooltip = function(self, playerID)
                 local modifier = self.GetModifier(playerID)
@@ -310,16 +313,16 @@ EaglePointManager.Reduction = {
     },
     --减免来源
     Sources = {
-        Campus = {
+        IvyLeague = {
             --该来源的上限
             Limit = 50,
             --功能性文本提示
-            Tooltip = 'LOC_EAGLE_POINT_REDUCTION_CAMPUS',
+            Tooltip = 'LOC_EAGLE_POINT_REDUCTION_IVY_LEAGUE',
             GetModifier = function(self, playerID)
-                --获取学院的数量
-                local count = EagleCore.GetPlayerDistrictCount(playerID, campusIndex)
+                --获取数量
+                local count = EagleCore.GetPlayerDistrictCount(playerID, IvyLeagueIndex)
                 --获取点数减免
-                local modifier = count * perCampus
+                local modifier = count * perIvyLeagueReduction
                 --获取点数减免上限
                 local limit = self.Limit
                 if limit ~= nil then modifier = math.min(modifier, limit) end

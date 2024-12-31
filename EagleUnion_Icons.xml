@@ -57,6 +57,10 @@
 		<Row Name="ICON_DISTRICT_SANTA_CLARA_VALLEY"									Atlas="ICON_ATLAS_DISTRICTS"						Index="9"/>
 		<Row Name="ICON_DISTRICT_SANTA_CLARA_VALLEY_FOW"								Atlas="ICON_ATLAS_DISTRICTS_FOW"					Index="9"/>
 		<Row Name="DISTRICT_SANTA_CLARA_VALLEY"											Atlas="ICON_ATLAS_FONT_ICON_BASELINE_4"				Index="185"/>
+		<!--常春藤联盟-->
+		<Row Name="ICON_DISTRICT_IVY_LEAGUE"											Atlas="ICON_ATLAS_DISTRICTS"						Index="2"/>
+		<Row Name="ICON_DISTRICT_IVY_LEAGUE_FOW"										Atlas="ICON_ATLAS_DISTRICTS_FOW"					Index="2"/>
+		<Row Name="DISTRICT_IVY_LEAGUE"													Atlas="ICON_ATLAS_FONT_ICON_BASELINE_4"				Index="177"/>
 		<!--纽波特纽斯造船厂-->
 		<Row Name="ICON_BUILDING_NEWPORT_NEWS_SHIPBUILDING"								Atlas="ICON_ATLAS_BUILDINGS"						Index="22"/>
 		<!--衣阿华级战列舰-->

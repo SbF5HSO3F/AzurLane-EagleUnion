@@ -42,7 +42,7 @@
 			<Text>圣塔克拉拉谷</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>白鹰联邦特色区域，取代工业区，解锁更早，造价更低，且无人口需求（因此并非专业化区域）。从相邻区域获得标准相邻加成，[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_SCIENCE] 科技值和 [ICON_GOLD] 金币。[NEWLINE][NEWLINE]城市每回合获得等同于其每回合所获 [ICON_SCIENCE] 科技值、[ICON_CULTURE] 文化值和 [ICON_PRODUCTION] 生产力20%的研究点数。此城所有改良设施+1 [ICON_SCIENCE] 科技值、+1 [ICON_PRODUCTION] 生产力，研究完“学徒”科技后再+1 [ICON_PRODUCTION] 生产力。[NEWLINE]为相邻区域提供大量相邻加成。从每个相邻的港口和学院获得+2 [ICON_PRODUCTION] 生产力。</Text>
+			<Text>白鹰联邦特色区域，取代工业区，解锁更早，造价更低，且无人口需求（因此并非专业化区域）。从相邻区域获得标准相邻加成，[ICON_PRODUCTION] 生产力相邻加成也提供 [ICON_GOLD] 金币。[NEWLINE][NEWLINE]城市每回合获得等同于其每回合所获 [ICON_SCIENCE] 科技值、[ICON_CULTURE] 文化值和 [ICON_PRODUCTION] 生产力20%的研究点数。此城所有改良设施+1 [ICON_SCIENCE] 科技值、+1 [ICON_PRODUCTION] 生产力，研究完“学徒”科技后再+1 [ICON_PRODUCTION] 生产力。[NEWLINE]为相邻区域提供大量相邻加成。从每个相邻的港口和学院获得+2 [ICON_PRODUCTION] 生产力。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
 			<Text>圣塔克拉拉谷，又称硅谷，位于美国加利福尼亚北部的大都会区旧金山湾区南面，是高科技事业云集的地区。由于圣塔克拉拉谷最早是研究和生产以硅为基础的半导体芯片的地方，因此得名硅谷。</Text>
@@ -52,6 +52,12 @@
 		</Replace>
 		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
 			<Text>圣塔克拉拉谷的主要部分位于旧金山半岛南端的圣塔克拉拉县，主要包括该县下属的从帕罗奥多市到县府圣何塞市一段长约25英里的谷地。而圣塔克拉拉谷的总范围一般还包含旧金山湾区西南部圣马特奥县的部分城市，以及旧金山湾区东部阿拉米达县的部分城市。 圣塔克拉拉谷的主要区位特点是拥有附近一些具有雄厚科研力量的美国顶尖大学作为依托，主要包括斯坦福大学和加州大学伯克利分校，还包括加州大学系统的其它几所大学和圣塔克拉拉大学。结构上，圣塔克拉拉谷以高新技术中小公司群为基础，同时拥有谷歌、Facebook、惠普、英特尔、苹果公司、思科、英伟达、甲骨文、特斯拉、雅虎等大公司，融科学、技术、生产为一体。</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_IVY_LEAGUE_NAME" Language="zh_Hans_CN">
+			<Text>常春藤联盟</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_IVY_LEAGUE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>白鹰联邦特色区域，取代学院，造价更低。[ICON_SCIENCE] 科技值相邻加成也提供 [ICON_CULTURE] 文化值。与常春藤联盟相邻的区域的相邻加成也提供 [ICON_SCIENCE] 科技值。[NEWLINE][NEWLINE]每回合获得研究点数+10%，研究点数花费-5%。</Text>
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_SANTA_CLARA_DISTRICTS" Language="zh_Hans_CN">
@@ -210,8 +216,8 @@
 		<Replace Tag="LOC_EAGLE_POINT_TOTAL_REDUCTION" Language="zh_Hans_CN">
 			<Text>研究点数花费{1_point : number +#.#;-#.#}%（上限{2_limit : number +#.#;-#.#}%）</Text>
 		</Replace>
-		<Replace Tag="LOC_EAGLE_POINT_REDUCTION_CAMPUS" Language="zh_Hans_CN">
-			<Text>[NEWLINE][ICON_Bullet]{1_reducion : number +#.#;-#.#}% 来自学院</Text>
+		<Replace Tag="LOC_EAGLE_POINT_REDUCTION_IVY_LEAGUE" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]{1_reducion : number +#.#;-#.#}% 来自常春藤联盟</Text>
 		</Replace>
 
 		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_TECH" Language="zh_Hans_CN">
@@ -252,8 +258,8 @@
 		<Replace Tag="LOC_EAGLE_POINT_FROM_MODIFIER" Language="zh_Hans_CN">
 			<Text>[NEWLINE]{1_percent : number +#.#;-#.#}%（{2_point : number +#.#;-#.#}）来自修正值</Text>
 		</Replace>
-		<Replace Tag="LOC_EAGLE_POINT_MODIFIER_EXAMPLE" Language="zh_Hans_CN">
-			<Text>[NEWLINE][ICON_Bullet]{1_percent : number +#.#;-#.#}% 来自范例</Text>
+		<Replace Tag="LOC_EAGLE_POINT_MODIFIER_IVY_LEAGUE" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]{1_percent : number +#.#;-#.#}% 来自常春藤联盟</Text>
 		</Replace>
 		<!--城市名-->
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_WASHINGTON_DC" Language="zh_Hans_CN">

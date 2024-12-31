@@ -654,6 +654,7 @@ function OnConfirmClicked()
             OnStart = 'EagleUnionPointUnlock'
         }
     ); UI.PlaySound("Purchase_With_Gold"); Close()
+    Network.BroadcastPlayerInfo()
 end
 
 --点击重新选择按钮后

@@ -225,6 +225,10 @@
 			<m_EntryID text="EagleUnion_Selected"/>
 			<m_ObjectName text="EagleUnion_Selected"/>
 		</Element>
+		<Element>
+			<m_EntryID text="Moment_LvyLeague"/>
+			<m_ObjectName text="Moment_LvyLeague"/>
+		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>
 		<Element>WINDOWS</Element>

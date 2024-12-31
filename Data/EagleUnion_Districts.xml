@@ -6,9 +6,11 @@
 <GameData>
 	<Types>
 		<Row Type="DISTRICT_SANTA_CLARA_VALLEY" Kind="KIND_DISTRICT"/>
+		<Row Type="DISTRICT_IVY_LEAGUE"			Kind="KIND_DISTRICT"/>
 	</Types>
 	<DistrictReplaces>
 		<Row CivUniqueDistrictType="DISTRICT_SANTA_CLARA_VALLEY" ReplacesDistrictType="DISTRICT_INDUSTRIAL_ZONE"/>
+		<Row CivUniqueDistrictType="DISTRICT_IVY_LEAGUE" 		 ReplacesDistrictType="DISTRICT_CAMPUS"/>
 	</DistrictReplaces>
 	<Districts>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY"
@@ -32,27 +34,59 @@
 			 CaptureRemovesCityDefenses="false"
 			 MilitaryDomain="NO_DOMAIN"
 			 CityStrengthModifier="2"
-			 CitizenSlots="2"
+			 CitizenSlots="1"
 			 TraitType="TRAIT_CIVILIZATION_DISTRICT_SANTA_CLARA_VALLEY"/>
+		<Row DistrictType="DISTRICT_IVY_LEAGUE"
+			 Name="LOC_DISTRICT_IVY_LEAGUE_NAME" 
+			 Description="LOC_DISTRICT_IVY_LEAGUE_DESCRIPTION"
+			 PrereqTech="TECH_WRITING" 
+			 PlunderType="PLUNDER_SCIENCE" 
+			 PlunderAmount="25"
+			 AdvisorType="ADVISOR_TECHNOLOGY"
+			 Cost="27"
+			 CostProgressionModel="COST_PROGRESSION_NUM_UNDER_AVG_PLUS_TECH"
+			 CostProgressionParam1="40"
+			 Maintenance="1"
+			 RequiresPlacement="true"
+			 RequiresPopulation="true"
+			 Aqueduct="false"
+			 NoAdjacentCity="false"
+			 InternalOnly="false"
+			 ZOC="false"
+			 CaptureRemovesBuildings="false"
+			 CaptureRemovesCityDefenses="false"
+			 MilitaryDomain="NO_DOMAIN"
+			 CityStrengthModifier="2"
+			 CitizenSlots="1"
+			 TraitType="TRAIT_CIVILIZATION_DISTRICT_IVY_LEAGUE"/>
 	</Districts>
-	<MomentIllustrations>
-		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_DISTRICT" MomentDataType="MOMENT_DATA_DISTRICT" GameDataType="DISTRICT_SANTA_CLARA_VALLEY" Texture="Moment_SantaClaraValley.dds"/>
-	</MomentIllustrations>
 	<District_GreatPersonPoints>
+		<!--圣塔克拉拉谷-->
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER"  PointsPerTurn="1"/>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" GreatPersonClassType="GREAT_PERSON_CLASS_SCIENTIST" PointsPerTurn="1"/>
+		<!--常春藤联盟-->
+		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		GreatPersonClassType="GREAT_PERSON_CLASS_SCIENTIST" PointsPerTurn="2"/>
 	</District_GreatPersonPoints>
 	<District_TradeRouteYields>
+		<!--圣塔克拉拉谷-->
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldType="YIELD_SCIENCE"		YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="2" YieldChangeAsInternationalDestination="0"/>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldType="YIELD_PRODUCTION"	YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="1" YieldChangeAsInternationalDestination="0"/>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldType="YIELD_GOLD"			YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="0" YieldChangeAsInternationalDestination="4"/>
+		<!--常春藤联盟-->
+		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldType="YIELD_SCIENCE"		YieldChangeAsOrigin="0" YieldChangeAsDomesticDestination="3" YieldChangeAsInternationalDestination="1"/>
 	</District_TradeRouteYields>
 	<District_CitizenYieldChanges>
+		<!--圣塔克拉拉谷-->
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldType="YIELD_SCIENCE"		YieldChange="2"/>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldType="YIELD_PRODUCTION"	YieldChange="3"/>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldType="YIELD_GOLD"			YieldChange="4"/>
+		<!--常春藤联盟-->
+		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldType="YIELD_SCIENCE"		YieldChange="3"/>
+		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldType="YIELD_CULTURE"		YieldChange="2"/>
+		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldType="YIELD_GOLD"			YieldChange="4"/>
 	</District_CitizenYieldChanges>
 	<District_Adjacencies>
+		<!--圣塔克拉拉谷-->
 		<!--获得-->
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Government_Production"/>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="SantaClara_Campus"/>
@@ -61,10 +95,21 @@
 		<!--给予-->
 		<Row DistrictType="DISTRICT_HOLY_SITE"			YieldChangeId="SantaClara_Faith"/>
 		<Row DistrictType="DISTRICT_CAMPUS"				YieldChangeId="SantaClara_Science"/>
+		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="SantaClara_Science"/>
 		<Row DistrictType="DISTRICT_HARBOR"				YieldChangeId="SantaClara_Gold"/>
 		<Row DistrictType="DISTRICT_COMMERCIAL_HUB"		YieldChangeId="SantaClara_Gold"/>
 		<Row DistrictType="DISTRICT_THEATER"			YieldChangeId="SantaClara_Culture"/>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="SantaClara_Production"/>
+		<!--常春藤联盟-->
+		<!--获得-->
+		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="Mountains_Science1"/>
+		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="Mountains_Science2"/>
+		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="Mountains_Science3"/>
+		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="Mountains_Science4"/>
+		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="Mountains_Science5"/>
+		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="Government_Science"/>
+		<!--给予-->
+
 	</District_Adjacencies>
 	<Adjacency_YieldChanges>
 		<!--获得-->
@@ -80,11 +125,12 @@
 		<Row ID="SantaClara_Faith"		Description="LOC_SANTA_CLARA_FAITH"			YieldType="YIELD_FAITH"			YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_SANTA_CLARA_VALLEY"/>
 	</Adjacency_YieldChanges>
 	<DistrictModifiers>
+		<!--圣塔克拉拉谷-->
 		<!--生产力提供科技值-->
-		<Row>
+		<!-- <Row>
 			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
 			<ModifierId>SANTA_SCIENCE_COPY</ModifierId>
-		</Row>
+		</Row> -->
 		<!--生产力提供金币-->
 		<Row>
 			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
@@ -105,8 +151,15 @@
 			<DistrictType>DISTRICT_SANTA_CLARA_VALLEY</DistrictType>
 			<ModifierId>SANTA_CLARA_IMPROVEMENT_BUFF_APPRENTICESHIP</ModifierId>
 		</Row>
+		<!--常春藤联盟-->
+		<!--科技值提供文化值-->
+		<Row>
+			<DistrictType>DISTRICT_IVY_LEAGUE</DistrictType>
+			<ModifierId>IVY_CULTURE_COPY</ModifierId>
+		</Row>
 	</DistrictModifiers>
 	<Modifiers>
+		<!--圣塔克拉拉谷-->
 		<!--生产力提供科技值-->
 		<Row>
 			<ModifierId>SANTA_SCIENCE_COPY</ModifierId>
@@ -136,8 +189,15 @@
 			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
 			<SubjectRequirementSetId>EAGLE_UNION_APPRENTICESHIP_BUFF</SubjectRequirementSetId>
 		</Row>
+		<!--常春藤联盟-->
+		<!--生产力提供科技值-->
+		<Row>
+			<ModifierId>IVY_CULTURE_COPY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICT_ADJUST_YIELD_BASED_ON_ADJACENCY_BONUS</ModifierType>
+		</Row>
 	</Modifiers>
 	<ModifierArguments>
+		<!--圣塔克拉拉谷-->
 		<!--生产力提供科技值-->
 		<Row>
 			<ModifierId>SANTA_SCIENCE_COPY</ModifierId>
@@ -198,5 +258,25 @@
 			<Name>YieldType</Name>
 			<Value>YIELD_PRODUCTION</Value>
 		</Row>
+		<!--常春藤联盟-->
+		<Row>
+			<ModifierId>IVY_CULTURE_COPY</ModifierId>
+			<Name>DistrictType</Name>
+			<Value>DISTRICT_IVY_LEAGUE</Value>
+		</Row>
+		<Row>
+			<ModifierId>IVY_CULTURE_COPY</ModifierId>
+			<Name>YieldTypeToGrant</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>IVY_CULTURE_COPY</ModifierId>
+			<Name>YieldTypeToMirror</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
 	</ModifierArguments>
+	<MomentIllustrations>
+		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_DISTRICT" MomentDataType="MOMENT_DATA_DISTRICT" GameDataType="DISTRICT_SANTA_CLARA_VALLEY" Texture="Moment_SantaClaraValley.dds"/>
+		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_DISTRICT" MomentDataType="MOMENT_DATA_DISTRICT" GameDataType="DISTRICT_IVY_LEAGUE"		   Texture="Moment_LvyLeague.dds"/>
+	</MomentIllustrations>
 </GameData>
