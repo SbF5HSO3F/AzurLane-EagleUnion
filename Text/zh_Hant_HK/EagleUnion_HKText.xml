@@ -42,7 +42,7 @@
 			<Text>聖塔克拉拉谷</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>白鷹聯邦特色區域，取代工業區，解鎖更早，造價更低，且無人口需求（因此並非專業化區域）。從相鄰區域獲得標準相鄰加成，[ICON_PRODUCTION] 生產力相鄰加成也提供 [ICON_SCIENCE] 科技值和 [ICON_GOLD] 金幣。[NEWLINE][NEWLINE]建成後隨機獎勵一項科技。此城所有改良設施+1 [ICON_SCIENCE] 科技值、+1 [ICON_PRODUCTION] 生產力，研究完「學徒」科技後再+1 [ICON_PRODUCTION] 生產力。[NEWLINE]為相鄰區域提供大量相鄰加成。從每個相鄰的港口和學院獲得+2 [ICON_PRODUCTION] 生產力。</Text>
+			<Text>白鷹聯邦特色區域，取代工業區，解鎖更早，造價更低，且無人口需求（因此並非專業化區域）。從相鄰區域獲得標準相鄰加成，[ICON_PRODUCTION] 生產力相鄰加成也提供 [ICON_GOLD] 金幣。[NEWLINE][NEWLINE]城市每回合獲得等同於其每回合所獲 [ICON_SCIENCE] 科技值、[ICON_CULTURE] 文化值和 [ICON_PRODUCTION] 生產力20%的研究點數。此城所有改良設施+1 [ICON_SCIENCE] 科技值、+1 [ICON_PRODUCTION] 生產力，研究完「學徒」科技後再+1 [ICON_PRODUCTION] 生產力。[NEWLINE]為相鄰區域提供大量相鄰加成。從每個相鄰的港口和常春藤聯盟獲得+2 [ICON_PRODUCTION] 生產力。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK" >
 			<Text>聖塔克拉拉谷，又稱矽谷，位於美國加利福尼亞北部的大都會區舊金山灣區南面，是高科技事業雲集的地區。由於聖塔克拉拉谷最早是研究和生產以矽為基礎的半導體芯片的地方，因此得名矽谷。</Text>
@@ -53,12 +53,24 @@
 		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_3" Language="zh_Hant_HK" >
 			<Text>聖塔克拉拉谷的主要部分位於舊金山半島南端的聖塔克拉拉縣，主要包括該縣下屬的從帕羅奧多市到縣府聖何塞市一段長約25英裏的谷地。而聖塔克拉拉谷的總範圍一般還包含舊金山灣區西南部聖馬特奧縣的部分城市，以及舊金山灣區東部阿拉米達縣的部分城市。 聖塔克拉拉谷的主要區位特點是擁有附近一些具有雄厚科研力量的美國頂尖大學作為依托，主要包括斯坦福大學和加州大學伯克利分校，還包括加州大學系統的其它幾所大學和聖塔克拉拉大學。結構上，聖塔克拉拉谷以高新技術中小公司群為基礎，同時擁有谷歌、Facebook、惠普、英特爾、蘋果公司、思科、英偉達、甲骨文、特斯拉、雅虎等大公司，融科學、技術、生產為一體。</Text>
 		</Replace>
+		<Replace Tag="LOC_DISTRICT_IVY_LEAGUE_NAME" Language="zh_Hant_HK">
+			<Text>常春藤聯盟</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_IVY_LEAGUE_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>白鷹聯邦特色區域，取代學院，造價更低。[ICON_SCIENCE] 科技值相鄰加成也提供 [ICON_CULTURE] 文化值。每回合獲得研究點數+5%，研究點數花費-5%。與常春藤聯盟相鄰的區域的相鄰加成也提供 [ICON_SCIENCE] 科技值。[NEWLINE][NEWLINE]建成後本城市+1 [ICON_CITIZEN] 人口。此城所有改良設施+2 [ICON_GOLD] 金幣，進行項目時+30%  [ICON_PRODUCTION] 生產力。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_IVY_LEAGUE_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
+			<Text>常春藤聯盟最初指的是美國東北部地區八所高校組成的體育賽事聯盟，後指由七所大學和一所學院組成並沿用「常春藤」這一名稱的高校聯盟。這八所院校包括：哈佛大學、賓夕法尼亞大學、耶魯大學、普林斯頓大學、哥倫比亞大學、達特茅斯學院、布朗大學及康奈爾大學。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_IVY_LEAGUE_CHAPTER_HISTORY_PARA_2" Language="zh_Hant_HK">
+			<Text>該聯盟俱為美國一流名校、也是美國產生最多羅德學者的高校聯盟，八所學校都是私立大學，其中七所在英國殖民時期建立，和公立大學一樣同時接受聯邦政府資助和私人捐贈，用於學術研究。截至2023年，該聯盟已贊助33項以上的男女運動聯盟錦標賽，並支持了來自不同院校的35支以上的大學生體育運動代表隊，為各院校間的體育運動交流提供寶貴機會。</Text>
+		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_SANTA_CLARA_DISTRICTS" Language="zh_Hant_HK">
 			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自相鄰的每個區域</Text>
 		</Replace>
 		<Replace Tag="LOC_SANTA_CLARA_IVY_LEAGUE" Language="zh_Hant_HK">
-			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自相鄰的學院</Text>
+			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自相鄰的常春藤聯盟</Text>
 		</Replace>
 		<Replace Tag="LOC_SANTA_CLARA_HARBOR" Language="zh_Hant_HK">
 			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自相鄰的港口</Text>
@@ -173,6 +185,90 @@
 		</Replace>
 		<Replace Tag="LOC_PROMOTION_EAGLE_SUPERCARRIER_DESCRIPTION" Language="zh_Hant_HK">
 			<Text>在友軍領土之外恢復，每回合+6影響力點數</Text>
+		</Replace>
+		<!--Lua文本-->
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK" Language="zh_Hant_HK">
+			<Text>白鷹聯邦[NEWLINE][NEWLINE]使用研究點數解鎖科技、市政和完成城市生產。</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_HEADER" Language="zh_Hant_HK">
+			<Text>聖塔克拉拉谷</Text>
+		</Replace>
+
+		<Replace Tag="LOC_EAGLE_POINT_NO_SELECTED" Language="zh_Hant_HK">
+			<Text>未選擇</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_SELECT" Language="zh_Hant_HK">
+			<Text>已選擇{1_num}項</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_NO_COST" Language="zh_Hant_HK">
+			<Text>無花費</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_COST" Language="zh_Hant_HK">
+			<Text>花費{1_num : number #,###.#}點研究點數</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_TOTAL_COST" Language="zh_Hant_HK">
+			<Text>總計花費{1_num : number #,###.#}點研究點數</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_TECHS_COST" Language="zh_Hant_HK">
+			<Text>[ICON_Bullet]{1_num : number #,###.#}點研究點數來自選擇{2_num}項科技</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_CIVICS_COST" Language="zh_Hant_HK">
+			<Text>[ICON_Bullet]{1_num : number #,###.#}點研究點數來自選擇{2_num}項市政</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_CITIES_COST" Language="zh_Hant_HK">
+			<Text>[ICON_Bullet]{1_num : number #,###.#}點研究點數來自選擇{2_num}項城市生產</Text>
+		</Replace>
+
+		<Replace Tag="LOC_EAGLE_POINT_TOTAL_REDUCTION" Language="zh_Hant_HK">
+			<Text>研究點數花費{1_point : number +#.#;-#.#}%（上限{2_limit : number +#.#;-#.#}%）</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_REDUCTION_IVY_LEAGUE" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]{1_reducion : number +#.#;-#.#}% 來自常春藤聯盟</Text>
+		</Replace>
+
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_TECH" Language="zh_Hant_HK">
+			<Text>科技</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_CIVIC" Language="zh_Hant_HK">
+			<Text>市政</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_FINISH_CITY" Language="zh_Hant_HK">
+			<Text>城市</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_HAS_BOOST" Language="zh_Hant_HK">
+			<Text>可獲得提升</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_CAN_BOOST" Language="zh_Hant_HK">
+			<Text>已獲得提升</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_CONFIRM" Language="zh_Hant_HK">
+			<Text>確認</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_CANCEL" Language="zh_Hant_HK">
+			<Text>重新選擇</Text>
+		</Replace>
+
+		<Replace Tag="LOC_EAGLE_POINT_PER_TURN" Language="zh_Hant_HK">
+			<Text>每回合 [ICON_Turn] 研究點數</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_FROM_CITIES" Language="zh_Hant_HK">
+			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 來自城市</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_FROM_CITY" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]{1_point : number +#.#;-#.#} 來自{2_city}</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_FROM_DEBUG" Language="zh_Hant_HK">
+			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 來自調試</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_FROM_SANTA_CLARA" Language="zh_Hant_HK">
+			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 來自聖塔克拉拉谷</Text>
+		</Replace>
+
+		<Replace Tag="LOC_EAGLE_POINT_FROM_MODIFIER" Language="zh_Hant_HK">
+			<Text>[NEWLINE]{1_percent : number +#.#;-#.#}%（{2_point : number +#.#;-#.#}）來自修正值</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_MODIFIER_IVY_LEAGUE" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]{1_percent : number +#.#;-#.#}% 來自常春藤聯盟</Text>
 		</Replace>
 		<!--城市名-->
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_WASHINGTON_DC" Language="zh_Hant_HK">

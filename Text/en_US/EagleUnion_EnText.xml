@@ -42,7 +42,7 @@
 			<Text>Santa Clara Valley</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_DESCRIPTION" Language="en_US">
-			<Text>Eagle Union unique district, replacing Industrial Zone district, unlock earlier, cost less, and have no population demand (Therefore, it is not a specialty district). Gain standard Production adjacency bonus from adjacent districts. [ICON_PRODUCTION] Production Adjacent Bonus also provides [ICON_SCIENCE] Science and [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Awards 1 randomly-chosen free technologies when completed. All Improvements in this city +1 [ICON_SCIENCE] Science and +1 [ICON_PRODUCTION] Production, and then +1 [ICON_PRODUCTION] Production after researching the Apprenticeship technology.[NEWLINE]Major adjacency bonus to adjacent districts. +2 [ICON_PRODUCTION] Production bonus from each adjacent Harbor and Campus.</Text>
+			<Text>Eagle Union unique district, replacing Industrial Zone district, unlock earlier, cost less, and have no population demand (Therefore, it is not a specialty district). Gain standard Production adjacency bonus from adjacent districts. [ICON_PRODUCTION] Production Adjacent Bonus also provides [ICON_SCIENCE] Science and [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Cities earn Research Point per turn equal to 20% of their [ICON_SCIENCE] Science, [ICON_CULTURE] Culture and [ICON_PRODUCTION] Production per turn rate. .All Improvements in the city +1 [ICON_SCIENCE] Science and +1 [ICON_PRODUCTION] Production, and then +1 [ICON_PRODUCTION] Production after researching the Apprenticeship technology.[NEWLINE]Major adjacency bonus to adjacent districts. +2 [ICON_PRODUCTION] Production bonus from each adjacent Harbor and Ivy League.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_1" Language="en_US" >
 			<Text>The Santa Clara Valley, also known as Silicon Valley, is located in the southern part of the San Francisco Bay Area, a metropolitan area in Northern California, United States. Since the Santa Clara Valley was originally a place where silicon-based semiconductor chips were researched and produced, it got its name Silicon Valley.</Text>
@@ -53,12 +53,24 @@
 		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SANTA_CLARA_VALLEY_CHAPTER_HISTORY_PARA_3" Language="en_US" >
 			<Text>The majority of the Santa Clara Valley is located in Santa Clara County at the southern tip of the San Francisco Peninsula and consists primarily of a 25-mile stretch of valley from Palo Alto to San Jose, the county's capital. The total extent of the Santa Clara Valley generally includes parts of San Mateo County in the southwestern San Francisco Bay Area, and parts of Alameda County in the eastern San Francisco Bay Area. The Santa Clara Valley is characterized by some of the top U.S. universities with strong scientific research nearby, including Stanford University and the University of California, Berkeley, as well as several other universities in the University of California system and Santa Clara University. Structurally, Santa Clara Valley is based on a group of high-tech small and medium-sized companies, and has large companies such as Google, Facebook, HP, Intel, Apple, Cisco, NVIDIA, Oracle, Tesla, Yahoo, etc., integrating science, technology and production.</Text>
 		</Replace>
+		<Replace Tag="LOC_DISTRICT_IVY_LEAGUE_NAME" Language="en_US">
+			<Text>Ivy League</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_IVY_LEAGUE_DESCRIPTION" Language="en_US">
+			<Text>Eagle Union unique district, replacing Campus district, cost less. [ICON_SCIENCE] Science Adjacent Bonus also provides [ICON_CULTURE] Culture. Per turn Research Point +10% and Research Point cost -5%. Districts that adjacent to the Ivy League Adjacent bonus also provides [ICON_SCIENCE] Science. [NEWLINE][NEWLINE]+1 [ICON_CITIZEN] Population in the city when completed. All Improvements in the city +2 [ICON_GOLD] Gold, and 30% [ICON_PRODUCTION] Production increase to projects in the city.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_IVY_LEAGUE_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>The Ivy League originally referred to a sports league consisting of eight universities in the northeastern region of the United States, and later referred to a college league consisting of seven universities and one college, using the name "Ivy League". These eight universities include Harvard University, University of Pennsylvania, Yale University, Princeton University, Columbia University, Dartmouth College, Brown University, and Cornell University.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_IVY_LEAGUE_CHAPTER_HISTORY_PARA_2" Language="en_US">
+			<Text>This alliance is one of the top universities in the United States and also the university alliance that produces the most Rhodes Scholars in the country. Eight schools are private universities, seven of which were established during the British colonial period and receive federal government funding and private donations for academic research, just like public universities. As of 2023, the alliance has sponsored over 33 men's and women's sports league championships and supported more than 35 college sports representative teams from different universities, providing valuable opportunities for sports exchanges between institutions.</Text>
+		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_SANTA_CLARA_DISTRICTS" Language="en_US">
 			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent district {1_num : plural 1?tile; other?tiles;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_SANTA_CLARA_IVY_LEAGUE" Language="en_US">
-			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent Campus {1_num : plural 2?tile; other?tiles;}.</Text>
+			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent Ivy League {1_num : plural 2?tile; other?tiles;}.</Text>
 		</Replace>
 		<Replace Tag="LOC_SANTA_CLARA_HARBOR" Language="en_US">
 			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent Harbor {1_num : plural 2?tile; other?tiles;}.</Text>
@@ -176,6 +188,90 @@
 		</Replace>
 		<Replace Tag="LOC_PROMOTION_EAGLE_SUPERCARRIER_DESCRIPTION" Language="en_US">
 			<Text>Heal outside of friendly territory, and +6 Influence points per turn.</Text>
+		</Replace>
+		<!--Lua文本-->
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK" Language="en_US">
+			<Text>Eagle Union[NEWLINE][NEWLINE]Use Research Point to unlock technology, civic, and complete city production.</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_HEADER" Language="en_US">
+			<Text>Santa Clara Valley</Text>
+		</Replace>
+
+		<Replace Tag="LOC_EAGLE_POINT_NO_SELECTED" Language="en_US">
+			<Text>No chosen</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_SELECT" Language="en_US">
+			<Text>{1_num} {1_num : plural 1?Item; other?Items;}</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_NO_COST" Language="en_US">
+			<Text>Non-cost</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_COST" Language="en_US">
+			<Text>Spend {1_num : number #,###.#} Research Point</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_TOTAL_COST" Language="en_US">
+			<Text>Total spend {1_num : number #,###.#} Research Point</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_TECHS_COST" Language="en_US">
+			<Text>[ICON_Bullet]{1_num : number #,###.#} Research Point from selected {2_num : plural 1?Technology; other?Technologies;}</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_CIVICS_COST" Language="en_US">
+			<Text>[ICON_Bullet]{1_num : number #,###.#} Research Point from selected {2_num : plural 1?Civic; other?Civics;}</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_CITIES_COST" Language="en_US">
+			<Text>[ICON_Bullet]{1_num : number #,###.#} Research Point from selected {2_num : plural 1?Production; other?Productions;}</Text>
+		</Replace>
+
+		<Replace Tag="LOC_EAGLE_POINT_TOTAL_REDUCTION" Language="en_US">
+			<Text>Research Point cost {1_point : number +#.#;-#.#}% (Upper limit: {2_limit : number +#.#;-#.#}%)</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_REDUCTION_IVY_LEAGUE" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]{1_reducion : number +#.#;-#.#}% from Ivy League</Text>
+		</Replace>
+
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_TECH" Language="en_US">
+			<Text>Tech</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_CIVIC" Language="en_US">
+			<Text>Civic</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_FINISH_CITY" Language="en_US">
+			<Text>City</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_HAS_BOOST" Language="en_US">
+			<Text>Can be boosted</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_UNLOCK_CAN_BOOST" Language="en_US">
+			<Text>Has been boosted</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_CONFIRM" Language="en_US">
+			<Text>Confirm</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_CANCEL" Language="en_US">
+			<Text>Reselect</Text>
+		</Replace>
+
+		<Replace Tag="LOC_EAGLE_POINT_PER_TURN" Language="en_US">
+			<Text>Research Point per [ICON_Turn] Turn</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_FROM_CITIES" Language="en_US">
+			<Text>[NEWLINE]{1_point : number +#.#;-#.#} from Cities</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_FROM_CITY" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]{1_point : number +#.#;-#.#} from {2_city}</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_FROM_DEBUG" Language="en_US">
+			<Text>[NEWLINE]{1_point : number +#.#;-#.#} from Debug</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_FROM_SANTA_CLARA" Language="en_US">
+			<Text>[NEWLINE]{1_point : number +#.#;-#.#} from Santa Clara Valley</Text>
+		</Replace>
+
+		<Replace Tag="LOC_EAGLE_POINT_FROM_MODIFIER" Language="en_US">
+			<Text>[NEWLINE]{1_percent : number +#.#;-#.#}% ({2_point : number +#.#;-#.#}) from Modifiers</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_MODIFIER_IVY_LEAGUE" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]{1_percent : number +#.#;-#.#}% from Ivy League</Text>
 		</Replace>
 		<!--城市名-->
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_WASHINGTON_DC" Language="en_US">

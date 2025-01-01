@@ -57,7 +57,13 @@
 			<Text>常春藤联盟</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_IVY_LEAGUE_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>白鹰联邦特色区域，取代学院，造价更低。[ICON_SCIENCE] 科技值相邻加成也提供 [ICON_CULTURE] 文化值。每回合获得研究点数+10%，研究点数花费-5%。与常春藤联盟相邻的区域的相邻加成也提供 [ICON_SCIENCE] 科技值。[NEWLINE][NEWLINE]城市进行项目时+30%  [ICON_PRODUCTION] 生产力。</Text>
+			<Text>白鹰联邦特色区域，取代学院，造价更低。[ICON_SCIENCE] 科技值相邻加成也提供 [ICON_CULTURE] 文化值。每回合获得研究点数+5%，研究点数花费-5%。与常春藤联盟相邻的区域的相邻加成也提供 [ICON_SCIENCE] 科技值。[NEWLINE][NEWLINE]建成后本城市+1 [ICON_CITIZEN] 人口。此城所有改良设施+2 [ICON_GOLD] 金币，进行项目时+30%  [ICON_PRODUCTION] 生产力。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_IVY_LEAGUE_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>常春藤联盟最初指的是美国东北部地区八所高校组成的体育赛事联盟，后指由七所大学和一所学院组成并沿用“常春藤”这一名称的高校联盟。这八所院校包括：哈佛大学、宾夕法尼亚大学、耶鲁大学、普林斯顿大学、哥伦比亚大学、达特茅斯学院、布朗大学及康奈尔大学。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_IVY_LEAGUE_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>该联盟俱为美国一流名校、也是美国产生最多罗德学者的高校联盟，八所学校都是私立大学，其中七所在英国殖民时期建立，和公立大学一样同时接受联邦政府资助和私人捐赠，用于学术研究。截至2023年，该联盟已赞助33项以上的男女运动联盟锦标赛，并支持了来自不同院校的35支以上的大学生体育运动代表队，为各院校间的体育运动交流提供宝贵机会。</Text>
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_SANTA_CLARA_DISTRICTS" Language="zh_Hans_CN">
@@ -251,9 +257,13 @@
 		<Replace Tag="LOC_EAGLE_POINT_FROM_CITY" Language="zh_Hans_CN">
 			<Text>[NEWLINE][ICON_Bullet]{1_point : number +#.#;-#.#} 来自{2_city}</Text>
 		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_FROM_DEBUG" Language="zh_Hans_CN">
+			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 来自调试</Text>
+		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_FROM_SANTA_CLARA" Language="zh_Hans_CN">
 			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 来自圣塔克拉拉谷</Text>
 		</Replace>
+		
 
 		<Replace Tag="LOC_EAGLE_POINT_FROM_MODIFIER" Language="zh_Hans_CN">
 			<Text>[NEWLINE]{1_percent : number +#.#;-#.#}%（{2_point : number +#.#;-#.#}）来自修正值</Text>

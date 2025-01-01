@@ -20,6 +20,7 @@ local SantaClaraValley = GameInfo.Districts['DISTRICT_SANTA_CLARA_VALLEY'].Index
 local IvyLeagueIndex = GameInfo.Districts['DISTRICT_IVY_LEAGUE'].Index
 local perIvyLeagueReduction = 5
 local perIvyLeagueModifier = 10
+
 --||====================GamePlay, UI======================||--
 
 --获取研究点数 (GamePlay, UI)
@@ -54,6 +55,15 @@ EaglePointManager.Points = {
     },
     --来自其他
     Extra = {
+        -- Debug = {
+        --     Tooltip = 'LOC_EAGLE_POINT_FROM_DEBUG',
+        --     GetPointYield = function(playerID)
+        --         return 10000
+        --     end,
+        --     GetTooltip = function(self, playerID)
+        --         return Locale.Lookup(self.Tooltip, self.GetPointYield(playerID))
+        --     end
+        -- }
         -- If you want to add research points from other sources, please add code here.
         -- 想要新增其他来源的研究点数，请在此处添加代码
         -- Just add a table structure like the one below to the Extra table to add research points from other sources.

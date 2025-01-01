@@ -108,6 +108,8 @@
 		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="Mountains_Science4"/>
 		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="Mountains_Science5"/>
 		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="Government_Science"/>
+		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="Jungle_Science"/>
+		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="District_Science"/>
 		<!--给予-->
 
 	</District_Adjacencies>
@@ -157,6 +159,16 @@
 			<DistrictType>DISTRICT_IVY_LEAGUE</DistrictType>
 			<ModifierId>IVY_CULTURE_COPY</ModifierId>
 		</Row>
+		<!--加人口-->
+		<Row>
+			<DistrictType>DISTRICT_IVY_LEAGUE</DistrictType>
+			<ModifierId>IVY_ADD_CITY_POPLUATION</ModifierId>
+		</Row>
+		<!--改良设施加金币-->
+		<Row>
+			<DistrictType>DISTRICT_IVY_LEAGUE</DistrictType>
+			<ModifierId>IVY_IMPROVEMENT_BUFF</ModifierId>
+		</Row>
 		<!--项目生产力-->
 		<Row>
 			<DistrictType>DISTRICT_IVY_LEAGUE</DistrictType>
@@ -199,6 +211,19 @@
 		<Row>
 			<ModifierId>IVY_CULTURE_COPY</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_DISTRICT_ADJUST_YIELD_BASED_ON_ADJACENCY_BONUS</ModifierType>
+		</Row>
+		<!--加人口-->
+		<Row>
+			<ModifierId>IVY_ADD_CITY_POPLUATION</ModifierId>
+			<ModifierType>MODIFIER_EAGLE_UNION_SINGLE_CITY_ADD_POPULATION</ModifierType>
+			<RunOnce>true</RunOnce>
+			<Permanent>true</Permanent>
+		</Row>
+		<!--改良设施加金币-->
+		<Row>
+			<ModifierId>IVY_IMPROVEMENT_BUFF</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_PLOT_HAS_IMPROVEMENT</SubjectRequirementSetId>
 		</Row>
 		<!--项目生产力-->
 		<Row>
@@ -283,6 +308,23 @@
 			<ModifierId>IVY_CULTURE_COPY</ModifierId>
 			<Name>YieldTypeToMirror</Name>
 			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<!--加人口-->
+		<Row>
+			<ModifierId>IVY_ADD_CITY_POPLUATION</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<!--改良设施加金币-->
+		<Row>
+			<ModifierId>IVY_IMPROVEMENT_BUFF</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>IVY_IMPROVEMENT_BUFF</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
 		</Row>
 		<!--项目生产力-->
 		<Row>
