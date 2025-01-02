@@ -39,6 +39,8 @@
 		<Row Name="ATLAS_ICON_IMPROVEMENT_FLOUTISH_GARDEN" IconSize="50" Filename="ICON_IMPROVEMENT_FLOUTISH_GARDEN_50"/>
 		<Row Name="ATLAS_ICON_IMPROVEMENT_FLOUTISH_GARDEN" IconSize="80" Filename="ICON_IMPROVEMENT_FLOUTISH_GARDEN_80"/>
 		<Row Name="ATLAS_ICON_IMPROVEMENT_FLOUTISH_GARDEN" IconSize="256" Filename="ICON_IMPROVEMENT_FLOUTISH_GARDEN_256"/>
+		<!--研究点数图标-->
+		<Row Name="ATLAS_EAGLE_FONT_ICON_BASELINE_6" Baseline="6" IconSize="22" IconsPerRow="2" Filename="EagleFontIcons"/>
 	</IconTextureAtlases>
 	<IconDefinitions>
 		<!--白鹰文明-->
@@ -53,6 +55,9 @@
 		<Row Name="ICON_LEADER_HELENA_CL50"												Atlas="ATLAS_EAGLE_UNION_LEADERS"					Index="3"/>
 		<!--艾伦·萨姆纳-->
 		<Row Name="ICON_LEADER_ALLEN_M_SUMNER_DD692"									Atlas="ATLAS_EAGLE_UNION_LEADERS"					Index="4"/>
+		<!--研究点数-->
+		<Row Name="ResearchPoint"														Atlas="ATLAS_EAGLE_FONT_ICON_BASELINE_6"			Index="0"/>
+		<Row Name="ResearchPointLarge"													Atlas="ATLAS_EAGLE_FONT_ICON_BASELINE_6"			Index="1"/>
 		<!--圣塔克拉拉谷-->
 		<Row Name="ICON_DISTRICT_SANTA_CLARA_VALLEY"									Atlas="ICON_ATLAS_DISTRICTS"						Index="9"/>
 		<Row Name="ICON_DISTRICT_SANTA_CLARA_VALLEY_FOW"								Atlas="ICON_ATLAS_DISTRICTS_FOW"					Index="9"/>

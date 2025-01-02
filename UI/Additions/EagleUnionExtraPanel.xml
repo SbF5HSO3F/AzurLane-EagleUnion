@@ -20,7 +20,7 @@
                             <!--Eagle Point-->
                             <GridButton ID="PointBacking" Anchor="C,T" Size="parent-2,24" AutoSizePadding="1,0" Style="YieldBacking" Color="24,156,216,255">
                                 <Stack ID="PointButtonStack" Anchor="C,C" Offset="0,2" StackGrowth="Right">
-                                    <!-- <Label ID="YieldIconString" Anchor="L,B" Offset="0,3"/> -->
+                                    <Label ID="PointIconString" Anchor="C,B" Offset="0,5" String="[ICON_ResearchPointLarge]"/>
                                     <Label ID="PointBalance" Anchor="C,T" Offset="0,-1" Style="FontNormal18" ColorSet="ResFaithLabelCS" FontStyle="Stroke" String="?"/>
                                     <Label ID="PointPerTurn" Offset="2,-2" Style="FontNormal14" ColorSet="ResFaithLabelCS" FontStyle="Stroke" String="0"/>
                                 </Stack>
@@ -121,7 +121,7 @@
                 <Meter ID="ProgressMeter" Offset="2,2" Size="44,44" Texture="ResearchPanel_ChooserMeter" Follow="1"/>
                 <Image ID="Icon" Offset="9,9" Size="30,30" Texture="Tech30" />
                 <Stack ID="CostStack" Anchor="R,T" Offset="3,3" StackGrowth="Left" StackPadding="4">
-                    <Label ID="IconString" Anchor="L,C" Offset="0,1" String="[ICON_FaithLarge]"/>
+                    <Label ID="IconString" Anchor="L,C" Offset="0,1" String="[ICON_ResearchPointLarge]"/>
                     <Label ID="Cost" Anchor="L,C" Offset="0,0" Style="FontNormal18" FontStyle="Stroke" ColorSet= "ResFaithLabelCS" String="0"/>
                 </Stack>
                 <Stack ID="ProgressStack" Anchor="R,B" Offset="3,3" StackGrowth="Left" StackPadding="4">
@@ -146,7 +146,7 @@
                 <Meter ID="ProgressMeter" Offset="2,2" Size="44,44" Texture="CivicPanel_ChooserMeter" Follow="1"/>
                 <Image ID="Icon" Offset="5,5" Size="38,38" Texture="Tech30" />
                 <Stack ID="CostStack" Anchor="R,T" Offset="3,3" StackGrowth="Left" StackPadding="4">
-                    <Label ID="IconString" Anchor="L,C" Offset="0,1" String="[ICON_FaithLarge]"/>
+                    <Label ID="IconString" Anchor="L,C" Offset="0,1" String="[ICON_ResearchPointLarge]"/>
                     <Label ID="Cost" Anchor="L,C" Offset="0,0" Style="FontNormal18" FontStyle="Stroke" ColorSet= "ResFaithLabelCS" String="0"/>
                 </Stack>
                 <Stack ID="ProgressStack" Anchor="R,B" Offset="3,3" StackGrowth="Left" StackPadding="4">
@@ -171,7 +171,7 @@
                 <!-- City Name -->
                 <Label ID="CityName" Offset="65,6" Style="FontNormal16"/>
                 <Stack ID="CostStack" Anchor="R,T" Offset="3,3" StackGrowth="Left" StackPadding="4">
-                    <Label ID="IconString" Anchor="L,C" Offset="0,1" String="[ICON_FaithLarge]"/>
+                    <Label ID="IconString" Anchor="L,C" Offset="0,1" String="[ICON_ResearchPointLarge]"/>
                     <Label ID="Cost" Anchor="L,C" Offset="0,0" Style="FontNormal18" FontStyle="Stroke" ColorSet= "ResFaithLabelCS" String="0"/>
                 </Stack>
                 <!-- Current Production -->

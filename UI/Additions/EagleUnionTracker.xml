@@ -9,7 +9,7 @@
             <Stack ID="EagleTrackerSecondStack" Anchor="C,C" Offset="0,0" StackGrowth="Right" StackPadding="2">
                 <GridButton ID="EagleTrackerPoint" Anchor="L,C" Offset="0,0" Size="parent-30,30" Style="YieldBacking" Color="24,156,216,255">
                     <Stack ID="PointButtonStack" Anchor="C,C" Offset="0,2" StackGrowth="Right">
-                        <!-- <Label ID="YieldIconString" Anchor="L,B" Offset="0,3"/> -->
+                        <Label ID="PointIconString" Anchor="C,B" Offset="0,4" String="[ICON_ResearchPointLarge]"/>
                         <Label ID="PointBalance" Anchor="C,T" Offset="0,-1" Style="FontNormal18" ColorSet="ResFaithLabelCS" String="?"/>
                         <Label ID="PointPerTurn" Offset="2,-2" Style="FontNormal14" ColorSet="ResFaithLabelCS" FontStyle="Stroke" String="0"/>
                     </Stack>

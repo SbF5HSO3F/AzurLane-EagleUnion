@@ -229,6 +229,10 @@
 			<m_EntryID text="Moment_LvyLeague"/>
 			<m_ObjectName text="Moment_LvyLeague"/>
 		</Element>
+		<Element>
+			<m_EntryID text="EagleFontIcons"/>
+			<m_ObjectName text="EagleFontIcons"/>
+		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>
 		<Element>WINDOWS</Element>

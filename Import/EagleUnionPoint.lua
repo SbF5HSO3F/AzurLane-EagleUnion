@@ -20,6 +20,8 @@ local SantaClaraValley = GameInfo.Districts['DISTRICT_SANTA_CLARA_VALLEY'].Index
 local IvyLeagueIndex = GameInfo.Districts['DISTRICT_IVY_LEAGUE'].Index
 local perIvyLeagueReduction = 5
 local perIvyLeagueModifier = 10
+--星火之光
+local gunStarPercent = 0.2
 
 --||====================GamePlay, UI======================||--
 
@@ -64,47 +66,23 @@ EaglePointManager.Points = {
         --         return Locale.Lookup(self.Tooltip, self.GetPointYield(playerID))
         --     end
         -- }
-        -- If you want to add research points from other sources, please add code here.
-        -- 想要新增其他来源的研究点数，请在此处添加代码
-        -- Just add a table structure like the one below to the Extra table to add research points from other sources.
-        -- 只需在Extra表中添加一个类似下面的表结构，即可添加其他来源的研究点数
-        -- For example:
-        -- 例如：
-        -- SantaClara = {
-        --     --Tooltip prompt
-        --     --功能性文本提示
-        --     Tooltip = 'LOC_EAGLE_POINT_FROM_SANTA_CLARA',
-        --     --Function to get point
-        --     --获取点数函数
-        --     GetPointYield = function(playerID)
-        --         --获取玩家
-        --         local pPlayer = Players[playerID]
-        --         if not pPlayer then return 0 end
-        --         --获取区域
-        --         local districts = pPlayer:GetDistricts()
-        --         --获取圣塔克拉拉谷的数量
-        --         local count = 0
-        --         for _, district in districts:Members() do
-        --             if district:GetType() == SantaClaraValley
-        --                 and district:IsComplete() and (not district:IsPillaged())
-        --             then
-        --                 count = count + 1
-        --             end
-        --         end
-        --         --返回最终的点数
-        --         return EagleCore.Floor(count * 10)
-        --     end,
-        --     --Function to get tooltip, must include self parameter
-        --     --获取tooltip函数，必须加入self参数
-        --     --If the number of points obtained from this source is 0, the tooltip will not be displayed.
-        --     --若从此来源获得的点数为0，则不显示tooltip
-        --     --So, if you meet any of the above situations, please return an empty string.
-        --     --所以你如果遇到上述情况，请返回空字符串
-        --     GetTooltip = function(self, playerID)
-        --         local yield = self.GetPointYield(playerID)
-        --         return yield ~= 0 and Locale.Lookup(self.Tooltip, yield) or ''
-        --     end
-        -- }
+        GunStar = {
+            Tooltip = 'LOC_EAGLE_POINT_FROM_SHOOTING_GUN_STAR',
+            GetPointYield = function(playerID)
+                local point = 0
+                --是否是艾伦·萨姆纳
+                if EagleCore.CheckLeaderMatched(playerID, 'LEADER_ALLEN_M_SUMNER_DD692') then
+                    --获取玩家人口
+                    local culture = Players[playerID]:GetCulture()
+                    point = culture:GetCultureYield() * gunStarPercent
+                end
+                return EagleCore.Floor(point)
+            end,
+            GetTooltip = function(self, playerID)
+                local point = self.GetPointYield(playerID)
+                return point ~= 0 and Locale.Lookup(self.Tooltip, point) or ''
+            end
+        }
     },
     --百分比增益
     Modifier = {
@@ -325,7 +303,7 @@ EaglePointManager.Reduction = {
     Sources = {
         IvyLeague = {
             --该来源的上限
-            Limit = 50,
+            --Limit = 50,
             --功能性文本提示
             Tooltip = 'LOC_EAGLE_POINT_REDUCTION_IVY_LEAGUE',
             GetModifier = function(self, playerID)

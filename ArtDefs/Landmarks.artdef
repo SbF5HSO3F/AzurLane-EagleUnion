@@ -127,7 +127,7 @@
 										<m_ParamName text="Set_HeroBuildings"/>
 									</Element>
 									<Element class="AssetObjects..ArtDefReferenceValue">
-										<m_ElementName text="DEFAULT"/>
+										<m_ElementName text="ARTERA_MODERN"/>
 										<m_RootCollectionName text="ArtEra"/>
 										<m_ArtDefPath text="Eras.artdef"/>
 										<m_CollectionIsLocked>true</m_CollectionIsLocked>
@@ -188,7 +188,7 @@
 										<m_ParamName text="Set_HeroBuildings"/>
 									</Element>
 									<Element class="AssetObjects..ArtDefReferenceValue">
-										<m_ElementName text="DEFAULT"/>
+										<m_ElementName text="ARTERA_MODERN"/>
 										<m_RootCollectionName text="ArtEra"/>
 										<m_ArtDefPath text="Eras.artdef"/>
 										<m_CollectionIsLocked>true</m_CollectionIsLocked>
@@ -516,3 +516,4 @@
 		</Element>
 	</m_RootCollections>
 </AssetObjects..ArtDefSet>
+
