@@ -60,7 +60,7 @@ EaglePointManager.Points = {
         --[[Debug = {
             Tooltip = 'LOC_EAGLE_POINT_FROM_DEBUG',
             GetPointYield = function(playerID)
-                return DebugMode and 10000 or 0
+                return 1000
             end,
             GetTooltip = function(self, playerID)
                 local yield = self.GetPointYield(playerID)

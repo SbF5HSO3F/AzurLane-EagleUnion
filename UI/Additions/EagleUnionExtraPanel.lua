@@ -578,12 +578,32 @@ function Realize()
         local cost = EagleCore:ModifyByPercent(v_city.Need, reduction)
         --获取城市是否选中
         local isSelected = m_SelectedCities[cityID] ~= nil
-        if data.Point < cost and not isSelected then
-            instance.Button:SetDisabled(true)
-            instance.Button:SetAlpha(0.6)
+        if isSelected then
+            --获取原先的花费
+            local oldCost = m_SelectedCities[cityID]
+            --从而获得新的点数
+            local oldPoint = data.Point + EagleCore:ModifyByPercent(oldCost, reduction)
+            if oldPoint < cost then
+                --取消选中
+                isSelected = false
+                m_SelectedCities[cityID] = nil
+                instance.Button:SetDisabled(true)
+                instance.Button:SetAlpha(0.6)
+            else
+                m_SelectedCities[cityID] = v_city.Need
+                instance.Button:SetDisabled(false)
+                instance.Button:SetAlpha(1)
+            end
+            --顶部刷新
+            TopRefresh()
         else
-            instance.Button:SetDisabled(false)
-            instance.Button:SetAlpha(1)
+            if data.Point < cost then
+                instance.Button:SetDisabled(true)
+                instance.Button:SetAlpha(0.6)
+            else
+                instance.Button:SetDisabled(false)
+                instance.Button:SetAlpha(1)
+            end
         end
         --获取城市
         local city = CityManager.GetCity(playerID, cityID)
