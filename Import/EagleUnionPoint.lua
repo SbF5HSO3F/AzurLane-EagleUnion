@@ -110,7 +110,7 @@ function EaglePointManager:GetCityYieldPoint(playerID, cityID)
     --遍历来源
     local cityPoint = self.Points.City
     for _, source in pairs(cityPoint) do
-        yield = yield + source.GetPointYield(playerID, cityID)
+        yield = yield + (source.GetPointYield(playerID, cityID) or 0)
     end
     return yield
 end
@@ -125,7 +125,7 @@ function EaglePointManager:GetPerTurnPointFromCities(playerID, floor)
     local cities = pPlayer:GetCities()
     for _, city in cities:Members() do
         local cityID = city:GetID()
-        local cityPoint = self:GetCityYieldPoint(playerID, cityID)
+        local cityPoint = self:GetCityYieldPoint(playerID, cityID) or 0
         yieldPoint = yieldPoint + cityPoint
     end
     --返回最终的点数
@@ -171,7 +171,7 @@ function EaglePointManager:GetPerTurnPointFromExtra(playerID, floor)
     local extra = self.Points.Extra
     --来自其他
     for _, source in pairs(extra) do
-        yieldPoint = yieldPoint + source.GetPointYield(playerID)
+        yieldPoint = yieldPoint + (source.GetPointYield(playerID) or 0)
     end
     return floor and EagleCore.Floor(yieldPoint) or yieldPoint
 end
@@ -294,7 +294,7 @@ EaglePointManager.Reduction = {
         GetTotalLimit = function(self, playerID)
             local limit = self.Base
             for _, factor in pairs(self.Factor) do
-                limit = limit + factor.GetLimitChange(playerID)
+                limit = limit + (factor.GetLimitChange(playerID) or 0)
             end
             return limit
         end
@@ -342,7 +342,7 @@ function EaglePointManager:GetReduction(playerID)
     --遍历来源
     local reductionSources = self.Reduction.Sources
     for _, source in pairs(reductionSources) do
-        reduction = reduction + source:GetModifier(playerID)
+        reduction = reduction + (source:GetModifier(playerID) or 0)
     end
     --返回最终的减免
     return EagleCore.Round(math.min(reduction, limit))

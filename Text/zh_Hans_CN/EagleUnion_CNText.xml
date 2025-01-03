@@ -35,7 +35,7 @@
 			<Text>科技与工业的璀璨</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>城市所有改良设施+1 [ICON_PRODUCTION] 生产力、+1 [ICON_SCIENCE] 科技值，研究完“工业化”科技后再+1 [ICON_PRODUCTION] 生产力。每回合获得的 [ICON_GreatScientist] 大科学家与 [ICON_GreatEngineer] 大工程师点数提升100%，且 [ICON_GreatScientist] 大科学家与 [ICON_GreatEngineer] 大工程师拥有额外1点使用次数。每激活1次伟人，所有城市+5% [ICON_Production] 生产力。</Text>
+			<Text>城市所有改良设施+1 [ICON_PRODUCTION] 生产力、+1 [ICON_SCIENCE] 科技值，研究完“工业化”科技后再+1 [ICON_PRODUCTION] 生产力。每回合获得的 [ICON_GreatScientist] 大科学家与 [ICON_GreatEngineer] 大工程师点数提升100%，且 [ICON_GreatScientist] 大科学家与 [ICON_GreatEngineer] 大工程师拥有额外1点使用次数。每激活1次伟人，所有城市+5% [ICON_Production] 生产力。可使用 [ICON_ResearchPoint] 研究点数解锁科技、市政和完成城市生产。</Text>
 		</Replace>
 		<!--特殊区域-->
 		<Replace Tag="LOC_DISTRICT_SANTA_CLARA_VALLEY_NAME" Language="zh_Hans_CN">
