@@ -53,7 +53,10 @@
 			<Text>星火之光</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SHOOTING_GUN_STAR_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>所有區域從每個相鄰的區域獲得+2 [ICON_Culture] 文化值。研究完「飛行」科技後，所有區域將獲得與 [ICON_Culture] 文化值產量相等的 [ICON_Tourism] 旅遊業績。遊戲進入現代後，擁有劇院廣場的城市+100% [ICON_Tourism] 旅遊業績。研究完「聯合作戰」後獲得特色單位「艾倫·M·薩姆納級驅逐艦」。</Text>
+			<Text>每回合獲得等同於你每回合獲得的 [ICON_Culture] 文化值20%的 [ICON_ResearchPoint] 研究點數。所有區域從每個相鄰的區域獲得+2 [ICON_Culture] 文化值。研究完「飛行」科技後，所有區域將獲得與 [ICON_Culture] 文化值產量相等的 [ICON_Tourism] 旅遊業績。遊戲進入現代後，擁有劇院廣場的城市+100% [ICON_Tourism] 旅遊業績。研究完「聯合作戰」後獲得特色單位「艾倫·M·薩姆納級驅逐艦」。</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_FROM_SHOOTING_GUN_STAR" Language="zh_Hant_HK">
+			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 來自每回合的文化值</Text>
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_Allen_Culture_Adjacency_From_District" Language="zh_Hant_HK">

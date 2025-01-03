@@ -53,7 +53,7 @@
 			<Text>Shooting Gun-Star</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SHOOTING_GUN_STAR_DESCRIPTION" Language="en_US">
-			<Text>All Districts +2 [ICON_Culture] Culture from each adjacent Districts. After Flight is researched, all districts receive [ICON_Tourism] Tourism equal to the [ICON_Culture] Culture output. +100% [ICON_Tourism] Tourism pressure from the city with Theater Square towards other civilizations when the game enters the Modern era. Gain the Allen M. Sumner-class Destroyer unique unit when the Combined Arms technology is researched.</Text>
+			<Text>Earn [ICON_ResearchPoint] Research Point per turn equal to 20% of [ICON_CULTURE] Culture per turn rate. All Districts +2 [ICON_Culture] Culture from each adjacent Districts. After Flight is researched, all districts receive [ICON_Tourism] Tourism equal to the [ICON_Culture] Culture output. +100% [ICON_Tourism] Tourism pressure from the city with Theater Square towards other civilizations when the game enters the Modern era. Gain the Allen M. Sumner-class Destroyer unique unit when the Combined Arms technology is researched.</Text>
 		</Replace>
 		<!--特殊加成-->
 		<Replace Tag="LOC_Allen_Culture_Adjacency_From_District" Language="en_US">
