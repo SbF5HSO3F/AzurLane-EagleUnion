@@ -19,7 +19,7 @@ local perYieldPercent = 0.2
 local SantaClaraValley = GameInfo.Districts['DISTRICT_SANTA_CLARA_VALLEY'].Index
 local IvyLeagueIndex = GameInfo.Districts['DISTRICT_IVY_LEAGUE'].Index
 local perIvyLeagueReduction = 5
-local perIvyLeagueModifier = 10
+local perIvyLeagueModifier = 5
 --星火之光
 local gunStarPercent = 0.2
 
@@ -57,15 +57,16 @@ EaglePointManager.Points = {
     },
     --来自其他
     Extra = {
-        -- Debug = {
-        --     Tooltip = 'LOC_EAGLE_POINT_FROM_DEBUG',
-        --     GetPointYield = function(playerID)
-        --         return 10000
-        --     end,
-        --     GetTooltip = function(self, playerID)
-        --         return Locale.Lookup(self.Tooltip, self.GetPointYield(playerID))
-        --     end
-        -- }
+        --[[Debug = {
+            Tooltip = 'LOC_EAGLE_POINT_FROM_DEBUG',
+            GetPointYield = function(playerID)
+                return DebugMode and 10000 or 0
+            end,
+            GetTooltip = function(self, playerID)
+                local yield = self.GetPointYield(playerID)
+                return yield ~= 0 and Locale.Lookup(self.Tooltip, yield) or ''
+            end
+        },]]
         GunStar = {
             Tooltip = 'LOC_EAGLE_POINT_FROM_SHOOTING_GUN_STAR',
             GetPointYield = function(playerID)

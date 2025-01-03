@@ -88,7 +88,6 @@
 	<District_Adjacencies>
 		<!--圣塔克拉拉谷-->
 		<!--获得-->
-		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="Government_Production"/>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="SantaClara_IvyLeague"/>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="SantaClara_Harbor"/>
 		<Row DistrictType="DISTRICT_SANTA_CLARA_VALLEY" YieldChangeId="SantaClara_Districts"/>
@@ -107,7 +106,6 @@
 		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="Mountains_Science3"/>
 		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="Mountains_Science4"/>
 		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="Mountains_Science5"/>
-		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="Government_Science"/>
 		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="Jungle_Science"/>
 		<Row DistrictType="DISTRICT_IVY_LEAGUE" 		YieldChangeId="District_Science"/>
 		<!--给予-->
@@ -333,8 +331,4 @@
 			<Value>30</Value>
 		</Row>
 	</ModifierArguments>
-	<MomentIllustrations>
-		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_DISTRICT" MomentDataType="MOMENT_DATA_DISTRICT" GameDataType="DISTRICT_SANTA_CLARA_VALLEY" Texture="Moment_SantaClaraValley.dds"/>
-		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_DISTRICT" MomentDataType="MOMENT_DATA_DISTRICT" GameDataType="DISTRICT_IVY_LEAGUE"		   Texture="Moment_LvyLeague.dds"/>
-	</MomentIllustrations>
 </GameData>

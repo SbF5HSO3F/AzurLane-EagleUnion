@@ -25,9 +25,6 @@
 	</TypeTags>
 	<Units>
 		<!--圣路易斯级轻巡洋舰-->
-		<Row UnitType="UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER" Cost="520" Maintenance="7" BaseMoves="5" BaseSightRange="5" ZoneOfControl="true" Domain="DOMAIN_SEA" Combat="83" RangedCombat="80" Range="2" AntiAirCombat="110" FormationClass="FORMATION_CLASS_NAVAL" PrereqTech="TECH_COMBUSTION" PromotionClass="PROMOTION_CLASS_NAVAL_MELEE" Name="LOC_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_NAME" Description="LOC_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_DESCRIPTION" PurchaseYield="YIELD_GOLD" PseudoYieldType="PSEUDOYIELD_UNIT_NAVAL_COMBAT" TraitType="TRAIT_LEADER_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER"/>
+		<Row UnitType="UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER" Cost="520" Maintenance="7" BaseMoves="5" BaseSightRange="5" StrategicResource="RESOURCE_OIL" ZoneOfControl="true" Domain="DOMAIN_SEA" Combat="83" RangedCombat="80" Range="2" AntiAirCombat="110" FormationClass="FORMATION_CLASS_NAVAL" PrereqTech="TECH_COMBUSTION" PromotionClass="PROMOTION_CLASS_NAVAL_MELEE" Name="LOC_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_NAME" Description="LOC_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER_DESCRIPTION" PurchaseYield="YIELD_GOLD" PseudoYieldType="PSEUDOYIELD_UNIT_NAVAL_COMBAT" TraitType="TRAIT_LEADER_UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER"/>
 	</Units>
-	<MomentIllustrations>
-		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_ST_LOUIS_CLASS_LIGHT_CRUISER" Texture="Moment_St_Louis_class.dds"/>
-	</MomentIllustrations>
 </GameData>

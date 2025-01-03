@@ -29,12 +29,8 @@
 	</TypeTags>
 	<Units>
 		<!--埃塞克斯级航空母舰-->
-		<Row UnitType="UNIT_ESSEX_CLASS"	Cost="540"	Maintenance="7"	BaseMoves="4"	BaseSightRange="3"	ZoneOfControl="true"	Domain="DOMAIN_SEA"	Combat="75"	AntiAirCombat="100" FormationClass="FORMATION_CLASS_NAVAL"	PromotionClass="PROMOTION_CLASS_EAGLE_CV" AdvisorType="ADVISOR_CONQUEST" Name="LOC_UNIT_ESSEX_CLASS_NAME" Description="LOC_UNIT_ESSEX_CLASS_DESCRIPTION"	PurchaseYield="YIELD_GOLD" PseudoYieldType="PSEUDOYIELD_UNIT_NAVAL_COMBAT" PrereqTech="TECH_COMBUSTION"	AirSlots="3" TraitType="TRAIT_LEADER_UNIT_ESSEX_CLASS"/>
+		<Row UnitType="UNIT_ESSEX_CLASS"	Cost="540"	Maintenance="7"	BaseMoves="4"	BaseSightRange="3" StrategicResource="RESOURCE_OIL"			ZoneOfControl="true"	Domain="DOMAIN_SEA"	Combat="75"	AntiAirCombat="100" FormationClass="FORMATION_CLASS_NAVAL"	PromotionClass="PROMOTION_CLASS_EAGLE_CV" AdvisorType="ADVISOR_CONQUEST" Name="LOC_UNIT_ESSEX_CLASS_NAME" Description="LOC_UNIT_ESSEX_CLASS_DESCRIPTION"	PurchaseYield="YIELD_GOLD" PseudoYieldType="PSEUDOYIELD_UNIT_NAVAL_COMBAT" PrereqTech="TECH_COMBUSTION"	AirSlots="3" TraitType="TRAIT_LEADER_UNIT_ESSEX_CLASS"/>
 		<!--F2H 报丧女妖-->
-		<Row UnitType="UNIT_F2H"			Cost="650"	Maintenance="8"	BaseMoves="12"	BaseSightRange="8"	ZoneOfControl="false"	Domain="DOMAIN_AIR" Combat="115" RangedCombat="115"	Range="10" StrategicResource="RESOURCE_ALUMINUM" FormationClass="FORMATION_CLASS_AIR" PromotionClass="PROMOTION_CLASS_AIR_FIGHTER" AdvisorType="ADVISOR_CONQUEST" Name="LOC_UNIT_F2H_NAME" Description="LOC_UNIT_F2H_DESCRIPTION" CanCapture="False" PurchaseYield="YIELD_GOLD"	PseudoYieldType="PSEUDOYIELD_UNIT_AIR_COMBAT" IgnoreMoves="true" PrereqTech="TECH_LASERS" Stackable="TRUE" PrereqDistrict="DISTRICT_AERODROME" CanTargetAir="TRUE" TraitType="TRAIT_LEADER_UNIT_F2H"/>
+		<Row UnitType="UNIT_F2H"			Cost="650"	Maintenance="8"	BaseMoves="12"	BaseSightRange="8" StrategicResource="RESOURCE_ALUMINUM" 	ZoneOfControl="false"	Domain="DOMAIN_AIR" Combat="115" RangedCombat="115"	Range="10" FormationClass="FORMATION_CLASS_AIR" PromotionClass="PROMOTION_CLASS_AIR_FIGHTER" AdvisorType="ADVISOR_CONQUEST" Name="LOC_UNIT_F2H_NAME" Description="LOC_UNIT_F2H_DESCRIPTION" CanCapture="False" PurchaseYield="YIELD_GOLD"	PseudoYieldType="PSEUDOYIELD_UNIT_AIR_COMBAT" IgnoreMoves="true" PrereqTech="TECH_LASERS" Stackable="TRUE" PrereqDistrict="DISTRICT_AERODROME" CanTargetAir="TRUE" TraitType="TRAIT_LEADER_UNIT_F2H"/>
 	</Units>
-	<MomentIllustrations>
-		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_ESSEX_CLASS"	Texture="Moment_Essex_class.dds"/>
-		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_F2H"			Texture="Moment_F2H.dds"/>
-	</MomentIllustrations>
 </GameData>

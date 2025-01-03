@@ -4,4 +4,5 @@
 --------------------------------------------------------------
 INSERT INTO District_Adjacencies
 		(DistrictType,					YieldChangeId)
-VALUES	('DISTRICT_SANTA_CLARA_VALLEY',	'LeyLine_Production');
+VALUES	('DISTRICT_SANTA_CLARA_VALLEY',	'LeyLine_Production'),
+		('DISTRICT_IVY_LEAGUE',			'LeyLine_Science');

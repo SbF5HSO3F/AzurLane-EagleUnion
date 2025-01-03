@@ -124,12 +124,20 @@
           <Criteria>EAGLEUNION_MODE</Criteria>
           <File>Data/EagleUnion_SecretSocieties.sql</File>
         </UpdateDatabase>
+        <UpdateDatabase id="EagleUnion_XP1">
+          <Properties>
+            <RuleSet>RULESET_EXPANSION_1</RuleSet>
+          </Properties>
+          <File>Data/EagleUnion_Moment.sql</File>
+          <File>Data/EagleUnion_Expansion1.sql</File>
+        </UpdateDatabase>
         <UpdateDatabase id="EagleUnion_XP2">
           <Properties>
             <RuleSet>RULESET_EXPANSION_2</RuleSet>
           </Properties>
+          <File>Data/EagleUnion_Moment.sql</File>
           <File>Data/EagleUnion_NamedPlaces.xml</File>
-          <File>Data/EagleUnion_XP2.sql</File>
+          <File>Data/EagleUnion_Expansion2.sql</File>
         </UpdateDatabase>
         <UpdateText id="EagleUnionText">
           <File priority="100">Text/en_US/EagleUnion_EnText.xml</File>
@@ -142,10 +150,17 @@
           <File priority="80">Data/Essex/EagleUnion_Essex_Units.xml</File>
           <File priority="70">Data/Essex/EagleUnion_Essex_Agenda.xml</File>
         </UpdateDatabase>
+        <UpdateDatabase id="Essex_XP1">
+          <Properties>
+            <RuleSet>RULESET_EXPANSION_1</RuleSet>
+          </Properties>
+          <File>Data/Essex/EagleUnion_Essex_Moment.sql</File>
+        </UpdateDatabase>
         <UpdateDatabase id="Essex_XP2">
           <Properties>
             <RuleSet>RULESET_EXPANSION_2</RuleSet>
           </Properties>
+          <File>Data/Essex/EagleUnion_Essex_Moment.sql</File>
           <File>Data/Essex/EagleUnion_Essex_XP2.sql</File>
         </UpdateDatabase>
         <UpdateText id="EssexText">
@@ -157,12 +172,19 @@
           <File priority="100">Data/Georgia/EagleUnion_Georgia_Leader.xml</File>
           <File priority="90">Data/Georgia/EagleUnion_Georgia_UnitAbilities.xml</File>
           <File priority="80">Data/Georgia/EagleUnion_Georgia_Units.xml</File>
-          <File priority="70">Data/Georgia/EagelUnion_Georgia_Agenda.xml</File>
+          <File priority="70">Data/Georgia/EagleUnion_Georgia_Agenda.xml</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="Georgia_XP1">
+          <Properties>
+            <RuleSet>RULESET_EXPANSION_1</RuleSet>
+          </Properties>
+          <File>Data/Georgia/EagleUnion_Georgia_Moment.sql</File>
         </UpdateDatabase>
         <UpdateDatabase id="Georgia_XP2">
           <Properties>
             <RuleSet>RULESET_EXPANSION_2</RuleSet>
           </Properties>
+          <File>Data/Georgia/EagleUnion_Georgia_Moment.sql</File>
           <File>Data/Georgia/EagleUnion_Georgia_XP2.sql</File>
         </UpdateDatabase>
         <UpdateText id="GeorgiaText">
@@ -177,10 +199,17 @@
           <File priority="70">Data/NewJersey/EagleUnion_NewJersey_Improvements.xml</File>
           <File priority="60">Data/NewJersey/EagleUnion_NewJersey_Agenda.xml</File>
         </UpdateDatabase>
+        <UpdateDatabase id="NewJersey_XP1">
+          <Properties>
+            <RuleSet>RULESET_EXPANSION_1</RuleSet>
+          </Properties>
+          <File>Data/NewJersey/EagleUnion_NewJersey_Moment.sql</File>
+        </UpdateDatabase>
         <UpdateDatabase id="NewJersey_XP2">
           <Properties>
             <RuleSet>RULESET_EXPANSION_2</RuleSet>
           </Properties>
+          <File>Data/NewJersey/EagleUnion_NewJersey_Moment.sql</File>
           <File>Data/NewJersey/EagleUnion_NewJersey_XP2.sql</File>
         </UpdateDatabase>
         <UpdateText id="NewJerseyText">
@@ -200,10 +229,17 @@
           </Properties>
           <File>Data/Helena/EagleUnion_Helena_Leader.sql</File>
         </UpdateDatabase>
+        <UpdateDatabase id="Helena_XP1">
+          <Properties>
+            <RuleSet>RULESET_EXPANSION_1</RuleSet>
+          </Properties>
+          <File>Data/Helena/EagleUnion_Helena_Moment.sql</File>
+        </UpdateDatabase>
         <UpdateDatabase id="Helena_XP2">
           <Properties>
             <RuleSet>RULESET_EXPANSION_2</RuleSet>
           </Properties>
+          <File>Data/Helena/EagleUnion_Helena_Moment.sql</File>
           <File>Data/Helena/EagleUnion_Helena_XP2.sql</File>
         </UpdateDatabase>
         <UpdateText id="HelenaText">
@@ -222,10 +258,17 @@
           </Properties>
           <File>Data/AllenMSumner/EagleUnion_AllenMSumner_Leader.sql</File>
         </UpdateDatabase>
+        <UpdateDatabase id="AllenMSumner_XP1">
+          <Properties>
+            <RuleSet>RULESET_EXPANSION_1</RuleSet>
+          </Properties>
+          <File>Data/AllenMSumner/EagleUnion_AllenMSumner_Moment.sql</File>
+        </UpdateDatabase>
         <UpdateDatabase id="AllenMSumner_XP2">
           <Properties>
             <RuleSet>RULESET_EXPANSION_2</RuleSet>
           </Properties>
+          <File>Data/AllenMSumner/EagleUnion_AllenMSumner_Moment.sql</File>
           <File>Data/AllenMSumner/EagleUnion_AllenMSumner_XP2.sql</File>
         </UpdateDatabase>
         <UpdateText id="AllenMSumnerText">
@@ -257,6 +300,9 @@
     <Content Include="Data\AllenMSumner\EagleUnion_AllenMSumner_Agenda.xml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Data\AllenMSumner\EagleUnion_AllenMSumner_Moment.sql">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Data\AllenMSumner\EagleUnion_AllenMSumner_Units.xml">
       <SubType>Content</SubType>
     </Content>
@@ -270,6 +316,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\EagleUnion_Districts.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\EagleUnion_Expansion1.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\EagleUnion_Moment.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\EagleUnion_NamedPlaces.xml">
@@ -296,10 +348,13 @@
     <Content Include="Data\EagleUnion_Units.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\EagleUnion_XP2.sql">
+    <Content Include="Data\EagleUnion_Expansion2.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\Essex\EagleUnion_Essex_Agenda.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Essex\EagleUnion_Essex_Moment.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\Essex\EagleUnion_Essex_Units.xml">
@@ -317,7 +372,10 @@
     <Content Include="Data\Essex\EagleUnion_Essex_UnitAbilities.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Data\Georgia\EagelUnion_Georgia_Agenda.xml">
+    <Content Include="Data\Georgia\EagleUnion_Georgia_Agenda.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Georgia\EagleUnion_Georgia_Moment.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\Georgia\EagleUnion_Georgia_UnitAbilities.xml">
@@ -333,6 +391,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\Helena\EagleUnion_Helena_Agenda.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Helena\EagleUnion_Helena_Moment.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\Helena\EagleUnion_Helena_UnitAbilities.xml">
@@ -357,6 +418,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\NewJersey\EagleUnion_NewJersey_Improvements.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\NewJersey\EagleUnion_NewJersey_Moment.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\NewJersey\EagleUnion_NewJersey_UnitAbilities.xml">

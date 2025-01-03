@@ -30,11 +30,8 @@
 	</TypeTags>
 	<Units>
 		<!--艾伦·M·萨姆纳级驱逐舰-->
-		<Row UnitType="UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER" Cost="540" Maintenance="7" BaseMoves="5" BaseSightRange="3" ZoneOfControl="true" Domain="DOMAIN_SEA" Combat="95" RangedCombat="90" Range="1" AntiAirCombat="105" FormationClass="FORMATION_CLASS_NAVAL" PrereqTech="TECH_COMBINED_ARMS" PromotionClass="PROMOTION_CLASS_NAVAL_MELEE" Name="LOC_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_NAME" Description="LOC_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_DESCRIPTION" PurchaseYield="YIELD_GOLD" PseudoYieldType="PSEUDOYIELD_UNIT_NAVAL_COMBAT" TraitType="TRAIT_LEADER_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER"/>
+		<Row UnitType="UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER" Cost="540" Maintenance="7" BaseMoves="5" BaseSightRange="3" StrategicResource="RESOURCE_OIL" ZoneOfControl="true" Domain="DOMAIN_SEA" Combat="95" RangedCombat="90" Range="1" AntiAirCombat="105" FormationClass="FORMATION_CLASS_NAVAL" PrereqTech="TECH_COMBINED_ARMS" PromotionClass="PROMOTION_CLASS_NAVAL_MELEE" Name="LOC_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_NAME" Description="LOC_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER_DESCRIPTION" PurchaseYield="YIELD_GOLD" PseudoYieldType="PSEUDOYIELD_UNIT_NAVAL_COMBAT" TraitType="TRAIT_LEADER_UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER"/>
 	</Units>
-	<MomentIllustrations>
-		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_ALLEN_M_SUMNER_CLASS_DESTROYER" Texture="Moment_Allen_M_Sumner_class.dds"/>
-	</MomentIllustrations>
 	<UnitAbilities>
 		<Row UnitAbilityType="ABILITY_ALLEN_M_SUMNER" Name="LOC_ABILITY_ALLEN_M_SUMNER_NAME" Description="LOC_ABILITY_ALLEN_M_SUMNER_DESCRIPTION"/>
 	</UnitAbilities>

@@ -46,7 +46,4 @@
 			<Value>4</Value>
 		</Row>
 	</ModifierArguments>
-	<MomentIllustrations>
-		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_ENTERPRISE_CLASS" Texture="Moment_Enterprise.dds"/>
-	</MomentIllustrations>
 </GameData>

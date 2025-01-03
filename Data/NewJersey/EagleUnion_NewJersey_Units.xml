@@ -21,9 +21,6 @@
 	</TypeTags>
 	<Units>
 		<!--衣阿华级战列舰-->
-		<Row UnitType="UNIT_IOWA_CLASS" Cost="680" Maintenance="8" BaseMoves="6" BaseSightRange="4" ZoneOfControl="true" Domain="DOMAIN_SEA" Combat="90" RangedCombat="105" Range="3" AntiAirCombat="120" FormationClass="FORMATION_CLASS_NAVAL" PromotionClass="PROMOTION_CLASS_NAVAL_RANGED" AdvisorType="ADVISOR_CONQUEST" Name="LOC_UNIT_IOWA_CLASS_NAME" Description="LOC_UNIT_IOWA_CLASS_DESCRIPTION" PurchaseYield="YIELD_GOLD" PseudoYieldType="PSEUDOYIELD_UNIT_NAVAL_COMBAT" PrereqTech="TECH_ADVANCED_BALLISTICS" TraitType="TRAIT_LEADER_UNIT_IOWA_CLASS"/>
+		<Row UnitType="UNIT_IOWA_CLASS" Cost="680" Maintenance="8" BaseMoves="6" BaseSightRange="4" StrategicResource="RESOURCE_OIL" ZoneOfControl="true" Domain="DOMAIN_SEA" Combat="90" RangedCombat="105" Range="3" AntiAirCombat="120" FormationClass="FORMATION_CLASS_NAVAL" PromotionClass="PROMOTION_CLASS_NAVAL_RANGED" AdvisorType="ADVISOR_CONQUEST" Name="LOC_UNIT_IOWA_CLASS_NAME" Description="LOC_UNIT_IOWA_CLASS_DESCRIPTION" PurchaseYield="YIELD_GOLD" PseudoYieldType="PSEUDOYIELD_UNIT_NAVAL_COMBAT" PrereqTech="TECH_ADVANCED_BALLISTICS" TraitType="TRAIT_LEADER_UNIT_IOWA_CLASS"/>
 	</Units>
-	<MomentIllustrations>
-		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_IOWA_CLASS" Texture="Moment_Iowa_Class.dds"/>
-	</MomentIllustrations>
 </GameData>

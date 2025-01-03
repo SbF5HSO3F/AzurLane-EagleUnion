@@ -23,9 +23,6 @@
 			 CitizenSlots="3"
 			 TraitType="TRAIT_CIVILIZATION_BUILDING_NEWPORT_NEWS_SHIPBUILDING"/>
 	</Buildings>
-	<MomentIllustrations>
-		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_BUILDING" MomentDataType="MOMENT_DATA_BUILDING" GameDataType="BUILDING_NEWPORT_NEWS_SHIPBUILDING" Texture="Moment_NewportNews_Shipbuilding.dds"/>
-	</MomentIllustrations>
 	<BuildingPrereqs>
 		<Row Building="BUILDING_NEWPORT_NEWS_SHIPBUILDING"	PrereqBuilding="BUILDING_LIGHTHOUSE"/>
 		<Row Building="BUILDING_SEAPORT"					PrereqBuilding="BUILDING_NEWPORT_NEWS_SHIPBUILDING"/>

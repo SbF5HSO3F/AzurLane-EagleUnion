@@ -53,7 +53,4 @@
 		<Row ID="FlourishGarden_DistrictsAdjacency"		Description="Placeholder" YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" OtherDistrictAdjacent="true" PrereqTech="TECH_INDUSTRIALIZATION"/>
 		<Row ID="FlourishGarden_DistrictsGoldAdjacency"	Description="Placeholder" YieldType="YIELD_GOLD"	   YieldChange="1" TilesRequired="1" OtherDistrictAdjacent="true" PrereqTech="TECH_INDUSTRIALIZATION"/>
 	</Adjacency_YieldChanges>
-	<MomentIllustrations>
-    	<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_IMPROVEMENT" MomentDataType="MOMENT_DATA_IMPROVEMENT" GameDataType="IMPROVEMENT_FLOUTISH_GARDEN" Texture="MomentSTK_Hacienda.dds"/>
-  	</MomentIllustrations>
 </GameData>
