@@ -64,15 +64,6 @@
 		</Row>
 	</TraitModifiers>
 	<Modifiers>
-		<!--KANSEN-->
-		<Row>
-			<ModifierId>KANSEN_Unlocked_TECH_SAILING</ModifierId>
-			<ModifierType>MODIFIER_PLAYER_GRANT_SPECIFIC_TECHNOLOGY</ModifierType>
-		</Row>
-		<Row>
-			<ModifierId>KANSEN_Unlocked_TECH_SHIPBUILDING</ModifierId>
-			<ModifierType>MODIFIER_PLAYER_GRANT_SPECIFIC_TECHNOLOGY</ModifierType>
-		</Row>
 		<!--剧院广场翻倍旅游业绩-->
 		<Row>
 			<ModifierId>ALLEN_THEATER_ADD_CULTURE</ModifierId>
