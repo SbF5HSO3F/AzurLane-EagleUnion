@@ -67,16 +67,6 @@
 			<TraitType>TRAIT_LEADER_HEAVY_BARREL_BLASTER</TraitType>
 			<ModifierId>HEAVY_IMPROVEMENT_PLANTATION_ADD_CULTURE_BOMB_TRIGGER</ModifierId>
 		</Row>
-		<![CDATA[<!--拥有工业区+15%生产力-->
-		<Row>
-			<TraitType>TRAIT_LEADER_HEAVY_BARREL_BLASTER</TraitType>
-			<ModifierId>GEORGIA_CITY_HAS_INDUSTRIAL_ZONE_BUFF</ModifierId>
-		</Row>
-		<!--工业区触发文化炸弹-->
-		<Row>
-			<TraitType>TRAIT_LEADER_HEAVY_BARREL_BLASTER</TraitType>
-			<ModifierId>HEAVY_INDUSTRIAL_ZONE_ADD_CULTURE_BOMB_TRIGGER</ModifierId>
-		</Row>]]>
 		<!--国内贸易路线加文化-->
 		<Row>
 			<TraitType>TRAIT_LEADER_HEAVY_BARREL_BLASTER</TraitType>
@@ -123,17 +113,6 @@
 		<!--种植园对无主单元格释放文化炸弹-->
 		<Row>
 			<ModifierId>HEAVY_IMPROVEMENT_PLANTATION_ADD_CULTURE_BOMB_TRIGGER</ModifierId>
-			<ModifierType>MODIFIER_PLAYER_ADD_CULTURE_BOMB_TRIGGER</ModifierType>
-		</Row>
-		<!--拥有工业区+15%生产力-->
-		<Row>
-			<ModifierId>GEORGIA_CITY_HAS_INDUSTRIAL_ZONE_BUFF</ModifierId>
-			<ModifierType>MODIFIER_EAGLE_UNION_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>GEORGIA_CITY_HAS_INDUSTRIAL_ZONE</SubjectRequirementSetId>
-		</Row>
-		<!--工业区触发文化炸弹-->
-		<Row>
-			<ModifierId>HEAVY_INDUSTRIAL_ZONE_ADD_CULTURE_BOMB_TRIGGER</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_ADD_CULTURE_BOMB_TRIGGER</ModifierType>
 		</Row>
 		<!--国内贸易路线加文化-->
@@ -195,28 +174,6 @@
 			<ModifierId>HEAVY_IMPROVEMENT_PLANTATION_ADD_CULTURE_BOMB_TRIGGER</ModifierId>
 			<Name>ImprovementType</Name>
 			<Value>IMPROVEMENT_PLANTATION</Value>
-		</Row>
-		<!--<Row>
-			<ModifierId>HEAVY_IMPROVEMENT_PLANTATION_ADD_CULTURE_BOMB_TRIGGER</ModifierId>
-			<Name>CaptureOwnedTerritory</Name>
-			<Value>False</Value>
-		</Row>-->
-		<!--拥有工业区+15%生产力-->
-		<Row>
-			<ModifierId>GEORGIA_CITY_HAS_INDUSTRIAL_ZONE_BUFF</ModifierId>
-			<Name>Amount</Name>
-			<Value>15</Value>
-		</Row>
-		<Row>
-			<ModifierId>GEORGIA_CITY_HAS_INDUSTRIAL_ZONE_BUFF</ModifierId>
-			<Name>YieldType</Name>
-			<Value>YIELD_PRODUCTION</Value>
-		</Row>
-		<!--工业区触发文化炸弹-->
-		<Row>
-			<ModifierId>HEAVY_INDUSTRIAL_ZONE_ADD_CULTURE_BOMB_TRIGGER</ModifierId>
-			<Name>DistrictType</Name>
-			<Value>DISTRICT_INDUSTRIAL_ZONE</Value>
 		</Row>
 		<!--国内贸易路线加文化-->
 		<Row>
@@ -280,29 +237,4 @@
 			<Value>1</Value>
 		</Row>
 	</ModifierArguments>
-	<RequirementSets>
-		<Row>
-			<RequirementSetId>GEORGIA_CITY_HAS_INDUSTRIAL_ZONE</RequirementSetId>
-			<RequirementSetType>REQUIREMENTSET_TEST_ANY</RequirementSetType>
-		</Row>
-	</RequirementSets>
-	<RequirementSetRequirements>
-		<Row>
-			<RequirementSetId>GEORGIA_CITY_HAS_INDUSTRIAL_ZONE</RequirementSetId>
-			<RequirementId>REQ_GEORGIA_CITY_HAS_INDUSTRIAL_ZONE</RequirementId>
-		</Row>
-	</RequirementSetRequirements>
-	<Requirements>
-		<Row>
-			<RequirementId>REQ_GEORGIA_CITY_HAS_INDUSTRIAL_ZONE</RequirementId>
-			<RequirementType>REQUIREMENT_CITY_HAS_DISTRICT</RequirementType>
-		</Row>
-	</Requirements>
-	<RequirementArguments>
-		<Row>
-			<RequirementId>REQ_GEORGIA_CITY_HAS_INDUSTRIAL_ZONE</RequirementId>
-			<Name>DistrictType</Name>
-			<Value>DISTRICT_INDUSTRIAL_ZONE</Value>
-		</Row>
-	</RequirementArguments>
 </GameData>

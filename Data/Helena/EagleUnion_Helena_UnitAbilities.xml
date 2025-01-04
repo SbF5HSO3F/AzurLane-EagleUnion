@@ -37,6 +37,10 @@
 			<UnitAbilityType>ABILITY_HELENA_UNIT_BUFF</UnitAbilityType>
 			<ModifierId>HELENA_UNIT_CANSEE_TERRAINS</ModifierId>
 		</Row>
+		<Row>
+			<UnitAbilityType>ABILITY_HELENA_UNIT_BUFF</UnitAbilityType>
+			<ModifierId>HELENA_UNIT_CANSEE_HIDDEN</ModifierId>
+		</Row>
 	</UnitAbilityModifiers>
 	<Modifiers>
 		<Row>
@@ -46,13 +50,13 @@
 		<Row>
 			<ModifierId>HELENA_UNIT_ATTACH_DEBUFF</ModifierId>
 			<ModifierType>MODIFIER_ALL_UNITS_ATTACH_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>VARU_ADJACENT_AT_WAR_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>EAGLE_UNION_ADJACENT_UNIT_AT_WAR</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>HELENA_UNIT_ATTACH_DEBUFF_EFFECT</ModifierId>
 			<ModifierType>MODIFIER_ALL_UNITS_ATTACH_MODIFIER</ModifierType>
 			<SubjectStackLimit>1</SubjectStackLimit>
-			<SubjectRequirementSetId>VARU_ADJACENT_AT_WAR_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>EAGLE_UNION_ADJACENT_UNIT_AT_WAR</SubjectRequirementSetId>
 		</Row>
 		<Row>
 			<ModifierId>HELENA_DEBUFF_PROPERTY</ModifierId>
@@ -69,6 +73,10 @@
 		<Row>
 			<ModifierId>HELENA_UNIT_CANSEE_TERRAINS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_SEE_THROUGH_TERRAIN</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>HELENA_UNIT_CANSEE_HIDDEN</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_SEE_HIDDEN</ModifierType>
 		</Row>
 	</Modifiers>
 	<ModifierArguments>
@@ -97,11 +105,6 @@
 			<Name>Amount</Name>
 			<Value>-4</Value>
 		</Row>
-		<!--<Row>
-			<ModifierId>HELENA_UNIT_ATTACH_DEBUFF_MODIFIER</ModifierId>
-			<Name>Amount</Name>
-			<Value>-4</Value>
-		</Row>-->
 		<Row>
 			<ModifierId>HELENA_UNIT_ATTACH_DEBUFF_MODIFIER</ModifierId>
 			<Name>Key</Name>
@@ -115,6 +118,11 @@
 		<Row>
 			<ModifierId>HELENA_UNIT_CANSEE_TERRAINS</ModifierId>
 			<Name>CanSee</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>HELENA_UNIT_CANSEE_HIDDEN</ModifierId>
+			<Name>SeeHidden</Name>
 			<Value>true</Value>
 		</Row>
 	</ModifierArguments>

@@ -48,7 +48,7 @@
 		<Row>
 			<ModifierId>ALLEN_M_SUMNER_ATTACK_RAIDERS</ModifierId>
 			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
-			<SubjectRequirementSetId>CREEPING_ATTACK_REQUIREMENTS</SubjectRequirementSetId>
+			<SubjectRequirementSetId>EAGLE_UNION_OPPONENT_IS_RAIDER</SubjectRequirementSetId>
 		</Row>
 	</Modifiers>
 	<ModifierArguments>

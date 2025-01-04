@@ -57,11 +57,6 @@
 			<TraitType>TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
 			<ModifierId>ESSEX_NAVY_UNITS_BUFF</ModifierId>
 		</Row>
-		<![CDATA[<!--港口加生产力-->
-		<Row>
-			<TraitType>TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
-			<ModifierId>ESSEX_HAS_HARBOR_CTIY_BUFF</ModifierId>
-		</Row>]]>
 		<!--生产军事单位减少时间-->
 		<Row>
 			<TraitType>TRAIT_LEADER_FIGHTIN_EST_SHIP_IN_THE_FLEET</TraitType>
@@ -78,12 +73,6 @@
 		<Row>
 			<ModifierId>ESSEX_NAVY_UNITS_BUFF</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_GRANT_ABILITY</ModifierType>
-		</Row>
-		<!--港口加生产力-->
-		<Row>
-			<ModifierId>ESSEX_HAS_HARBOR_CTIY_BUFF</ModifierId>
-			<ModifierType>MODIFIER_EAGLE_UNION_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
-			<SubjectRequirementSetId>EAGLE_UNION_CITY_HAS_HARBOR</SubjectRequirementSetId>
 		</Row>
 		<!--生产军事单位减少时间-->
 		<Row>
@@ -102,17 +91,6 @@
 			<ModifierId>ESSEX_NAVY_UNITS_BUFF</ModifierId>
 			<Name>AbilityType</Name>
 			<Value>ABILITY_ESSEX_NAYY_BUFF</Value>
-		</Row>
-		<!--港口加生产力-->
-		<Row>
-			<ModifierId>ESSEX_HAS_HARBOR_CTIY_BUFF</ModifierId>
-			<Name>Amount</Name>
-			<Value>25</Value>
-		</Row>
-		<Row>
-			<ModifierId>ESSEX_HAS_HARBOR_CTIY_BUFF</ModifierId>
-			<Name>YieldType</Name>
-			<Value>YIELD_PRODUCTION</Value>
 		</Row>
 		<!--生产军事单位减少时间-->
 		<Row>
