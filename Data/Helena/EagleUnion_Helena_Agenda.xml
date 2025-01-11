@@ -31,6 +31,7 @@
 	<AiFavoredItems>
 		<!--通用-->
 		<Row ListType="MemoriesofPearlHarborDistricts"				Item="DISTRICT_SANTA_CLARA_VALLEY"			Favored="true"/>
+		<Row ListType="MemoriesofPearlHarborDistricts"				Item="DISTRICT_IVY_LEAGUE"					Favored="true"/>
 		<Row ListType="MemoriesofPearlHarborTechs"					Item="TECH_WRITING"							Favored="true"/>
 		<!--珍珠港的回忆-->
 		<Row ListType="MemoriesofPearlHarborHateSurpriseWar"		Item="DIPLOACTION_DECLARE_SURPRISE_WAR"		Favored="false"/>

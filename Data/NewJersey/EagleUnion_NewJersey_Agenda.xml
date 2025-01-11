@@ -32,6 +32,7 @@
 	<AiFavoredItems>
 		<!--通用-->
 		<Row ListType="BlackDragonDistricts"				Item="DISTRICT_SANTA_CLARA_VALLEY"			Favored="true"/>
+		<Row ListType="BlackDragonDistricts"				Item="DISTRICT_IVY_LEAGUE"					Favored="true"/>
 		<Row ListType="BlackDragonTechs"					Item="TECH_WRITING"							Favored="true"/>
 		<Row ListType="BlackDragonTechs"					Item="TECH_CONSTRUCTION"					Favored="true"/>
 		<!--黑龙之炎-->

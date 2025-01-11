@@ -31,6 +31,7 @@
 	<AiFavoredItems>
 		<!--通用-->
 		<Row ListType="BangForYourBuckDistricts"				Item="DISTRICT_SANTA_CLARA_VALLEY"			Favored="true"/>
+		<Row ListType="BangForYourBuckDistricts"				Item="DISTRICT_IVY_LEAGUE"					Favored="true"/>
 		<Row ListType="BangForYourBuckDistricts"				Item="DISTRICT_THEATER"						Favored="true"/>
 		<Row ListType="BangForYourBuckTechs"					Item="TECH_WRITING"							Favored="true"/>
 		<Row ListType="BangForYourBuckTechs"					Item="TECH_FLIGHT"							Favored="true"/>

@@ -27,6 +27,7 @@
 	<AiFavoredItems>
 		<!--通用-->
 		<Row ListType="TF58Districts"	Item="DISTRICT_SANTA_CLARA_VALLEY"			Favored="true"/>
+		<Row ListType="TF58Districts"	Item="DISTRICT_IVY_LEAGUE"					Favored="true"/>
 		<Row ListType="TF58Techs"		Item="TECH_WRITING"							Favored="true"/>
 		<Row ListType="TF58Techs"		Item="TECH_MASS_PRODUCTION"					Favored="true"/>
 		<Row ListType="TF58Techs"		Item="TECH_CELESTIAL_NAVIGATION"			Favored="true"/>

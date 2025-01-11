@@ -770,6 +770,11 @@ function Initialize()
     Events.CityProductionChanged.Add(Refresh)
     Events.CityProductionCompleted.Add(Refresh)
     Events.CityRemovedFromMap.Add(Refresh)
+    --区域
+    Events.DistrictAddedToMap.Add(Refresh)
+    Events.DistrictBuildProgressChanged.Add(Refresh)
+    Events.DistrictRemovedFromMap.Add(Refresh)
+    Events.DistrictPillaged.Add(Refresh)
     --科技
     Events.ResearchChanged.Add(Refresh)
     Events.ResearchCompleted.Add(Refresh)

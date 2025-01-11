@@ -28,6 +28,7 @@
 	<AiFavoredItems>
 		<!--通用-->
 		<Row ListType="TheHeritageofGreatWhiteFleetDistricts"	Item="DISTRICT_SANTA_CLARA_VALLEY"			Favored="true"/>
+		<Row ListType="TheHeritageofGreatWhiteFleetDistricts"	Item="DISTRICT_IVY_LEAGUE"					Favored="true"/>
 		<Row ListType="TheHeritageofGreatWhiteFleetDistricts"	Item="DISTRICT_HARBOR"						Favored="true"/>
 		<Row ListType="TheHeritageofGreatWhiteFleetTechs"		Item="TECH_WRITING"							Favored="true"/>
 		<Row ListType="TheHeritageofGreatWhiteFleetTechs"		Item="TECH_MASS_PRODUCTION"					Favored="true"/>

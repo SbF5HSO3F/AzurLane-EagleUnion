@@ -73,7 +73,7 @@ EaglePointManager.Points = {
                 local point = 0
                 --是否是艾伦·萨姆纳
                 if EagleCore.CheckLeaderMatched(playerID, 'LEADER_ALLEN_M_SUMNER_DD692') then
-                    --获取玩家人口
+                    --获取玩家每回合文化值
                     local culture = Players[playerID]:GetCulture()
                     point = culture:GetCultureYield() * gunStarPercent
                 end
