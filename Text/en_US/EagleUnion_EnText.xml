@@ -28,7 +28,7 @@
       		<Text>Number of Characters installed</Text>
     	</Replace>
     	<Replace Tag="LOC_CIVINFO_ROLE_EAGLE_UNION" Language="en_US">
-      		<Text>142</Text>
+      		<Text>135</Text>
     	</Replace>
 		<!--文明能力-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_NAME" Language="en_US">

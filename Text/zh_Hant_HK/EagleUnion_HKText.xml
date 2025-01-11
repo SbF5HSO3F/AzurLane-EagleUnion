@@ -28,7 +28,7 @@
 			<Text>實裝角色數</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVINFO_ROLE_EAGLE_UNION" Language="zh_Hant_HK">
-			<Text>142位</Text>
+			<Text>135位</Text>
 		</Replace>
 		<!--文明能力-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_NAME" Language="zh_Hant_HK">
