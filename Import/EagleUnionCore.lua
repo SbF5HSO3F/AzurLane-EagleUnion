@@ -97,6 +97,17 @@ function EagleCore.GetPlayerDistrictCount(playerID, index)
     return count
 end
 
+--检查单位是否是军事单位 (GamePlay, UI)
+function EagleCore.IsMilitary(unit)
+    if unit == nil then return false end
+    local unitInfo = GameInfo.Units[unit:GetType()]
+    if unitInfo == nil then return false end
+    local unitFormation = unitInfo.FormationClass
+    return unitFormation == 'FORMATION_CLASS_LAND_COMBAT'
+        or unitFormation == 'FORMATION_CLASS_NAVAL'
+        or unitFormation == 'FORMATION_CLASS_AIR'
+end
+
 --||=====================GamePlay=======================||--
 
 --随机数生成器，范围为[1,num+1] (GamePlay)
