@@ -368,6 +368,7 @@ function EaglePointManager.SetEaglePoint(playerID, point)
     local pPlayer = Players[playerID]
     if not pPlayer then return end
     pPlayer:SetProperty(EaglePointKey, point)
+    Game:SetProperty('EaglePointRefresh', true)
 end
 
 --改变研究点数，返回新的研究点数 (GamePlay)

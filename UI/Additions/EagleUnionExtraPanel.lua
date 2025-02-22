@@ -789,6 +789,8 @@ function Initialize()
     Events.LocalPlayerChanged.Add(Refresh)
     --每回合开始
     Events.PlayerTurnActivated.Add(Refresh)
+    --GameProperty变动
+    Events.GamePropertyChanged.Add(Refresh)
     ------------------LuaEvents-----------------
     LuaEvents.EagleUnionTopButton_TogglePopup.Add(Toggle)
     --------------------------------------------
