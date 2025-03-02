@@ -692,9 +692,9 @@ end
 
 --总刷新
 function Refresh(playerID)
-    if m_PanelIsOpen and EagleCore.CheckCivMatched(
+    if m_PanelIsOpen and (playerID == nil or (EagleCore.CheckCivMatched(
             playerID, 'CIVILIZATION_EAGLE_UNION'
-        ) and Game.GetLocalPlayer() == playerID then
+        ) and Game.GetLocalPlayer() == playerID)) then
         --顶部刷新
         TopRefresh()
         --选项刷新

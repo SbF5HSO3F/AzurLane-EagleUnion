@@ -95,6 +95,8 @@ function Initialize()
     Events.LocalPlayerChanged.Add(EagleTrackerReset)
     --每回合开始
     Events.PlayerTurnActivated.Add(EagleTrackerReset)
+    --GameProperty变化
+    Events.GamePropertyChanged.Add(EagleTrackerReset)
     ---------------------GameEvents---------------------
     --ExposedMembers.Flasher.Reset = FlasherResetPanel
     ----------------------LuaEvents---------------------
