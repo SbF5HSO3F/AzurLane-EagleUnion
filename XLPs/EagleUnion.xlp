@@ -233,6 +233,10 @@
 			<m_EntryID text="EagleFontIcons"/>
 			<m_ObjectName text="EagleFontIcons"/>
 		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_ACTION_38"/>
+			<m_ObjectName text="EAGLE_ACTION_38"/>
+		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>
 		<Element>WINDOWS</Element>

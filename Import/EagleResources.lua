@@ -1,0 +1,182 @@
+-- EagleResources
+-- Author: HSbF6HSO3F
+-- DateCreated: 2025/3/2 9:33:12
+--------------------------------------------------------------
+--||======================MetaTable=======================||--
+
+--------------------------------------------------------------
+-- EagleResource是有关资源的类，它允许更加简单的获取资源的可放置条件。
+EagleResource = {
+    Index    = -1,
+    Type     = '',
+    Class    = '',
+    Name     = '',
+    Icon     = '',
+    Terrains = {},
+    Features = {}
+}
+
+--创建新实例，根据资源定义
+function EagleResource:newByDef(resourceDef)
+    --错误处理
+    if not resourceDef then return nil end
+    --创建新实例
+    local object = {}
+    setmetatable(object, self)
+    self.__index = self
+    local type   = resourceDef.ResourceType
+    object.Type  = type
+    object.Index = resourceDef.Index
+    object.Class = resourceDef.ResourceClassType
+    object.Name  = resourceDef.Name
+    --图标设置
+    object.Icon  = '[ICON_' .. type .. ']'
+    --遍历允许地形
+    for row in GameInfo.Resource_ValidTerrains() do
+        if row.ResourceType == type then
+            local terrainDef = GameInfo.Terrains[row.TerrainType]
+            local terrain = { Index = terrainDef.Index, Name = terrainDef.Name }
+            table.insert(object.Terrains, terrain)
+        end
+    end
+    --遍历允许地貌
+    for row in GameInfo.Resource_ValidFeatures() do
+        if row.ResourceType == type then
+            local featureDef = GameInfo.Features[row.FeatureType]
+            local feature = { Index = featureDef.Index, Name = featureDef.Name }
+            table.insert(object.Features, feature)
+        end
+    end
+    return object
+end
+
+--创建新实例，根据资源类型
+function EagleResource:new(resourceType)
+    --错误处理
+    if not resourceType then return nil end
+    --获取资源定义
+    local def = GameInfo.Resources[resourceType]
+    return self:newByDef(def)
+end
+
+--创建新实例，根据资源定义但没有地形和地貌限制
+function EagleResource:newByDefNoValid(resourceDef)
+    --错误处理
+    if not resourceDef then return nil end
+    --创建新实例
+    local object = {}
+    setmetatable(object, self)
+    self.__index = self
+    local type   = resourceDef.ResourceType
+    object.Type  = type
+    object.Index = resourceDef.Index
+    object.Class = resourceDef.ResourceClassType
+    object.Name  = resourceDef.Name
+    --图标设置
+    object.Icon  = '[ICON_' .. type .. ']'
+    return object
+end
+
+--||====================Based functions===================||--
+
+--获取单元格是否可放置该资源
+function EagleResource:GetPlaceable(plot)
+    --检查地形
+    local terrainType = plot:GetTerrainType()
+    for _, terrain in ipairs(self.Terrains) do
+        if terrainType == terrain.Index then return true end
+    end
+    --检查地貌
+    local featureType = plot:GetFeatureType()
+    for _, feature in ipairs(self.Features) do
+        if featureType == feature.Index then return true end
+    end
+    return false
+end
+
+--获取资源可放置条件功能性文本
+function EagleResource:GetConditionsTooltip()
+    local tooltip = Locale.Lookup("LOC_AZURLANE_RESOURCE_CONDITIONS")
+    for _, terrain in ipairs(self.Terrains) do
+        tooltip = tooltip .. Locale.Lookup('LOC_AZURLANE_RESOURCE_VAILD_TERRAIN', terrain.Name)
+    end
+    for _, feature in ipairs(self.Features) do
+        tooltip = tooltip .. Locale.Lookup('LOC_AZURLANE_RESOURCE_VAILD_FEATURE', feature.Name)
+    end
+    return tooltip
+end
+
+--||======================MetaTable=======================||--
+
+--------------------------------------------------------------
+---EagleResources是AzurLaneCoreCode的资源管理类
+---它允许按照要求检索GameInfo的资源信息，并通过一次性创建多个资源实例来提高效率。
+EagleResources = { Resources = {} }
+
+--创建新实例，根据资源类型列表
+function EagleResources:new(resourceReq)
+    if not resourceReq then return nil end
+    local object = {}
+    setmetatable(object, self)
+    self.__index = self
+    --遍历资源类型列表
+    for def in GameInfo.Resources() do
+        local match = false
+        if def.Frequency ~= 0 then
+            if resourceReq[def.ResourceType] then
+                match = true
+            end
+            if resourceReq[def.ResourceClassType] then
+                match = true
+            end
+        end
+        if match then
+            local resource = EagleResource:newByDefNoValid(def)
+            object.Resources[def.ResourceType] = resource
+        end
+    end
+    --创建地形和地貌限制
+    local resource = {}
+    for row in GameInfo.Resource_ValidTerrains() do
+        local type = row.ResourceType
+        if resource == nil or resource.Type ~= type then
+            resource = object.Resources[type]
+        end
+        if resource then
+            local terrainDef = GameInfo.Terrains[row.TerrainType]
+            local terrain = { Index = terrainDef.Index, Name = terrainDef.Name }
+            table.insert(resource.Terrains, terrain)
+        end
+    end
+    for row in GameInfo.Resource_ValidFeatures() do
+        local type = row.ResourceType
+        if resource == nil or resource.Type ~= type then
+            resource = object.Resources[type]
+        end
+        if resource then
+            local featureDef = GameInfo.Features[row.FeatureType]
+            local feature = { Index = featureDef.Index, Name = featureDef.Name }
+            table.insert(resource.Features, feature)
+        end
+    end
+    return object
+end
+
+--||====================Based functions===================||--
+
+--获取该单元格可以放置的资源列表
+function EagleResources:GetPlaceableResources(plot)
+    local list = {}
+    --地形
+    for _, resource in pairs(self.Resources) do
+        if resource:GetPlaceable(plot) then
+            local def = {}
+            def.Index = resource.Index
+            def.Type  = resource.Type
+            def.Name  = resource.Name
+            def.Icon  = resource.Icon
+            table.insert(list, def)
+        end
+    end
+    return list
+end

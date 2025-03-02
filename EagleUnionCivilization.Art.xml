@@ -352,7 +352,9 @@
 		</Element>
 		<Element>
 			<consumerName text="VFX"/>
-			<relativeArtDefPaths/>
+			<relativeArtDefPaths>
+				<Element text="VFX.artdef"/>
+			</relativeArtDefPaths>
 			<libraryDependencies>
 				<Element text="VFX"/>
 				<Element text="Light"/>
