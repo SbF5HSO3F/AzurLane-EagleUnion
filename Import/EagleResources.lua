@@ -13,6 +13,7 @@ EagleResource = {
     Name     = '',
     Icon     = '',
     Terrains = {},
+    Remove   = true,
     Features = {}
 }
 
@@ -23,15 +24,16 @@ function EagleResource:newByDef(resourceDef)
     --创建新实例
     local object = {}
     setmetatable(object, self)
-    self.__index = self
-    local type   = resourceDef.ResourceType
-    object.Type  = type
-    object.Index = resourceDef.Index
-    object.Class = resourceDef.ResourceClassType
-    object.Name  = resourceDef.Name
+    self.__index    = self
+    local type      = resourceDef.ResourceType
+    object.Type     = type
+    object.Index    = resourceDef.Index
+    object.Class    = resourceDef.ResourceClassType
+    object.Name     = resourceDef.Name
     --图标设置
-    object.Icon  = '[ICON_' .. type .. ']'
+    object.Icon     = '[ICON_' .. type .. ']'
     --遍历允许地形
+    object.Terrains = {}
     for row in GameInfo.Resource_ValidTerrains() do
         if row.ResourceType == type then
             local terrainDef = GameInfo.Terrains[row.TerrainType]
@@ -39,7 +41,16 @@ function EagleResource:newByDef(resourceDef)
             table.insert(object.Terrains, terrain)
         end
     end
+    --改良是否必须移除地貌
+    object.Remove = true
+    for row in GameInfo.Improvement_ValidResources() do
+        if row.ResourceType == type and row.MustRemoveFeature == false then
+            object.Remove = false
+            break
+        end
+    end
     --遍历允许地貌
+    object.Features = {}
     for row in GameInfo.Resource_ValidFeatures() do
         if row.ResourceType == type then
             local featureDef = GameInfo.Features[row.FeatureType]
@@ -66,14 +77,18 @@ function EagleResource:newByDefNoValid(resourceDef)
     --创建新实例
     local object = {}
     setmetatable(object, self)
-    self.__index = self
-    local type   = resourceDef.ResourceType
-    object.Type  = type
-    object.Index = resourceDef.Index
-    object.Class = resourceDef.ResourceClassType
-    object.Name  = resourceDef.Name
+    self.__index    = self
+    local type      = resourceDef.ResourceType
+    object.Type     = type
+    object.Index    = resourceDef.Index
+    object.Class    = resourceDef.ResourceClassType
+    object.Name     = resourceDef.Name
     --图标设置
-    object.Icon  = '[ICON_' .. type .. ']'
+    object.Icon     = '[ICON_' .. type .. ']'
+    --地形和地貌
+    object.Terrains = {}
+    object.Remove   = true
+    object.Features = {}
     return object
 end
 
@@ -81,15 +96,16 @@ end
 
 --获取单元格是否可放置该资源
 function EagleResource:GetPlaceable(plot)
+    --检查地貌
+    local featureType = plot:GetFeatureType()
+    if featureType ~= -1 and self.Remove then return false end
+    for _, feature in ipairs(self.Features) do
+        if featureType == feature.Index then return true end
+    end
     --检查地形
     local terrainType = plot:GetTerrainType()
     for _, terrain in ipairs(self.Terrains) do
         if terrainType == terrain.Index then return true end
-    end
-    --检查地貌
-    local featureType = plot:GetFeatureType()
-    for _, feature in ipairs(self.Features) do
-        if featureType == feature.Index then return true end
     end
     return false
 end
@@ -97,10 +113,15 @@ end
 --获取资源可放置条件功能性文本
 function EagleResource:GetConditionsTooltip()
     local tooltip = Locale.Lookup("LOC_AZURLANE_RESOURCE_CONDITIONS")
+    if self.Remove then
+        tooltip = tooltip .. Locale.Lookup('LOC_AZURLANE_RESOURCE_NO_FEATURE')
+    end
+    tooltip = tooltip .. Locale.Lookup('LOC_AZURLANE_RESOURCE_TERRAIN')
     for _, terrain in ipairs(self.Terrains) do
         tooltip = tooltip .. Locale.Lookup('LOC_AZURLANE_RESOURCE_VAILD_TERRAIN', terrain.Name)
     end
-    for _, feature in ipairs(self.Features) do
+    tooltip = tooltip .. Locale.Lookup('LOC_AZURLANE_RESOURCE_FEATURE')
+    for _, feature in ipairs(self.Terrains) do
         tooltip = tooltip .. Locale.Lookup('LOC_AZURLANE_RESOURCE_VAILD_FEATURE', feature.Name)
     end
     return tooltip
@@ -119,6 +140,8 @@ function EagleResources:new(resourceReq)
     local object = {}
     setmetatable(object, self)
     self.__index = self
+    --初始化资源列表
+    object.Resources = {}
     --遍历资源类型列表
     for def in GameInfo.Resources() do
         local match = false
@@ -136,12 +159,8 @@ function EagleResources:new(resourceReq)
         end
     end
     --创建地形和地貌限制
-    local resource = {}
     for row in GameInfo.Resource_ValidTerrains() do
-        local type = row.ResourceType
-        if resource == nil or resource.Type ~= type then
-            resource = object.Resources[type]
-        end
+        local resource = object.Resources[row.ResourceType]
         if resource then
             local terrainDef = GameInfo.Terrains[row.TerrainType]
             local terrain = { Index = terrainDef.Index, Name = terrainDef.Name }
@@ -149,14 +168,18 @@ function EagleResources:new(resourceReq)
         end
     end
     for row in GameInfo.Resource_ValidFeatures() do
-        local type = row.ResourceType
-        if resource == nil or resource.Type ~= type then
-            resource = object.Resources[type]
-        end
+        local resource = object.Resources[row.ResourceType]
         if resource then
             local featureDef = GameInfo.Features[row.FeatureType]
             local feature = { Index = featureDef.Index, Name = featureDef.Name }
             table.insert(resource.Features, feature)
+        end
+    end
+    --改良是否必须移除地貌
+    for row in GameInfo.Improvement_ValidResources() do
+        local resource = object.Resources[row.ResourceType]
+        if resource and row.MustRemoveFeature == false then
+            resource.Remove = false
         end
     end
     return object
