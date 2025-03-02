@@ -145,7 +145,7 @@ function EagleResources:new(resourceReq)
     --遍历资源类型列表
     for def in GameInfo.Resources() do
         local match = false
-        if def.Frequency ~= 0 then
+        if def.Frequency ~= 0 or def.SeaFrequency ~= 0 then
             if resourceReq[def.ResourceType] then
                 match = true
             end
