@@ -234,8 +234,32 @@
 			<m_ObjectName text="EagleFontIcons"/>
 		</Element>
 		<Element>
-			<m_EntryID text="EAGLE_ACTION_38"/>
-			<m_ObjectName text="EAGLE_ACTION_38"/>
+			<m_EntryID text="EagleUnits_22"/>
+			<m_ObjectName text="EagleUnits_22"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EagleUnits_256"/>
+			<m_ObjectName text="EagleUnits_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EagleUnits_32"/>
+			<m_ObjectName text="EagleUnits_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EagleUnits_38"/>
+			<m_ObjectName text="EagleUnits_38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EagleUnits_50"/>
+			<m_ObjectName text="EagleUnits_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EagleUnits_80"/>
+			<m_ObjectName text="EagleUnits_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EagleActions"/>
+			<m_ObjectName text="EagleActions"/>
 		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>

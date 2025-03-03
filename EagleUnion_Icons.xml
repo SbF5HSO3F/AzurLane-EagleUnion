@@ -27,6 +27,13 @@
 		<Row Name="ATLAS_EAGLE_UNION_LEADERS" IconSize="64" IconsPerRow="5" Filename="EAGLE_UNION_LEADERS_64"/>
 		<Row Name="ATLAS_EAGLE_UNION_LEADERS" IconSize="80" IconsPerRow="5" Filename="EAGLE_UNION_LEADERS_80"/>
 		<Row Name="ATLAS_EAGLE_UNION_LEADERS" IconSize="256" IconsPerRow="5" Filename="EAGLE_UNION_LEADERS_256"/>
+		<!--单位图标-->
+		<Row Name="ATLAS_EAGLE_UNION_UNITS" IconSize="22" IconsPerRow="5" IconsPerColumn="2" Filename="EagleUnits_22"/>
+        <Row Name="ATLAS_EAGLE_UNION_UNITS" IconSize="32" IconsPerRow="5" IconsPerColumn="2" Filename="EagleUnits_32"/>
+        <Row Name="ATLAS_EAGLE_UNION_UNITS" IconSize="38" IconsPerRow="5" IconsPerColumn="2" Filename="EagleUnits_38"/>
+        <Row Name="ATLAS_EAGLE_UNION_UNITS" IconSize="50" IconsPerRow="5" IconsPerColumn="2" Filename="EagleUnits_50"/>
+        <Row Name="ATLAS_EAGLE_UNION_UNITS" IconSize="80" IconsPerRow="5" IconsPerColumn="2" Filename="EagleUnits_80"/>
+        <Row Name="ATLAS_EAGLE_UNION_UNITS" IconSize="256" IconsPerRow="5" IconsPerColumn="2" Filename="EagleUnits_256"/>
 		<!--F2H 女妖-->
 		<Row Name="ATLAS_ICON_UNIT_F2H" IconSize="22" Filename="ICON_UNIT_F2H_22"/>
 		<Row Name="ATLAS_ICON_UNIT_F2H" IconSize="32" Filename="ICON_UNIT_F2H_32"/>
@@ -42,7 +49,7 @@
 		<!--研究点数图标-->
 		<Row Name="ATLAS_EAGLE_FONT_ICON_BASELINE_6" Baseline="6" IconSize="22" IconsPerRow="2" Filename="EagleFontIcons"/>
 		<!--行动画册-->
-		<Row Name="ATLAS_EAGLE_UNION_ACTION" IconSize="38" IconsPerRow="8" IconsPerColumn="4" Filename="EAGLE_ACTION_38"/>
+		<Row Name="ATLAS_EAGLE_UNION_ACTION" IconSize="38" IconsPerRow="8" IconsPerColumn="4" Filename="EagleActions"/>
 	</IconTextureAtlases>
 	<IconDefinitions>
 		<!--白鹰文明-->
