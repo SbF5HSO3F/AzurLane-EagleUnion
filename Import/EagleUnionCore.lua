@@ -84,6 +84,31 @@ function EagleCore:ModifyByPercent(num, percent)
     return self.Round(num * (1 + percent / 100))
 end
 
+--获得玩家游戏进度。返回为百分比，需除以100 (GamePlay, UI)
+function EagleCore:GetPlayerProgress(playerID)
+    local pPlayer = Players[playerID]
+    if pPlayer == nil then return 0 end
+    local playerTech = pPlayer:GetTechs()
+    local techNum, techedNum = 0, 0
+    for row in GameInfo.Technologies() do
+        techNum = techNum + 1
+        if playerTech:HasTech(row.Index) then
+            techedNum = (techedNum or 0) + 1
+        end
+    end
+    local playerCulture = pPlayer:GetCulture()
+    local civicNum, civicedNum = 0, 0
+    for row in GameInfo.Civics() do
+        civicNum = civicNum + 1
+        if playerCulture:HasCivic(row.Index) then
+            civicedNum = (civicedNum or 0) + 1
+        end
+    end
+    local civicProgress = civicNum ~= 0 and civicedNum / civicNum or 0
+    local techProgress = techNum ~= 0 and techedNum / techNum or 0
+    return self.Round(100 * math.max(techProgress, civicProgress))
+end
+
 --获取玩家的区域数量 (GamePlay, UI)
 function EagleCore.GetPlayerDistrictCount(playerID, index)
     local pPlayer, count = Players[playerID], 0
