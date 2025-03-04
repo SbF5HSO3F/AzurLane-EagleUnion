@@ -2,6 +2,9 @@
 -- Author: HSbF6HSO3F
 -- DateCreated: 2025/3/2 9:33:12
 --------------------------------------------------------------
+--||=======================include========================||--
+include('EagleImprovements')
+
 --||======================MetaTable=======================||--
 
 --------------------------------------------------------------
@@ -62,9 +65,9 @@ function EagleResource:newByDef(resourceDef)
                 object.Remove = false
             end
             if not (object.Remove and row.MustRemoveFeature) then
-                local improtDef = GameInfo.Improvements[row.ImprovementType]
-                local improt = { Index = improtDef.Index, Name = improtDef.Name, Icon = improtDef.Icon }
-                table.insert(object.Improvements, improt)
+                local improveDef = GameInfo.Improvements[row.ImprovementType]
+                local improvement = EagleImprovement:new(improveDef)
+                table.insert(object.Improvements, improvement)
             end
         end
     end
@@ -123,14 +126,10 @@ end
 
 --获取资源可用改良设施
 function EagleResource:GetImprovement(plot)
-    -- local hasFeature = plot:GetFeatureType() ~= -1
-    -- for _, improvement in ipairs(self.Improvements) do
-    --     if not (hasFeature and improvement.Remove) then
-    --         return improvement
-    --     end
-    -- end
-    -- return false
-    return self.Improvements[1]
+    for _, improvement in ipairs(self.Improvements) do
+        if improvement:GetPlaceable(plot) then return improvement end
+    end
+    return false
 end
 
 --获取资源可放置条件功能性文本
@@ -201,6 +200,7 @@ function EagleResources:new(resourceReq)
             table.insert(resource.Features, feature)
         end
     end
+    local improvements = EagleImprovements:new()
     --改良是否必须移除地貌
     for row in GameInfo.Improvement_ValidResources() do
         local resource = object.Resources[row.ResourceType]
@@ -208,13 +208,8 @@ function EagleResources:new(resourceReq)
             if row.MustRemoveFeature == false then
                 resource.Remove = false
             end
-            local improtDef = GameInfo.Improvements[row.ImprovementType]
-            local improt = {
-                Index  = improtDef.Index,
-                Name   = improtDef.Name,
-                Icon   = improtDef.Icon,
-                Remove = row.MustRemoveFeature
-            }; table.insert(resource.Improvements, improt)
+            local improvement = improvements:GetImprovement(row.ImprovementType)
+            table.insert(resource.Improvements, improvement)
         end
     end
     return object

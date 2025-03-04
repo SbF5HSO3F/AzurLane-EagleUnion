@@ -98,6 +98,7 @@
           <File>Import/EagleUnionCore.lua</File>
           <File>Import/EagleUnionPoint.lua</File>
           <File>Import/EagleResources.lua</File>
+          <File>Import/EagleImprovements.lua</File>
         </ImportFiles>
         <AddUserInterfaces id="UI">
           <Properties>
@@ -440,6 +441,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="EagleUnion_Icons.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Import\EagleImprovements.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Import\EagleResources.lua">
