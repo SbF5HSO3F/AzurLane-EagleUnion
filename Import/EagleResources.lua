@@ -123,13 +123,14 @@ end
 
 --获取资源可用改良设施
 function EagleResource:GetImprovement(plot)
-    local hasFeature = plot:GetFeatureType() ~= -1
-    for _, improvement in ipairs(self.Improvements) do
-        if not (hasFeature and improvement.Remove) then
-            return improvement
-        end
-    end
-    return false
+    -- local hasFeature = plot:GetFeatureType() ~= -1
+    -- for _, improvement in ipairs(self.Improvements) do
+    --     if not (hasFeature and improvement.Remove) then
+    --         return improvement
+    --     end
+    -- end
+    -- return false
+    return self.Improvements[1]
 end
 
 --获取资源可放置条件功能性文本

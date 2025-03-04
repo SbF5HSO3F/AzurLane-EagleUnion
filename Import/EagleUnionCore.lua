@@ -293,8 +293,9 @@ end
 --||========================Test========================||--
 
 --test function
-function EagleCore:PrintTable(t, indent)
+function EagleCore:PrintTable(t, indent, str)
     indent = indent or 0
+    if str then print('--||==================Print==================||--') end
     for k, v in pairs(t) do
         if type(v) == "table" then
             print(string.rep(" ", indent) .. k .. ": {")
@@ -304,4 +305,6 @@ function EagleCore:PrintTable(t, indent)
             print(string.rep(" ", indent) .. k .. ": " .. tostring(v))
         end
     end
+    if str then print('--||=========================================||--') end
 end
+ 
