@@ -81,7 +81,7 @@ end
 --||====================Based functions===================||--
 
 --获取该单元格可放置的改良
-function EagleImprovement:GetPlaceable(plot)
+function EagleImprovement:GetPlaceable(plot, resourceType)
     if (self.Domain == 'DOMAIN_SEA') ~= plot:IsWater() then
         return false
     end
@@ -103,7 +103,7 @@ function EagleImprovement:GetPlaceable(plot)
     end
     --检查资源
     local hasFeature = featureType ~= -1
-    local resourceType = plot:GetResourceType()
+    resourceType = resourceType or plot:GetResourceType()
     for _, resource in ipairs(self.Resource) do
         if resourceType == resource.Index and not
             (hasFeature and resource.MustRemoveFeature) then

@@ -110,9 +110,17 @@ end
 
 --获取单元格是否可放置该资源
 function EagleResource:GetPlaceable(plot)
+    local improveable = false
+    --检查改良设施
+    for _, improvement in ipairs(self.Improvements) do
+        if improvement:GetPlaceable(plot, self.Index) then
+            improveable = true
+            break
+        end
+    end
+    if not improveable then return false end
     --检查地貌
     local featureType = plot:GetFeatureType()
-    if featureType ~= -1 and self.Remove then return false end
     for _, feature in ipairs(self.Features) do
         if featureType == feature.Index then return true end
     end
