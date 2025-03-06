@@ -5,6 +5,8 @@
 --||=======================include========================||--
 include('EagleUnionCore')
 include('EagleUnionPoint')
+include('EagleResources')
+
 
 --||===================local variables====================||--
 

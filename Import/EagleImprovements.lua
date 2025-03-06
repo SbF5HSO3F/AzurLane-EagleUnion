@@ -82,7 +82,7 @@ end
 
 --获取该单元格可放置的改良
 function EagleImprovement:GetPlaceable(plot)
-    if self.Domain == 'DOMAIN_SEA' and not plot:IsWater() then
+    if (self.Domain == 'DOMAIN_SEA') ~= plot:IsWater() then
         return false
     end
     --检查地形
