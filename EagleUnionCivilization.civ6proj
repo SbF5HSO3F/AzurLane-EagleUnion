@@ -100,6 +100,9 @@
           <File>Import/EagleResources.lua</File>
           <File>Import/EagleImprovements.lua</File>
         </ImportFiles>
+        <ImportFiles id="LuaUpdate">
+          <File>UI/Replace/TechAndCivicSupport.lua</File>
+        </ImportFiles>
         <AddUserInterfaces id="UI">
           <Properties>
             <Context>InGame</Context>
@@ -592,6 +595,9 @@
     <Content Include="UI\Additions\EagleUnionTracker.xml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UI\Replace\TechAndCivicSupport.lua">
+      <SubType>Content</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data" />
@@ -612,6 +618,7 @@
     <Folder Include="Text\zh_Hant_HK" />
     <Folder Include="Text\zh_Hans_CN" />
     <Folder Include="UI\Additions" />
+    <Folder Include="UI\Replace" />
   </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
 </Project>
