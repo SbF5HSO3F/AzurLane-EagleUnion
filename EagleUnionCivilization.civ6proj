@@ -455,6 +455,24 @@
     <Content Include="Import\EagleUnionPoint.lua">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModSupport\GoldenAge\Data\Mode_CustomTraits.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModSupport\GoldenAge\Data\Mode_Megalopolis.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModSupport\GoldenAge\Data\Mode_NationalWonder.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModSupport\GoldenAge\Text\GoldenAgeFit_en_US.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModSupport\GoldenAge\Text\GoldenAgeFit_zh_Hans_CN.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModSupport\GoldenAge\Text\GoldenAgeFit_zh_Hant_HK.xml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Scripts\EagleUnionEssex.lua">
       <SubType>Content</SubType>
     </Content>
@@ -542,6 +560,10 @@
     <Folder Include="Data\AllenMSumner" />
     <Folder Include="Data\NewJersey" />
     <Folder Include="Import" />
+    <Folder Include="ModSupport" />
+    <Folder Include="ModSupport\GoldenAge" />
+    <Folder Include="ModSupport\GoldenAge\Data" />
+    <Folder Include="ModSupport\GoldenAge\Text" />
     <Folder Include="UI" />
     <Folder Include="Scripts" />
     <Folder Include="Text" />
