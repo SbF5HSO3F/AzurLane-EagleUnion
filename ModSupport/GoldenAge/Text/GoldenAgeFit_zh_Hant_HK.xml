@@ -3,5 +3,34 @@
 <!-- Author: HSbF6HSO3F -->
 <!-- DateCreated: 2025/5/26 11:09:04 -->
 <GameData>
+    <LocalizedText>
+		<!--都市圈-->
+		<Replace Tag="LOC_GA_SANTA_CLARA_VALLEY_PRODUCTION_STANDARD" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自每個相鄰聖塔克拉拉谷</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_SANTA_CLARA_VALLEY_PRODUCTION" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自每個相鄰聖塔克拉拉谷（行政部門）</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_SANTA_CLARA_VALLEY_PRODUCTION_MEGA" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_PRODUCTION] 生產力來自每個相鄰聖塔克拉拉谷（城市化）</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_IVY_LEAGUE_SCIENCE_STANDARD" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_SCIENCE] 科技值來自每個相鄰常春藤聯盟</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_IVY_LEAGUE_SCIENCE" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_SCIENCE] 科技值來自每個相鄰常春藤聯盟（行政部門）</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_IVY_LEAGUE_SCIENCE_MEGA" Language="zh_Hant_HK">
+			<Text>+{1_num} [ICON_SCIENCE] 科技值來自每個相鄰常春藤聯盟（城市化）</Text>
+		</Replace>
+        <!--國家奇觀-->
 
+        <!--人文與地域-->
+        <Replace Tag="LOC_GOLDEN_CIVILIZATION_EAGLE_UNION_CUSTOM_FEATURES_NAME" Language="zh_Hant_HK">
+			<Text>{LOC_GOLDEN_CUSTOM_FEATURES_NAME}</Text>
+		</Replace>
+		<Replace Tag="LOC_GOLDEN_CIVILIZATION_EAGLE_UNION_CUSTOM_FEATURES_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>[ICON_Bullet]{LOC_GOLDEN_CIVILIZATION_REGIONAL_TRAIT_NORTH_AMERICA_DESC}[NEWLINE][ICON_Bullet]{LOC_GOLDEN_CIVILIZATION_CULTURAL_FARMING_DESC}</Text>
+		</Replace>
+    </LocalizedText>
 </GameData>

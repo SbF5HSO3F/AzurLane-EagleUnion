@@ -3,5 +3,34 @@
 <!-- Author: HSbF6HSO3F -->
 <!-- DateCreated: 2025/5/26 11:08:53 -->
 <GameData>
+    <LocalizedText>
+		<!--都市圈-->
+		<Replace Tag="LOC_GA_SANTA_CLARA_VALLEY_PRODUCTION_STANDARD" Language="en_US">
+			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent Santa Clara Valley.</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_SANTA_CLARA_VALLEY_PRODUCTION" Language="en_US">
+			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent Santa Clara Valley (Civil Service).</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_SANTA_CLARA_VALLEY_PRODUCTION_MEGA" Language="en_US">
+			<Text>+{1_num} [ICON_PRODUCTION] Production from each adjacent Santa Clara Valley (Urbanization).</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_IVY_LEAGUE_SCIENCE_STANDARD" Language="en_US">
+			<Text>+{1_num} [ICON_SCIENCE] Science from each adjacent Ivy League.</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_IVY_LEAGUE_SCIENCE" Language="en_US">
+			<Text>+{1_num} [ICON_SCIENCE] Science from each adjacent Ivy League (Civil Service).</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_IVY_LEAGUE_SCIENCE_MEGA" Language="en_US">
+			<Text>+{1_num} [ICON_SCIENCE] Science from each adjacent Ivy League (Urbanization).</Text>
+		</Replace>
+        <!--国家奇观-->
 
+        <!--人文与地域-->
+        <Replace Tag="LOC_GOLDEN_CIVILIZATION_EAGLE_UNION_CUSTOM_FEATURES_NAME" Language="en_US">
+			<Text>{LOC_GOLDEN_CUSTOM_FEATURES_NAME}</Text>
+		</Replace>
+		<Replace Tag="LOC_GOLDEN_CIVILIZATION_EAGLE_UNION_CUSTOM_FEATURES_DESCRIPTION" Language="en_US">
+			<Text>[ICON_Bullet]{LOC_GOLDEN_CIVILIZATION_REGIONAL_TRAIT_NORTH_AMERICA_DESC}[NEWLINE][ICON_Bullet]{LOC_GOLDEN_CIVILIZATION_CULTURAL_FARMING_DESC}</Text>
+		</Replace>
+    </LocalizedText>
 </GameData>

@@ -24,6 +24,13 @@
 			<Text>+{1_num} [ICON_SCIENCE] 科技值来自每个相邻常春藤联盟（城市化）</Text>
 		</Replace>
         <!--国家奇观-->
-        
+
+        <!--人文与地域-->
+        <Replace Tag="LOC_GOLDEN_CIVILIZATION_EAGLE_UNION_CUSTOM_FEATURES_NAME" Language="zh_Hans_CN">
+			<Text>{LOC_GOLDEN_CUSTOM_FEATURES_NAME}</Text>
+		</Replace>
+		<Replace Tag="LOC_GOLDEN_CIVILIZATION_EAGLE_UNION_CUSTOM_FEATURES_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>[ICON_Bullet]{LOC_GOLDEN_CIVILIZATION_REGIONAL_TRAIT_NORTH_AMERICA_DESC}[NEWLINE][ICON_Bullet]{LOC_GOLDEN_CIVILIZATION_CULTURAL_FARMING_DESC}</Text>
+		</Replace>
     </LocalizedText>
 </GameData>
