@@ -24,5 +24,6 @@
 			<Text>+{1_num} [ICON_SCIENCE] 科技值来自每个相邻常春藤联盟（城市化）</Text>
 		</Replace>
         <!--国家奇观-->
+        
     </LocalizedText>
 </GameData>

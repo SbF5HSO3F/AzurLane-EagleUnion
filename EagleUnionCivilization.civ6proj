@@ -280,6 +280,9 @@
         <UpdateDatabase id="EagleUnion_Megalopolis" criteria="GoldenAgeMegalopolis">
           <File>ModSupport/GoldenAge/Data/Mode_Megalopolis.sql</File>
         </UpdateDatabase>
+        <UpdateDatabase id="EagleUnion_NationalWonder" criteria="GoldenAgeNationalWonder">
+          <File>ModSupport/GoldenAge/Data/Mode_NationalWonder.sql</File>
+        </UpdateDatabase>
         <UpdateText id="EagleUnionGoldenAgeText">
           <File priority="90">ModSupport/GoldenAge/Text/GoldenAgeFit_zh_Hans_CN.xml</File>
         </UpdateText>
@@ -301,6 +304,14 @@
           <ModInUse>236af578-08bc-4278-ab57-c700ab3e1457</ModInUse>
           <ConfigurationValueMatches>
             <ConfigurationId>GA_MEGALOPOLIS</ConfigurationId>
+            <Group>Game</Group>
+            <Value>1</Value>
+          </ConfigurationValueMatches>
+        </Criteria>
+        <Criteria id="GoldenAgeNationalWonder">
+          <ModInUse>236af578-08bc-4278-ab57-c700ab3e1457</ModInUse>
+          <ConfigurationValueMatches>
+            <ConfigurationId>GA_NATIONALWONDER</ConfigurationId>
             <Group>Game</Group>
             <Value>1</Value>
           </ConfigurationValueMatches>
