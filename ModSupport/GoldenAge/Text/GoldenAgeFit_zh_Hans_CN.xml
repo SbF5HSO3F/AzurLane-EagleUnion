@@ -3,5 +3,26 @@
 <!-- Author: HSbF6HSO3F -->
 <!-- DateCreated: 2025/5/26 11:08:46 -->
 <GameData>
-
+    <LocalizedText>
+		<!--都市圈-->
+		<Replace Tag="LOC_GA_SANTA_CLARA_VALLEY_PRODUCTION_STANDARD" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自每个相邻圣塔克拉拉谷</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_SANTA_CLARA_VALLEY_PRODUCTION" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自每个相邻圣塔克拉拉谷（行政部门）</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_SANTA_CLARA_VALLEY_PRODUCTION_MEGA" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_PRODUCTION] 生产力来自每个相邻圣塔克拉拉谷（城市化）</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_IVY_LEAGUE_SCIENCE_STANDARD" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_SCIENCE] 科技值来自每个相邻常春藤联盟</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_IVY_LEAGUE_SCIENCE" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_SCIENCE] 科技值来自每个相邻常春藤联盟（行政部门）</Text>
+		</Replace>
+        <Replace Tag="LOC_GA_IVY_LEAGUE_SCIENCE_MEGA" Language="zh_Hans_CN">
+			<Text>+{1_num} [ICON_SCIENCE] 科技值来自每个相邻常春藤联盟（城市化）</Text>
+		</Replace>
+        <!--国家奇观-->
+    </LocalizedText>
 </GameData>

@@ -122,8 +122,7 @@
           <File priority="50">Data/EagleUnion_UnitPromotions.xml</File>
           <File priority="40">Data/EagleUnion_Units.xml</File>
         </UpdateDatabase>
-        <UpdateDatabase id="EagleUnion_Mode">
-          <Criteria>EAGLEUNION_MODE</Criteria>
+        <UpdateDatabase id="EagleUnion_SercetSociety" criteria="SercetSociety">
           <File>Data/EagleUnion_SecretSocieties.sql</File>
         </UpdateDatabase>
         <UpdateDatabase id="EagleUnion_XP1">
@@ -278,13 +277,30 @@
           <File priority="90">Text/zh_Hans_CN/EagleUnion_AllenMSumner_CNText.xml</File>
           <File priority="80">Text/zh_Hant_HK/EagleUnion_AllenMSumner_HKText.xml</File>
         </UpdateText>
+        <UpdateDatabase id="EagleUnion_Megalopolis" criteria="GoldenAgeMegalopolis">
+          <File>ModSupport/GoldenAge/Data/Mode_Megalopolis.sql</File>
+        </UpdateDatabase>
+        <UpdateText id="EagleUnionGoldenAgeText">
+          <File priority="90">ModSupport/GoldenAge/Text/GoldenAgeFit_zh_Hans_CN.xml</File>
+        </UpdateText>
       </InGameActions>
     ]]></InGameActionData>
     <ActionCriteriaData><![CDATA[
       <ActionCriteria>
-        <Criteria id="EAGLEUNION_MODE">
+        <Criteria id="SercetSociety">
           <ConfigurationValueMatches>
             <ConfigurationId>GAMEMODE_SECRETSOCIETIES</ConfigurationId>
+            <Group>Game</Group>
+            <Value>1</Value>
+          </ConfigurationValueMatches>
+        </Criteria>
+        <Criteria id="GoldenAge">
+          <ModInUse>236af578-08bc-4278-ab57-c700ab3e1457</ModInUse>
+        </Criteria>
+        <Criteria id="GoldenAgeMegalopolis">
+          <ModInUse>236af578-08bc-4278-ab57-c700ab3e1457</ModInUse>
+          <ConfigurationValueMatches>
+            <ConfigurationId>GA_MEGALOPOLIS</ConfigurationId>
             <Group>Game</Group>
             <Value>1</Value>
           </ConfigurationValueMatches>
