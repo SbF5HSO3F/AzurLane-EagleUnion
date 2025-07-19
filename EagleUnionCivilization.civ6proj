@@ -103,10 +103,12 @@
           <File>EagleUnion_Colors.xml</File>
         </UpdateColors>
         <ImportFiles id="Import">
+          <File>Import/EagleUnionDebug.lua</File>
           <File>Import/EagleUnionCore.lua</File>
           <File>Import/EagleUnionPoint.lua</File>
           <File>Import/EagleResources.lua</File>
           <File>Import/EagleImprovements.lua</File>
+          <File>Import/EagleYields.lua</File>
         </ImportFiles>
         <ImportFiles id="LuaUpdate">
           <File>UI/Replace/TechAndCivicSupport.lua</File>
@@ -504,7 +506,13 @@
     <Content Include="Import\EagleUnionCore.lua">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Import\EagleUnionDebug.lua">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Import\EagleUnionPoint.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Import\EagleYields.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModSupport\GoldenAge\Data\Mode_CustomTraits.sql">

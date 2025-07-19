@@ -30,6 +30,25 @@
 		<Replace Tag="LOC_CIVINFO_ROLE_EAGLE_UNION" Language="zh_Hans_CN">
 			<Text>135位</Text>
 		</Replace>
+		<!--核心代码：产出-->
+		<Replace Tag="LOC_AZURLANE_YIELD_SCIENCE" Language="zh_Hans_CN">
+			<Text>[NEWLINE]获得{1_amount} [ICON_SCIENCE] 科技值</Text>
+		</Replace>
+        <Replace Tag="LOC_AZURLANE_YIELD_CULTURE" Language="zh_Hans_CN">
+			<Text>[NEWLINE]获得{1_amount} [ICON_CULTURE] 文化值</Text>
+		</Replace>
+        <Replace Tag="LOC_AZURLANE_YIELD_GOLD" Language="zh_Hans_CN">
+			<Text>[NEWLINE]获得{1_amount} [ICON_GOLD] 金币</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_FAITH" Language="zh_Hans_CN">
+			<Text>[NEWLINE]获得{1_amount} [ICON_FAITH] 信仰值</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_FOOD" Language="zh_Hans_CN">
+			<Text>[NEWLINE]获得{1_amount} [ICON_FOOD] 食物</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_PRODUCTION" Language="zh_Hans_CN">
+			<Text>[NEWLINE]获得{1_amount} [ICON_PRODUCTION] 生产力</Text>
+		</Replace>
 		<!--文明能力-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_NAME" Language="zh_Hans_CN">
 			<Text>科技与工业的璀璨</Text>
