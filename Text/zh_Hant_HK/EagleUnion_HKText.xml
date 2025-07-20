@@ -32,37 +32,37 @@
 		</Replace>
 		<!--核心代码：产出-->
 		<Replace Tag="LOC_AZURLANE_YIELD_SCIENCE" Language="zh_Hant_HK">
-			<Text>[NEWLINE]獲得{1_amount} [ICON_SCIENCE] 科技值</Text>
+			<Text>[NEWLINE][ICON_Bullet]獲得{1_amount} [ICON_SCIENCE] 科技值</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_SCIENCE_FLOAT" Language="zh_Hant_HK">
 			<Text>[COLOR_FLOAT_SCIENCE]+{1_Num}[ENDCOLOR] [ICON_SCIENCE]</Text>
 		</Replace>
         <Replace Tag="LOC_AZURLANE_YIELD_CULTURE" Language="zh_Hant_HK">
-			<Text>[NEWLINE]獲得{1_amount} [ICON_CULTURE] 文化值</Text>
+			<Text>[NEWLINE][ICON_Bullet]獲得{1_amount} [ICON_CULTURE] 文化值</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_CULTURE_FLOAT" Language="zh_Hant_HK">
 			<Text>[COLOR_FLOAT_CULTURE]+{1_Num}[ENDCOLOR] [ICON_CULTURE]</Text>
 		</Replace>
         <Replace Tag="LOC_AZURLANE_YIELD_GOLD" Language="zh_Hant_HK">
-			<Text>[NEWLINE]獲得{1_amount} [ICON_GOLD] 金幣</Text>
+			<Text>[NEWLINE][ICON_Bullet]獲得{1_amount} [ICON_GOLD] 金幣</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_GOLD_FLOAT" Language="zh_Hant_HK">
 			<Text>[COLOR_FLOAT_GOLD]+{1_Num}[ENDCOLOR] [ICON_GOLD]</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_FAITH" Language="zh_Hant_HK">
-			<Text>[NEWLINE]獲得{1_amount} [ICON_FAITH] 信仰值</Text>
+			<Text>[NEWLINE][ICON_Bullet]獲得{1_amount} [ICON_FAITH] 信仰值</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_FAITH_FLOAT" Language="zh_Hant_HK">
 			<Text>[COLOR_FLOAT_FAITH]+{1_Num}[ENDCOLOR] [ICON_FAITH]</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_FOOD" Language="zh_Hant_HK">
-			<Text>[NEWLINE]獲得{1_amount} [ICON_FOOD] 食物</Text>
+			<Text>[NEWLINE][ICON_Bullet]獲得{1_amount} [ICON_FOOD] 食物</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_FOOD_FLOAT" Language="zh_Hant_HK">
 			<Text>[COLOR_FLOAT_FOOD]+{1_Num}[ENDCOLOR] [ICON_FOOD]</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_PRODUCTION" Language="zh_Hant_HK">
-			<Text>[NEWLINE]獲得{1_amount} [ICON_PRODUCTION] 生產力</Text>
+			<Text>[NEWLINE][ICON_Bullet]獲得{1_amount} [ICON_PRODUCTION] 生產力</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_PRODUCTION_FLOAT" Language="zh_Hant_HK">
 			<Text>[COLOR_FLOAT_PRODUCTION]+{1_Num}[ENDCOLOR] [ICON_PRODUCTION]</Text>

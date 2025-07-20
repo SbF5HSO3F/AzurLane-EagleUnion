@@ -32,37 +32,37 @@
     	</Replace>
 		<!--核心代码：产出-->
 		<Replace Tag="LOC_AZURLANE_YIELD_SCIENCE" Language="en_US">
-			<Text>[NEWLINE]Grant {1_amount} [ICON_SCIENCE] Science</Text>
+			<Text>[NEWLINE][ICON_Bullet]Grant {1_amount} [ICON_SCIENCE] Science</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_SCIENCE_FLOAT" Language="en_US">
 			<Text>[COLOR_FLOAT_SCIENCE]+{1_Num}[ENDCOLOR] [ICON_SCIENCE]</Text>
 		</Replace>
         <Replace Tag="LOC_AZURLANE_YIELD_CULTURE" Language="en_US">
-			<Text>[NEWLINE]Grant {1_amount} [ICON_CULTURE] Culture</Text>
+			<Text>[NEWLINE][ICON_Bullet]Grant {1_amount} [ICON_CULTURE] Culture</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_CULTURE_FLOAT" Language="en_US">
 			<Text>[COLOR_FLOAT_CULTURE]+{1_Num}[ENDCOLOR] [ICON_CULTURE]</Text>
 		</Replace>
         <Replace Tag="LOC_AZURLANE_YIELD_GOLD" Language="en_US">
-			<Text>[NEWLINE]Grant {1_amount} [ICON_GOLD] Gold</Text>
+			<Text>[NEWLINE][ICON_Bullet]Grant {1_amount} [ICON_GOLD] Gold</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_GOLD_FLOAT" Language="en_US">
 			<Text>[COLOR_FLOAT_GOLD]+{1_Num}[ENDCOLOR] [ICON_GOLD]</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_FAITH" Language="en_US">
-			<Text>[NEWLINE]Grant {1_amount} [ICON_FAITH] Faith</Text>
+			<Text>[NEWLINE][ICON_Bullet]Grant {1_amount} [ICON_FAITH] Faith</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_FAITH_FLOAT" Language="en_US">
 			<Text>[COLOR_FLOAT_FAITH]+{1_Num}[ENDCOLOR] [ICON_FAITH]</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_FOOD" Language="en_US">
-			<Text>[NEWLINE]Grant {1_amount} [ICON_FOOD] Food</Text>
+			<Text>[NEWLINE][ICON_Bullet]Grant {1_amount} [ICON_FOOD] Food</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_FOOD_FLOAT" Language="en_US">
 			<Text>[COLOR_FLOAT_FOOD]+{1_Num}[ENDCOLOR] [ICON_FOOD]</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_PRODUCTION" Language="en_US">
-			<Text>[NEWLINE]Grant {1_amount} [ICON_PRODUCTION] Production</Text>
+			<Text>[NEWLINE][ICON_Bullet]Grant {1_amount} [ICON_PRODUCTION] Production</Text>
 		</Replace>
 		<Replace Tag="LOC_AZURLANE_YIELD_PRODUCTION_FLOAT" Language="en_US">
 			<Text>[COLOR_FLOAT_PRODUCTION]+{1_Num}[ENDCOLOR] [ICON_PRODUCTION]</Text>
