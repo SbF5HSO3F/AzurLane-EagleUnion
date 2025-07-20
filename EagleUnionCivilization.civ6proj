@@ -290,6 +290,9 @@
           <File priority="90">Text/zh_Hans_CN/EagleUnion_AllenMSumner_CNText.xml</File>
           <File priority="80">Text/zh_Hant_HK/EagleUnion_AllenMSumner_HKText.xml</File>
         </UpdateText>
+        <ImportFiles id="DLLImport" criteria="AzurLaneDLLCore">
+          <File>ModSupport/AzurLaneDLLCore/Import/EagleYields_AzurDLL.lua</File>
+        </ImportFiles>
         <UpdateDatabase id="EagleUnion_Megalopolis" criteria="GoldenAgeMegalopolis">
           <File>ModSupport/GoldenAge/Data/Mode_Megalopolis.sql</File>
         </UpdateDatabase>
@@ -314,6 +317,10 @@
             <Group>Game</Group>
             <Value>1</Value>
           </ConfigurationValueMatches>
+        </Criteria>
+        <Criteria id="AzurLaneDLLCore">
+          <RuleSetInUse>RULESET_EXPANSION_2</RuleSetInUse>
+          <ModInUse>3dd83d47-17c2-409e-8681-659a5a81923f</ModInUse>
         </Criteria>
         <Criteria id="GoldenAge" any="1">
           <ModInUse>236af578-08bc-4278-ab57-c700ab3e1457</ModInUse>
@@ -515,6 +522,9 @@
     <Content Include="Import\EagleYields.lua">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModSupport\AzurLaneDLLCore\Import\EagleYields_AzurDLL.lua">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModSupport\GoldenAge\Data\Mode_CustomTraits.sql">
       <SubType>Content</SubType>
     </Content>
@@ -627,9 +637,11 @@
     <Folder Include="Data\NewJersey" />
     <Folder Include="Import" />
     <Folder Include="ModSupport" />
+    <Folder Include="ModSupport\AzurLaneDLLCore\Import" />
     <Folder Include="ModSupport\GoldenAge" />
     <Folder Include="ModSupport\GoldenAge\Data" />
     <Folder Include="ModSupport\GoldenAge\Text" />
+    <Folder Include="ModSupport\AzurLaneDLLCore" />
     <Folder Include="UI" />
     <Folder Include="Scripts" />
     <Folder Include="Text" />
