@@ -28,8 +28,67 @@
       		<Text>Number of Characters installed</Text>
     	</Replace>
     	<Replace Tag="LOC_CIVINFO_ROLE_EAGLE_UNION" Language="en_US">
-      		<Text>135</Text>
+      		<Text>139</Text>
     	</Replace>
+		<!--核心代码：产出-->
+		<Replace Tag="LOC_AZURLANE_YIELD_SCIENCE" Language="en_US">
+			<Text>[NEWLINE]Grant {1_amount} [ICON_SCIENCE] Science</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_SCIENCE_FLOAT" Language="en_US">
+			<Text>[COLOR_FLOAT_SCIENCE]+{1_Num}[ENDCOLOR] [ICON_SCIENCE]</Text>
+		</Replace>
+        <Replace Tag="LOC_AZURLANE_YIELD_CULTURE" Language="en_US">
+			<Text>[NEWLINE]Grant {1_amount} [ICON_CULTURE] Culture</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_CULTURE_FLOAT" Language="en_US">
+			<Text>[COLOR_FLOAT_CULTURE]+{1_Num}[ENDCOLOR] [ICON_CULTURE]</Text>
+		</Replace>
+        <Replace Tag="LOC_AZURLANE_YIELD_GOLD" Language="en_US">
+			<Text>[NEWLINE]Grant {1_amount} [ICON_GOLD] Gold</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_GOLD_FLOAT" Language="en_US">
+			<Text>[COLOR_FLOAT_GOLD]+{1_Num}[ENDCOLOR] [ICON_GOLD]</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_FAITH" Language="en_US">
+			<Text>[NEWLINE]Grant {1_amount} [ICON_FAITH] Faith</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_FAITH_FLOAT" Language="en_US">
+			<Text>[COLOR_FLOAT_FAITH]+{1_Num}[ENDCOLOR] [ICON_FAITH]</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_FOOD" Language="en_US">
+			<Text>[NEWLINE]Grant {1_amount} [ICON_FOOD] Food</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_FOOD_FLOAT" Language="en_US">
+			<Text>[COLOR_FLOAT_FOOD]+{1_Num}[ENDCOLOR] [ICON_FOOD]</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_PRODUCTION" Language="en_US">
+			<Text>[NEWLINE]Grant {1_amount} [ICON_PRODUCTION] Production</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_PRODUCTION_FLOAT" Language="en_US">
+			<Text>[COLOR_FLOAT_PRODUCTION]+{1_Num}[ENDCOLOR] [ICON_PRODUCTION]</Text>
+		</Replace>
+		<!--核心代码：资源-->
+		<Replace Tag="LOC_AZURLANE_RESOURCE_CHANGE" Language="en_US">
+			<Text>Yield change:</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_RESOURCE_YIELD_SCIENCE" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+{1_amount} [ICON_SCIENCE] Science</Text>
+		</Replace>
+        <Replace Tag="LOC_AZURLANE_RESOURCE_YIELD_CULTURE" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+{1_amount} [ICON_CULTURE] Culture</Text>
+		</Replace>
+        <Replace Tag="LOC_AZURLANE_RESOURCE_YIELD_GOLD" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+{1_amount} [ICON_GOLD] Gold</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_RESOURCE_YIELD_FAITH" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+{1_amount} [ICON_FAITH] Faith</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_RESOURCE_YIELD_FOOD" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+{1_amount} [ICON_FOOD] Food</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_RESOURCE_YIELD_PRODUCTION" Language="en_US">
+			<Text>[NEWLINE][ICON_Bullet]+{1_amount} [ICON_PRODUCTION] Production</Text>
+		</Replace>
 		<!--文明能力-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_NAME" Language="en_US">
 			<Text>The Brilliance of Technology and Industry</Text>

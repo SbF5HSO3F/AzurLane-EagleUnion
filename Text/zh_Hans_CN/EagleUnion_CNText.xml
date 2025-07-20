@@ -28,7 +28,7 @@
 			<Text>实装角色数</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVINFO_ROLE_EAGLE_UNION" Language="zh_Hans_CN">
-			<Text>135位</Text>
+			<Text>139位</Text>
 		</Replace>
 		<!--核心代码：产出-->
 		<Replace Tag="LOC_AZURLANE_YIELD_SCIENCE" Language="zh_Hans_CN">

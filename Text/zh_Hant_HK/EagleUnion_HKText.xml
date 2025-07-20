@@ -28,7 +28,66 @@
 			<Text>實裝角色數</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVINFO_ROLE_EAGLE_UNION" Language="zh_Hant_HK">
-			<Text>135位</Text>
+			<Text>139位</Text>
+		</Replace>
+		<!--核心代码：产出-->
+		<Replace Tag="LOC_AZURLANE_YIELD_SCIENCE" Language="zh_Hant_HK">
+			<Text>[NEWLINE]獲得{1_amount} [ICON_SCIENCE] 科技值</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_SCIENCE_FLOAT" Language="zh_Hant_HK">
+			<Text>[COLOR_FLOAT_SCIENCE]+{1_Num}[ENDCOLOR] [ICON_SCIENCE]</Text>
+		</Replace>
+        <Replace Tag="LOC_AZURLANE_YIELD_CULTURE" Language="zh_Hant_HK">
+			<Text>[NEWLINE]獲得{1_amount} [ICON_CULTURE] 文化值</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_CULTURE_FLOAT" Language="zh_Hant_HK">
+			<Text>[COLOR_FLOAT_CULTURE]+{1_Num}[ENDCOLOR] [ICON_CULTURE]</Text>
+		</Replace>
+        <Replace Tag="LOC_AZURLANE_YIELD_GOLD" Language="zh_Hant_HK">
+			<Text>[NEWLINE]獲得{1_amount} [ICON_GOLD] 金幣</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_GOLD_FLOAT" Language="zh_Hant_HK">
+			<Text>[COLOR_FLOAT_GOLD]+{1_Num}[ENDCOLOR] [ICON_GOLD]</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_FAITH" Language="zh_Hant_HK">
+			<Text>[NEWLINE]獲得{1_amount} [ICON_FAITH] 信仰值</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_FAITH_FLOAT" Language="zh_Hant_HK">
+			<Text>[COLOR_FLOAT_FAITH]+{1_Num}[ENDCOLOR] [ICON_FAITH]</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_FOOD" Language="zh_Hant_HK">
+			<Text>[NEWLINE]獲得{1_amount} [ICON_FOOD] 食物</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_FOOD_FLOAT" Language="zh_Hant_HK">
+			<Text>[COLOR_FLOAT_FOOD]+{1_Num}[ENDCOLOR] [ICON_FOOD]</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_PRODUCTION" Language="zh_Hant_HK">
+			<Text>[NEWLINE]獲得{1_amount} [ICON_PRODUCTION] 生產力</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_YIELD_PRODUCTION_FLOAT" Language="zh_Hant_HK">
+			<Text>[COLOR_FLOAT_PRODUCTION]+{1_Num}[ENDCOLOR] [ICON_PRODUCTION]</Text>
+		</Replace>
+		<!--核心代码：资源-->
+		<Replace Tag="LOC_AZURLANE_RESOURCE_CHANGE" Language="zh_Hant_HK">
+			<Text>產出增加：</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_RESOURCE_YIELD_SCIENCE" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]+{1_amount} [ICON_SCIENCE] 科技值</Text>
+		</Replace>
+        <Replace Tag="LOC_AZURLANE_RESOURCE_YIELD_CULTURE" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]+{1_amount} [ICON_CULTURE] 文化值</Text>
+		</Replace>
+        <Replace Tag="LOC_AZURLANE_RESOURCE_YIELD_GOLD" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]+{1_amount} [ICON_GOLD] 金幣</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_RESOURCE_YIELD_FAITH" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]+{1_amount} [ICON_FAITH] 信仰值</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_RESOURCE_YIELD_FOOD" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]+{1_amount} [ICON_FOOD] 食物</Text>
+		</Replace>
+		<Replace Tag="LOC_AZURLANE_RESOURCE_YIELD_PRODUCTION" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]+{1_amount} [ICON_PRODUCTION] 生產力</Text>
 		</Replace>
 		<!--文明能力-->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_THE_BRILLIANCE_OF_TECHNOLOGY_AND_INDUSTRY_NAME" Language="zh_Hant_HK">
