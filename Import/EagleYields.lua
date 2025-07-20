@@ -11,62 +11,128 @@ EagleYields = {
     -- 默认
     ['DEFAULT'] = {
         Tooltip = 'LOC_AZURLANE_YIELD_GOLD',
-        GrantYield = function(playerId, amount, x, y)
+        Floater = 'LOC_AZURLANE_YIELD_GOLD_FLOAT',
+        GrantYieldAtXY = function(self, playerId, amount, x, y)
             local player = Players[playerId]
             if player == nil then return end
             -- 获得产出
             local treasury = player:GetTreasury()
             treasury:ChangeGoldBalance(amount)
+            -- 世界文本
+            local float = Locale.Lookup(self.Floater, amount)
+            local messageData = {
+                MessageType = 0,
+                MessageText = float,
+                PlotX       = x,
+                PlotY       = y,
+                Visibility  = RevealedState.VISIBLE,
+            }; Game.AddWorldViewText(messageData)
+        end,
+        GetTooltip = function(self, amount)
+            return Locale.Lookup(self.Tooltip, amount)
         end
     },
     -- 科技值
     ['YIELD_SCIENCE'] = {
         Tooltip = 'LOC_AZURLANE_YIELD_SCIENCE',
-        GrantYield = function(playerId, amount, x, y)
+        Floater = 'LOC_AZURLANE_YIELD_SCIENCE_FLOAT',
+        GrantYieldAtXY = function(self, playerId, amount, x, y)
             local player = Players[playerId]
             if player == nil then return end
             -- 获得产出
             local tech = player:GetTechs()
             tech:ChangeCurrentResearchProgress(amount)
+            -- 世界文本
+            local float = Locale.Lookup(self.Floater, amount)
+            local messageData = {
+                MessageType = 0,
+                MessageText = float,
+                PlotX       = x,
+                PlotY       = y,
+                Visibility  = RevealedState.VISIBLE,
+            }; Game.AddWorldViewText(messageData)
+        end,
+        GetTooltip = function(self, amount)
+            return Locale.Lookup(self.Tooltip, amount)
         end
     },
     -- 文化值
     ['YIELD_CULTURE'] = {
         Tooltip = 'LOC_AZURLANE_YIELD_CULTURE',
-        GrantYield = function(playerId, amount, x, y)
+        Floater = 'LOC_AZURLANE_YIELD_CULTURE_FLOAT',
+        GrantYieldAtXY = function(self, playerId, amount, x, y)
             local player = Players[playerId]
             if player == nil then return end
             -- 获得产出
             local culture = player:GetCulture()
             culture:ChangeCurrentCulturalProgress(amount)
+            -- 世界文本
+            local float = Locale.Lookup(self.Floater, amount)
+            local messageData = {
+                MessageType = 0,
+                MessageText = float,
+                PlotX       = x,
+                PlotY       = y,
+                Visibility  = RevealedState.VISIBLE,
+            }; Game.AddWorldViewText(messageData)
+        end,
+        GetTooltip = function(self, amount)
+            return Locale.Lookup(self.Tooltip, amount)
         end
     },
     -- 金币
     ['YIELD_GOLD'] = {
         Tooltip = 'LOC_AZURLANE_YIELD_GOLD',
-        GrantYield = function(playerId, amount, x, y)
+        Floater = 'LOC_AZURLANE_YIELD_GOLD_FLOAT',
+        GrantYieldAtXY = function(self, playerId, amount, x, y)
             local player = Players[playerId]
             if player == nil then return end
             -- 获得产出
             local treasury = player:GetTreasury()
             treasury:ChangeGoldBalance(amount)
+            -- 世界文本
+            local float = Locale.Lookup(self.Floater, amount)
+            local messageData = {
+                MessageType = 0,
+                MessageText = float,
+                PlotX       = x,
+                PlotY       = y,
+                Visibility  = RevealedState.VISIBLE,
+            }; Game.AddWorldViewText(messageData)
+        end,
+        GetTooltip = function(self, amount)
+            return Locale.Lookup(self.Tooltip, amount)
         end
     },
     -- 信仰值
     ['YIELD_FAITH'] = {
         Tooltip = 'LOC_AZURLANE_YIELD_FAITH',
-        GrantYield = function(playerId, amount, x, y)
+        Floater = 'LOC_AZURLANE_YIELD_FAITH_FLOAT',
+        GrantYieldAtXY = function(self, playerId, amount, x, y)
             local player = Players[playerId]
             if player == nil then return end
             -- 获得产出
             local religion = player:GetReligion()
             religion:ChangeFaithBalance(amount)
+            -- 世界文本
+            local float = Locale.Lookup(self.Floater, amount)
+            local messageData = {
+                MessageType = 0,
+                MessageText = float,
+                PlotX       = x,
+                PlotY       = y,
+                Visibility  = RevealedState.VISIBLE,
+            }; Game.AddWorldViewText(messageData)
+        end,
+        GetTooltip = function(self, amount)
+            return Locale.Lookup(self.Tooltip, amount)
         end
     },
     -- 生产力
     ['YIELD_PRODUCTION'] = {
         Tooltip = 'LOC_AZURLANE_YIELD_PRODUCTION',
-        GrantYield = function(playerId, amount, x, y)
+        Floater = 'LOC_AZURLANE_YIELD_PRODUCTION_FLOAT',
+        GrantYieldAtXY = function(self, playerId, amount, x, y)
             local player = Players[playerId]
             if player == nil then return end
             -- 获得产出
@@ -78,6 +144,18 @@ EagleYields = {
             end
             if city == nil then return end
             city:GetBuildQueue():AddProgress(amount)
+            -- 世界文本
+            local float = Locale.Lookup(self.Floater, amount)
+            local messageData = {
+                MessageType = 0,
+                MessageText = float,
+                PlotX       = x,
+                PlotY       = y,
+                Visibility  = RevealedState.VISIBLE,
+            }; Game.AddWorldViewText(messageData)
+        end,
+        GetTooltip = function(self, amount)
+            return Locale.Lookup(self.Tooltip, amount)
         end
     }
 }
@@ -93,8 +171,8 @@ function EagleYields:GetYield(yieldType)
 end
 
 -- 玩家获得特定产出
-function EagleYields:GrantYield(playerId, yieldType, amount, x, y)
-    self:GetYield(yieldType).GrantYield(playerId, amount, x, y)
+function EagleYields:GrantYieldAtXY(playerId, yieldType, amount, x, y)
+    self:GetYield(yieldType):GrantYieldAtXY(playerId, amount, x, y)
 end
 
 --||=======================include========================||--

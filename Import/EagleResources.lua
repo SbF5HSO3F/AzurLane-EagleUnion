@@ -182,22 +182,18 @@ end
 function EagleResource:GrantHarvestYields(playerId, x, y)
     for key, val in pairs(self.Yields) do
         local amount = self:GetHarvestYields(playerId, val)
-        EagleYields:GrantYield(playerId, key, amount, x, y)
+        EagleYields:GrantYieldAtXY(playerId, key, amount, x, y)
     end
 end
 
 -- 获得资源产出tooltip
 function EagleResource:GetHarvestYieldsTooltip(playerId)
-    local tooltip, tipTable = '', {}
+    local tooltip = ''
     for key, val in pairs(self.Yields) do
         -- 获取产出tooltip
-        local tip = EagleYields:GetYield(key).Tooltip
-        local num = tipTable[tip] or 0
-        num = num + self:GetHarvestYields(playerId, val)
-        tipTable[tip] = num
-    end
-    for tip, num in pairs(tipTable) do
-        tooltip = tooltip .. Locale.Lookup(tip, num)
+        local yield = EagleYields:GetYield(key)
+        local num = self:GetHarvestYields(playerId, val)
+        tooltip = tooltip .. yield:GetTooltip(num)
     end
     return tooltip
 end
