@@ -171,14 +171,24 @@ function EagleResource:GetConditionsTooltip()
     return tooltip
 end
 
+-- 获取资源改变tooltip
+function EagleResource:GetChangeYieldsTooltip()
+    local tooltip = Locale.Lookup('LOC_AZURLANE_RESOURCE_CHANGE')
+    for key, val in pairs(self.Yields) do
+        local tip = 'LOC_AZURLANE_RESOURCE_' .. key
+        tooltip = tooltip .. Locale.Lookup(tip, val)
+    end
+    return tooltip
+end
+
 -- 获取收获资源的产出
 function EagleResource:GetHarvestYields(playerId, value)
     local percent = EagleCore:GetPlayerProgress(playerId)
-    local amount = 40 * (1 + 9 * percent / 100) * value
+    local amount = 20 * (1 + 9 * percent / 100) * value
     return math.ceil(EagleCore:ModifyBySpeed(amount))
 end
 
--- 获得资源产出
+-- 获得收获资源产出
 function EagleResource:GrantHarvestYields(playerId, x, y)
     for key, val in pairs(self.Yields) do
         local amount = self:GetHarvestYields(playerId, val)
@@ -186,7 +196,7 @@ function EagleResource:GrantHarvestYields(playerId, x, y)
     end
 end
 
--- 获得资源产出tooltip
+-- 获得收获资源产出tooltip
 function EagleResource:GetHarvestYieldsTooltip(playerId)
     local tooltip = ''
     for key, val in pairs(self.Yields) do
@@ -288,12 +298,7 @@ function EagleResources:GetPlaceableResources(plot)
     --地形
     for _, resource in pairs(self.Resources) do
         if resource:GetPlaceable(plot) then
-            local def = {}
-            def.Index = resource.Index
-            def.Type  = resource.Type
-            def.Name  = resource.Name
-            def.Icon  = resource.Icon
-            table.insert(list, def)
+            table.insert(list, resource)
         end
     end
     return list
