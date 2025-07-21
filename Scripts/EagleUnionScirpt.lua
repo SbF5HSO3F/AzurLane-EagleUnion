@@ -62,7 +62,6 @@ function EagleUnionTurnStart(playerID, isFirst)
     if isFirst and EagleCore.CheckCivMatched(playerID, 'CIVILIZATION_EAGLE_UNION') then
         --get the per turn point
         local perpoint = EaglePointManager:GetPerTurnPoint(playerID)
-        EaglePointManager:GetPerTurnPointTooltip(playerID)
         --add the per turn point to the player
         EaglePointManager:ChangeEaglePoint(playerID, perpoint)
     end
@@ -100,8 +99,8 @@ end
 
 --Initialize
 function Initialize()
-    Events.PlayerTurnActivated.Add(EagleUnionTurnStart)
     -------------------Events-------------------
+    Events.PlayerTurnActivated.Add(EagleUnionTurnStart)
     Events.UnitGreatPersonActivated.Add(EagleUnionActiveGreatPerson)
     -----------------GameEvents-----------------
     GameEvents.EagleUnionPointUnlock.Add(EagleUnionPointUnlockAll)
