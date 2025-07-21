@@ -96,7 +96,7 @@ function EagleCore:GetPlayerProgress(playerID)
     end
     local civicProgress = civicNum ~= 0 and civicedNum / civicNum or 0
     local techProgress = techNum ~= 0 and techedNum / techNum or 0
-    return AzurMath.Round(100 * math.max(techProgress, civicProgress))
+    return EagleMath.Round(100 * math.max(techProgress, civicProgress))
 end
 
 -- 获取两个对象之间的距离 (GamePlay, UI)
@@ -169,7 +169,7 @@ function EagleCore:GetRandomTechBoosts(playerID, iSource, num)
                 end
             end
             if #techlist > 0 then
-                local iTech = techlist[AzurMath.GetRandNum(#techlist)]
+                local iTech = techlist[EagleMath.GetRandNum(#techlist)]
                 playerTech:TriggerBoost(iTech, iSource)
                 limit = limit - 1
             else
@@ -209,7 +209,7 @@ function EagleCore:GetRandomCivicBoosts(playerID, iSource, num)
                 end
             end
             if #civiclist > 0 then
-                local iCivic = civiclist[AzurMath.GetRandNum(#civiclist)]
+                local iCivic = civiclist[EagleMath.GetRandNum(#civiclist)]
                 playerCulture:TriggerBoost(iCivic, iSource)
                 limit = limit - 1
             else
