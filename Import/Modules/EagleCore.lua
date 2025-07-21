@@ -3,92 +3,78 @@
 -- DateCreated: 2024/1/2 19:17:02
 --------------------------------------------------------------
 --||=======================include========================||--
-include('EagleUnionDebug')
+include('EagleDebug')
+include('EagleMath')
 
 --||======================MetaTable=======================||--
-
 EagleCore = {}
 
---||====================GamePlay, UI======================||--
+--||===================Check Functions====================||--
 
---判断领袖，玩家不为指定领袖类型则返回false (GamePlay, UI)
+-- 判断领袖，玩家不为指定领袖类型则返回false (GamePlay, UI)
+---- playerID          玩家ID
+---- leaderType        领袖类型
 function EagleCore.CheckLeaderMatched(playerID, leaderType)
     local pPlayerConfig = playerID and PlayerConfigurations[playerID]
     return pPlayerConfig and pPlayerConfig:GetLeaderTypeName() == leaderType
 end
 
---判断文明，玩家文明不为指定文明类型则返回false (GamePlay, UI)
+-- 判断文明，玩家文明不为指定文明类型则返回false (GamePlay, UI)
+---- playerID          玩家ID
+---- civilizationType  文明类型
 function EagleCore.CheckCivMatched(playerID, civilizationType)
     local pPlayerConfig = playerID and PlayerConfigurations[playerID]
     return pPlayerConfig and pPlayerConfig:GetCivilizationTypeName() == civilizationType
 end
 
---数字四舍五入处理 (GamePlay, UI)
-function EagleCore.Round(num)
-    return math.floor((num + 0.05) * 10) / 10
+--||====================Is Functions======================||--
+
+-- 检查table中是否有指定元素 (GamePlay, UI)
+---- table             要检查的table
+---- element           要查找的元素
+function EagleCore.IsInclude(table, element)
+    for _, value in pairs(table) do
+        if value == element then return true end
+    end
+    return false
 end
 
---数字不小于其1位小数处理 (GamePlay, UI)
-function EagleCore.Ceil(num)
-    return math.ceil(num * 10) / 10
+-- 检查单位是否是军事单位 (GamePlay, UI)
+---- unit              单位对象
+function EagleCore.IsMilitary(unit)
+    if unit == nil then return false end
+    local unitInfo = GameInfo.Units[unit:GetType()]
+    if unitInfo == nil then return false end
+    local unitFormation = unitInfo.FormationClass
+    return unitFormation == 'FORMATION_CLASS_LAND_COMBAT'
+        or unitFormation == 'FORMATION_CLASS_NAVAL'
+        or unitFormation == 'FORMATION_CLASS_AIR'
 end
 
---数字不大于其1位小数处理 (GamePlay, UI)
-function EagleCore.Floor(num)
-    return math.floor(num * 10) / 10
-end
+--||====================Has Functions=====================||--
 
---将输入的数字按照当前游戏速度进行修正 (GamePlay, UI)
-function EagleCore:ModifyBySpeed(num)
-    local gameSpeed = GameInfo.GameSpeeds[GameConfiguration.GetGameSpeedType()]
-    if gameSpeed then num = self.Round(num * gameSpeed.CostMultiplier / 100) end
-    return num
-end
-
---检查科技或者市政是否拥有提升 (GamePlay, UI)
+-- 检查科技或者市政是否拥有提升 (GamePlay, UI)
+---- techOrCivic       科技或者市政类型
 function EagleCore.HasBoost(techOrCivic)
     for boost in GameInfo.Boosts() do
-        if techOrCivic == boost.TechnologyType or techOrCivic == boost.CivicType then
+        if techOrCivic == boost.TechnologyType
+            or techOrCivic == boost.CivicType then
             return true
         end
     end
     return false
 end
 
---判断单元格是否可以放置指定单位 (GamePlay, UI)
-function EagleCore.CanHaveUnit(plot, unitdef)
-    if plot == nil then return false end
-    local canHave = true
-    for _, unit in ipairs(Units.GetUnitsInPlot(plot)) do
-        if unit then
-            local unitInfo = GameInfo.Units[unit:GetType()]
-            if unitInfo then
-                if unitInfo.IgnoreMoves == false then
-                    if unitInfo.Domain == unitdef.Domain and unitInfo.FormationClass == unitdef.FormationClass then
-                        canHave = false
-                    end
-                end
-            end
-        end
-    end
-    return canHave
+-- 检查单位是否拥有战斗力 (GamePlay, UI)
+---- unit              单位对象
+function EagleCore.HasStrength(unit)
+    return unit and (unit:GetCombat() > 0 or unit:GetRangedCombat() > 0 or unit:GetBombardCombat() > 0)
 end
 
---规范每回合价值显示 (GamePlay, UI)
-function EagleCore.FormatValue(value)
-    if value == 0 then
-        return Locale.ToNumber(value)
-    else
-        return Locale.Lookup("{1: number +#,###.#;-#,###.#}", value)
-    end
-end
+--||====================Get Functions=====================||--
 
---数字百分比修正 (GamePlay, UI)
-function EagleCore:ModifyByPercent(num, percent)
-    return self.Round(num * (1 + percent / 100))
-end
-
---获得玩家游戏进度。返回为百分比，需除以100 (GamePlay, UI)
+-- 获得玩家游戏进度。返回为百分比，需除以100 (GamePlay, UI)
+---- playerID          玩家ID
 function EagleCore:GetPlayerProgress(playerID)
     local pPlayer = Players[playerID]
     if pPlayer == nil then return 0 end
@@ -110,10 +96,39 @@ function EagleCore:GetPlayerProgress(playerID)
     end
     local civicProgress = civicNum ~= 0 and civicedNum / civicNum or 0
     local techProgress = techNum ~= 0 and techedNum / techNum or 0
-    return self.Round(100 * math.max(techProgress, civicProgress))
+    return AzurMath.Round(100 * math.max(techProgress, civicProgress))
 end
 
---获取玩家的区域数量 (GamePlay, UI)
+-- 获取两个对象之间的距离 (GamePlay, UI)
+---- object_1          对象1
+---- object_2          对象2
+function EagleCore.GetDistance(object_1, object_2)
+    local result = 0
+    if object_1 and object_2 then
+        result = Map.GetPlotDistance(
+            object_1:GetX(), object_1:GetY(),
+            object_2:GetX(), object_2:GetY()
+        )
+    end; return result
+end
+
+-- 获取玩家宗教，已创建宗教则返回创建的宗教，没有则返回玩家的主流宗教，否则返回-1 (GamePlay, UI)
+---- playerID          玩家ID
+function EagleCore.GetPlayerReligion(playerID)
+    local pPlayer = Players[playerID]
+    if pPlayer == nil then return -1 end
+    local pPlayerReligion = Players[playerID]:GetReligion()
+    if pPlayerReligion == nil then return -1 end
+    if pPlayerReligion:GetReligionTypeCreated() ~= -1 then
+        return pPlayerReligion:GetReligionTypeCreated()
+    else
+        return pPlayerReligion:GetReligionInMajorityOfCities()
+    end
+end
+
+-- 获取玩家的区域数量 (GamePlay, UI)
+---- playerID          玩家ID
+---- index             区域索引
 function EagleCore.GetPlayerDistrictCount(playerID, index)
     local pPlayer, count = Players[playerID], 0
     if not pPlayer then return count end
@@ -126,40 +141,88 @@ function EagleCore.GetPlayerDistrictCount(playerID, index)
     return count
 end
 
---检查单位是否是军事单位 (GamePlay, UI)
-function EagleCore.IsMilitary(unit)
-    if unit == nil then return false end
-    local unitInfo = GameInfo.Units[unit:GetType()]
-    if unitInfo == nil then return false end
-    local unitFormation = unitInfo.FormationClass
-    return unitFormation == 'FORMATION_CLASS_LAND_COMBAT'
-        or unitFormation == 'FORMATION_CLASS_NAVAL'
-        or unitFormation == 'FORMATION_CLASS_AIR'
-end
-
---||=====================GamePlay=======================||--
-
---随机数生成器，范围为[1,num+1] (GamePlay)
-function EagleCore.tableRandom(num)
-    return Game.GetRandNum and (Game.GetRandNum(num) + 1) or 1
-end
-
---对单位造成伤害，超出生命值则死亡并返回true。 (GamePlay)
-function EagleCore.DamageUnit(unit, damage)
-    local maxDamage = unit:GetMaxDamage()
-    if (unit:GetDamage() + damage) >= maxDamage then
-        unit:SetDamage(maxDamage)
-        UnitManager.Kill(unit, false)
-        return true
-    else
-        unit:ChangeDamage(damage)
-        return false
+-- 玩家获得随机数量的尤里卡 (GamePlay)
+---- playerID          玩家ID
+---- iSource           尤里卡来源
+---- num               数量
+function EagleCore:GetRandomTechBoosts(playerID, iSource, num)
+    local pPlayer = Players[playerID]
+    local EraIndex = 1
+    local playerTech = pPlayer:GetTechs()
+    local limit = num or 1
+    while limit > 0 do
+        local EraType = nil
+        for era in GameInfo.Eras() do
+            if era.ChronologyIndex == EraIndex then
+                EraType = era.EraType
+                break
+            end
+        end
+        if EraType then
+            local techlist = {}
+            for row in GameInfo.Technologies() do
+                if not (playerTech:HasTech(row.Index) or
+                        playerTech:HasBoostBeenTriggered(row.Index) or
+                        not self.HasBoost(row.TechnologyType))
+                    and row.EraType == EraType then
+                    table.insert(techlist, row.Index)
+                end
+            end
+            if #techlist > 0 then
+                local iTech = techlist[AzurMath.GetRandNum(#techlist)]
+                playerTech:TriggerBoost(iTech, iSource)
+                limit = limit - 1
+            else
+                EraIndex = (EraIndex or 0) + 1
+            end
+        else
+            break
+        end
     end
 end
 
---||=========================UI=========================||--
+--玩家获得随机数量的鼓舞 (GamePlay)
+---- playerID          玩家ID
+---- iSource           尤里卡来源
+---- num               数量
+function EagleCore:GetRandomCivicBoosts(playerID, iSource, num)
+    local pPlayer = Players[playerID]
+    local EraIndex = 1
+    local playerCulture = pPlayer:GetCulture()
+    local limit = num or 1
+    while limit > 0 do
+        local EraType = nil
+        for era in GameInfo.Eras() do
+            if era.ChronologyIndex == EraIndex then
+                EraType = era.EraType
+                break
+            end
+        end
+        if EraType then
+            local civiclist = {}
+            for row in GameInfo.Civics() do
+                if not (playerCulture:HasCivic(row.Index) or
+                        playerCulture:HasBoostBeenTriggered(row.Index) or
+                        not self.HasBoost(row.CivicType))
+                    and row.EraType == EraType then
+                    table.insert(civiclist, row.Index)
+                end
+            end
+            if #civiclist > 0 then
+                local iCivic = civiclist[AzurMath.GetRandNum(#civiclist)]
+                playerCulture:TriggerBoost(iCivic, iSource)
+                limit = limit - 1
+            else
+                EraIndex = (EraIndex or 0) + 1
+            end
+        else
+            break
+        end
+    end
+end
 
 --获取城市生产详细信息 (UI)
+---- city              城市对象
 function EagleCore.GetProductionDetail(city)
     local details = { --城市生产详细信息
         --项目哈希值
@@ -289,7 +352,105 @@ function EagleCore.GetProductionDetail(city)
     return details
 end
 
+--||======================Utilities=======================||--
+
+--比较单位，如果单位2强度高于单位1则返回true (GamePlay, UI)
+---- unit1             单位1Def
+---- unit2             单位2Def
+function EagleCore.CompareUnitDef(unit1Def, unit2Def)
+    if unit1Def == nil then return true end
+    if unit2Def == nil then return false end
+
+    if unit1Def.Combat ~= unit2Def.Combat then
+        return unit1Def.Combat < unit2Def.Combat
+    end
+
+    if unit1Def.RangedCombat ~= unit2Def.RangedCombat then
+        return unit1Def.RangedCombat < unit2Def.RangedCombat
+    end
+
+    if unit1Def.Bombard ~= unit2Def.Bombard then
+        return unit1Def.Bombard < unit2Def.Bombard
+    end
+
+    if unit1Def.Range ~= unit2Def.Range then
+        return unit1Def.Range < unit2Def.Range
+    end
+
+    return unit1Def.BaseMoves < unit2Def.BaseMoves
+end
+
+--判断单元格是否可以放置指定单位 (GamePlay, UI)
+---- plot              单元格
+---- unitdef           单位Def
+function EagleCore.CanHaveUnit(plot, unitdef)
+    if plot == nil then return false end
+    local canHave = true
+    for _, unit in ipairs(Units.GetUnitsInPlot(plot)) do
+        if unit then
+            local unitInfo = GameInfo.Units[unit:GetType()]
+            if unitInfo then
+                if unitInfo.IgnoreMoves == false then
+                    if unitInfo.Domain == unitdef.Domain and unitInfo.FormationClass == unitdef.FormationClass then
+                        canHave = false
+                    end
+                end
+            end
+        end
+    end
+    return canHave
+end
+
+--规范每回合价值显示 (GamePlay, UI)
+---- value             价值
+function EagleCore.FormatValue(value)
+    if value == 0 then
+        return Locale.ToNumber(value)
+    else
+        return Locale.Lookup("{1: number +#,###.#;-#,###.#}", value)
+    end
+end
+
+--对单位造成伤害，超出生命值则死亡 (GamePlay)
+---- unit              单位对象
+---- damage            伤害值
+function EagleCore.DamageUnit(unit, damage)
+    local maxDamage = unit:GetMaxDamage()
+    if (unit:GetDamage() + damage) >= maxDamage then
+        unit:SetDamage(maxDamage)
+        UnitManager.Kill(unit, false)
+        return true
+    else
+        unit:ChangeDamage(damage)
+        return false
+    end
+end
+
+--传播宗教，以x,y为中心，向range范围内的城市施加pressure点宗教压力 (GamePlay)
+---- playerID          玩家ID
+---- x                 坐标x
+---- y                 坐标y
+---- range             范围
+---- pressure          压力大小
+function EagleCore:SpreadReligion(playerID, x, y, range, pressure)
+    local religion = self.GetPlayerReligion(playerID)
+    if religion == -1 then return end
+    for _, player in ipairs(Game.GetPlayers()) do
+        local cities = player:GetCities()
+        for _, city in cities:Members() do
+            if city ~= nil and Map.GetPlotDistance(
+                    x, y, city:GetX(), city:GetY()
+                ) <= range then
+                city:GetReligion():AddReligiousPressure(8, religion, pressure, playerID)
+            end
+        end
+    end
+end
+
 --mouse enter the button (UI)
 function EagleUnionEnter()
     UI.PlaySound("Main_Menu_Mouse_Over")
 end
+
+--||=======================include========================||--
+include('EagleCore_', true)

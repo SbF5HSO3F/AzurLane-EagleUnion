@@ -3,7 +3,7 @@
 -- DateCreated: 2023/10/31 21:28:55
 --------------------------------------------------------------
 --||=======================include========================||--
-include('EagleUnionCore')
+include('EagleCore')
 
 --||===================local variables====================||--
 
@@ -34,7 +34,7 @@ function EssexUnitAddedToMap(playerID, unitID)
             multiplier = 3
         end
         --get the culture which gained
-        local reward = EagleCore:ModifyBySpeed(unitInfo.Cost * multiplier * percent)
+        local reward = EagleMath:ModifyBySpeed(unitInfo.Cost * multiplier * percent)
         --get the player
         local pPlayer = Players[playerID]
         --set the property

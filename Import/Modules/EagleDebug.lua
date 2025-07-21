@@ -52,3 +52,6 @@ function EagleDebug:printd(t, tab, title)
         print((tab or '') .. (title and (title .. ': ') or '') .. tostring(t))
     end
 end
+
+--||=======================include========================||--
+include('EagleDebug_', true)

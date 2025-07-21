@@ -185,7 +185,7 @@ end
 function EagleResource:GetHarvestYields(playerId, value)
     local percent = EagleCore:GetPlayerProgress(playerId)
     local amount = 20 * (1 + 9 * percent / 100) * value
-    return math.ceil(EagleCore:ModifyBySpeed(amount))
+    return math.ceil(EagleMath:ModifyBySpeed(amount))
 end
 
 -- 获得收获资源产出
@@ -302,3 +302,6 @@ function EagleResources:GetPlaceableResources(plot)
         end
     end; return list
 end
+
+--||=======================include========================||--
+include('EagleResources_', true)

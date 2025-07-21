@@ -9,7 +9,7 @@ include('AnimSidePanelSupport')
 include('ToolTipHelper')
 include("PortraitSupport")
 
-include('EagleUnionCore')
+include('EagleCore')
 include('EagleUnionPoint')
 
 --||=======================Constants======================||--
@@ -57,7 +57,7 @@ function CalculateSelectedCost(playerID)
     --获取玩家的点数减免
     local reduction = -EaglePointManager:GetReduction(playerID)
     for _, tech in pairs(m_SelectedTechs) do
-        local techCost = EagleCore:ModifyByPercent(tech, reduction)
+        local techCost = EagleMath:ModifyByPercent(tech, reduction)
         --总花费
         cost = cost + techCost
         --总科技花费
@@ -66,7 +66,7 @@ function CalculateSelectedCost(playerID)
         s_techs = s_techs + 1
     end
     for _, civic in pairs(m_SelectedCivics) do
-        local civicCost = EagleCore:ModifyByPercent(civic, reduction)
+        local civicCost = EagleMath:ModifyByPercent(civic, reduction)
         --总花费
         cost = cost + civicCost
         --总科技花费
@@ -75,7 +75,7 @@ function CalculateSelectedCost(playerID)
         s_civics = s_civics + 1
     end
     for _, city in pairs(m_SelectedCities) do
-        local cityCost = EagleCore:ModifyByPercent(city, reduction)
+        local cityCost = EagleMath:ModifyByPercent(city, reduction)
         --总花费
         cost = cost + cityCost
         --总城市花费
@@ -457,7 +457,7 @@ function Realize()
         --获取科技是否选中
         local isSelected = m_SelectedTechs[techIndex] ~= nil
         --科技花费
-        local cost = EagleCore:ModifyByPercent(tech.Need, reduction)
+        local cost = EagleMath:ModifyByPercent(tech.Need, reduction)
         if data.Point < cost and not isSelected then
             instance.Button:SetDisabled(true)
             instance.Button:SetAlpha(0.6)
@@ -515,7 +515,7 @@ function Realize()
         local instance = m_CivicsListIM:GetInstance()
         local civicIndex = civic.Index
         --市政花费
-        local cost = EagleCore:ModifyByPercent(civic.Need, reduction)
+        local cost = EagleMath:ModifyByPercent(civic.Need, reduction)
         --获取市政是否选中
         local isSelected = m_SelectedCivics[civicIndex] ~= nil
         if data.Point < cost and not isSelected then
@@ -575,14 +575,14 @@ function Realize()
         local instance = m_CitiesListIM:GetInstance()
         local cityID = v_city.ID
         --城市花费
-        local cost = EagleCore:ModifyByPercent(v_city.Need, reduction)
+        local cost = EagleMath:ModifyByPercent(v_city.Need, reduction)
         --获取城市是否选中
         local isSelected = m_SelectedCities[cityID] ~= nil
         if isSelected then
             --获取原先的花费
             local oldCost = m_SelectedCities[cityID]
             --从而获得新的点数
-            local oldPoint = data.Point + EagleCore:ModifyByPercent(oldCost, reduction)
+            local oldPoint = data.Point + EagleMath:ModifyByPercent(oldCost, reduction)
             if oldPoint < cost then
                 --取消选中
                 isSelected = false

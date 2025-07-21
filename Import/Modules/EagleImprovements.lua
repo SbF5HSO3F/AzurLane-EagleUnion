@@ -163,3 +163,6 @@ end
 function EagleImprovements:GetImprovement(improvementType)
     return self.Improvements[improvementType]
 end
+
+--||=======================include========================||--
+include('EagleImprovements_', true)

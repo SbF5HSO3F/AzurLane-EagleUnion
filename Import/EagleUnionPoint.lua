@@ -3,7 +3,7 @@
 -- DateCreated: 2024/12/26 14:48:50
 --------------------------------------------------------------
 --||=======================include========================||--
-include('EagleUnionCore')
+include('EagleCore')
 
 --||======================MetaTable=======================||--
 
@@ -30,7 +30,7 @@ function EaglePointManager.GetEaglePoint(playerID, floor)
     local pPlayer = Players[playerID]
     if not pPlayer then return 0 end
     local points = pPlayer:GetProperty(EaglePointKey) or 0
-    return floor and EagleCore.Floor(points) or points
+    return floor and EagleMath.Floor(points) or points
 end
 
 --研究点数相关
@@ -51,7 +51,7 @@ EaglePointManager.Points = {
                     yieldPoint = yieldPoint + pCity:GetYield(YieldTypes.PRODUCTION)
                 end
                 --百分比处理
-                return EagleCore.Floor(yieldPoint * perYieldPercent)
+                return EagleMath.Floor(yieldPoint * perYieldPercent)
             end
         }
     },
@@ -77,7 +77,7 @@ EaglePointManager.Points = {
                     local culture = Players[playerID]:GetCulture()
                     point = culture:GetCultureYield() * gunStarPercent
                 end
-                return EagleCore.Floor(point)
+                return EagleMath.Floor(point)
             end,
             GetTooltip = function(self, playerID)
                 local point = self.GetPointYield(playerID)
@@ -94,7 +94,7 @@ EaglePointManager.Points = {
                 local count = EagleCore.GetPlayerDistrictCount(playerID, IvyLeagueIndex)
                 --获取点数减免
                 local modifier = count * perIvyLeagueModifier
-                return EagleCore.Round(modifier)
+                return EagleMath.Round(modifier)
             end,
             GetTooltip = function(self, playerID)
                 local modifier = self.GetModifier(playerID)
@@ -130,7 +130,7 @@ function EaglePointManager:GetPerTurnPointFromCities(playerID, floor)
         yieldPoint = yieldPoint + cityPoint
     end
     --返回最终的点数
-    return floor and EagleCore.Floor(yieldPoint) or yieldPoint
+    return floor and EagleMath.Floor(yieldPoint) or yieldPoint
 end
 
 --获取每回合玩家城市产出的研究点数的tooltip (GamePlay, UI)
@@ -155,7 +155,7 @@ function EaglePointManager:GetPerTurnPointFromCitiesTooltip(playerID)
                 Locale.Lookup('LOC_EAGLE_POINT_FROM_CITY', cityPoint, cityName)
         end
     end
-    yieldPoint = EagleCore.Floor(yieldPoint)
+    yieldPoint = EagleMath.Floor(yieldPoint)
     --来自城市的tooltip
     if cityTooltip ~= '' then
         citiesTooltip = Locale.Lookup('LOC_EAGLE_POINT_FROM_CITIES', yieldPoint) .. cityTooltip
@@ -174,7 +174,7 @@ function EaglePointManager:GetPerTurnPointFromExtra(playerID, floor)
     for _, source in pairs(extra) do
         yieldPoint = yieldPoint + (source.GetPointYield(playerID) or 0)
     end
-    return floor and EagleCore.Floor(yieldPoint) or yieldPoint
+    return floor and EagleMath.Floor(yieldPoint) or yieldPoint
 end
 
 --获取每回合玩家其他来源的研究点数的tooltip (GamePlay, UI)
@@ -199,7 +199,7 @@ function EaglePointManager:GetPerTurnPointWithoutModifier(playerID, floor)
     --来自其他
     perTurnPoint = perTurnPoint + self:GetPerTurnPointFromExtra(playerID)
     --返回最终的点数
-    return floor and EagleCore.Floor(perTurnPoint) or perTurnPoint
+    return floor and EagleMath.Floor(perTurnPoint) or perTurnPoint
 end
 
 --获取获得的研究点数增益 (GamePlay, UI)
@@ -220,7 +220,7 @@ function EaglePointManager:GetPerTurnPointWithModifier(playerID, floor)
     local modifier = self:GetPointModifier(playerID)
     --点数增益处理
     local percentPoint = perTurnPoint * modifier / 100
-    return floor and EagleCore.Floor(percentPoint) or percentPoint
+    return floor and EagleMath.Floor(percentPoint) or percentPoint
 end
 
 --获取获得的研究点数增益的tooltip (GamePlay, UI)
@@ -250,7 +250,7 @@ function EaglePointManager:GetPerTurnPoint(playerID, floor)
     local percentPoint = self:GetPerTurnPointWithoutModifier(playerID)
     perTurnPoint = perTurnPoint + percentPoint
     --返回最终的点数
-    return floor and EagleCore.Floor(perTurnPoint) or perTurnPoint
+    return floor and EagleMath.Floor(perTurnPoint) or perTurnPoint
 end
 
 --获取每回合获得的研究点数的tooltip (GamePlay, UI)
@@ -316,7 +316,7 @@ EaglePointManager.Reduction = {
                 local limit = self.Limit
                 if limit ~= nil then modifier = math.min(modifier, limit) end
                 --返回最终的减免
-                return EagleCore.Round(modifier)
+                return EagleMath.Round(modifier)
             end,
             GetTooltip = function(self, playerID)
                 local modifier = -self:GetModifier(playerID)
@@ -346,7 +346,7 @@ function EaglePointManager:GetReduction(playerID)
         reduction = reduction + (source:GetModifier(playerID) or 0)
     end
     --返回最终的减免
-    return EagleCore.Round(math.min(reduction, limit))
+    return EagleMath.Round(math.min(reduction, limit))
 end
 
 --获取研究点数减免的tooltip (GamePlay, UI)
@@ -375,7 +375,7 @@ end
 function EaglePointManager:ChangeEaglePoint(playerID, num)
     local newpoint = self.GetEaglePoint(playerID) + num
     self.SetEaglePoint(playerID, newpoint)
-    return EagleCore.Floor(newpoint)
+    return EagleMath.Floor(newpoint)
 end
 
 --||==========================UI==========================||--

@@ -3,7 +3,7 @@
 -- DateCreated: 2024/9/28 15:21:49
 --------------------------------------------------------------
 --||=======================include========================||--
-include('EagleUnionCore')
+include('EagleCore')
 include('EagleUnionPoint')
 include('EagleResources')
 
