@@ -20,7 +20,7 @@ EagleResource = {
     Remove       = true,
     Features     = {},
     Improvements = {},
-    Yields       = {},
+    Yields       = {}
 }
 
 --创建新实例，根据资源定义
@@ -300,6 +300,5 @@ function EagleResources:GetPlaceableResources(plot)
         if resource:GetPlaceable(plot) then
             table.insert(list, resource)
         end
-    end
-    return list
+    end; return list
 end

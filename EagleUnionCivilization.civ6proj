@@ -102,13 +102,16 @@
         <UpdateColors id="Color">
           <File>EagleUnion_Colors.xml</File>
         </UpdateColors>
+        <ImportFiles id="Modules">
+          <File>Import/Modules/EagleDebug.lua</File>
+          <File>Import/Modules/EagleMath.lua</File>
+          <File>Import/Modules/EagleCore.lua</File>
+          <File>Import/Modules/EagleYields.lua</File>
+          <File>Import/Modules/EagleResources.lua</File>
+          <File>Import/Modules/EagleImprovements.lua</File>
+        </ImportFiles>
         <ImportFiles id="Import">
-          <File>Import/EagleUnionDebug.lua</File>
-          <File>Import/EagleUnionCore.lua</File>
           <File>Import/EagleUnionPoint.lua</File>
-          <File>Import/EagleResources.lua</File>
-          <File>Import/EagleImprovements.lua</File>
-          <File>Import/EagleYields.lua</File>
         </ImportFiles>
         <ImportFiles id="LuaUpdate">
           <File>UI/Replace/TechAndCivicSupport.lua</File>
@@ -504,22 +507,25 @@
     <Content Include="EagleUnion_Icons.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Import\EagleImprovements.lua">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Import\EagleResources.lua">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Import\EagleUnionCore.lua">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Import\EagleUnionDebug.lua">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Import\EagleUnionPoint.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Import\EagleYields.lua">
+    <Content Include="Import\Modules\EagleImprovements.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Import\Modules\EagleMath.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Import\Modules\EagleResources.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Import\Modules\EagleCore.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Import\Modules\EagleDebug.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Import\Modules\EagleYields.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModSupport\AzurLaneDLLCore\Import\EagleYields_AzurDLL.lua">
@@ -636,6 +642,7 @@
     <Folder Include="Data\AllenMSumner" />
     <Folder Include="Data\NewJersey" />
     <Folder Include="Import" />
+    <Folder Include="Import\Modules" />
     <Folder Include="ModSupport" />
     <Folder Include="ModSupport\AzurLaneDLLCore\Import" />
     <Folder Include="ModSupport\GoldenAge" />
