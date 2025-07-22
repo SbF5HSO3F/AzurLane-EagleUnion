@@ -174,11 +174,15 @@ end
 -- 获取资源改变tooltip
 function EagleResource:GetChangeYieldsTooltip()
     local tooltip = Locale.Lookup('LOC_AZURLANE_RESOURCE_CHANGE')
+    local outTip = ''
     for key, val in pairs(self.Yields) do
         local tip = 'LOC_AZURLANE_RESOURCE_' .. key
-        tooltip = tooltip .. Locale.Lookup(tip, val)
+        outTip = outTip .. Locale.Lookup(tip, val)
     end
-    return tooltip
+    if outTip == '' then
+        outTip = Locale.Lookup('LOC_AZURLANE_RESOURCE_NOCHANGE')
+    end
+    return tooltip .. outTip
 end
 
 -- 获取收获资源的产出
@@ -191,6 +195,7 @@ end
 -- 获得收获资源产出
 function EagleResource:GrantHarvestYields(playerId, x, y)
     for key, val in pairs(self.Yields) do
+        if key == 'YIELD_GOLD' then val = val * 2 end
         local amount = self:GetHarvestYields(playerId, val)
         EagleYields:GrantYieldAtXY(playerId, key, amount, x, y)
     end

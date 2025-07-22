@@ -71,6 +71,9 @@
 		<Replace Tag="LOC_AZURLANE_RESOURCE_CHANGE" Language="zh_Hans_CN">
 			<Text>产出增加：</Text>
 		</Replace>
+		<Replace Tag="LOC_AZURLANE_RESOURCE_NOCHANGE" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]无变化</Text>
+		</Replace>
 		<Replace Tag="LOC_AZURLANE_RESOURCE_YIELD_SCIENCE" Language="zh_Hans_CN">
 			<Text>[NEWLINE][ICON_Bullet]+{1_amount} [ICON_SCIENCE] 科技值</Text>
 		</Replace>

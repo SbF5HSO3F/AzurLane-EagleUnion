@@ -71,6 +71,9 @@
 		<Replace Tag="LOC_AZURLANE_RESOURCE_CHANGE" Language="zh_Hant_HK">
 			<Text>產出增加：</Text>
 		</Replace>
+		<Replace Tag="LOC_AZURLANE_RESOURCE_NOCHANGE" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]無變化</Text>
+		</Replace>
 		<Replace Tag="LOC_AZURLANE_RESOURCE_YIELD_SCIENCE" Language="zh_Hant_HK">
 			<Text>[NEWLINE][ICON_Bullet]+{1_amount} [ICON_SCIENCE] 科技值</Text>
 		</Replace>
