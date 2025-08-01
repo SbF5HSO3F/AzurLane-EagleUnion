@@ -332,6 +332,37 @@
 		<Replace Tag="LOC_EAGLE_POINT_MODIFIER_IVY_LEAGUE" Language="zh_Hant_HK">
 			<Text>[NEWLINE][ICON_Bullet]{1_percent : number +#.#;-#.#}% 來自常春藤聯盟</Text>
 		</Replace>
+		<!--Warning-->
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_MOVEMENT" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]無剩余移動力[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_TRANSFER_CITY" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]無可供轉移的城市[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_HAS_USED" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]本回合已發動[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_ADJACENT_EMENY" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]必須相鄰敵方單位[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_DAMAGE" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]單位尚未受傷[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NOT_NO_OWNER_PLOT" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]必須位於無主單元格[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_PLOT_HAS_RESOURCES" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]必須位於空白單元格[ENDCOLOR]</Text>
+		</Replace>
+        <Replace Tag="LOC_EAGLE_ACTION_REASON_NO_PLACEABLE_RESOURCES" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]該單元格無有效資源[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_ADJACENT_OWNER" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]必須相鄰己方單元格[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_VALID_IMPROVEMENT" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]無有效改良設施[ENDCOLOR]</Text>
+		</Replace>
 		<!--城市名-->
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_WASHINGTON_DC" Language="zh_Hant_HK">
 			<Text>華盛頓特區</Text>

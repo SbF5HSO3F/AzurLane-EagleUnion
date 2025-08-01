@@ -323,10 +323,10 @@
 			<Text>[NEWLINE][ICON_Bullet]{1_point : number +#.#;-#.#} from {2_city}</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_FROM_DEBUG" Language="en_US">
-			<Text>[NEWLINE]{1_point : number +#.#;-#.#} from Debug</Text>
+			<Text>[NEWLINE]{1_point : number +#.#;-#.#} from Debug.</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_FROM_SANTA_CLARA" Language="en_US">
-			<Text>[NEWLINE]{1_point : number +#.#;-#.#} from Santa Clara Valley</Text>
+			<Text>[NEWLINE]{1_point : number +#.#;-#.#} from Santa Clara Valley.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_EAGLE_POINT_FROM_MODIFIER" Language="en_US">
@@ -334,6 +334,37 @@
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_MODIFIER_IVY_LEAGUE" Language="en_US">
 			<Text>[NEWLINE][ICON_Bullet]{1_percent : number +#.#;-#.#}% from Ivy League</Text>
+		</Replace>
+		<!--Warning-->
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_MOVEMENT" Language="en_US">
+			<Text>[COLOR_RED]No remaining Movement.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_TRANSFER_CITY" Language="en_US">
+			<Text>[COLOR_RED]No available transfer cities.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_HAS_USED" Language="en_US">
+			<Text>[COLOR_RED]This command has already been used by the unit this turn.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_ADJACENT_EMENY" Language="en_US">
+			<Text>[COLOR_RED]Must be adjacent to an enemy unit.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_DAMAGE" Language="en_US">
+			<Text>[COLOR_RED]Unit not damaged.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NOT_NO_OWNER_PLOT" Language="en_US">
+			<Text>[COLOR_RED]Must be located in an unowned plot.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_PLOT_HAS_RESOURCES" Language="en_US">
+			<Text>[COLOR_RED]Must be located in a plot without resources.[ENDCOLOR]</Text>
+		</Replace>
+        <Replace Tag="LOC_EAGLE_ACTION_REASON_NO_PLACEABLE_RESOURCES" Language="en_US">
+			<Text>[COLOR_RED]No valid Resources.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_ADJACENT_OWNER" Language="en_US">
+			<Text>[COLOR_RED]Must be adjacent to owner plot.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_VALID_IMPROVEMENT" Language="en_US">
+			<Text>[COLOR_RED]No valid Improvements.[ENDCOLOR]</Text>
 		</Replace>
 		<!--城市名-->
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_WASHINGTON_DC" Language="en_US">

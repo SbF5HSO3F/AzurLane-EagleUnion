@@ -326,12 +326,42 @@
 			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 来自圣塔克拉拉谷</Text>
 		</Replace>
 		
-
 		<Replace Tag="LOC_EAGLE_POINT_FROM_MODIFIER" Language="zh_Hans_CN">
 			<Text>[NEWLINE]{1_percent : number +#.#;-#.#}%（{2_point : number +#.#;-#.#}）来自修正值</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_MODIFIER_IVY_LEAGUE" Language="zh_Hans_CN">
 			<Text>[NEWLINE][ICON_Bullet]{1_percent : number +#.#;-#.#}% 来自常春藤联盟</Text>
+		</Replace>
+		<!--Warning-->
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_MOVEMENT" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]无剩余移动力[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_TRANSFER_CITY" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]无可供转移的城市[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_HAS_USED" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]本回合已发动[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_ADJACENT_EMENY" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]必须相邻敌方单位[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_DAMAGE" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]单位尚未受伤[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NOT_NO_OWNER_PLOT" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]必须位于无主单元格[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_PLOT_HAS_RESOURCES" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]必须位于空白单元格[ENDCOLOR]</Text>
+		</Replace>
+        <Replace Tag="LOC_EAGLE_ACTION_REASON_NO_PLACEABLE_RESOURCES" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]该单元格无有效资源[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_ADJACENT_OWNER" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]必须相邻己方单元格[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_VALID_IMPROVEMENT" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]无有效改良设施[ENDCOLOR]</Text>
 		</Replace>
 		<!--城市名-->
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_WASHINGTON_DC" Language="zh_Hans_CN">
