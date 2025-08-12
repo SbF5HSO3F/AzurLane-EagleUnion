@@ -18,14 +18,12 @@ local DefenseMinCB = GameInfo.DiplomaticActions['DIPLOACTION_DECLARE_PROTECTORAT
 --||=================GameEvents functions=================||--
 
 -- New Jersey Can Declare War on Liberation, Reconquest and Defense of the City-State
--- function NewJerseyFreeCanDeclareWar(initiatorPlayerType, targetPlayerType, warType, oldresult)
---     if EagleCore.CheckLeaderMatched(initiatorPlayerType, 'LEADER_NEW_JERSEY_BB62') and
---         (warType == Liberation or warType == Reconquest or warType == DefenseMin) then
---         return true
---     else
---         return oldresult
---     end
--- end
+function NewJerseyFreeCanDeclareWar(initiatorPlayerType, targetPlayerType, warType, oldresult)
+    if EagleCore.CheckLeaderMatched(initiatorPlayerType, 'LEADER_NEW_JERSEY_BB62') and
+        (warType == Liberation or warType == Reconquest or warType == DefenseMin) then
+        return true
+    end
+end
 
 -- New Jersey Free Liberation, Reconquest and Defense of the City-State Casus Belli
 function NewJerseyFreeWarCasusBelli(initiatorPlayerType, targetPlayerType, diplomaticActionType, oldresult)
@@ -36,4 +34,5 @@ function NewJerseyFreeWarCasusBelli(initiatorPlayerType, targetPlayerType, diplo
     end
 end
 
-table.insert(AzurDLLDiplomacy.Traits, NewJerseyFreeWarCasusBelli)
+AzurDLLDiplomacy:AddWarsTrait(NewJerseyFreeCanDeclareWar)
+AzurDLLDiplomacy:AddActionsTrait(NewJerseyFreeWarCasusBelli)
