@@ -295,10 +295,8 @@
         </UpdateText>
         <ImportFiles id="DLLImport" criteria="AzurLaneDLLCore">
           <File>ModSupport/AzurLaneDLLCore/Import/EagleYields_AzurDLL.lua</File>
+          <File>ModSupport/AzurLaneDLLCore/Import/AzurDLLDiplomaticAction_NewJersey.lua</File>
         </ImportFiles>
-        <AddGameplayScripts id="DLLScript" criteria="AzurLaneDLLCore">
-          <File>ModSupport/AzurLaneDLLCore/Scripts/EagleUnionNewJerseyDLL.lua</File>
-        </AddGameplayScripts>
         <UpdateDatabase id="EagleUnion_Megalopolis" criteria="GoldenAgeMegalopolis">
           <File>ModSupport/GoldenAge/Data/Mode_Megalopolis.sql</File>
         </UpdateDatabase>
@@ -531,10 +529,10 @@
     <Content Include="Import\Modules\EagleYields.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModSupport\AzurLaneDLLCore\Import\EagleYields_AzurDLL.lua">
+    <Content Include="ModSupport\AzurLaneDLLCore\Import\AzurDLLDiplomaticAction_NewJersey.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModSupport\AzurLaneDLLCore\Scripts\EagleUnionNewJerseyDLL.lua">
+    <Content Include="ModSupport\AzurLaneDLLCore\Import\EagleYields_AzurDLL.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModSupport\GoldenAge\Data\Mode_CustomTraits.sql">
@@ -651,7 +649,6 @@
     <Folder Include="Import\Modules" />
     <Folder Include="ModSupport" />
     <Folder Include="ModSupport\AzurLaneDLLCore\Import" />
-    <Folder Include="ModSupport\AzurLaneDLLCore\Scripts" />
     <Folder Include="ModSupport\GoldenAge" />
     <Folder Include="ModSupport\GoldenAge\Data" />
     <Folder Include="ModSupport\GoldenAge\Text" />
