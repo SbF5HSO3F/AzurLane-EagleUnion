@@ -18,21 +18,29 @@ local DefenseMinCB = GameInfo.DiplomaticActions['DIPLOACTION_DECLARE_PROTECTORAT
 --||=================GameEvents functions=================||--
 
 -- New Jersey Can Declare War on Liberation, Reconquest and Defense of the City-State
-function NewJerseyFreeCanDeclareWar(initiatorPlayerType, targetPlayerType, warType, oldresult)
-    if EagleCore.CheckLeaderMatched(initiatorPlayerType, 'LEADER_NEW_JERSEY_BB62') and
+function NewJerseyFreeCanDeclareWar(player, target, warType, oldresult)
+    if EagleCore.CheckLeaderMatched(player, 'LEADER_NEW_JERSEY_BB62') and
         (warType == Liberation or warType == Reconquest or warType == DefenseMin) then
+        -- 获取玩家外交
+        -- local diplomacy = Players[player]:GetDiplomacy()
+        -- if not diplomacy:IsAtWarWith(target) then return true end
+        -- if diplomacy:HasDeclaredFriendship(target) then return false end
         return true
     end
 end
 
 -- New Jersey Free Liberation, Reconquest and Defense of the City-State Casus Belli
-function NewJerseyFreeWarCasusBelli(initiatorPlayerType, targetPlayerType, diplomaticActionType, oldresult)
+function NewJerseyFreeWarCasusBelli(player, target, actionType, oldresult)
     -- 是新泽西，且外交行动为宣布解放战争、收复战争或保卫城邦战争
-    if EagleCore.CheckLeaderMatched(initiatorPlayerType, 'LEADER_NEW_JERSEY_BB62') and
-        (diplomaticActionType == LiberationCB or diplomaticActionType == ReconquestCB or diplomaticActionType == DefenseMinCB) then
+    if EagleCore.CheckLeaderMatched(player, 'LEADER_NEW_JERSEY_BB62') and
+        (actionType == LiberationCB or actionType == ReconquestCB or actionType == DefenseMinCB) then
+        -- 获取玩家外交
+        -- local diplomacy = Players[player]:GetDiplomacy()
+        -- if not diplomacy:IsAtWarWith(target) then return true end
+        -- if diplomacy:HasDeclaredFriendship(target) then return false end
         return true
     end
 end
 
-AzurDLLDiplomacy:AddWarsTrait(NewJerseyFreeCanDeclareWar)
-AzurDLLDiplomacy:AddActionsTrait(NewJerseyFreeWarCasusBelli)
+AzurDLLDiplomacy:AddLeaderWarsTrait(NewJerseyFreeCanDeclareWar)
+AzurDLLDiplomacy:AddLeaderActionsTrait(NewJerseyFreeWarCasusBelli)
