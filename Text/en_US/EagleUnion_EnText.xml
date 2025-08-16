@@ -604,10 +604,17 @@
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_MILWAUKEE" Language="en_US">
 			<Text>Milwaukee</Text>
 		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_NORFOLK" Language="en_US">
+			<Text>Norfolk</Text>
+		</Replace>
 		<!--特殊城市-->
 		<!--卡尼 艾伦·萨姆纳-->
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_KEARNY" Language="en_US">
 			<Text>Kearny</Text>
+		</Replace>
+		<!--奥兰治 埃尔德里奇-->
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_ORANGE" Language="en_US">
+			<Text>Orange</Text>
 		</Replace>
 		<!--公民名-->
 		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_YORKTOWN" Language="en_US">

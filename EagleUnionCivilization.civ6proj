@@ -295,7 +295,6 @@
         </UpdateText>
         <ImportFiles id="DLLImport" criteria="AzurLaneDLLCore">
           <File>ModSupport/AzurLaneDLLCore/Import/EagleYields_AzurDLL.lua</File>
-          <File>ModSupport/AzurLaneDLLCore/Import/AzurDLLDiplomaticAction_NewJersey.lua</File>
         </ImportFiles>
         <UpdateDatabase id="EagleUnion_Megalopolis" criteria="GoldenAgeMegalopolis">
           <File>ModSupport/GoldenAge/Data/Mode_Megalopolis.sql</File>

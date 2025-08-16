@@ -601,6 +601,9 @@
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_MILWAUKEE" Language="zh_Hans_CN">
 			<Text>密尔沃基</Text>
 		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_NORFOLK" Language="zh_Hans_CN">
+			<Text>诺福克</Text>
+		</Replace>
 		<!--特殊城市-->
 		<!--卡尼 艾伦·萨姆纳-->
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_KEARNY" Language="zh_Hans_CN">

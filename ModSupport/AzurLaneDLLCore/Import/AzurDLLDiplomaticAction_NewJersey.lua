@@ -35,7 +35,10 @@ function NewJerseyFreeWarCasusBelli(player, target, actionType, oldresult)
     if EagleCore.CheckLeaderMatched(player, 'LEADER_NEW_JERSEY_BB62') and
         (actionType == LiberationCB or actionType == ReconquestCB or actionType == DefenseMinCB) then
         -- 获取玩家外交
-        -- local diplomacy = Players[player]:GetDiplomacy()
+        local diplomacy = Players[player]:GetDiplomacy()
+        local test1, test2 = diplomacy:IsDiplomaticActionValid(actionType, target, true)
+        EagleDebug:printd(test1, '', 'bValidAction')
+        EagleDebug:printd(test2, '', 'tResults')
         -- if not diplomacy:IsAtWarWith(target) then return true end
         -- if diplomacy:HasDeclaredFriendship(target) then return false end
         return true

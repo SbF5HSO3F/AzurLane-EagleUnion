@@ -601,10 +601,17 @@
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_MILWAUKEE" Language="zh_Hant_HK">
 			<Text>密爾沃基</Text>
 		</Replace>
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_NORFOLK" Language="zh_Hant_HK">
+			<Text>諾福克</Text>
+		</Replace>
 		<!--特殊城市-->
 		<!--卡尼 艾伦·萨姆纳-->
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_KEARNY" Language="zh_Hant_HK">
 			<Text>卡尼</Text>
+		</Replace>
+		<!--奥兰治 埃尔德里奇-->
+		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_ORANGE" Language="zh_Hant_HK">
+			<Text>奧蘭治</Text>
 		</Replace>
 		<!--公民名-->
 		<Replace Tag="LOC_CITIZEN_NAME_EAGLE_UNION_YORKTOWN" Language="zh_Hant_HK">

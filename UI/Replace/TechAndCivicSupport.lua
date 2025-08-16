@@ -787,5 +787,3 @@ function TechAndCivicSupport_BuildCivicModifierCache()
 
 	return tCache
 end
-
-include('TechAndCivicSupport_', true)
