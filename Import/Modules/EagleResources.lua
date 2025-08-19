@@ -295,7 +295,11 @@ end
 
 --获取资源实例
 function EagleResources:GetResource(resourceType)
-    return self.Resources[resourceType]
+    if type(resourceType) == 'number' and resourceType ~= -1 then
+        return self.Resources[GameInfo.Resources[resourceType].ResourceType]
+    else
+        return self.Resources[resourceType]
+    end
 end
 
 --获取该单元格可以放置的资源列表

@@ -363,6 +363,12 @@
 		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_VALID_IMPROVEMENT" Language="zh_Hans_CN">
 			<Text>[COLOR_RED]无有效改良设施[ENDCOLOR]</Text>
 		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_ON_OR_ADJACENT_RESOURCES" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]必须位于或相邻资源[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_ACTION_REASON_RESOURCES_RECORDED" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]该资源已经被记录[ENDCOLOR]</Text>
+		</Replace>
 		<!--城市名-->
 		<Replace Tag="LOC_CITY_NAME_EAGLE_UNION_WASHINGTON_DC" Language="zh_Hans_CN">
 			<Text>华盛顿特区</Text>
