@@ -10,18 +10,39 @@ EagleMath = {}
 --||====================Based functions===================||--
 
 --数字不小于其1位小数处理 (GamePlay, UI)
-function EagleMath.Ceil(num)
-    return math.ceil(num * 10) / 10
+function EagleMath.Ceil(num, dot)
+    if dot == true then
+        return math.ceil(num)
+    else
+        if type(dot) ~= 'number' then dot = 1 end
+        dot = math.pow(10, dot)
+        dot = math.max(dot, 1)
+        return math.ceil(num * dot) / dot
+    end
 end
 
 --数字不大于其1位小数处理 (GamePlay, UI)
-function EagleMath.Floor(num)
-    return math.floor(num * 10) / 10
+function EagleMath.Floor(num, dot)
+    if dot == true then
+        return math.floor(num)
+    else
+        if type(dot) ~= 'number' then dot = 1 end
+        dot = math.pow(10, dot)
+        dot = math.max(dot, 1)
+        return math.floor(num * dot) / dot
+    end
 end
 
 -- 数字四舍五入 (GamePlay, UI)
-function EagleMath.Round(num)
-    return math.floor((num + 0.05) * 10) / 10
+function EagleMath.Round(num, dot)
+    if dot == true then
+        return math.floor(num + 0.5)
+    else
+        if type(dot) ~= 'number' then dot = 1 end
+        dot = math.pow(10, dot)
+        dot = math.max(dot, 1)
+        return math.floor((num * dot + 0.5)) / dot
+    end
 end
 
 --||====================Modify functions==================||--
@@ -52,6 +73,12 @@ function EagleMath:GetRandom(x, y)
     local a = x - 1
     local n = y - a
     return self.GetRandNum(n) + a
+end
+
+-- 概率检查 (GamePlay)
+function EagleMath:CheckProbability(percent)
+    local random = self.GetRandNum(100)
+    return random <= percent
 end
 
 --||=======================include========================||--

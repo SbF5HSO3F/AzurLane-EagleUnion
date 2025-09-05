@@ -349,7 +349,7 @@
 			<Text>[COLOR_RED]Must be adjacent to an enemy unit.[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_ACTION_REASON_NO_DAMAGE" Language="en_US">
-			<Text>[COLOR_RED]Unit not damaged.[ENDCOLOR]</Text>
+			<Text>[COLOR_RED]Unit is not damaged.[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_ACTION_REASON_NOT_NO_OWNER_PLOT" Language="en_US">
 			<Text>[COLOR_RED]Must be located in an unowned plot.[ENDCOLOR]</Text>
